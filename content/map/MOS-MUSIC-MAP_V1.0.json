@@ -1,0 +1,1217 @@
+{
+  "map_version": "MOS-MUSIC-MAP V1.0",
+  "generated_at": null,
+  "row_count": 24,
+  "schema": "content/schema/map.schema.json",
+  "decision_ref": "H-2｜24 课不是第三套年度课程体系，三者通过 Mapping 关联，不复制、不重建",
+  "data_policy": {
+    "copy_rule": "只以 ID 关联，不复制 MOS 52 周 / 364D 的权威数据。",
+    "core_truth_policy": "core_truth 与 theology 在 Phase 1 一律为空字符串（空壳）。取值来源以 core_truth_source 指回 MOS 已定案经文中心，不在本文件内复制其全文。",
+    "lq_policy": "LQ01–LQ08 为 MOS 既有体系，MOS-MUSIC 只引用 ID，不重建、不重定义。",
+    "passage_policy": "只保存经文引用字符串与 reference id，不内嵌任何译本正文（见 ADR-0008）。"
+  },
+  "source_lines": {
+    "primary": {
+      "id": "mos-52w-disciple",
+      "name": "MOS 52 周门训主线",
+      "file": "mos-52w.csv（MOS-DIS V1.5.1.1 实际使用的内容源）",
+      "weeks": 52,
+      "stages": [
+        "I 看见自己",
+        "II 重新连接",
+        "III 进入生活",
+        "IV 结出果子"
+      ],
+      "used_for": "mos_week 字段"
+    },
+    "cross_reference": {
+      "id": "mos-sermon-2027",
+      "name": "MOS 第一年度 52 周讲道释经（2027）",
+      "file": "MOS第一年度52周讲道释经与讲章设计总表_2027_V2.0_52周正式释经生产版.xlsx",
+      "weeks": 52,
+      "used_for": "sermon_week_ref 字段与 core_truth_source"
+    },
+    "unresolved": "两条 52 周线并存（另有 MOS-52W_V2.1 主日信息重新核准版），MOS-MUSIC 不自行合并。见 docs/ADR.md ADR-0009。"
+  },
+  "lq_registry": {
+    "LQ01": "我是谁？",
+    "LQ02": "我的价值从哪里来？",
+    "LQ03": "什么才算成功？我到底要怎样活？",
+    "LQ04": "面对不确定和失控，我怎么生活？",
+    "LQ05": "我属于哪里？我与谁真正相连？",
+    "LQ06": "责任与自己的人生冲突时，我怎么办？",
+    "LQ07": "受伤、失败和痛苦时，我怎么办？",
+    "LQ08": "我的生命为什么而活？"
+  },
+  "rows": [
+    {
+      "map_id": "MAP-C01",
+      "music_unit_id": "MUS-C-01",
+      "music_theme": "创造",
+      "mos_week": [
+        "W07",
+        "W01"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [],
+      "bible_passage": "林后5:17",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": null,
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ01",
+        "LQ02"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-SUN"
+      ],
+      "music_function": [
+        "emotion",
+        "memory"
+      ],
+      "mapping_status": "pending_confirmation",
+      "mapping_confidence": "low",
+      "mapping_note": "门训主线无「创造」专题周；以 W07 在基督里更新（林后5:17，新造）与 W01 恩典中的身份作最近锚点，需人工裁定。",
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W07,W01",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C02",
+      "music_unit_id": "MUS-C-02",
+      "music_theme": "圣洁",
+      "mos_week": [
+        "W13",
+        "W29"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W23"
+      ],
+      "bible_passage": "林后13:5",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W23",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ01"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "memory",
+        "practice"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W13,W29",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C03",
+      "music_unit_id": "MUS-C-03",
+      "music_theme": "慈爱",
+      "mos_week": [
+        "W17",
+        "W19",
+        "W42"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W17"
+      ],
+      "bible_passage": "约13:34–35",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W17",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ05"
+      ],
+      "discipleship_context": [
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "emotion",
+        "community"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W17,W19,W42",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C04",
+      "music_unit_id": "MUS-C-04",
+      "music_theme": "信实",
+      "mos_week": [
+        "W41",
+        "W47"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W46",
+        "W49"
+      ],
+      "bible_passage": "腓1:6",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W46",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ03"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "memory",
+        "prayer"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W41,W47",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C05",
+      "music_unit_id": "MUS-C-05",
+      "music_theme": "道成肉身",
+      "mos_week": [
+        "W15",
+        "W26"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W51",
+        "W12"
+      ],
+      "bible_passage": "约14:1–6",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W51",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ01"
+      ],
+      "discipleship_context": [
+        "CTX-SUN",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "emotion",
+        "memory"
+      ],
+      "mapping_status": "pending_confirmation",
+      "mapping_confidence": "low",
+      "mapping_note": "门训主线无「道成肉身」专题周；W15（约14:1–6 灵里面的看见）与 W26（约15:1–5）仅为最近锚点。讲道释经线 W51（路1:26–38）更贴近，需人工裁定主锚。",
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W15,W26",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C06",
+      "music_unit_id": "MUS-C-06",
+      "music_theme": "十字架",
+      "mos_week": [
+        "W19",
+        "W41"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W35",
+        "W33"
+      ],
+      "bible_passage": "西3:12–13",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W35",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ07"
+      ],
+      "discipleship_context": [
+        "CTX-SUN",
+        "CTX-PER"
+      ],
+      "music_function": [
+        "prayer",
+        "emotion"
+      ],
+      "mapping_status": "pending_confirmation",
+      "mapping_confidence": "low",
+      "mapping_note": "十字架在讲道释经线 W35（路23:26–49）有专题周，门训主线无对应周。建议改以讲道线为主锚，需人工裁定。",
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W19,W41",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C07",
+      "music_unit_id": "MUS-C-07",
+      "music_theme": "复活",
+      "mos_week": [
+        "W23"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W13",
+        "W14",
+        "W36"
+      ],
+      "bible_passage": "约11:1–44",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W13",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ07"
+      ],
+      "discipleship_context": [
+        "CTX-SUN",
+        "CTX-FAM"
+      ],
+      "music_function": [
+        "emotion",
+        "transmission"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W23",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C08",
+      "music_unit_id": "MUS-C-08",
+      "music_theme": "跟随基督",
+      "mos_week": [
+        "W03",
+        "W27",
+        "W39"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W03",
+        "W04",
+        "W05"
+      ],
+      "bible_passage": "腓3:7–14",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W03",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ03"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "practice",
+        "transmission"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W03,W27,W39",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C09",
+      "music_unit_id": "MUS-C-09",
+      "music_theme": "悔改",
+      "mos_week": [
+        "W13",
+        "W18"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W24",
+        "W34"
+      ],
+      "bible_passage": "林后13:5",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W24",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ01"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-SUN"
+      ],
+      "music_function": [
+        "emotion",
+        "prayer"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W13,W18",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C10",
+      "music_unit_id": "MUS-C-10",
+      "music_theme": "信心",
+      "mos_week": [
+        "W02",
+        "W12",
+        "W15"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W31",
+        "W32"
+      ],
+      "bible_passage": "路12:22–32",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W31",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ04"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "memory",
+        "emotion"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W02,W12,W15",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C11",
+      "music_unit_id": "MUS-C-11",
+      "music_theme": "圣洁生活",
+      "mos_week": [
+        "W29",
+        "W38",
+        "W39"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W15",
+        "W16"
+      ],
+      "bible_passage": "罗12:1–2",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W15",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ01"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-FAM"
+      ],
+      "music_function": [
+        "practice",
+        "memory"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W29,W38,W39",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C12",
+      "music_unit_id": "MUS-C-12",
+      "music_theme": "祷告",
+      "mos_week": [
+        "W06",
+        "W23"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W07",
+        "W22"
+      ],
+      "bible_passage": "路10:38–42",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W07",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ04"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "prayer",
+        "memory"
+      ],
+      "mapping_status": "pending_confirmation",
+      "mapping_confidence": "low",
+      "mapping_note": "门训主线无「祷告」专题周；讲道释经线 W07（路11:1–13）为专题周。建议改以讲道线为主锚，需人工裁定。",
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W06,W23",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C13",
+      "music_unit_id": "MUS-C-13",
+      "music_theme": "彼此相爱",
+      "mos_week": [
+        "W17",
+        "W25"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W17"
+      ],
+      "bible_passage": "约13:34–35",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W17",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ05"
+      ],
+      "discipleship_context": [
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "community",
+        "emotion"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W17,W25",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C14",
+      "music_unit_id": "MUS-C-14",
+      "music_theme": "彼此饶恕",
+      "mos_week": [
+        "W18",
+        "W19",
+        "W34"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W21",
+        "W30"
+      ],
+      "bible_passage": "罗12:17–21",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W21",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ05"
+      ],
+      "discipleship_context": [
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "community",
+        "practice"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W18,W19,W34",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C15",
+      "music_unit_id": "MUS-C-15",
+      "music_theme": "彼此服事",
+      "mos_week": [
+        "W25",
+        "W35",
+        "W36"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W33",
+        "W42"
+      ],
+      "bible_passage": "约13:1–17",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W33",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ06"
+      ],
+      "discipleship_context": [
+        "CTX-GRP",
+        "CTX-SUN"
+      ],
+      "music_function": [
+        "practice",
+        "community"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W25,W35,W36",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C16",
+      "music_unit_id": "MUS-C-16",
+      "music_theme": "合一与教会",
+      "mos_week": [
+        "W14",
+        "W16",
+        "W24",
+        "W33"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W20",
+        "W25",
+        "W41"
+      ],
+      "bible_passage": "弗2:19–22",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W20",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ05"
+      ],
+      "discipleship_context": [
+        "CTX-SUN",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "community",
+        "memory"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W14,W16,W24,W33",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C17",
+      "music_unit_id": "MUS-C-17",
+      "music_theme": "家庭",
+      "mos_week": [
+        "W20",
+        "W30",
+        "W49"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [],
+      "bible_passage": "弗5:21",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": null,
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ06"
+      ],
+      "discipleship_context": [
+        "CTX-FAM",
+        "CTX-GEN"
+      ],
+      "music_function": [
+        "community",
+        "transmission"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": "讲道释经线无「家庭」专题周；门训主线 W20/W30/W49 为家庭相关周。",
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W20,W30,W49",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C18",
+      "music_unit_id": "MUS-C-18",
+      "music_theme": "工作与责任",
+      "mos_week": [
+        "W28",
+        "W37",
+        "W35"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W33",
+        "W46"
+      ],
+      "bible_passage": "西3:23–24",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W33",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ06"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "music_function": [
+        "practice",
+        "transmission"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W28,W37,W35",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C19",
+      "music_unit_id": "MUS-C-19",
+      "music_theme": "苦难与盼望",
+      "mos_week": [
+        "W09",
+        "W10",
+        "W41",
+        "W46"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W34",
+        "W49"
+      ],
+      "bible_passage": "林后12:7–10",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W34",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ07"
+      ],
+      "discipleship_context": [
+        "CTX-PER",
+        "CTX-GRP",
+        "CTX-FAM"
+      ],
+      "music_function": [
+        "emotion",
+        "prayer"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W09,W10,W41,W46",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C20",
+      "music_unit_id": "MUS-C-20",
+      "music_theme": "爱邻舍",
+      "mos_week": [
+        "W25",
+        "W33",
+        "W35"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W08",
+        "W37"
+      ],
+      "bible_passage": "约13:1–17",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W08",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ06"
+      ],
+      "discipleship_context": [
+        "CTX-GRP",
+        "CTX-MIS"
+      ],
+      "music_function": [
+        "practice",
+        "community"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W25,W33,W35",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C21",
+      "music_unit_id": "MUS-C-21",
+      "music_theme": "见证基督",
+      "mos_week": [
+        "W38",
+        "W39",
+        "W43"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W36",
+        "W50"
+      ],
+      "bible_passage": "腓2:14–16",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W36",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ08"
+      ],
+      "discipleship_context": [
+        "CTX-SUN",
+        "CTX-MIS"
+      ],
+      "music_function": [
+        "transmission",
+        "practice"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W38,W39,W43",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C22",
+      "music_unit_id": "MUS-C-22",
+      "music_theme": "万民与宣教",
+      "mos_week": [
+        "W31",
+        "W32",
+        "W38"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W28",
+        "W29",
+        "W38",
+        "W39",
+        "W40"
+      ],
+      "bible_passage": "林前7:17",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W28",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ08"
+      ],
+      "discipleship_context": [
+        "CTX-SUN",
+        "CTX-MIS"
+      ],
+      "music_function": [
+        "transmission",
+        "community"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "medium",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W31,W32,W38",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C23",
+      "music_unit_id": "MUS-C-23",
+      "music_theme": "训练别人",
+      "mos_week": [
+        "W43",
+        "W44",
+        "W45"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W44",
+        "W45"
+      ],
+      "bible_passage": "腓4:9",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W44",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ08"
+      ],
+      "discipleship_context": [
+        "CTX-GRP",
+        "CTX-GEN"
+      ],
+      "music_function": [
+        "transmission",
+        "memory"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W43,W44,W45",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    },
+    {
+      "map_id": "MAP-C24",
+      "music_unit_id": "MUS-C-24",
+      "music_theme": "门徒再生产",
+      "mos_week": [
+        "W40",
+        "W48",
+        "W52"
+      ],
+      "mos_week_line": "mos-52w-disciple",
+      "sermon_week_ref": [
+        "W40",
+        "W47",
+        "W52"
+      ],
+      "bible_passage": "约15:1–8",
+      "bible_reference_ids": [],
+      "core_truth": "",
+      "core_truth_source": {
+        "source_system": "mos-sermon-2027",
+        "source_week_id": "W40",
+        "source_field": "center",
+        "copy_policy": "reference_only"
+      },
+      "theology": "",
+      "life_question": "",
+      "lq": [
+        "LQ08"
+      ],
+      "discipleship_context": [
+        "CTX-GRP",
+        "CTX-MIS"
+      ],
+      "music_function": [
+        "transmission",
+        "practice"
+      ],
+      "mapping_status": "draft",
+      "mapping_confidence": "high",
+      "mapping_note": null,
+      "provenance": {
+        "source_system": "mos-52w",
+        "source_id": "W40,W48,W52",
+        "source_field": "week/reference/week_function",
+        "copy_policy": "reference_only",
+        "note": "只引用 MOS 52 周周次 ID 与经文引用；未复制 MOS 52 周的主题、引导句或经文中心全文。"
+      },
+      "version": "MUS-V-0.1.0",
+      "updated_at": null
+    }
+  ]
+}

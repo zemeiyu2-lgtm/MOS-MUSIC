@@ -1,0 +1,191 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0004",
+  "unit_id": "MUS-SU-0004",
+  "slot": "lyrics",
+  "language": "en",
+  "version_note": "英文公版原文：词 Isaac Watts（1719，Psalms of David Imitated，诗 98 改篇）；曲 ANTIOCH（Lowe Mason 编曲，1839，取材 Handel）。本仓不托管任何中文译本。",
+  "structure_note": "每节四行；全曲各节共用同一曲调。phrase_id = 行首词所在的原谱乐句（由 tools/sample-l4.js 按逐词对齐回填；一句歌词可跨乐句，以行首词为准）。",
+  "proofread": {
+    "status": "PENDING",
+    "checked_by": null,
+    "date": null,
+    "note": "文本按通行公版版本誊录，尚未与印刷本逐节核对；核对通过前不得标记 PASS。"
+  },
+  "rights": {
+    "copyright_status": "public_domain",
+    "basis": "词 1719 年、曲编 1839 年，均已入公有领域（详情记录判定 public_domain）；中文译本未托管（CI-0028）。",
+    "derived_from": "content/songs/MUS-S-0004.json#copyright.copyright_status"
+  },
+  "sections": [
+    {
+      "section_id": "v1",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "line_id": "v1-L1",
+          "lyric_id": "MUS-S-0004-L01",
+          "phrase_id": "PHRASE-01",
+          "text": "Joy to the world! The Lord is come;"
+        },
+        {
+          "line_id": "v1-L2",
+          "lyric_id": "MUS-S-0004-L02",
+          "phrase_id": "PHRASE-01",
+          "text": "Let earth receive her King;"
+        },
+        {
+          "line_id": "v1-L3",
+          "lyric_id": "MUS-S-0004-L03",
+          "phrase_id": "PHRASE-02",
+          "text": "Let every heart prepare Him room,"
+        },
+        {
+          "line_id": "v1-L4",
+          "lyric_id": "MUS-S-0004-L04",
+          "phrase_id": "PHRASE-02",
+          "text": "And heaven and nature sing,"
+        },
+        {
+          "line_id": "v1-L5",
+          "lyric_id": "MUS-S-0004-L05",
+          "phrase_id": "PHRASE-03",
+          "text": "And heaven and nature sing,"
+        },
+        {
+          "line_id": "v1-L6",
+          "lyric_id": "MUS-S-0004-L06",
+          "phrase_id": "PHRASE-03",
+          "text": "And heaven, and heaven, and nature sing."
+        }
+      ]
+    },
+    {
+      "section_id": "v2",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "line_id": "v2-L1",
+          "lyric_id": "MUS-S-0004-L07",
+          "phrase_id": null,
+          "text": "Joy to the earth! The Savior reigns;"
+        },
+        {
+          "line_id": "v2-L2",
+          "lyric_id": "MUS-S-0004-L08",
+          "phrase_id": null,
+          "text": "Let men their songs employ;"
+        },
+        {
+          "line_id": "v2-L3",
+          "lyric_id": "MUS-S-0004-L09",
+          "phrase_id": null,
+          "text": "While fields and floods, rocks, hills and plains"
+        },
+        {
+          "line_id": "v2-L4",
+          "lyric_id": "MUS-S-0004-L10",
+          "phrase_id": null,
+          "text": "Repeat the sounding joy,"
+        },
+        {
+          "line_id": "v2-L5",
+          "lyric_id": "MUS-S-0004-L11",
+          "phrase_id": null,
+          "text": "Repeat the sounding joy,"
+        },
+        {
+          "line_id": "v2-L6",
+          "lyric_id": "MUS-S-0004-L12",
+          "phrase_id": null,
+          "text": "Repeat, repeat, the sounding joy."
+        }
+      ]
+    },
+    {
+      "section_id": "v3",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "line_id": "v3-L1",
+          "lyric_id": "MUS-S-0004-L13",
+          "phrase_id": null,
+          "text": "No more let sins and sorrows grow,"
+        },
+        {
+          "line_id": "v3-L2",
+          "lyric_id": "MUS-S-0004-L14",
+          "phrase_id": null,
+          "text": "Nor thorns infest the ground;"
+        },
+        {
+          "line_id": "v3-L3",
+          "lyric_id": "MUS-S-0004-L15",
+          "phrase_id": null,
+          "text": "He comes to make His blessings flow"
+        },
+        {
+          "line_id": "v3-L4",
+          "lyric_id": "MUS-S-0004-L16",
+          "phrase_id": null,
+          "text": "Far as the curse is found,"
+        },
+        {
+          "line_id": "v3-L5",
+          "lyric_id": "MUS-S-0004-L17",
+          "phrase_id": null,
+          "text": "Far as the curse is found,"
+        },
+        {
+          "line_id": "v3-L6",
+          "lyric_id": "MUS-S-0004-L18",
+          "phrase_id": null,
+          "text": "Far as, far as, the curse is found."
+        }
+      ]
+    },
+    {
+      "section_id": "v4",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "line_id": "v4-L1",
+          "lyric_id": "MUS-S-0004-L19",
+          "phrase_id": null,
+          "text": "He rules the world with truth and grace,"
+        },
+        {
+          "line_id": "v4-L2",
+          "lyric_id": "MUS-S-0004-L20",
+          "phrase_id": null,
+          "text": "And makes the nations prove"
+        },
+        {
+          "line_id": "v4-L3",
+          "lyric_id": "MUS-S-0004-L21",
+          "phrase_id": null,
+          "text": "The glories of His righteousness,"
+        },
+        {
+          "line_id": "v4-L4",
+          "lyric_id": "MUS-S-0004-L22",
+          "phrase_id": null,
+          "text": "And wonders of His love,"
+        },
+        {
+          "line_id": "v4-L5",
+          "lyric_id": "MUS-S-0004-L23",
+          "phrase_id": null,
+          "text": "And wonders of His love,"
+        },
+        {
+          "line_id": "v4-L6",
+          "lyric_id": "MUS-S-0004-L24",
+          "phrase_id": null,
+          "text": "And wonders, wonders, of His love."
+        }
+      ]
+    }
+  ],
+  "note": "中文译本：NOT_AVAILABLE（权利未确认）。需要中文时由人工提供已获授权文本或完成授权后再录入。"
+}

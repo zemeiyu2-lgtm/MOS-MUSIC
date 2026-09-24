@@ -1,0 +1,427 @@
+{
+  "ran_at": "2026-09-23T07:17:29.284Z",
+  "result": "PASS",
+  "passed": 82,
+  "failed": 0,
+  "engine": "mos-music-discernment-engine@1.0.0",
+  "parity_with": "mos-music-song-discernment@1.0.0",
+  "immutable_drift": [],
+  "song_rows": [
+    {
+      "id": "W01",
+      "week": "W01",
+      "song": "MUS-S-0001",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "direct_biblical_expression",
+          "act": "direct_biblical_expression",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "confirmed",
+          "act": "confirmed",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Core Candidate",
+          "act": "Core Candidate",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "A",
+          "act": "A",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "",
+          "act": "",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W02",
+      "week": "W02",
+      "song": "MUS-S-0002",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "theme_response",
+          "act": "theme_response",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "needs_human_review",
+          "act": "needs_human_review",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Needs Human Review",
+          "act": "Needs Human Review",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "B",
+          "act": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "F",
+          "act": "F",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W03",
+      "week": "W03",
+      "song": "MUS-S-0003",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "direct_biblical_expression",
+          "act": "direct_biblical_expression",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "confirmed",
+          "act": "confirmed",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Core Candidate",
+          "act": "Core Candidate",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "B",
+          "act": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "",
+          "act": "",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W03-AUX",
+      "week": "W03",
+      "song": "MUS-S-0005",
+      "role": "auxiliary",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "theme_response",
+          "act": "theme_response",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "needs_human_review",
+          "act": "needs_human_review",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Needs Human Review",
+          "act": "Needs Human Review",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "B",
+          "act": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "A,B,F",
+          "act": "A,B,F",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W04",
+      "week": "W04",
+      "song": "MUS-S-0001",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "direct_biblical_expression",
+          "act": "direct_biblical_expression",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "confirmed",
+          "act": "confirmed",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Core Candidate",
+          "act": "Core Candidate",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "A",
+          "act": "A",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "",
+          "act": "",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W04-C2",
+      "week": "W04",
+      "song": "MUS-S-0002",
+      "role": "candidate",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "theme_response",
+          "act": "theme_response",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "needs_human_review",
+          "act": "needs_human_review",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Needs Human Review",
+          "act": "Needs Human Review",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "B",
+          "act": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "F",
+          "act": "F",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W04-C3",
+      "week": "W04",
+      "song": "MUS-S-0003",
+      "role": "candidate",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "direct_biblical_expression",
+          "act": "direct_biblical_expression",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "confirmed",
+          "act": "confirmed",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Core Candidate",
+          "act": "Core Candidate",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "B",
+          "act": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "",
+          "act": "",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W04-C4",
+      "week": "W04",
+      "song": "MUS-S-0004",
+      "role": "candidate",
+      "checks": [
+        {
+          "field": "song_relation",
+          "exp": "not_yet_assessed",
+          "act": "not_yet_assessed",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "exp": "needs_human_review",
+          "act": "needs_human_review",
+          "pass": true
+        },
+        {
+          "field": "decision",
+          "exp": "Needs Human Review",
+          "act": "Needs Human Review",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "exp": "B",
+          "act": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "exp": "under_review",
+          "act": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_codes",
+          "exp": "",
+          "act": "",
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "unit_rows": [
+    {
+      "id": "U-W01",
+      "week": "W01",
+      "core_song": "MUS-S-0001",
+      "expected": "PASS",
+      "actual": "PASS",
+      "blocked": [],
+      "review": [],
+      "song_layer_untouched": true,
+      "pass": true
+    },
+    {
+      "id": "U-W02",
+      "week": "W02",
+      "core_song": "MUS-S-0002",
+      "expected": "BLOCK",
+      "actual": "BLOCK",
+      "blocked": [
+        "theological_risk_high"
+      ],
+      "review": [
+        "s7_verification"
+      ],
+      "song_layer_untouched": true,
+      "pass": true
+    },
+    {
+      "id": "U-W03",
+      "week": "W03",
+      "core_song": "MUS-S-0003",
+      "expected": "PASS",
+      "actual": "PASS",
+      "blocked": [],
+      "review": [],
+      "song_layer_untouched": true,
+      "pass": true
+    },
+    {
+      "id": "U-W04",
+      "week": "W04",
+      "core_song": "MUS-S-0001",
+      "expected": "REVIEW",
+      "actual": "REVIEW",
+      "blocked": [],
+      "review": [
+        "cross_week_reuse"
+      ],
+      "song_layer_untouched": true,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "Production 变化 9 项 / Program 变化 18 项（不判失败）",
+    "Calibration：共 32 条，未结案 19，已修 11，阻断级未结案 0"
+  ]
+}

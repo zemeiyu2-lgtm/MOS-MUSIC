@@ -1,0 +1,275 @@
+{
+  "taxonomy_version": "MUS-V-1.0.0",
+  "generated_at": "2026-09-23",
+  "model": "song-taxonomy",
+  "schema": "content/schema/taxonomy.schema.json",
+  "assignments_file": "content/taxonomy/assignments.json",
+  "purpose": "分类只是帮助用户找到歌曲，不是歌曲的身份。一首歌可以同时出现在多个分类中。",
+  "dimensions": [
+    {
+      "key": "theme",
+      "no": "01",
+      "label": "主题",
+      "question": "歌曲主要表达什么。",
+      "kind": "labels",
+      "multi": true,
+      "vocab_source": "content/candidates/index.json#themes（V2.0 候选层既有词表，未新增）",
+      "vocab": [
+        {
+          "key": "敬拜",
+          "label": "敬拜"
+        },
+        {
+          "key": "恩典",
+          "label": "恩典"
+        },
+        {
+          "key": "救恩",
+          "label": "救恩"
+        },
+        {
+          "key": "十字架",
+          "label": "十字架"
+        },
+        {
+          "key": "复活",
+          "label": "复活"
+        },
+        {
+          "key": "跟随",
+          "label": "跟随"
+        },
+        {
+          "key": "成圣",
+          "label": "成圣"
+        },
+        {
+          "key": "祷告",
+          "label": "祷告"
+        },
+        {
+          "key": "安慰",
+          "label": "安慰"
+        },
+        {
+          "key": "爱人",
+          "label": "爱人"
+        },
+        {
+          "key": "教会",
+          "label": "教会"
+        },
+        {
+          "key": "宣教",
+          "label": "宣教"
+        },
+        {
+          "key": "盼望",
+          "label": "盼望"
+        }
+      ],
+      "pending_extension_candidates": {
+        "note": "V3.x 产品方向示例词（敬拜 / 感谢 / 信靠 / 恩典 / 悔改 / 奉献 / 盼望 / 爱 / 圣洁 / 使命）尚未由内容层定案，因此**不得用于任何歌曲标注**。是否扩表须人工裁决（CI-0032）。",
+        "words": [
+          "感谢",
+          "信靠",
+          "悔改",
+          "奉献",
+          "爱",
+          "圣洁",
+          "使命"
+        ]
+      }
+    },
+    {
+      "key": "situation",
+      "no": "02",
+      "label": "处境",
+      "question": "人在什么情况下可能需要这首歌。",
+      "kind": "labels",
+      "multi": true,
+      "vocab_source": "曲库详情层既有 field：content/songs/**#formation.emotion（词取自记录本身，未新增含义）",
+      "vocab": [
+        {
+          "key": "感恩",
+          "label": "感恩"
+        },
+        {
+          "key": "被寻回的安息",
+          "label": "被寻回的安息"
+        },
+        {
+          "key": "信靠",
+          "label": "信靠"
+        },
+        {
+          "key": "忍耐",
+          "label": "忍耐"
+        },
+        {
+          "key": "盼望",
+          "label": "盼望"
+        },
+        {
+          "key": "降服",
+          "label": "降服"
+        },
+        {
+          "key": "决志",
+          "label": "决志"
+        },
+        {
+          "key": "喜乐",
+          "label": "喜乐"
+        },
+        {
+          "key": "惊奇",
+          "label": "惊奇"
+        }
+      ],
+      "pending_extension_candidates": {
+        "note": "V3.x 产品方向示例（喜乐 / 忧虑 / 等待 / 艰难 / 安慰 / 失落 / 感恩 / 重献 / 新开始）中，尚未有内容层来源的词一律不得使用；扩表须人工裁决（CI-0032）。",
+        "words": [
+          "忧虑",
+          "等待",
+          "艰难",
+          "失落",
+          "重献",
+          "新开始"
+        ]
+      },
+      "coverage_note": "只有曲库详情层（10 首）的记录里有 formation.emotion；候选层 100 首没有该字段，因此候选歌的处境一律留空并标明原因（不是遗漏）。"
+    },
+    {
+      "key": "scene",
+      "no": "03",
+      "label": "场景",
+      "question": "在哪里使用。",
+      "kind": "labels",
+      "multi": true,
+      "vocab_source": "content/candidates/index.json#scenes ∪ 曲库详情层 content/songs/**#scenes（跨代）",
+      "vocab": [
+        {
+          "key": "个人",
+          "label": "个人"
+        },
+        {
+          "key": "家庭",
+          "label": "家庭"
+        },
+        {
+          "key": "小组",
+          "label": "小组"
+        },
+        {
+          "key": "主日",
+          "label": "主日"
+        },
+        {
+          "key": "儿童/青少年",
+          "label": "儿童/青少年"
+        },
+        {
+          "key": "门训",
+          "label": "门训"
+        },
+        {
+          "key": "使命",
+          "label": "使命"
+        },
+        {
+          "key": "跨代",
+          "label": "跨代"
+        }
+      ],
+      "coverage_note": "候选层的 front_tags.scene 只有 4 个值在用（个人 / 家庭 / 小组 / 主日）；跨代来自曲库详情层。分类词表里其余条目是词表条目，不等于已有歌曲落在其中。"
+    },
+    {
+      "key": "music",
+      "no": "04",
+      "label": "音乐",
+      "question": "歌曲本身的音乐属性。",
+      "kind": "facets",
+      "multi": false,
+      "facets": [
+        {
+          "key": "difficulty",
+          "label": "难度",
+          "type": "scale_1_5",
+          "source": "content/songs/**#discipleship.difficulty"
+        },
+        {
+          "key": "tempo_bpm",
+          "label": "速度",
+          "type": "number",
+          "source": "content/song-units/**#score.tempo_bpm"
+        },
+        {
+          "key": "time_signature",
+          "label": "拍号",
+          "type": "string",
+          "source": "content/song-units/**#score.time_signature"
+        },
+        {
+          "key": "range",
+          "label": "音域",
+          "type": "object",
+          "source": "content/song-units/**#score.range"
+        },
+        {
+          "key": "suitable_for",
+          "label": "适合",
+          "type": "list",
+          "values": [
+            "视唱",
+            "群体歌唱",
+            "个人练习"
+          ],
+          "source": null
+        }
+      ],
+      "coverage_note": "难度只有详情层 10 首有值；拍号 / 速度 / 音域要等简谱定稿（当前 0001 为 DRAFT）；「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空并标明「尚未标注」。"
+    }
+  ],
+  "principles": [
+    "分类只是帮助用户找到歌曲，不是歌曲的身份。",
+    "一首歌可以同时出现在多个分类中：每个维度都是集合，不是单选字段。",
+    "不做推荐、不做排序、不做「最佳歌曲」，不因分类产生任何评分。",
+    "分类不绑定周次 / 课程 / 讲道：歌曲自身可以独立成立（ADR-0018）。",
+    "没有内容层来源的分类**一律留空**并如实说明，不得为了界面好看而编造标签。"
+  ],
+  "front_rules": {
+    "shows": [
+      "主题",
+      "处境",
+      "场景",
+      "音乐"
+    ],
+    "hides": [
+      "calibration",
+      "source_required",
+      "governance",
+      "tier",
+      "review_status",
+      "W01",
+      "W02"
+    ],
+    "note": "前台只显示四维分类；后台术语（含 W01 / W02 之类周次码）只出现在后台页面。"
+  },
+  "boundaries": [
+    "分类层不写入 Song Core Record（content/songs/** 逐字节不变）",
+    "分类层不写入单曲单元记录（content/song-units/** 不变）",
+    "分类不是研究裁决，不构成辨识结论，不改变任何既有 tier / review_status",
+    "词表只能来自内容层；新增词必须来自人工裁决，程序不得自行扩充"
+  ],
+  "counts": {
+    "dimensions": 4,
+    "songs_total": 100,
+    "songs_with_theme": 100,
+    "songs_with_situation": 5,
+    "songs_with_scene": 100,
+    "songs_with_music": 10,
+    "multi_membership_songs": 10
+  },
+  "note": "V1.1 取消复杂分类体系，前台只用四维：主题 / 处境 / 场景 / 音乐。四维是**检索入口**，不是歌曲身份。分词结果见 assignments.json（全部由 tools/taxonomy.js 从既有记录派生，逐条带 derived_from）。"
+}

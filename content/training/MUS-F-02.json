@@ -1,0 +1,18 @@
+{
+  "form_id": "MUS-F-02",
+  "code": "MUSIC-F02",
+  "title": "音乐门训设计",
+  "purpose": "",
+  "used_by_training": [
+    "MUS-T-L2",
+    "MUS-T-L3"
+  ],
+  "fields": [],
+  "output_formats": [
+    "screen",
+    "print",
+    "csv"
+  ],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

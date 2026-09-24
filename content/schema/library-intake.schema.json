@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/library-intake.schema.json",
+  "title": "MOS-MUSIC Music Library Intake Record",
+  "description": "曲库入库登记记录（V0.5 扩库）。本记录只承载 library_metadata：身份、来源、资源现状、清单初步主题与建议用途方向。清单的初步主题与建议用途方向只是候选线索，属于 library_metadata，绝不是 discernment_result；不得由它们产生 Core Candidate / direct / theme_response / PASS / BLOCK / REVIEW。辨识结论一律由已冻结技能重新产生。本记录不托管任何歌词文本、歌谱、音频。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "song_id", "candidate_no", "candidate_song_id", "title_zh", "title_en", "alternate_titles",
+    "author", "composer", "translator", "source",
+    "initial_theme", "initial_theme_id", "suggested_function",
+    "work_status", "copyright_status", "copyright_status_mapped",
+    "resources", "lyric_status", "score_status", "audio_status",
+    "candidate_note", "library_version", "created_at", "metadata_only_note"
+  ],
+  "properties": {
+    "song_id": { "type": "string", "pattern": "^MUS-S-[0-9]{4}$" },
+    "candidate_no": { "type": ["integer", "null"] },
+    "candidate_song_id": {
+      "type": ["string", "null"],
+      "pattern": "^(S-[0-9]{4})?$",
+      "description": "清单自带的候选编号，用于与分配到的 song_id 交叉核对；工具分配的末四位必须与之一致。"
+    },
+    "candidate_note": {
+      "type": ["string", "null"],
+      "maxLength": 300,
+      "description": "清单自带的注记（原样保留，如「具体中文译词/编曲需核」）。这是待办事项，不是辨识结论；不得因它产生任何判定。"
+    },
+    "lyric_status": { "type": "string", "enum": ["NOT_IMPORTED"] },
+    "score_status": { "type": "string", "enum": ["NOT_IMPORTED"] },
+    "audio_status": { "type": "string", "enum": ["NOT_IMPORTED"] },
+    "title_zh": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "title_en": { "type": ["string", "null"], "maxLength": 200 },
+    "alternate_titles": {
+      "type": "array",
+      "maxItems": 8,
+      "items": { "type": "string", "maxLength": 200 }
+    },
+    "author": { "type": ["string", "null"], "maxLength": 200 },
+    "composer": { "type": ["string", "null"], "maxLength": 200 },
+    "translator": { "type": ["string", "null"], "maxLength": 200 },
+    "source": { "type": ["string", "null"], "maxLength": 300 },
+    "initial_theme": { "type": ["string", "null"], "maxLength": 120 },
+    "initial_theme_id": { "type": ["string", "null"], "pattern": "^(TH-[0-9]{2})?$" },
+    "suggested_function": { "type": ["string", "null"], "maxLength": 120 },
+    "work_status": {
+      "type": "string",
+      "enum": ["metadata_only", "resource_pending", "resource_ready", "retired"]
+    },
+    "copyright_status": {
+      "type": "string",
+      "enum": ["PUBLIC_DOMAIN", "LICENSED", "USER_PROVIDED", "SOURCE_REQUIRED", "UNKNOWN"]
+    },
+    "copyright_status_mapped": {
+      "type": "string",
+      "enum": ["unknown", "public_domain", "copyrighted", "licensed", "permission_granted"]
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lyrics", "score", "lead_vocal", "accompaniment"],
+      "description": "本阶段不要求任何资源，四项一律为 NOT_IMPORTED；不得抓取、复制或生成没有明确来源的歌词、歌谱、录音。",
+      "properties": {
+        "lyrics": { "type": "string", "enum": ["NOT_IMPORTED"] },
+        "score": { "type": "string", "enum": ["NOT_IMPORTED"] },
+        "lead_vocal": { "type": "string", "enum": ["NOT_IMPORTED"] },
+        "accompaniment": { "type": "string", "enum": ["NOT_IMPORTED"] }
+      }
+    },
+    "library_version": { "type": "string", "pattern": "^MUS-V-[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "created_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}" },
+    "metadata_only_note": { "type": "string", "minLength": 10, "maxLength": 400 }
+  }
+}

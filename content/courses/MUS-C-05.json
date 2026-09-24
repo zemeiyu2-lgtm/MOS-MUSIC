@@ -1,0 +1,84 @@
+{
+  "course_id": "MUS-C-05",
+  "unit_no": 5,
+  "group": "认识基督",
+  "title": "道成肉身",
+  "map_id": "MAP-C05",
+  "theme_id": "TH-05",
+  "lq_ids": [
+    "LQ01"
+  ],
+  "core_passage": "约14:1–6",
+  "bible_reference_ids": [],
+  "core_truth": "",
+  "theology": "",
+  "core_song": null,
+  "support_songs": [],
+  "sing_together": "",
+  "think": [],
+  "live": [],
+  "transmit": "",
+  "seven_steps": {
+    "S1_read": {
+      "label": "读",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S2_understand": {
+      "label": "明",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S3_sing": {
+      "label": "唱",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S4_remember": {
+      "label": "记",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S5_feel": {
+      "label": "感",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S6_act": {
+      "label": "行",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S7_transmit": {
+      "label": "传",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    }
+  },
+  "contexts": [
+    "CTX-SUN",
+    "CTX-GRP"
+  ],
+  "sermon_week_ref": [
+    "W51",
+    "W12"
+  ],
+  "status": "shell",
+  "provenance": {
+    "source_system": "manual",
+    "source_id": "MOS-MUSIC-24COURSE-LOCKED",
+    "source_field": "title",
+    "copy_policy": "authored",
+    "note": "24 课主题来自 V1.0 规格书已定案清单，本生成器只做结构骨架。"
+  },
+  "version": "MUS-V-0.1.0",
+  "created_at": null,
+  "updated_at": null
+}

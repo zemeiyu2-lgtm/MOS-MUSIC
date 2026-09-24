@@ -1,0 +1,96 @@
+{
+  "content_version": "MUS-V-1.0.0",
+  "generated_at": "2026-09-23",
+  "model": "song-content",
+  "schema": "content/schema/song-content.schema.json",
+  "relation_to_song_core": "independent_layer",
+  "relation_note": "歌曲内容层只按 song_id 挂在歌曲上；不引用周次 / 课程。周次与课程可以在下游引用它，反向绑定禁止。",
+  "field_keys": [
+    "meaning",
+    "scripture",
+    "background",
+    "reflection",
+    "practice",
+    "prayer"
+  ],
+  "field_labels": {
+    "meaning": "这首歌在说什么",
+    "scripture": "经文根基",
+    "background": "背景",
+    "reflection": "默想",
+    "practice": "生命实践",
+    "prayer": "祷告"
+  },
+  "status_vocabulary": {
+    "PROVIDED": "该字段有真实内容（逐条带 derived_from）",
+    "NOT_AVAILABLE": "该字段尚未提供 —— 必须在界面上如实显示，不得为补满结构而虚构"
+  },
+  "counts": {
+    "songs": 10,
+    "by_field_provided": {
+      "meaning": 0,
+      "scripture": 10,
+      "background": 0,
+      "reflection": 0,
+      "practice": 2,
+      "prayer": 1
+    },
+    "by_field_absent": {
+      "meaning": 10,
+      "scripture": 0,
+      "background": 10,
+      "reflection": 10,
+      "practice": 8,
+      "prayer": 9
+    }
+  },
+  "songs": [
+    {
+      "song_id": "MUS-S-0001",
+      "file": "content/song-content/MUS-S-0001.json"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "file": "content/song-content/MUS-S-0002.json"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "file": "content/song-content/MUS-S-0003.json"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "file": "content/song-content/MUS-S-0004.json"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "file": "content/song-content/MUS-S-0005.json"
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "file": "content/song-content/MUS-S-0006.json"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "file": "content/song-content/MUS-S-0007.json"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "file": "content/song-content/MUS-S-0008.json"
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "file": "content/song-content/MUS-S-0009.json"
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "file": "content/song-content/MUS-S-0010.json"
+    }
+  ],
+  "boundaries": [
+    "内容层属于歌曲本身，不绑定周次 / 课程 / 讲道",
+    "缺失一律如实显示为「尚未提供」",
+    "不写入 Song Core Record，不改动任何冻结研究数据",
+    "不产生评分 / 排名 / 推荐"
+  ],
+  "note": "V3.x §四：歌曲内容层保持 meaning / scripture / background / reflection / practice / prayer 六项；没有来源的项留空并写明原因。"
+}

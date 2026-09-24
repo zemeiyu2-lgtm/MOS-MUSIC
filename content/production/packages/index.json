@@ -1,0 +1,57 @@
+{
+  "packages_version": "MUS-V-1.0.0",
+  "generated_at": "2026-09-22",
+  "kind": "song-production-packages",
+  "standard": "MOS-SONG-PRODUCTION-WORKSHEET-V1.0（docs/standards/）",
+  "base_dir": "content/production/packages",
+  "task": "SONG PRODUCTION PILOT 10",
+  "slots": ["metadata", "lyrics", "score", "audio", "timeline", "teaching", "content", "rights", "worksheet"],
+  "slot_status_vocabulary": ["PROVIDED", "DRAFT", "NOT_AVAILABLE"],
+  "sample": {
+    "note": "样板只是生产顺序选择（任务书 §五），不改变任何歌曲的既有研究状态、辨识结果与登记层记录。",
+    "order": [
+      { "order": 1, "song_id": "MUS-S-0001", "role": "A", "why": "主样板：英文公版词 / 3/4 弱起 / 音域窄 / 结构规整 —— 先把最简单的一首完整走通。" },
+      { "order": 2, "song_id": "MUS-S-0004", "role": "B", "why": "节奏对比：2/4、整八度级进下行、分节短促；节期常用。" },
+      { "order": 3, "song_id": "MUS-S-0005", "role": "C", "why": "结构变化：主歌 + 重复副歌、4/4、中等音域跨度。" },
+      { "order": 4, "song_id": "MUS-S-0002", "role": "D", "why": "音域与长乐句：每节四大句、中等偏难。" },
+      { "order": 5, "song_id": "MUS-S-0003", "role": "E", "why": "3/4 稳进、句式短、教会年历常用。" }
+    ],
+    "coverage": {
+      "english_lyrics": "全部 5 首可生产（公版英文原文）",
+      "chinese_lyrics": "0 首 —— 常见中文译本各有版权方，本仓不托管（详见各包 rights.json；CI-0028）",
+      "simple": "MUS-S-0001 / MUS-S-0003",
+      "medium": "MUS-S-0005 / MUS-S-0004",
+      "harder": "MUS-S-0002（长乐句、音域变化）",
+      "range_variation": "MUS-S-0002 / MUS-S-0005",
+      "structure_variation": "MUS-S-0005（主歌 + 重复副歌）",
+      "repeated_chorus": "MUS-S-0005",
+      "rhythm_variety": "3/4（0001 / 0003）、2/4（0004）、4/4（0005）、4 大句长乐句（0002）",
+      "honest_gap": "中文歌样板当前不可生产 —— 阻断在译本权利，不在生产链"
+    },
+    "blocked": [
+      { "song_id": "MUS-S-0006", "reason": "作品级法律状态未判定（ADR-0012：不得据清单推定）；一切资源 NOT_AVAILABLE。" },
+      { "song_id": "MUS-S-0007", "reason": "作品级法律状态未判定；一切资源 NOT_AVAILABLE。" },
+      { "song_id": "MUS-S-0008", "reason": "作品级法律状态未判定；一切资源 NOT_AVAILABLE。" },
+      { "song_id": "MUS-S-0009", "reason": "作品级法律状态未判定，且详情记录明示通行英译与改编（Stuart K. Hine）可能仍在版权期内；一切资源 NOT_AVAILABLE。" },
+      { "song_id": "MUS-S-0010", "reason": "作品级法律状态未判定（1923 年作品在不同法域状态不一致，记录不作判定）；一切资源 NOT_AVAILABLE。" }
+    ]
+  },
+  "counts": {
+    "total": 10,
+    "in_sample_order": 5,
+    "blocked": 5,
+    "lyrics_provided": 5,
+    "score_draft": 1,
+    "score_not_started": 4,
+    "audio_available": 0
+  },
+  "boundaries": [
+    "不虚构歌词 / 简谱 / 音频 / 真人 / 版权 / 时间轴 / 教学内容；缺什么就标 NOT_AVAILABLE。",
+    "不得用 PDF 截图冒充结构化简谱；简谱必须进入 score.json。",
+    "简谱 DRAFT（转写未听校）不得计入等级派生；人工校对通过并置 PROVIDED 后由 app/song-unit.js 自动派生等级。",
+    "禁 AI 歌声冒充真人示唱；伴奏只做钢琴。",
+    "不改 Frozen Skill / W01–W04 / 100 首候选库 / 既有研究裁决；音乐前台不重新绑定周次 / 课程 / 讲章。",
+    "完成本批后停止：不扩库到 100 首、不自动升层、不自动生成示唱 / 版权 / 真人教唱、不生产 W05。"
+  ],
+  "note": "本索引是生产工作包的清单层；权威载荷在各包文件内。等级与工作单状态一律由工具派生（tools/song-units.js、tools/song-worksheet.js），不得手工宣布完成。"
+}

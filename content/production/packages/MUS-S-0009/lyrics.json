@@ -1,0 +1,23 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0009",
+  "unit_id": "MUS-SU-0009",
+  "slot": "lyrics",
+  "status": "NOT_AVAILABLE",
+  "language": null,
+  "version_note": null,
+  "sections": [],
+  "reason": "作品级法律状态未判定（ADR-0012）；在完成逐首认定或取得授权之前，不托管任何语言的歌词文本。",
+  "proofread": {
+    "status": "PENDING",
+    "checked_by": null,
+    "date": null,
+    "note": null
+  },
+  "rights": {
+    "copyright_status": "unknown",
+    "basis": null,
+    "derived_from": "content/songs/MUS-S-0009.json#copyright.copyright_status"
+  },
+  "note": "中文译本一律 NOT_AVAILABLE（译本权利未确认，CI-0028）。"
+}

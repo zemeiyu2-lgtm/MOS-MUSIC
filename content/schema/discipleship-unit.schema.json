@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/discipleship-unit.schema.json",
+  "title": "MOS-MUSIC Discipleship Unit",
+  "description": "完整音乐门训单元。验证核心问题：这首歌/这一周正在形成怎样的门徒？唱 → 记 → 感 → 行 → 传，而不是 唱 → 结束。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "unit_id", "annual_id", "mos_week", "bible_passage", "core_truth",
+    "music_theme", "core_song", "music_function", "seven_step_method",
+    "life_practice", "transmission_task", "expected_formation"
+  ],
+  "properties": {
+    "unit_id": { "$ref": "common.schema.json#/$defs/unitId" },
+    "annual_id": { "type": "string", "pattern": "^MOS-MUSIC-ANNUAL-[0-9]{4}$" },
+    "mos_week": { "$ref": "common.schema.json#/$defs/mosWeekId" },
+    "bible_passage": { "$ref": "common.schema.json#/$defs/passageRef" },
+    "core_truth": { "type": "string", "minLength": 10, "maxLength": 300 },
+    "theology": { "type": "string", "minLength": 10, "maxLength": 400 },
+    "music_theme": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": { "$ref": "common.schema.json#/$defs/musicUnitId" }
+    },
+    "core_song": { "$ref": "common.schema.json#/$defs/songId" },
+    "song_selection_rationale": {
+      "type": ["string", "null"],
+      "maxLength": 400,
+      "description": "为什么这首歌能表达本段经文真理（顺序：经文真理 → 神学 → 主题 → 功能 → 歌曲）。"
+    },
+    "music_function": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary"],
+      "properties": {
+        "primary": { "$ref": "common.schema.json#/$defs/musicFunction" },
+        "secondary": {
+          "type": "array",
+          "maxItems": 3,
+          "items": { "$ref": "common.schema.json#/$defs/musicFunction" }
+        }
+      }
+    },
+    "seven_step_method": { "$ref": "common.schema.json#/$defs/sevenSteps" },
+    "life_practice": { "type": "string", "minLength": 15, "maxLength": 300 },
+    "transmission_task": { "type": "string", "minLength": 15, "maxLength": 300 },
+    "expected_formation": { "type": "string", "minLength": 15, "maxLength": 400 },
+    "feedback": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "§24 反馈聚焦：从七项观察维度中选择本周重点观察项。",
+      "properties": {
+        "focus": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "enum": ["理解", "参与", "记住", "情感", "实践", "群体", "传递"]
+          }
+        },
+        "question": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    },
+    "review_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Phase 2A.1 校准：神学审查门。song_relation 记录核心歌与经文的关系等级；practice_conversion / transmission_conversion 记录两个转换层在本单元如何落地。",
+      "properties": {
+        "theological_review": {
+          "type": "string",
+          "enum": ["confirmed", "needs_human_review", "not_yet_validated"]
+        },
+        "song_relation": {
+          "type": "string",
+          "enum": ["direct_biblical_expression", "theme_response", "narrative_response", "not_yet_assessed"],
+          "description": "核心歌与本周经文的关系。direct_biblical_expression=经文直译/逐节对应；theme_response=主题级呼应（非经文直译）；narrative_response=叙事场景呼应。不得把 theme_response 升级表述为 direct。"
+        },
+        "theological_risk": {
+          "type": ["string", "null"],
+          "maxLength": 300,
+          "description": "已识别的神学风险（如道德主义、以安静取代边界突破等）。无风险写 null。"
+        },
+        "practice_conversion": {
+          "type": ["string", "null"],
+          "maxLength": 300,
+          "description": "实践转换层（S6）落地说明：行动对象/内容/时间/方式是否明确具体。"
+        },
+        "transmission_conversion": {
+          "type": ["string", "null"],
+          "maxLength": 300,
+          "description": "传递转换层（S7）落地说明：把真理/实践/七步法传给谁、如何验证。"
+        },
+        "note": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    },
+    "provenance": { "$ref": "common.schema.json#/$defs/provenance" }
+  }
+}

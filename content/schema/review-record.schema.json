@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review-record.schema.json",
+  "title": "MOS-MUSIC Production Review Record（人工审查记录层 · V1.1-A）",
+  "description": "人工裁决记录：ACCEPT / REVISE / HOLD / REJECT。记录层只留档，不反写 Frozen Skill、不修改歌曲裁决、不改变 W01–W04 历史结果。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "target_kind",
+    "target_id",
+    "decision",
+    "reason",
+    "evidence",
+    "reviewer",
+    "timestamp"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^MUS-RR-[0-9]{4}$",
+      "description": "审查记录 ID：MUS-RR-NNNN。"
+    },
+    "target_kind": {
+      "type": "string",
+      "enum": ["song_anchor", "week_unit", "promotion_trial", "resource", "other"],
+      "description": "裁决对象类型。"
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 3,
+      "description": "裁决对象 ID（如 MUS-S-0006 / 2027-W04）。"
+    },
+    "decision": {
+      "type": "string",
+      "enum": ["ACCEPT", "REVISE", "HOLD", "REJECT"],
+      "description": "人工决定。"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 10,
+      "description": "裁决理由（不得为空或占位）。"
+    },
+    "evidence": {
+      "type": ["string", "null"],
+      "description": "依据（文件 / 记录 / 引文）；无则为 null。"
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 2,
+      "description": "审核人（人工，非系统）。"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "审核时间（ISO 8601）。"
+    },
+    "follow_up": {
+      "type": ["string", "null"],
+      "description": "后续动作说明；无则为 null。"
+    }
+  }
+}

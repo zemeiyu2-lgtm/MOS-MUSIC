@@ -1,0 +1,22 @@
+{
+  "training_id": "MUS-T-L1",
+  "level": 1,
+  "title": "会用",
+  "outcome": "受训者能够独立选择一首合用的歌曲，并按七步法完整走一遍。",
+  "method": [
+    "学",
+    "看",
+    "做",
+    "反馈",
+    "再做",
+    "教别人"
+  ],
+  "uses_forms": [
+    "MUS-F-01"
+  ],
+  "uses_course_ids": [],
+  "prerequisite": null,
+  "sessions": [],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

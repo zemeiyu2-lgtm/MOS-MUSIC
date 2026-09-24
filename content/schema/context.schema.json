@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/context.schema.json",
+  "title": "MOS-MUSIC Context (使用处境)",
+  "description": "§11 / §33 的 Context 实体。处境决定同一首音乐单元在家门、小组、主日与宣教现场如何被使用。七个处境来自已定案清单，不新增。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["context_id", "code", "name", "entry_module", "status"],
+  "properties": {
+    "context_id": { "$ref": "common.schema.json#/$defs/contextId" },
+    "code": { "type": "string", "enum": ["SUN", "GRP", "FAM", "PER", "CHD", "GEN", "MIS"] },
+    "name": { "type": "string", "enum": ["主日", "小组", "家庭", "个人", "儿童", "跨代", "宣教"] },
+    "entry_module": {
+      "type": "string",
+      "enum": ["MODULE 01", "MODULE 05", "MODULE 06", "MODULE 07", "MODULE 08"],
+      "description": "该处境从哪个模块进入。主日/教会层面走 MODULE 08，家庭走 06，小组走 07，个人走 05。"
+    },
+    "leader_role": { "type": ["string", "null"], "maxLength": 120, "description": "该处境的带领者角色。Phase 1 为空壳。" },
+    "flow_steps": {
+      "type": "array",
+      "items": { "type": "string", "maxLength": 40 },
+      "description": "该处境的流程步骤。家庭与小组流程见 content/templates/。"
+    },
+    "time_budget_minutes": { "type": ["integer", "null"], "minimum": 1, "maximum": 180 },
+    "notes": { "type": ["string", "null"], "maxLength": 600 },
+    "status": { "type": "string", "enum": ["shell", "draft", "active", "archived"] },
+    "version": { "$ref": "common.schema.json#/$defs/version" }
+  }
+}

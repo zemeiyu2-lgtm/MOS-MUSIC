@@ -1,0 +1,14 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0009",
+  "slot": "content",
+  "status": "PROVIDED",
+  "unit_ref": "content/song-units/MUS-SU-0009.json",
+  "sections": [
+    "content_understanding",
+    "life_practice",
+    "transmission"
+  ],
+  "rule": "内容理解 / 生命实践 / 传唱的权威文本在单元记录（可追溯 derived_from）；本包不重复托管，防止两处不一致。不绑定周次 / 课程 / 讲章。",
+  "note": "单元记录中相应文本为 null 时，即如实为「尚未撰写」。"
+}

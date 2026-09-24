@@ -1,0 +1,131 @@
+{
+  "coach_version": "MUS-V-1.0.0",
+  "generated_at": "2026-09-23",
+  "model": "singing-coach",
+  "schema": "content/schema/coach.schema.json",
+  "module_key": "coach",
+  "product_name": "MOS Singing Coach",
+  "independence": {
+    "statement": "MOS Singing Coach 与 MOS Formation（门训系统）**完全独立**：它是音乐学习与歌唱训练模块，不是门训模块的一部分。",
+    "does_not_read": [
+      "52 周课程完成度",
+      "门训积分 / 进度记录（user_progress）",
+      "门训成绩 / 四级学习状态",
+      "周次（WNN）与课程（MUS-C-NN）数据",
+      "讲章 / 释经与辨识结论"
+    ],
+    "links_to": [
+      "歌曲自身的资源（歌词 / 简谱 / 示唱 / 钢琴 / 表达参考）"
+    ],
+    "note": "Coach 只把「音乐表现」当作训练对象；属灵成长由门训系统负责，两者互不评分、互不推导。"
+  },
+  "capabilities": [
+    { "key": "pitch", "label": "音高", "goal": "把音唱准，能听出自己偏高还是偏低。", "observable": ["与参考音的偏差走向", "同句内音准稳定性", "起音是否准确"], "not_judged": ["属灵状态", "天赋高低"] },
+    { "key": "rhythm", "label": "节奏", "goal": "节拍不拖不抢，与拍号一致。", "observable": ["与节拍的相对位置", "长音时值是否够", "切分与附点是否清楚"], "not_judged": ["音乐风格优劣"] },
+    { "key": "sight_singing", "label": "视唱", "goal": "看谱能唱：调 / 拍号 / 起音 / 音程走向。", "observable": ["不看示范时的准确率", "起音是否正确", "音程跳进是否到位"], "not_judged": ["唱得快慢好坏排名"] },
+    { "key": "breath", "label": "气息", "goal": "在正确的位置换气，句子不被气断掉。", "observable": ["换气位置是否落在标记处", "句尾是否有气", "是否在句中抢气"], "not_judged": ["气息长短的优劣比较"] },
+    { "key": "sustain", "label": "长音", "goal": "长音保持稳定，不抖不掉。", "observable": ["长音末端的音高走向", "音量是否自然收束", "是否越唱越紧"], "not_judged": ["音色是否符合某种审美"] },
+    { "key": "diction", "label": "咬字", "goal": "字唱清楚，词能听懂。", "observable": ["字头 / 韵母是否完整", "句尾字是否被吞掉", "连读是否含糊"], "not_judged": ["口音方言的优劣"] },
+    { "key": "range", "label": "音域", "goal": "知道自己舒服的音区，不硬撑。", "observable": ["自选调是否合适", "高音是否用挤的方式上去", "低音是否塌"], "not_judged": ["音域宽窄的排名"] },
+    { "key": "phrasing", "label": "分句", "goal": "把一句唱成一句，不碎断。", "observable": ["句子的起—行—收是否完整", "句间是否有呼吸", "是否按分句标记处理"], "not_judged": ["表达风格的好坏"] },
+    { "key": "dynamics", "label": "力度", "goal": "该轻该重的层次听得出来。", "observable": ["力度层次是否出现", "是否全程同一音量", "渐强渐弱是否自然"], "not_judged": ["情绪是否「够感动」"] },
+    { "key": "expression", "label": "表达", "goal": "按**人工给定的表达参考**处理一句话，而不是自己发明。", "observable": ["是否落实了表达参考里的力度 / 强调 / 高潮 / 收束", "是否与示范在同句可比"], "not_judged": ["属灵感情", "敬虔程度", "是否「更爱主」"] }
+  ],
+  "training_item_model": {
+    "id_pattern": "MUS-CC-<CAP>-NN",
+    "fields": ["item_id", "capability", "title", "goal", "practice", "reference", "feedback_keys", "item_status"],
+    "practice_modes": [
+      { "key": "listen", "label": "听", "note": "先听参考，不唱。" },
+      { "key": "repeat", "label": "跟", "note": "一句一句跟。" },
+      { "key": "sight", "label": "视唱", "note": "只看谱与起音，不看示范。" },
+      { "key": "record", "label": "录", "note": "录下自己的声音，回听对照（本地保存）。" }
+    ],
+    "reference_kinds": [
+      { "key": "score", "label": "简谱" },
+      { "key": "demo", "label": "真人示唱" },
+      { "key": "expression_reference", "label": "人工表达参考" }
+    ],
+    "item_status_vocabulary": {
+      "MODEL_ONLY": "训练项目模型已定义，但**尚未**作为课程内容生产（本轮只做基础层）",
+      "PRODUCED": "训练项目已实际制作（需要真人／参照资源，本轮未发生）"
+    },
+    "starter_items": [
+      { "item_id": "MUS-CC-PIT-01", "capability": "pitch", "title": "起音对准", "goal": "听到起音后立刻对准，不滑上去。", "practice": ["listen", "repeat"], "reference": ["score", "demo"], "feedback_keys": ["onset_accuracy", "approach_direction"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-RHY-01", "capability": "rhythm", "title": "长音时值数满", "goal": "长音唱满拍数，不提前收。", "practice": ["listen", "repeat"], "reference": ["score"], "feedback_keys": ["duration_shortfall", "beat_alignment"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-SIG-01", "capability": "sight_singing", "title": "不看示范起唱", "goal": "只看调与起音，独立唱出一句。", "practice": ["sight", "record"], "reference": ["score"], "feedback_keys": ["interval_direction", "pitch_drift"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-BRE-01", "capability": "breath", "title": "换气落点", "goal": "只在标记处换气。", "practice": ["repeat", "record"], "reference": ["score", "expression_reference"], "feedback_keys": ["breath_position", "phrase_break"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-SUS-01", "capability": "sustain", "title": "长音末端保持", "goal": "长音最后一拍不掉。", "practice": ["repeat", "record"], "reference": ["score", "demo"], "feedback_keys": ["tail_pitch_drop", "tension_growth"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-DIC-01", "capability": "diction", "title": "句尾字唱完整", "goal": "句尾不被吞掉。", "practice": ["repeat", "record"], "reference": ["score", "demo"], "feedback_keys": ["final_consonant", "vowel_shape"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-RAN-01", "capability": "range", "title": "找到舒服的调", "goal": "能唱而不是硬撑。", "practice": ["listen", "repeat"], "reference": ["score", "demo"], "feedback_keys": ["key_fit", "strain_signs"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-PHR-01", "capability": "phrasing", "title": "一句唱成一句", "goal": "句内不断碎。", "practice": ["repeat", "record"], "reference": ["score", "expression_reference"], "feedback_keys": ["phrase_shape", "break_positions"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-DYN-01", "capability": "dynamics", "title": "层次出现", "goal": "有轻有重，全程不是一个音量。", "practice": ["repeat", "record"], "reference": ["expression_reference"], "feedback_keys": ["dynamic_range_observed", "crescendo_shape"], "item_status": "MODEL_ONLY" },
+      { "item_id": "MUS-CC-EXP-01", "capability": "expression", "title": "落实一句表达参考", "goal": "按人工给出的力度 / 强调 / 收束处理一句。", "practice": ["repeat", "record"], "reference": ["expression_reference", "demo"], "feedback_keys": ["reference_match", "climax_placement", "release_timing"], "item_status": "MODEL_ONLY" }
+    ]
+  },
+  "feedback_structure": {
+    "shape": {
+      "target": "这一句要做什么（来自乐谱 / 示范 / 人工表达参考）",
+      "observed": "实际听到什么（声学指标 + 与参考的差值）",
+      "descriptor": "用语言描述，不换算成总分",
+      "next_action": "下一步可做的一件小事",
+      "retry_prompt": "再唱一次"
+    },
+    "allowed_basis": ["乐谱", "优秀真人示范", "教师标注", "声学指标（音高 / 时值 / 能量）"],
+    "forbidden": [
+      "只输出一个分数（例如「92 分」）而不给描述",
+      "排行榜 / 比赛 / 名次",
+      "属灵评分 / 敬虔程度 / 属灵状态自动判断",
+      "用 AI 代替示范与教师做音乐表达决定"
+    ],
+    "example": {
+      "target": "第 2 句：起音对准，句尾不收早",
+      "observed": "起音偏低约 20 音分，第 3 音向下偏；长音最后一拍音高下降",
+      "descriptor": "这一句音高基本稳定；第三个音稍低；长音最后一拍容易下降。",
+      "next_action": "只练第 2 句的第三个音与末拍长音。",
+      "retry_prompt": "再唱一次"
+    }
+  },
+  "session_model": {
+    "id_pattern": "MUS-CS-<YYYYMMDD>-<NN>",
+    "store": "客户端本地练习记录库 coach_sessions（本地优先，不上传）",
+    "fields": ["session_id", "item_id", "capability", "song_id", "created_at", "duration_seconds", "practice_mode", "self_note", "audio_ref", "feedback", "dirty"],
+    "notes": [
+      "记录只描述练习事实（练了什么 / 多久 / 自评一句），不做评级；记录存在客户端本地库，不入内容层。",
+      "song_id 可以为 null（纯技巧练习不必挂歌）。",
+      "audio_ref 只指向本机录音；本轮不实现上传。"
+    ]
+  },
+  "interfaces": {
+    "audio_upload": {
+      "status": "RESERVED_NOT_CONNECTED",
+      "label": "录音上传接口（预留）",
+      "accepts": ["audio/webm", "audio/mpeg", "audio/wav"],
+      "max_seconds": 60,
+      "behavior_now": "只保存到客户端本地并在本机回听；**没有任何上传动作**（本轮没有后端）。",
+      "next_step": "接入后端或对象存储时，必须同时定义用户同意、保留期限与删除方式。"
+    },
+    "ai_analysis": {
+      "status": "RESERVED_NOT_CONNECTED",
+      "label": "AI 分析接口（预留）",
+      "vendor": null,
+      "metrics_basis": ["乐谱", "优秀真人示范", "教师标注", "声学指标"],
+      "output_shape": "feedback_structure.shape（描述式反馈，不是总分）",
+      "behavior_now": "接口未接入：调用时如实返回「未接入」，绝不假装分析、绝不编造反馈。",
+      "next_step": "正式实现时只做「分析 → 比较 → 提示」，音乐表达决定权始终在人与人工表达参考手里。"
+    }
+  },
+  "boundaries": [
+    "Coach 不读取门训数据（52 周完成度 / 门训积分 / 成绩 / 四级学习状态）",
+    "Coach 不产生属灵评价，也不判断属灵状态",
+    "不做排行榜、比赛、名次；反馈必须是可以再唱一次的具体描述",
+    "本轮只做基础层：数据模型 / 页面入口 / 个人训练记录 / 训练项目模型 / 反馈结构 / 音频上传与 AI 分析接口预留",
+    "不产出任何歌曲专属教学内容（那属于单曲单元层）"
+  ],
+  "counts": {
+    "capabilities": 10,
+    "starter_items": 10,
+    "produced_items": 0,
+    "sessions_recorded": 0
+  },
+  "note": "V3.x §十一 / §十二：MOS Singing Coach 独立于门训系统，本轮只交付基础层。训练项目目前全部为 MODEL_ONLY（模型就位、内容未生产）—— 这是真实状态，不是遗漏。"
+}

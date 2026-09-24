@@ -1,0 +1,47 @@
+{
+  "package_version": "MUS-V-1.1.0",
+  "song_id": "MUS-S-0003",
+  "unit_id": "MUS-SU-0003",
+  "slot": "score",
+  "status": "NOT_AVAILABLE",
+  "key": null,
+  "time_signature": null,
+  "tempo_bpm": null,
+  "pickup": null,
+  "starting_note": null,
+  "range": {
+    "lowest": null,
+    "highest": null
+  },
+  "sections": [],
+  "pickup_beats": [],
+  "special_marks": [],
+  "sight_singing": null,
+  "transcription": {
+    "status": "NOT_STARTED",
+    "method": null,
+    "verified_measures": null,
+    "proofread": {
+      "status": "PENDING",
+      "checked_by": null,
+      "date": null,
+      "note": null
+    }
+  },
+  "score_verify_required": true,
+  "pending_reason": "曲调版本未定：同一文本在 hymnary.org 的出版物记录中出现 ST. CATHERINE（Hemy 1864），而多数教会歌本用 GALILEE（Jude 1871）。按「原谱优先，不自行凭记忆编曲」与「无法确认 → SCORE_VERIFY_REQUIRED」，本轮不导入任何记谱，等待人工选定曲调版本。",
+  "tune_candidates": [
+    {
+      "tune": "ST. CATHERINE",
+      "composer": "Henri F. Hemy (1864) / J. G. Walton",
+      "evidence": "hymnary.org 出版物音频文件名 JesusCallsUs-StCatherine；曲调公版"
+    },
+    {
+      "tune": "GALILEE",
+      "composer": "John B. Dykes / Herbert Jude",
+      "evidence": "hymnfortheday.com「Organ accompaniment to Jude’s tune」"
+    }
+  ],
+  "evidence": null,
+  "note": "V3.2 §五：无法确认 → SCORE_VERIFY_REQUIRED。不做凭记忆 / 凭印象的转写；来源证据已归档，等人工逐音转写并听校后才置 PROVIDED。"
+}

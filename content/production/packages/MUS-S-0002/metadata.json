@@ -1,0 +1,24 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0002",
+  "unit_id": "MUS-SU-0002",
+  "slot": "metadata",
+  "title_zh": "我灵镇静",
+  "title_en": "Be Still, My Soul",
+  "author": "Katharina von Schlegel",
+  "composer": "Katharina von Schlegel",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1752（词）/ 1899（曲）",
+  "source": "北欧圣诗传统；公版",
+  "copyright_status": "public_domain",
+  "structure": null,
+  "current_version": null,
+  "unresolved": [
+    "中文译词版本与译者未核验",
+    "当前采用的简谱版本未确定",
+    "调 / 拍号 / 速度 / 时长 / 段落结构未核验"
+  ],
+  "derived_from": "content/songs/MUS-S-0002.json",
+  "note": "本文件只登记详情层的既有事实；不确定的项进 unresolved，不得用空字符串掩盖。"
+}

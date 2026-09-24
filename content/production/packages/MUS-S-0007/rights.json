@@ -1,0 +1,46 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0007",
+  "slot": "rights",
+  "legal": {
+    "copyright_status": "unknown",
+    "license": null,
+    "derived_from": "content/songs/MUS-S-0007.json#copyright.copyright_status",
+    "note": "详情记录为 unknown（未判定）；本仓不作推定，等待逐首认定或授权（ADR-0012 / ADR-0013）。"
+  },
+  "hosting": {
+    "lyrics_en": {
+      "status": "NOT_AVAILABLE",
+      "reason": "法律状态未判定，不托管。"
+    },
+    "lyrics_zh": {
+      "status": "NOT_AVAILABLE",
+      "reason": "常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权（CI-0028）。"
+    },
+    "score": {
+      "status": "NOT_AVAILABLE",
+      "reason": "权利未判定，不托管。"
+    },
+    "audio_piano": {
+      "status": "NOT_AVAILABLE",
+      "reason": "真人钢琴伴奏未录制。"
+    },
+    "audio_demo_male": {
+      "status": "NOT_AVAILABLE",
+      "reason": "真人男声示唱未录制；禁 AI 歌声冒充。"
+    },
+    "audio_demo_female": {
+      "status": "NOT_AVAILABLE",
+      "reason": "真人女声示唱未录制；禁 AI 歌声冒充。"
+    },
+    "timeline": {
+      "status": "NOT_AVAILABLE",
+      "reason": "无音频即无可靠时间标记。"
+    }
+  },
+  "ai_policy": {
+    "synthetic_vocals": "FORBIDDEN",
+    "note": "禁止使用 AI 歌声冒充真人示唱（任务书 §七）。"
+  },
+  "vocabulary_note": "登记 / 行动状态（SOURCE_REQUIRED 等）不得映射为法律状态（ADR-0012）。"
+}

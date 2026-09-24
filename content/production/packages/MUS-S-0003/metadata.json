@@ -1,0 +1,24 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0003",
+  "unit_id": "MUS-SU-0003",
+  "slot": "metadata",
+  "title_zh": "耶稣呼召",
+  "title_en": "Jesus Calls Us",
+  "author": "Cecil Frances Alexander",
+  "composer": "Cecil Frances Alexander",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1852（词）",
+  "source": "Hymns for Little Children 相关圣诗传统；公版",
+  "copyright_status": "public_domain",
+  "structure": null,
+  "current_version": null,
+  "unresolved": [
+    "中文译词版本与译者未核验",
+    "当前采用的简谱版本未确定",
+    "调 / 拍号 / 速度 / 时长 / 段落结构未核验"
+  ],
+  "derived_from": "content/songs/MUS-S-0003.json",
+  "note": "本文件只登记详情层的既有事实；不确定的项进 unresolved，不得用空字符串掩盖。"
+}

@@ -1,0 +1,670 @@
+{
+  "pack_version": "MUS-V-1.2.0",
+  "generated_by": "MOS MUSIC teaching pack builder (one-shot transcription of user-provided V1.0 documents)",
+  "song_id": "MUS-S-0004",
+  "independence": {
+    "statement": "本教学包独立于 52 周课程：不绑定任何周次或课程，音乐教学与 MOS 门训课程彼此独立。",
+    "does_not_reference": [
+      "52W_WEEKS",
+      "MUS-C_LESSONS",
+      "SERMON_OUTLINES",
+      "COURSE_PROGRESS"
+    ]
+  },
+  "positioning": {
+    "training_value": "节奏、强拍、群体歌唱",
+    "difficulty_1": "2/4速度感",
+    "difficulty_2": "高潮控制",
+    "best_for": "会众合唱"
+  },
+  "score_reference": {
+    "songbook": "新编赞美诗（四声部简谱）",
+    "song_number": 75,
+    "key": "D",
+    "time_signature": "2/4",
+    "tune_name": null,
+    "availability": null,
+    "source_url": null,
+    "status": "REFERENCE_ONLY",
+    "note": "本仓另有 Open Hymnal X:61 ANTIOCH 原谱导入简谱（SOURCE_IMPORTED，听校 PENDING）。"
+  },
+  "chinese_lyrics": {
+    "status": "REFERENCE_ONLY",
+    "approved_version": null,
+    "note": "正式中文歌词版本尚未核定（译本权利 CI-0028 未决）；本包仅存乐句段定位标签（开头短标签），不含歌词全文，不臆测。"
+  },
+  "teacher_script": {
+    "method_ref": "docs/standards/MOS-SONG-TEACHING-METHOD-V1.0.md（十步法框架）+ 用户文档《五首样板歌曲教师教学脚本与制作包 V1.0》",
+    "core_principle": "这首歌最先学的不是「兴奋」，而是拍子。高潮不是抢拍，也不是喊大声：把音准和节奏守住，音乐自然会起来。",
+    "teacher_guidance": [
+      "重复不是随便唱：第二遍要和第一遍一样稳，然后才有群体的力量。",
+      "密集歌词：先说词 → 拍节奏 → 简谱 → 加词。",
+      "领唱要求：起拍清楚、不抢速度、不过度装饰、第一遍给空间、后面逐渐增加群体音量。"
+    ],
+    "steps": [
+      {
+        "key": "step-01",
+        "label": "认识歌曲",
+        "teacher_says": "先不要急着唱。第一遍只听：旋律往哪里走？哪一句最容易记住？哪一句最难？",
+        "tasks": [
+          "只听",
+          "感受拍号与速度",
+          "找到重复句",
+          "不要求记忆歌词"
+        ]
+      },
+      {
+        "key": "step-02",
+        "label": "准备身体与声音",
+        "teacher_says": "我们先把声音放松，不追求大声。先找到稳定、自然的声音。",
+        "tasks": [
+          "深吸气，不耸肩",
+          "轻声哼唱起音",
+          "元音延长",
+          "避免用喉咙硬推高音"
+        ]
+      },
+      {
+        "key": "step-03",
+        "label": "教简谱",
+        "teacher_says": "先不要背每一个音。先看这一句是在上行、下行，还是停留。",
+        "tasks": [
+          "先看调号",
+          "找主音",
+          "看乐句轮廓",
+          "看长音、休止、重复音",
+          "再进入逐小节"
+        ]
+      },
+      {
+        "key": "step-04",
+        "label": "教节奏",
+        "teacher_says": "先拍节奏，再唱音高。",
+        "tasks": [
+          "手拍拍号",
+          "口读节奏",
+          "钢琴只给节拍",
+          "加入旋律"
+        ]
+      },
+      {
+        "key": "step-05",
+        "label": "视唱",
+        "teacher_says": "主音 → 起音 → 第一乐句 → 两句连接 → 整节；教师不连续示唱全部。",
+        "tasks": [
+          "反馈句式：这一句第二个音稍低，再唱一次。",
+          "节奏对了，现在保持住音高。",
+          "这一句先不要快，把长音唱稳。"
+        ]
+      },
+      {
+        "key": "step-06",
+        "label": "教歌词",
+        "teacher_says": "歌词教学独立于音符教学。",
+        "tasks": [
+          "说词",
+          "找关键词",
+          "找重音",
+          "处理辅音",
+          "再与旋律结合"
+        ]
+      },
+      {
+        "key": "step-07",
+        "label": "词曲合成",
+        "teacher_says": "少示范，多模仿；短句循环，逐步撤掉示范。",
+        "tasks": [
+          "一句听",
+          "一句跟",
+          "一句独唱",
+          "两句连接",
+          "一节完整"
+        ]
+      },
+      {
+        "key": "step-08",
+        "label": "真人示唱",
+        "teacher_says": "播放优秀真人版本，观察表达，不要求模仿歌手个人音色。",
+        "tasks": [
+          "呼吸在哪里",
+          "哪个词更突出",
+          "哪里收声",
+          "哪里渐强",
+          "哪里保持克制"
+        ]
+      },
+      {
+        "key": "step-09",
+        "label": "自主歌唱",
+        "teacher_says": "伴奏由强到弱，目标是逐渐脱离模仿。",
+        "tasks": [
+          "完整伴奏",
+          "简化钢琴",
+          "仅起音",
+          "无示唱"
+        ]
+      },
+      {
+        "key": "step-10",
+        "label": "独立视唱＋教别人",
+        "teacher_says": "请你不听示唱，只看谱唱一遍；然后把最难的一句教给另一个人。",
+        "tasks": [
+          "会唱不是终点",
+          "会带别人唱才进入可传递状态"
+        ]
+      }
+    ],
+    "first_lesson_flow": [
+      "第一步：只拍 强｜弱｜强｜弱",
+      "第二步：口读歌词节奏",
+      "第三步：钢琴伴奏＋简谱",
+      "第四步：加歌词"
+    ]
+  },
+  "phrase_cards": [
+    {
+      "phrase_id": "MUS-S-0004-TC-01",
+      "card_label": "1A",
+      "score_segment_ref": "原谱第1乐句",
+      "lyric_segment_ref": "欢腾/救主下降",
+      "teaching_goal": [
+        "onset",
+        "meter"
+      ],
+      "goal_note": "起拍、2/4",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "强拍练习",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 10.79,
+        "end": 15.02,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-02",
+      "card_label": "1B",
+      "score_segment_ref": "原谱第2乐句",
+      "lyric_segment_ref": "大地接待君王",
+      "teaching_goal": [
+        "diction",
+        "rhythm"
+      ],
+      "goal_note": "咬字、节奏",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "0.75×",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 15.02,
+        "end": 18.43,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-03",
+      "card_label": "1C",
+      "score_segment_ref": "原谱第3乐句",
+      "lyric_segment_ref": "众心预备",
+      "teaching_goal": [
+        "pitch"
+      ],
+      "goal_note": "级进、音准",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "单句循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 18.43,
+        "end": 22.25,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-04",
+      "card_label": "1D",
+      "score_segment_ref": "原谱第4乐句",
+      "lyric_segment_ref": "诸天万物歌唱",
+      "teaching_goal": [
+        "dynamics",
+        "range"
+      ],
+      "goal_note": "高音、力度",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "高潮前吸气",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 22.25,
+        "end": 24.53,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-05",
+      "card_label": "1E",
+      "score_segment_ref": "原谱重复句",
+      "lyric_segment_ref": "重复歌唱",
+      "teaching_goal": [
+        "ensemble"
+      ],
+      "goal_note": "群体统一",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "重复循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-choir",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗合唱（候选）；时间码同样来自常用诗歌本录音，不混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 24.53,
+        "end": 31.59,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-06",
+      "card_label": "2A",
+      "score_segment_ref": "原谱第2节第1乐句",
+      "lyric_segment_ref": "主治万方",
+      "teaching_goal": [
+        "onset",
+        "dynamics"
+      ],
+      "goal_note": "起音、力度",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "强拍清楚",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 31.59,
+        "end": 35.49,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-07",
+      "card_label": "2B",
+      "score_segment_ref": "原谱第2节第2乐句",
+      "lyric_segment_ref": "众民歌唱",
+      "teaching_goal": [
+        "diction"
+      ],
+      "goal_note": "咬字",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "低速",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 35.49,
+        "end": 39.15,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-08",
+      "card_label": "2C",
+      "score_segment_ref": "原谱第2节第3乐句",
+      "lyric_segment_ref": "沃野/洪涛/高山/平原",
+      "teaching_goal": [
+        "rhythm",
+        "diction"
+      ],
+      "goal_note": "节奏密度",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "先说词再唱",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 39.15,
+        "end": 43.54,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-09",
+      "card_label": "2D",
+      "score_segment_ref": "原谱第2节后两乐句",
+      "lyric_segment_ref": "响应歌声",
+      "teaching_goal": [
+        "dynamics"
+      ],
+      "goal_note": "力度、高潮",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "渐强",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-choir",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗合唱（候选）；时间码同样来自常用诗歌本录音，不混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 43.54,
+        "end": 50.0,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-10",
+      "card_label": "3A",
+      "score_segment_ref": "原谱第3节",
+      "lyric_segment_ref": "罪恶忧愁",
+      "teaching_goal": [
+        "diction"
+      ],
+      "goal_note": "咬字、平稳",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "中弱",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 60.36,
+        "end": 65.07,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-11",
+      "card_label": "3B",
+      "score_segment_ref": "原谱第3节后半",
+      "lyric_segment_ref": "救主带来祝福",
+      "teaching_goal": [
+        "phrase"
+      ],
+      "goal_note": "乐句、连贯",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "句尾循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 68.4,
+        "end": 76.77,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-12",
+      "card_label": "4A",
+      "score_segment_ref": "原谱第4节",
+      "lyric_segment_ref": "真理恩典掌权",
+      "teaching_goal": [
+        "expression",
+        "dynamics"
+      ],
+      "goal_note": "情感、力度",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "先主音",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 81.64,
+        "end": 85.87,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0004-TC-13",
+      "card_label": "4B",
+      "score_segment_ref": "原谱第4节后半",
+      "lyric_segment_ref": "公义荣光",
+      "teaching_goal": [
+        "dynamics",
+        "phrase"
+      ],
+      "goal_note": "高潮",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "渐强→收束",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "xueshengshi-part1",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "学圣诗第一声（真人/独唱候选）；本卡时间码来自另一录音（常用诗歌本 LRC），两者不得混绑。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 89.04,
+        "end": 97.57,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    }
+  ],
+  "demo_withdrawal": {
+    "L1": {
+      "label": "全示唱",
+      "keeps": [
+        "full_demo",
+        "piano",
+        "metronome",
+        "score",
+        "lyrics"
+      ],
+      "removes": [],
+      "note": "学习者可以直接跟着真人示唱唱。"
+    },
+    "L2": {
+      "label": "半示唱",
+      "keeps": [
+        "onset_only",
+        "metronome",
+        "piano",
+        "score",
+        "lyrics"
+      ],
+      "removes": [
+        "continuous_vocal"
+      ],
+      "note": "保留起音、节拍、钢琴；移除连续人声示唱（起音由钢琴主音给出，界面如实说明，不假装有人声）。"
+    },
+    "L3": {
+      "label": "钢琴辅助",
+      "keeps": [
+        "piano",
+        "score",
+        "lyrics",
+        "onset_only"
+      ],
+      "removes": [
+        "vocal"
+      ],
+      "note": "只剩简谱、中文歌词、钢琴伴奏、可选起音。"
+    },
+    "L4": {
+      "label": "完全独立",
+      "keeps": [
+        "score",
+        "lyrics",
+        "random_phrase"
+      ],
+      "removes": [
+        "vocal",
+        "piano",
+        "metronome"
+      ],
+      "note": "只显示歌谱与歌词，可随机指定乐句。"
+    }
+  },
+  "coach_scope": {
+    "allowed_params": [
+      "pitch",
+      "rhythm",
+      "sustain",
+      "diction",
+      "dynamics",
+      "expression"
+    ],
+    "forbidden": [
+      "属灵程度评分",
+      "敬拜真诚度评分",
+      "排名",
+      "总分"
+    ],
+    "note": "AI 只反馈可观察的音乐行为（如「这一句第二个音略低。听一次钢琴起音，再唱一遍。」）；属灵/真诚度不是音乐参数，不能由 AI 判断。emotion_focus 是教学提示，不是属灵判断。"
+  },
+  "practice_path": {
+    "day_0": "节奏＋第一节",
+    "day_2": "无示唱完整第一节",
+    "day_7": "带一人唱"
+  },
+  "teach_others_task": "这是五首中最适合做「带会众唱」训练的歌曲之一。",
+  "special_notes": [
+    "带 * 的时间码来自「常用诗歌本」录音，不是学圣诗独唱第一声的时间码；只作结构时间参考（REFERENCE_ONLY），不绑定学圣诗音轨。"
+  ]
+}

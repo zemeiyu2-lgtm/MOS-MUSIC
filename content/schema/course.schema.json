@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/course.schema.json",
+  "title": "MOS-MUSIC Course (24 课音乐册单元)",
+  "description": "MODULE 03｜24 课音乐册的单个单元。字段顺序即 §16 规定的页面结构顺序：主题 → 核心经文 → 核心真理 → 神学重点 → 核心歌曲 → 辅助歌曲 → 一起唱 → 想一想 → 活出来 → 传给别人。24 个单元的名称来自已定案清单，本 Schema 不重新设计主题。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "course_id", "unit_no", "group", "title", "core_passage",
+    "core_truth", "theology", "core_song", "support_songs",
+    "sing_together", "think", "live", "transmit",
+    "seven_steps", "map_id", "status", "version"
+  ],
+  "properties": {
+    "course_id": { "$ref": "common.schema.json#/$defs/courseId" },
+    "unit_no": { "type": "integer", "minimum": 1, "maximum": 24 },
+    "group": {
+      "type": "string",
+      "enum": ["认识神", "认识基督", "新生命", "共同体", "生活", "使命与传递"],
+      "description": "已定案的六组归属，每组 4 课。"
+    },
+    "title": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "map_id": { "$ref": "common.schema.json#/$defs/mapId" },
+
+    "theme_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/themeId" }, { "type": "null" }] },
+    "lq_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/lqId" } },
+
+    "core_passage": { "$ref": "common.schema.json#/$defs/passageRef" },
+    "bible_reference_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/bibleRefId" } },
+
+    "core_truth": { "type": "string", "maxLength": 600, "description": "§16 核心真理。空字符串表示 Phase 1 空壳，尚未从已定案经文中心接入。" },
+    "theology": { "type": "string", "maxLength": 1200, "description": "§16 神学重点。空字符串表示空壳。" },
+
+    "core_song": {
+      "anyOf": [{ "$ref": "common.schema.json#/$defs/songId" }, { "type": "null" }],
+      "description": "核心歌曲：恰好 1 首。null 表示尚未指定。"
+    },
+    "support_songs": {
+      "type": "array",
+      "maxItems": 2,
+      "items": { "$ref": "common.schema.json#/$defs/songId" },
+      "description": "辅助歌曲：0–2 首。"
+    },
+
+    "sing_together": { "type": "string", "maxLength": 800, "description": "§16 一起唱。带领与参与方式。空字符串表示空壳。" },
+    "think": {
+      "type": "array",
+      "maxItems": 5,
+      "items": { "type": "string", "maxLength": 400 },
+      "description": "§16 想一想。门训讨论问题。"
+    },
+    "live": {
+      "type": "array",
+      "maxItems": 5,
+      "items": { "type": "string", "maxLength": 400 },
+      "description": "§16 活出来。实际行动。"
+    },
+    "transmit": { "type": "string", "maxLength": 600, "description": "§16 传给别人。传递对象与方式。" },
+
+    "seven_steps": { "$ref": "common.schema.json#/$defs/sevenSteps" },
+
+    "contexts": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/contextId" } },
+    "sermon_week_ref": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/mosWeekId" },
+      "description": "关联的 MOS 讲道释经周年次（引用 ID，不复制其内容）。"
+    },
+
+    "status": {
+      "type": "string",
+      "enum": ["shell", "draft", "under_review", "approved", "archived"],
+      "description": "单元内容状态。空壳阶段为 shell。（注意：与歌曲的七态 review_status 不同域，歌曲七态见 song.schema.json。）"
+    },
+    "provenance": { "$ref": "common.schema.json#/$defs/provenance" },
+    "version": { "$ref": "common.schema.json#/$defs/version" },
+    "created_at": { "type": ["string", "null"], "format": "date-time" },
+    "updated_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "approved" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "core_truth": { "minLength": 1 },
+          "theology": { "minLength": 1 },
+          "core_song": { "$ref": "common.schema.json#/$defs/songId" }
+        }
+      }
+    }
+  ]
+}

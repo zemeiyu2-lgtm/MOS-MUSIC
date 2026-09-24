@@ -1,0 +1,59 @@
+/* =========================================================
+   MOS-MUSIC｜Design Tokens
+   来源：MOS-DIS V1.5.1.1 的视觉设计系统（复用，不改其数值）。
+   保留：主绿 / 金 / 米底 / 纸白 / 18px 圆角 / 两级阴影 /
+        focus-visible 焦点环 / prefers-reduced-motion 降级。
+   规格书 §28：简单、安静、清晰。§32：简体中文优先、可读性优先。
+========================================================= */
+
+:root {
+  --green: #234F42;
+  --green-2: #3E7463;
+  --cream: #F7F3EB;
+  --paper: #FFFDF9;
+  --ink: #252525;
+  --muted: #77746D;
+  --line: #E6DFD3;
+  --gold: #B7965B;
+  --gold-2: #E9DCC4;
+  --soft: #F3EFE7;
+  --good: #EAF4ED;
+  --danger: #9B4D45;
+
+  --shadow: 0 8px 24px rgba(35, 79, 66, .06);
+  --shadow-2: 0 2px 10px rgba(35, 79, 66, .04);
+  --r: 18px;
+  --r-sm: 12px;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-serif: Georgia, "Songti SC", "SimSun", serif;
+
+  --measure: 760px;
+  --nav-h: 62px;
+  --tap: 44px;
+
+  --fs-1: 27px;
+  --fs-2: 22px;
+  --fs-3: 17px;
+  --fs-4: 15px;
+  --fs-5: 13px;
+  --fs-6: 11px;
+  --fs-7: 10px;
+
+  --sp-1: 6px;
+  --sp-2: 10px;
+  --sp-3: 14px;
+  --sp-4: 18px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+}
+
+/* 大字模式（§32 较大文字） */
+html[data-text="large"] { --fs-1: 31px; --fs-2: 25px; --fs-3: 19px; --fs-4: 17px; --fs-5: 15px; --fs-6: 12px; }
+
+html[data-theme="quiet"] {
+  --cream: #F3F1EC;
+  --paper: #FBFAF7;
+  --gold: #A8A29A;
+  --gold-2: #E4E1DA;
+}

@@ -1,0 +1,331 @@
+{
+  "library_version": "MUS-V-0.2.0",
+  "layer": "framework",
+  "decision_ref": "Phase 2A 裁决：MM01–MM24 正式定义为 Framework 层 Music Unit / Music Theme Mother Library（稳定主题词汇、音乐门训分类体系、年度计划可调用的主题），不得解释为「24 周年度音乐计划」，不得复制成年度数据。",
+  "boundary": {
+    "not_annual_plan": true,
+    "no_week_references": true,
+    "note": "本文件禁止出现 2027-WNN 等年度周引用；年度映射在 content/annual/<year>/ 建立并只存引用。"
+  },
+  "units": [
+    {
+      "unit_id": "MM01",
+      "no": 1,
+      "title": "创造",
+      "group": "认识神",
+      "definition": "神按自己的形象创造万物与人；受造的秩序与美好出于祂。",
+      "formation_direction": "敬畏与感恩：认识自己是受造者，生命有来源与目的。",
+      "function_affinity": [
+        "TR",
+        "EM"
+      ],
+      "map_projection": "MUS-C-01"
+    },
+    {
+      "unit_id": "MM02",
+      "no": 2,
+      "title": "圣洁",
+      "group": "认识神",
+      "definition": "神全然圣洁，与罪分别；祂也呼召属祂的人成为圣洁。",
+      "formation_direction": "敬畏与悔改：在圣洁的光中认识自己的罪并投靠基督。",
+      "function_affinity": [
+        "TR",
+        "EM"
+      ],
+      "map_projection": "MUS-C-02"
+    },
+    {
+      "unit_id": "MM03",
+      "no": 3,
+      "title": "慈爱",
+      "group": "认识神",
+      "definition": "神以坚定不移的慈爱主动寻找、赦免、挽回罪人。",
+      "formation_direction": "感恩与安息：领受被爱的确据，不再靠表现换取爱。",
+      "function_affinity": [
+        "TR",
+        "EM",
+        "PR"
+      ],
+      "map_projection": "MUS-C-03"
+    },
+    {
+      "unit_id": "MM04",
+      "no": 4,
+      "title": "信实",
+      "group": "认识神",
+      "definition": "神守约到底，祂的应许在基督里都是是的。",
+      "formation_direction": "信靠与盼望：在等候中仍倚靠那位不改变的。",
+      "function_affinity": [
+        "TR",
+        "EM"
+      ],
+      "map_projection": "MUS-C-04"
+    },
+    {
+      "unit_id": "MM05",
+      "no": 5,
+      "title": "道成肉身",
+      "group": "认识基督",
+      "definition": "神在基督里主动临到人的破碎；恩典与释放从祂开始。",
+      "formation_direction": "惊奇与领受：先领受神的临到，再谈为神做什么。",
+      "function_affinity": [
+        "TR",
+        "EM"
+      ],
+      "map_projection": "MUS-C-05"
+    },
+    {
+      "unit_id": "MM06",
+      "no": 6,
+      "title": "十字架",
+      "group": "认识基督",
+      "definition": "基督在十字架上担当罪与咒诅，显明神的爱与圣洁。",
+      "formation_direction": "悔改与感恩：以十字架重新定义爱与代价。",
+      "function_affinity": [
+        "TR",
+        "EM",
+        "PR"
+      ],
+      "map_projection": "MUS-C-06"
+    },
+    {
+      "unit_id": "MM07",
+      "no": 7,
+      "title": "复活",
+      "group": "认识基督",
+      "definition": "基督第三日复活，胜过死亡，带进活的盼望。",
+      "formation_direction": "盼望与勇气：苦难与死亡不再是终点。",
+      "function_affinity": [
+        "TR",
+        "EM"
+      ],
+      "map_projection": "MUS-C-07"
+    },
+    {
+      "unit_id": "MM08",
+      "no": 8,
+      "title": "跟随基督",
+      "group": "认识基督",
+      "definition": "跟随始于认识祂是谁，而不是因着得着什么；跟随是天天舍己的路。",
+      "formation_direction": "委身与降服：把人生的主权交还给主。",
+      "function_affinity": [
+        "TR",
+        "LI"
+      ],
+      "map_projection": "MUS-C-08"
+    },
+    {
+      "unit_id": "MM09",
+      "no": 9,
+      "title": "悔改",
+      "group": "新生命",
+      "definition": "悔改是心思转向神，结出与悔改相称的具体行为。",
+      "formation_direction": "痛悔与更新：具体认罪、具体转向。",
+      "function_affinity": [
+        "TR",
+        "EM",
+        "LI"
+      ],
+      "map_projection": "MUS-C-09"
+    },
+    {
+      "unit_id": "MM10",
+      "no": 10,
+      "title": "信心",
+      "group": "新生命",
+      "definition": "信心是领受基督所成之工的空手，抓住神的应许而活。",
+      "formation_direction": "信靠：从凭眼见转向凭应许。",
+      "function_affinity": [
+        "TR",
+        "EM"
+      ],
+      "map_projection": "MUS-C-10"
+    },
+    {
+      "unit_id": "MM11",
+      "no": 11,
+      "title": "圣洁生活",
+      "group": "新生命",
+      "definition": "恩典训练人除去不敬虔的心，在日常生活中分别为圣。",
+      "formation_direction": "渴慕与操练：在具体生活场景中活出圣洁。",
+      "function_affinity": [
+        "LI",
+        "TR"
+      ],
+      "map_projection": "MUS-C-11"
+    },
+    {
+      "unit_id": "MM12",
+      "no": 12,
+      "title": "祷告",
+      "group": "新生命",
+      "definition": "祷告是与天父的真实相交，奉基督的名求。",
+      "formation_direction": "亲近与倚靠：把凡事带到神面前。",
+      "function_affinity": [
+        "PR",
+        "LI"
+      ],
+      "map_projection": "MUS-C-12"
+    },
+    {
+      "unit_id": "MM13",
+      "no": 13,
+      "title": "彼此相爱",
+      "group": "共同体",
+      "definition": "爱是门徒群体的标记，如基督爱我们。",
+      "formation_direction": "相爱与包容：学习具体的舍己之爱。",
+      "function_affinity": [
+        "CO",
+        "LI"
+      ],
+      "map_projection": "MUS-C-13"
+    },
+    {
+      "unit_id": "MM14",
+      "no": 14,
+      "title": "彼此饶恕",
+      "group": "共同体",
+      "definition": "神在基督里饶恕了我们，群体中彼此饶恕是这恩典的回响。",
+      "formation_direction": "和好与释放：饶恕具体的一个人。",
+      "function_affinity": [
+        "CO",
+        "EM",
+        "LI"
+      ],
+      "map_projection": "MUS-C-14"
+    },
+    {
+      "unit_id": "MM15",
+      "no": 15,
+      "title": "彼此服事",
+      "group": "共同体",
+      "definition": "各人照恩赐彼此服事，作神百般恩赐的好管家。",
+      "formation_direction": "谦卑与摆上：服事看得见的一个具体的人。",
+      "function_affinity": [
+        "CO",
+        "LI"
+      ],
+      "map_projection": "MUS-C-15"
+    },
+    {
+      "unit_id": "MM16",
+      "no": 16,
+      "title": "合一与教会",
+      "group": "共同体",
+      "definition": "教会在基督里合一，恩典的墙拆毁了中间隔断的墙。",
+      "formation_direction": "接纳与合一：跨过血缘、背景与圈层的墙。",
+      "function_affinity": [
+        "CO",
+        "TR",
+        "MI"
+      ],
+      "map_projection": "MUS-C-16"
+    },
+    {
+      "unit_id": "MM17",
+      "no": 17,
+      "title": "家庭",
+      "group": "生活",
+      "definition": "信仰进入家庭的每日记忆与关系，敬虔在家中生根。",
+      "formation_direction": "传承与相爱：家庭成为最小的门训现场。",
+      "function_affinity": [
+        "CO",
+        "LI",
+        "MM"
+      ],
+      "map_projection": "MUS-C-17"
+    },
+    {
+      "unit_id": "MM18",
+      "no": 18,
+      "title": "工作与责任",
+      "group": "生活",
+      "definition": "工作是神的赐予与召命，尽职是敬拜的一部分。",
+      "formation_direction": "忠心与界限：在职分中忠心，不靠工作称义。",
+      "function_affinity": [
+        "LI",
+        "TR"
+      ],
+      "map_projection": "MUS-C-18"
+    },
+    {
+      "unit_id": "MM19",
+      "no": 19,
+      "title": "苦难与盼望",
+      "group": "生活",
+      "definition": "苦难中神仍在，盼望不源于环境而源于基督。",
+      "formation_direction": "忍耐与安慰：在真实痛苦中被基督托住。",
+      "function_affinity": [
+        "EM",
+        "TR",
+        "PR"
+      ],
+      "map_projection": "MUS-C-19"
+    },
+    {
+      "unit_id": "MM20",
+      "no": 20,
+      "title": "爱邻舍",
+      "group": "生活",
+      "definition": "爱人如己，怜悯近处与远处的邻舍。",
+      "formation_direction": "怜悯与行动：看见并服事具体的邻舍。",
+      "function_affinity": [
+        "LI",
+        "MI"
+      ],
+      "map_projection": "MUS-C-20"
+    },
+    {
+      "unit_id": "MM21",
+      "no": 21,
+      "title": "见证基督",
+      "group": "使命与传递",
+      "definition": "领受恩典的人开口见证基督的所是与所成。",
+      "formation_direction": "勇气与见证：向具体的人讲说基督。",
+      "function_affinity": [
+        "MI",
+        "LI"
+      ],
+      "map_projection": "MUS-C-21"
+    },
+    {
+      "unit_id": "MM22",
+      "no": 22,
+      "title": "万民与宣教",
+      "group": "使命与传递",
+      "definition": "福音为万民预备，教会蒙差遣跨过一切边界。",
+      "formation_direction": "胸怀与差派：为万民祷告、奉差、同行。",
+      "function_affinity": [
+        "MI",
+        "PR"
+      ],
+      "map_projection": "MUS-C-22"
+    },
+    {
+      "unit_id": "MM23",
+      "no": 23,
+      "title": "训练别人",
+      "group": "使命与传递",
+      "definition": "把所领受的交托给忠心能教导别人的人。",
+      "formation_direction": "成全与托付：刻意陪练下一代门徒。",
+      "function_affinity": [
+        "RP",
+        "CO"
+      ],
+      "map_projection": "MUS-C-23"
+    },
+    {
+      "unit_id": "MM24",
+      "no": 24,
+      "title": "门徒再生产",
+      "group": "使命与传递",
+      "definition": "门徒生门徒，代代相传直到主再来。",
+      "formation_direction": "传承与差遣：以生命生出生命。",
+      "function_affinity": [
+        "RP",
+        "MI"
+      ],
+      "map_projection": "MUS-C-24"
+    }
+  ]
+}

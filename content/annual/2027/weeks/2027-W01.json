@@ -1,0 +1,89 @@
+{
+  "annual_id": "MOS-MUSIC-ANNUAL-2027",
+  "year": 2027,
+  "week_id": "2027-W01",
+  "mos_week": "W01",
+  "sermon_week_ref": "mos-sermon-2027｜W01 路4:14–21「被差来的主」（52周正式释经生产版 V2.0）",
+  "bible_passage_id": "路4:14–21",
+  "bible_reference_ids": [
+    "BB-LUK-4"
+  ],
+  "core_truth": {
+    "text": "耶稣是被圣灵膏立、被差遣的那一位；祂以「今天」宣告：神悦纳人的恩典与释放，已经在祂身上开始。",
+    "provenance": {
+      "source_system": "mos-sermon-2027",
+      "source_id": "W01",
+      "source_field": "⑥ 经文中心",
+      "copy_policy": "reference_only",
+      "note": "照录 2027 正式释经表经文中心，不另行改写。"
+    }
+  },
+  "life_question_id": "LQ02",
+  "music_unit_id": [
+    "MM05"
+  ],
+  "mm_rationale": "经文中心的主语是耶稣：受膏、被差遣、「今天」应验。这不是「我们要为主做事」的命令段，而是恩典主动临到破碎之人（贫穷、被掳、瞎眼、受压制）的宣告段，因此指向 MM05 道成肉身（神主动临到），并直接支撑 LQ02「我的价值从哪里来」——价值从被寻回的恩典来，而非从表现来。MM08（跟随）属于 W03 的经文，W01 不硬塞。",
+  "music_function": [
+    "TR",
+    "EM"
+  ],
+  "core_song_id": "MUS-S-0001",
+  "auxiliary_song_id": [
+    "MUS-S-0004"
+  ],
+  "seven_step_practice": {
+    "S1_read": {
+      "label": "读",
+      "prompt": "阅读或聆听本周经文，先不急着应用。",
+      "content": "读路4:14–21两遍：第一遍留意耶稣在做什么（进会堂、读经、坐下）；第二遍只读4:18–19，数一数主的使命共有几件，注意「今天的」这个词。",
+      "content_status": "reviewed"
+    },
+    "S2_understand": {
+      "label": "明",
+      "prompt": "这段经文究竟教导什么？",
+      "content": "这段经文的中心不是「我们要传福音」，而是「耶稣是谁」：祂是旧约应许的受膏者（赛61），祂宣告神的恩典与释放已经开始。恩典的次序是——祂先临到贫穷、被掳、瞎眼、受压制的人，然后才谈跟随与服事。把「今天」用在自身：不是将来某天神可能悦纳我，而是祂已在基督里悦纳属祂的人。",
+      "content_status": "reviewed"
+    },
+    "S3_sing": {
+      "label": "唱",
+      "prompt": "通过歌曲表达已经理解的真理。",
+      "content": "唱《奇异恩典》第一节（歌词见教会诗本或授权来源，本系统不托管译文）：它讲的正是「前失丧—被寻回」的恩典次序，与路4章「祂先临到被掳者」同一条线。唱完后再唱《普世欢腾》副歌「主已来临」，把「今天应验」唱成喜乐的宣告。",
+      "content_status": "reviewed"
+    },
+    "S4_remember": {
+      "label": "记",
+      "prompt": "本周希望门徒记住什么？",
+      "content": "记住一句话：「恩典先行：我先被寻回，然后才开始跟随。」（对应经文：路4:18–19）",
+      "content_status": "reviewed"
+    },
+    "S5_feel": {
+      "label": "感",
+      "prompt": "真理应该形成怎样的情感回应？",
+      "content": "让真理塑造的情感是：被寻回的感恩与安息——不是「我要更努力才配」的焦虑，也不是廉价兴奋，而是「祂已经先行动了」的安定。若唱时只有情绪没有感恩的指向，回到 S2 的恩典次序重读。",
+      "content_status": "reviewed"
+    },
+    "S6_act": {
+      "label": "行",
+      "prompt": "本周要完成的一个具体行动。",
+      "content": "选一件你一直「等神替我解决」的具体难处（如某段关系、某项工作压力），本周改写成一句感恩祷告：「感谢你在基督里已经悦纳我；这件事也在你手里。」写下来，并在这周至少完整祷告三次。",
+      "content_status": "reviewed"
+    },
+    "S7_transmit": {
+      "label": "传",
+      "prompt": "本周要把什么传给别人？",
+      "content": "把路4:18–19 中主的使命用自己的话讲给一位家人听（两分钟以内），并约他下周和你一起唱《奇异恩典》第一节。",
+      "content_status": "reviewed"
+    }
+  },
+  "life_practice": "本周把一件「等神解决」的具体难处改写成感恩交托的祷告，并至少完整祷告三次。",
+  "transmission_task": "向一位家人用两分钟讲述路4:18–19 的使命宣告，并约他下周一起唱第一节。",
+  "expected_formation": "从「耶稣是解决问题的工具」转向「耶稣是先行动的受膏者」；情感上从表现焦虑转向被寻回的安息。",
+  "status": "reviewed",
+  "provenance": {
+    "source_system": "mos-sermon-2027",
+    "source_id": "2027-W01",
+    "source_field": "W01 全行",
+    "copy_policy": "reference_only",
+    "note": "周样本为音乐门训层，52W 释经数据一律引用。"
+  }
+}

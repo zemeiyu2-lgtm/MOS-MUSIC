@@ -1,0 +1,48 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0009",
+  "slot": "teaching",
+  "status": "NOT_AVAILABLE",
+  "modules": [
+    {
+      "key": "intro",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    },
+    {
+      "key": "teach-score",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    },
+    {
+      "key": "teach-rhythm",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    },
+    {
+      "key": "teach-lyrics",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    },
+    {
+      "key": "phrase-teaching",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    },
+    {
+      "key": "vocal-tip",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    },
+    {
+      "key": "full-demo",
+      "status": "NOT_AVAILABLE",
+      "resource_id": null
+    }
+  ],
+  "learn": {
+    "status": "NOT_AVAILABLE",
+    "note": "学唱五步要真能跑，需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。"
+  },
+  "note": "没有真人资源时保持 NOT_AVAILABLE，不要虚构（任务书 §九）。"
+}

@@ -1,0 +1,41 @@
+{
+  "package_version": "MUS-V-1.1.0",
+  "song_id": "MUS-S-0005",
+  "unit_id": "MUS-SU-0005",
+  "slot": "score",
+  "status": "NOT_AVAILABLE",
+  "key": null,
+  "time_signature": null,
+  "tempo_bpm": null,
+  "pickup": null,
+  "starting_note": null,
+  "range": {
+    "lowest": null,
+    "highest": null
+  },
+  "sections": [],
+  "pickup_beats": [],
+  "special_marks": [],
+  "sight_singing": null,
+  "transcription": {
+    "status": "NOT_STARTED",
+    "method": null,
+    "verified_measures": null,
+    "proofread": {
+      "status": "PENDING",
+      "checked_by": null,
+      "date": null,
+      "note": null
+    }
+  },
+  "score_verify_required": true,
+  "pending_reason": "曲调 SURRENDER（W. S. Weeden, 1896）的公版记谱在本轮可达的公开机器可读源中不存在；已归档 1896 年印刷谱图像（Wikimedia Commons，Public domain）供人工逐音转写。按「无法确认 → SCORE_VERIFY_REQUIRED」，本轮不做凭印象转写。",
+  "tune_candidates": null,
+  "evidence": {
+    "source_name": "I Surrender All, Gospel Songs of Grace and Glory（New York: Sebring Publishing Company, 1896）",
+    "url": "https://commons.wikimedia.org/wiki/File:I_Surrender_All_1896_Gospel_Songs_of_Grace_and_Glory.jpg",
+    "local_file": "sources/score-images/MUS-S-0005_surrender_1896_Seebring.jpg",
+    "license": "Public domain（Wikimedia Commons 标注 pd；1896 年出版）"
+  },
+  "note": "V3.2 §五：无法确认 → SCORE_VERIFY_REQUIRED。不做凭记忆 / 凭印象的转写；来源证据已归档，等人工逐音转写并听校后才置 PROVIDED。"
+}

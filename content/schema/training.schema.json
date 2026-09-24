@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/training.schema.json",
+  "title": "MOS-MUSIC Training Level (L1/L2/L3)",
+  "description": "MODULE 09｜三级培训。L1 会用 · L2 会带 · L3 会训。培训方法固定为：学 → 看 → 做 → 反馈 → 再做 → 教别人。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["training_id", "level", "title", "outcome", "method", "uses_forms", "status"],
+  "properties": {
+    "training_id": { "$ref": "common.schema.json#/$defs/trainingId" },
+    "level": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "title": { "type": "string", "enum": ["会用", "会带", "会训"] },
+    "outcome": { "type": "string", "maxLength": 600, "description": "受训者完成该级后能做什么。Phase 1 为空壳。" },
+
+    "method": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": { "type": "string", "enum": ["学", "看", "做", "反馈", "再做", "教别人"] },
+      "description": "固定六步培训方法，顺序不得更改。"
+    },
+
+    "uses_forms": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/formId" },
+      "description": "该级培训使用的培训表。"
+    },
+    "uses_course_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/courseId" } },
+    "prerequisite": { "anyOf": [{ "$ref": "common.schema.json#/$defs/trainingId" }, { "type": "null" }] },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "session_no": { "type": "integer", "minimum": 1 },
+          "title": { "type": "string", "maxLength": 120 },
+          "outcome": { "type": "string", "maxLength": 400 },
+          "practice": { "type": "string", "maxLength": 400 }
+        }
+      }
+    },
+    "status": { "type": "string", "enum": ["shell", "draft", "under_review", "approved", "archived"] },
+    "version": { "$ref": "common.schema.json#/$defs/version" }
+  }
+}

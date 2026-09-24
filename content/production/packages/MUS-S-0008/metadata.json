@@ -1,0 +1,25 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0008",
+  "unit_id": "MUS-SU-0008",
+  "slot": "metadata",
+  "title_zh": "拥戴我主为王",
+  "title_en": "Crown Him with Many Crowns",
+  "author": "Matthew Bridges；Godfrey Thring（1874 增补）",
+  "composer": "George J. Elvey（DIADEMATA）",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1851（词）",
+  "source": "词：Matthew Bridges，1851；Godfrey Thring，1874 增补；曲：George J. Elvey（DIADEMATA），1868。公版赞美诗学通行记载。",
+  "copyright_status": "unknown",
+  "structure": null,
+  "current_version": null,
+  "unresolved": [
+    "中文译词版本与译者未核验",
+    "当前采用的简谱版本未确定",
+    "调 / 拍号 / 速度 / 时长 / 段落结构未核验",
+    "作品级法律状态未判定（不得据清单推定）"
+  ],
+  "derived_from": "content/songs/MUS-S-0008.json",
+  "note": "本文件只登记详情层的既有事实；不确定的项进 unresolved，不得用空字符串掩盖。"
+}

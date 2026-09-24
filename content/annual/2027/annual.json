@@ -1,0 +1,47 @@
+{
+  "annual_id": "MOS-MUSIC-ANNUAL-2027",
+  "year": 2027,
+  "annual_theme": null,
+  "annual_theme_status": "not_defined_in_source",
+  "annual_theme_note": "2027 52W 正式来源以五条年度阶段主线呈现（W01–W11 身份与跟随 / W12–W20 福音与教会 / W21–W27 关系与门训 / W28–W40 使命与边界 / W41–W52 差派与更新），未设单一总年度主题名。MOS-MUSIC 不自行命名总主题；未来若 MOS 52W 正式建立年度主题，再通过引用读取。",
+  "source_52w": {
+    "source_id": "mos-sermon-2027",
+    "name": "MOS第一年度52周讲道释经与讲章设计总表｜2027",
+    "file": "MOS第一年度52周讲道释经与讲章设计总表_2027_V2.0_52周正式释经生产版.xlsx",
+    "version": "V2.0｜52周正式释经生产版",
+    "generated_at": "2026-09-14 15:11",
+    "weeks": 52,
+    "copy_policy": "reference_only",
+    "responsible": "52 周经文、经文中心、释经资料由原 MOS 年度讲道/52W 系统负责；MOS-MUSIC 只负责音乐门训层的映射。本机只存在这一个版本文件（无版本冲突）。"
+  },
+  "lq_source": {
+    "source_id": "mos-364d",
+    "file": "MOS-364D_V1.0_52周×7日每日门训内容生产表.xlsx（LQ年度分布表）",
+    "lq_ids": [
+      "LQ01",
+      "LQ02",
+      "LQ03",
+      "LQ04",
+      "LQ05",
+      "LQ06",
+      "LQ07",
+      "LQ08"
+    ],
+    "note": "LQ 为 MOS 既有体系（LQ01–LQ08），MOS-MUSIC 只引用 Life_Question_ID，不建立第二套 LQ。样本周按 364D LQ 年度分布的主轴周取 ID：W01→LQ02、W02→LQ04、W03→LQ03。"
+  },
+  "framework_ref": {
+    "music_units": "content/framework/music-units.json"
+  },
+  "status": "sample_validation",
+  "samples": {
+    "weeks": [
+      "2027-W01",
+      "2027-W02",
+      "2027-W03",
+      "2027-W04"
+    ],
+    "unit_count": 4,
+    "song_count": 5
+  },
+  "note": "Phase 2A 制作 W01–W03 三个样本周验证母模型；Phase 2B 以 Frozen Skill（mos-music-song-discernment@1.0.0）单周试产 W04，经人工审核确认后才决定后续是否连续／批量生产 W05–W52。"
+}

@@ -1,0 +1,1728 @@
+{
+  "levels_version": "MUS-V-1.1.0",
+  "generated_at": "2026-09-23T00:00:00+08:00",
+  "generated_by": "tools/song-units.js",
+  "derived": true,
+  "basis": "由 content/song-units/** 的实际资源推导（app/song-unit.js deriveLevel）；等级不写在单元记录里。",
+  "levels_vocabulary": [
+    "NONE",
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "counts": {
+    "library_total": 50,
+    "with_unit_file": 10,
+    "intake_without_unit": 40,
+    "by_level": {
+      "NONE": 47,
+      "L1": 0,
+      "L2": 0,
+      "L3": 3,
+      "L4": 0
+    },
+    "by_status": {
+      "INTAKE": 45,
+      "VERIFYING": 5
+    },
+    "gaps": {
+      "lyrics": 45,
+      "score": 47,
+      "piano": 47,
+      "demo_male": 46,
+      "demo_female": 46,
+      "demo_any": 46,
+      "timeline": 47,
+      "cursor": 47,
+      "teach_learn": 47,
+      "teach_score": 47,
+      "teach_lyrics": 47,
+      "teach_vocal": 50,
+      "teach_live": 50
+    }
+  },
+  "units": [
+    {
+      "song_id": "MUS-S-0001",
+      "unit_id": "MUS-SU-0001",
+      "unit_file": "content/song-units/MUS-SU-0001.json",
+      "layer": "detail",
+      "promoted": false,
+      "status": "VERIFYING",
+      "level": "L3",
+      "next_level": "L4",
+      "missing_next": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "missing_all": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "unit_id": "MUS-SU-0002",
+      "unit_file": "content/song-units/MUS-SU-0002.json",
+      "layer": "detail",
+      "promoted": false,
+      "status": "VERIFYING",
+      "level": "L3",
+      "next_level": "L4",
+      "missing_next": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "missing_all": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "unit_id": "MUS-SU-0003",
+      "unit_file": "content/song-units/MUS-SU-0003.json",
+      "layer": "detail",
+      "promoted": false,
+      "status": "VERIFYING",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "score"
+      ],
+      "missing_all": [
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "score",
+        "target_status": "SCORE_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "unit_id": "MUS-SU-0004",
+      "unit_file": "content/song-units/MUS-SU-0004.json",
+      "layer": "detail",
+      "promoted": false,
+      "status": "VERIFYING",
+      "level": "L3",
+      "next_level": "L4",
+      "missing_next": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "missing_all": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "unit_id": "MUS-SU-0005",
+      "unit_file": "content/song-units/MUS-SU-0005.json",
+      "layer": "detail",
+      "promoted": false,
+      "status": "VERIFYING",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "score"
+      ],
+      "missing_all": [
+        "score",
+        "piano",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "score",
+        "target_status": "SCORE_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "unit_id": "MUS-SU-0006",
+      "unit_file": "content/song-units/MUS-SU-0006.json",
+      "layer": "detail",
+      "promoted": true,
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "unit_id": "MUS-SU-0007",
+      "unit_file": "content/song-units/MUS-SU-0007.json",
+      "layer": "detail",
+      "promoted": true,
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "unit_id": "MUS-SU-0008",
+      "unit_file": "content/song-units/MUS-SU-0008.json",
+      "layer": "detail",
+      "promoted": true,
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "unit_id": "MUS-SU-0009",
+      "unit_file": "content/song-units/MUS-SU-0009.json",
+      "layer": "detail",
+      "promoted": true,
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "unit_id": "MUS-SU-0010",
+      "unit_file": "content/song-units/MUS-SU-0010.json",
+      "layer": "detail",
+      "promoted": true,
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "acceptance": {
+        "pass": 0,
+        "pending": 10,
+        "revise": 0,
+        "hold": 0
+      },
+      "note": null
+    },
+    {
+      "song_id": "MUS-S-0011",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0012",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0013",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0014",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0015",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0016",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0017",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0018",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0019",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0020",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0021",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0022",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0023",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0024",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0025",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0026",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0027",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0028",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0029",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0030",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0031",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0032",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0033",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0034",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0035",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0036",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0037",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0038",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0039",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0040",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0041",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0042",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0043",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0044",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0045",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0046",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0047",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0048",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0049",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    },
+    {
+      "song_id": "MUS-S-0050",
+      "unit_id": null,
+      "unit_file": null,
+      "layer": "intake",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "missing_next": [
+        "lyrics",
+        "score"
+      ],
+      "missing_all": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "note": "尚无单曲单元文件（第一批只对已有歌曲详情记录的歌建立结构）；等级为 NONE 是如实状态。"
+    }
+  ],
+  "note": "本文件是派生视图，不是权威源：权威源是 content/song-units/** 与曲库本身。CI-0014 案 a：随生产推进而变化的内容不进不可变基线，因此等级表可以随制作进度正常变化。"
+}

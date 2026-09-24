@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MOS Music Teaching Pack（歌级教学包：教师脚本 + 乐句教学卡 + 示唱撤除）",
+  "description": "V3.2 教学样板数据层。一首歌一个包：教师脚本作为内容数据（不硬编码在 UI）；乐句级教学卡按《五首样板歌曲乐句级资源表 V1.0》转录。铁律：独立于 52 周课程（不引用 WNN / MUS-C-NN）；时间码三态 VERIFIED / REFERENCE_ONLY / TIME_PENDING，未确认时间码不得进入 cursor-follow（cursor_ready=true ⇔ time_status=VERIFIED）；不同录音版本不得混用 start/end（每卡单一 timecode 录音）；不得虚构歌手身份（文档未署名则 performer=null）；AI coach 只允许六个音乐参数，禁止属灵/真诚度评分。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pack_version", "generated_by", "song_id", "independence", "positioning",
+    "score_reference", "chinese_lyrics", "teacher_script", "phrase_cards",
+    "demo_withdrawal", "coach_scope", "practice_path", "teach_others_task"
+  ],
+  "properties": {
+    "pack_version": { "type": "string", "pattern": "^MUS-V-" },
+    "generated_by": { "type": "string" },
+    "song_id": { "type": "string", "pattern": "^MUS-S-\\d{4}$" },
+    "independence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "does_not_reference"],
+      "properties": {
+        "statement": { "type": "string" },
+        "does_not_reference": {
+          "type": "array", "minItems": 1,
+          "items": { "type": "string", "enum": ["52W_WEEKS", "MUS-C_LESSONS", "SERMON_OUTLINES", "COURSE_PROGRESS"] }
+        }
+      }
+    },
+    "positioning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["training_value", "difficulty_1", "difficulty_2", "best_for"],
+      "properties": {
+        "training_value": { "type": "string" },
+        "difficulty_1": { "type": "string" },
+        "difficulty_2": { "type": "string" },
+        "best_for": { "type": "string" }
+      }
+    },
+    "score_reference": {
+      "description": "正式简谱来源引用：只存引用元数据，不托管谱面内容。",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["songbook", "song_number", "key", "time_signature", "status"],
+      "properties": {
+        "songbook": { "type": "string" },
+        "song_number": { "type": ["integer", "null"] },
+        "key": { "type": ["string", "null"] },
+        "time_signature": { "type": ["string", "null"] },
+        "tune_name": { "type": ["string", "null"] },
+        "availability": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["REFERENCE_ONLY", "VERIFIED"] },
+        "note": { "type": "string" }
+      }
+    },
+    "chinese_lyrics": {
+      "description": "中文歌词状态：核定版本未接入前只允许段定位标签（phrase_cards[].lyric_segment_ref），不得存全文。",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "approved_version", "note"],
+      "properties": {
+        "status": { "type": "string", "enum": ["REFERENCE_ONLY", "TIME_PENDING", "VERIFIED"] },
+        "approved_version": { "type": ["string", "null"] },
+        "note": { "type": "string" }
+      }
+    },
+    "teacher_script": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method_ref", "core_principle", "steps"],
+      "properties": {
+        "method_ref": { "type": "string" },
+        "core_principle": { "type": "string" },
+        "teacher_guidance": { "type": "array", "items": { "type": "string" } },
+        "steps": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "label", "teacher_says", "tasks"],
+            "properties": {
+              "key": { "type": "string", "pattern": "^step-\\d{2}$" },
+              "label": { "type": "string" },
+              "teacher_says": { "type": "string" },
+              "tasks": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "first_lesson_flow": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "phrase_cards": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "phrase_id", "card_label", "score_segment_ref", "lyric_segment_ref",
+          "teaching_goal", "goal_note", "difficulty", "sight_singing",
+          "piano_mode", "vocal_reference", "source_url", "timecode", "cursor_ready"
+        ],
+        "properties": {
+          "phrase_id": { "type": "string", "pattern": "^MUS-S-\\d{4}-TC-\\d{2}$" },
+          "card_label": { "type": "string", "pattern": "^[0-9A-Z\\-]+$" },
+          "score_segment_ref": { "type": ["string", "null"] },
+          "lyric_segment_ref": {
+            "description": "中文歌词段定位标签（开头短标签）。核定全文接入前这是唯一合法的中文歌词形态。",
+            "type": ["string", "null"]
+          },
+          "teaching_goal": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["pitch", "rhythm", "meter", "phrase", "breath", "diction", "dynamics", "expression", "memory", "ensemble", "onset", "range"] }
+          },
+          "goal_note": { "description": "资源表「教学目标」列原文，逐字保留。", "type": "string" },
+          "pitch_focus": { "type": ["string", "null"] },
+          "rhythm_focus": { "type": ["string", "null"] },
+          "breath_focus": { "type": ["string", "null"] },
+          "diction_focus": { "type": ["string", "null"] },
+          "emotion_focus": { "description": "教学提示，不是 AI 属灵判断。", "type": ["string", "null"] },
+          "dynamics_focus": { "type": ["string", "null"] },
+          "difficulty": { "description": "文档未给出 → null 待教师标定，不得推算。", "type": ["integer", "null"] },
+          "sight_singing": { "type": "boolean" },
+          "piano_mode": { "description": "资源表「钢琴练习」列原文。", "type": "string" },
+          "vocal_reference": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["type", "performer", "recording_id", "status"],
+            "properties": {
+              "type": { "type": "string", "enum": ["HUMAN", "AI"] },
+              "gender": { "type": ["string", "null"], "enum": ["MALE", "FEMALE", null] },
+              "performer": { "description": "文档未署名 → null，不得虚构。", "type": ["string", "null"] },
+              "recording_id": { "type": ["string", "null"] },
+              "identity_status": { "type": ["string", "null"], "enum": ["NAMED_SOURCE", "UNNAMED_SOURCE", null] },
+              "status": { "type": "string", "enum": ["CANDIDATE", "SELECTED", "REJECTED"] },
+              "note": { "type": ["string", "null"] }
+            }
+          },
+          "source_url": { "description": "文档未提供真实 URL → null，不得虚构。", "type": ["string", "null"] },
+          "timecode": {
+            "description": "单一录音的时间码。recording_id 必须与本卡 vocal_reference 一致（或 vocal 为 TIME_PENDING 侧的独立录音，互不混用）。",
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["recording_id", "start", "end", "time_status"],
+            "properties": {
+              "recording_id": { "type": "string" },
+              "start": { "type": ["number", "null"], "minimum": 0 },
+              "end": { "type": ["number", "null"], "minimum": 0 },
+              "time_status": { "type": "string", "enum": ["VERIFIED", "REFERENCE_ONLY", "TIME_PENDING"] },
+              "note": { "type": ["string", "null"] }
+            }
+          },
+          "cursor_ready": {
+            "description": "必须 === (timecode.time_status === 'VERIFIED')。校验器强制。",
+            "type": "boolean"
+          },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "demo_withdrawal": {
+      "description": "示唱撤除机制 L1–L4（教学模型 §九），内容数据驱动 UI 轨道预设。",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["L1", "L2", "L3", "L4"],
+      "properties": {
+        "L1": { "$ref": "#/$defs/withdrawalLevel" },
+        "L2": { "$ref": "#/$defs/withdrawalLevel" },
+        "L3": { "$ref": "#/$defs/withdrawalLevel" },
+        "L4": { "$ref": "#/$defs/withdrawalLevel" }
+      }
+    },
+    "coach_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowed_params", "forbidden", "note"],
+      "properties": {
+        "allowed_params": {
+          "type": "array", "minItems": 6, "maxItems": 6,
+          "items": { "type": "string", "enum": ["pitch", "rhythm", "sustain", "diction", "dynamics", "expression"] }
+        },
+        "forbidden": { "type": "array", "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    },
+    "practice_path": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["day_0", "day_2", "day_7"],
+      "properties": {
+        "day_0": { "type": "string" },
+        "day_2": { "type": "string" },
+        "day_7": { "type": "string" }
+      }
+    },
+    "teach_others_task": { "type": "string" },
+    "special_notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "withdrawalLevel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "keeps", "removes", "note"],
+      "properties": {
+        "label": { "type": "string" },
+        "keeps": { "type": "array", "items": { "type": "string", "enum": ["full_demo", "onset_only", "metronome", "piano", "score", "lyrics", "random_phrase"] } },
+        "removes": { "type": "array", "items": { "type": "string", "enum": ["continuous_vocal", "vocal", "piano", "metronome"] } },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

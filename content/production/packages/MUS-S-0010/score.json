@@ -1,0 +1,33 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0010",
+  "unit_id": "MUS-SU-0010",
+  "slot": "score",
+  "status": "NOT_AVAILABLE",
+  "key": null,
+  "time_signature": null,
+  "tempo_bpm": null,
+  "pickup": null,
+  "starting_note": null,
+  "range": {
+    "lowest": null,
+    "highest": null
+  },
+  "sections": [],
+  "pickup_beats": [],
+  "special_marks": [],
+  "sight_singing": null,
+  "transcription": {
+    "status": "NOT_STARTED",
+    "method": null,
+    "verified_measures": null,
+    "proofread": {
+      "status": "PENDING",
+      "checked_by": null,
+      "date": null,
+      "note": null
+    }
+  },
+  "reason": "作品级法律状态未判定（ADR-0012）；曲调权利未确认前不托管任何记谱。",
+  "note": "DRAFT（转写未听校）不计入等级派生；校对通过并置 VERIFIED 后，由工具把单元 score 置为 PROVIDED。"
+}

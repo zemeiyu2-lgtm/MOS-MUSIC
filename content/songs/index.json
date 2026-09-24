@@ -1,0 +1,126 @@
+{
+  "library_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-21T17:15:00+08:00",
+  "record_of": "MUS-S-NNNN",
+  "count": 10,
+  "intake_index": "content/library/index.json",
+  "schema": "content/schema/song.schema.json",
+  "note": "歌曲详情层。MUS-S-0001…0005 为 Phase 2A 样本验证库（under_review）。MUS-S-0006…0010 为 V0.5 扩库第二段试批：只完成歌基层身份与经文锚点认定（2026-09-21 人工授权口径，见 content/production/song-anchor-determinations.json 与 content/production/library-promotions.json），八维辨识一律留空、tier 保持 C、review_status 为 draft。其余 40 首仍在 content/library/ 登记层。",
+  "facets": {
+    "tier": {
+      "A": 1,
+      "B": 4,
+      "C": 5
+    },
+    "review_status": {
+      "draft": 5,
+      "under_review": 5,
+      "approved": 0,
+      "core": 0,
+      "recommended": 0,
+      "research": 0,
+      "archived": 0
+    },
+    "main_theme": [
+      "TH-01",
+      "TH-02",
+      "TH-03",
+      "TH-04",
+      "TH-05",
+      "TH-07",
+      "TH-08"
+    ],
+    "scenes": [
+      "主日",
+      "家庭",
+      "小组",
+      "跨代"
+    ],
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "主日",
+      "家庭",
+      "小组"
+    ],
+    "difficulty": [
+      1,
+      2,
+      3
+    ]
+  },
+  "songs": [
+    {
+      "song_id": "MUS-S-0001",
+      "title": "奇异恩典（Amazing Grace）",
+      "tier": "A",
+      "review_status": "under_review",
+      "file": "content/songs/MUS-S-0001.json"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "title": "我灵镇静（Be Still, My Soul）",
+      "tier": "B",
+      "review_status": "under_review",
+      "file": "content/songs/MUS-S-0002.json"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "title": "耶稣呼召（Jesus Calls Us）",
+      "tier": "B",
+      "review_status": "under_review",
+      "file": "content/songs/MUS-S-0003.json"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "title": "普世欢腾（Joy to the World）",
+      "tier": "B",
+      "review_status": "under_review",
+      "file": "content/songs/MUS-S-0004.json"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "title": "一切全献上（I Surrender All）",
+      "tier": "B",
+      "review_status": "under_review",
+      "file": "content/songs/MUS-S-0005.json"
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "title": "圣哉，圣哉，圣哉（Holy, Holy, Holy! Lord God Almighty）",
+      "tier": "C",
+      "review_status": "draft",
+      "file": "content/songs/MUS-S-0006.json"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "title": "荣耀归于真神（To God Be the Glory）",
+      "tier": "C",
+      "review_status": "draft",
+      "file": "content/songs/MUS-S-0007.json"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "title": "拥戴我主为王（Crown Him with Many Crowns）",
+      "tier": "C",
+      "review_status": "draft",
+      "file": "content/songs/MUS-S-0008.json"
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "title": "你真伟大（How Great Thou Art）",
+      "tier": "C",
+      "review_status": "draft",
+      "file": "content/songs/MUS-S-0009.json"
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "title": "你的信实广大（Great Is Thy Faithfulness）",
+      "tier": "C",
+      "review_status": "draft",
+      "file": "content/songs/MUS-S-0010.json"
+    }
+  ]
+}

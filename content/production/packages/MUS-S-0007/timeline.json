@@ -1,0 +1,9 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0007",
+  "slot": "timeline",
+  "status": "SYNC_NOT_READY",
+  "phrases": [],
+  "rule": "要求真实同步：音频 → 小节 → 音符 → 歌词；没有可靠时间标记就保持 SYNC_NOT_READY，不进行时间插值猜测（任务书 §八）。",
+  "note": "示唱与钢琴录音进入后，按真实标记建立 phrase timeline / measure mapping / lyric timing / cursor marks。"
+}

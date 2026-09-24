@@ -1,0 +1,19 @@
+{
+  "review_records_version": "MUS-V-0.6.0",
+  "generated_at": "2026-09-21",
+  "model": "production-review-record",
+  "schema": "content/schema/review-record.schema.json",
+  "decision_vocabulary": ["ACCEPT", "REVISE", "HOLD", "REJECT"],
+  "record_fields": ["record_id", "target_kind", "target_id", "decision", "reason", "evidence", "reviewer", "timestamp", "follow_up"],
+  "counts": {
+    "total": 0,
+    "by_decision": { "ACCEPT": 0, "REVISE": 0, "HOLD": 0, "REJECT": 0 }
+  },
+  "records": [],
+  "note": "V1.1-A 建立人工审查记录层。本文件只承载人工裁决的**留档**：界面可生成记录模板，但写入由人工完成（平台对 content/** 只读）。记录不反写 Frozen Skill、不修改任何歌曲裁决、不改变 W01–W04 历史结果、不触发自动升层或自动生产。当前 0 条 —— 试批 5 首的 accepted_by_human 仍为 false，等待人工验收。",
+  "boundaries": [
+    "记录 ≠ 裁决生效：ACCEPT 不自动改 song.review_status / tier / 八维，也不自动升层剩余 40 首",
+    "记录不进入 Immutable Baseline（属 Production Content）",
+    "每条记录必须有人工 reviewer 与 timestamp；系统不得代填"
+  ]
+}

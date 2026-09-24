@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/annual.schema.json",
+  "title": "MOS-MUSIC Annual Instance",
+  "description": "年度音乐门训实例（如 MOS-MUSIC-ANNUAL-2027）。只保存与 MOS 52 周正式来源的引用关系，不复制 52 周经文、经文中心与释经数据。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["annual_id", "year", "source_52w", "status"],
+  "properties": {
+    "annual_id": {
+      "type": "string",
+      "pattern": "^MOS-MUSIC-ANNUAL-[0-9]{4}$"
+    },
+    "year": { "type": "integer", "minimum": 2020, "maximum": 2100 },
+    "annual_theme": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["source", "resolution"],
+      "description": "年度主题。Phase 2A.1 冻结：52W 正式来源未设单一总主题时，本字段必须为 null，annual_theme_status 必须为 not_defined_in_source，不得自行命名（MOS-MUSIC 只引用，不创造未经 MOS 年度母表确认的总主题）。仅当 annual_theme_status 为 confirmed 时才允许为非 null 对象。",
+      "properties": {
+        "source": { "type": "string", "maxLength": 200 },
+        "annual_stage_lines": { "type": "array", "items": { "type": "string", "maxLength": 40 } },
+        "resolution": { "type": "string", "enum": ["confirmed"] },
+        "note": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    },
+    "annual_theme_status": {
+      "type": "string",
+      "enum": ["not_defined_in_source", "confirmed"],
+      "description": "Phase 2A.1：not_defined_in_source = 来源母表未定义总主题且 MOS-MUSIC 不自行命名；confirmed = MOS 52W 正式建立年度主题后经引用读取。"
+    },
+    "annual_theme_note": {
+      "type": ["string", "null"],
+      "maxLength": 400,
+      "description": "对年度主题状态 来源侧观察（如 52W 以阶段主线呈现）。仅作观察记录，不是主题命名。"
+    },
+    "source_52w": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "name", "file", "weeks", "copy_policy"],
+      "properties": {
+        "source_id": { "type": "string", "const": "mos-sermon-2027" },
+        "name": { "type": "string", "maxLength": 120 },
+        "file": { "type": "string", "maxLength": 200 },
+        "version": { "type": "string", "maxLength": 80 },
+        "generated_at": { "type": ["string", "null"], "maxLength": 40 },
+        "weeks": { "type": "integer", "const": 52 },
+        "copy_policy": { "type": "string", "const": "reference_only" },
+        "responsible": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "52 周经文、经文中心、释经资料由原 MOS 年度讲道/52W 系统负责。"
+        }
+      }
+    },
+    "lq_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "LQ 引用来源。MOS-MUSIC 不建立第二套 LQ 体系。",
+      "properties": {
+        "source_id": { "type": "string", "const": "mos-364d" },
+        "file": { "type": "string", "maxLength": 200 },
+        "lq_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/lqId" } },
+        "note": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    },
+    "framework_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "music_units": { "type": "string", "const": "content/framework/music-units.json" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["planning", "sample_validation", "in_production", "frozen"]
+    },
+    "samples": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "weeks": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/annualWeekId" } },
+        "unit_count": { "type": "integer", "minimum": 0 },
+        "song_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "note": { "type": ["string", "null"], "maxLength": 400 }
+  }
+}

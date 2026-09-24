@@ -1,0 +1,3423 @@
+{
+  "worksheets_version": "MUS-V-1.0.0",
+  "generated_at": "2026-09-23T10:27:31.092Z",
+  "generated_by": "tools/song-worksheet.js",
+  "derived": true,
+  "basis": "由 content/song-units/** 的资源就绪表推导（app/song-unit.js）；工具不写任何内容。",
+  "standard": "docs/standards/MOS-SONG-PRODUCTION-WORKSHEET-V1.0.md",
+  "steps_vocabulary": [
+    {
+      "no": "00",
+      "key": "intake",
+      "label": "立案与来源登记",
+      "gate": null
+    },
+    {
+      "no": "01",
+      "key": "verify_meta",
+      "label": "资料核对",
+      "gate": "VERIFYING"
+    },
+    {
+      "no": "02",
+      "key": "choose_version",
+      "label": "确定采用版本",
+      "gate": null
+    },
+    {
+      "no": "03",
+      "key": "lyrics_structure",
+      "label": "歌词结构化",
+      "gate": "LYRICS_READY"
+    },
+    {
+      "no": "04",
+      "key": "lyrics_proof",
+      "label": "歌词校对与教词要点",
+      "gate": null
+    },
+    {
+      "no": "05",
+      "key": "score_notation",
+      "label": "统一简谱记谱",
+      "gate": "SCORE_READY"
+    },
+    {
+      "no": "06",
+      "key": "lyric_alignment",
+      "label": "歌词与音符对齐",
+      "gate": null
+    },
+    {
+      "no": "07",
+      "key": "piano",
+      "label": "钢琴伴奏",
+      "gate": "PIANO_READY"
+    },
+    {
+      "no": "08",
+      "key": "demo_male",
+      "label": "男声示唱",
+      "gate": "DEMO_READY"
+    },
+    {
+      "no": "09",
+      "key": "demo_female",
+      "label": "女声示唱",
+      "gate": null
+    },
+    {
+      "no": "10",
+      "key": "timeline",
+      "label": "分句时间轴",
+      "gate": "SYNC_READY"
+    },
+    {
+      "no": "11",
+      "key": "cursor",
+      "label": "光标跟谱数据",
+      "gate": null
+    },
+    {
+      "no": "12",
+      "key": "teach_learn",
+      "label": "学唱教学",
+      "gate": "TEACHING_READY"
+    },
+    {
+      "no": "13",
+      "key": "teach_class",
+      "label": "教谱 / 教词 / 声乐提示",
+      "gate": null
+    },
+    {
+      "no": "14",
+      "key": "teach_live",
+      "label": "真人教唱模块",
+      "gate": null
+    },
+    {
+      "no": "15",
+      "key": "content_formation",
+      "label": "内容理解 / 生命实践 / 传唱",
+      "gate": null
+    }
+  ],
+  "signoff_letters": {
+    "data": "A",
+    "lyrics": "B",
+    "score": "C",
+    "demo": "D",
+    "piano": "E",
+    "teaching": "F",
+    "sync": "G",
+    "live_teaching": "H",
+    "content": "I",
+    "rights": "J"
+  },
+  "boundaries": [
+    "工作单只派生「做到哪一步」，不代替人写歌词 / 简谱 / 音频 / 教学内容",
+    "机械就绪 ≠ 可发布：release.signed_by 由人工填写，工具不代填",
+    "PENDING 是尚未裁决，不等于通过",
+    "不产生分数、排名、推荐；不自动升层、不自动改 Frozen 技能"
+  ],
+  "counts": {
+    "songs_with_unit": 10,
+    "by_status": {
+      "VERIFYING": 5,
+      "INTAKE": 5
+    },
+    "by_level": {
+      "L3": 3,
+      "NONE": 7
+    },
+    "mechanical_ready": 0,
+    "steps_total": 16,
+    "steps_done": 36
+  },
+  "worksheets": [
+    {
+      "song_id": "MUS-S-0001",
+      "unit_id": "MUS-SU-0001",
+      "unit_file": "content/song-units/MUS-SU-0001.json",
+      "title_zh": "奇异恩典",
+      "status": "VERIFYING",
+      "level": "L3",
+      "next_level": "L4",
+      "next_action": {
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
+      },
+      "next_step": "13",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "DONE",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "DONE",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "DONE",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "DONE",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "DONE",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "DONE",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "lyrics_zh_translation_rights（常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权，CI-0028）",
+        "audio_human_recording（钢琴伴奏与真人示唱未录制；禁 AI 歌声冒充真人）",
+        "score_not_started（统一简谱未转写或未听校）",
+        "lyrics_proofread_pending（已托管歌词尚未逐节核对）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0001/manifest.json",
+        "sample_role": "A",
+        "production_order": 1,
+        "blocked": false,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "PROVIDED",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "PROVIDED",
+            "file": "score.json",
+            "transcription": "SOURCE_IMPORTED",
+            "proofread": "PENDING"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "PROVIDED",
+            "file": "timeline.json",
+            "sync_status": "SYNC_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0001_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": true
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": true
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": true
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": true
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": true
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": true
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": true
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "unit_id": "MUS-SU-0002",
+      "unit_file": "content/song-units/MUS-SU-0002.json",
+      "title_zh": "我灵镇静",
+      "status": "VERIFYING",
+      "level": "L3",
+      "next_level": "L4",
+      "next_action": {
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
+      },
+      "next_step": "13",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "DONE",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "DONE",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "DONE",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "DONE",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "DONE",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "DONE",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "lyrics_zh_translation_rights（常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权，CI-0028）",
+        "audio_human_recording（钢琴伴奏与真人示唱未录制；禁 AI 歌声冒充真人）",
+        "score_not_started（统一简谱未转写或未听校）",
+        "lyrics_proofread_pending（已托管歌词尚未逐节核对）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0002/manifest.json",
+        "sample_role": "D",
+        "production_order": 4,
+        "blocked": false,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "PROVIDED",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "PROVIDED",
+            "file": "score.json",
+            "transcription": "SOURCE_IMPORTED",
+            "proofread": "PENDING"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "PROVIDED",
+            "file": "timeline.json",
+            "sync_status": "SYNC_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0002_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": true
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": true
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": true
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": true
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": true
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": true
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": true
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "unit_id": "MUS-SU-0003",
+      "unit_file": "content/song-units/MUS-SU-0003.json",
+      "title_zh": "耶稣呼召",
+      "status": "VERIFYING",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "score",
+        "target_status": "SCORE_READY"
+      },
+      "next_step": "05",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "DONE",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "TODO",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "lyrics_zh_translation_rights（常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权，CI-0028）",
+        "audio_human_recording（钢琴伴奏与真人示唱未录制；禁 AI 歌声冒充真人）",
+        "score_not_started（统一简谱未转写或未听校）",
+        "lyrics_proofread_pending（已托管歌词尚未逐节核对）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0003/manifest.json",
+        "sample_role": "E",
+        "production_order": 5,
+        "blocked": false,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "PROVIDED",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0003_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": true
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": false
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": false
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "unit_id": "MUS-SU-0004",
+      "unit_file": "content/song-units/MUS-SU-0004.json",
+      "title_zh": "普世欢腾",
+      "status": "VERIFYING",
+      "level": "L3",
+      "next_level": "L4",
+      "next_action": {
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
+      },
+      "next_step": "13",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "DONE",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "DONE",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "DONE",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "DONE",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "DONE",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "DONE",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "lyrics_zh_translation_rights（常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权，CI-0028）",
+        "audio_human_recording（钢琴伴奏与真人示唱未录制；禁 AI 歌声冒充真人）",
+        "score_not_started（统一简谱未转写或未听校）",
+        "lyrics_proofread_pending（已托管歌词尚未逐节核对）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0004/manifest.json",
+        "sample_role": "B",
+        "production_order": 2,
+        "blocked": false,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "PROVIDED",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "PROVIDED",
+            "file": "score.json",
+            "transcription": "SOURCE_IMPORTED",
+            "proofread": "PENDING"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "PROVIDED",
+            "file": "timeline.json",
+            "sync_status": "SYNC_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0004_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": true
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": true
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": true
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": true
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": true
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": true
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": true
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "unit_id": "MUS-SU-0005",
+      "unit_file": "content/song-units/MUS-SU-0005.json",
+      "title_zh": "一切全献上",
+      "status": "VERIFYING",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "score",
+        "target_status": "SCORE_READY"
+      },
+      "next_step": "05",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "DONE",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "DONE",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "DONE",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "score",
+        "piano",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "lyrics_zh_translation_rights（常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权，CI-0028）",
+        "audio_human_recording（钢琴伴奏与真人示唱未录制；禁 AI 歌声冒充真人）",
+        "score_not_started（统一简谱未转写或未听校）",
+        "lyrics_proofread_pending（已托管歌词尚未逐节核对）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0005/manifest.json",
+        "sample_role": "C",
+        "production_order": 3,
+        "blocked": false,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "PROVIDED",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0005_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": true
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": true
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": true
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "unit_id": "MUS-SU-0006",
+      "unit_file": "content/song-units/MUS-SU-0006.json",
+      "title_zh": "圣哉，圣哉，圣哉",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "next_step": "03",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "TODO",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "TODO",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "作品级法律状态未判定（ADR-0012：不得据清单推定）；一切资源 NOT_AVAILABLE。"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0006/manifest.json",
+        "sample_role": null,
+        "production_order": null,
+        "blocked": true,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "NOT_AVAILABLE",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0006_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": false
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": false
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": false
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "unit_id": "MUS-SU-0007",
+      "unit_file": "content/song-units/MUS-SU-0007.json",
+      "title_zh": "荣耀归于真神",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "next_step": "03",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "TODO",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "TODO",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "作品级法律状态未判定；一切资源 NOT_AVAILABLE。"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0007/manifest.json",
+        "sample_role": null,
+        "production_order": null,
+        "blocked": true,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "NOT_AVAILABLE",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0007_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": false
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": false
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": false
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "unit_id": "MUS-SU-0008",
+      "unit_file": "content/song-units/MUS-SU-0008.json",
+      "title_zh": "拥戴我主为王",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "next_step": "03",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "TODO",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "TODO",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "作品级法律状态未判定；一切资源 NOT_AVAILABLE。"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0008/manifest.json",
+        "sample_role": null,
+        "production_order": null,
+        "blocked": true,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "NOT_AVAILABLE",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0008_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": false
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": false
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": false
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "unit_id": "MUS-SU-0009",
+      "unit_file": "content/song-units/MUS-SU-0009.json",
+      "title_zh": "你真伟大",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "next_step": "03",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "TODO",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "TODO",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "作品级法律状态未判定，且详情记录明示通行英译与改编（Stuart K. Hine）可能仍在版权期内；一切资源 NOT_AVAILABLE。",
+        "english_adaptation_may_be_copyrighted（详情记录明示：通行英译与改编 Stuart K. Hine 可能仍在版权期内）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0009/manifest.json",
+        "sample_role": null,
+        "production_order": null,
+        "blocked": true,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "NOT_AVAILABLE",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0009_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": false
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": false
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": false
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "unit_id": "MUS-SU-0010",
+      "unit_file": "content/song-units/MUS-SU-0010.json",
+      "title_zh": "你的信实广大",
+      "status": "INTAKE",
+      "level": "NONE",
+      "next_level": "L1",
+      "next_action": {
+        "key": "lyrics",
+        "target_status": "LYRICS_READY"
+      },
+      "next_step": "03",
+      "steps": [
+        {
+          "no": "00",
+          "key": "intake",
+          "label": "立案与来源登记",
+          "goal": "把这首歌放进待制作库，并登记来源与版权来源状态。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "01",
+          "key": "verify_meta",
+          "label": "资料核对",
+          "goal": "核对歌名（中/英）、词曲作者、译词版本、调 / 拍号 / 速度 / 时长 / 段落结构。",
+          "state": "HUMAN",
+          "gate": "VERIFYING"
+        },
+        {
+          "no": "02",
+          "key": "choose_version",
+          "label": "确定采用版本",
+          "goal": "写明当前采用哪一个歌词版本与乐谱版本，避免同一首歌出现多个未说明版本。",
+          "state": "HUMAN",
+          "gate": null
+        },
+        {
+          "no": "03",
+          "key": "lyrics_structure",
+          "label": "歌词结构化",
+          "goal": "歌词分节 / 分句，带 section_id / lyric_id / line_id（不得只留图片或 PDF）。",
+          "state": "TODO",
+          "gate": "LYRICS_READY"
+        },
+        {
+          "no": "04",
+          "key": "lyrics_proof",
+          "label": "歌词校对与教词要点",
+          "goal": "标出易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "05",
+          "key": "score_notation",
+          "label": "统一简谱记谱",
+          "goal": "调号 / 拍号 / 小节 / 时值 / 高低音点 / 附点 / 延音 / 休止 / 升降号。",
+          "state": "TODO",
+          "gate": "SCORE_READY"
+        },
+        {
+          "no": "06",
+          "key": "lyric_alignment",
+          "label": "歌词与音符对齐",
+          "goal": "每个音符标注 lyric_line_id / lyric_char_index，供跟谱与逐字对齐。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "07",
+          "key": "piano",
+          "label": "钢琴伴奏",
+          "goal": "第一阶段统一只做钢琴：节拍稳定、与歌一致、可循环、调一致。",
+          "state": "TODO",
+          "gate": "PIANO_READY"
+        },
+        {
+          "no": "08",
+          "key": "demo_male",
+          "label": "男声示唱",
+          "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
+          "state": "TODO",
+          "gate": "DEMO_READY"
+        },
+        {
+          "no": "09",
+          "key": "demo_female",
+          "label": "女声示唱",
+          "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "10",
+          "key": "timeline",
+          "label": "分句时间轴",
+          "goal": "每句 start / end（秒）与小节范围 —— 单句循环、当前句高亮的地基。",
+          "state": "TODO",
+          "gate": "SYNC_READY"
+        },
+        {
+          "no": "11",
+          "key": "cursor",
+          "label": "光标跟谱数据",
+          "goal": "只登记真实可用的跟随层级（句 / 小节 / 拍 / 音符 / 歌词）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "12",
+          "key": "teach_learn",
+          "label": "学唱教学",
+          "goal": "五步（听 → 跟 → 陪 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。",
+          "state": "TODO",
+          "gate": "TEACHING_READY"
+        },
+        {
+          "no": "13",
+          "key": "teach_class",
+          "label": "教谱 / 教词 / 声乐提示",
+          "goal": "教谱要点随乐谱产生；教词要点随歌词整理产生；声乐只记这首歌真正需要的提示。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "14",
+          "key": "teach_live",
+          "label": "真人教唱模块",
+          "goal": "短、碎、可重复利用（intro / 教谱 / 教节奏 / 教词 / 分句示范 / 声乐提示 / 完整示范）。",
+          "state": "TODO",
+          "gate": null
+        },
+        {
+          "no": "15",
+          "key": "content_formation",
+          "label": "内容理解 / 生命实践 / 传唱",
+          "goal": "只写这首歌自身的内容层，文本必须可追溯（derived_from），不绑定某一周 / 某一课。",
+          "state": "HUMAN",
+          "gate": null
+        }
+      ],
+      "gaps": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "demo_any",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ],
+      "blocking": [
+        "作品级法律状态未判定（1923 年作品在不同法域状态不一致，记录不作判定）；一切资源 NOT_AVAILABLE。",
+        "jurisdiction_dependent（1923 年作品在不同法域状态不一致，详情记录不作判定）"
+      ],
+      "package": {
+        "manifest_ref": "content/production/packages/MUS-S-0010/manifest.json",
+        "sample_role": null,
+        "production_order": null,
+        "blocked": true,
+        "slots": {
+          "metadata": {
+            "status": "PROVIDED",
+            "file": "metadata.json"
+          },
+          "lyrics": {
+            "status": "NOT_AVAILABLE",
+            "file": "lyrics.json",
+            "proofread": "PENDING"
+          },
+          "score": {
+            "status": "NOT_AVAILABLE",
+            "file": "score.json",
+            "transcription": "NOT_STARTED"
+          },
+          "audio": {
+            "status": "NOT_AVAILABLE",
+            "file": "audio.json"
+          },
+          "timeline": {
+            "status": "NOT_AVAILABLE",
+            "file": "timeline.json",
+            "sync_status": "SYNC_NOT_READY"
+          },
+          "teaching": {
+            "status": "NOT_AVAILABLE",
+            "file": "teaching.json"
+          },
+          "content": {
+            "status": "PROVIDED",
+            "file": "content.json"
+          },
+          "rights": {
+            "status": "PROVIDED",
+            "file": "rights.json"
+          },
+          "worksheet": {
+            "status": "PROVIDED",
+            "file": "MOS-SU-0010_WORKSHEET.md"
+          }
+        }
+      },
+      "resource_package": [
+        {
+          "key": "lyrics_structured",
+          "label": "结构化歌词（分节 / 分句 / line_id）",
+          "ready": false
+        },
+        {
+          "key": "score_simple",
+          "label": "统一简谱（含歌词对齐）",
+          "ready": false
+        },
+        {
+          "key": "piano_full",
+          "label": "钢琴伴奏（全曲）",
+          "ready": false
+        },
+        {
+          "key": "demo_male",
+          "label": "男声示唱",
+          "ready": false
+        },
+        {
+          "key": "demo_female",
+          "label": "女声示唱",
+          "ready": false
+        },
+        {
+          "key": "timeline",
+          "label": "分句时间轴",
+          "ready": false
+        },
+        {
+          "key": "cursor_data",
+          "label": "光标跟谱数据",
+          "ready": false
+        },
+        {
+          "key": "teaching",
+          "label": "教学内容（学唱 / 教谱 / 教词 / 声乐）",
+          "ready": false
+        },
+        {
+          "key": "live_teaching",
+          "label": "真人教唱模块",
+          "ready": false
+        }
+      ],
+      "signoff": [
+        {
+          "key": "data",
+          "letter": "A",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "lyrics",
+          "letter": "B",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "score",
+          "letter": "C",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "demo",
+          "letter": "D",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "piano",
+          "letter": "E",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "teaching",
+          "letter": "F",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "sync",
+          "letter": "G",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "live_teaching",
+          "letter": "H",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "content",
+          "letter": "I",
+          "result": "PENDING",
+          "reviewer": null
+        },
+        {
+          "key": "rights",
+          "letter": "J",
+          "result": "PENDING",
+          "reviewer": null
+        }
+      ],
+      "acceptance": {
+        "pass": 0,
+        "revise": 0,
+        "hold": 0,
+        "pending": 10,
+        "mechanically_complete": false
+      },
+      "release": {
+        "mechanical_ready": false,
+        "signed_by": null,
+        "note": "发布必须由人工签核；本工具不代替签核，也不把 PENDING 当作通过。"
+      }
+    }
+  ],
+  "note": "PILOT 10：5 首公版歌（0001–0005）的英文公版歌词已结构化入包，0001 另有简谱草稿（DRAFT，未听校，不计入等级）；5 首权利未判定歌（0006–0010）全部 NOT_AVAILABLE。中文译本与音频资源待人工提供 —— 这是真实状态，不是遗漏。"
+}

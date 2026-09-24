@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mos-music/song-content.schema.json",
+  "title": "Song Content（歌曲内容层）",
+  "description": "歌曲自身的内容层：meaning / scripture / background / reflection / practice / prayer。属于这首歌，不绑定 W01 / W02 / 某一课 / 某一次讲道。没有内容的字段必须 status=NOT_AVAILABLE。",
+  "type": "object",
+  "required": ["song_id", "content_version", "model", "meaning", "scripture", "background", "reflection", "practice", "prayer", "boundaries"],
+  "additionalProperties": true,
+  "properties": {
+    "song_id": { "type": "string", "pattern": "^MUS-S-[0-9]{4}$" },
+    "content_version": { "type": "string", "pattern": "^MUS-V-[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "model": { "type": "string", "enum": ["song-content"] },
+    "scope_note": { "type": "string" },
+    "meaning": { "$ref": "#/definitions/textField" },
+    "scripture": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": true,
+      "properties": {
+        "reference": { "type": ["string", "null"] },
+        "reference_ids": { "type": "array", "items": { "type": "string" } },
+        "text": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_AVAILABLE"] },
+        "derived_from": { "type": ["string", "null"] },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "background": { "$ref": "#/definitions/textField" },
+    "reflection": { "$ref": "#/definitions/textField" },
+    "practice": { "$ref": "#/definitions/textField" },
+    "prayer": { "$ref": "#/definitions/textField" },
+    "boundaries": { "type": "array", "minItems": 3, "items": { "type": "string" } }
+  },
+  "definitions": {
+    "textField": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": true,
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_AVAILABLE"] },
+        "derived_from": { "type": ["string", "null"] },
+        "note": { "type": ["string", "null"] },
+        "source_note": { "type": ["string", "null"] },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text"],
+            "additionalProperties": true,
+            "properties": {
+              "text": { "type": "string", "minLength": 1 },
+              "derived_from": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

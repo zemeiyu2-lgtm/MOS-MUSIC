@@ -1,0 +1,203 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0001",
+  "unit_id": "MUS-SU-0001",
+  "slot": "lyrics",
+  "language": "en",
+  "version_note": "英文公版原文：词 John Newton，Olney Hymns（1779）；第六节出自 19 世纪初美国通行本。采用通行六节本；本仓不托管任何中文译本（常见中文译本译文各有版权方）。",
+  "structure_note": "每节四行；全曲各节共用同一曲调。phrase_id = 行首词所在的原谱乐句（由 tools/sample-l4.js 按逐词对齐回填；一句歌词可跨乐句，以行首词为准）。",
+  "proofread": {
+    "status": "PENDING",
+    "checked_by": null,
+    "date": null,
+    "note": "文本按通行公版版本誊录，尚未与印刷本逐节核对；核对通过前不得标记 PASS。"
+  },
+  "rights": {
+    "copyright_status": "public_domain",
+    "basis": "词作于 1779 年，已入公有领域；中文译本未托管（译本权利未确认，CI-0028）。",
+    "derived_from": "content/songs/MUS-S-0001.json#copyright.copyright_status"
+  },
+  "sections": [
+    {
+      "section_id": "v1",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "line_id": "v1-L1",
+          "lyric_id": "MUS-S-0001-L01",
+          "phrase_id": "PHRASE-01",
+          "text": "Amazing grace! How sweet the sound,"
+        },
+        {
+          "line_id": "v1-L2",
+          "lyric_id": "MUS-S-0001-L02",
+          "phrase_id": "PHRASE-01",
+          "text": "That saved a wretch like me!"
+        },
+        {
+          "line_id": "v1-L3",
+          "lyric_id": "MUS-S-0001-L03",
+          "phrase_id": "PHRASE-02",
+          "text": "I once was lost, but now am found;"
+        },
+        {
+          "line_id": "v1-L4",
+          "lyric_id": "MUS-S-0001-L04",
+          "phrase_id": "PHRASE-03",
+          "text": "Was blind, but now I see."
+        }
+      ]
+    },
+    {
+      "section_id": "v2",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "line_id": "v2-L1",
+          "lyric_id": "MUS-S-0001-L05",
+          "phrase_id": null,
+          "text": "'Twas grace that taught my heart to fear,"
+        },
+        {
+          "line_id": "v2-L2",
+          "lyric_id": "MUS-S-0001-L06",
+          "phrase_id": null,
+          "text": "And grace my fears relieved;"
+        },
+        {
+          "line_id": "v2-L3",
+          "lyric_id": "MUS-S-0001-L07",
+          "phrase_id": null,
+          "text": "How precious did that grace appear,"
+        },
+        {
+          "line_id": "v2-L4",
+          "lyric_id": "MUS-S-0001-L08",
+          "phrase_id": null,
+          "text": "The hour I first believed!"
+        }
+      ]
+    },
+    {
+      "section_id": "v3",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "line_id": "v3-L1",
+          "lyric_id": "MUS-S-0001-L09",
+          "phrase_id": null,
+          "text": "Through many dangers, toils and snares,"
+        },
+        {
+          "line_id": "v3-L2",
+          "lyric_id": "MUS-S-0001-L10",
+          "phrase_id": null,
+          "text": "I have already come;"
+        },
+        {
+          "line_id": "v3-L3",
+          "lyric_id": "MUS-S-0001-L11",
+          "phrase_id": null,
+          "text": "'Tis grace hath brought me safe thus far,"
+        },
+        {
+          "line_id": "v3-L4",
+          "lyric_id": "MUS-S-0001-L12",
+          "phrase_id": null,
+          "text": "And grace will lead me home."
+        }
+      ]
+    },
+    {
+      "section_id": "v4",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "line_id": "v4-L1",
+          "lyric_id": "MUS-S-0001-L13",
+          "phrase_id": null,
+          "text": "The Lord hath promised good to me,"
+        },
+        {
+          "line_id": "v4-L2",
+          "lyric_id": "MUS-S-0001-L14",
+          "phrase_id": null,
+          "text": "His word my hope secures;"
+        },
+        {
+          "line_id": "v4-L3",
+          "lyric_id": "MUS-S-0001-L15",
+          "phrase_id": null,
+          "text": "He will my shield and portion be,"
+        },
+        {
+          "line_id": "v4-L4",
+          "lyric_id": "MUS-S-0001-L16",
+          "phrase_id": null,
+          "text": "As long as life endures."
+        }
+      ]
+    },
+    {
+      "section_id": "v5",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "line_id": "v5-L1",
+          "lyric_id": "MUS-S-0001-L17",
+          "phrase_id": null,
+          "text": "Yes, when this flesh and heart shall fail,"
+        },
+        {
+          "line_id": "v5-L2",
+          "lyric_id": "MUS-S-0001-L18",
+          "phrase_id": null,
+          "text": "And mortal life shall cease;"
+        },
+        {
+          "line_id": "v5-L3",
+          "lyric_id": "MUS-S-0001-L19",
+          "phrase_id": null,
+          "text": "I shall possess, within the veil,"
+        },
+        {
+          "line_id": "v5-L4",
+          "lyric_id": "MUS-S-0001-L20",
+          "phrase_id": null,
+          "text": "A life of joy and peace."
+        }
+      ]
+    },
+    {
+      "section_id": "v6",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "line_id": "v6-L1",
+          "lyric_id": "MUS-S-0001-L21",
+          "phrase_id": null,
+          "text": "When we've been there ten thousand years,"
+        },
+        {
+          "line_id": "v6-L2",
+          "lyric_id": "MUS-S-0001-L22",
+          "phrase_id": null,
+          "text": "Bright shining as the sun,"
+        },
+        {
+          "line_id": "v6-L3",
+          "lyric_id": "MUS-S-0001-L23",
+          "phrase_id": null,
+          "text": "We've no less days to sing God's praise,"
+        },
+        {
+          "line_id": "v6-L4",
+          "lyric_id": "MUS-S-0001-L24",
+          "phrase_id": null,
+          "text": "Than when we first begun."
+        }
+      ]
+    }
+  ],
+  "note": "中文译本：NOT_AVAILABLE（权利未确认）。需要中文时由人工提供已获授权文本（USER_PROVIDED）或完成授权后再录入，不由平台自动生成。"
+}

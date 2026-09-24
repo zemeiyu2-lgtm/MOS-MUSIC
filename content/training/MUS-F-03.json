@@ -1,0 +1,18 @@
+{
+  "form_id": "MUS-F-03",
+  "code": "MUSIC-F03",
+  "title": "七步法带领",
+  "purpose": "",
+  "used_by_training": [
+    "MUS-T-L2",
+    "MUS-T-L3"
+  ],
+  "fields": [],
+  "output_formats": [
+    "screen",
+    "print",
+    "csv"
+  ],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

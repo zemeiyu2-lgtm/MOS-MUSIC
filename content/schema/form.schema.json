@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/form.schema.json",
+  "title": "MOS-MUSIC Training Form (MUS-F-01 … MUS-F-06)",
+  "description": "§23 六张培训表。每张表既可在线填写，也可导出/打印。表结构在 Phase 1 只建立空壳（fields 为空数组），字段内容在 Phase 4 Training 阶段生产。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["form_id", "code", "title", "purpose", "fields", "output_formats", "status"],
+  "properties": {
+    "form_id": { "$ref": "common.schema.json#/$defs/formId" },
+    "code": { "type": "string", "pattern": "^MUSIC-F0[1-6]$", "description": "MOS 既有编号写法，用于与 MOS 其他系统对齐。" },
+    "title": { "type": "string", "enum": ["歌曲辨识", "音乐门训设计", "七步法带领", "生命实践", "门训反馈", "复制训练"] },
+    "purpose": { "type": "string", "maxLength": 400, "description": "Phase 1 为空壳。" },
+    "used_by_training": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/trainingId" } },
+    "fields": {
+      "type": "array",
+      "description": "Phase 1 为空数组；Phase 4 填入字段定义。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "label", "type"],
+        "properties": {
+          "key": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,39}$" },
+          "label": { "type": "string", "maxLength": 60 },
+          "type": { "type": "string", "enum": ["text", "longtext", "number", "select", "multiselect", "date", "scale", "song_ref", "course_ref", "person_ref"] },
+          "options": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+          "required": { "type": "boolean" },
+          "help": { "type": ["string", "null"], "maxLength": 300 }
+        }
+      }
+    },
+    "output_formats": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["screen", "print", "csv", "json"] },
+      "description": "§23 要求：可在线填写，也可导出/打印。"
+    },
+    "status": { "type": "string", "enum": ["shell", "draft", "under_review", "approved", "archived"] },
+    "version": { "$ref": "common.schema.json#/$defs/version" }
+  }
+}

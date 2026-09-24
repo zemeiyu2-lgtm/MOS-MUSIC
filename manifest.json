@@ -1,0 +1,63 @@
+{
+  "name": "MOS-MUSIC｜音乐门徒训练平台",
+  "short_name": "MOS-MUSIC",
+  "description": "以圣经真理为核心、以音乐为形成媒介、以门徒生命实践为目标的音乐门徒训练平台。支持离线使用。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./index.html#/today",
+  "scope": "./",
+  "id": "/mos-music/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#F7F3EB",
+  "theme_color": "#234F42",
+  "categories": ["education", "lifestyle", "books"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "今日门训",
+      "short_name": "今天",
+      "url": "./index.html#/today",
+      "description": "打开今天的音乐门训"
+    },
+    {
+      "name": "音乐库",
+      "short_name": "音乐库",
+      "url": "./index.html#/library",
+      "description": "搜索与筛选歌曲"
+    },
+    {
+      "name": "24 课音乐册",
+      "short_name": "24课",
+      "url": "./index.html#/courses",
+      "description": "浏览 24 课主题骨架"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "governance_version": "MUS-V-0.4.0",
+  "generated_at": "2026-09-21",
+  "owner": "MOS Sermon Music Production Platform V1.0",
+  "stages": [
+    "Frozen",
+    "Observed",
+    "Proposed",
+    "Released"
+  ],
+  "discipline": "Frozen = 核心规则与已审核确认的生产结果；Observed = 实际使用发现的问题；Proposed = 建议修改；Released = 正式进入下一版本。绝对不要「发现问题 → 自动修改 Frozen 技能」。",
+  "frozen": {
+    "skill_id": "mos-music-song-discernment",
+    "skill_version": "1.0.0",
+    "skill_status": "Frozen",
+    "frozen_at": "2026-09-21",
+    "skill_path": "~/.workbuddy/skills/mos-music-song-discernment/",
+    "calibration": "docs/MODEL-CALIBRATION-V1.0.md",
+    "historical_decisions": [
+      "2027-W01",
+      "2027-W02",
+      "2027-W03",
+      "2027-W04"
+    ],
+    "frozen_items": [
+      "七步法（读→明→唱→记→感→行→传，不加第八步）",
+      "S6 = 实践转换层；S7 = 传递转换层",
+      "歌曲 ≠ 完整门训单元（歌曲 + S6 具体行动设计 = 音乐进入生命实践）",
+      "tier（资源等级）与 review_status（生命周期）为两个独立字段",
+      "两层裁决分离：本周适配裁决 ≠ 歌曲生命周期",
+      "W01–W04 历史裁决（不得追溯修改）"
+    ],
+    "note": "以上内容为冻结基线，任何变更必须先形成 Proposed 并取得人工批准。"
+  },
+  "observed": [
+    {
+      "issue_id": "CI-0005",
+      "week": "W02",
+      "title": "S7 缺可验证机制",
+      "severity": "MEDIUM"
+    },
+    {
+      "issue_id": "CI-0006",
+      "week": "W04",
+      "title": "主歌关系等级（整体见证 vs 逐节对应）待人工确认",
+      "severity": "HIGH"
+    },
+    {
+      "issue_id": "CI-0007",
+      "week": "W04",
+      "title": "LQ 与经文跨线配对待人工确认",
+      "severity": "MEDIUM"
+    },
+    {
+      "issue_id": "CI-0008",
+      "week": "W05",
+      "title": "曲库容量不足（W05 起无未使用歌曲）",
+      "severity": "BLOCKER"
+    },
+    {
+      "issue_id": "CI-0025",
+      "week": null,
+      "title": "简谱记谱细则未定",
+      "severity": "LOW"
+    },
+    {
+      "issue_id": "CI-0026",
+      "week": null,
+      "title": "前台淡化周次 vs 后台保留 Week Music 双轨",
+      "severity": "MEDIUM"
+    },
+    {
+      "issue_id": "CI-0027",
+      "week": null,
+      "title": "资源与音频技术规格未定",
+      "severity": "LOW"
+    }
+  ],
+  "proposed": [
+    {
+      "proposal_id": "P-SKILL-1.0.1",
+      "target": "mos-music-song-discernment",
+      "target_version": "1.0.1",
+      "status": "pending_human_approval",
+      "items": [
+        "输出增加单元层摘要，或在文档中明确「单元层由平台与人工负责」（对应 CI-0011）",
+        "回测哈希作用域收窄为冻结基线文件集合（对应 CI-0012）",
+        "跨周复用检查升级为技能内置提示（当前由平台承担）"
+      ],
+      "requires": "人工批准。未获批准前不得改动 Frozen 技能，平台也不得代其变更判定。",
+      "note": "本提案仅记录，不产生任何对技能的写入。"
+    },
+    {
+      "proposal_id": "P-LIBRARY-1.0.0",
+      "target": "Music Library",
+      "target_version": "library-1.1.0",
+      "status": "pending_human_approval",
+      "items": [
+        "扩库：新增经完整辨识的公版歌曲，使可用歌曲数 ≥ 剩余周数",
+        "或授权有限复用规则（例如同一首歌不得在相邻 4 周内重复作主歌）",
+        "或缩减年度计划范围（明确本年度只生产至第 N 周）"
+      ],
+      "requires": "人工裁决（H-3）。平台三种路径都支持，但均需明确授权。",
+      "note": "对应 CI-0008；在裁决前，W05 起生产在单元层审查门为 BLOCK/REVIEW。"
+    }
+  ],
+  "released": [
+    {
+      "version": "platform-3.0.0",
+      "name": "MOS 生命诗歌软件 V3.0 — 单曲完整单元标准层",
+      "date": "2026-09-21",
+      "content_version": "MUS-V-0.8.0",
+      "scope": [
+        "标准层：教学法 / 18 段模板 + L1–L4 / STEP00–15 工作单（docs/standards/）",
+        "内容层：content/song-units/**（词表 + 10 个单元包）+ song-unit.schema.json",
+        "程序层：app/song-unit.js / app/front/{score,review,pulse,player}.js / 前台五页 / v30.css",
+        "工具：tools/song-units.js、tools/song-worksheet.js",
+        "派生层：song-unit-levels.json、song-worksheets.json（不进不可变基线）",
+        "SW mos-music-v10；校验器新增 V3.0 硬检查"
+      ],
+      "calibration": [
+        "CI-0025",
+        "CI-0026",
+        "CI-0027"
+      ],
+      "tests": {
+        "validate_content": "PASS 0 errors / 0 warnings",
+        "smoke": "ALL PASS 305 / 0",
+        "platform_unit": "ALL PASS 94 / 0",
+        "regression": "PASS 70 / 70（immutable_drift = []）",
+        "unit_checks": "song-units --check / song-worksheet --check PASS",
+        "cdp": "ALL PASS 121 / 0（含 V3.0 断言、视口 360/390/430/1366、离线冷启动）",
+        "pwa_offline": "PASS"
+      },
+      "note": "Song Core Record（content/songs/**）与全部冻结研究数据逐字节不变；只做简谱、只做钢琴；淡化周次绑定。详见 docs/ADR/ADR-0017。"
+    },
+    {
+      "version": "platform-1.0.0",
+      "name": "MOS Sermon Music Production Platform V1.0",
+      "date": "2026-09-21",
+      "scope": [
+        "Music Library（含使用历史与风险记录）",
+        "Song Discernment Engine（平台化，与冻结技能判定一致）",
+        "Sermon Week / Song Matching / Unit Production（生产计划器）",
+        "Unit-Level Review Gate（N1）",
+        "Cross-Week Reuse Check（N2）",
+        "Baseline Scope 修正（N3）",
+        "Calibration Issue 系统与版本治理",
+        "Production Dashboard",
+        "Regression Suite（W01–W04）"
+      ],
+      "regression": "PASS 27/27（歌曲层 8 用例 + 单元层 4 项 + 不变量 5 项 + 校准治理 3 项 + 索引一致性 4 项；immutable_drift = 空）",
+      "tests": {
+        "validate_content": "PASS 0 errors / 0 warnings（16 程序文件 + 84 内容文件）",
+        "smoke": "ALL PASS 147 / 0",
+        "cdp": "ALL PASS 56 / 0（含 MODULE 12 五个子视图与离线冷启动）",
+        "pwa_offline": "PASS（about:blank → 断网 → 冷启动，外壳缓存与本地库含生产平台索引全量可读）",
+        "platform_unit": "ALL PASS 55 / 0（辨识引擎 / 审查门 / 复用 / 库容 / 计划器 / 校准治理）"
+      },
+      "note": "字段值已由本轮验收回填（见 MOS-MUSIC_PLATFORM_V1.0_REPORT.md）。"
+    },
+    {
+      "version": "content-MUS-V-0.9.0",
+      "name": "SONG PRODUCTION PILOT 10 — 第一批 10 首生产工作包",
+      "date": "2026-09-22",
+      "content_version": "MUS-V-0.9.0",
+      "scope": [
+        "生产工作包：content/production/packages/**（10 首 × 9 槽位 + manifest + WORKSHEET.md）",
+        "真实载荷：0001–0005 公版英文歌词结构化入包与单元；0001 简谱 DRAFT 草稿 10 小节（不计入等级）",
+        "工具：tools/build-packages.js（新增）；song-units.js 消费包（DRAFT 不计入 / VERIFIED 转 PROVIDED）；song-worksheet.js 每包工作单",
+        "前台：等级前台词（可以看谱学习 / 可以钢琴陪唱 / 可以完整跟唱 / 完整教学）+ 草稿徽章 + 权利未判定说明",
+        "SW mos-music-v11；校准 CI-0028 / CI-0029"
+      ],
+      "boundaries": [
+        "平台版本不变（停止新增架构功能）；不虚构任何资源；0006–0010 权利未判定全阻断；不扩库 / 不自动升层 / 不生产 W05"
+      ]
+    },
+    {
+      "version": "content-MUS-V-1.0.0",
+      "name": "MOS MUSIC V3.x — 产品方向冻结与资源生产基础升级",
+      "date": "2026-09-23",
+      "content_version": "MUS-V-1.0.0",
+      "platform_version": "3.1.0",
+      "scope": [
+        "独立定位冻结：ADR-0018（音乐系统 ⇄ 门训系统相连而不相属）；front 不突出周次，back 历史引用保留",
+        "歌曲分类 V1.1（ADR-0019）：content/taxonomy/**（四维词表 + 100 首逐首分词，多归属，非单选身份）",
+        "歌曲内容层：content/song-content/**（meaning/scripture/background/reflection/practice/prayer，不绑周次课程）",
+        "完整资源模型（ADR-0020）：schema 增 source_type/source_url/host_policy/segment/is_ai/engine/vendor/source_tracking；song-unit 增 ai_male/ai_female 与 expression_reference",
+        "Reuse First：外部真人版本原站播放 / 嵌入 / 时间段定位，不下载转存",
+        "MOS Singing Coach（ADR-0021）：content/coach/** + app/coach.js + app/front/coach.js + #/coach；音频上传与 AI 分析接口 RESERVED_NOT_CONNECTED",
+        "100 首资源普查：tools/song-resource-discovery.js + content/production/resource-discovery.json（11 列，外部检索未执行 ⇒ UNSURVEYED 且来源留空）",
+        "边界守护：tools/guard.js（10 项）；SW mos-music-v12",
+        "校准：CI-0030（外部真人复用授权与署名） / CI-0031（Coach 音频上传隐私） / CI-0032（100 首检索立项）"
+      ],
+      "boundaries": [
+        "不开始制作 100 首实际资源；不生成 AI 歌声；不代替人工听校 / 不代替人工定版权结论",
+        "不下载 / 不转存任何外部资源；Coach 不读门训数据、不评分、不排名、不评属灵",
+        "Frozen Skill / W01–W04 / Candidate 状态 / 52 周后台历史引用零改动；immutable_drift = []"
+      ]
+    }
+  ]
+}

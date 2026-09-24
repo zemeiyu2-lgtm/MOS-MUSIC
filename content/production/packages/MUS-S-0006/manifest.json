@@ -1,0 +1,55 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0006",
+  "unit_id": "MUS-SU-0006",
+  "unit_ref": "content/song-units/MUS-SU-0006.json",
+  "task": "SONG PRODUCTION PILOT 10",
+  "sample_role": null,
+  "production_order": null,
+  "blocked": true,
+  "blocking_reasons": [
+    "作品级法律状态未判定（ADR-0012：不得据清单推定）；一切资源 NOT_AVAILABLE。"
+  ],
+  "slots": {
+    "metadata": {
+      "status": "PROVIDED",
+      "file": "metadata.json"
+    },
+    "lyrics": {
+      "status": "NOT_AVAILABLE",
+      "file": "lyrics.json",
+      "proofread": "PENDING"
+    },
+    "score": {
+      "status": "NOT_AVAILABLE",
+      "file": "score.json",
+      "transcription": "NOT_STARTED"
+    },
+    "audio": {
+      "status": "NOT_AVAILABLE",
+      "file": "audio.json"
+    },
+    "timeline": {
+      "status": "NOT_AVAILABLE",
+      "file": "timeline.json",
+      "sync_status": "SYNC_NOT_READY"
+    },
+    "teaching": {
+      "status": "NOT_AVAILABLE",
+      "file": "teaching.json"
+    },
+    "content": {
+      "status": "PROVIDED",
+      "file": "content.json"
+    },
+    "rights": {
+      "status": "PROVIDED",
+      "file": "rights.json"
+    },
+    "worksheet": {
+      "status": "PROVIDED",
+      "file": "MOS-SU-0006_WORKSHEET.md"
+    }
+  },
+  "level_note": "等级由 app/song-unit.js 从单元记录派生（DRAFT 简谱不计入）；不得在 manifest 里宣布等级。"
+}

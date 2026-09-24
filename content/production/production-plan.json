@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-21T06:39:04.350Z",
+  "generated_by": "tools/produce-plan.js",
+  "plan_only": true,
+  "writes_annual_content": false,
+  "platform": "mos-sermon-music-production-platform@1.0.0",
+  "mode": "single_week",
+  "from": "W05",
+  "to": "W05",
+  "requested": 1,
+  "already_produced": 0,
+  "remaining": 1,
+  "default_gate": "human_review",
+  "batch_bypasses_review": false,
+  "capacity": {
+    "code": "MUSIC_LIBRARY_CAPACITY_WARNING",
+    "warning": true,
+    "total": 5,
+    "assessed": 5,
+    "never_used": [],
+    "usable": 0,
+    "high_risk": [
+      "MUS-S-0002",
+      "MUS-S-0005"
+    ],
+    "remaining_weeks": 1,
+    "detail": "可用（未使用过）歌曲 0 首 < 剩余生产需求 1 周 → 必须由人工决定：扩库、复用或缩减计划；平台不会强行凑数。"
+  },
+  "entries": [
+    {
+      "week": "W05",
+      "week_id": "2027-W05",
+      "already_produced": false,
+      "upstream_ready": false,
+      "requires": [
+        "upstream_week_record",
+        "song_discernment_run"
+      ],
+      "action": "blocked_capacity",
+      "gate": "REVIEW",
+      "capacity_warning": true
+    }
+  ],
+  "note": "生产计划快照（不是生产结果）。上游缺失与曲库容量不足会在计划中显式暴露，不做静默兜底。"
+}

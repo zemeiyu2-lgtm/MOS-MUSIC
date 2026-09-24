@@ -1,0 +1,90 @@
+{
+  "annual_id": "MOS-MUSIC-ANNUAL-2027",
+  "year": 2027,
+  "week_id": "2027-W03",
+  "mos_week": "W03",
+  "sermon_week_ref": "mos-sermon-2027｜W03 路5:1–11「放下网，跟随祂」（52周正式释经生产版 V2.0）",
+  "bible_passage_id": "路5:1–11",
+  "bible_reference_ids": [
+    "BB-LUK-5"
+  ],
+  "core_truth": {
+    "text": "耶稣在人的徒劳与专业之外显出祂的主权，使人看见自己的不配，并把跟随的呼召交给他——跟从始于认识祂是谁，而不是因着得着什么。",
+    "provenance": {
+      "source_system": "mos-sermon-2027",
+      "source_id": "W03",
+      "source_field": "⑥ 经文中心",
+      "copy_policy": "reference_only",
+      "note": "照录 2027 正式释经表经文中心。"
+    }
+  },
+  "life_question_id": "LQ03",
+  "music_unit_id": [
+    "MM08"
+  ],
+  "mm_rationale": "经文是路加记载的第一批门徒呼召：主在职业现场显出主权→彼得认罪→「不要怕」→撇下所有的跟随。这是 MM08 跟随基督的定义性经文（跟随始于认识祂是谁），并直接处理 LQ03「什么才算成功？我到底要怎样活」——整夜劳力一无所得的专业成功，被「依从你的话」重新定义。",
+  "music_function": [
+    "LI",
+    "TR",
+    "EM"
+  ],
+  "core_song_id": "MUS-S-0003",
+  "auxiliary_song_id": [
+    "MUS-S-0005"
+  ],
+  "seven_step_practice": {
+    "S1_read": {
+      "label": "读",
+      "prompt": "阅读或聆听本周经文，先不急着应用。",
+      "content": "读路5:1–11：分四步读——①耶稣借船讲道；②「开到水深之处，下网打鱼」；③彼得的认罪与耶稣的「不要怕」；④「撇下所有的，跟从了耶稣」。",
+      "content_status": "reviewed"
+    },
+    "S2_understand": {
+      "label": "明",
+      "prompt": "这段经文究竟教导什么？",
+      "content": "注意次序：先认识主（满网鱼让彼得看见祂是谁），才有认罪与呼召，最后才是撇下。跟随的成本不是重点，主的身份才是。「依从你的话」发生在整夜劳力一无所得之后——顺服不是效率判断，而是主权判断。",
+      "content_status": "reviewed"
+    },
+    "S3_sing": {
+      "label": "唱",
+      "prompt": "通过歌曲表达已经理解的真理。",
+      "content": "唱《耶稣呼召》（歌词见教会诗本或授权来源）：歌的每一节正是「在繁忙与得失中听见呼召—放下—跟从」。再唱《一切全献上》副歌，把降服从情绪变成一句可执行的话。",
+      "content_status": "reviewed"
+    },
+    "S4_remember": {
+      "label": "记",
+      "prompt": "本周希望门徒记住什么？",
+      "content": "记住一句话：「跟从始于认识祂是谁，而不是因着得着什么。」（对应经文：路5:10–11）",
+      "content_status": "reviewed"
+    },
+    "S5_feel": {
+      "label": "感",
+      "prompt": "真理应该形成怎样的情感回应？",
+      "content": "让真理塑造的情感是：在圣洁主面前的谦卑（「主啊，离开我，我是个罪人」）与被「不要怕」托住的勇气。警惕两种假情感：没有认罪的亢奋，和没有「不要怕」的恐惧。",
+      "content_status": "reviewed"
+    },
+    "S6_act": {
+      "label": "行",
+      "prompt": "本周要完成的一个具体行动。",
+      "content": "本周完成一项「已经知道该做、却一直拖延」的具体顺服，从以下类型中选一项：①向一位家人承认一个具体的错并请求饶恕；②停止一项需要说谎或夸大的业务/做事方式；③明确加入一个小组并参加第一次聚会。写下完成时间。",
+      "content_status": "reviewed"
+    },
+    "S7_transmit": {
+      "label": "传",
+      "prompt": "本周要把什么传给别人？",
+      "content": "本周约一位肢体，用 20 分钟带他走一遍七步法（就用本周的经文与歌曲），下次聚会时互相回报各自的「行」与「传」完成了没有。",
+      "content_status": "reviewed"
+    }
+  },
+  "life_practice": "本周完成一项已知道却拖延的具体顺服（向家人认错 / 停止不诚实的做法 / 加入小组），三选一并记录完成时间。",
+  "transmission_task": "约一位肢体带他走一遍七步法，下周互相回报「行」与「传」的完成情况。",
+  "expected_formation": "从「努力＝蒙福」的自我依靠转向「依从你的话」的主权顺服；出现至少一项可查验的具体顺服行为，并开始第一代门训传递。",
+  "status": "reviewed",
+  "provenance": {
+    "source_system": "mos-sermon-2027",
+    "source_id": "2027-W03",
+    "source_field": "W03 全行",
+    "copy_policy": "reference_only",
+    "note": "周样本为音乐门训层。"
+  }
+}

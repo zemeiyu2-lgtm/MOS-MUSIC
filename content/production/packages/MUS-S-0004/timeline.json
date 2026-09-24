@@ -1,0 +1,511 @@
+{
+  "package_version": "MUS-V-1.1.0",
+  "song_id": "MUS-S-0004",
+  "slot": "timeline",
+  "status": "SYNC_READY",
+  "tempo_bpm": 80,
+  "beats_per_second": 1.333,
+  "duration_seconds": 30.75,
+  "phrases": [
+    {
+      "phrase_id": "PHRASE-01",
+      "section_id": "tune",
+      "line_ids": [
+        "v1-L1",
+        "v1-L2"
+      ],
+      "start": 0,
+      "end": 10.313,
+      "measure_start": 1,
+      "measure_end": 6,
+      "marks": [
+        {
+          "kind": "note",
+          "start": 0,
+          "end": 0.75,
+          "no": null,
+          "index": 0,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 0.75,
+          "end": 1.313,
+          "no": null,
+          "index": 1,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 1.313,
+          "end": 1.688,
+          "no": null,
+          "index": 2,
+          "beat": 1.75
+        },
+        {
+          "kind": "note",
+          "start": 1.688,
+          "end": 2.813,
+          "no": null,
+          "index": 3,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 2.813,
+          "end": 3.188,
+          "no": null,
+          "index": 4,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 3.188,
+          "end": 3.938,
+          "no": null,
+          "index": 5,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 3.938,
+          "end": 4.688,
+          "no": null,
+          "index": 6,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 4.688,
+          "end": 5.813,
+          "no": null,
+          "index": 7,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 5.813,
+          "end": 6.188,
+          "no": null,
+          "index": 8,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 6.188,
+          "end": 7.313,
+          "no": null,
+          "index": 9,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 7.313,
+          "end": 7.688,
+          "no": null,
+          "index": 10,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 7.688,
+          "end": 8.813,
+          "no": null,
+          "index": 11,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 8.813,
+          "end": 9.188,
+          "no": null,
+          "index": 12,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 9.188,
+          "end": 10.313,
+          "no": null,
+          "index": 13,
+          "beat": 0
+        }
+      ]
+    },
+    {
+      "phrase_id": "PHRASE-02",
+      "section_id": "tune",
+      "line_ids": [
+        "v1-L3",
+        "v1-L4"
+      ],
+      "start": 10.313,
+      "end": 20.063,
+      "measure_start": 6,
+      "measure_end": 12,
+      "marks": [
+        {
+          "kind": "note",
+          "start": 10.313,
+          "end": 10.688,
+          "no": null,
+          "index": 0,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 10.688,
+          "end": 11.063,
+          "no": null,
+          "index": 1,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 11.063,
+          "end": 11.438,
+          "no": null,
+          "index": 2,
+          "beat": 0.5
+        },
+        {
+          "kind": "note",
+          "start": 11.438,
+          "end": 11.813,
+          "no": null,
+          "index": 3,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 11.813,
+          "end": 12.188,
+          "no": null,
+          "index": 4,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 12.188,
+          "end": 12.75,
+          "no": null,
+          "index": 5,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 12.75,
+          "end": 13.125,
+          "no": null,
+          "index": 6,
+          "beat": 0.75
+        },
+        {
+          "kind": "note",
+          "start": 13.125,
+          "end": 13.5,
+          "no": null,
+          "index": 7,
+          "beat": 1.25
+        },
+        {
+          "kind": "note",
+          "start": 13.5,
+          "end": 13.875,
+          "no": null,
+          "index": 8,
+          "beat": 1.75
+        },
+        {
+          "kind": "note",
+          "start": 13.875,
+          "end": 14.25,
+          "no": null,
+          "index": 9,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 14.25,
+          "end": 14.625,
+          "no": null,
+          "index": 10,
+          "beat": 0.5
+        },
+        {
+          "kind": "note",
+          "start": 14.625,
+          "end": 15,
+          "no": null,
+          "index": 11,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 15,
+          "end": 15.375,
+          "no": null,
+          "index": 12,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 15.375,
+          "end": 15.938,
+          "no": null,
+          "index": 13,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 15.938,
+          "end": 16.313,
+          "no": null,
+          "index": 14,
+          "beat": 0.75
+        },
+        {
+          "kind": "note",
+          "start": 16.313,
+          "end": 16.688,
+          "no": null,
+          "index": 15,
+          "beat": 1.25
+        },
+        {
+          "kind": "note",
+          "start": 16.688,
+          "end": 17.063,
+          "no": null,
+          "index": 16,
+          "beat": 1.75
+        },
+        {
+          "kind": "note",
+          "start": 17.063,
+          "end": 17.438,
+          "no": null,
+          "index": 17,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 17.438,
+          "end": 17.813,
+          "no": null,
+          "index": 18,
+          "beat": 0.5
+        },
+        {
+          "kind": "note",
+          "start": 17.813,
+          "end": 18.188,
+          "no": null,
+          "index": 19,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 18.188,
+          "end": 18.563,
+          "no": null,
+          "index": 20,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 18.563,
+          "end": 18.938,
+          "no": null,
+          "index": 21,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 18.938,
+          "end": 20.063,
+          "no": null,
+          "index": 22,
+          "beat": 0
+        }
+      ]
+    },
+    {
+      "phrase_id": "PHRASE-03",
+      "section_id": "tune",
+      "line_ids": [
+        "v1-L5",
+        "v1-L6"
+      ],
+      "start": 20.063,
+      "end": 30.75,
+      "measure_start": 12,
+      "measure_end": 18,
+      "marks": [
+        {
+          "kind": "note",
+          "start": 20.063,
+          "end": 20.438,
+          "no": null,
+          "index": 0,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 20.438,
+          "end": 20.813,
+          "no": null,
+          "index": 1,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 20.813,
+          "end": 21.188,
+          "no": null,
+          "index": 2,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 21.188,
+          "end": 21.563,
+          "no": null,
+          "index": 3,
+          "beat": 0.5
+        },
+        {
+          "kind": "note",
+          "start": 21.563,
+          "end": 21.938,
+          "no": null,
+          "index": 4,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 21.938,
+          "end": 22.313,
+          "no": null,
+          "index": 5,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 22.313,
+          "end": 22.688,
+          "no": null,
+          "index": 6,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 22.688,
+          "end": 23.813,
+          "no": null,
+          "index": 7,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 23.813,
+          "end": 24.188,
+          "no": null,
+          "index": 8,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 24.188,
+          "end": 24.563,
+          "no": null,
+          "index": 9,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 24.563,
+          "end": 24.938,
+          "no": null,
+          "index": 10,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 24.938,
+          "end": 25.688,
+          "no": null,
+          "index": 11,
+          "beat": 0.5
+        },
+        {
+          "kind": "note",
+          "start": 25.688,
+          "end": 26.063,
+          "no": null,
+          "index": 12,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 26.063,
+          "end": 26.625,
+          "no": null,
+          "index": 13,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 26.625,
+          "end": 27,
+          "no": null,
+          "index": 14,
+          "beat": 0.75
+        },
+        {
+          "kind": "note",
+          "start": 27,
+          "end": 27.375,
+          "no": null,
+          "index": 15,
+          "beat": 1.25
+        },
+        {
+          "kind": "note",
+          "start": 27.375,
+          "end": 27.75,
+          "no": null,
+          "index": 16,
+          "beat": 1.75
+        },
+        {
+          "kind": "note",
+          "start": 27.75,
+          "end": 28.5,
+          "no": null,
+          "index": 17,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 28.5,
+          "end": 29.25,
+          "no": null,
+          "index": 18,
+          "beat": 1
+        },
+        {
+          "kind": "note",
+          "start": 29.25,
+          "end": 30.75,
+          "no": null,
+          "index": 19,
+          "beat": 0
+        }
+      ]
+    }
+  ],
+  "rule": "时间由简谱节奏 × 速度**精确计算**（非插值、非猜测）：每个 note 标记都是乐谱自身的时值。该时间轴对「生成的钢琴陪唱」是精确的；对外部真人录音**不适用**，真人版本的分段时间点须由人工看片回填。",
+  "note": "共 3 句；总时长约 30.75s（按 ♩=80）"
+}

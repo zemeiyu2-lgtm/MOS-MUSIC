@@ -1,0 +1,23 @@
+{
+  "training_id": "MUS-T-L2",
+  "level": 2,
+  "title": "会带",
+  "outcome": "受训者能够为一次小组或家庭聚会设计音乐门训，并带领七步法。",
+  "method": [
+    "学",
+    "看",
+    "做",
+    "反馈",
+    "再做",
+    "教别人"
+  ],
+  "uses_forms": [
+    "MUS-F-02",
+    "MUS-F-03"
+  ],
+  "uses_course_ids": [],
+  "prerequisite": "MUS-T-L1",
+  "sessions": [],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

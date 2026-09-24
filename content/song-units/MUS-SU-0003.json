@@ -1,0 +1,408 @@
+{
+  "unit_id": "MUS-SU-0003",
+  "song_id": "MUS-S-0003",
+  "unit_version": "MUS-V-1.1.0",
+  "standard": "song-production-template-1.0",
+  "status": "VERIFYING",
+  "status_note": "PILOT 10：生产工作包已建立，公版英文歌词已结构化入包；简谱草稿待人工听校；中文译本与音频资源待人工提供（缺什么就写什么，不虚构）。",
+  "song_meta": {
+    "title_zh": "耶稣呼召",
+    "title_en": "Jesus Calls Us",
+    "lyricist": "Cecil Frances Alexander",
+    "composer": "Cecil Frances Alexander",
+    "translator": null,
+    "language": "zh-Hans",
+    "key": null,
+    "time_signature": null,
+    "tempo_bpm": null,
+    "duration_seconds": null,
+    "structure": null,
+    "current_version": null,
+    "source": "Hymns for Little Children 相关圣诗传统；公版",
+    "unresolved": [
+      "英文标题取自歌曲标题括号内容，未独立核验",
+      "中文译词版本与译者未核验",
+      "当前采用的简谱版本未确定",
+      "调 / 拍号 / 速度 / 时长 / 段落结构未核验"
+    ]
+  },
+  "lyrics": {
+    "status": "PROVIDED",
+    "language": "en",
+    "version_note": "英文公版原文：词 Cecil Frances Alexander（1852）；曲 GALILEE，William H. Jude。通行圣诗本用四节（1852 年初版另有用于圣安德烈节的一节，通行本不收）。本仓不托管任何中文译本。",
+    "sections": [
+      {
+        "section_id": "v1",
+        "label": "Verse 1",
+        "lines": [
+          {
+            "line_id": "v1-L1",
+            "lyric_id": "MUS-S-0003-L01",
+            "phrase_id": null,
+            "text": "Jesus calls us o'er the tumult"
+          },
+          {
+            "line_id": "v1-L2",
+            "lyric_id": "MUS-S-0003-L02",
+            "phrase_id": null,
+            "text": "Of our life's wild, restless sea;"
+          },
+          {
+            "line_id": "v1-L3",
+            "lyric_id": "MUS-S-0003-L03",
+            "phrase_id": null,
+            "text": "Day by day His sweet voice soundeth,"
+          },
+          {
+            "line_id": "v1-L4",
+            "lyric_id": "MUS-S-0003-L04",
+            "phrase_id": null,
+            "text": "Saying, \"Christian, follow Me.\""
+          }
+        ]
+      },
+      {
+        "section_id": "v2",
+        "label": "Verse 2",
+        "lines": [
+          {
+            "line_id": "v2-L1",
+            "lyric_id": "MUS-S-0003-L05",
+            "phrase_id": null,
+            "text": "Jesus calls us from the worship"
+          },
+          {
+            "line_id": "v2-L2",
+            "lyric_id": "MUS-S-0003-L06",
+            "phrase_id": null,
+            "text": "Of the vain world's golden store,"
+          },
+          {
+            "line_id": "v2-L3",
+            "lyric_id": "MUS-S-0003-L07",
+            "phrase_id": null,
+            "text": "From each idol that would keep us,"
+          },
+          {
+            "line_id": "v2-L4",
+            "lyric_id": "MUS-S-0003-L08",
+            "phrase_id": null,
+            "text": "Saying, \"Christian, love Me more.\""
+          }
+        ]
+      },
+      {
+        "section_id": "v3",
+        "label": "Verse 3",
+        "lines": [
+          {
+            "line_id": "v3-L1",
+            "lyric_id": "MUS-S-0003-L09",
+            "phrase_id": null,
+            "text": "In our joys and in our sorrows,"
+          },
+          {
+            "line_id": "v3-L2",
+            "lyric_id": "MUS-S-0003-L10",
+            "phrase_id": null,
+            "text": "Days of toil and hours of ease,"
+          },
+          {
+            "line_id": "v3-L3",
+            "lyric_id": "MUS-S-0003-L11",
+            "phrase_id": null,
+            "text": "Still He calls, in cares and pleasures,"
+          },
+          {
+            "line_id": "v3-L4",
+            "lyric_id": "MUS-S-0003-L12",
+            "phrase_id": null,
+            "text": "\"Christian, love Me more than these.\""
+          }
+        ]
+      },
+      {
+        "section_id": "v4",
+        "label": "Verse 4",
+        "lines": [
+          {
+            "line_id": "v4-L1",
+            "lyric_id": "MUS-S-0003-L13",
+            "phrase_id": null,
+            "text": "Jesus calls us! By Thy mercies,"
+          },
+          {
+            "line_id": "v4-L2",
+            "lyric_id": "MUS-S-0003-L14",
+            "phrase_id": null,
+            "text": "Saviour, may we hear Thy call,"
+          },
+          {
+            "line_id": "v4-L3",
+            "lyric_id": "MUS-S-0003-L15",
+            "phrase_id": null,
+            "text": "Give our hearts to Thy obedience,"
+          },
+          {
+            "line_id": "v4-L4",
+            "lyric_id": "MUS-S-0003-L16",
+            "phrase_id": null,
+            "text": "Serve and love Thee best of all."
+          }
+        ]
+      }
+    ],
+    "note": "全文见 content/production/packages/MUS-S-0003/lyrics.json；人工校对：PENDING。 中文译本尚未提供（常见译本各有版权方，本仓不托管）；需要中文时由人工提供已获授权文本（CI-0028）。"
+  },
+  "score": {
+    "status": "NOT_PROVIDED",
+    "key": null,
+    "time_signature": null,
+    "tempo_bpm": null,
+    "pickup": false,
+    "starting_note": null,
+    "range": {
+      "lowest": null,
+      "highest": null
+    },
+    "sections": [],
+    "special_marks": [],
+    "note": "简谱是主界面，不是附属 PDF；统一记谱完成后此处承载小节 / 时值 / 高低音点 / 歌词对齐数据。"
+  },
+  "demos": {
+    "male": {
+      "status": "NOT_PROVIDED",
+      "slots": [],
+      "singer": null,
+      "note": "真人示唱尚未录制；不得用合成声音冒充真人示唱。"
+    },
+    "female": {
+      "status": "NOT_PROVIDED",
+      "slots": [],
+      "singer": null,
+      "note": "真人示唱尚未录制；不得用合成声音冒充真人示唱。"
+    }
+  },
+  "piano": {
+    "status": "NOT_PROVIDED",
+    "has_intro": null,
+    "has_interlude": null,
+    "beats_stable": null,
+    "loopable": null,
+    "key_matches": null,
+    "note": "第一阶段统一只做钢琴伴奏，作为自主歌唱的主要支持轨。"
+  },
+  "timeline": {
+    "status": "NOT_PROVIDED",
+    "phrases": [],
+    "note": "分句时间轴是单句循环 / 当前句高亮 / 点击重唱的地基，需与示唱或钢琴同步产生。"
+  },
+  "cursor": {
+    "status": "NOT_PROVIDED",
+    "levels": [],
+    "auto_scroll": false,
+    "click_seek": false,
+    "note": "光标层级只登记**真实可用**的层级（句 / 小节 / 拍 / 音符 / 歌词），不得声索尚未实现的跟随精度。"
+  },
+  "teaching": {
+    "learn": {
+      "status": "NOT_PROVIDED",
+      "note": "学唱五步（听 → 跟 → 伴 → 自己唱 → 再唱一次）需要词、谱、钢琴、至少一个示唱与时间轴齐备后才能真正可用。"
+    },
+    "score_class": {
+      "items": [],
+      "note": "教谱说明随简谱制作产生，不得脱离乐谱先写结论。"
+    },
+    "lyrics_class": {
+      "items": [],
+      "note": "教词说明随歌词整理产生（易读错 / 易唱错 / 换气 / 长音 / 重音）。"
+    },
+    "vocal": [],
+    "live_teaching": {
+      "modules": [
+        {
+          "key": "intro",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-score",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-rhythm",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-lyrics",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-01",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-02",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-03",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "vocal-tip-01",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "full-demo",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        }
+      ],
+      "note": "真人教唱采用模块化短片（intro / teach-score / teach-rhythm / teach-lyrics / phrase-01 / phrase-02 / phrase-03 / vocal-tip-01 / full-demo），不要求每首歌拍长视频；未录制一律 NOT_PROVIDED。"
+    }
+  },
+  "content_understanding": {
+    "what_it_sings": {
+      "text": null,
+      "derived_from": null
+    },
+    "core_truth": {
+      "text": null,
+      "derived_from": null
+    },
+    "bible_basis": [
+      {
+        "reference": "太4:18–22",
+        "derived_from": "content/songs/MUS-S-0003.json#bible.core_passage"
+      }
+    ],
+    "background": {
+      "text": null,
+      "derived_from": null
+    },
+    "why_church_sings": {
+      "text": null,
+      "derived_from": null
+    },
+    "note": "歌曲自身的内容层：不绑定某一周 / 某一课；凡写入文本必须可追溯到内容层字段（derived_from），不得凭空生成神学内容。"
+  },
+  "life_practice": {
+    "status": "PROVIDED",
+    "items": [
+      {
+        "key": "action",
+        "text": "完成一项已知道却拖延的具体顺服",
+        "derived_from": "content/songs/MUS-S-0003.json#formation.practice"
+      }
+    ],
+    "note": "取自歌曲记录已有的形成层字段（逐项标注来源）。"
+  },
+  "transmission": {
+    "status": "PROVIDED",
+    "front_actions": [
+      "sing_along",
+      "teach_one",
+      "share"
+    ],
+    "text": "带一个人走一遍七步法",
+    "derived_from": "content/songs/MUS-S-0003.json#formation.transmission",
+    "note": "歌曲页固定提供三个传唱动作（自己唱 / 教一个人 / 分享）；此处只补歌曲自身的传唱说明。"
+  },
+  "rights": {
+    "status": "NOT_PROVIDED",
+    "source": "Hymns for Little Children 相关圣诗传统；公版",
+    "copyright_status": "public_domain",
+    "license": "Public Domain",
+    "lyrics_source": null,
+    "score_source": null,
+    "audio_source": null,
+    "permission": null,
+    "internal_use": "unknown",
+    "public_use": "unknown",
+    "download_use": "unknown",
+    "derived_from": "content/songs/MUS-S-0003.json#copyright.copyright_status",
+    "notes": "法律状态沿用详情层词表（ADR-0012）；「歌曲存在」不等于「平台有权使用该资源」，可播放不等于可下载。"
+  },
+  "acceptance": {
+    "data": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "lyrics": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "score": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "demo": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "piano": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "teaching": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "sync": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "live_teaching": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "content": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "rights": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    }
+  },
+  "created_at": "2026-09-22T00:00:00+08:00",
+  "updated_at": "2026-09-23T00:00:00+08:00",
+  "updated_by": "song-unit-builder"
+}

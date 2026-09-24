@@ -1,0 +1,33 @@
+{
+  "library_id": "MOS-MUSIC-LIBRARY",
+  "index_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-21T08:10:15",
+  "generated_by": "曲库入库脚本（tools 下的 library 入库工具）",
+  "title": "Music Library V0.5",
+  "target_total": 50,
+  "baseline_total": 5,
+  "counts": {
+    "total": 50,
+    "existing": 5,
+    "added": 45,
+    "intake_records": 45,
+    "detail_records": 10,
+    "pending_list": 0,
+    "promoted_to_detail": 5,
+    "intake_pending_promotion": 40
+  },
+  "files": {
+    "candidates": "content/library/v0.5-candidates.json",
+    "intake_registry": "content/library/registry.json",
+    "intake_schema": "content/schema/library-intake.schema.json",
+    "songs_index": "content/songs/index.json"
+  },
+  "rules": {
+    "list_is_not_discernment": "清单给出的初步主题与建议用途方向仅为 library_metadata，不得当作辨识结论（§六）。",
+    "no_fabricated_resources": "本阶段不收录歌词、歌谱、示唱与伴奏音频；四项资源状态一律 NOT_IMPORTED（§四）。",
+    "no_history_rewrite": "既有歌曲的使用历史只能追加，不得重写（§八）。",
+    "no_future_week_assignment": "不得预先给任何歌曲指定未来周次（§十二）。",
+    "no_best_song_marking": "不得把任何歌曲标记为最佳歌曲或推荐首选。"
+  },
+  "note": "V0.5 扩库登记层。此层与辨识层严格分离：这里的主题与用途方向是候选线索，辨识结论一律由已冻结技能重新产生。"
+}

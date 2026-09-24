@@ -1,0 +1,38 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0009",
+  "slot": "audio",
+  "status": "NOT_AVAILABLE",
+  "standard": "第一阶段伴奏统一只做钢琴（piano）；不做乐队 / 鼓 / 吉他 / 多轨复杂编曲。",
+  "piano": {
+    "status": "NOT_AVAILABLE",
+    "file_url": null,
+    "reason": "真人钢琴伴奏未录制。"
+  },
+  "demo_male": {
+    "status": "NOT_AVAILABLE",
+    "file_url": null,
+    "singer_type": null,
+    "gender": "male",
+    "language": null,
+    "key": null,
+    "version": null,
+    "source": null,
+    "rights": null,
+    "reason": "真人男声示唱未录制；禁 AI 歌声冒充真人示唱。"
+  },
+  "demo_female": {
+    "status": "NOT_AVAILABLE",
+    "file_url": null,
+    "singer_type": null,
+    "gender": "female",
+    "language": null,
+    "key": null,
+    "version": null,
+    "source": null,
+    "rights": null,
+    "reason": "真人女声示唱未录制；禁 AI 歌声冒充真人示唱。"
+  },
+  "files": [],
+  "note": "出现真实录音时：登记 singer_type / gender / language / key / version / source / rights，并把 status 置 PROVIDED（任务书 §七）。"
+}

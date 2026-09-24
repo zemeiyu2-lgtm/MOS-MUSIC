@@ -1,0 +1,47 @@
+{
+  "template_id": "MOS-TPL-CHU-SEASON",
+  "title": "教会季度实施",
+  "module": "MODULE 08",
+  "context_id": "CTX-SUN",
+  "purpose": "形成教会共同的音乐门训节奏。",
+  "slots": [
+    {
+      "key": "current_season",
+      "label": "当前季度",
+      "value": ""
+    },
+    {
+      "key": "current_theme",
+      "label": "当前主题",
+      "value": ""
+    },
+    {
+      "key": "week_song",
+      "label": "本周歌曲",
+      "value": ""
+    },
+    {
+      "key": "group_content",
+      "label": "小组内容",
+      "value": ""
+    },
+    {
+      "key": "family_content",
+      "label": "家庭内容",
+      "value": ""
+    },
+    {
+      "key": "sunday_content",
+      "label": "主日内容",
+      "value": ""
+    },
+    {
+      "key": "training_task",
+      "label": "培训任务",
+      "value": ""
+    }
+  ],
+  "church_ref": null,
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

@@ -1,0 +1,133 @@
+{
+  "counts_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-23T10:24:54.023Z",
+  "generated_by": "派生索引脚本（tools 下的 derive 工具）",
+  "derived": true,
+  "basis": "曲库详情层的 discipleship.main_theme（一歌一主主题）",
+  "detail_total": 10,
+  "intake_total": 45,
+  "note": "本文件是派生视图，不是权威源：权威源是曲库本身。案 a 裁决后，主题歌曲计数不再写在 content/themes/index.json（上游模型文件）里，以免正常扩库被判为不可变基线漂移。",
+  "themes": [
+    {
+      "theme_id": "TH-01",
+      "name": "创造",
+      "song_count": 1
+    },
+    {
+      "theme_id": "TH-02",
+      "name": "圣洁",
+      "song_count": 1
+    },
+    {
+      "theme_id": "TH-03",
+      "name": "慈爱",
+      "song_count": 2
+    },
+    {
+      "theme_id": "TH-04",
+      "name": "信实",
+      "song_count": 2
+    },
+    {
+      "theme_id": "TH-05",
+      "name": "道成肉身",
+      "song_count": 1
+    },
+    {
+      "theme_id": "TH-06",
+      "name": "十字架",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-07",
+      "name": "复活",
+      "song_count": 1
+    },
+    {
+      "theme_id": "TH-08",
+      "name": "跟随基督",
+      "song_count": 2
+    },
+    {
+      "theme_id": "TH-09",
+      "name": "悔改",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-10",
+      "name": "信心",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-11",
+      "name": "圣洁生活",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-12",
+      "name": "祷告",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-13",
+      "name": "彼此相爱",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-14",
+      "name": "彼此饶恕",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-15",
+      "name": "彼此服事",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-16",
+      "name": "合一与教会",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-17",
+      "name": "家庭",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-18",
+      "name": "工作与责任",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-19",
+      "name": "苦难与盼望",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-20",
+      "name": "爱邻舍",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-21",
+      "name": "见证基督",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-22",
+      "name": "万民与宣教",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-23",
+      "name": "训练别人",
+      "song_count": 0
+    },
+    {
+      "theme_id": "TH-24",
+      "name": "门徒再生产",
+      "song_count": 0
+    }
+  ],
+  "unmapped": []
+}

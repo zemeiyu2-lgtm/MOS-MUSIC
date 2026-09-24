@@ -1,0 +1,58 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0003",
+  "unit_id": "MUS-SU-0003",
+  "unit_ref": "content/song-units/MUS-SU-0003.json",
+  "task": "SONG PRODUCTION PILOT 10",
+  "sample_role": "E",
+  "production_order": 5,
+  "blocked": false,
+  "blocking_reasons": [
+    "lyrics_zh_translation_rights（常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权，CI-0028）",
+    "audio_human_recording（钢琴伴奏与真人示唱未录制；禁 AI 歌声冒充真人）",
+    "score_not_started（统一简谱未转写或未听校）",
+    "lyrics_proofread_pending（已托管歌词尚未逐节核对）"
+  ],
+  "slots": {
+    "metadata": {
+      "status": "PROVIDED",
+      "file": "metadata.json"
+    },
+    "lyrics": {
+      "status": "PROVIDED",
+      "file": "lyrics.json",
+      "proofread": "PENDING"
+    },
+    "score": {
+      "status": "NOT_AVAILABLE",
+      "file": "score.json",
+      "transcription": "NOT_STARTED"
+    },
+    "audio": {
+      "status": "NOT_AVAILABLE",
+      "file": "audio.json"
+    },
+    "timeline": {
+      "status": "NOT_AVAILABLE",
+      "file": "timeline.json",
+      "sync_status": "SYNC_NOT_READY"
+    },
+    "teaching": {
+      "status": "NOT_AVAILABLE",
+      "file": "teaching.json"
+    },
+    "content": {
+      "status": "PROVIDED",
+      "file": "content.json"
+    },
+    "rights": {
+      "status": "PROVIDED",
+      "file": "rights.json"
+    },
+    "worksheet": {
+      "status": "PROVIDED",
+      "file": "MOS-SU-0003_WORKSHEET.md"
+    }
+  },
+  "level_note": "等级由 app/song-unit.js 从单元记录派生（DRAFT 简谱不计入）；不得在 manifest 里宣布等级。"
+}

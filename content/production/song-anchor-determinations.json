@@ -1,0 +1,247 @@
+{
+  "determinations_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-21T17:10:00+08:00",
+  "scope": "曲库 V0.5 扩库第二段（升层）试批：MUS-S-0006 … MUS-S-0010 共 5 首",
+  "basis_summary": "锚点取该圣诗自身歌词所指向的经文依据，并以公版赞美诗学通行记载补充作品级归属；二者逐首标注来源与核验状态。",
+  "authorization": {
+    "decided_at": "2026-09-21",
+    "decision": "人工授权：按公版圣诗固有经文依据逐首认定。",
+    "boundaries": [
+      "锚点只取该圣诗自身歌词与赞美诗学传统所指向的经文，不因某一周次需要而反向指定 —— 不构成方向规则所禁止的反向选歌。",
+      "不改写候选清单的 SOURCE_REQUIRED，不推定为 PUBLIC_DOMAIN；法律状态未判定一律记 unknown。",
+      "作品级归属（作者 / 作曲 / 译词）按公版赞美诗学通行记载填入，逐首标注来源与核验状态，不假装已作作品级核验。",
+      "中文译词版本与乐谱来源仍未核验，一律继续计入缺失证据，不代填。",
+      "本次只处理 5 首试批；剩余 40 首须经人工验收后再定。"
+    ],
+    "adr": "docs/ADR/ADR-0013-hymn-anchor-determination-and-promotion-path.md"
+  },
+  "field_policy": {
+    "authorized_determination": [
+      "bible.core_passage",
+      "bible.bible_reference_ids",
+      "bible.bible_themes"
+    ],
+    "literature_based_pending_verification": [
+      "author",
+      "composer",
+      "source",
+      "era"
+    ],
+    "preliminary_pending_acceptance": [
+      "discipleship.main_theme",
+      "discipleship.music_unit_refs",
+      "formation.primary_function",
+      "discipleship.difficulty"
+    ],
+    "left_empty_not_filled": [
+      "eight_dimensions（八维辨识需周次上下文与已核验文本，本阶段一律留空）",
+      "song_relation（周相对字段，无周次即不可判定）",
+      "S6 生命实践设计",
+      "S7 传递设计",
+      "使用决定",
+      "tier 升级（保持 C，未完成完整辨识）"
+    ]
+  },
+  "verification_status_vocab": [
+    "authorized_determination",
+    "literature_based_pending_verification",
+    "preliminary_pending_acceptance",
+    "unverified",
+    "not_imported",
+    "not_determined"
+  ],
+  "determinations": [
+    {
+      "song_id": "MUS-S-0006",
+      "title_zh": "圣哉，圣哉，圣哉",
+      "title_en": "Holy, Holy, Holy! Lord God Almighty",
+      "core_passage": "启4:8–11",
+      "bible_reference_ids": [
+        "BB-REV-4-8"
+      ],
+      "anchor_basis": "该诗首句「圣哉！圣哉！圣哉！」直接取自启4:8 四活物昼夜不住的颂词；全诗以赛6:1–3 的宝座异象为骨架，末节「罪人不能见祂荣面」承接同一异象中「祸哉，我灭亡了」的次序。锚点是这首诗自身歌词的经文出处，与任何周次安排无关。",
+      "anchor_evidence_type": "歌词直引 + 传统主题一致",
+      "hymnology": {
+        "words_by": "Reginald Heber",
+        "words_year": "1826（1827 年遗作刊行）",
+        "translator": null,
+        "music_by": "John Bacchus Dykes",
+        "tune": "NICAEA",
+        "music_year": "1861",
+        "source_note": "公版赞美诗学通行记载；本阶段据此填入作者与作曲，作品级版本仍待核验。"
+      },
+      "preliminary": {
+        "main_theme": "TH-02",
+        "main_theme_basis": "全诗主旨是神的圣洁与三一颂，与 TH-02「圣洁」对应。",
+        "music_unit_ref": "MM02",
+        "primary_function": "TR",
+        "primary_function_basis": "取自 Framework 层 MM02 单元自述的功能亲和（TR / EM）之首项，非另行判定。",
+        "difficulty": 2,
+        "difficulty_basis": "NICAEA 曲调句幅较长、音域适中，会众可唱但通常需一次教唱。"
+      },
+      "verification": {
+        "identity": "literature_based_pending_verification",
+        "anchor": "authorized_determination",
+        "theme_mapping": "preliminary_pending_acceptance",
+        "chinese_translation": "unverified",
+        "score_source": "not_imported",
+        "legal_status": "not_determined"
+      }
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "title_zh": "荣耀归于真神",
+      "title_en": "To God Be the Glory",
+      "core_passage": "约3:16",
+      "bible_reference_ids": [
+        "BB-JHN-3-16"
+      ],
+      "anchor_basis": "该诗首节下半「祂如此爱世人，甚至赐下独生子」是约3:16 的诗歌化复述；副歌「赞美主，赞美主，让全地听祂声音」呼应同一节「叫一切信祂的不至灭亡」。若按「神所行的大事」一语，另有诗126:3 的呼应，但该诗自身最直接、最主导的经文出处是约3:16。",
+      "anchor_evidence_type": "歌词直引",
+      "hymnology": {
+        "words_by": "Fanny J. Crosby",
+        "words_year": "1875",
+        "translator": null,
+        "music_by": "William H. Doane",
+        "tune": "TO GOD BE THE GLORY",
+        "music_year": "1875",
+        "source_note": "公版赞美诗学通行记载；中文译词版本未核验。"
+      },
+      "preliminary": {
+        "main_theme": "TH-03",
+        "main_theme_basis": "全诗为救恩颂赞，主题落在神的慈爱与主动的救恩，与 TH-03「慈爱」对应。",
+        "music_unit_ref": "MM03",
+        "primary_function": "TR",
+        "primary_function_basis": "取自 Framework 层 MM03 单元自述的功能亲和（TR / EM / PR）之首项。",
+        "difficulty": 2,
+        "difficulty_basis": "三拍子带副歌，旋律重复度高，会众易跟唱。"
+      },
+      "verification": {
+        "identity": "literature_based_pending_verification",
+        "anchor": "authorized_determination",
+        "theme_mapping": "preliminary_pending_acceptance",
+        "chinese_translation": "unverified",
+        "score_source": "not_imported",
+        "legal_status": "not_determined"
+      }
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "title_zh": "拥戴我主为王",
+      "title_en": "Crown Him with Many Crowns",
+      "core_passage": "腓2:9–11",
+      "bible_reference_ids": [
+        "BB-PHP-2-9"
+      ],
+      "anchor_basis": "该诗主旨是「许多冠冕」加于被升高之主，直接对应腓2:9–11「神将祂升为至高，又赐给祂那超乎万名之上的名」，并启19:12,16 的多冠与万王之王意象。锚点取腓2:9–11，因该段同时给出升高、名号与万膝跪拜三重意象，与该诗各节一致。",
+      "anchor_evidence_type": "传统主题一致 + 意象对应",
+      "hymnology": {
+        "words_by": "Matthew Bridges；Godfrey Thring（1874 增补）",
+        "words_year": "1851",
+        "translator": null,
+        "music_by": "George J. Elvey",
+        "tune": "DIADEMATA",
+        "music_year": "1868",
+        "source_note": "公版赞美诗学通行记载；两作者合并版本情况未逐版核验。"
+      },
+      "preliminary": {
+        "main_theme": "TH-07",
+        "main_theme_basis": "该诗颂赞复活并被升高的基督，与 TH-07「复活」对应；二十四主题集中无更贴近「基督王权与敬拜」的主题项，故取此项并标记待验收。",
+        "music_unit_ref": "MM07",
+        "primary_function": "TR",
+        "primary_function_basis": "取自 Framework 层 MM07 单元自述的功能亲和（TR / EM）之首项。",
+        "difficulty": 2,
+        "difficulty_basis": "DIADEMATA 曲调庄重、句幅规整，会众可唱。"
+      },
+      "verification": {
+        "identity": "literature_based_pending_verification",
+        "anchor": "authorized_determination",
+        "theme_mapping": "preliminary_pending_acceptance",
+        "chinese_translation": "unverified",
+        "score_source": "not_imported",
+        "legal_status": "not_determined"
+      }
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "title_zh": "你真伟大",
+      "title_en": "How Great Thou Art",
+      "core_passage": "诗8:1–9",
+      "bible_reference_ids": [
+        "BB-PSA-8-1"
+      ],
+      "anchor_basis": "该诗首节「我灵歌唱，赞美创造主」以观看诸天、星宿、雷声与山林为路径，与诗8「我观看你指头所造的天，并你所陈设的月亮星宿」的默想次序一致，并以「人算什么，你竟顾念他」为同一惊叹。第三节「当主再来，欢呼声音响彻云霄」另承接帖前4:16–17，但主导经文出处仍是诗8。",
+      "anchor_evidence_type": "歌词对应 + 默想次序一致",
+      "hymnology": {
+        "words_by": "Carl Boberg（瑞典语原词）；Stuart K. Hine（英译与改编）",
+        "words_year": "1885（原词）",
+        "translator": "Stuart K. Hine（英译，1949）",
+        "music_by": "瑞典民谣旋律（O STORE GUD）；Stuart K. Hine 改编",
+        "tune": "O STORE GUD",
+        "music_year": "1885（原旋律）",
+        "source_note": "瑞典语原词属公版；通行英译与改编（1949）可能仍在版权期内，法律状态未判定。中文译词版本亦未核验。"
+      },
+      "preliminary": {
+        "main_theme": "TH-01",
+        "main_theme_basis": "全诗以受造界与人的渺小反衬神的伟大，与 TH-01「创造」对应。",
+        "music_unit_ref": "MM01",
+        "primary_function": "TR",
+        "primary_function_basis": "取自 Framework 层 MM01 单元自述的功能亲和（TR / EM）之首项。",
+        "difficulty": 3,
+        "difficulty_basis": "音域较宽、副歌有高音收束，会众齐唱需领唱支撑。"
+      },
+      "verification": {
+        "identity": "literature_based_pending_verification",
+        "anchor": "authorized_determination",
+        "theme_mapping": "preliminary_pending_acceptance",
+        "chinese_translation": "unverified",
+        "score_source": "not_imported",
+        "legal_status": "not_determined"
+      }
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "title_zh": "你的信实广大",
+      "title_en": "Great Is Thy Faithfulness",
+      "core_passage": "耶哀3:22–23",
+      "bible_reference_ids": [
+        "BB-LAM-3-22"
+      ],
+      "anchor_basis": "该诗副歌「每早晨这都是新的，你的信实极其广大」几乎逐字取自耶哀3:22–23；首节「你赐下诸般慈爱怜悯」同出该段。这是全诗最直接、无争议的经文出处。",
+      "anchor_evidence_type": "歌词直引",
+      "hymnology": {
+        "words_by": "Thomas O. Chisholm",
+        "words_year": "1923",
+        "translator": null,
+        "music_by": "William M. Runyan",
+        "tune": "FAITHFULNESS",
+        "music_year": "1923",
+        "source_note": "公版赞美诗学通行记载；1923 年作品在不同法域的法律状态不一致，本阶段不判定。"
+      },
+      "preliminary": {
+        "main_theme": "TH-04",
+        "main_theme_basis": "全诗主旨是神的信实与每日更新的慈爱，与 TH-04「信实」对应。",
+        "music_unit_ref": "MM04",
+        "primary_function": "TR",
+        "primary_function_basis": "取自 Framework 层 MM04 单元自述的功能亲和（TR / EM）之首项。",
+        "difficulty": 2,
+        "difficulty_basis": "三拍子带副歌，旋律平稳，会众可唱。"
+      },
+      "verification": {
+        "identity": "literature_based_pending_verification",
+        "anchor": "authorized_determination",
+        "theme_mapping": "preliminary_pending_acceptance",
+        "chinese_translation": "unverified",
+        "score_source": "not_imported",
+        "legal_status": "not_determined"
+      }
+    }
+  ],
+  "counts": {
+    "songs": 5,
+    "anchor_determined": 5,
+    "awaiting_human_acceptance": 5,
+    "remaining_after_this_batch": 40
+  },
+  "note": "本文件是人工授权的认定留档，不是辨识结果，也不是使用决定。八维辨识、Song_Relation、S6 / S7 与 tier 升级仍待周次上下文与人工审核；本文件不产生这些字段。"
+}

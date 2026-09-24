@@ -1,0 +1,157 @@
+{
+  "song_id": "MUS-S-0005",
+  "title": "一切全献上（I Surrender All）",
+  "author": "Judson W. Van DeVenter",
+  "composer": "Judson W. Van DeVenter",
+  "source": "公版福音诗歌",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1896（词曲）",
+  "copyright": {
+    "copyright_status": "public_domain",
+    "source": "公版福音诗歌",
+    "license": "Public Domain",
+    "usage_permission": "词曲已进入公有领域；本仓所用中文译本译文未随本仓托管。",
+    "attribution": "Judson W. Van DeVenter（词曲）",
+    "audio_availability": "none",
+    "lyrics_availability": "none",
+    "permission_evidence": null
+  },
+  "lyrics": {
+    "text": null,
+    "excerpt": null,
+    "note": "公版原文无版权问题；中文译本译文不托管。"
+  },
+  "media": {
+    "audio": null,
+    "score": null,
+    "chord": null
+  },
+  "bible": {
+    "core_passage": "罗12:1",
+    "bible_reference_ids": [
+      "BB-ROM-12"
+    ],
+    "bible_themes": [
+      "奉献",
+      "降服",
+      "跟随"
+    ]
+  },
+  "theology": {
+    "theology": [
+      "成圣-奉献"
+    ],
+    "christology": [],
+    "soteriology": [],
+    "ecclesiology": [],
+    "missiology": []
+  },
+  "discipleship": {
+    "stage": null,
+    "main_theme": "TH-08",
+    "secondary_themes": [
+      "TH-11"
+    ],
+    "music_unit_ids": [],
+    "music_unit_refs": [
+      "MM08",
+      "MM11"
+    ],
+    "function": null,
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "CTX-SUN",
+      "CTX-GRP",
+      "CTX-FAM"
+    ],
+    "difficulty": 2
+  },
+  "formation": {
+    "primary_function": "EM",
+    "emotion": [
+      "降服"
+    ],
+    "memory": [],
+    "community": [],
+    "practice": [
+      "把一件具体保留物交还给主"
+    ],
+    "prayer": [],
+    "transmission": [
+      "与小组一起唱并互报一件交托事项"
+    ]
+  },
+  "eight_dimensions": {
+    "biblical_truth": {
+      "score": 3,
+      "note": "「全然献上」与罗12:1 一致；但「我全献上」的自述容易先于「主的呼召与恩典」，需以 W03 单元的次序（先认识主、后撇下）校正。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "theological_formation": {
+      "score": 3,
+      "note": "训练降服的意愿；单独使用有道德主义风险，必须挂在呼召的基督论前提上。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "emotional_formation": {
+      "score": 4,
+      "note": "形成降服与交托的情感，回应「我整夜劳力」的自我依靠。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "community": {
+      "score": 4,
+      "note": "布道会与小组决志传统中参与度高。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "congregational_participation": {
+      "score": 4,
+      "note": "旋律简单，副歌易记。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "generational_transmission": {
+      "score": 2,
+      "note": "对儿童较抽象。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "life_practice": {
+      "score": 4,
+      "note": "副歌本身即承诺句，可要求唱者说出一件具体交托事项。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "mission_orientation": {
+      "score": 1,
+      "note": "无直接使命指向。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  "tier": "B",
+  "review_status": "under_review",
+  "theological_note": "单独使用存在道德主义风险：使用时必须保持「基督的呼召 → 恩典中的回应 → 跟随实践」的福音结构，不得将门徒跟随简化为单纯意志奉献或个人道德努力。不得作为 Core 资源；只可在已写明呼召次序的单元（如 W03）中作辅助歌使用。",
+  "scenes": [
+    "主日",
+    "小组",
+    "家庭",
+    "跨代"
+  ],
+  "search_keywords": [
+    "奉献",
+    "一切全献上",
+    "I Surrender All",
+    "降服"
+  ],
+  "version": "MUS-V-0.3.0",
+  "created_at": "2026-09-21T12:00:00+08:00",
+  "updated_at": "2026-09-21T13:30:00+08:00",
+  "updated_by": "mos-music-phase2a1"
+}

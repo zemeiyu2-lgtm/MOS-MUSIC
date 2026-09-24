@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mos-music/coach.schema.json",
+  "title": "MOS Singing Coach（歌唱教练模块词表 · V3.x 基础层）",
+  "description": "MOS Singing Coach 与 MOS Formation 完全独立：不读 52 周完成度 / 门训积分 / 门训成绩；不做评分、排行、属灵评价。本轮只建立数据模型、页面入口、个人训练记录、训练项目模型、反馈结构与两个预留接口。",
+  "type": "object",
+  "required": ["coach_version", "model", "module_key", "independence", "capabilities", "training_item_model", "feedback_structure", "session_model", "interfaces", "boundaries"],
+  "additionalProperties": true,
+  "properties": {
+    "coach_version": { "type": "string", "pattern": "^MUS-V-[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "model": { "type": "string", "enum": ["singing-coach"] },
+    "module_key": { "type": "string", "enum": ["coach"] },
+    "product_name": { "type": "string" },
+    "independence": {
+      "type": "object",
+      "required": ["statement", "does_not_read", "links_to"],
+      "additionalProperties": true,
+      "properties": {
+        "statement": { "type": "string", "minLength": 8 },
+        "does_not_read": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+        "links_to": { "type": "array", "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["key", "label", "goal", "observable", "not_judged"],
+        "additionalProperties": true,
+        "properties": {
+          "key": {
+            "type": "string",
+            "enum": ["pitch", "rhythm", "sight_singing", "breath", "sustain", "diction", "range", "phrasing", "dynamics", "expression"]
+          },
+          "label": { "type": "string", "minLength": 1 },
+          "goal": { "type": "string", "minLength": 1 },
+          "observable": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "not_judged": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+        }
+      }
+    },
+    "training_item_model": {
+      "type": "object",
+      "required": ["id_pattern", "practice_modes", "reference_kinds", "item_status_vocabulary", "starter_items"],
+      "additionalProperties": true,
+      "properties": {
+        "id_pattern": { "type": "string", "pattern": "^MUS-CC-" },
+        "fields": { "type": "array", "items": { "type": "string" } },
+        "practice_modes": { "type": "array", "minItems": 3, "items": { "type": "object", "required": ["key", "label"], "additionalProperties": true } },
+        "reference_kinds": { "type": "array", "minItems": 2, "items": { "type": "object", "required": ["key", "label"], "additionalProperties": true } },
+        "item_status_vocabulary": { "type": "object", "required": ["MODEL_ONLY", "PRODUCED"] },
+        "starter_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["item_id", "capability", "title", "goal", "practice", "reference", "feedback_keys", "item_status"],
+            "additionalProperties": true,
+            "properties": {
+              "item_id": { "type": "string", "pattern": "^MUS-CC-[A-Z]{3}-[0-9]{2}$" },
+              "capability": { "type": "string" },
+              "title": { "type": "string", "minLength": 1 },
+              "goal": { "type": "string", "minLength": 1 },
+              "practice": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["listen", "repeat", "sight", "record"] } },
+              "reference": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["score", "demo", "expression_reference"] } },
+              "feedback_keys": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+              "item_status": { "type": "string", "enum": ["MODEL_ONLY", "PRODUCED"] }
+            }
+          }
+        }
+      }
+    },
+    "feedback_structure": {
+      "type": "object",
+      "required": ["shape", "allowed_basis", "forbidden"],
+      "additionalProperties": true,
+      "properties": {
+        "shape": { "type": "object", "required": ["target", "observed", "descriptor", "next_action", "retry_prompt"] },
+        "allowed_basis": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+        "forbidden": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+        "example": { "type": "object" }
+      }
+    },
+    "session_model": {
+      "type": "object",
+      "required": ["id_pattern", "store", "fields"],
+      "additionalProperties": true,
+      "properties": {
+        "id_pattern": { "type": "string", "pattern": "^MUS-CS-" },
+        "store": { "type": "string" },
+        "fields": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "interfaces": {
+      "type": "object",
+      "required": ["audio_upload", "ai_analysis"],
+      "additionalProperties": true,
+      "properties": {
+        "audio_upload": { "type": "object", "required": ["status", "label", "behavior_now"] },
+        "ai_analysis": { "type": "object", "required": ["status", "label", "vendor", "behavior_now"] }
+      }
+    },
+    "boundaries": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+    "counts": { "type": "object" },
+    "note": { "type": "string" }
+  }
+}

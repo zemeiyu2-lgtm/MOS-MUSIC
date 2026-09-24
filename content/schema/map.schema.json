@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/map.schema.json",
+  "title": "MOS-MUSIC-MAP V1.0 (24 课 ↔ MOS 52 周 ↔ LQ 关联)",
+  "description": "H-2 已裁定：24 课不是第三套年度课程体系。本表只保存「关联」，不复制 MOS 52 周 / 364D 的权威数据（经文中心全文留在 MOS 侧），只以 ID 引用。字段名沿用 H-2 决策确认书中的定义。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "map_id", "music_unit_id", "music_theme", "mos_week",
+    "bible_passage", "core_truth", "theology", "life_question",
+    "lq", "discipleship_context", "music_function",
+    "mapping_status", "mapping_confidence"
+  ],
+  "properties": {
+    "map_id": { "$ref": "common.schema.json#/$defs/mapId" },
+    "music_unit_id": { "$ref": "common.schema.json#/$defs/courseId" },
+    "music_theme": { "type": "string", "minLength": 1, "maxLength": 40 },
+
+    "mos_week": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/mosWeekId" },
+      "description": "关联的 MOS 52 周（门训主线）周次 ID。只存 ID，不复制该周的主题 / 引导句 / 经文中心。空数组表示尚无可靠对应，需人工裁定。"
+    },
+    "mos_week_line": {
+      "type": "string",
+      "enum": ["mos-52w-disciple", "mos-sermon-2027"],
+      "description": "mos_week 引用的是哪一条 52 周线。门训主线（mos-52w.csv / MOS-DIS 实际使用）或讲道释经线（2027 V2.0）。两条线并存属已知未决事项，见 docs/ADR.md ADR-0009。"
+    },
+    "sermon_week_ref": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/mosWeekId" },
+      "description": "关联的讲道释经线周次 ID（另一条 52 周线，仅作交叉引用）。"
+    },
+
+    "bible_passage": { "$ref": "common.schema.json#/$defs/passageRef" },
+    "bible_reference_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/bibleRefId" } },
+
+    "core_truth": { "type": "string", "maxLength": 600, "description": "MOS-MUSIC 侧核心真理字段。Phase 1 为空壳（空字符串），取值来源以 core_truth_source 指回 MOS 已定案经文中心，不在本文件复制其全文。" },
+    "core_truth_source": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "source_system": { "type": "string", "enum": ["mos-sermon-2027", "mos-52w", "manual"] },
+        "source_week_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/mosWeekId" }, { "type": "null" }] },
+        "source_field": { "type": ["string", "null"], "maxLength": 60 },
+        "copy_policy": { "type": "string", "enum": ["reference_only", "derived_draft"] }
+      }
+    },
+    "theology": { "type": "string", "maxLength": 1200, "description": "MOS-MUSIC 侧神学重点字段。Phase 1 为空壳。" },
+
+    "life_question": { "type": "string", "maxLength": 300, "description": "本音乐单元对人的生命问题提问。Phase 1 为空壳，避免与 MOS 既有 LQ 核心问题重复表述。" },
+    "lq": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/lqId" },
+      "description": "关联的 MOS 生命问题 ID（LQ01–LQ08）。MOS-MUSIC 不重建 LQ 体系。"
+    },
+
+    "discipleship_context": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/contextId" },
+      "description": "本单元主要服事的门训处境。"
+    },
+    "music_function": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["emotion", "memory", "community", "practice", "prayer", "transmission"]
+      },
+      "description": "§12 形成功能：本单元主要期待音乐承担哪一项形成功能。"
+    },
+
+    "mapping_status": {
+      "type": "string",
+      "enum": ["shell", "draft", "pending_confirmation", "confirmed"],
+      "description": "Phase 1 全部为 draft；mos_week 为空或低置信度的标记 pending_confirmation。"
+    },
+    "mapping_confidence": { "type": "string", "enum": ["high", "medium", "low", "none"] },
+    "mapping_note": { "type": ["string", "null"], "maxLength": 300 },
+
+    "provenance": { "$ref": "common.schema.json#/$defs/provenance" },
+    "version": { "$ref": "common.schema.json#/$defs/version" },
+    "updated_at": { "type": ["string", "null"], "format": "date-time" }
+  }
+}

@@ -1,0 +1,3975 @@
+{
+  "discernment_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-22T06:03:38.360Z",
+  "generated_by": "库级辨识脚本（tools 下的 song-discernment 工具）",
+  "engine": "mos-music-discernment-engine@1.0.0",
+  "parity_with": "mos-music-song-discernment@1.0.0",
+  "scope": "library_scope",
+  "scope_note": "库级范围：无周次上下文，只判定不依赖周次的歌基层字段。冻结技能 §三 规定「缺失输入一律：停止 → 报资料不足，不得臆测」，故缺失证据一律留空并入列缺失清单，而不是给推测分。",
+  "week_assignment": "none",
+  "not_redecided": "MUS-S-0001…MUS-S-0005 不在此重新裁决：其结论仍为 W01–W04 的冻结运行留档，本文件只覆盖新增候选。",
+  "unit_layer": "本阶段不生成任何周次 Unit。",
+  "scope_candidates": "新增候选 45 首 = 已升入详情层者 + 仍在登记层者；升层不使歌曲退出库级辨识范围，只是缺失证据随之收缩。",
+  "counts": {
+    "candidates": 45,
+    "promoted_in_scope": 5,
+    "by_decision": {
+      "Research": 45
+    },
+    "missing_evidence_categories": {
+      "版本核验": 45,
+      "文本/乐谱来源": 45,
+      "周次上下文": 45,
+      "作品级归属": 40,
+      "主题对应": 40,
+      "经文依据": 40
+    }
+  },
+  "results": [
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "该曲已进入歌曲详情层（歌基层身份与经文锚点已认定）；库级范围仍不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "detail",
+      "song_id": "MUS-S-0006",
+      "candidate_song": "MUS-S-0006 圣哉，圣哉，圣哉（Holy, Holy, Holy! Lord God Almighty）",
+      "title_zh": "圣哉，圣哉，圣哉（Holy, Holy, Holy! Lord God Almighty）",
+      "title_en": null,
+      "candidate_no": 1,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验中文译词版本与乐谱来源（八类权利对象分别核验）—— 这是本曲目前剩余的文本层缺口。",
+        "八维辨识与 Song_Relation 必须在具备周次上下文后由完整 S1→S7 产生；本阶段一律不给推测分。",
+        "人工验收本批升层结果后，才决定剩余 40 首是否沿用同一认定口径。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0006 圣哉，圣哉，圣哉（Holy, Holy, Holy! Lord God Almighty）（歌曲详情层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 须由辨识产生；详情记录中登记的是初步映射（取自 Framework 层 MM 单元的功能亲和），不作为辨识结论。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "该曲已进入歌曲详情层（歌基层身份与经文锚点已认定）；库级范围仍不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "detail",
+      "song_id": "MUS-S-0007",
+      "candidate_song": "MUS-S-0007 荣耀归于真神（To God Be the Glory）",
+      "title_zh": "荣耀归于真神（To God Be the Glory）",
+      "title_en": null,
+      "candidate_no": 2,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验中文译词版本与乐谱来源（八类权利对象分别核验）—— 这是本曲目前剩余的文本层缺口。",
+        "八维辨识与 Song_Relation 必须在具备周次上下文后由完整 S1→S7 产生；本阶段一律不给推测分。",
+        "人工验收本批升层结果后，才决定剩余 40 首是否沿用同一认定口径。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0007 荣耀归于真神（To God Be the Glory）（歌曲详情层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 须由辨识产生；详情记录中登记的是初步映射（取自 Framework 层 MM 单元的功能亲和），不作为辨识结论。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "该曲已进入歌曲详情层（歌基层身份与经文锚点已认定）；库级范围仍不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "detail",
+      "song_id": "MUS-S-0008",
+      "candidate_song": "MUS-S-0008 拥戴我主为王（Crown Him with Many Crowns）",
+      "title_zh": "拥戴我主为王（Crown Him with Many Crowns）",
+      "title_en": null,
+      "candidate_no": 3,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验中文译词版本与乐谱来源（八类权利对象分别核验）—— 这是本曲目前剩余的文本层缺口。",
+        "八维辨识与 Song_Relation 必须在具备周次上下文后由完整 S1→S7 产生；本阶段一律不给推测分。",
+        "人工验收本批升层结果后，才决定剩余 40 首是否沿用同一认定口径。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0008 拥戴我主为王（Crown Him with Many Crowns）（歌曲详情层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 须由辨识产生；详情记录中登记的是初步映射（取自 Framework 层 MM 单元的功能亲和），不作为辨识结论。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "该曲已进入歌曲详情层（歌基层身份与经文锚点已认定）；库级范围仍不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "detail",
+      "song_id": "MUS-S-0009",
+      "candidate_song": "MUS-S-0009 你真伟大（How Great Thou Art）",
+      "title_zh": "你真伟大（How Great Thou Art）",
+      "title_en": null,
+      "candidate_no": 4,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验中文译词版本与乐谱来源（八类权利对象分别核验）—— 这是本曲目前剩余的文本层缺口。",
+        "八维辨识与 Song_Relation 必须在具备周次上下文后由完整 S1→S7 产生；本阶段一律不给推测分。",
+        "人工验收本批升层结果后，才决定剩余 40 首是否沿用同一认定口径。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0009 你真伟大（How Great Thou Art）（歌曲详情层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 须由辨识产生；详情记录中登记的是初步映射（取自 Framework 层 MM 单元的功能亲和），不作为辨识结论。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "该曲已进入歌曲详情层（歌基层身份与经文锚点已认定）；库级范围仍不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "detail",
+      "song_id": "MUS-S-0010",
+      "candidate_song": "MUS-S-0010 你的信实广大（Great Is Thy Faithfulness）",
+      "title_zh": "你的信实广大（Great Is Thy Faithfulness）",
+      "title_en": null,
+      "candidate_no": 5,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无周次上下文与已核验文本。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验中文译词版本与乐谱来源（八类权利对象分别核验）—— 这是本曲目前剩余的文本层缺口。",
+        "八维辨识与 Song_Relation 必须在具备周次上下文后由完整 S1→S7 产生；本阶段一律不给推测分。",
+        "人工验收本批升层结果后，才决定剩余 40 首是否沿用同一认定口径。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0010 你的信实广大（Great Is Thy Faithfulness）（歌曲详情层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 须由辨识产生；详情记录中登记的是初步映射（取自 Framework 层 MM 单元的功能亲和），不作为辨识结论。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0011",
+      "candidate_song": "MUS-S-0011 坚固保障",
+      "title_zh": "坚固保障",
+      "title_en": "A Mighty Fortress Is Our God",
+      "candidate_no": 6,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0011 坚固保障（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0012",
+      "candidate_song": "MUS-S-0012 十字架前",
+      "title_zh": "十字架前",
+      "title_en": "At the Cross",
+      "candidate_no": 7,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；不同中文版本名称可能不同」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0012 十字架前（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0013",
+      "candidate_song": "MUS-S-0013 古旧十架",
+      "title_zh": "古旧十架",
+      "title_en": "The Old Rugged Cross",
+      "candidate_no": 8,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0013 古旧十架（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0014",
+      "candidate_song": "MUS-S-0014 耶稣十字架下",
+      "title_zh": "耶稣十字架下",
+      "title_en": "Beneath the Cross of Jesus",
+      "candidate_no": 9,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0014 耶稣十字架下（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0015",
+      "candidate_song": "MUS-S-0015 奇妙十架",
+      "title_zh": "奇妙十架",
+      "title_en": "When I Survey the Wondrous Cross",
+      "candidate_no": 10,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0015 奇妙十架（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0016",
+      "candidate_song": "MUS-S-0016 领我到骷髅地",
+      "title_zh": "领我到骷髅地",
+      "title_en": "Lead Me to Calvary",
+      "candidate_no": 11,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0016 领我到骷髅地（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0017",
+      "candidate_song": "MUS-S-0017 宝血活泉",
+      "title_zh": "宝血活泉",
+      "title_en": "There Is a Fountain Filled with Blood",
+      "candidate_no": 12,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0017 宝血活泉（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0018",
+      "candidate_song": "MUS-S-0018 耶稣奇妙的救恩",
+      "title_zh": "耶稣奇妙的救恩",
+      "title_en": "Wonderful Grace of Jesus",
+      "candidate_no": 13,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0018 耶稣奇妙的救恩（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0019",
+      "candidate_song": "MUS-S-0019 主活着",
+      "title_zh": "主活着",
+      "title_en": "He Lives",
+      "candidate_no": 14,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0019 主活着（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0020",
+      "candidate_song": "MUS-S-0020 基督今复活",
+      "title_zh": "基督今复活",
+      "title_en": "Christ the Lord Is Risen Today",
+      "candidate_no": 15,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0020 基督今复活（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0021",
+      "candidate_song": "MUS-S-0021 转眼仰望耶稣",
+      "title_zh": "转眼仰望耶稣",
+      "title_en": "Turn Your Eyes upon Jesus",
+      "candidate_no": 16,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0021 转眼仰望耶稣（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0022",
+      "candidate_song": "MUS-S-0022 最美丽耶稣",
+      "title_zh": "最美丽耶稣",
+      "title_en": "Fairest Lord Jesus",
+      "candidate_no": 17,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；不同中文版本名称可能不同」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0022 最美丽耶稣（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0023",
+      "candidate_song": "MUS-S-0023 恳求主像牧人领导",
+      "title_zh": "恳求主像牧人领导",
+      "title_en": "Savior, Like a Shepherd Lead Us",
+      "candidate_no": 18,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0023 恳求主像牧人领导（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0024",
+      "candidate_song": "MUS-S-0024 主凡事引导我",
+      "title_zh": "主凡事引导我",
+      "title_en": "All the Way My Savior Leads Me",
+      "candidate_no": 19,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0024 主凡事引导我（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0025",
+      "candidate_song": "MUS-S-0025 耶稣领我",
+      "title_zh": "耶稣领我",
+      "title_en": "He Leadeth Me",
+      "candidate_no": 20,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0025 耶稣领我（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0026",
+      "candidate_song": "MUS-S-0026 向高处行",
+      "title_zh": "向高处行",
+      "title_en": "Higher Ground",
+      "candidate_no": 21,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0026 向高处行（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0027",
+      "candidate_song": "MUS-S-0027 更亲近我主",
+      "title_zh": "更亲近我主",
+      "title_en": "Nearer, Still Nearer",
+      "candidate_no": 22,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0027 更亲近我主（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0028",
+      "candidate_song": "MUS-S-0028 更像我恩主",
+      "title_zh": "更像我恩主",
+      "title_en": "More Like the Master",
+      "candidate_no": 23,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0028 更像我恩主（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0029",
+      "candidate_song": "MUS-S-0029 主我愿像你",
+      "title_zh": "主我愿像你",
+      "title_en": "O to Be Like Thee!",
+      "candidate_no": 24,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0029 主我愿像你（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0030",
+      "candidate_song": "MUS-S-0030 成圣须用功夫",
+      "title_zh": "成圣须用功夫",
+      "title_en": "Take Time to Be Holy",
+      "candidate_no": 25,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0030 成圣须用功夫（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0031",
+      "candidate_song": "MUS-S-0031 今要主自己",
+      "title_zh": "今要主自己",
+      "title_en": "Himself",
+      "candidate_no": 26,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0031 今要主自己（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0032",
+      "candidate_song": "MUS-S-0032 爱主更深",
+      "title_zh": "爱主更深",
+      "title_en": "More Love to Thee",
+      "candidate_no": 27,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0032 爱主更深（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0033",
+      "candidate_song": "MUS-S-0033 为耶稣而活",
+      "title_zh": "为耶稣而活",
+      "title_en": "Living for Jesus",
+      "candidate_no": 28,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0033 为耶稣而活（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0034",
+      "candidate_song": "MUS-S-0034 教会独一的根基",
+      "title_zh": "教会独一的根基",
+      "title_en": "The Church's One Foundation",
+      "candidate_no": 29,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0034 教会独一的根基（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0035",
+      "candidate_song": "MUS-S-0035 圣徒相通",
+      "title_zh": "圣徒相通",
+      "title_en": "Blest Be the Tie That Binds",
+      "candidate_no": 30,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；不同中文版本名称可能不同」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0035 圣徒相通（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0036",
+      "candidate_song": "MUS-S-0036 耶稣恩友",
+      "title_zh": "耶稣恩友",
+      "title_en": "What a Friend We Have in Jesus",
+      "candidate_no": 31,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0036 耶稣恩友（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0037",
+      "candidate_song": "MUS-S-0037 祷告良辰",
+      "title_zh": "祷告良辰",
+      "title_en": "Sweet Hour of Prayer",
+      "candidate_no": 32,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0037 祷告良辰（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0038",
+      "candidate_song": "MUS-S-0038 我心灵得安宁",
+      "title_zh": "我心灵得安宁",
+      "title_en": "It Is Well with My Soul",
+      "candidate_no": 33,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0038 我心灵得安宁（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0039",
+      "candidate_song": "MUS-S-0039 有福的确据",
+      "title_zh": "有福的确据",
+      "title_en": "Blessed Assurance",
+      "candidate_no": 34,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0039 有福的确据（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0040",
+      "candidate_song": "MUS-S-0040 藉我赐恩福",
+      "title_zh": "藉我赐恩福",
+      "title_en": "Make Me a Blessing",
+      "candidate_no": 35,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0040 藉我赐恩福（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0041",
+      "candidate_song": "MUS-S-0041 岂可空手回天家",
+      "title_zh": "岂可空手回天家",
+      "title_en": "Must I Go, and Empty-Handed?",
+      "candidate_no": 36,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0041 岂可空手回天家（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0042",
+      "candidate_song": "MUS-S-0042 拯救失丧者",
+      "title_zh": "拯救失丧者",
+      "title_en": "Rescue the Perishing",
+      "candidate_no": 37,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；中文版本名称可能不同」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0042 拯救失丧者（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0043",
+      "candidate_song": "MUS-S-0043 向万邦传福音",
+      "title_zh": "向万邦传福音",
+      "title_en": "We've a Story to Tell to the Nations",
+      "candidate_no": 38,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统宣教圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0043 向万邦传福音（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0044",
+      "candidate_song": "MUS-S-0044 喜爱述说耶稣",
+      "title_zh": "喜爱述说耶稣",
+      "title_en": "I Love to Tell the Story",
+      "candidate_no": 39,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0044 喜爱述说耶稣（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0045",
+      "candidate_song": "MUS-S-0045 兴起为耶稣",
+      "title_zh": "兴起为耶稣",
+      "title_en": "Stand Up, Stand Up for Jesus",
+      "candidate_no": 40,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0045 兴起为耶稣（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0046",
+      "candidate_song": "MUS-S-0046 基督精兵",
+      "title_zh": "基督精兵",
+      "title_en": "Onward, Christian Soldiers",
+      "candidate_no": 41,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0046 基督精兵（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0047",
+      "candidate_song": "MUS-S-0047 一切为耶稣",
+      "title_zh": "一切为耶稣",
+      "title_en": "All for Jesus",
+      "candidate_no": 42,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0047 一切为耶稣（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0048",
+      "candidate_song": "MUS-S-0048 一生奉献",
+      "title_zh": "一生奉献",
+      "title_en": "Take My Life, and Let It Be",
+      "candidate_no": 43,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统奉献圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0048 一生奉献（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0049",
+      "candidate_song": "MUS-S-0049 我每时刻需要你",
+      "title_zh": "我每时刻需要你",
+      "title_en": "I Need Thee Every Hour",
+      "candidate_no": 44,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0049 我每时刻需要你（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    },
+    {
+      "engine": "mos-music-discernment-engine@1.0.0",
+      "scope": "library_scope",
+      "scope_reason": "清单只提供歌名与版权状态；库级范围不指定周次，因此只对不依赖周次的歌基层作判定。",
+      "input_layer": "intake",
+      "song_id": "MUS-S-0050",
+      "candidate_song": "MUS-S-0050 主，与我同住",
+      "title_zh": "主，与我同住",
+      "title_en": "Abide with Me",
+      "candidate_no": 45,
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+      "primary_function": null,
+      "eight_dimensions": {
+        "biblical_truth": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "theological_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "emotional_formation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "community": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "congregational_participation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "generational_transmission": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "life_practice": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        },
+        "mission_orientation": {
+          "score": null,
+          "note": "库级未辨识：无版本核验的文本与经文依据。按冻结技能「缺失输入一律停止、不得臆测」，此处留空而不给推测分。"
+        }
+      },
+      "s6": null,
+      "s7": null,
+      "risks": [],
+      "risk_scan": "not_applied",
+      "risk_scan_reason": "风险 A–E 的标签型判据（自我努力语汇、福音锚点、情绪功能为主）需要歌曲的神学标签与八维证据；清单无此证据时运行只会误报「以个人经验为中心」等结论，因此不作扫描。",
+      "gospel_structure": null,
+      "tier": "C",
+      "review_status": "draft",
+      "song_is_complete_unit": false,
+      "decision": "Research",
+      "decision_rule": "冻结技能 §十五 判定顺序：资料不完整（八维缺项/未辨识）→ Research。",
+      "week_fit_verdict": "Not Yet Validated",
+      "week_fit_verdict_code": "not_yet_validated",
+      "not_yet_validated": "未进入任何周次，也没有真实会众使用反馈；两者都只能在进入单元后获得。",
+      "human_review_required": true,
+      "missing_evidence": [
+        "作品级归属（作者/作曲/译词：清单未提供，须逐首核验，不得代填）",
+        "版本核验（清单注记：「传统圣诗；具体中文译词/编曲需核」）",
+        "文本/乐谱来源（lyrics、score、lead_vocal、accompaniment 四槽均为 NOT_IMPORTED）",
+        "主题对应（初步主题未给或无法安全对应到 TH 编号）",
+        "经文依据（bible.core_passage 尚未认定；未升层的歌曲不得代填）",
+        "周次上下文（未指定任何周次 → Song_Relation / S6 / S7 不可判定）"
+      ],
+      "next_steps": [
+        "逐首核验作品级归属与中文译词版本（八类权利对象分别核验）。",
+        "按人工授权口径认定该圣诗固有的经文依据（见 docs/ADR/ADR-0013），或在进入周次后由完整 S1→S7 产生。",
+        "具备经文锚点与歌基层身份之后才允许写歌曲详情记录，并重跑派生索引。"
+      ],
+      "trace": [
+        "1) 输入：MUS-S-0050 主，与我同住（清单登记层，库级范围，无周次）。",
+        "2) 关系判定：证据不足：Song_Relation 是周相对字段（相对本周核心真理的恩典性行动词），未指定周次时无判据 → not_yet_assessed。",
+        "3) 主功能：未判定 —— primary_function 取自歌曲记录的 formation.primary_function，登记层没有该字段。",
+        "4) S6：不存在 —— S6 属于单元层（必须有一周的具体行动设计），当前没有单元。",
+        "5) S7：不存在 —— 同上，无单元即无传递转换。",
+        "6) 神学风险：未扫描 —— 标签型判据缺少证据会误报，故不作扫描（见 risk_scan_reason）。",
+        "7) Tier：C（未经辨识即保持研究级；Tier 由辨识证据支持，不由清单推定，也不因升层而升格）。",
+        "8) Review Status：draft（与 Tier 独立；本首歌尚未完成完整辨识）。",
+        "9) 使用决定：Research（资料不完整即 Research，不是「不好」，也不是「适合」。）",
+        "10) 停止条件：冻结技能 §十六 第 1、2 条命中（证据不足 / 上游缺失）→ 立即停止，不「想办法让它通过」。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "units_version": "MUS-V-1.1.0",
+  "generated_at": "2026-09-23",
+  "generated_by": "人工编写词表 + tools/song-units.js 汇总单元清单",
+  "model": "song-unit",
+  "schema": "content/schema/song-unit.schema.json",
+  "standards": {
+    "teaching_method": "docs/standards/MOS-SONG-TEACHING-METHOD-V1.0.md",
+    "production_template": "docs/standards/MOS-SONG-PRODUCTION-TEMPLATE-V1.0.md",
+    "production_worksheet": "docs/standards/MOS-SONG-PRODUCTION-WORKSHEET-V1.0.md"
+  },
+  "relation_to_song_core": "independent_layer",
+  "relation_note": "单曲单元不写入 Song Core Record（content/songs/** 逐字节不变）；它按歌挂 song_id，只承载「这首歌被制作到什么程度」。",
+  "section_status_vocabulary": {
+    "PROVIDED": "该段内容已真实存在，可用于教学",
+    "NOT_PROVIDED": "该段内容尚不存在 —— 必须在界面上如实显示为尚未提供，不得为补满结构而虚构"
+  },
+  "sections": [
+    {
+      "key": "song_meta",
+      "no": "01",
+      "label": "歌曲资料",
+      "group": "core",
+      "front": true
+    },
+    {
+      "key": "lyrics",
+      "no": "02",
+      "label": "统一歌词",
+      "group": "core",
+      "front": true
+    },
+    {
+      "key": "score",
+      "no": "03",
+      "label": "统一简谱",
+      "group": "core",
+      "front": true
+    },
+    {
+      "key": "demo_male",
+      "no": "04",
+      "label": "男声示唱",
+      "group": "resource",
+      "front": true
+    },
+    {
+      "key": "demo_female",
+      "no": "05",
+      "label": "女声示唱",
+      "group": "resource",
+      "front": true
+    },
+    {
+      "key": "piano",
+      "no": "06",
+      "label": "钢琴伴奏",
+      "group": "resource",
+      "front": true
+    },
+    {
+      "key": "timeline",
+      "no": "07",
+      "label": "分句时间轴",
+      "group": "resource",
+      "front": true
+    },
+    {
+      "key": "cursor",
+      "no": "08",
+      "label": "光标跟谱数据",
+      "group": "resource",
+      "front": true
+    },
+    {
+      "key": "teach_learn",
+      "no": "09",
+      "label": "学唱教学",
+      "group": "teaching",
+      "front": true
+    },
+    {
+      "key": "teach_score",
+      "no": "10",
+      "label": "教谱教学",
+      "group": "teaching",
+      "front": true
+    },
+    {
+      "key": "teach_lyrics",
+      "no": "11",
+      "label": "教词教学",
+      "group": "teaching",
+      "front": true
+    },
+    {
+      "key": "teach_vocal",
+      "no": "12",
+      "label": "声乐教学",
+      "group": "teaching",
+      "front": true
+    },
+    {
+      "key": "teach_live",
+      "no": "13",
+      "label": "真人教唱",
+      "group": "teaching",
+      "front": true
+    },
+    {
+      "key": "content_understanding",
+      "no": "14",
+      "label": "内容理解",
+      "group": "content",
+      "front": true
+    },
+    {
+      "key": "life_practice",
+      "no": "15",
+      "label": "生命实践",
+      "group": "content",
+      "front": true
+    },
+    {
+      "key": "transmission",
+      "no": "16",
+      "label": "教唱与传唱",
+      "group": "content",
+      "front": true
+    },
+    {
+      "key": "rights",
+      "no": "17",
+      "label": "版权与来源",
+      "group": "rights",
+      "front": false
+    },
+    {
+      "key": "acceptance",
+      "no": "18",
+      "label": "最终验收",
+      "group": "acceptance",
+      "front": false
+    }
+  ],
+  "production_states": [
+    {
+      "key": "INTAKE",
+      "label": "已进入待制作库",
+      "note": "只有身份与来源，尚未开始制作。"
+    },
+    {
+      "key": "VERIFYING",
+      "label": "资料核对中",
+      "note": "版本 / 来源 / 版权在核对，尚未定案。"
+    },
+    {
+      "key": "LYRICS_READY",
+      "label": "歌词完成",
+      "note": "歌词结构化、分句、校对完成。"
+    },
+    {
+      "key": "SCORE_READY",
+      "label": "简谱完成",
+      "note": "简谱按统一标准完成并与歌词对齐。"
+    },
+    {
+      "key": "PIANO_READY",
+      "label": "钢琴伴奏完成",
+      "note": "伴奏可播放、节拍稳定、与歌曲一致。"
+    },
+    {
+      "key": "DEMO_READY",
+      "label": "示唱完成",
+      "note": "至少一个真人示唱可用。"
+    },
+    {
+      "key": "SYNC_READY",
+      "label": "时间轴与光标完成",
+      "note": "分句时间轴与跟谱数据就绪。"
+    },
+    {
+      "key": "TEACHING_READY",
+      "label": "教学内容完成",
+      "note": "学唱 / 教谱 / 教词 / 声乐提示就绪。"
+    },
+    {
+      "key": "REVIEW",
+      "label": "最终审核",
+      "note": "进入人工签核，未通过不得发布。"
+    },
+    {
+      "key": "COMPLETE",
+      "label": "完整歌曲",
+      "note": "达到 L4 且人工签核通过。"
+    },
+    {
+      "key": "HOLD",
+      "label": "暂停制作",
+      "note": "显式挂起，并在 status_note 说明原因。"
+    }
+  ],
+  "completion_levels": [
+    {
+      "key": "NONE",
+      "label": "尚未达到最低可用",
+      "front_label": "资源待制作",
+      "note": "结构已建立，但歌词与简谱尚未提供 —— 现在还不能读谱唱。",
+      "requires": []
+    },
+    {
+      "key": "L1",
+      "label": "基本歌：歌词 + 简谱",
+      "front_label": "可以看谱学习",
+      "note": "可以看谱、可以照谱学唱，但还没有伴奏支持。",
+      "requires": [
+        "lyrics",
+        "score"
+      ]
+    },
+    {
+      "key": "L2",
+      "label": "可学唱：歌词 + 简谱 + 钢琴",
+      "front_label": "可以钢琴陪唱",
+      "note": "有钢琴陪唱，可以进入正式学习。",
+      "requires": [
+        "lyrics",
+        "score",
+        "piano"
+      ]
+    },
+    {
+      "key": "L3",
+      "label": "完整学唱：简谱 + 钢琴 + 示唱 + 时间轴",
+      "front_label": "可以完整跟唱",
+      "note": "有真人示唱与分句时间轴，学唱体验完整。",
+      "requires": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_any",
+        "timeline"
+      ]
+    },
+    {
+      "key": "L4",
+      "label": "完整教学歌：简谱 + 钢琴 + 男女示唱 + 光标 + 教谱 + 教词 + 声乐 + 真人教唱",
+      "front_label": "完整教学",
+      "note": "可学、可视唱、可教、可传的完整歌曲单元。",
+      "requires": [
+        "lyrics",
+        "score",
+        "piano",
+        "demo_male",
+        "demo_female",
+        "timeline",
+        "cursor",
+        "teach_learn",
+        "teach_score",
+        "teach_lyrics",
+        "teach_vocal",
+        "teach_live"
+      ]
+    }
+  ],
+  "requirement_labels": {
+    "lyrics": "歌词",
+    "score": "简谱",
+    "piano": "钢琴伴奏",
+    "demo_male": "男声示唱",
+    "demo_female": "女声示唱",
+    "demo_any": "真人示唱",
+    "timeline": "分句时间轴",
+    "cursor": "光标跟谱",
+    "teach_learn": "学唱教学",
+    "teach_score": "教谱教学",
+    "teach_lyrics": "教词教学",
+    "teach_vocal": "声乐提示",
+    "teach_live": "真人教唱"
+  },
+  "teaching_method": {
+    "note": "MOS 标准歌曲教学十步法。它不是十段视频，而是一条从上到下的顺序：先知道唱什么，再让身体准备好，再分别处理谱、节奏、视唱、词，最后合成、示唱、自主歌唱，并迁移到独立视唱与教别人。三个模式（学唱 / 视唱 / 教唱）是同一首歌的三种使用方式，不是三套流程。",
+    "steps": [
+      {
+        "key": "know_song",
+        "no": "01",
+        "label": "认识歌曲",
+        "goal": "先知道我要唱什么。",
+        "modes": [
+          "learn",
+          "sight",
+          "teach"
+        ],
+        "not_sight_training": true
+      },
+      {
+        "key": "warm_body",
+        "no": "02",
+        "label": "准备声音与身体",
+        "goal": "让身体准备好唱，不做专业声乐训练。",
+        "modes": [
+          "learn",
+          "teach"
+        ]
+      },
+      {
+        "key": "teach_score",
+        "no": "03",
+        "label": "教谱",
+        "goal": "普通人也能看懂这首歌的谱。",
+        "modes": [
+          "sight",
+          "teach"
+        ]
+      },
+      {
+        "key": "teach_rhythm",
+        "no": "04",
+        "label": "教节奏",
+        "goal": "身体先认识节拍。",
+        "modes": [
+          "sight",
+          "teach"
+        ]
+      },
+      {
+        "key": "sight_singing",
+        "no": "05",
+        "label": "视唱训练",
+        "goal": "看谱 → 内听 → 唱，此时暂时关闭示范。",
+        "modes": [
+          "sight"
+        ]
+      },
+      {
+        "key": "teach_words",
+        "no": "06",
+        "label": "教词",
+        "goal": "先把词说顺，再把词唱进去。",
+        "modes": [
+          "learn",
+          "teach"
+        ]
+      },
+      {
+        "key": "combine",
+        "no": "07",
+        "label": "词曲合成",
+        "goal": "音高 + 节奏 + 歌词合在一起。",
+        "modes": [
+          "learn",
+          "teach"
+        ]
+      },
+      {
+        "key": "live_demo",
+        "no": "08",
+        "label": "真人示唱",
+        "goal": "示范正确的声音与音乐表达。",
+        "modes": [
+          "learn",
+          "teach"
+        ]
+      },
+      {
+        "key": "sing_alone",
+        "no": "09",
+        "label": "自主歌唱",
+        "goal": "关掉示唱，只剩钢琴，自己唱。",
+        "modes": [
+          "learn"
+        ]
+      },
+      {
+        "key": "independent",
+        "no": "10",
+        "label": "独立视唱 + 教别人",
+        "goal": "只给简谱与起音，自己唱；并向别人示范怎么看谱、怎么打拍、哪里换气。",
+        "modes": [
+          "learn",
+          "sight",
+          "teach"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "key": "learn",
+        "label": "学唱",
+        "note": "适合第一次学一首歌：听 → 跟 → 陪 → 自己唱。可以使用男声 / 女声 / 钢琴 / 慢速 / 分句 / 循环。",
+        "gives_full_demo_first": true,
+        "sequence": [
+          {
+            "key": "listen",
+            "label": "听",
+            "hint": "先听一遍，找到调子，不急着跟。"
+          },
+          {
+            "key": "repeat",
+            "label": "跟",
+            "hint": "跟着示唱一句一句跟，唱不准就重来。"
+          },
+          {
+            "key": "accompany",
+            "label": "陪",
+            "hint": "开钢琴陪唱，和伴奏一起唱。"
+          },
+          {
+            "key": "self",
+            "label": "自己唱",
+            "hint": "关掉人声，只听钢琴，自己唱一遍。"
+          },
+          {
+            "key": "again",
+            "label": "再唱一次",
+            "hint": "今天多唱一次就够了；过几天再回来唱。"
+          }
+        ]
+      },
+      {
+        "key": "sight",
+        "label": "视唱",
+        "note": "适合训练音乐能力：看谱 → 内听 → 唱 → 核对 → 修正。默认不先给完整示唱，只给起音、节拍与钢琴参考，最后才播放示唱核对。",
+        "gives_full_demo_first": false,
+        "sequence": [
+          {
+            "key": "read",
+            "label": "看谱",
+            "hint": "先看调、拍号、起音与结构。"
+          },
+          {
+            "key": "inner_hear",
+            "label": "内听",
+            "hint": "看着谱在心里听见它，先不出声。"
+          },
+          {
+            "key": "sing",
+            "label": "视唱",
+            "hint": "看谱唱出来；可以只听起音与节拍。"
+          },
+          {
+            "key": "check",
+            "label": "核对",
+            "hint": "现在才播放示唱，对照自己唱的对不对。"
+          },
+          {
+            "key": "fix",
+            "label": "修正",
+            "hint": "把不稳的一句单独再练一次。"
+          }
+        ]
+      },
+      {
+        "key": "teach",
+        "label": "教唱",
+        "note": "适合父母 / 小组长 / 主日学教师 / 敬拜同工 / 普通信徒。教唱是把这首歌交给另一个人，不是讲解乐理。",
+        "gives_full_demo_first": true,
+        "sequence": [
+          {
+            "key": "teach_score",
+            "label": "教谱",
+            "hint": "告诉他这一句怎么看、第一音在哪里。"
+          },
+          {
+            "key": "teach_rhythm",
+            "label": "教节奏",
+            "hint": "一起拍手打拍，先把节拍走顺。"
+          },
+          {
+            "key": "teach_words",
+            "label": "教词",
+            "hint": "先读词、再说词，指出容易唱错的字。"
+          },
+          {
+            "key": "demonstrate",
+            "label": "示范",
+            "hint": "你唱一句给他听，不要唱整首。"
+          },
+          {
+            "key": "follow",
+            "label": "跟唱",
+            "hint": "他唱一句，你跟一句，唱不准就再示范。"
+          },
+          {
+            "key": "accompany",
+            "label": "钢琴陪唱",
+            "hint": "开钢琴，让他自己唱，你在旁边看换气。"
+          },
+          {
+            "key": "full",
+            "label": "全曲",
+            "hint": "最后完整唱一遍，唱完给他一点鼓励。"
+          }
+        ]
+      }
+    ]
+  },
+  "learner_stages": [
+    {
+      "key": "know",
+      "label": "认识",
+      "note": "我知道这首歌。"
+    },
+    {
+      "key": "sing_along",
+      "label": "会唱",
+      "note": "我可以跟着唱。"
+    },
+    {
+      "key": "sing_alone",
+      "label": "独立唱",
+      "note": "没有示范，我也可以唱。"
+    },
+    {
+      "key": "can_teach",
+      "label": "会教",
+      "note": "我可以教另一个人。"
+    }
+  ],
+  "learner_stages_note": "四级是**学习路径状态**，不是排行榜、不是竞争等级、不是分数。系统不提供通过 / 不通过，也不给徽章或奖励。",
+  "review_cycle": [
+    {
+      "key": "d0",
+      "label": "首次学习",
+      "day_offset": 0,
+      "note": "今天第一次学。"
+    },
+    {
+      "key": "d2",
+      "label": "再唱一次",
+      "day_offset": 2,
+      "note": "隔两天回来唱一遍，比一次练到熟更有用。"
+    },
+    {
+      "key": "d7",
+      "label": "第三次唱",
+      "day_offset": 7,
+      "note": "一周后再唱一次，让它留下来。"
+    }
+  ],
+  "review_cycle_note": "间隔不是「科学唯一答案」，而是把分散练习的原则变成产品默认节奏；之后随机再遇到，不催不迫。",
+  "score_class_keys": {
+    "key_signature": "这首歌是什么调",
+    "time_signature": "拍号是什么",
+    "starting_note": "从哪里开始",
+    "range": "音域大概在哪里",
+    "main_rhythm": "主要节奏是什么",
+    "structure": "段落结构",
+    "error_prone": "哪里容易唱错"
+  },
+  "lyrics_class_keys": {
+    "hard_to_read": "容易读错的字",
+    "hard_to_sing": "容易唱错的词",
+    "word_meaning": "需要说明的词义",
+    "breath_point": "换气位置",
+    "long_note": "长音位置",
+    "stress": "重音位置"
+  },
+  "vocal_keys": {
+    "breath": "呼吸",
+    "onset": "起音",
+    "breath_point": "换气",
+    "high_note": "高音",
+    "long_note": "长音",
+    "intonation": "音准",
+    "dynamics": "力度",
+    "diction": "咬字",
+    "emotion": "情感"
+  },
+  "live_teaching_modules": [
+    {
+      "key": "intro",
+      "label": "教唱导入"
+    },
+    {
+      "key": "teach-score",
+      "label": "教谱"
+    },
+    {
+      "key": "teach-rhythm",
+      "label": "教节奏"
+    },
+    {
+      "key": "teach-lyrics",
+      "label": "教词"
+    },
+    {
+      "key": "phrase-01",
+      "label": "分句示范一"
+    },
+    {
+      "key": "phrase-02",
+      "label": "分句示范二"
+    },
+    {
+      "key": "phrase-03",
+      "label": "分句示范三"
+    },
+    {
+      "key": "vocal-tip-01",
+      "label": "声乐提示一"
+    },
+    {
+      "key": "full-demo",
+      "label": "完整示范"
+    }
+  ],
+  "life_practice_kinds": {
+    "prayer": "一个祷告",
+    "action": "一个行动",
+    "relationship": "一个关系",
+    "reminder": "一个提醒",
+    "discipline": "一个生活操练"
+  },
+  "acceptance_groups": [
+    {
+      "key": "data",
+      "letter": "A",
+      "label": "数据（歌名 / 版本 / 来源）"
+    },
+    {
+      "key": "lyrics",
+      "letter": "B",
+      "label": "歌词（完整 / 校对 / 分句）"
+    },
+    {
+      "key": "score",
+      "letter": "C",
+      "label": "简谱（调 / 节奏 / 音符 / 歌词对齐）"
+    },
+    {
+      "key": "demo",
+      "letter": "D",
+      "label": "示唱（男声 / 女声至少其一）"
+    },
+    {
+      "key": "piano",
+      "letter": "E",
+      "label": "钢琴（可播放 / 节拍稳定 / 与歌一致）"
+    },
+    {
+      "key": "teaching",
+      "letter": "F",
+      "label": "教学（学唱 / 教谱 / 教词 / 基本声乐提示）"
+    },
+    {
+      "key": "sync",
+      "letter": "G",
+      "label": "同步（分句时间轴 / 光标 / 歌词）"
+    },
+    {
+      "key": "live_teaching",
+      "letter": "H",
+      "label": "教唱（真人教学内容）"
+    },
+    {
+      "key": "content",
+      "letter": "I",
+      "label": "内容（歌曲内容 / 圣经根基 / 生命实践）"
+    },
+    {
+      "key": "rights",
+      "letter": "J",
+      "label": "版权（来源 / 使用状态）"
+    }
+  ],
+  "resource_absent_text": "尚未提供",
+  "resource_absent_note": "任何资源缺失一律如实显示为「尚未提供」，界面不得假装播放、不得用合成声音冒充真人示唱、不得用占位图冒充乐谱。",
+  "counts": {
+    "total": 10,
+    "by_status": {
+      "INTAKE": 45,
+      "VERIFYING": 5
+    },
+    "by_level": {
+      "NONE": 47,
+      "L1": 0,
+      "L2": 0,
+      "L3": 3,
+      "L4": 0
+    },
+    "library_total": 50,
+    "intake_without_unit": 40,
+    "not_in_library": 50
+  },
+  "units": [
+    {
+      "song_id": "MUS-S-0001",
+      "unit_id": "MUS-SU-0001",
+      "status": "VERIFYING",
+      "file": "content/song-units/MUS-SU-0001.json"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "unit_id": "MUS-SU-0002",
+      "status": "VERIFYING",
+      "file": "content/song-units/MUS-SU-0002.json"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "unit_id": "MUS-SU-0003",
+      "status": "VERIFYING",
+      "file": "content/song-units/MUS-SU-0003.json"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "unit_id": "MUS-SU-0004",
+      "status": "VERIFYING",
+      "file": "content/song-units/MUS-SU-0004.json"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "unit_id": "MUS-SU-0005",
+      "status": "VERIFYING",
+      "file": "content/song-units/MUS-SU-0005.json"
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "unit_id": "MUS-SU-0006",
+      "status": "INTAKE",
+      "file": "content/song-units/MUS-SU-0006.json"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "unit_id": "MUS-SU-0007",
+      "status": "INTAKE",
+      "file": "content/song-units/MUS-SU-0007.json"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "unit_id": "MUS-SU-0008",
+      "status": "INTAKE",
+      "file": "content/song-units/MUS-SU-0008.json"
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "unit_id": "MUS-SU-0009",
+      "status": "INTAKE",
+      "file": "content/song-units/MUS-SU-0009.json"
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "unit_id": "MUS-SU-0010",
+      "status": "INTAKE",
+      "file": "content/song-units/MUS-SU-0010.json"
+    }
+  ],
+  "boundaries": [
+    "单曲单元不写入 Song Core Record（content/songs/** 逐字节不变）",
+    "等级 L1–L4 是派生结果（app/song-unit.js），不写在单元记录里，避免「声明即完成」",
+    "声明 status / PROVIDED 必须有机械前置条件成立，否则视为自相矛盾（校验器强制）",
+    "凡写入内容理解 / 生命实践的文本必须可追溯到内容层字段（derived_from），不得凭空生成神学内容",
+    "只覆盖已进入曲库的歌曲；候选层尚未进库的歌曲不属于单曲制作范围",
+    "本层不产生分数、排名、推荐或通过 / 不通过结论"
+  ],
+  "note": "V3.0 把「一首歌成为可学唱单元」这件事变成可检查的数据结构：18 段各有 status，等级由实际资源派生，缺口逐项列出。当前详情层 10 首全部为 INTAKE / 等级 NONE —— 这是真实状态，不是遗漏；不得为消除缺口而虚构歌词、简谱、音频或教学内容。"
+}

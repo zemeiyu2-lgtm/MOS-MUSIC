@@ -1,0 +1,83 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0005",
+  "unit_id": "MUS-SU-0005",
+  "slot": "lyrics",
+  "language": "en",
+  "version_note": "英文公版原文：词 Judson W. Van DeVenter（1896），副歌 Winfield S. Weeden；曲 SURRENDER（Weeden）。本仓不托管任何中文译本。",
+  "structure_note": "副歌（refrain）在每节之后重复，单独成节登记；每节四行 + 副歌四行。分句（phrase_id）待时间轴建立后回填。",
+  "proofread": {
+    "status": "PENDING",
+    "checked_by": null,
+    "date": null,
+    "note": "文本按通行公版版本誊录，尚未与印刷本逐节核对；核对通过前不得标记 PASS。"
+  },
+  "rights": {
+    "copyright_status": "public_domain",
+    "basis": "词曲均作于 1896 年，已入公有领域（详情记录判定 public_domain）；中文译本未托管（CI-0028）。",
+    "derived_from": "content/songs/MUS-S-0005.json#copyright.copyright_status"
+  },
+  "sections": [
+    {
+      "section_id": "refrain",
+      "label": "Refrain（每节后重复）",
+      "lines": [
+        { "line_id": "R-L1", "lyric_id": "MUS-S-0005-L01", "phrase_id": null, "text": "I surrender all," },
+        { "line_id": "R-L2", "lyric_id": "MUS-S-0005-L02", "phrase_id": null, "text": "I surrender all;" },
+        { "line_id": "R-L3", "lyric_id": "MUS-S-0005-L03", "phrase_id": null, "text": "All to Thee, my blessed Savior," },
+        { "line_id": "R-L4", "lyric_id": "MUS-S-0005-L04", "phrase_id": null, "text": "I surrender all." }
+      ]
+    },
+    {
+      "section_id": "v1",
+      "label": "Verse 1",
+      "lines": [
+        { "line_id": "v1-L1", "lyric_id": "MUS-S-0005-L05", "phrase_id": null, "text": "All to Jesus I surrender," },
+        { "line_id": "v1-L2", "lyric_id": "MUS-S-0005-L06", "phrase_id": null, "text": "All to Him I freely give;" },
+        { "line_id": "v1-L3", "lyric_id": "MUS-S-0005-L07", "phrase_id": null, "text": "I will ever love and trust Him," },
+        { "line_id": "v1-L4", "lyric_id": "MUS-S-0005-L08", "phrase_id": null, "text": "In His presence daily live." }
+      ]
+    },
+    {
+      "section_id": "v2",
+      "label": "Verse 2",
+      "lines": [
+        { "line_id": "v2-L1", "lyric_id": "MUS-S-0005-L09", "phrase_id": null, "text": "All to Jesus I surrender," },
+        { "line_id": "v2-L2", "lyric_id": "MUS-S-0005-L10", "phrase_id": null, "text": "Humbly at His feet I bow;" },
+        { "line_id": "v2-L3", "lyric_id": "MUS-S-0005-L11", "phrase_id": null, "text": "Worldly pleasures all forsaken," },
+        { "line_id": "v2-L4", "lyric_id": "MUS-S-0005-L12", "phrase_id": null, "text": "Take me, Jesus, take me now." }
+      ]
+    },
+    {
+      "section_id": "v3",
+      "label": "Verse 3",
+      "lines": [
+        { "line_id": "v3-L1", "lyric_id": "MUS-S-0005-L13", "phrase_id": null, "text": "All to Jesus I surrender," },
+        { "line_id": "v3-L2", "lyric_id": "MUS-S-0005-L14", "phrase_id": null, "text": "Make me, Savior, wholly Thine;" },
+        { "line_id": "v3-L3", "lyric_id": "MUS-S-0005-L15", "phrase_id": null, "text": "Fill me with Thy love and power," },
+        { "line_id": "v3-L4", "lyric_id": "MUS-S-0005-L16", "phrase_id": null, "text": "Truly know that Thou art mine." }
+      ]
+    },
+    {
+      "section_id": "v4",
+      "label": "Verse 4",
+      "lines": [
+        { "line_id": "v4-L1", "lyric_id": "MUS-S-0005-L17", "phrase_id": null, "text": "All to Jesus I surrender," },
+        { "line_id": "v4-L2", "lyric_id": "MUS-S-0005-L18", "phrase_id": null, "text": "Lord, I give myself to Thee;" },
+        { "line_id": "v4-L3", "lyric_id": "MUS-S-0005-L19", "phrase_id": null, "text": "Fill me with Thy love and power," },
+        { "line_id": "v4-L4", "lyric_id": "MUS-S-0005-L20", "phrase_id": null, "text": "Let Thy blessing fall on me." }
+      ]
+    },
+    {
+      "section_id": "v5",
+      "label": "Verse 5",
+      "lines": [
+        { "line_id": "v5-L1", "lyric_id": "MUS-S-0005-L21", "phrase_id": null, "text": "All to Jesus I surrender," },
+        { "line_id": "v5-L2", "lyric_id": "MUS-S-0005-L22", "phrase_id": null, "text": "Now I feel the sacred flame;" },
+        { "line_id": "v5-L3", "lyric_id": "MUS-S-0005-L23", "phrase_id": null, "text": "O the joy of full salvation!" },
+        { "line_id": "v5-L4", "lyric_id": "MUS-S-0005-L24", "phrase_id": null, "text": "Glory, glory to His name!" }
+      ]
+    }
+  ],
+  "note": "中文译本：NOT_AVAILABLE（权利未确认）。需要中文时由人工提供已获授权文本或完成授权后再录入。"
+}

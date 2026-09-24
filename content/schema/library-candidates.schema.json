@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/library-candidates.schema.json",
+  "title": "MOS-MUSIC Music Library V0.5 Candidate List",
+  "description": "V0.5 候选曲库清单容器。此文件是**人工提供的上游清单**在仓库内的规范形态：逐首记录候选歌名、作者、来源、清单给出的初步主题与建议用途方向、版权状态。清单本身不是辨识结果；辨识必须由已冻结技能逐首重新产生。清单为空时 status 必须为 PENDING_LIST，且禁止以任何方式补全歌名或作者。候选清单未提供的字段一律为 null，不得代填。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidates_version", "source", "received_at", "status",
+    "expected_new", "target_total", "existing_total",
+    "columns", "candidates"
+  ],
+  "properties": {
+    "candidates_version": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "source": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "received_at": { "type": ["string", "null"], "maxLength": 40 },
+    "status": { "type": "string", "enum": ["PENDING_LIST", "RECEIVED", "INTAKEN"] },
+    "expected_new": { "type": "integer", "minimum": 0 },
+    "target_total": { "type": "integer", "minimum": 0 },
+    "existing_total": { "type": "integer", "minimum": 0 },
+    "columns": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "maxLength": 60 }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_no", "candidate_song_id", "title_zh", "title_en", "alternate_titles",
+          "author", "composer", "translator", "source",
+          "initial_theme", "suggested_function", "copyright_status", "candidate_note"
+        ],
+        "properties": {
+          "candidate_no": { "type": "integer", "minimum": 1 },
+          "candidate_song_id": {
+            "type": ["string", "null"],
+            "pattern": "^(S-[0-9]{4})?$",
+            "description": "清单自带的候选编号（如 S-0006）。只作交叉核对，不代替工具分配的 song_id。"
+          },
+          "candidate_note": {
+            "type": ["string", "null"],
+            "maxLength": 300,
+            "description": "清单自带的注记（原样保留，如「具体中文译词/编曲需核」）。这是待办事项，不是辨识结论。"
+          },
+          "title_zh": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "title_en": { "type": ["string", "null"], "maxLength": 200 },
+          "alternate_titles": {
+            "type": "array",
+            "maxItems": 8,
+            "items": { "type": "string", "maxLength": 200 }
+          },
+          "author": { "type": ["string", "null"], "maxLength": 200 },
+          "composer": { "type": ["string", "null"], "maxLength": 200 },
+          "translator": { "type": ["string", "null"], "maxLength": 200 },
+          "source": { "type": ["string", "null"], "maxLength": 300 },
+          "initial_theme": { "type": ["string", "null"], "maxLength": 120 },
+          "suggested_function": { "type": ["string", "null"], "maxLength": 120 },
+          "copyright_status": {
+            "type": "string",
+            "enum": ["PUBLIC_DOMAIN", "LICENSED", "USER_PROVIDED", "SOURCE_REQUIRED", "UNKNOWN"]
+          }
+        }
+      }
+    }
+  }
+}

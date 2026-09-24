@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#234F42">
+<title>离线 · MOS-MUSIC</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="app/ui/tokens.css">
+<link rel="stylesheet" href="app/ui/components.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <div class="brandmark" aria-hidden="true">♪</div>
+      <div>
+        <strong>MOS-MUSIC</strong>
+        <small>离线模式</small>
+      </div>
+    </div>
+  </header>
+
+  <div class="notice net">当前没有网络。网络只是同步工具，不是系统运行的必要条件。</div>
+
+  <section class="card hero">
+    <div class="eyebrow">发生什么了</div>
+    <h1>这一页需要在线才能取到</h1>
+    <p>你请求的内容没有下载到本地，所以离线时取不到。已经下载到本机的课程、歌曲与你的门训记录不会因此丢失。</p>
+    <div class="btn-row">
+      <button class="primary" id="retry">重试</button>
+      <button class="secondary" id="home">回到今天</button>
+    </div>
+  </section>
+
+  <section class="card hero">
+    <div class="section-head"><h2>离线时仍然可以用</h2></div>
+    <div class="cards">
+      <div class="entry"><span class="entry-main">
+        <span class="entry-title">已下载的 24 课与歌曲资料</span>
+        <span class="entry-note">含经文引用、核心真理、门训问题、实践任务</span></span></div>
+      <div class="entry"><span class="entry-main">
+        <span class="entry-title">七步法进度与我的实践记录</span>
+        <span class="entry-note">写入本地 IndexedDB，恢复网络后进入同步队列</span></span></div>
+      <div class="entry"><span class="entry-main">
+        <span class="entry-title">培训表与教会实施模板</span>
+        <span class="entry-note">已下载部分可离线填写</span></span></div>
+    </div>
+  </section>
+
+  <section class="card hero">
+    <div class="section-head"><h2>恢复网络后</h2></div>
+    <div class="notice">本地记录会自动进入待同步队列，等网络恢复后再上传；内容更新会按服务器版本为主覆盖。你的个人记录以本地为准，不会被服务器回写覆盖。</div>
+  </section>
+</div>
+
+<script>
+  document.getElementById('retry').addEventListener('click', function () { location.reload(); });
+  document.getElementById('home').addEventListener('click', function () {
+    location.href = './index.html#/today';
+  });
+  window.addEventListener('online', function () { location.reload(); });
+</script>
+</body>
+</html>

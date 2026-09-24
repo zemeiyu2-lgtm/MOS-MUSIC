@@ -1,0 +1,63 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0003",
+  "unit_id": "MUS-SU-0003",
+  "slot": "lyrics",
+  "language": "en",
+  "version_note": "英文公版原文：词 Cecil Frances Alexander（1852）；曲 GALILEE，William H. Jude。通行圣诗本用四节（1852 年初版另有用于圣安德烈节的一节，通行本不收）。本仓不托管任何中文译本。",
+  "structure_note": "每节四行；分句（phrase_id）待时间轴建立后回填。",
+  "proofread": {
+    "status": "PENDING",
+    "checked_by": null,
+    "date": null,
+    "note": "文本按通行公版版本誊录，尚未与印刷本逐节核对；核对通过前不得标记 PASS。"
+  },
+  "rights": {
+    "copyright_status": "public_domain",
+    "basis": "词作于 1852 年，已入公有领域（详情记录判定 public_domain）；中文译本未托管（CI-0028）。",
+    "derived_from": "content/songs/MUS-S-0003.json#copyright.copyright_status"
+  },
+  "sections": [
+    {
+      "section_id": "v1",
+      "label": "Verse 1",
+      "lines": [
+        { "line_id": "v1-L1", "lyric_id": "MUS-S-0003-L01", "phrase_id": null, "text": "Jesus calls us o'er the tumult" },
+        { "line_id": "v1-L2", "lyric_id": "MUS-S-0003-L02", "phrase_id": null, "text": "Of our life's wild, restless sea;" },
+        { "line_id": "v1-L3", "lyric_id": "MUS-S-0003-L03", "phrase_id": null, "text": "Day by day His sweet voice soundeth," },
+        { "line_id": "v1-L4", "lyric_id": "MUS-S-0003-L04", "phrase_id": null, "text": "Saying, \"Christian, follow Me.\"" }
+      ]
+    },
+    {
+      "section_id": "v2",
+      "label": "Verse 2",
+      "lines": [
+        { "line_id": "v2-L1", "lyric_id": "MUS-S-0003-L05", "phrase_id": null, "text": "Jesus calls us from the worship" },
+        { "line_id": "v2-L2", "lyric_id": "MUS-S-0003-L06", "phrase_id": null, "text": "Of the vain world's golden store," },
+        { "line_id": "v2-L3", "lyric_id": "MUS-S-0003-L07", "phrase_id": null, "text": "From each idol that would keep us," },
+        { "line_id": "v2-L4", "lyric_id": "MUS-S-0003-L08", "phrase_id": null, "text": "Saying, \"Christian, love Me more.\"" }
+      ]
+    },
+    {
+      "section_id": "v3",
+      "label": "Verse 3",
+      "lines": [
+        { "line_id": "v3-L1", "lyric_id": "MUS-S-0003-L09", "phrase_id": null, "text": "In our joys and in our sorrows," },
+        { "line_id": "v3-L2", "lyric_id": "MUS-S-0003-L10", "phrase_id": null, "text": "Days of toil and hours of ease," },
+        { "line_id": "v3-L3", "lyric_id": "MUS-S-0003-L11", "phrase_id": null, "text": "Still He calls, in cares and pleasures," },
+        { "line_id": "v3-L4", "lyric_id": "MUS-S-0003-L12", "phrase_id": null, "text": "\"Christian, love Me more than these.\"" }
+      ]
+    },
+    {
+      "section_id": "v4",
+      "label": "Verse 4",
+      "lines": [
+        { "line_id": "v4-L1", "lyric_id": "MUS-S-0003-L13", "phrase_id": null, "text": "Jesus calls us! By Thy mercies," },
+        { "line_id": "v4-L2", "lyric_id": "MUS-S-0003-L14", "phrase_id": null, "text": "Saviour, may we hear Thy call," },
+        { "line_id": "v4-L3", "lyric_id": "MUS-S-0003-L15", "phrase_id": null, "text": "Give our hearts to Thy obedience," },
+        { "line_id": "v4-L4", "lyric_id": "MUS-S-0003-L16", "phrase_id": null, "text": "Serve and love Thee best of all." }
+      ]
+    }
+  ],
+  "note": "中文译本：NOT_AVAILABLE（权利未确认）。需要中文时由人工提供已获授权文本或完成授权后再录入。"
+}

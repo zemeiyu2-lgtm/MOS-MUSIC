@@ -1,0 +1,25 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0009",
+  "unit_id": "MUS-SU-0009",
+  "slot": "metadata",
+  "title_zh": "你真伟大",
+  "title_en": "How Great Thou Art",
+  "author": "Carl Boberg（瑞典语原词）；Stuart K. Hine（英译与改编）",
+  "composer": "瑞典民谣旋律（O STORE GUD）；Stuart K. Hine 改编",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1885（原词）",
+  "source": "词：Carl Boberg（瑞典语），1885；英译与改编：Stuart K. Hine，1949；曲：瑞典民谣旋律（O STORE GUD）。瑞典语原词属公版，通行英译与改编部分的法律状态未判定。",
+  "copyright_status": "unknown",
+  "structure": null,
+  "current_version": null,
+  "unresolved": [
+    "中文译词版本与译者未核验",
+    "当前采用的简谱版本未确定",
+    "调 / 拍号 / 速度 / 时长 / 段落结构未核验",
+    "作品级法律状态未判定（不得据清单推定）"
+  ],
+  "derived_from": "content/songs/MUS-S-0009.json",
+  "note": "本文件只登记详情层的既有事实；不确定的项进 unresolved，不得用空字符串掩盖。"
+}

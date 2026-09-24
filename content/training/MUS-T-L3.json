@@ -1,0 +1,24 @@
+{
+  "training_id": "MUS-T-L3",
+  "level": 3,
+  "title": "会训",
+  "outcome": "受训者能够训练别人带领音乐门训，并给出可执行的反馈与调整。",
+  "method": [
+    "学",
+    "看",
+    "做",
+    "反馈",
+    "再做",
+    "教别人"
+  ],
+  "uses_forms": [
+    "MUS-F-04",
+    "MUS-F-05",
+    "MUS-F-06"
+  ],
+  "uses_course_ids": [],
+  "prerequisite": "MUS-T-L2",
+  "sessions": [],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

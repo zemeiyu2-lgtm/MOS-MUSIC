@@ -1,0 +1,191 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0002",
+  "unit_id": "MUS-SU-0002",
+  "slot": "lyrics",
+  "language": "en",
+  "version_note": "英文公版原文：词 Katharina von Schlegel（1752），英译 Jane Borthwick（1855，Hymns from the Land of Luther）；曲 FINLANDIA，Jean Sibelius。本仓不托管任何中文译本。",
+  "structure_note": "每节四行；全曲各节共用同一曲调。phrase_id = 行首词所在的原谱乐句（由 tools/sample-l4.js 按逐词对齐回填；一句歌词可跨乐句，以行首词为准）。",
+  "proofread": {
+    "status": "PENDING",
+    "checked_by": null,
+    "date": null,
+    "note": "文本按通行公版版本誊录，尚未与印刷本逐节核对；核对通过前不得标记 PASS。"
+  },
+  "rights": {
+    "copyright_status": "public_domain",
+    "basis": "原词 1752 年、通行英译 1855 年，均已入公有领域（详情记录判定 public_domain）；中文译本未托管（CI-0028）。",
+    "derived_from": "content/songs/MUS-S-0002.json#copyright.copyright_status"
+  },
+  "sections": [
+    {
+      "section_id": "v1",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "line_id": "v1-L1",
+          "lyric_id": "MUS-S-0002-L01",
+          "phrase_id": "PHRASE-01",
+          "text": "Be still, my soul: the Lord is on thy side."
+        },
+        {
+          "line_id": "v1-L2",
+          "lyric_id": "MUS-S-0002-L02",
+          "phrase_id": "PHRASE-01",
+          "text": "Bear patiently the cross of grief or pain."
+        },
+        {
+          "line_id": "v1-L3",
+          "lyric_id": "MUS-S-0002-L03",
+          "phrase_id": "PHRASE-02",
+          "text": "Leave to thy God to order and provide;"
+        },
+        {
+          "line_id": "v1-L4",
+          "lyric_id": "MUS-S-0002-L04",
+          "phrase_id": "PHRASE-03",
+          "text": "In every change He faithful will remain."
+        },
+        {
+          "line_id": "v1-L5",
+          "lyric_id": "MUS-S-0002-L05",
+          "phrase_id": "PHRASE-03",
+          "text": "Be still, my soul: thy best, thy heavenly Friend"
+        },
+        {
+          "line_id": "v1-L6",
+          "lyric_id": "MUS-S-0002-L06",
+          "phrase_id": "PHRASE-04",
+          "text": "Through thorny ways leads to a joyful end."
+        }
+      ]
+    },
+    {
+      "section_id": "v2",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "line_id": "v2-L1",
+          "lyric_id": "MUS-S-0002-L07",
+          "phrase_id": null,
+          "text": "Be still, my soul: thy God doth undertake"
+        },
+        {
+          "line_id": "v2-L2",
+          "lyric_id": "MUS-S-0002-L08",
+          "phrase_id": null,
+          "text": "To guide the future as He has the past."
+        },
+        {
+          "line_id": "v2-L3",
+          "lyric_id": "MUS-S-0002-L09",
+          "phrase_id": null,
+          "text": "Thy hope, thy confidence, let nothing shake;"
+        },
+        {
+          "line_id": "v2-L4",
+          "lyric_id": "MUS-S-0002-L10",
+          "phrase_id": null,
+          "text": "All now mysterious shall be bright at last."
+        },
+        {
+          "line_id": "v2-L5",
+          "lyric_id": "MUS-S-0002-L11",
+          "phrase_id": null,
+          "text": "Be still, my soul: the waves and winds still know"
+        },
+        {
+          "line_id": "v2-L6",
+          "lyric_id": "MUS-S-0002-L12",
+          "phrase_id": null,
+          "text": "His voice who ruled them while He dwelt below."
+        }
+      ]
+    },
+    {
+      "section_id": "v3",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "line_id": "v3-L1",
+          "lyric_id": "MUS-S-0002-L13",
+          "phrase_id": null,
+          "text": "Be still, my soul: when dearest friends depart,"
+        },
+        {
+          "line_id": "v3-L2",
+          "lyric_id": "MUS-S-0002-L14",
+          "phrase_id": null,
+          "text": "And all is darkened in the vale of tears;"
+        },
+        {
+          "line_id": "v3-L3",
+          "lyric_id": "MUS-S-0002-L15",
+          "phrase_id": null,
+          "text": "Then shalt thou better know His love, His heart,"
+        },
+        {
+          "line_id": "v3-L4",
+          "lyric_id": "MUS-S-0002-L16",
+          "phrase_id": null,
+          "text": "Who comes to soothe thy sorrows and thy fears."
+        },
+        {
+          "line_id": "v3-L5",
+          "lyric_id": "MUS-S-0002-L17",
+          "phrase_id": null,
+          "text": "Be still, my soul: thy Jesus can repay"
+        },
+        {
+          "line_id": "v3-L6",
+          "lyric_id": "MUS-S-0002-L18",
+          "phrase_id": null,
+          "text": "From His own fullness all He takes away."
+        }
+      ]
+    },
+    {
+      "section_id": "v4",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "line_id": "v4-L1",
+          "lyric_id": "MUS-S-0002-L19",
+          "phrase_id": null,
+          "text": "Be still, my soul: the hour is hastening on"
+        },
+        {
+          "line_id": "v4-L2",
+          "lyric_id": "MUS-S-0002-L20",
+          "phrase_id": null,
+          "text": "When we shall be forever with the Lord,"
+        },
+        {
+          "line_id": "v4-L3",
+          "lyric_id": "MUS-S-0002-L21",
+          "phrase_id": null,
+          "text": "When disappointment, grief, and fear are gone,"
+        },
+        {
+          "line_id": "v4-L4",
+          "lyric_id": "MUS-S-0002-L22",
+          "phrase_id": null,
+          "text": "Sorrow forgot, love's purest joys restored."
+        },
+        {
+          "line_id": "v4-L5",
+          "lyric_id": "MUS-S-0002-L23",
+          "phrase_id": null,
+          "text": "Be still, my soul: when change and tears are past,"
+        },
+        {
+          "line_id": "v4-L6",
+          "lyric_id": "MUS-S-0002-L24",
+          "phrase_id": null,
+          "text": "All safe and blessed we shall meet at last."
+        }
+      ]
+    }
+  ],
+  "note": "中文译本：NOT_AVAILABLE（权利未确认）。需要中文时由人工提供已获授权文本或完成授权后再录入。"
+}

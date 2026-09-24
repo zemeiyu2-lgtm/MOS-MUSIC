@@ -1,0 +1,1647 @@
+{
+  "candidates_version": "MUS-CAND-1.0.0",
+  "generated_at": "2026-09-21",
+  "source_csv": "content/candidates/source/MOS-LIFE-HYMN-LIBRARY-V2.csv",
+  "source_note": "由人工提供的 100 首目标曲库 CSV 原样拷贝入库；本工具只做格式规范化与初分类，不改写任何事实字段。",
+  "id_mapping_note": "CSV 的 S-NNNN 规范化为项目 ID MUS-S-NNNN；csv_song_id 保留溯源。MUS-S-0001…0050 与 Music Library V0.5 曲库重合（详情层/登记层以曲库为准），MUS-S-0051…0100 目前只有候选记录。",
+  "field_policy": {
+    "discernment_status": "全部 NOT_YET_ASSESSED：辨识未开始，前台一律如实显示，不给出任何八维/关系/等级结论。",
+    "copyright_status": "全部 SOURCE_REQUIRED（来源与行动状态，ADR-0012 维度）：表示「需要落实来源授权」，不构成任何法律状态结论。",
+    "front_tags": "provisional_intake_classification：录入期关键词初分类，仅供浏览筛选，不是辨识结论，不构成推荐或排序。",
+    "ordering": "保持 CSV 原行序（S-0001…S-0100）；行序不构成推荐排序，前台不做任何打分或「最佳歌曲」。"
+  },
+  "counts": {
+    "total": 100,
+    "existing_in_library_v05": 50,
+    "new_candidate": 50,
+    "discernment_assessed": 0,
+    "copyright_cleared": 0
+  },
+  "themes": [
+    "敬拜",
+    "恩典",
+    "救恩",
+    "十字架",
+    "复活",
+    "跟随",
+    "成圣",
+    "祷告",
+    "安慰",
+    "爱人",
+    "教会",
+    "宣教",
+    "盼望"
+  ],
+  "scenes": [
+    "个人",
+    "家庭",
+    "小组",
+    "主日",
+    "儿童/青少年",
+    "门训",
+    "使命"
+  ],
+  "note": "V2.0 候选库（§17）：候选库 → 详情库 → 实际使用 → 精选库 四层中的第一层。候选 ≠ 已辨识 ≠ 可用资源；歌谱/歌词/音频一律 尚未提供。",
+  "candidates": [
+    {
+      "song_id": "MUS-S-0001",
+      "csv_song_id": "S-0001",
+      "title_zh": "奇异恩典",
+      "title_en": "Amazing Grace",
+      "formation_theme": "恩典与救恩",
+      "suggested_use": "福音／恩典",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "csv_song_id": "S-0002",
+      "title_zh": "我灵镇静",
+      "title_en": "Be Still, My Soul",
+      "formation_theme": "信靠与安慰",
+      "suggested_use": "患难／信靠",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "csv_song_id": "S-0003",
+      "title_zh": "耶稣呼召",
+      "title_en": "Jesus Calls Us",
+      "formation_theme": "呼召与跟随",
+      "suggested_use": "门徒／呼召",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "csv_song_id": "S-0004",
+      "title_zh": "普世欢腾",
+      "title_en": "Joy to the World",
+      "formation_theme": "基督降生与喜乐",
+      "suggested_use": "圣诞／基督",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "csv_song_id": "S-0005",
+      "title_zh": "一切全献上",
+      "title_en": "I Surrender All",
+      "formation_theme": "奉献与降服",
+      "suggested_use": "奉献／顺服",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "csv_song_id": "S-0006",
+      "title_zh": "圣哉，圣哉，圣哉",
+      "title_en": "Holy, Holy, Holy! Lord God Almighty",
+      "formation_theme": "神的圣洁与三一",
+      "suggested_use": "神属性／敬拜",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "csv_song_id": "S-0007",
+      "title_zh": "荣耀归于真神",
+      "title_en": "To God Be the Glory",
+      "formation_theme": "神的荣耀与救恩",
+      "suggested_use": "敬拜／救恩",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "csv_song_id": "S-0008",
+      "title_zh": "拥戴我主为王",
+      "title_en": "Crown Him with Many Crowns",
+      "formation_theme": "基督为王",
+      "suggested_use": "基督论／敬拜",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "csv_song_id": "S-0009",
+      "title_zh": "你真伟大",
+      "title_en": "How Great Thou Art",
+      "formation_theme": "神的伟大与创造",
+      "suggested_use": "创造／敬拜",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "csv_song_id": "S-0010",
+      "title_zh": "你的信实广大",
+      "title_en": "Great Is Thy Faithfulness",
+      "formation_theme": "神的信实",
+      "suggested_use": "信靠／敬拜",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0011",
+      "csv_song_id": "S-0011",
+      "title_zh": "坚固保障",
+      "title_en": "A Mighty Fortress Is Our God",
+      "formation_theme": "神的保障",
+      "suggested_use": "信靠／试炼",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0012",
+      "csv_song_id": "S-0012",
+      "title_zh": "十字架前",
+      "title_en": "At the Cross",
+      "formation_theme": "十字架与赦罪",
+      "suggested_use": "十架／福音",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "十字架",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0013",
+      "csv_song_id": "S-0013",
+      "title_zh": "古旧十架",
+      "title_en": "The Old Rugged Cross",
+      "formation_theme": "十字架与救赎",
+      "suggested_use": "十架／救赎",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "十字架",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0014",
+      "csv_song_id": "S-0014",
+      "title_zh": "耶稣十字架下",
+      "title_en": "Beneath the Cross of Jesus",
+      "formation_theme": "十架与避难",
+      "suggested_use": "十架／信靠",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "十字架",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0015",
+      "csv_song_id": "S-0015",
+      "title_zh": "奇妙十架",
+      "title_en": "When I Survey the Wondrous Cross",
+      "formation_theme": "十架与舍己",
+      "suggested_use": "十架／门徒",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "十字架",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0016",
+      "csv_song_id": "S-0016",
+      "title_zh": "领我到骷髅地",
+      "title_en": "Lead Me to Calvary",
+      "formation_theme": "受难与记念基督",
+      "suggested_use": "受难／十架",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "十字架",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0017",
+      "csv_song_id": "S-0017",
+      "title_zh": "宝血活泉",
+      "title_en": "There Is a Fountain Filled with Blood",
+      "formation_theme": "洁净与赦罪",
+      "suggested_use": "救恩／悔改",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0018",
+      "csv_song_id": "S-0018",
+      "title_zh": "耶稣奇妙的救恩",
+      "title_en": "Wonderful Grace of Jesus",
+      "formation_theme": "恩典与救恩",
+      "suggested_use": "福音／恩典",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0019",
+      "csv_song_id": "S-0019",
+      "title_zh": "主活着",
+      "title_en": "He Lives",
+      "formation_theme": "复活与盼望",
+      "suggested_use": "复活／福音",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "复活",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0020",
+      "csv_song_id": "S-0020",
+      "title_zh": "基督今复活",
+      "title_en": "Christ the Lord Is Risen Today",
+      "formation_theme": "复活与得胜",
+      "suggested_use": "复活／敬拜",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "复活",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0021",
+      "csv_song_id": "S-0021",
+      "title_zh": "转眼仰望耶稣",
+      "title_en": "Turn Your Eyes upon Jesus",
+      "formation_theme": "仰望基督",
+      "suggested_use": "门徒／信靠",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0022",
+      "csv_song_id": "S-0022",
+      "title_zh": "最美丽耶稣",
+      "title_en": "Fairest Lord Jesus",
+      "formation_theme": "基督的美善",
+      "suggested_use": "基督论／敬拜",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0023",
+      "csv_song_id": "S-0023",
+      "title_zh": "恳求主像牧人领导",
+      "title_en": "Saviour, Like a Shepherd Lead Us",
+      "formation_theme": "牧养与引导",
+      "suggested_use": "门训／牧养",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "教会",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0024",
+      "csv_song_id": "S-0024",
+      "title_zh": "主凡事引导我",
+      "title_en": "All the Way My Saviour Leads Me",
+      "formation_theme": "神的带领",
+      "suggested_use": "信靠／跟随",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "跟随",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0025",
+      "csv_song_id": "S-0025",
+      "title_zh": "耶稣领我",
+      "title_en": "He Leadeth Me",
+      "formation_theme": "引导与顺服",
+      "suggested_use": "门徒／顺服",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "跟随",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0026",
+      "csv_song_id": "S-0026",
+      "title_zh": "向高处行",
+      "title_en": "Higher Ground",
+      "formation_theme": "成长与追求",
+      "suggested_use": "成长／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0027",
+      "csv_song_id": "S-0027",
+      "title_zh": "更亲近我主",
+      "title_en": "Nearer, Still Nearer",
+      "formation_theme": "亲近基督",
+      "suggested_use": "灵修／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0028",
+      "csv_song_id": "S-0028",
+      "title_zh": "更像我恩主",
+      "title_en": "More Like the Master",
+      "formation_theme": "效法基督",
+      "suggested_use": "成圣／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0029",
+      "csv_song_id": "S-0029",
+      "title_zh": "主我愿像你",
+      "title_en": "O to Be Like Thee!",
+      "formation_theme": "效法基督",
+      "suggested_use": "成圣／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0030",
+      "csv_song_id": "S-0030",
+      "title_zh": "成圣须用功夫",
+      "title_en": "Take Time to Be Holy",
+      "formation_theme": "成圣与操练",
+      "suggested_use": "成圣／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0031",
+      "csv_song_id": "S-0031",
+      "title_zh": "今要主自己",
+      "title_en": "Himself",
+      "formation_theme": "以基督为中心",
+      "suggested_use": "基督中心／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0032",
+      "csv_song_id": "S-0032",
+      "title_zh": "爱主更深",
+      "title_en": "More Love to Thee",
+      "formation_theme": "爱主与委身",
+      "suggested_use": "爱主／门训",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0033",
+      "csv_song_id": "S-0033",
+      "title_zh": "为耶稣而活",
+      "title_en": "Living for Jesus",
+      "formation_theme": "为基督而活",
+      "suggested_use": "门徒／使命",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0034",
+      "csv_song_id": "S-0034",
+      "title_zh": "教会独一的根基",
+      "title_en": "The Church's One Foundation",
+      "formation_theme": "教会与基督",
+      "suggested_use": "教会论",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "教会",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0035",
+      "csv_song_id": "S-0035",
+      "title_zh": "圣徒相通",
+      "title_en": "Blest Be the Tie That Binds",
+      "formation_theme": "彼此相爱与合一",
+      "suggested_use": "教会／群体",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "爱人",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0036",
+      "csv_song_id": "S-0036",
+      "title_zh": "耶稣恩友",
+      "title_en": "What a Friend We Have in Jesus",
+      "formation_theme": "祷告与亲近基督",
+      "suggested_use": "祷告／信靠",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "祷告",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0037",
+      "csv_song_id": "S-0037",
+      "title_zh": "祷告良辰",
+      "title_en": "Sweet Hour of Prayer",
+      "formation_theme": "祷告",
+      "suggested_use": "祷告／灵修",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "祷告",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0038",
+      "csv_song_id": "S-0038",
+      "title_zh": "我心灵得安宁",
+      "title_en": "It Is Well with My Soul",
+      "formation_theme": "患难中的平安",
+      "suggested_use": "安慰／信靠",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0039",
+      "csv_song_id": "S-0039",
+      "title_zh": "有福的确据",
+      "title_en": "Blessed Assurance",
+      "formation_theme": "救恩确据",
+      "suggested_use": "救恩／确据",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0040",
+      "csv_song_id": "S-0040",
+      "title_zh": "藉我赐恩福",
+      "title_en": "Make Me a Blessing",
+      "formation_theme": "祝福别人",
+      "suggested_use": "使命／邻舍",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "爱人",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0041",
+      "csv_song_id": "S-0041",
+      "title_zh": "岂可空手回天家",
+      "title_en": "Must I Go, and Empty-Handed?",
+      "formation_theme": "忠心与结果子",
+      "suggested_use": "使命／事奉",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0042",
+      "csv_song_id": "S-0042",
+      "title_zh": "拯救失丧者",
+      "title_en": "Rescue the Perishing",
+      "formation_theme": "寻找失丧者",
+      "suggested_use": "宣教／福音",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0043",
+      "csv_song_id": "S-0043",
+      "title_zh": "向万邦传福音",
+      "title_en": "We've a Story to Tell to the Nations",
+      "formation_theme": "万邦与宣教",
+      "suggested_use": "宣教／使命",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "宣教",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0044",
+      "csv_song_id": "S-0044",
+      "title_zh": "喜爱述说耶稣",
+      "title_en": "I Love to Tell the Story",
+      "formation_theme": "见证与传扬",
+      "suggested_use": "宣教／见证",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "宣教",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0045",
+      "csv_song_id": "S-0045",
+      "title_zh": "兴起为耶稣",
+      "title_en": "Stand Up, Stand Up for Jesus",
+      "formation_theme": "忠心与见证",
+      "suggested_use": "门徒／使命",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "宣教",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0046",
+      "csv_song_id": "S-0046",
+      "title_zh": "基督精兵",
+      "title_en": "Onward, Christian Soldiers",
+      "formation_theme": "跟随与使命",
+      "suggested_use": "教会／使命",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "宣教",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0047",
+      "csv_song_id": "S-0047",
+      "title_zh": "一切为耶稣",
+      "title_en": "All for Jesus",
+      "formation_theme": "全人委身",
+      "suggested_use": "奉献／门徒",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0048",
+      "csv_song_id": "S-0048",
+      "title_zh": "一生奉献",
+      "title_en": "Take My Life, and Let It Be",
+      "formation_theme": "奉献与生命",
+      "suggested_use": "奉献／门徒",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0049",
+      "csv_song_id": "S-0049",
+      "title_zh": "我每时刻需要你",
+      "title_en": "I Need Thee Every Hour",
+      "formation_theme": "持续依靠基督",
+      "suggested_use": "祷告／信靠",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0050",
+      "csv_song_id": "S-0050",
+      "title_zh": "主，与我同住",
+      "title_en": "Abide with Me",
+      "formation_theme": "同在与盼望",
+      "suggested_use": "信靠／盼望",
+      "source_stage": "existing",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "盼望",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0051",
+      "csv_song_id": "S-0051",
+      "title_zh": "以信为本",
+      "title_en": "Be Thou My Vision",
+      "formation_theme": "以神为中心",
+      "suggested_use": "门徒／敬拜",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0052",
+      "csv_song_id": "S-0052",
+      "title_zh": "来，我神我王",
+      "title_en": "Come, Thou Fount of Every Blessing",
+      "formation_theme": "恩典与归向",
+      "suggested_use": "恩典／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0053",
+      "csv_song_id": "S-0053",
+      "title_zh": "磐石之上",
+      "title_en": "The Solid Rock",
+      "formation_theme": "基督与稳固",
+      "suggested_use": "福音／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0054",
+      "csv_song_id": "S-0054",
+      "title_zh": "万古磐石",
+      "title_en": "Rock of Ages",
+      "formation_theme": "基督与遮盖",
+      "suggested_use": "救恩／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0055",
+      "csv_song_id": "S-0055",
+      "title_zh": "若无人领我",
+      "title_en": "Just As I Am, Without One Plea",
+      "formation_theme": "悔改与恩典",
+      "suggested_use": "福音／回应",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0056",
+      "csv_song_id": "S-0056",
+      "title_zh": "耶稣，我爱你",
+      "title_en": "My Jesus, I Love Thee",
+      "formation_theme": "爱基督",
+      "suggested_use": "爱主／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0057",
+      "csv_song_id": "S-0057",
+      "title_zh": "我宁愿有耶稣",
+      "title_en": "I'd Rather Have Jesus",
+      "formation_theme": "基督优先",
+      "suggested_use": "门徒／委身",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0058",
+      "csv_song_id": "S-0058",
+      "title_zh": "求主使我成为圣洁",
+      "title_en": "Spirit of the Living God",
+      "formation_theme": "圣灵更新",
+      "suggested_use": "成圣／圣灵",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0059",
+      "csv_song_id": "S-0059",
+      "title_zh": "主，我愿跟随你",
+      "title_en": "Where He Leads Me",
+      "formation_theme": "跟随与顺服",
+      "suggested_use": "门徒／呼召",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0060",
+      "csv_song_id": "S-0060",
+      "title_zh": "我主，我神，我王",
+      "title_en": "All Hail the Power of Jesus' Name",
+      "formation_theme": "基督王权",
+      "suggested_use": "基督论／敬拜",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0061",
+      "csv_song_id": "S-0061",
+      "title_zh": "我父神",
+      "title_en": "Abba, Father",
+      "formation_theme": "神的儿女身份",
+      "suggested_use": "身份／敬拜",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0062",
+      "csv_song_id": "S-0062",
+      "title_zh": "永远的膀臂",
+      "title_en": "Leaning on the Everlasting Arms",
+      "formation_theme": "依靠与平安",
+      "suggested_use": "信靠／安慰",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0063",
+      "csv_song_id": "S-0063",
+      "title_zh": "祂藏我灵",
+      "title_en": "He Hideth My Soul",
+      "formation_theme": "神的保护",
+      "suggested_use": "信靠／安慰",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0064",
+      "csv_song_id": "S-0064",
+      "title_zh": "主爱何等甘甜",
+      "title_en": "Jesus, Lover of My Soul",
+      "formation_theme": "基督的爱与避难",
+      "suggested_use": "基督／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0065",
+      "csv_song_id": "S-0065",
+      "title_zh": "耶稣是我一切",
+      "title_en": "Jesus Is All the World to Me",
+      "formation_theme": "以基督为满足",
+      "suggested_use": "基督中心／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0066",
+      "csv_song_id": "S-0066",
+      "title_zh": "靠祂得胜",
+      "title_en": "Victory in Jesus",
+      "formation_theme": "福音与得胜",
+      "suggested_use": "救恩／见证",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "复活",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0067",
+      "csv_song_id": "S-0067",
+      "title_zh": "亲近，更亲近",
+      "title_en": "Nearer, My God, to Thee",
+      "formation_theme": "亲近神",
+      "suggested_use": "灵修／敬拜",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0068",
+      "csv_song_id": "S-0068",
+      "title_zh": "我知所信的是谁",
+      "title_en": "I Know Whom I Have Believed",
+      "formation_theme": "信心与确据",
+      "suggested_use": "信心／救恩",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0069",
+      "csv_song_id": "S-0069",
+      "title_zh": "惟独基督",
+      "title_en": "In Christ Alone",
+      "formation_theme": "基督与福音",
+      "suggested_use": "基督论／福音",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0070",
+      "csv_song_id": "S-0070",
+      "title_zh": "怎能不歌唱",
+      "title_en": "And Can It Be That I Should Gain",
+      "formation_theme": "恩典与称义",
+      "suggested_use": "福音／恩典",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0071",
+      "csv_song_id": "S-0071",
+      "title_zh": "神宝座前",
+      "title_en": "Before the Throne of God Above",
+      "formation_theme": "称义与中保",
+      "suggested_use": "福音／确据",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0072",
+      "csv_song_id": "S-0072",
+      "title_zh": "祂必托住我",
+      "title_en": "He Will Hold Me Fast",
+      "formation_theme": "神保守与确据",
+      "suggested_use": "救恩／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0073",
+      "csv_song_id": "S-0073",
+      "title_zh": "基督是我生死盼望",
+      "title_en": "Christ Our Hope in Life and Death",
+      "formation_theme": "生死中的盼望",
+      "suggested_use": "复活／盼望",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "盼望",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0074",
+      "csv_song_id": "S-0074",
+      "title_zh": "我所有都是基督",
+      "title_en": "All I Have Is Christ",
+      "formation_theme": "以基督为一切",
+      "suggested_use": "福音／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0075",
+      "csv_song_id": "S-0075",
+      "title_zh": "基督是我的产业",
+      "title_en": "Christ Is Mine Forevermore",
+      "formation_theme": "在基督里的身份",
+      "suggested_use": "门徒／盼望",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0076",
+      "csv_song_id": "S-0076",
+      "title_zh": "主，请说",
+      "title_en": "Speak, O Lord",
+      "formation_theme": "真理与顺服",
+      "suggested_use": "圣经／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "跟随",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0077",
+      "csv_song_id": "S-0077",
+      "title_zh": "万邦中",
+      "title_en": "Across the Lands",
+      "formation_theme": "基督与普世",
+      "suggested_use": "使命／基督",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0078",
+      "csv_song_id": "S-0078",
+      "title_zh": "教会兴起",
+      "title_en": "O Church Arise",
+      "formation_theme": "教会与使命",
+      "suggested_use": "教会／使命",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "宣教",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0079",
+      "csv_song_id": "S-0079",
+      "title_zh": "十字架的能力",
+      "title_en": "The Power of the Cross",
+      "formation_theme": "十字架与救赎",
+      "suggested_use": "十架／福音",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "十字架",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0080",
+      "csv_song_id": "S-0080",
+      "title_zh": "主是我的拯救",
+      "title_en": "The Lord Is My Salvation",
+      "formation_theme": "救恩与依靠",
+      "suggested_use": "福音／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0081",
+      "csv_song_id": "S-0081",
+      "title_zh": "我要像耶稣",
+      "title_en": "I Want to Be Like Jesus",
+      "formation_theme": "效法基督",
+      "suggested_use": "成圣／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0082",
+      "csv_song_id": "S-0082",
+      "title_zh": "求你为我造清洁的心",
+      "title_en": "Create in Me a Clean Heart",
+      "formation_theme": "悔改与内心更新",
+      "suggested_use": "悔改／成圣",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0083",
+      "csv_song_id": "S-0083",
+      "title_zh": "首先求神的国",
+      "title_en": "Seek Ye First",
+      "formation_theme": "神国与优先次序",
+      "suggested_use": "门徒／神国",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0084",
+      "csv_song_id": "S-0084",
+      "title_zh": "耶和华是我牧者",
+      "title_en": "The Lord's My Shepherd",
+      "formation_theme": "牧养与满足",
+      "suggested_use": "信靠／安慰",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "教会",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0085",
+      "csv_song_id": "S-0085",
+      "title_zh": "我灵啊赞美耶和华",
+      "title_en": "10,000 Reasons (Bless the Lord)",
+      "formation_theme": "敬拜与感恩",
+      "suggested_use": "敬拜／感恩",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0086",
+      "csv_song_id": "S-0086",
+      "title_zh": "不再是我",
+      "title_en": "Yet Not I but Through Christ in Me",
+      "formation_theme": "基督在我里面",
+      "suggested_use": "门训／成圣",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0087",
+      "csv_song_id": "S-0087",
+      "title_zh": "祂的怜悯何其大",
+      "title_en": "His Mercy Is More",
+      "formation_theme": "怜悯与赦罪",
+      "suggested_use": "恩典／悔改",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0088",
+      "csv_song_id": "S-0088",
+      "title_zh": "住在基督里",
+      "title_en": "Abide",
+      "formation_theme": "住在基督里",
+      "suggested_use": "门训／灵修",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0089",
+      "csv_song_id": "S-0089",
+      "title_zh": "建立我的生命",
+      "title_en": "Build My Life",
+      "formation_theme": "以基督为根基",
+      "suggested_use": "门训／群体",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0090",
+      "csv_song_id": "S-0090",
+      "title_zh": "耶稣居首位",
+      "title_en": "Jesus, Be the Centre",
+      "formation_theme": "基督中心",
+      "suggested_use": "敬拜／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0091",
+      "csv_song_id": "S-0091",
+      "title_zh": "主，我需要你",
+      "title_en": "Lord, I Need You",
+      "formation_theme": "持续依靠恩典",
+      "suggested_use": "祷告／门训",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0092",
+      "csv_song_id": "S-0092",
+      "title_zh": "坚固的根基",
+      "title_en": "How Firm a Foundation",
+      "formation_theme": "真理根基与信靠",
+      "suggested_use": "圣经／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "个人",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0093",
+      "csv_song_id": "S-0093",
+      "title_zh": "主在这里",
+      "title_en": "The Lord Is in This Place",
+      "formation_theme": "神的同在",
+      "suggested_use": "敬拜／安慰",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "敬拜",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0094",
+      "csv_song_id": "S-0094",
+      "title_zh": "我的魂哪，要称颂耶和华",
+      "title_en": "Bless the Lord, O My Soul",
+      "formation_theme": "赞美与记念恩典",
+      "suggested_use": "敬拜／感恩",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "恩典",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0095",
+      "csv_song_id": "S-0095",
+      "title_zh": "我心中的王",
+      "title_en": "King of My Heart",
+      "formation_theme": "神作王与信靠",
+      "suggested_use": "敬拜／信靠",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "安慰",
+        "scene": "主日",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0096",
+      "csv_song_id": "S-0096",
+      "title_zh": "和平之子",
+      "title_en": "Make Me a Channel of Your Peace",
+      "formation_theme": "和平与服事",
+      "suggested_use": "邻舍／使命",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "爱人",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0097",
+      "csv_song_id": "S-0097",
+      "title_zh": "我们用爱彼此相认",
+      "title_en": "They'll Know We Are Christians by Our Love",
+      "formation_theme": "彼此相爱与见证",
+      "suggested_use": "教会／见证",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "宣教",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0098",
+      "csv_song_id": "S-0098",
+      "title_zh": "我在这里，请差遣我",
+      "title_en": "Here I Am, Lord",
+      "formation_theme": "呼召与差派",
+      "suggested_use": "宣教／呼召",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "跟随",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0099",
+      "csv_song_id": "S-0099",
+      "title_zh": "去告诉山上",
+      "title_en": "Go Tell It on the Mountain",
+      "formation_theme": "福音传扬",
+      "suggested_use": "宣教／见证",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "救恩",
+        "scene": "使命",
+        "tags_status": "provisional_intake_classification"
+      }
+    },
+    {
+      "song_id": "MUS-S-0100",
+      "csv_song_id": "S-0100",
+      "title_zh": "我要跟随耶稣",
+      "title_en": "I Will Follow Thee",
+      "formation_theme": "跟随与委身",
+      "suggested_use": "门徒／跟随",
+      "source_stage": "new",
+      "copyright_status": "SOURCE_REQUIRED",
+      "discernment_status": "NOT_YET_ASSESSED",
+      "front_tags": {
+        "theme": "成圣",
+        "scene": "门训",
+        "tags_status": "provisional_intake_classification"
+      }
+    }
+  ]
+}

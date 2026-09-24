@@ -1,0 +1,161 @@
+{
+  "song_id": "MUS-S-0004",
+  "title": "普世欢腾（Joy to the World）",
+  "author": "Isaac Watts",
+  "composer": "Isaac Watts",
+  "source": "Psalms of David Imitated（1719）；公版",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1719（词）",
+  "copyright": {
+    "copyright_status": "public_domain",
+    "source": "Psalms of David Imitated（1719）；公版",
+    "license": "Public Domain",
+    "usage_permission": "词曲已进入公有领域；本仓所用中文译本译文未随本仓托管。",
+    "attribution": "Isaac Watts（词曲）",
+    "audio_availability": "none",
+    "lyrics_availability": "none",
+    "permission_evidence": null
+  },
+  "lyrics": {
+    "text": null,
+    "excerpt": null,
+    "note": "公版原文无版权问题；中文译本译文不托管。"
+  },
+  "media": {
+    "audio": null,
+    "score": null,
+    "chord": null
+  },
+  "bible": {
+    "core_passage": "诗98:4–9",
+    "bible_reference_ids": [
+      "BB-PSA-98"
+    ],
+    "bible_themes": [
+      "主的来临",
+      "喜乐",
+      "禧年"
+    ]
+  },
+  "theology": {
+    "theology": [
+      "基督论-来临",
+      "末世论"
+    ],
+    "christology": [
+      "主临到世界"
+    ],
+    "soteriology": [
+      "恩典临到"
+    ],
+    "ecclesiology": [],
+    "missiology": [
+      "福音及于万民/万有"
+    ]
+  },
+  "discipleship": {
+    "stage": null,
+    "main_theme": "TH-05",
+    "secondary_themes": [],
+    "music_unit_ids": [],
+    "music_unit_refs": [
+      "MM05"
+    ],
+    "function": null,
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "CTX-SUN",
+      "CTX-GRP",
+      "CTX-FAM"
+    ],
+    "difficulty": 1
+  },
+  "formation": {
+    "primary_function": "EM",
+    "emotion": [
+      "喜乐",
+      "惊奇"
+    ],
+    "memory": [
+      "「主已经来了：『今天』的应验从祂开始」"
+    ],
+    "community": [
+      "家庭同唱"
+    ],
+    "practice": [],
+    "prayer": [],
+    "transmission": []
+  },
+  "eight_dimensions": {
+    "biblical_truth": {
+      "score": 4,
+      "note": "「主已来临，让大地欢腾」与路4:21「今天这经应验了」的「已经开始了」性质一致；诗98 是耶稣引用赛61 的背景脉络。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "theological_formation": {
+      "score": 3,
+      "note": "喜乐宣告「主临到」，但对「受膏—差遣—释放」的具体内容较概括。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "emotional_formation": {
+      "score": 5,
+      "note": "形成喜乐与惊奇，是恩典临到的情感回应。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "community": {
+      "score": 5,
+      "note": "极高的会众参与度，家庭、儿童、跨代皆宜。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "congregational_participation": {
+      "score": 5,
+      "note": "几乎零教唱成本。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "generational_transmission": {
+      "score": 5,
+      "note": "儿童最早学会的圣诗之一，家庭传递极强。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "life_practice": {
+      "score": 2,
+      "note": "喜乐宣告本身不产生具体行为，实践须靠单元 S6 指令。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "mission_orientation": {
+      "score": 3,
+      "note": "「主临到万方」隐含普世视野。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  "tier": "B",
+  "review_status": "under_review",
+  "scenes": [
+    "主日",
+    "小组",
+    "家庭",
+    "跨代"
+  ],
+  "search_keywords": [
+    "喜乐",
+    "普世欢腾",
+    "Joy to the World",
+    "主来临"
+  ],
+  "version": "MUS-V-0.2.0",
+  "created_at": "2026-09-21T12:00:00+08:00",
+  "updated_at": "2026-09-21T12:00:00+08:00",
+  "updated_by": "mos-music-phase2a"
+}

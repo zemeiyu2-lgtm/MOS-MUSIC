@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/practice.schema.json",
+  "title": "MOS-MUSIC Practice (用户实践记录)",
+  "description": "用户个人实践记录（§18 我的实践）。属用户数据，离线优先写入本地，冲突时保留用户本地记录。不记录「属灵分数」。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["practice_id", "user_ref", "course_id", "step_id", "created_at", "sync"],
+  "properties": {
+    "practice_id": { "$ref": "common.schema.json#/$defs/practiceId" },
+    "user_ref": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "用户本地标识。若接入 MOS-GOV/ChurchCRM，则为其 person_id 的不透明字符串形式；MOS-MUSIC 不复制人员事实、不建并行人员表。"
+    },
+    "group_ref": { "type": ["string", "null"], "maxLength": 120, "description": "可选：所属小组标识（MOS-GOV / ChurchCRM group_id 的不透明形式）。" },
+    "church_ref": { "type": ["string", "null"], "maxLength": 120, "description": "可选：所属教会标识（MOS-GOV structure_id 的不透明形式）。" },
+
+    "course_id": { "$ref": "common.schema.json#/$defs/courseId" },
+    "step_id": { "$ref": "common.schema.json#/$defs/stepId" },
+    "song_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/songId" }, { "type": "null" }] },
+    "context_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/contextId" }, { "type": "null" }] },
+    "map_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/mapId" }, { "type": "null" }] },
+
+    "action_text": { "type": ["string", "null"], "maxLength": 1000, "description": "§17 S6「行」：这一周实际做了什么。" },
+    "transmit_to": { "type": ["string", "null"], "maxLength": 200, "description": "§17 S7「传」：分享给了谁（只记称呼或本地标识，不强制记全名）。" },
+    "transmit_note": { "type": ["string", "null"], "maxLength": 600 },
+
+    "created_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": ["string", "null"], "format": "date-time" },
+    "sync": { "$ref": "common.schema.json#/$defs/syncMeta" }
+  }
+}

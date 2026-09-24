@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/song.schema.json",
+  "title": "MOS-MUSIC Song",
+  "description": "音乐库单曲记录。tier（资源等级 A/B/C）与 review_status（内容生命周期七态）是两个彼此独立的字段，不得合并。八维辨识为 1-5 分 + 说明，禁止任何「好歌/坏歌」二元评价字段。Phase 2A.1 冻结边界：歌曲不是完整门训单元——歌曲主要承担真理表达、记忆、情感形成、共同体参与、祷告与生命回应；不得假设歌曲本身自动产生具体行为（歌曲 ≠ 生命实践；歌曲 + S6 具体行动设计 = 音乐进入生命实践）。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "song_id", "title", "language", "original_or_translation",
+    "copyright", "bible", "theology", "discipleship", "formation",
+    "eight_dimensions", "tier", "review_status", "version"
+  ],
+  "properties": {
+    "song_id": { "$ref": "common.schema.json#/$defs/songId" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "author": { "type": ["string", "null"], "maxLength": 200 },
+    "composer": { "type": ["string", "null"], "maxLength": 200 },
+    "source": { "type": ["string", "null"], "maxLength": 300 },
+    "language": { "type": "string", "enum": ["zh-Hans", "zh-Hant", "en", "fil", "other"] },
+    "original_or_translation": { "type": "string", "enum": ["original", "translation", "adaptation", "unknown"] },
+    "era": {
+      "type": ["string", "null"],
+      "maxLength": 40,
+      "description": "创作年代（如 1779）。仅作分类与检索，不用于传统/现代排名。"
+    },
+
+    "copyright": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["copyright_status", "audio_availability", "lyrics_availability"],
+      "description": "§27 版权设计。未获合法授权时，只允许保存元数据、研究标签与外部来源信息；不得托管受版权保护的完整音频或歌词。",
+      "properties": {
+        "copyright_status": {
+          "type": "string",
+          "enum": ["unknown", "public_domain", "copyrighted", "licensed", "permission_granted"]
+        },
+        "source": { "type": ["string", "null"], "maxLength": 300 },
+        "license": { "type": ["string", "null"], "maxLength": 200 },
+        "usage_permission": { "type": ["string", "null"], "maxLength": 300 },
+        "attribution": { "type": ["string", "null"], "maxLength": 300 },
+        "audio_availability": { "type": "string", "enum": ["none", "external_link", "hosted_authorized"] },
+        "lyrics_availability": { "type": "string", "enum": ["none", "excerpt", "external_link", "hosted_authorized"] },
+        "permission_evidence": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    },
+
+    "lyrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "lyrics_availability 为 none 时，text 必须为 null。",
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "excerpt": { "type": ["string", "null"], "maxLength": 400 },
+        "note": { "type": ["string", "null"], "maxLength": 300 }
+      }
+    },
+
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "只保存链接，不保存文件本体。",
+      "properties": {
+        "audio": { "type": ["string", "null"], "maxLength": 500 },
+        "score": { "type": ["string", "null"], "maxLength": 500 },
+        "chord": { "type": ["string", "null"], "maxLength": 500 }
+      }
+    },
+
+    "bible": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["core_passage"],
+      "properties": {
+        "core_passage": { "$ref": "common.schema.json#/$defs/passageRef" },
+        "bible_reference_ids": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/bibleRefId" }
+        },
+        "bible_themes": { "type": "array", "items": { "type": "string", "maxLength": 80 } }
+      }
+    },
+
+    "theology": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "§12 神学字段。只记标签，不在此处做神学论证。",
+      "properties": {
+        "theology": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "christology": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "soteriology": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "ecclesiology": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "missiology": { "type": "array", "items": { "type": "string", "maxLength": 80 } }
+      }
+    },
+
+    "discipleship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["main_theme", "difficulty"],
+      "properties": {
+        "stage": { "type": ["string", "null"], "enum": ["I 看见自己", "II 重新连接", "III 进入生活", "IV 结出果子", null] },
+        "main_theme": { "$ref": "common.schema.json#/$defs/themeId" },
+        "secondary_themes": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/themeId" }, "maxItems": 5 },
+        "music_unit_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/courseId" } },
+        "music_unit_refs": {
+          "type": "array",
+          "maxItems": 4,
+          "items": { "$ref": "common.schema.json#/$defs/musicUnitId" },
+          "description": "关联的 Framework 层 MM 单元（Phase 2A 起）。与 music_unit_ids（24 课结构引用）并存。"
+        },
+        "function": { "type": ["string", "null"], "maxLength": 120 },
+        "age_group": { "type": "array", "items": { "type": "string", "enum": ["儿童", "青少年", "成人", "长者", "跨代"] } },
+        "context": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/contextId" } },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5, "description": "演唱与理解难度，1 最易 5 最难。不是质量评分。" }
+      }
+    },
+
+    "formation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_function"],
+      "description": "§12 形成字段：这首歌在哪些形成功能上被使用。primary_function 必填，避免「所有功能都勾选」。",
+      "properties": {
+        "primary_function": { "$ref": "common.schema.json#/$defs/musicFunction" },
+        "emotion": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "memory": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "community": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "practice": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "prayer": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+        "transmission": { "type": "array", "items": { "type": "string", "maxLength": 80 } }
+      }
+    },
+
+    "eight_dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "§13 八维辨识。每一维均为 1-5 分 + 说明；score 为 null 表示尚未辨识。禁止把八维合成一个总分或好坏结论。",
+      "required": [
+        "biblical_truth", "theological_formation", "emotional_formation", "community",
+        "congregational_participation", "generational_transmission", "life_practice", "mission_orientation"
+      ],
+      "properties": {
+        "biblical_truth": { "$ref": "common.schema.json#/$defs/dimension" },
+        "theological_formation": { "$ref": "common.schema.json#/$defs/dimension" },
+        "emotional_formation": { "$ref": "common.schema.json#/$defs/dimension" },
+        "community": { "$ref": "common.schema.json#/$defs/dimension" },
+        "congregational_participation": { "$ref": "common.schema.json#/$defs/dimension" },
+        "generational_transmission": { "$ref": "common.schema.json#/$defs/dimension" },
+        "life_practice": { "$ref": "common.schema.json#/$defs/dimension" },
+        "mission_orientation": { "$ref": "common.schema.json#/$defs/dimension" }
+      }
+    },
+
+    "tier": {
+      "type": "string",
+      "enum": ["A", "B", "C"],
+      "description": "§14 资源等级，独立字段。A=MOS核心库（完成完整审核，适合核心门训）；B=MOS推荐库（适合具体主题或场景）；C=MOS研究资源（有使用或研究价值，尚未完成完整辨识）。"
+    },
+    "theological_note": {
+      "type": ["string", "null"],
+      "maxLength": 400,
+      "description": "Phase 2A.1：使用限制类神学备注（如道德主义风险、主题级呼应声明、必须保持的福音结构）。与八维 note 不同：这是正式的「使用时必须」约束，不是评分说明。"
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["draft", "under_review", "approved", "core", "recommended", "research", "archived"],
+      "description": "§26 内容生命周期/审核状态，独立字段，与 tier 互不推导。"
+    },
+    "scenes": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["主日", "小组", "家庭", "个人", "儿童", "跨代", "宣教"] }
+    },
+    "search_keywords": { "type": "array", "items": { "type": "string", "maxLength": 40 } },
+
+    "version": { "$ref": "common.schema.json#/$defs/version" },
+    "created_at": { "type": ["string", "null"], "format": "date-time" },
+    "updated_at": { "type": ["string", "null"], "format": "date-time" },
+    "updated_by": { "type": ["string", "null"], "maxLength": 120 }
+  }
+}

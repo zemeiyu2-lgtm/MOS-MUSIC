@@ -1,0 +1,45 @@
+{
+  "annual_id": "MOS-MUSIC-ANNUAL-2027",
+  "index_version": "MUS-V-0.2.0",
+  "weeks": [
+    {
+      "week_id": "2027-W01",
+      "mos_week": "W01",
+      "file": "content/annual/2027/weeks/2027-W01.json"
+    },
+    {
+      "week_id": "2027-W02",
+      "mos_week": "W02",
+      "file": "content/annual/2027/weeks/2027-W02.json"
+    },
+    {
+      "week_id": "2027-W03",
+      "mos_week": "W03",
+      "file": "content/annual/2027/weeks/2027-W03.json"
+    },
+    {
+      "week_id": "2027-W04",
+      "mos_week": "W04",
+      "file": "content/annual/2027/weeks/2027-W04.json"
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "MUS-U-2027-W01",
+      "file": "content/annual/2027/units/MUS-U-2027-W01.json"
+    },
+    {
+      "unit_id": "MUS-U-2027-W02",
+      "file": "content/annual/2027/units/MUS-U-2027-W02.json"
+    },
+    {
+      "unit_id": "MUS-U-2027-W03",
+      "file": "content/annual/2027/units/MUS-U-2027-W03.json"
+    },
+    {
+      "unit_id": "MUS-U-2027-W04",
+      "file": "content/annual/2027/units/MUS-U-2027-W04.json"
+    }
+  ],
+  "note": "Phase 2A：W01–W03 三个样本周；Phase 2B：W04 单周试产（Skill 驱动），待人工审核。W05–W52 尚未建立（禁止提前全量生产）。"
+}

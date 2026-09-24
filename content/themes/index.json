@@ -1,0 +1,806 @@
+{
+  "index_version": "MUS-V-0.5.0",
+  "generated_at": null,
+  "record_of": "TH-NN",
+  "count": 24,
+  "schema": "content/schema/theme.schema.json",
+  "note": "主题是标签，不是第三套课程体系；TH-01…TH-24 与 24 课同序，通过 map_id 与 MOS 52 周 / LQ 关联（H-2 决定）。｜CI-0014 案 a：主题歌曲计数已移出本文件，改由 content/production/theme-song-counts.json 从曲库推导（正常扩库不再造成不可变基线漂移）。",
+  "themes": [
+    {
+      "theme_id": "TH-01",
+      "name": "创造",
+      "group": "认识神",
+      "map_id": "MAP-C01",
+      "lq_ids": [
+        "LQ01",
+        "LQ02"
+      ],
+      "core_passage": "林后5:17",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-SUN"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-01",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-02",
+      "name": "圣洁",
+      "group": "认识神",
+      "map_id": "MAP-C02",
+      "lq_ids": [
+        "LQ01"
+      ],
+      "core_passage": "林后13:5",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-02",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-03",
+      "name": "慈爱",
+      "group": "认识神",
+      "map_id": "MAP-C03",
+      "lq_ids": [
+        "LQ05"
+      ],
+      "core_passage": "约13:34–35",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-03",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-04",
+      "name": "信实",
+      "group": "认识神",
+      "map_id": "MAP-C04",
+      "lq_ids": [
+        "LQ03"
+      ],
+      "core_passage": "腓1:6",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-04",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-05",
+      "name": "道成肉身",
+      "group": "认识基督",
+      "map_id": "MAP-C05",
+      "lq_ids": [
+        "LQ01"
+      ],
+      "core_passage": "约14:1–6",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-SUN",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-05",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-06",
+      "name": "十字架",
+      "group": "认识基督",
+      "map_id": "MAP-C06",
+      "lq_ids": [
+        "LQ07"
+      ],
+      "core_passage": "西3:12–13",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-SUN",
+        "CTX-PER"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-06",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-07",
+      "name": "复活",
+      "group": "认识基督",
+      "map_id": "MAP-C07",
+      "lq_ids": [
+        "LQ07"
+      ],
+      "core_passage": "约11:1–44",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-SUN",
+        "CTX-FAM"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-07",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-08",
+      "name": "跟随基督",
+      "group": "认识基督",
+      "map_id": "MAP-C08",
+      "lq_ids": [
+        "LQ03"
+      ],
+      "core_passage": "腓3:7–14",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-08",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-09",
+      "name": "悔改",
+      "group": "新生命",
+      "map_id": "MAP-C09",
+      "lq_ids": [
+        "LQ01"
+      ],
+      "core_passage": "林后13:5",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-SUN"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-09",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-10",
+      "name": "信心",
+      "group": "新生命",
+      "map_id": "MAP-C10",
+      "lq_ids": [
+        "LQ04"
+      ],
+      "core_passage": "路12:22–32",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-10",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-11",
+      "name": "圣洁生活",
+      "group": "新生命",
+      "map_id": "MAP-C11",
+      "lq_ids": [
+        "LQ01"
+      ],
+      "core_passage": "罗12:1–2",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-FAM"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-11",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-12",
+      "name": "祷告",
+      "group": "新生命",
+      "map_id": "MAP-C12",
+      "lq_ids": [
+        "LQ04"
+      ],
+      "core_passage": "路10:38–42",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-12",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-13",
+      "name": "彼此相爱",
+      "group": "共同体",
+      "map_id": "MAP-C13",
+      "lq_ids": [
+        "LQ05"
+      ],
+      "core_passage": "约13:34–35",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-13",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-14",
+      "name": "彼此饶恕",
+      "group": "共同体",
+      "map_id": "MAP-C14",
+      "lq_ids": [
+        "LQ05"
+      ],
+      "core_passage": "罗12:17–21",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-FAM",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-14",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-15",
+      "name": "彼此服事",
+      "group": "共同体",
+      "map_id": "MAP-C15",
+      "lq_ids": [
+        "LQ06"
+      ],
+      "core_passage": "约13:1–17",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-GRP",
+        "CTX-SUN"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-15",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-16",
+      "name": "合一与教会",
+      "group": "共同体",
+      "map_id": "MAP-C16",
+      "lq_ids": [
+        "LQ05"
+      ],
+      "core_passage": "弗2:19–22",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-SUN",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-16",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-17",
+      "name": "家庭",
+      "group": "生活",
+      "map_id": "MAP-C17",
+      "lq_ids": [
+        "LQ06"
+      ],
+      "core_passage": "弗5:21",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-FAM",
+        "CTX-GEN"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-17",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-18",
+      "name": "工作与责任",
+      "group": "生活",
+      "map_id": "MAP-C18",
+      "lq_ids": [
+        "LQ06"
+      ],
+      "core_passage": "西3:23–24",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-GRP"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-18",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-19",
+      "name": "苦难与盼望",
+      "group": "生活",
+      "map_id": "MAP-C19",
+      "lq_ids": [
+        "LQ07"
+      ],
+      "core_passage": "林后12:7–10",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-PER",
+        "CTX-GRP",
+        "CTX-FAM"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-19",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-20",
+      "name": "爱邻舍",
+      "group": "生活",
+      "map_id": "MAP-C20",
+      "lq_ids": [
+        "LQ06"
+      ],
+      "core_passage": "约13:1–17",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-GRP",
+        "CTX-MIS"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-20",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-21",
+      "name": "见证基督",
+      "group": "使命与传递",
+      "map_id": "MAP-C21",
+      "lq_ids": [
+        "LQ08"
+      ],
+      "core_passage": "腓2:14–16",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-SUN",
+        "CTX-MIS"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-21",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-22",
+      "name": "万民与宣教",
+      "group": "使命与传递",
+      "map_id": "MAP-C22",
+      "lq_ids": [
+        "LQ08"
+      ],
+      "core_passage": "林前7:17",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-SUN",
+        "CTX-MIS"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-22",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-23",
+      "name": "训练别人",
+      "group": "使命与传递",
+      "map_id": "MAP-C23",
+      "lq_ids": [
+        "LQ08"
+      ],
+      "core_passage": "腓4:9",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-GRP",
+        "CTX-GEN"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-23",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "theme_id": "TH-24",
+      "name": "门徒再生产",
+      "group": "使命与传递",
+      "map_id": "MAP-C24",
+      "lq_ids": [
+        "LQ08"
+      ],
+      "core_passage": "约15:1–8",
+      "bible_reference_ids": [],
+      "theology_tags": [],
+      "emotion_tags": [],
+      "age_groups": [],
+      "contexts": [
+        "CTX-GRP",
+        "CTX-MIS"
+      ],
+      "scenes": [],
+      "difficulty_range": [
+        1,
+        5
+      ],
+      "search_keywords": [],
+      "status": "shell",
+      "provenance": {
+        "source_system": "mos-music",
+        "source_id": "MUS-C-24",
+        "source_field": "title",
+        "copy_policy": "authored",
+        "note": null
+      },
+      "version": "MUS-V-0.1.0"
+    }
+  ],
+  "song_counts_index": "content/production/theme-song-counts.json"
+}

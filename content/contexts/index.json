@@ -1,0 +1,118 @@
+{
+  "index_version": "MUS-V-0.1.0",
+  "generated_at": null,
+  "record_of": "CTX-XX",
+  "count": 7,
+  "schema": "content/schema/context.schema.json",
+  "note": "七个处境来自规格书 §11 已定案清单，不新增。",
+  "contexts": [
+    {
+      "context_id": "CTX-SUN",
+      "code": "SUN",
+      "name": "主日",
+      "entry_module": "MODULE 08",
+      "leader_role": null,
+      "flow_steps": [
+        "经文",
+        "歌曲",
+        "讲道回应",
+        "报告"
+      ],
+      "time_budget_minutes": 60,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "context_id": "CTX-GRP",
+      "code": "GRP",
+      "name": "小组",
+      "entry_module": "MODULE 07",
+      "leader_role": "小组长",
+      "flow_steps": [
+        "经文",
+        "歌曲",
+        "讨论",
+        "实践",
+        "下周反馈"
+      ],
+      "time_budget_minutes": 75,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "context_id": "CTX-FAM",
+      "code": "FAM",
+      "name": "家庭",
+      "entry_module": "MODULE 06",
+      "leader_role": "家长",
+      "flow_steps": [
+        "经文",
+        "唱歌",
+        "孩子问题",
+        "祷告"
+      ],
+      "time_budget_minutes": 5,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "context_id": "CTX-PER",
+      "code": "PER",
+      "name": "个人",
+      "entry_module": "MODULE 05",
+      "leader_role": null,
+      "flow_steps": [
+        "读",
+        "明",
+        "唱",
+        "记",
+        "感",
+        "行",
+        "传"
+      ],
+      "time_budget_minutes": null,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "context_id": "CTX-CHD",
+      "code": "CHD",
+      "name": "儿童",
+      "entry_module": "MODULE 06",
+      "leader_role": "家长 / 老师",
+      "flow_steps": [],
+      "time_budget_minutes": null,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "context_id": "CTX-GEN",
+      "code": "GEN",
+      "name": "跨代",
+      "entry_module": "MODULE 07",
+      "leader_role": "带领者",
+      "flow_steps": [],
+      "time_budget_minutes": null,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    },
+    {
+      "context_id": "CTX-MIS",
+      "code": "MIS",
+      "name": "宣教",
+      "entry_module": "MODULE 08",
+      "leader_role": "差派者",
+      "flow_steps": [],
+      "time_budget_minutes": null,
+      "notes": null,
+      "status": "shell",
+      "version": "MUS-V-0.1.0"
+    }
+  ]
+}

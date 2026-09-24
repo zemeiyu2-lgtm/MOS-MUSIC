@@ -1,0 +1,267 @@
+{
+  "index_version": "MUS-V-0.1.0",
+  "generated_at": null,
+  "count": 21,
+  "schema_note": "reference_id 按 BB-卷码-章(-节) 规则在 Phase 2 生成，Phase 1 留 null。",
+  "policy": {
+    "text_embedded": false,
+    "decision_ref": "H-2 / 结构性决定 6：V1.0 数据层优先使用 Bible Reference、Passage ID、Core Truth、MOS Summary、合法来源信息"
+  },
+  "references": [
+    {
+      "reference_id": null,
+      "passage_ref": "林后5:17",
+      "used_by": [
+        "MUS-C-01",
+        "MAP-C01"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "林后13:5",
+      "used_by": [
+        "MUS-C-02",
+        "MAP-C02"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "约13:34–35",
+      "used_by": [
+        "MUS-C-03",
+        "MAP-C03"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "腓1:6",
+      "used_by": [
+        "MUS-C-04",
+        "MAP-C04"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "约14:1–6",
+      "used_by": [
+        "MUS-C-05",
+        "MAP-C05"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "西3:12–13",
+      "used_by": [
+        "MUS-C-06",
+        "MAP-C06"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "约11:1–44",
+      "used_by": [
+        "MUS-C-07",
+        "MAP-C07"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "腓3:7–14",
+      "used_by": [
+        "MUS-C-08",
+        "MAP-C08"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "路12:22–32",
+      "used_by": [
+        "MUS-C-10",
+        "MAP-C10"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "罗12:1–2",
+      "used_by": [
+        "MUS-C-11",
+        "MAP-C11"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "路10:38–42",
+      "used_by": [
+        "MUS-C-12",
+        "MAP-C12"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "罗12:17–21",
+      "used_by": [
+        "MUS-C-14",
+        "MAP-C14"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "约13:1–17",
+      "used_by": [
+        "MUS-C-15",
+        "MAP-C15"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "弗2:19–22",
+      "used_by": [
+        "MUS-C-16",
+        "MAP-C16"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "弗5:21",
+      "used_by": [
+        "MUS-C-17",
+        "MAP-C17"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "西3:23–24",
+      "used_by": [
+        "MUS-C-18",
+        "MAP-C18"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "林后12:7–10",
+      "used_by": [
+        "MUS-C-19",
+        "MAP-C19"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "腓2:14–16",
+      "used_by": [
+        "MUS-C-21",
+        "MAP-C21"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "林前7:17",
+      "used_by": [
+        "MUS-C-22",
+        "MAP-C22"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "腓4:9",
+      "used_by": [
+        "MUS-C-23",
+        "MAP-C23"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "reference_id": null,
+      "passage_ref": "约15:1–8",
+      "used_by": [
+        "MUS-C-24",
+        "MAP-C24"
+      ],
+      "text_embedded": false,
+      "copyright_note": "仅保存引用，不内嵌译本正文。完整经文显示方案后续再定（见 docs/ADR.md ADR-0008）。"
+    },
+    {
+      "passage_ref": "弗2:1–10",
+      "bible_reference_ids": [
+        "BB-EPH-2"
+      ],
+      "text_embedded": false,
+      "source": "sample-validation",
+      "book": "以弗所书"
+    },
+    {
+      "passage_ref": "诗46:10",
+      "bible_reference_ids": [
+        "BB-PSA-46-10"
+      ],
+      "text_embedded": false,
+      "source": "sample-validation",
+      "book": "诗篇"
+    },
+    {
+      "passage_ref": "太4:18–22",
+      "bible_reference_ids": [
+        "BB-MAT-4"
+      ],
+      "text_embedded": false,
+      "source": "sample-validation",
+      "book": "马太福音"
+    },
+    {
+      "passage_ref": "诗98:4–9",
+      "bible_reference_ids": [
+        "BB-PSA-98"
+      ],
+      "text_embedded": false,
+      "source": "sample-validation",
+      "book": "诗篇"
+    },
+    {
+      "passage_ref": "罗12:1",
+      "bible_reference_ids": [
+        "BB-ROM-12-1"
+      ],
+      "text_embedded": false,
+      "source": "sample-validation",
+      "book": "罗马书"
+    }
+  ]
+}

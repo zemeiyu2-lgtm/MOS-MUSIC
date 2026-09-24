@@ -1,0 +1,156 @@
+{
+  "song_id": "MUS-S-0007",
+  "title": "荣耀归于真神（To God Be the Glory）",
+  "author": "Fanny J. Crosby",
+  "composer": "William H. Doane（TO GOD BE THE GLORY）",
+  "source": "词：Fanny J. Crosby，1875；曲：William H. Doane，1875。公版赞美诗学通行记载，作品级版本待核验。",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1875",
+  "copyright": {
+    "copyright_status": "unknown",
+    "source": "词：Fanny J. Crosby，1875；曲：William H. Doane，1875。",
+    "license": null,
+    "usage_permission": null,
+    "attribution": "Fanny J. Crosby（词）；William H. Doane（曲）",
+    "audio_availability": "none",
+    "lyrics_availability": "none",
+    "permission_evidence": null
+  },
+  "lyrics": {
+    "text": null,
+    "excerpt": null,
+    "note": "本记录不托管任何歌词文本。公版英文原文本身无版权问题，但常见中文译本译文各有版权方，且中文译词版本尚未核验。"
+  },
+  "media": {
+    "audio": null,
+    "score": null,
+    "chord": null
+  },
+  "bible": {
+    "core_passage": "约3:16",
+    "bible_reference_ids": [
+      "BB-JHN-3-16"
+    ],
+    "bible_themes": [
+      "神的爱",
+      "救恩",
+      "神的荣耀"
+    ]
+  },
+  "theology": {
+    "theology": [
+      "救恩论-神主动的爱"
+    ],
+    "christology": [
+      "基督的代赎"
+    ],
+    "soteriology": [
+      "因信称义"
+    ],
+    "ecclesiology": [
+      "会众宣述神的作为"
+    ],
+    "missiology": [
+      "让全地听见"
+    ]
+  },
+  "discipleship": {
+    "stage": null,
+    "main_theme": "TH-03",
+    "secondary_themes": [],
+    "music_unit_ids": [],
+    "music_unit_refs": [
+      "MM03"
+    ],
+    "function": null,
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "CTX-SUN",
+      "CTX-GRP"
+    ],
+    "difficulty": 2
+  },
+  "formation": {
+    "primary_function": "TR",
+    "emotion": [],
+    "memory": [],
+    "community": [],
+    "practice": [],
+    "prayer": [],
+    "transmission": []
+  },
+  "eight_dimensions": {
+    "biblical_truth": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "theological_formation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "emotional_formation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "community": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "congregational_participation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "generational_transmission": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "life_practice": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "mission_orientation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  "tier": "C",
+  "theological_note": "本记录只完成歌基层身份与经文锚点认定（2026-09-21 人工授权口径）。八维辨识、Song_Relation、S6/S7 与使用决定仍待周次上下文与人工审核；中文译词与乐谱版本未核验，法律状态未判定。",
+  "review_status": "draft",
+  "scenes": [
+    "主日",
+    "小组",
+    "家庭",
+    "跨代"
+  ],
+  "search_keywords": [
+    "荣耀归于真神",
+    "To God Be the Glory",
+    "救恩",
+    "神的荣耀",
+    "十字架的救赎"
+  ],
+  "version": "MUS-V-0.5.0",
+  "created_at": "2026-09-21T17:12:00+08:00",
+  "updated_at": "2026-09-21T17:12:00+08:00",
+  "updated_by": "mos-music-library-promotion"
+}

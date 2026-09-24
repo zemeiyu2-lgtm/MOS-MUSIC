@@ -1,0 +1,282 @@
+{
+  "unit_id": "MUS-SU-0008",
+  "song_id": "MUS-S-0008",
+  "unit_version": "MUS-V-1.1.0",
+  "standard": "song-production-template-1.0",
+  "status": "INTAKE",
+  "status_note": "已进入待制作库：身份与来源就绪，歌词 / 简谱 / 音频 / 教学内容均尚未制作。",
+  "song_meta": {
+    "title_zh": "拥戴我主为王",
+    "title_en": "Crown Him with Many Crowns",
+    "lyricist": "Matthew Bridges；Godfrey Thring（1874 增补）",
+    "composer": "George J. Elvey（DIADEMATA）",
+    "translator": null,
+    "language": "zh-Hans",
+    "key": null,
+    "time_signature": null,
+    "tempo_bpm": null,
+    "duration_seconds": null,
+    "structure": null,
+    "current_version": null,
+    "source": "词：Matthew Bridges，1851；Godfrey Thring，1874 增补；曲：George J. Elvey（DIADEMATA），1868。公版赞美诗学通行记载。",
+    "unresolved": [
+      "英文标题取自歌曲标题括号内容，未独立核验",
+      "中文译词版本与译者未核验",
+      "当前采用的简谱版本未确定",
+      "调 / 拍号 / 速度 / 时长 / 段落结构未核验",
+      "作品级法律状态未判定（不得据清单推定）"
+    ]
+  },
+  "lyrics": {
+    "status": "NOT_PROVIDED",
+    "language": null,
+    "version_note": null,
+    "sections": [],
+    "note": "歌词必须结构化（分节 / 分句 / lyric_id）后才可进入教学；本记录不托管未经授权的译本全文。"
+  },
+  "score": {
+    "status": "NOT_PROVIDED",
+    "key": null,
+    "time_signature": null,
+    "tempo_bpm": null,
+    "pickup": false,
+    "starting_note": null,
+    "range": {
+      "lowest": null,
+      "highest": null
+    },
+    "sections": [],
+    "special_marks": [],
+    "note": "简谱是主界面，不是附属 PDF；统一记谱完成后此处承载小节 / 时值 / 高低音点 / 歌词对齐数据。"
+  },
+  "demos": {
+    "male": {
+      "status": "NOT_PROVIDED",
+      "slots": [],
+      "singer": null,
+      "note": "真人示唱尚未录制；不得用合成声音冒充真人示唱。"
+    },
+    "female": {
+      "status": "NOT_PROVIDED",
+      "slots": [],
+      "singer": null,
+      "note": "真人示唱尚未录制；不得用合成声音冒充真人示唱。"
+    }
+  },
+  "piano": {
+    "status": "NOT_PROVIDED",
+    "has_intro": null,
+    "has_interlude": null,
+    "beats_stable": null,
+    "loopable": null,
+    "key_matches": null,
+    "note": "第一阶段统一只做钢琴伴奏，作为自主歌唱的主要支持轨。"
+  },
+  "timeline": {
+    "status": "NOT_PROVIDED",
+    "phrases": [],
+    "note": "分句时间轴是单句循环 / 当前句高亮 / 点击重唱的地基，需与示唱或钢琴同步产生。"
+  },
+  "cursor": {
+    "status": "NOT_PROVIDED",
+    "levels": [],
+    "auto_scroll": false,
+    "click_seek": false,
+    "note": "光标层级只登记**真实可用**的层级（句 / 小节 / 拍 / 音符 / 歌词），不得声索尚未实现的跟随精度。"
+  },
+  "teaching": {
+    "learn": {
+      "status": "NOT_PROVIDED",
+      "note": "学唱五步（听 → 跟 → 伴 → 自己唱 → 再唱一次）需要词、谱、钢琴、至少一个示唱与时间轴齐备后才能真正可用。"
+    },
+    "score_class": {
+      "items": [],
+      "note": "教谱说明随简谱制作产生，不得脱离乐谱先写结论。"
+    },
+    "lyrics_class": {
+      "items": [],
+      "note": "教词说明随歌词整理产生（易读错 / 易唱错 / 换气 / 长音 / 重音）。"
+    },
+    "vocal": [],
+    "live_teaching": {
+      "modules": [
+        {
+          "key": "intro",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-score",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-rhythm",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-lyrics",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-01",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-02",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-03",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "vocal-tip-01",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "full-demo",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        }
+      ],
+      "note": "真人教唱采用模块化短片（intro / teach-score / teach-rhythm / teach-lyrics / phrase-01 / phrase-02 / phrase-03 / vocal-tip-01 / full-demo），不要求每首歌拍长视频；未录制一律 NOT_PROVIDED。"
+    }
+  },
+  "content_understanding": {
+    "what_it_sings": {
+      "text": null,
+      "derived_from": null
+    },
+    "core_truth": {
+      "text": null,
+      "derived_from": null
+    },
+    "bible_basis": [
+      {
+        "reference": "腓2:9–11",
+        "derived_from": "content/songs/MUS-S-0008.json#bible.core_passage"
+      }
+    ],
+    "background": {
+      "text": null,
+      "derived_from": null
+    },
+    "why_church_sings": {
+      "text": null,
+      "derived_from": null
+    },
+    "note": "歌曲自身的内容层：不绑定某一周 / 某一课；凡写入文本必须可追溯到内容层字段（derived_from），不得凭空生成神学内容。"
+  },
+  "life_practice": {
+    "status": "NOT_PROVIDED",
+    "items": [],
+    "note": "尚无可落地的生命回应文本；不得把课程作业式要求写成生命实践。"
+  },
+  "transmission": {
+    "status": "NOT_PROVIDED",
+    "front_actions": [
+      "sing_along",
+      "teach_one",
+      "share"
+    ],
+    "text": null,
+    "derived_from": null,
+    "note": "歌曲页固定提供三个传唱动作（自己唱 / 教一个人 / 分享）；此处只补歌曲自身的传唱说明。"
+  },
+  "rights": {
+    "status": "NOT_PROVIDED",
+    "source": "词：Matthew Bridges，1851；曲：George J. Elvey（DIADEMATA），1868。",
+    "copyright_status": "unknown",
+    "license": null,
+    "lyrics_source": null,
+    "score_source": null,
+    "audio_source": null,
+    "permission": null,
+    "internal_use": "unknown",
+    "public_use": "unknown",
+    "download_use": "unknown",
+    "derived_from": "content/songs/MUS-S-0008.json#copyright.copyright_status",
+    "notes": "法律状态沿用详情层词表（ADR-0012）；「歌曲存在」不等于「平台有权使用该资源」，可播放不等于可下载。"
+  },
+  "acceptance": {
+    "data": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "lyrics": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "score": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "demo": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "piano": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "teaching": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "sync": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "live_teaching": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "content": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "rights": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    }
+  },
+  "created_at": "2026-09-22T00:00:00+08:00",
+  "updated_at": "2026-09-23T00:00:00+08:00",
+  "updated_by": "song-unit-builder"
+}

@@ -1,0 +1,84 @@
+name: MOS-MUSIC CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 内容/程序分离硬校验 + Schema 子集校验 + 关系完整性 + 命名空间隔离
+      - name: Validate content separation
+        run: node tools/validate-content.js
+
+      # 静态结构断言（目录、Schema、ID 规则、store 清单、MODULE 12 接线）
+      - name: Smoke tests
+        run: node tests/smoke.js
+
+      # 生产平台核心模块单元测试（辨识引擎 / 审查门 / 复用 / 库容 / 计划器 / 校准治理）
+      - name: Platform unit tests
+        run: node tools/platform-tests.js
+
+      # W01–W04 回归 + 不可变基线漂移 + 引擎与冻结技能逐字段对拍（只读，不写文件）
+      - name: Regression suite
+        run: node tools/regression.js
+
+      # 曲库扩库守卫（V0.5）：上限 50 首，且超出基准库的每一首都必须有入库登记记录
+      - name: Music Library expansion guard
+        run: node tools/library-intake.js --guard
+
+      # 派生索引一致性（CI-0014 案 a）：主题歌曲计数 / 歌曲经文锚点索引必须与曲库一致
+      - name: Derived index check
+        run: node tools/derive-indexes.js --check
+
+      # 库级歌基层辨识结果一致性（库级范围，不携带周次，不生成 Unit）
+      - name: Library-scope discernment check
+        run: node tools/song-discernment.js --check
+
+      # 使用历史视图（§九）；只读，不写文件
+      - name: Song usage history
+        run: node tools/usage-history.js
+
+      # 入库报告（§十四 + §十 容量重算）；写出 content/production/library-report.json
+      - name: Library intake report
+        run: node tools/library-report.js
+
+      # JSON 语法全量校验（content/**/*.json 必须可解析）
+      - name: JSON syntax check
+        shell: bash
+        run: |
+          fail=0
+          while IFS= read -r -d '' f; do
+            node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))" "$f" || {
+              echo "INVALID JSON: $f"; fail=1;
+            }
+          done < <(find content -name '*.json' -print0)
+          exit $fail
+
+  deploy:
+    needs: validate
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,159 @@
+{
+  "song_id": "MUS-S-0003",
+  "title": "耶稣呼召（Jesus Calls Us）",
+  "author": "Cecil Frances Alexander",
+  "composer": "Cecil Frances Alexander",
+  "source": "Hymns for Little Children 相关圣诗传统；公版",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1852（词）",
+  "copyright": {
+    "copyright_status": "public_domain",
+    "source": "Hymns for Little Children 相关圣诗传统；公版",
+    "license": "Public Domain",
+    "usage_permission": "词曲已进入公有领域；本仓所用中文译本译文未随本仓托管。",
+    "attribution": "Cecil Frances Alexander（词曲）",
+    "audio_availability": "none",
+    "lyrics_availability": "none",
+    "permission_evidence": null
+  },
+  "lyrics": {
+    "text": null,
+    "excerpt": null,
+    "note": "公版原文无版权问题；中文译本译文不托管。"
+  },
+  "media": {
+    "audio": null,
+    "score": null,
+    "chord": null
+  },
+  "bible": {
+    "core_passage": "太4:18–22",
+    "bible_reference_ids": [
+      "BB-MAT-4"
+    ],
+    "bible_themes": [
+      "呼召",
+      "跟随",
+      "撇弃"
+    ]
+  },
+  "theology": {
+    "theology": [
+      "门训-跟随"
+    ],
+    "christology": [
+      "呼召主的主权"
+    ],
+    "soteriology": [],
+    "ecclesiology": [],
+    "missiology": []
+  },
+  "discipleship": {
+    "stage": null,
+    "main_theme": "TH-08",
+    "secondary_themes": [],
+    "music_unit_ids": [],
+    "music_unit_refs": [
+      "MM08"
+    ],
+    "function": null,
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "CTX-SUN",
+      "CTX-GRP",
+      "CTX-FAM"
+    ],
+    "difficulty": 2
+  },
+  "formation": {
+    "primary_function": "LI",
+    "emotion": [
+      "降服",
+      "决志"
+    ],
+    "memory": [
+      "「跟从始于认识祂是谁，不是因着得着什么」"
+    ],
+    "community": [],
+    "practice": [
+      "完成一项已知道却拖延的具体顺服"
+    ],
+    "prayer": [],
+    "transmission": [
+      "带一个人走一遍七步法"
+    ]
+  },
+  "eight_dimensions": {
+    "biblical_truth": {
+      "score": 5,
+      "note": "「耶稣呼召，放下产业与亲爱之人，跟从祂」与路5:1–11「撇下所有的跟随」及太4章呼召叙述同构。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "theological_formation": {
+      "score": 4,
+      "note": "把呼召的起点固定在基督的呼召行动上（主语是耶稣），可防止「奉献成本式」道德主义。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "emotional_formation": {
+      "score": 4,
+      "note": "形成降服与决志；需要警惕只停留在决志情绪而无具体行为。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "community": {
+      "score": 4,
+      "note": "会众齐唱与小组决志场景都适用。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "congregational_participation": {
+      "score": 4,
+      "note": "句式规整，易教易学。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "generational_transmission": {
+      "score": 3,
+      "note": "原为儿童圣诗传统而作，儿童可学。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "life_practice": {
+      "score": 5,
+      "note": "「放下……跟从」可直接翻译成一项具体顺服行动，是本组样本中最能落地的歌。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "mission_orientation": {
+      "score": 3,
+      "note": "呼召含差遣意味，但未直接指向万民。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  "tier": "B",
+  "review_status": "under_review",
+  "scenes": [
+    "主日",
+    "小组",
+    "家庭",
+    "跨代"
+  ],
+  "search_keywords": [
+    "呼召",
+    "跟随",
+    "Jesus Calls Us",
+    "撇下",
+    "顺服"
+  ],
+  "version": "MUS-V-0.2.0",
+  "created_at": "2026-09-21T12:00:00+08:00",
+  "updated_at": "2026-09-21T12:00:00+08:00",
+  "updated_by": "mos-music-phase2a"
+}

@@ -1,0 +1,43 @@
+{
+  "template_id": "MUS-TPL-FAM-5MIN",
+  "title": "家庭 5 分钟",
+  "module": "MODULE 06",
+  "context_id": "CTX-FAM",
+  "total_minutes": 5,
+  "purpose": "让信仰进入家庭的每日记忆，而不是把课程复杂化。",
+  "flow": [
+    {
+      "minute": 1,
+      "label": "经文",
+      "step_ref": "S1_read",
+      "note": ""
+    },
+    {
+      "minute": 2,
+      "label": "唱歌",
+      "step_ref": "S3_sing",
+      "note": ""
+    },
+    {
+      "minute": 1,
+      "label": "孩子问题",
+      "step_ref": "S5_feel",
+      "note": ""
+    },
+    {
+      "minute": 1,
+      "label": "祷告",
+      "step_ref": "S6_act",
+      "note": ""
+    }
+  ],
+  "role": {
+    "leader": "家长",
+    "participants": [
+      "家庭成员",
+      "儿童"
+    ]
+  },
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

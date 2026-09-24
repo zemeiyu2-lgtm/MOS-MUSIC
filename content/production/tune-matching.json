@@ -1,0 +1,1083 @@
+{
+  "matching_version": "MUS-V-1.1.0",
+  "generated_at": "2026-09-23",
+  "generated_by": "MOS MUSIC tune matcher (tools, abc source)",
+  "source": {
+    "name": "Open Hymnal Project（2014.06 版）",
+    "url": "http://openhymnal.org/OpenHymnal2014.06.abc",
+    "local_file": "sources/openhymnal/OpenHymnal2014.06.abc",
+    "license": "Public Domain"
+  },
+  "counts": {
+    "candidates": 100,
+    "matched": 32,
+    "unmatched": 68
+  },
+  "rows": [
+    {
+      "song_id": "MUS-S-0001",
+      "title_zh": "奇异恩典",
+      "title_en": "Amazing Grace",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "192",
+      "tune_titles": [
+        "Amazing Grace"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "title_zh": "我灵镇静",
+      "title_en": "Be Still, My Soul",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "193",
+      "tune_titles": [
+        "Be Still My Soul"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "title_zh": "耶稣呼召",
+      "title_en": "Jesus Calls Us",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "title_zh": "普世欢腾",
+      "title_en": "Joy to the World",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "61",
+      "tune_titles": [
+        "Joy to the World"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "title_zh": "一切全献上",
+      "title_en": "I Surrender All",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "title_zh": "圣哉，圣哉，圣哉",
+      "title_en": "Holy, Holy, Holy! Lord God Almighty",
+      "matched": true,
+      "match_method": "prefix",
+      "tune_x": "124",
+      "tune_titles": [
+        "Holy, Holy, Holy"
+      ],
+      "note": "按标题前缀/包含匹配（英国拼写等差异）；需人工确认同一曲调。"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "title_zh": "荣耀归于真神",
+      "title_en": "To God Be the Glory",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "264",
+      "tune_titles": [
+        "To God Be The Glory"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "title_zh": "拥戴我主为王",
+      "title_en": "Crown Him with Many Crowns",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "164",
+      "tune_titles": [
+        "Crown Him With Many Crowns"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "title_zh": "你真伟大",
+      "title_en": "How Great Thou Art",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "title_zh": "你的信实广大",
+      "title_en": "Great Is Thy Faithfulness",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0011",
+      "title_zh": "坚固保障",
+      "title_en": "A Mighty Fortress Is Our God",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "127",
+      "tune_titles": [
+        "A Mighty Fortress Is Our God"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0012",
+      "title_zh": "十字架前",
+      "title_en": "At the Cross",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0013",
+      "title_zh": "古旧十架",
+      "title_en": "The Old Rugged Cross",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "202",
+      "tune_titles": [
+        "The Old Rugged Cross"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0014",
+      "title_zh": "耶稣十字架下",
+      "title_en": "Beneath the Cross of Jesus",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "194",
+      "tune_titles": [
+        "Beneath The Cross Of Jesus"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0015",
+      "title_zh": "奇妙十架",
+      "title_en": "When I Survey the Wondrous Cross",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "1",
+      "tune_titles": [
+        "When I Survey the Wondrous Cross"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0016",
+      "title_zh": "领我到骷髅地",
+      "title_en": "Lead Me to Calvary",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0017",
+      "title_zh": "宝血活泉",
+      "title_en": "There Is a Fountain Filled with Blood",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0018",
+      "title_zh": "耶稣奇妙的救恩",
+      "title_en": "Wonderful Grace of Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0019",
+      "title_zh": "主活着",
+      "title_en": "He Lives",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0020",
+      "title_zh": "基督今复活",
+      "title_en": "Christ the Lord Is Risen Today",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0021",
+      "title_zh": "转眼仰望耶稣",
+      "title_en": "Turn Your Eyes upon Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0022",
+      "title_zh": "最美丽耶稣",
+      "title_en": "Fairest Lord Jesus",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "163",
+      "tune_titles": [
+        "Beautiful Savior"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0023",
+      "title_zh": "恳求主像牧人领导",
+      "title_en": "Saviour, Like a Shepherd Lead Us",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0024",
+      "title_zh": "主凡事引导我",
+      "title_en": "All the Way My Saviour Leads Me",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0025",
+      "title_zh": "耶稣领我",
+      "title_en": "He Leadeth Me",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "226",
+      "tune_titles": [
+        "He Leadeth Me"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0026",
+      "title_zh": "向高处行",
+      "title_en": "Higher Ground",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0027",
+      "title_zh": "更亲近我主",
+      "title_en": "Nearer, Still Nearer",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0028",
+      "title_zh": "更像我恩主",
+      "title_en": "More Like the Master",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0029",
+      "title_zh": "主我愿像你",
+      "title_en": "O to Be Like Thee!",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0030",
+      "title_zh": "成圣须用功夫",
+      "title_en": "Take Time to Be Holy",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0031",
+      "title_zh": "今要主自己",
+      "title_en": "Himself",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0032",
+      "title_zh": "爱主更深",
+      "title_en": "More Love to Thee",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "228",
+      "tune_titles": [
+        "More Love to Thee"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0033",
+      "title_zh": "为耶稣而活",
+      "title_en": "Living for Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0034",
+      "title_zh": "教会独一的根基",
+      "title_en": "The Church's One Foundation",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "220",
+      "tune_titles": [
+        "The Church's One Foundation"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0035",
+      "title_zh": "圣徒相通",
+      "title_en": "Blest Be the Tie That Binds",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "214",
+      "tune_titles": [
+        "Blest Be The Tie That Binds"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0036",
+      "title_zh": "耶稣恩友",
+      "title_en": "What a Friend We Have in Jesus",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "249",
+      "tune_titles": [
+        "What A Friend We Have In Jesus"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0037",
+      "title_zh": "祷告良辰",
+      "title_en": "Sweet Hour of Prayer",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0038",
+      "title_zh": "我心灵得安宁",
+      "title_en": "It Is Well with My Soul",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "198",
+      "tune_titles": [
+        "It Is Well With My Soul"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0039",
+      "title_zh": "有福的确据",
+      "title_en": "Blessed Assurance",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "195",
+      "tune_titles": [
+        "Blessed Assurance"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0040",
+      "title_zh": "藉我赐恩福",
+      "title_en": "Make Me a Blessing",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0041",
+      "title_zh": "岂可空手回天家",
+      "title_en": "Must I Go, and Empty-Handed?",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0042",
+      "title_zh": "拯救失丧者",
+      "title_en": "Rescue the Perishing",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0043",
+      "title_zh": "向万邦传福音",
+      "title_en": "We've a Story to Tell to the Nations",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0044",
+      "title_zh": "喜爱述说耶稣",
+      "title_en": "I Love to Tell the Story",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0045",
+      "title_zh": "兴起为耶稣",
+      "title_en": "Stand Up, Stand Up for Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0046",
+      "title_zh": "基督精兵",
+      "title_en": "Onward, Christian Soldiers",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0047",
+      "title_zh": "一切为耶稣",
+      "title_en": "All for Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0048",
+      "title_zh": "一生奉献",
+      "title_en": "Take My Life, and Let It Be",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "234",
+      "tune_titles": [
+        "Take My Life And Let It Be"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0049",
+      "title_zh": "我每时刻需要你",
+      "title_en": "I Need Thee Every Hour",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "167",
+      "tune_titles": [
+        "I Need Thee Every Hour"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0050",
+      "title_zh": "主，与我同住",
+      "title_en": "Abide with Me",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "191",
+      "tune_titles": [
+        "Abide With Me"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0051",
+      "title_zh": "以信为本",
+      "title_en": "Be Thou My Vision",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "223",
+      "tune_titles": [
+        "Be Thou My Vision"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0052",
+      "title_zh": "来，我神我王",
+      "title_en": "Come, Thou Fount of Every Blessing",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "224",
+      "tune_titles": [
+        "Come Thou Fount Of Every Blessing"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0053",
+      "title_zh": "磐石之上",
+      "title_en": "The Solid Rock",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "282",
+      "tune_titles": [
+        "My Hope Is Built"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0054",
+      "title_zh": "万古磐石",
+      "title_en": "Rock of Ages",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "188",
+      "tune_titles": [
+        "Rock of Ages"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0055",
+      "title_zh": "若无人领我",
+      "title_en": "Just As I Am, Without One Plea",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0056",
+      "title_zh": "耶稣，我爱你",
+      "title_en": "My Jesus, I Love Thee",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0057",
+      "title_zh": "我宁愿有耶稣",
+      "title_en": "I'd Rather Have Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0058",
+      "title_zh": "求主使我成为圣洁",
+      "title_en": "Spirit of the Living God",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0059",
+      "title_zh": "主，我愿跟随你",
+      "title_en": "Where He Leads Me",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "243",
+      "tune_titles": [
+        "Where He Leads Me"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0060",
+      "title_zh": "我主，我神，我王",
+      "title_en": "All Hail the Power of Jesus' Name",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "161",
+      "tune_titles": [
+        "All Hail The Power Of Jesus' Name"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0061",
+      "title_zh": "我父神",
+      "title_en": "Abba, Father",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0062",
+      "title_zh": "永远的膀臂",
+      "title_en": "Leaning on the Everlasting Arms",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0063",
+      "title_zh": "祂藏我灵",
+      "title_en": "He Hideth My Soul",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0064",
+      "title_zh": "主爱何等甘甜",
+      "title_en": "Jesus, Lover of My Soul",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0065",
+      "title_zh": "耶稣是我一切",
+      "title_en": "Jesus Is All the World to Me",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0066",
+      "title_zh": "靠祂得胜",
+      "title_en": "Victory in Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0067",
+      "title_zh": "亲近，更亲近",
+      "title_en": "Nearer, My God, to Thee",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "200",
+      "tune_titles": [
+        "Nearer, My God, To Thee"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0068",
+      "title_zh": "我知所信的是谁",
+      "title_en": "I Know Whom I Have Believed",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "278",
+      "tune_titles": [
+        "I Know Whom I Have Believed"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0069",
+      "title_zh": "惟独基督",
+      "title_en": "In Christ Alone",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0070",
+      "title_zh": "怎能不歌唱",
+      "title_en": "And Can It Be That I Should Gain",
+      "matched": true,
+      "match_method": "prefix",
+      "tune_x": "266",
+      "tune_titles": [
+        "And Can It Be"
+      ],
+      "note": "按标题前缀/包含匹配（英国拼写等差异）；需人工确认同一曲调。"
+    },
+    {
+      "song_id": "MUS-S-0071",
+      "title_zh": "神宝座前",
+      "title_en": "Before the Throne of God Above",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0072",
+      "title_zh": "祂必托住我",
+      "title_en": "He Will Hold Me Fast",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0073",
+      "title_zh": "基督是我生死盼望",
+      "title_en": "Christ Our Hope in Life and Death",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0074",
+      "title_zh": "我所有都是基督",
+      "title_en": "All I Have Is Christ",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0075",
+      "title_zh": "基督是我的产业",
+      "title_en": "Christ Is Mine Forevermore",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0076",
+      "title_zh": "主，请说",
+      "title_en": "Speak, O Lord",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0077",
+      "title_zh": "万邦中",
+      "title_en": "Across the Lands",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0078",
+      "title_zh": "教会兴起",
+      "title_en": "O Church Arise",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0079",
+      "title_zh": "十字架的能力",
+      "title_en": "The Power of the Cross",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0080",
+      "title_zh": "主是我的拯救",
+      "title_en": "The Lord Is My Salvation",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0081",
+      "title_zh": "我要像耶稣",
+      "title_en": "I Want to Be Like Jesus",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0082",
+      "title_zh": "求你为我造清洁的心",
+      "title_en": "Create in Me a Clean Heart",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0083",
+      "title_zh": "首先求神的国",
+      "title_en": "Seek Ye First",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0084",
+      "title_zh": "耶和华是我牧者",
+      "title_en": "The Lord's My Shepherd",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "285",
+      "tune_titles": [
+        "The Lord's My Shepherd"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0085",
+      "title_zh": "我灵啊赞美耶和华",
+      "title_en": "10,000 Reasons (Bless the Lord)",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0086",
+      "title_zh": "不再是我",
+      "title_en": "Yet Not I but Through Christ in Me",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0087",
+      "title_zh": "祂的怜悯何其大",
+      "title_en": "His Mercy Is More",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0088",
+      "title_zh": "住在基督里",
+      "title_en": "Abide",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0089",
+      "title_zh": "建立我的生命",
+      "title_en": "Build My Life",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0090",
+      "title_zh": "耶稣居首位",
+      "title_en": "Jesus, Be the Centre",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0091",
+      "title_zh": "主，我需要你",
+      "title_en": "Lord, I Need You",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0092",
+      "title_zh": "坚固的根基",
+      "title_en": "How Firm a Foundation",
+      "matched": true,
+      "match_method": "exact",
+      "tune_x": "275",
+      "tune_titles": [
+        "How Firm A Foundation"
+      ],
+      "note": "与 Open Hymnal 曲目名完全一致。"
+    },
+    {
+      "song_id": "MUS-S-0093",
+      "title_zh": "主在这里",
+      "title_en": "The Lord Is in This Place",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0094",
+      "title_zh": "我的魂哪，要称颂耶和华",
+      "title_en": "Bless the Lord, O My Soul",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0095",
+      "title_zh": "我心中的王",
+      "title_en": "King of My Heart",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0096",
+      "title_zh": "和平之子",
+      "title_en": "Make Me a Channel of Your Peace",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0097",
+      "title_zh": "我们用爱彼此相认",
+      "title_en": "They'll Know We Are Christians by Our Love",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0098",
+      "title_zh": "我在这里，请差遣我",
+      "title_en": "Here I Am, Lord",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0099",
+      "title_zh": "去告诉山上",
+      "title_en": "Go Tell It on the Mountain",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    },
+    {
+      "song_id": "MUS-S-0100",
+      "title_zh": "我要跟随耶稣",
+      "title_en": "I Will Follow Thee",
+      "matched": false,
+      "match_method": null,
+      "tune_x": null,
+      "tune_titles": [],
+      "note": "未在 Open Hymnal 2014.06 中找到对应曲目。"
+    }
+  ],
+  "note": "matched=true 表示曲调在已出版公版原谱库中有对应记录，可**从原谱转换**（V3.2 §五）；match_method 非 exact 时需人工确认是否为同一曲调。"
+}

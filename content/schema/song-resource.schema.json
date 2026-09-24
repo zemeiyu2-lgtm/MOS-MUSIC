@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "song-resource.schema.json",
+  "title": "MOS-MUSIC Song Resource（歌曲资源层 · V1.1-A）",
+  "description": "歌曲资源独立模型：歌词 / 歌谱 / 示唱 / 伴奏 / 录音。资源不混入 Song Core Record（content/songs/**）。当前阶段只建立结构，不导入实际文件；没有的资源一律 NOT_IMPORTED，不得虚构。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "resource_id",
+    "song_id",
+    "resource_type",
+    "language",
+    "version",
+    "source",
+    "copyright_status",
+    "license_status",
+    "verification_status",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "resource_id": {
+      "type": "string",
+      "pattern": "^MUS-R-[0-9]{4}$",
+      "description": "资源 ID：MUS-R-NNNN。"
+    },
+    "song_id": {
+      "type": "string",
+      "pattern": "^MUS-S-[0-9]{4}$",
+      "description": "所属歌曲，必须已存在于详情层（content/songs/）。"
+    },
+    "resource_type": {
+      "type": "string",
+      "enum": [
+        "LYRICS",
+        "SCORE_LEAD",
+        "SCORE_SIMPLE",
+        "LEAD_VOCAL",
+        "ACCOMPANIMENT",
+        "RECORDING"
+      ],
+      "description": "歌词 / 领唱歌谱 / 简谱 / 示唱 / 伴奏 / 录音。"
+    },
+    "language": {
+      "type": ["string", "null"],
+      "description": "资源语言（例如 zh-Hans / en）；纯音乐资源可为 null。"
+    },
+    "version": {
+      "type": ["string", "null"],
+      "description": "译本 / 版本说明；必须写明具体版本，不得用「通用」掩盖未核验。"
+    },
+    "key": {
+      "type": ["string", "null"],
+      "description": "调性（音频 / 乐谱资源）；无则为 null。"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 4,
+      "description": "资源来源（必须可追溯；禁止占位符）。"
+    },
+    "copyright_status": {
+      "type": "string",
+      "enum": ["unknown", "public_domain", "copyrighted", "licensed", "permission_granted"],
+      "description": "详情层法律状态词表（与登记层词表维度分离，禁止互相映射；ADR-0012）。"
+    },
+    "license_status": {
+      "type": ["string", "null"],
+      "enum": [null, "none", "pd_verified", "license_on_file", "permission_letter", "pending"],
+      "description": "授权凭证状态；没有凭证一律 null 或 pending。"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["unverified", "source_verified", "human_verified"],
+      "description": "资源核验状态：未核验 / 来源核验 / 人工核验。"
+    },
+    "file_url": {
+      "type": ["string", "null"],
+      "description": "资源文件或外链；本阶段一律 null（不托管未授权内容）。"
+    },
+    "source_type": {
+      "type": ["string", "null"],
+      "enum": [null, "EXTERNAL_HUMAN_MALE", "EXTERNAL_HUMAN_FEMALE", "MOS_HUMAN_MALE", "MOS_HUMAN_FEMALE", "AI_MALE", "AI_FEMALE"],
+      "description": "V3.x §六 来源类型：外部真人 / MOS 真人 / AI。前台一律显示「男声示唱 / 女声示唱」，AI 必须标注「非真人」。"
+    },
+    "source_url": {
+      "type": ["string", "null"],
+      "description": "外部版本原站地址（V3.x §七）。外部资源保留在原站播放 / 嵌入 / 时间段定位，不下载转存。"
+    },
+    "host_policy": {
+      "type": ["string", "null"],
+      "enum": [null, "original_site", "embedded", "hosted_authorized"],
+      "description": "托管政策：external → original_site / embedded；MOS 自制或已授权 → hosted_authorized。"
+    },
+    "segment": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "description": "外部完整真人版本的切段定位（V3.x §七）：同一个完整版本可产生整曲 / 分节 / 副歌 / 难句。",
+      "properties": {
+        "phrase_id": { "type": ["string", "null"] },
+        "segment_of": { "type": ["string", "null"], "enum": [null, "full", "verse", "chorus", "hard_line", "phrase"] },
+        "start": { "type": ["number", "null"] },
+        "end": { "type": ["number", "null"] }
+      }
+    },
+    "is_ai": {
+      "type": ["boolean", "null"],
+      "description": "是否为 AI 生成资源。AI 资源必须 true，且必须在界面上标注「非真人」。",
+      "enum": [null, true, false]
+    },
+    "engine": { "type": ["string", "null"], "description": "AI 歌声引擎（本轮未接入任何厂商，故为 null）。" },
+    "vendor": { "type": ["string", "null"], "description": "AI 供应商（本轮未接入，故为 null）。" },
+    "source_tracking": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "来源追踪（AI 资源必需）：生成时间 / 提示词引用 / 模型版本 / 授权说明。"
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "备注。"
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" }
+  }
+}

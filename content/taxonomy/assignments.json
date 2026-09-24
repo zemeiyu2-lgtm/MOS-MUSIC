@@ -1,0 +1,4487 @@
+{
+  "assignments_version": "MUS-V-1.0.0",
+  "generated_at": "2026-09-23",
+  "generated_by": "tools/taxonomy.js（从既有记录派生；不新增任何含义）",
+  "model": "song-taxonomy-assignments",
+  "schema": "content/schema/taxonomy.schema.json",
+  "taxonomy_ref": "content/taxonomy/index.json",
+  "derived": true,
+  "rules": {
+    "multi_membership": "每个维度都是集合，一首歌可以同时属于多个分类；不存在「只能属于一类」的字段。",
+    "no_invention": "源里没有的维度留空并列出原因；词表外的新值只记入 unmapped，不自动采用。",
+    "evidence": "每个分词条目都带 derived_from。"
+  },
+  "counts": {
+    "dimensions": 4,
+    "songs_total": 100,
+    "songs_with_theme": 100,
+    "songs_with_situation": 5,
+    "songs_with_scene": 100,
+    "songs_with_music": 10,
+    "multi_membership_songs": 10,
+    "theme_labels_in_use": 13,
+    "scene_labels_in_use": 7,
+    "situation_labels_in_use": 9
+  },
+  "unmapped": [],
+  "assignments": [
+    {
+      "song_id": "MUS-S-0001",
+      "title_zh": "奇异恩典（Amazing Grace）",
+      "title_en": "Amazing Grace",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [
+          {
+            "key": "感恩",
+            "label": "感恩",
+            "derived_from": "content/songs/MUS-S-0001.json#formation.emotion",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "被寻回的安息",
+            "label": "被寻回的安息",
+            "derived_from": "content/songs/MUS-S-0001.json#formation.emotion",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/songs/MUS-S-0001.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0001.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0001.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0001.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 1,
+          "difficulty_source": "content/songs/MUS-S-0001.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": null,
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "title_zh": "我灵镇静（Be Still, My Soul）",
+      "title_en": "Be Still, My Soul",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [
+          {
+            "key": "信靠",
+            "label": "信靠",
+            "derived_from": "content/songs/MUS-S-0002.json#formation.emotion",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "忍耐",
+            "label": "忍耐",
+            "derived_from": "content/songs/MUS-S-0002.json#formation.emotion",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "盼望",
+            "label": "盼望",
+            "derived_from": "content/songs/MUS-S-0002.json#formation.emotion",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/songs/MUS-S-0002.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0002.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0002.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0002.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 3,
+          "difficulty_source": "content/songs/MUS-S-0002.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": null,
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "title_zh": "耶稣呼召（Jesus Calls Us）",
+      "title_en": "Jesus Calls Us",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [
+          {
+            "key": "降服",
+            "label": "降服",
+            "derived_from": "content/songs/MUS-S-0003.json#formation.emotion",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "决志",
+            "label": "决志",
+            "derived_from": "content/songs/MUS-S-0003.json#formation.emotion",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/songs/MUS-S-0003.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0003.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0003.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0003.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 2,
+          "difficulty_source": "content/songs/MUS-S-0003.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": null,
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "title_zh": "普世欢腾（Joy to the World）",
+      "title_en": "Joy to the World",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [
+          {
+            "key": "喜乐",
+            "label": "喜乐",
+            "derived_from": "content/songs/MUS-S-0004.json#formation.emotion",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "惊奇",
+            "label": "惊奇",
+            "derived_from": "content/songs/MUS-S-0004.json#formation.emotion",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0004.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0004.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0004.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 1,
+          "difficulty_source": "content/songs/MUS-S-0004.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": null,
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "title_zh": "一切全献上（I Surrender All）",
+      "title_en": "I Surrender All",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [
+          {
+            "key": "降服",
+            "label": "降服",
+            "derived_from": "content/songs/MUS-S-0005.json#formation.emotion",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/songs/MUS-S-0005.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0005.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0005.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0005.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 2,
+          "difficulty_source": "content/songs/MUS-S-0005.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": null,
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "title_zh": "圣哉，圣哉，圣哉（Holy, Holy, Holy! Lord God Almighty）",
+      "title_en": "Holy, Holy, Holy! Lord God Almighty",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0006.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0006.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 2,
+          "difficulty_source": "content/songs/MUS-S-0006.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "title_zh": "荣耀归于真神（To God Be the Glory）",
+      "title_en": "To God Be the Glory",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0007.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0007.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0007.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 2,
+          "difficulty_source": "content/songs/MUS-S-0007.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "title_zh": "拥戴我主为王（Crown Him with Many Crowns）",
+      "title_en": "Crown Him with Many Crowns",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0008.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0008.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 2,
+          "difficulty_source": "content/songs/MUS-S-0008.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "title_zh": "你真伟大（How Great Thou Art）",
+      "title_en": "How Great Thou Art",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0009.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0009.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0009.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 3,
+          "difficulty_source": "content/songs/MUS-S-0009.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "title_zh": "你的信实广大（Great Is Thy Faithfulness）",
+      "title_en": "Great Is Thy Faithfulness",
+      "layer": "detail",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          },
+          {
+            "key": "小组",
+            "label": "小组",
+            "derived_from": "content/songs/MUS-S-0010.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "家庭",
+            "label": "家庭",
+            "derived_from": "content/songs/MUS-S-0010.json#scenes",
+            "provenance": "existing_record_field"
+          },
+          {
+            "key": "跨代",
+            "label": "跨代",
+            "derived_from": "content/songs/MUS-S-0010.json#scenes",
+            "provenance": "existing_record_field"
+          }
+        ],
+        "music": {
+          "difficulty": 2,
+          "difficulty_source": "content/songs/MUS-S-0010.json#discipleship.difficulty",
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": null
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0011",
+      "title_zh": "坚固保障",
+      "title_en": "A Mighty Fortress Is Our God",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0012",
+      "title_zh": "十字架前",
+      "title_en": "At the Cross",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "十字架",
+            "label": "十字架",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0013",
+      "title_zh": "古旧十架",
+      "title_en": "The Old Rugged Cross",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "十字架",
+            "label": "十字架",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0014",
+      "title_zh": "耶稣十字架下",
+      "title_en": "Beneath the Cross of Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "十字架",
+            "label": "十字架",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0015",
+      "title_zh": "奇妙十架",
+      "title_en": "When I Survey the Wondrous Cross",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "十字架",
+            "label": "十字架",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0016",
+      "title_zh": "领我到骷髅地",
+      "title_en": "Lead Me to Calvary",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "十字架",
+            "label": "十字架",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0017",
+      "title_zh": "宝血活泉",
+      "title_en": "There Is a Fountain Filled with Blood",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0018",
+      "title_zh": "耶稣奇妙的救恩",
+      "title_en": "Wonderful Grace of Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0019",
+      "title_zh": "主活着",
+      "title_en": "He Lives",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "复活",
+            "label": "复活",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0020",
+      "title_zh": "基督今复活",
+      "title_en": "Christ the Lord Is Risen Today",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "复活",
+            "label": "复活",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0021",
+      "title_zh": "转眼仰望耶稣",
+      "title_en": "Turn Your Eyes upon Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0022",
+      "title_zh": "最美丽耶稣",
+      "title_en": "Fairest Lord Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0023",
+      "title_zh": "恳求主像牧人领导",
+      "title_en": "Saviour, Like a Shepherd Lead Us",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "教会",
+            "label": "教会",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0024",
+      "title_zh": "主凡事引导我",
+      "title_en": "All the Way My Saviour Leads Me",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "跟随",
+            "label": "跟随",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0025",
+      "title_zh": "耶稣领我",
+      "title_en": "He Leadeth Me",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "跟随",
+            "label": "跟随",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0026",
+      "title_zh": "向高处行",
+      "title_en": "Higher Ground",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0027",
+      "title_zh": "更亲近我主",
+      "title_en": "Nearer, Still Nearer",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0028",
+      "title_zh": "更像我恩主",
+      "title_en": "More Like the Master",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0029",
+      "title_zh": "主我愿像你",
+      "title_en": "O to Be Like Thee!",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0030",
+      "title_zh": "成圣须用功夫",
+      "title_en": "Take Time to Be Holy",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0031",
+      "title_zh": "今要主自己",
+      "title_en": "Himself",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0032",
+      "title_zh": "爱主更深",
+      "title_en": "More Love to Thee",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0033",
+      "title_zh": "为耶稣而活",
+      "title_en": "Living for Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0034",
+      "title_zh": "教会独一的根基",
+      "title_en": "The Church's One Foundation",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "教会",
+            "label": "教会",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0035",
+      "title_zh": "圣徒相通",
+      "title_en": "Blest Be the Tie That Binds",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "爱人",
+            "label": "爱人",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0036",
+      "title_zh": "耶稣恩友",
+      "title_en": "What a Friend We Have in Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "祷告",
+            "label": "祷告",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0037",
+      "title_zh": "祷告良辰",
+      "title_en": "Sweet Hour of Prayer",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "祷告",
+            "label": "祷告",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0038",
+      "title_zh": "我心灵得安宁",
+      "title_en": "It Is Well with My Soul",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0039",
+      "title_zh": "有福的确据",
+      "title_en": "Blessed Assurance",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0040",
+      "title_zh": "藉我赐恩福",
+      "title_en": "Make Me a Blessing",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "爱人",
+            "label": "爱人",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0041",
+      "title_zh": "岂可空手回天家",
+      "title_en": "Must I Go, and Empty-Handed?",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0042",
+      "title_zh": "拯救失丧者",
+      "title_en": "Rescue the Perishing",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0043",
+      "title_zh": "向万邦传福音",
+      "title_en": "We've a Story to Tell to the Nations",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "宣教",
+            "label": "宣教",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0044",
+      "title_zh": "喜爱述说耶稣",
+      "title_en": "I Love to Tell the Story",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "宣教",
+            "label": "宣教",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0045",
+      "title_zh": "兴起为耶稣",
+      "title_en": "Stand Up, Stand Up for Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "宣教",
+            "label": "宣教",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0046",
+      "title_zh": "基督精兵",
+      "title_en": "Onward, Christian Soldiers",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "宣教",
+            "label": "宣教",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0047",
+      "title_zh": "一切为耶稣",
+      "title_en": "All for Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0048",
+      "title_zh": "一生奉献",
+      "title_en": "Take My Life, and Let It Be",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0049",
+      "title_zh": "我每时刻需要你",
+      "title_en": "I Need Thee Every Hour",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0050",
+      "title_zh": "主，与我同住",
+      "title_en": "Abide with Me",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "盼望",
+            "label": "盼望",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0051",
+      "title_zh": "以信为本",
+      "title_en": "Be Thou My Vision",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0052",
+      "title_zh": "来，我神我王",
+      "title_en": "Come, Thou Fount of Every Blessing",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0053",
+      "title_zh": "磐石之上",
+      "title_en": "The Solid Rock",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0054",
+      "title_zh": "万古磐石",
+      "title_en": "Rock of Ages",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0055",
+      "title_zh": "若无人领我",
+      "title_en": "Just As I Am, Without One Plea",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0056",
+      "title_zh": "耶稣，我爱你",
+      "title_en": "My Jesus, I Love Thee",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0057",
+      "title_zh": "我宁愿有耶稣",
+      "title_en": "I'd Rather Have Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0058",
+      "title_zh": "求主使我成为圣洁",
+      "title_en": "Spirit of the Living God",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0059",
+      "title_zh": "主，我愿跟随你",
+      "title_en": "Where He Leads Me",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0060",
+      "title_zh": "我主，我神，我王",
+      "title_en": "All Hail the Power of Jesus' Name",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0061",
+      "title_zh": "我父神",
+      "title_en": "Abba, Father",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0062",
+      "title_zh": "永远的膀臂",
+      "title_en": "Leaning on the Everlasting Arms",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0063",
+      "title_zh": "祂藏我灵",
+      "title_en": "He Hideth My Soul",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0064",
+      "title_zh": "主爱何等甘甜",
+      "title_en": "Jesus, Lover of My Soul",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0065",
+      "title_zh": "耶稣是我一切",
+      "title_en": "Jesus Is All the World to Me",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0066",
+      "title_zh": "靠祂得胜",
+      "title_en": "Victory in Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "复活",
+            "label": "复活",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0067",
+      "title_zh": "亲近，更亲近",
+      "title_en": "Nearer, My God, to Thee",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0068",
+      "title_zh": "我知所信的是谁",
+      "title_en": "I Know Whom I Have Believed",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0069",
+      "title_zh": "惟独基督",
+      "title_en": "In Christ Alone",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0070",
+      "title_zh": "怎能不歌唱",
+      "title_en": "And Can It Be That I Should Gain",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0071",
+      "title_zh": "神宝座前",
+      "title_en": "Before the Throne of God Above",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0072",
+      "title_zh": "祂必托住我",
+      "title_en": "He Will Hold Me Fast",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0073",
+      "title_zh": "基督是我生死盼望",
+      "title_en": "Christ Our Hope in Life and Death",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "盼望",
+            "label": "盼望",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0074",
+      "title_zh": "我所有都是基督",
+      "title_en": "All I Have Is Christ",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0075",
+      "title_zh": "基督是我的产业",
+      "title_en": "Christ Is Mine Forevermore",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0076",
+      "title_zh": "主，请说",
+      "title_en": "Speak, O Lord",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "跟随",
+            "label": "跟随",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0077",
+      "title_zh": "万邦中",
+      "title_en": "Across the Lands",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0078",
+      "title_zh": "教会兴起",
+      "title_en": "O Church Arise",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "宣教",
+            "label": "宣教",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0079",
+      "title_zh": "十字架的能力",
+      "title_en": "The Power of the Cross",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "十字架",
+            "label": "十字架",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0080",
+      "title_zh": "主是我的拯救",
+      "title_en": "The Lord Is My Salvation",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0081",
+      "title_zh": "我要像耶稣",
+      "title_en": "I Want to Be Like Jesus",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0082",
+      "title_zh": "求你为我造清洁的心",
+      "title_en": "Create in Me a Clean Heart",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0083",
+      "title_zh": "首先求神的国",
+      "title_en": "Seek Ye First",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0084",
+      "title_zh": "耶和华是我牧者",
+      "title_en": "The Lord's My Shepherd",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "教会",
+            "label": "教会",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0085",
+      "title_zh": "我灵啊赞美耶和华",
+      "title_en": "10,000 Reasons (Bless the Lord)",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0086",
+      "title_zh": "不再是我",
+      "title_en": "Yet Not I but Through Christ in Me",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0087",
+      "title_zh": "祂的怜悯何其大",
+      "title_en": "His Mercy Is More",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0088",
+      "title_zh": "住在基督里",
+      "title_en": "Abide",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0089",
+      "title_zh": "建立我的生命",
+      "title_en": "Build My Life",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0090",
+      "title_zh": "耶稣居首位",
+      "title_en": "Jesus, Be the Centre",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0091",
+      "title_zh": "主，我需要你",
+      "title_en": "Lord, I Need You",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0092",
+      "title_zh": "坚固的根基",
+      "title_en": "How Firm a Foundation",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "个人",
+            "label": "个人",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0093",
+      "title_zh": "主在这里",
+      "title_en": "The Lord Is in This Place",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "敬拜",
+            "label": "敬拜",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0094",
+      "title_zh": "我的魂哪，要称颂耶和华",
+      "title_en": "Bless the Lord, O My Soul",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "恩典",
+            "label": "恩典",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0095",
+      "title_zh": "我心中的王",
+      "title_en": "King of My Heart",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "安慰",
+            "label": "安慰",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "主日",
+            "label": "主日",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0096",
+      "title_zh": "和平之子",
+      "title_en": "Make Me a Channel of Your Peace",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "爱人",
+            "label": "爱人",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0097",
+      "title_zh": "我们用爱彼此相认",
+      "title_en": "They'll Know We Are Christians by Our Love",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "宣教",
+            "label": "宣教",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0098",
+      "title_zh": "我在这里，请差遣我",
+      "title_en": "Here I Am, Lord",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "跟随",
+            "label": "跟随",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0099",
+      "title_zh": "去告诉山上",
+      "title_en": "Go Tell It on the Mountain",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "救恩",
+            "label": "救恩",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "使命",
+            "label": "使命",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    },
+    {
+      "song_id": "MUS-S-0100",
+      "title_zh": "我要跟随耶稣",
+      "title_en": "I Will Follow Thee",
+      "layer": "candidate",
+      "dimensions": {
+        "theme": [
+          {
+            "key": "成圣",
+            "label": "成圣",
+            "derived_from": "content/candidates/index.json#front_tags.theme",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "situation": [],
+        "scene": [
+          {
+            "key": "门训",
+            "label": "门训",
+            "derived_from": "content/candidates/index.json#front_tags.scene",
+            "provenance": "provisional_intake_classification"
+          }
+        ],
+        "music": {
+          "difficulty": null,
+          "difficulty_source": null,
+          "tempo_bpm": null,
+          "time_signature": null,
+          "range": {
+            "lowest": null,
+            "highest": null
+          },
+          "suitable_for": [],
+          "suitable_for_note": "「适合视唱 / 群体歌唱 / 个人练习」目前没有任何内容层来源，一律留空 —— 尚未标注，不是遗漏。"
+        }
+      },
+      "gaps": {
+        "situation": "这首歌没有处境标注：候选层没有 formation.emotion 字段（等人工标注或后续研究）。",
+        "music": "这首歌没有音乐属性：难度 / 拍号 / 速度 / 音域都还没有内容层来源（等简谱与辨识推进）。"
+      },
+      "note": "分类是检索入口，不是歌曲身份；空维度为如实留空。"
+    }
+  ],
+  "note": "本文件是派生索引（CI-0014 案 a 口径）：可重建、不进不可变基线。分类不代表研究裁决，不改变任何 tier / review_status。"
+}

@@ -1,0 +1,43 @@
+{
+  "template_id": "MOS-TPL-GRP-FLOW",
+  "title": "小组使用流程",
+  "module": "MODULE 07",
+  "context_id": "CTX-GRP",
+  "leader_capabilities": [
+    "选择课程",
+    "选择歌曲",
+    "打开七步法",
+    "查看讨论问题",
+    "查看实践任务",
+    "记录反馈"
+  ],
+  "flow": [
+    {
+      "order": 1,
+      "label": "经文",
+      "step_ref": "S1_read"
+    },
+    {
+      "order": 2,
+      "label": "歌曲",
+      "step_ref": "S3_sing"
+    },
+    {
+      "order": 3,
+      "label": "讨论",
+      "step_ref": "S5_feel"
+    },
+    {
+      "order": 4,
+      "label": "实践",
+      "step_ref": "S6_act"
+    },
+    {
+      "order": 5,
+      "label": "下周反馈",
+      "step_ref": "S7_transmit"
+    }
+  ],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

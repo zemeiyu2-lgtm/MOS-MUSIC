@@ -1,0 +1,37 @@
+{
+  "report_version": "MUS-V-1.1.0",
+  "generated_at": "2026-09-23",
+  "generated_by": "tools/sample-l4.js",
+  "summary": [
+    {
+      "song_id": "MUS-S-0001",
+      "score": "SOURCE_IMPORTED",
+      "measures": 17,
+      "phrases": 3,
+      "midi": "assets/audio/MUS-S-0001-piano.mid"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "score": "SOURCE_IMPORTED",
+      "measures": 25,
+      "phrases": 4,
+      "midi": "assets/audio/MUS-S-0002-piano.mid"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "score": "SOURCE_IMPORTED",
+      "measures": 19,
+      "phrases": 3,
+      "midi": "assets/audio/MUS-S-0004-piano.mid"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "score": "SCORE_VERIFY_REQUIRED"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "score": "SCORE_VERIFY_REQUIRED"
+    }
+  ],
+  "note": "五首样板的生产结果；等级由 app/song-unit.js 派生，本文件不宣布等级。"
+}

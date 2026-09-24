@@ -1,0 +1,152 @@
+{
+  "song_id": "MUS-S-0009",
+  "title": "你真伟大（How Great Thou Art）",
+  "author": "Carl Boberg（瑞典语原词）；Stuart K. Hine（英译与改编）",
+  "composer": "瑞典民谣旋律（O STORE GUD）；Stuart K. Hine 改编",
+  "source": "词：Carl Boberg（瑞典语），1885；英译与改编：Stuart K. Hine，1949；曲：瑞典民谣旋律（O STORE GUD）。瑞典语原词属公版，通行英译与改编部分的法律状态未判定。",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1885（原词）",
+  "copyright": {
+    "copyright_status": "unknown",
+    "source": "原词：Carl Boberg（瑞典语），1885；英译与改编：Stuart K. Hine，1949。",
+    "license": null,
+    "usage_permission": null,
+    "attribution": "Carl Boberg（原词）；Stuart K. Hine（英译与改编）",
+    "audio_availability": "none",
+    "lyrics_availability": "none",
+    "permission_evidence": null
+  },
+  "lyrics": {
+    "text": null,
+    "excerpt": null,
+    "note": "本记录不托管任何歌词文本。公版英文原文本身无版权问题，但常见中文译本译文各有版权方，且中文译词版本尚未核验。该诗通行英译与改编部分可能仍在版权期内，本记录不作法律状态判定。"
+  },
+  "media": {
+    "audio": null,
+    "score": null,
+    "chord": null
+  },
+  "bible": {
+    "core_passage": "诗8:1–9",
+    "bible_reference_ids": [
+      "BB-PSA-8-1"
+    ],
+    "bible_themes": [
+      "创造",
+      "神的伟大",
+      "颂赞"
+    ]
+  },
+  "theology": {
+    "theology": [
+      "神论-创造与伟大"
+    ],
+    "christology": [
+      "基督再来"
+    ],
+    "soteriology": [],
+    "ecclesiology": [],
+    "missiology": [
+      "向万邦述说神的作为"
+    ]
+  },
+  "discipleship": {
+    "stage": null,
+    "main_theme": "TH-01",
+    "secondary_themes": [],
+    "music_unit_ids": [],
+    "music_unit_refs": [
+      "MM01"
+    ],
+    "function": null,
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "CTX-SUN",
+      "CTX-GRP"
+    ],
+    "difficulty": 3
+  },
+  "formation": {
+    "primary_function": "TR",
+    "emotion": [],
+    "memory": [],
+    "community": [],
+    "practice": [],
+    "prayer": [],
+    "transmission": []
+  },
+  "eight_dimensions": {
+    "biblical_truth": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "theological_formation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "emotional_formation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "community": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "congregational_participation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "generational_transmission": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "life_practice": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "mission_orientation": {
+      "score": null,
+      "note": "库级未辨识：无周次上下文与已核验文本，按缺失输入一律停止处理。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  "tier": "C",
+  "theological_note": "本记录只完成歌基层身份与经文锚点认定（2026-09-21 人工授权口径）。八维辨识、Song_Relation、S6/S7 与使用决定仍待周次上下文与人工审核；中文译词与乐谱版本未核验，法律状态未判定。",
+  "review_status": "draft",
+  "scenes": [
+    "主日",
+    "小组",
+    "家庭",
+    "跨代"
+  ],
+  "search_keywords": [
+    "你真伟大",
+    "How Great Thou Art",
+    "创造",
+    "神的伟大",
+    "颂赞"
+  ],
+  "version": "MUS-V-0.5.0",
+  "created_at": "2026-09-21T17:12:00+08:00",
+  "updated_at": "2026-09-21T17:12:00+08:00",
+  "updated_by": "mos-music-library-promotion"
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/feedback.schema.json",
+  "title": "MOS-MUSIC Feedback (门训反馈)",
+  "description": "MODULE 10｜反馈系统。核心循环：选择 → 使用 → 观察 → 反馈 → 调整。§24 明确禁止把反馈设计成「喜欢 / 不喜欢」。因此本 Schema 不含任何整体好感度、星级或排名字段。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["feedback_id", "user_ref", "role", "observation", "created_at", "sync"],
+  "properties": {
+    "feedback_id": { "$ref": "common.schema.json#/$defs/feedbackId" },
+    "user_ref": { "type": "string", "maxLength": 120 },
+    "role": {
+      "type": "string",
+      "enum": ["participant", "leader", "teacher", "trainer", "admin"],
+      "description": "反馈者角色。小组长（leader）与培训者（trainer）看到的问题与参与者不同。"
+    },
+
+    "course_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/courseId" }, { "type": "null" }] },
+    "song_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/songId" }, { "type": "null" }] },
+    "step_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/stepId" }, { "type": "null" }] },
+    "context_id": { "anyOf": [{ "$ref": "common.schema.json#/$defs/contextId" }, { "type": "null" }] },
+    "group_ref": { "type": ["string", "null"], "maxLength": 120 },
+
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "§24 七项观察维度。每项为 1-5 观察刻度 + 说明；刻度衡量的是「是否发生」，不是「好不好」。score 为 null 表示未观察。",
+      "required": [
+        "understood", "participated", "remembered", "right_affection",
+        "entered_practice", "fit_for_group", "able_to_transmit"
+      ],
+      "properties": {
+        "understood": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否理解真理。" },
+        "participated": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否参与（会众参与）。" },
+        "remembered": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否记住（经文/歌词）。" },
+        "right_affection": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否产生正确情感。" },
+        "entered_practice": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否进入实践。" },
+        "fit_for_group": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否适合该群体。" },
+        "able_to_transmit": { "$ref": "common.schema.json#/$defs/dimension", "description": "是否能够传递给别人。" }
+      }
+    },
+
+    "free_note": { "type": ["string", "null"], "maxLength": 1200, "description": "开放描述。用于说明观察到的具体现象，不是喜好表达。" },
+    "follow_up": { "type": ["string", "null"], "maxLength": 600, "description": "下一步调整（对应反馈循环的「调整」）。" },
+    "needs_review": { "type": "boolean", "description": "是否标记为需 MOS 人工复核（§35：最终审核始终由 MOS 人工完成）。" },
+
+    "created_at": { "type": "string", "format": "date-time" },
+    "sync": { "$ref": "common.schema.json#/$defs/syncMeta" }
+  }
+}

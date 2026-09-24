@@ -1,0 +1,189 @@
+{
+  "teaching_version": "MUS-V-1.2.0",
+  "generated_by": "MOS MUSIC teaching pack builder (one-shot transcription of user-provided V1.0 documents)",
+  "source_documents": [
+    "MOS_五首样板歌曲_教师教学脚本与制作包_V1.0.md",
+    "MOS_五首样板歌曲_乐句级资源表_V1.0.md"
+  ],
+  "independence": {
+    "statement": "五首教学样板全部独立于 52 周课程：不引用周次/课程/讲章/课程进度。",
+    "does_not_reference": [
+      "52W_WEEKS",
+      "MUS-C_LESSONS",
+      "SERMON_OUTLINES",
+      "COURSE_PROGRESS"
+    ]
+  },
+  "ten_steps": [
+    {
+      "key": "step-01",
+      "label": "认识歌曲",
+      "teacher_says": "先不要急着唱。第一遍只听：旋律往哪里走？哪一句最容易记住？哪一句最难？",
+      "tasks": [
+        "只听",
+        "感受拍号与速度",
+        "找到重复句",
+        "不要求记忆歌词"
+      ]
+    },
+    {
+      "key": "step-02",
+      "label": "准备身体与声音",
+      "teacher_says": "我们先把声音放松，不追求大声。先找到稳定、自然的声音。",
+      "tasks": [
+        "深吸气，不耸肩",
+        "轻声哼唱起音",
+        "元音延长",
+        "避免用喉咙硬推高音"
+      ]
+    },
+    {
+      "key": "step-03",
+      "label": "教简谱",
+      "teacher_says": "先不要背每一个音。先看这一句是在上行、下行，还是停留。",
+      "tasks": [
+        "先看调号",
+        "找主音",
+        "看乐句轮廓",
+        "看长音、休止、重复音",
+        "再进入逐小节"
+      ]
+    },
+    {
+      "key": "step-04",
+      "label": "教节奏",
+      "teacher_says": "先拍节奏，再唱音高。",
+      "tasks": [
+        "手拍拍号",
+        "口读节奏",
+        "钢琴只给节拍",
+        "加入旋律"
+      ]
+    },
+    {
+      "key": "step-05",
+      "label": "视唱",
+      "teacher_says": "主音 → 起音 → 第一乐句 → 两句连接 → 整节；教师不连续示唱全部。",
+      "tasks": [
+        "反馈句式：这一句第二个音稍低，再唱一次。",
+        "节奏对了，现在保持住音高。",
+        "这一句先不要快，把长音唱稳。"
+      ]
+    },
+    {
+      "key": "step-06",
+      "label": "教歌词",
+      "teacher_says": "歌词教学独立于音符教学。",
+      "tasks": [
+        "说词",
+        "找关键词",
+        "找重音",
+        "处理辅音",
+        "再与旋律结合"
+      ]
+    },
+    {
+      "key": "step-07",
+      "label": "词曲合成",
+      "teacher_says": "少示范，多模仿；短句循环，逐步撤掉示范。",
+      "tasks": [
+        "一句听",
+        "一句跟",
+        "一句独唱",
+        "两句连接",
+        "一节完整"
+      ]
+    },
+    {
+      "key": "step-08",
+      "label": "真人示唱",
+      "teacher_says": "播放优秀真人版本，观察表达，不要求模仿歌手个人音色。",
+      "tasks": [
+        "呼吸在哪里",
+        "哪个词更突出",
+        "哪里收声",
+        "哪里渐强",
+        "哪里保持克制"
+      ]
+    },
+    {
+      "key": "step-09",
+      "label": "自主歌唱",
+      "teacher_says": "伴奏由强到弱，目标是逐渐脱离模仿。",
+      "tasks": [
+        "完整伴奏",
+        "简化钢琴",
+        "仅起音",
+        "无示唱"
+      ]
+    },
+    {
+      "key": "step-10",
+      "label": "独立视唱＋教别人",
+      "teacher_says": "请你不听示唱，只看谱唱一遍；然后把最难的一句教给另一个人。",
+      "tasks": [
+        "会唱不是终点",
+        "会带别人唱才进入可传递状态"
+      ]
+    }
+  ],
+  "time_status_vocab": {
+    "VERIFIED": "同一示唱版本、时间点已经人工核对。",
+    "REFERENCE_ONLY": "时间码可靠，但不是当前选定示唱版本（或未经同轨人工听校）。",
+    "TIME_PENDING": "有资源，但尚未建立可靠逐句时间轴。"
+  },
+  "rules": [
+    "未确认时间码不得进入 cursor-follow（cursor_ready=true ⇔ time_status=VERIFIED）",
+    "不同录音版本不得混用 start/end（每卡单一 timecode 录音）",
+    "不得虚构歌手身份（文档未署名 → performer=null）",
+    "AI coach 只处理 pitch/rhythm/sustain/diction/dynamics/expression，禁止属灵/真诚度评分",
+    "中文歌词核定全文接入前只允许段定位标签"
+  ],
+  "packs": [
+    {
+      "song_id": "MUS-S-0001",
+      "file": "content/teaching/MUS-S-0001.json",
+      "cards": 18,
+      "time_reference_only": 18,
+      "time_pending": 0,
+      "time_verified": 0,
+      "cursor_ready": 0
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "file": "content/teaching/MUS-S-0002.json",
+      "cards": 13,
+      "time_reference_only": 12,
+      "time_pending": 1,
+      "time_verified": 0,
+      "cursor_ready": 0
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "file": "content/teaching/MUS-S-0003.json",
+      "cards": 9,
+      "time_reference_only": 0,
+      "time_pending": 9,
+      "time_verified": 0,
+      "cursor_ready": 0
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "file": "content/teaching/MUS-S-0004.json",
+      "cards": 13,
+      "time_reference_only": 13,
+      "time_pending": 0,
+      "time_verified": 0,
+      "cursor_ready": 0
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "file": "content/teaching/MUS-S-0005.json",
+      "cards": 13,
+      "time_reference_only": 13,
+      "time_pending": 0,
+      "time_verified": 0,
+      "cursor_ready": 0
+    }
+  ]
+}

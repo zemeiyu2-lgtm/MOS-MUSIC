@@ -1,0 +1,120 @@
+{
+  "promotions_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-21T17:12:00+08:00",
+  "scope": "曲库 V0.5 扩库第二段（升层）试批：MUS-S-0006 … MUS-S-0010 共 5 首",
+  "note": "登记层字段契约（content/schema/library-intake.schema.json）位于不可变基线内且不允许附加字段，因此升层不改写任何登记记录。哪一首已升入歌曲详情层，由本文件单独声明；合并曲库时被声明的歌曲只按详情层计一次，不在两个层重复计数。登记层记录本身保持逐字节不变，来源可追溯性不受影响。",
+  "relation_rule": "promotions[].song_id 必须同时出现在 content/library/registry.json（登记来源）与 content/songs/<song_id>.json（详情记录）中，且 detail_file 必须存在、其 bible.core_passage 必须与 anchor.core_passage 一致；缺一即视为不一致。",
+  "authorization": {
+    "decided_at": "2026-09-21",
+    "decision": "人工授权：按公版圣诗固有经文依据逐首认定（据此进入升层试批）。",
+    "determination_record": "content/production/song-anchor-determinations.json",
+    "adr": "docs/ADR/ADR-0013-hymn-anchor-determination-and-promotion-path.md"
+  },
+  "promotions": [
+    {
+      "song_id": "MUS-S-0006",
+      "title_zh": "圣哉，圣哉，圣哉",
+      "title_en": "Holy, Holy, Holy! Lord God Almighty",
+      "from_layer": "intake",
+      "to_layer": "detail",
+      "detail_file": "content/songs/MUS-S-0006.json",
+      "intake_record_ref": "content/library/registry.json#MUS-S-0006",
+      "anchor": {
+        "core_passage": "启4:8–11",
+        "basis": "歌词直引 + 传统主题一致",
+        "verification": "authorized_determination"
+      },
+      "batch": "V0.5-promotion-trial-1",
+      "promoted_at": "2026-09-21T17:12:00+08:00",
+      "accepted_by_human": false
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "title_zh": "荣耀归于真神",
+      "title_en": "To God Be the Glory",
+      "from_layer": "intake",
+      "to_layer": "detail",
+      "detail_file": "content/songs/MUS-S-0007.json",
+      "intake_record_ref": "content/library/registry.json#MUS-S-0007",
+      "anchor": {
+        "core_passage": "约3:16",
+        "basis": "歌词直引",
+        "verification": "authorized_determination"
+      },
+      "batch": "V0.5-promotion-trial-1",
+      "promoted_at": "2026-09-21T17:12:00+08:00",
+      "accepted_by_human": false
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "title_zh": "拥戴我主为王",
+      "title_en": "Crown Him with Many Crowns",
+      "from_layer": "intake",
+      "to_layer": "detail",
+      "detail_file": "content/songs/MUS-S-0008.json",
+      "intake_record_ref": "content/library/registry.json#MUS-S-0008",
+      "anchor": {
+        "core_passage": "腓2:9–11",
+        "basis": "传统主题一致 + 意象对应",
+        "verification": "authorized_determination"
+      },
+      "batch": "V0.5-promotion-trial-1",
+      "promoted_at": "2026-09-21T17:12:00+08:00",
+      "accepted_by_human": false
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "title_zh": "你真伟大",
+      "title_en": "How Great Thou Art",
+      "from_layer": "intake",
+      "to_layer": "detail",
+      "detail_file": "content/songs/MUS-S-0009.json",
+      "intake_record_ref": "content/library/registry.json#MUS-S-0009",
+      "anchor": {
+        "core_passage": "诗8:1–9",
+        "basis": "歌词对应 + 默想次序一致",
+        "verification": "authorized_determination"
+      },
+      "batch": "V0.5-promotion-trial-1",
+      "promoted_at": "2026-09-21T17:12:00+08:00",
+      "accepted_by_human": false
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "title_zh": "你的信实广大",
+      "title_en": "Great Is Thy Faithfulness",
+      "from_layer": "intake",
+      "to_layer": "detail",
+      "detail_file": "content/songs/MUS-S-0010.json",
+      "intake_record_ref": "content/library/registry.json#MUS-S-0010",
+      "anchor": {
+        "core_passage": "耶哀3:22–23",
+        "basis": "歌词直引",
+        "verification": "authorized_determination"
+      },
+      "batch": "V0.5-promotion-trial-1",
+      "promoted_at": "2026-09-21T17:12:00+08:00",
+      "accepted_by_human": false
+    }
+  ],
+  "counts": {
+    "promoted": 5,
+    "intake_total": 45,
+    "intake_pending_promotion": 40,
+    "detail_total": 10,
+    "merged_total": 50
+  },
+  "boundaries": {
+    "not_done": [
+      "未改写登记层任何字段（冻结契约不允许附加字段）",
+      "未把 SOURCE_REQUIRED 改成 PUBLIC_DOMAIN",
+      "未指派任何周次，未生成 W05–W52 任何周次或单元",
+      "未做八维辨识，未升级 tier",
+      "未收录歌词 / 歌谱 / 示唱 / 伴奏"
+    ],
+    "awaiting": [
+      "人工验收本批 5 首（accepted_by_human 仍为 false）",
+      "剩余 40 首是否继续同一口径，须人工决定"
+    ]
+  }
+}

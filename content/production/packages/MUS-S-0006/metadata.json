@@ -1,0 +1,25 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0006",
+  "unit_id": "MUS-SU-0006",
+  "slot": "metadata",
+  "title_zh": "圣哉，圣哉，圣哉",
+  "title_en": "Holy, Holy, Holy! Lord God Almighty",
+  "author": "Reginald Heber",
+  "composer": "John Bacchus Dykes（NICAEA）",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1826（词）",
+  "source": "词：Reginald Heber，1826（1827 年遗作刊行）；曲：John Bacchus Dykes（NICAEA），1861。公版赞美诗学通行记载，作品级版本待核验。",
+  "copyright_status": "unknown",
+  "structure": null,
+  "current_version": null,
+  "unresolved": [
+    "中文译词版本与译者未核验",
+    "当前采用的简谱版本未确定",
+    "调 / 拍号 / 速度 / 时长 / 段落结构未核验",
+    "作品级法律状态未判定（不得据清单推定）"
+  ],
+  "derived_from": "content/songs/MUS-S-0006.json",
+  "note": "本文件只登记详情层的既有事实；不确定的项进 unresolved，不得用空字符串掩盖。"
+}

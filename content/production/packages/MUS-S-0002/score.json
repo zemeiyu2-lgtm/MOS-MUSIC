@@ -1,0 +1,5323 @@
+{
+  "package_version": "MUS-V-1.1.0",
+  "song_id": "MUS-S-0002",
+  "unit_id": "MUS-SU-0002",
+  "slot": "score",
+  "status": "PROVIDED",
+  "key": "1=F（do=中央C上方同名音；可按会众音域整体移调）",
+  "time_signature": "4/4",
+  "tempo_bpm": 100,
+  "pickup": true,
+  "starting_note": "4（起音）",
+  "range": {
+    "lowest": "F4",
+    "highest": "D5"
+  },
+  "sections": [
+    {
+      "section_id": "tune",
+      "label": "曲调（全曲各节共用同一旋律）",
+      "measures": [
+        {
+          "measure_no": 1,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 13,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "soul:"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 19,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "the"
+            }
+          ]
+        },
+        {
+          "measure_no": 2,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 23,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "Lord"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 28,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "is"
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 31,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "on"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 34,
+              "lyric_status": "ok",
+              "beat_start": 3.5,
+              "syllable": "thy"
+            }
+          ]
+        },
+        {
+          "measure_no": 3,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": 38,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "side."
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 1,
+              "melisma": true,
+              "syllable": "side."
+            }
+          ]
+        },
+        {
+          "measure_no": 4,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L1",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 0,
+              "melisma": true,
+              "syllable": "side."
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 0,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "Bear"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 5,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "pa"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "tient"
+            }
+          ]
+        },
+        {
+          "measure_no": 5,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "ly"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 15,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "the"
+            }
+          ]
+        },
+        {
+          "measure_no": 6,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 19,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "cross"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 25,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "of"
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 28,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "grief"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 34,
+              "lyric_status": "ok",
+              "beat_start": 3.5,
+              "syllable": "or"
+            }
+          ]
+        },
+        {
+          "measure_no": 7,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": 37,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "pain."
+            }
+          ]
+        },
+        {
+          "measure_no": 8,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L2",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 0,
+              "melisma": true,
+              "syllable": "pain."
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 0,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "Leave"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 6,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "to"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 9,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "thy"
+            }
+          ]
+        },
+        {
+          "measure_no": 9,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "6",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 13,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "God"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 17,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "to"
+            }
+          ]
+        },
+        {
+          "measure_no": 10,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 20,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "or"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "der"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 26,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "and"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": 30,
+              "lyric_status": "ok",
+              "beat_start": 3.5,
+              "syllable": "pro"
+            }
+          ]
+        },
+        {
+          "measure_no": 11,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "vide;"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 1,
+              "melisma": true,
+              "syllable": "vide;"
+            }
+          ]
+        },
+        {
+          "measure_no": 12,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L3",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 0,
+              "melisma": true,
+              "syllable": "vide;"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 0,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "In"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 3,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "ev"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "ery"
+            }
+          ]
+        },
+        {
+          "measure_no": 13,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 9,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "change,"
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 16,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "He"
+            }
+          ]
+        },
+        {
+          "measure_no": 14,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 19,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "faith"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "ful"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 28,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "will"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": 33,
+              "lyric_status": "ok",
+              "beat_start": 3.5,
+              "syllable": "re"
+            }
+          ]
+        },
+        {
+          "measure_no": 15,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "main."
+            }
+          ]
+        },
+        {
+          "measure_no": 16,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L4",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 0,
+              "melisma": true,
+              "syllable": "main."
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 0,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "Be"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 3,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "still,"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 10,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "my"
+            }
+          ]
+        },
+        {
+          "measure_no": 17,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "6",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 13,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "soul:"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 19,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "thy"
+            }
+          ]
+        },
+        {
+          "measure_no": 18,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 23,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "best,"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 29,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "thy"
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": null,
+              "lyric_char_index": null,
+              "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+              "beat_start": 2
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": null,
+              "lyric_char_index": null,
+              "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+              "beat_start": 3.5
+            }
+          ]
+        },
+        {
+          "measure_no": 19,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": 42,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "Friend"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 1,
+              "melisma": true,
+              "syllable": "Friend"
+            }
+          ]
+        },
+        {
+          "measure_no": 20,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L5",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 0,
+              "melisma": true,
+              "syllable": "Friend"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 0,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "Through"
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 8,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "thorn"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "y"
+            }
+          ]
+        },
+        {
+          "measure_no": 21,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 15,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "ways"
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 20,
+              "lyric_status": "ok",
+              "beat_start": 3,
+              "syllable": "leads"
+            }
+          ]
+        },
+        {
+          "measure_no": 22,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 26,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "to"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 29,
+              "lyric_status": "ok",
+              "beat_start": 1,
+              "syllable": "a"
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 31,
+              "lyric_status": "ok",
+              "beat_start": 2,
+              "syllable": "joy"
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": null,
+              "lyric_status": "ok",
+              "beat_start": 3.5,
+              "syllable": "ful"
+            }
+          ]
+        },
+        {
+          "measure_no": 23,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": 38,
+              "lyric_status": "ok",
+              "beat_start": 0,
+              "syllable": "end."
+            }
+          ]
+        },
+        {
+          "measure_no": 24,
+          "repeat": null,
+          "beats": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "lyric_line_id": "v1-L6",
+              "lyric_char_index": null,
+              "lyric_status": "melisma",
+              "beat_start": 0,
+              "melisma": true,
+              "syllable": "end."
+            }
+          ]
+        },
+        {
+          "measure_no": 25,
+          "repeat": null,
+          "beats": []
+        }
+      ]
+    }
+  ],
+  "pickup_beats": [
+    {
+      "note": "4",
+      "octave": 0,
+      "duration": "quarter",
+      "dot": false,
+      "tie": false,
+      "rest": false,
+      "accidental": null,
+      "lyric_line_id": "v1-L1",
+      "lyric_char_index": 0,
+      "lyric_status": "ok",
+      "beat_start": 0,
+      "syllable": " Be"
+    },
+    {
+      "note": "2",
+      "octave": 0,
+      "duration": "quarter",
+      "dot": false,
+      "tie": false,
+      "rest": false,
+      "accidental": null,
+      "lyric_line_id": "v1-L1",
+      "lyric_char_index": 3,
+      "lyric_status": "ok",
+      "beat_start": 1,
+      "syllable": "still,"
+    },
+    {
+      "note": "4",
+      "octave": 0,
+      "duration": "quarter",
+      "dot": false,
+      "tie": false,
+      "rest": false,
+      "accidental": null,
+      "lyric_line_id": "v1-L1",
+      "lyric_char_index": 10,
+      "lyric_status": "ok",
+      "beat_start": 2,
+      "syllable": "my"
+    }
+  ],
+  "special_marks": [
+    "拍号 4/4；速度 ♩=100",
+    "全曲 25 小节，弱起 3 音",
+    "四声部钢琴声部见 piano_voicing（原谱 S/A/T/B）"
+  ],
+  "sight_singing": {
+    "starting_note": "4",
+    "phrases": [
+      {
+        "phrase_id": "PHRASE-01",
+        "line_ids": [
+          "v1-L1",
+          "v1-L2"
+        ],
+        "measures": [
+          1,
+          5
+        ],
+        "singable": true
+      },
+      {
+        "phrase_id": "PHRASE-02",
+        "line_ids": [
+          "v1-L2",
+          "v1-L3"
+        ],
+        "measures": [
+          5,
+          12
+        ],
+        "singable": true
+      },
+      {
+        "phrase_id": "PHRASE-03",
+        "line_ids": [
+          "v1-L4",
+          "v1-L5"
+        ],
+        "measures": [
+          12,
+          18
+        ],
+        "singable": true
+      },
+      {
+        "phrase_id": "PHRASE-04",
+        "line_ids": [
+          "v1-L5",
+          "v1-L6"
+        ],
+        "measures": [
+          18,
+          24
+        ],
+        "singable": true
+      }
+    ],
+    "note": "乐句 = 原谱音乐行（w: 歌词块）；一句可跨多个歌词行（line_ids 按出现序）。秒数时间轴见 timeline.json（由简谱节奏 + 速度精确计算，非插值）。"
+  },
+  "transcription": {
+    "status": "SOURCE_IMPORTED",
+    "method": "由已出版公有领域原谱（Open Hymnal Project 2014.06，X:193）机械转换；只做格式转换，不改音高 / 时值 / 歌词。",
+    "source": {
+      "name": "Open Hymnal Project（2014.06 版）",
+      "url": "http://openhymnal.org/OpenHymnal2014.06.abc",
+      "local_file": "sources/openhymnal/OpenHymnal2014.06.abc",
+      "tune_x": "193",
+      "tune_title": "Be Still My Soul",
+      "license": "Public Domain（项目自述可自由分发与修改）",
+      "credits": [
+        "Words: Katharina A. von Schlegel, 1752.  Translated by Jane L. Borthwick, 1855.",
+        "Music: 'Finlandia' Jean Sibelius, 1899.  Setting: from Jean Sibelius, 1900.",
+        "copyright: public domain.  This score is a part of the Open Hymnal Project, 2008 Revision."
+      ]
+    },
+    "verified_measures": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "proofread": {
+      "status": "PENDING",
+      "checked_by": null,
+      "date": null,
+      "note": "SOURCE_IMPORTED ≠ 已人工听校：转换忠实于原谱，但仍需人工对照原谱逐小节听校；通过前不得改为 VERIFIED，也不得据此宣称「已校对」。"
+    },
+    "known_gaps": [
+      "逐音节歌词对齐只覆盖第一节（各节共用同一旋律）；",
+      "第一节仍有 2 个音节的字符位置未能确定（ALIGNMENT_VERIFY_REQUIRED）"
+    ]
+  },
+  "piano_voicing": {
+    "basis": "Open Hymnal X:193 四声部（S/A/T/B）",
+    "voices": [
+      {
+        "voice_id": "S1V1",
+        "label": "S1V1",
+        "note_count": 69
+      },
+      {
+        "voice_id": "S1V2",
+        "label": "S1V2",
+        "note_count": 69
+      },
+      {
+        "voice_id": "S2V1",
+        "label": "S2V1",
+        "note_count": 68
+      },
+      {
+        "voice_id": "S2V2",
+        "label": "S2V2",
+        "note_count": 69
+      }
+    ],
+    "measures": [
+      {
+        "measure_no": 1,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 1,
+              "midi": 71,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 1,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 1,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 1,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 1,
+              "midi": 62,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 1,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 1,
+              "midi": 53,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 1,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 2,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 2,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 2,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 2,
+              "midi": 65,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 2,
+              "midi": 67,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 2,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 2,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 2,
+              "midi": 62,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 2,
+              "midi": 64,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 2,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 2,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 2,
+              "midi": 59,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 2,
+              "midi": 60,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 2,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 2,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 2,
+              "midi": 53,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 2,
+              "midi": 48,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 3,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 3,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 3,
+              "midi": 70,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 3,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 3,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 3,
+              "midi": 60,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 3,
+              "midi": 48,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 3,
+              "midi": 53,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 4,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 4,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 4,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 4,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 4,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 4,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 4,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 4,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 4,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 4,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 4,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 4,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 4,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 4,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 4,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 4,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 4,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 5,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 5,
+              "midi": 71,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 5,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 5,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 5,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 5,
+              "midi": 62,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 5,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 5,
+              "midi": 53,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 5,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 6,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 6,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 6,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 6,
+              "midi": 65,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 6,
+              "midi": 67,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 6,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 6,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 6,
+              "midi": 62,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 6,
+              "midi": 64,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 6,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 6,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 6,
+              "midi": 59,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 6,
+              "midi": 60,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 6,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 6,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 6,
+              "midi": 53,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 6,
+              "midi": 48,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 7,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 7,
+              "midi": 70,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 7,
+              "midi": 65,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 7,
+              "midi": 60,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 7,
+              "midi": 53,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 8,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 8,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 8,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 8,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 8,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 8,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 8,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 8,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 8,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 8,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 8,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 8,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 8,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 8,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 8,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 8,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 8,
+              "midi": 52,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 9,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "6",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 9,
+              "midi": 74,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 9,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 9,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 9,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 9,
+              "midi": 58,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 9,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "6",
+              "octave": -2,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 9,
+              "midi": 50,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 9,
+              "midi": 50,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 10,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 10,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 10,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 10,
+              "midi": 72,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 10,
+              "midi": 67,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 10,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 10,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 10,
+              "midi": 65,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 10,
+              "midi": 64,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 10,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 10,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 10,
+              "midi": 60,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 10,
+              "midi": 60,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "6",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 10,
+              "midi": 50,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 10,
+              "midi": 46,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 10,
+              "midi": 46,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 10,
+              "midi": 48,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 11,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 11,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 1,
+              "measure_no": 11,
+              "midi": 71,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 11,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 11,
+              "midi": 67,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 11,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 11,
+              "midi": 62,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 11,
+              "midi": 48,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": -2,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 11,
+              "midi": 43,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 12,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 12,
+              "midi": 71,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 1,
+              "measure_no": 12,
+              "midi": 71,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 12,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 12,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 12,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 12,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 12,
+              "midi": 66,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 12,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 12,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 12,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 12,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 12,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "2",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 12,
+              "midi": 43,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 12,
+              "midi": 43,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 12,
+              "midi": 46,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 3,
+              "measure_no": 12,
+              "midi": 47,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 13,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 13,
+              "midi": 70,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 13,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 13,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 13,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 13,
+              "midi": 60,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 13,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 13,
+              "midi": 46,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 13,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 14,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 14,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 14,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 14,
+              "midi": 67,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 14,
+              "midi": 70,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 14,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 14,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 14,
+              "midi": 65,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 14,
+              "midi": 65,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 14,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 14,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 14,
+              "midi": 62,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 14,
+              "midi": 62,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 14,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 1,
+              "measure_no": 14,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 14,
+              "midi": 59,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 3.5,
+              "measure_no": 14,
+              "midi": 59,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 15,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 15,
+              "midi": 70,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 15,
+              "midi": 64,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 15,
+              "midi": 61,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 15,
+              "midi": 58,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 16,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 16,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 16,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 16,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 16,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 16,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 16,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 16,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 16,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 16,
+              "midi": 61,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 16,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 16,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 16,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 16,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 16,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 16,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 16,
+              "midi": 52,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 17,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "6",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 17,
+              "midi": 74,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 17,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 17,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 17,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 17,
+              "midi": 58,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 17,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "6",
+              "octave": -2,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 17,
+              "midi": 50,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 17,
+              "midi": 50,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 18,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 18,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 18,
+              "midi": 72,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 18,
+              "midi": 72,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 18,
+              "midi": 67,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 18,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 18,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 18,
+              "midi": 65,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 18,
+              "midi": 64,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 18,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 18,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 18,
+              "midi": 60,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 18,
+              "midi": 60,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "6",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 18,
+              "midi": 50,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 18,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 18,
+              "midi": 58,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 18,
+              "midi": 60,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 19,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 19,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 1,
+              "measure_no": 19,
+              "midi": 71,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 19,
+              "midi": 64,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 19,
+              "midi": 67,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 19,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 19,
+              "midi": 62,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 19,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 19,
+              "midi": 55,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 20,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 20,
+              "midi": 71,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 1,
+              "measure_no": 20,
+              "midi": 71,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 20,
+              "midi": 70,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 20,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 20,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 20,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 20,
+              "midi": 66,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 20,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 20,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 20,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 20,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 20,
+              "midi": 62,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "2",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 20,
+              "midi": 55,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 20,
+              "midi": 43,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 20,
+              "midi": 46,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 3,
+              "measure_no": 20,
+              "midi": 47,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 21,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "4",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 21,
+              "midi": 70,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 21,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 21,
+              "midi": 65,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 21,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 21,
+              "midi": 60,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 21,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "half",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 21,
+              "midi": 48,
+              "length_whole": 0.75,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3,
+              "measure_no": 21,
+              "midi": 48,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 22,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 22,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 22,
+              "midi": 67,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "2",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 22,
+              "midi": 67,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 22,
+              "midi": 65,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 22,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 22,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "7",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 22,
+              "midi": 64,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "6",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 22,
+              "midi": 62,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 0,
+              "measure_no": 22,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 1,
+              "measure_no": 22,
+              "midi": 59,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 2,
+              "measure_no": 22,
+              "midi": 59,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": "sharp",
+              "beat_start": 3.5,
+              "measure_no": 22,
+              "midi": 59,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 22,
+              "midi": 48,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 1,
+              "measure_no": 22,
+              "midi": 48,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "quarter",
+              "dot": true,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 2,
+              "measure_no": 22,
+              "midi": 48,
+              "length_whole": 0.375,
+              "exact_fraction": null
+            },
+            {
+              "note": "5",
+              "octave": -2,
+              "duration": "eighth",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 3.5,
+              "measure_no": 22,
+              "midi": 48,
+              "length_whole": 0.125,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 23,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 23,
+              "midi": 65,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 23,
+              "midi": 60,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 23,
+              "midi": 58,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "whole",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 23,
+              "midi": 53,
+              "length_whole": 1,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 24,
+        "voices": {
+          "S1V1": [
+            {
+              "note": "1",
+              "octave": 0,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 24,
+              "midi": 65,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S1V2": [
+            {
+              "note": "5",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 24,
+              "midi": 60,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V1": [
+            {
+              "note": "4",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 24,
+              "midi": 58,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ],
+          "S2V2": [
+            {
+              "note": "1",
+              "octave": -1,
+              "duration": "quarter",
+              "dot": false,
+              "tie": false,
+              "rest": false,
+              "accidental": null,
+              "beat_start": 0,
+              "measure_no": 24,
+              "midi": 53,
+              "length_whole": 0.25,
+              "exact_fraction": null
+            }
+          ]
+        }
+      },
+      {
+        "measure_no": 25,
+        "voices": {
+          "S1V1": [],
+          "S1V2": [],
+          "S2V1": [],
+          "S2V2": []
+        }
+      }
+    ],
+    "generated_piano": {
+      "kind": "GENERATED_PIANO",
+      "note": "按结构化简谱（原谱四声部）生成的标准钢琴陪唱；纯钢琴，不加乐队 / 鼓 / 吉他。",
+      "midi_file": "assets/audio/MUS-S-0002-piano.mid"
+    }
+  },
+  "lyric_alignment": {
+    "rule": "逐音节对齐只写能确定的位置；不能确定处为 null 并计入 unresolved（ALIGNMENT_VERIFY_REQUIRED）。",
+    "method": "原谱 w: token ↔ 音符 1:1（权威对齐）→ token 合词 → 与歌词分行文本逐词匹配（行号 + 词首字符位置）。",
+    "verse_1_tokens": 69,
+    "unresolved": 2,
+    "resolved": 67,
+    "diagnostic": {
+      "blocks": [
+        16,
+        19,
+        17,
+        17
+      ],
+      "numbered": true,
+      "token_count": 69,
+      "note_count": 69,
+      "matched_words": 49,
+      "first_mismatch": 40,
+      "resyncs": [
+        {
+          "token": "Friend",
+          "skipped": 1
+        }
+      ]
+    }
+  },
+  "note": "曲调定位：曲调 FINLANDIA；Open Hymnal X:193（标题完全一致）。 谱面状态 SOURCE_IMPORTED（原谱导入）；人工听校 PENDING。"
+}

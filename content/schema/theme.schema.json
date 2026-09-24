@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mos-music.local/schema/theme.schema.json",
+  "title": "MOS-MUSIC Theme (门训主题注册表条目)",
+  "description": "音乐库的筛选主题。§11 规定音乐库必须支持按门训主题、经文、神学、年龄、场景、情感、难度、资源等级筛选。主题是标签，不是第三套课程体系：TH-01…TH-24 与 24 课单元同序，并通过 map_id 与 MOS 52 周 / LQ 关联。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["theme_id", "name", "group", "map_id", "lq_ids", "status"],
+  "properties": {
+    "theme_id": { "$ref": "common.schema.json#/$defs/themeId" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "group": {
+      "type": "string",
+      "enum": ["认识神", "认识基督", "新生命", "共同体", "生活", "使命与传递"]
+    },
+    "map_id": { "$ref": "common.schema.json#/$defs/mapId" },
+    "lq_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/lqId" } },
+
+    "core_passage": { "anyOf": [{ "$ref": "common.schema.json#/$defs/passageRef" }, { "type": "null" }] },
+    "bible_reference_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/bibleRefId" } },
+
+    "theology_tags": { "type": "array", "items": { "type": "string", "maxLength": 80 } },
+    "emotion_tags": { "type": "array", "items": { "type": "string", "maxLength": 40 } },
+    "age_groups": { "type": "array", "items": { "type": "string", "enum": ["儿童", "青少年", "成人", "长者", "跨代"] } },
+    "contexts": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/contextId" } },
+    "scenes": { "type": "array", "items": { "type": "string", "enum": ["主日", "小组", "家庭", "个人", "儿童", "跨代", "宣教"] } },
+    "difficulty_range": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "integer", "minimum": 1, "maximum": 5 },
+      "description": "[最小难度, 最大难度]。难度是演唱与理解难度，不是质量评分。"
+    },
+    "search_keywords": { "type": "array", "items": { "type": "string", "maxLength": 40 } },
+
+    "song_count": { "type": "integer", "minimum": 0, "description": "该主题下已入库歌曲数（由 tools/build-index.js 计算，不手填）。" },
+    "status": { "type": "string", "enum": ["shell", "draft", "active", "archived"] },
+    "provenance": { "$ref": "common.schema.json#/$defs/provenance" },
+    "version": { "$ref": "common.schema.json#/$defs/version" }
+  }
+}

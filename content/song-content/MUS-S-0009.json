@@ -1,0 +1,52 @@
+{
+  "song_id": "MUS-S-0009",
+  "content_version": "MUS-V-1.0.0",
+  "model": "song-content",
+  "scope_note": "这份内容是这首歌自己的（意义 / 经文 / 背景 / 默想 / 实践 / 祷告），不来自任何周次或课程；周次与课程只可以在下游**引用**它。",
+  "meaning": {
+    "text": null,
+    "status": "NOT_AVAILABLE",
+    "derived_from": null,
+    "note": "「这首歌在说什么」需要人工撰写。可作依据的既有字段：content/songs/MUS-S-0009.json#bible.bible_themes、#theology.theology、#formation.primary_function（当前 primary_function=TR）。程序不代写意义陈述。"
+  },
+  "scripture": {
+    "reference": "诗8:1–9",
+    "reference_ids": [
+      "BB-PSA-8-1"
+    ],
+    "text": null,
+    "status": "PROVIDED",
+    "derived_from": "content/songs/MUS-S-0009.json#bible.core_passage",
+    "note": "只存经文引用与 ID，不托管译本全文（ADR-0005）。"
+  },
+  "background": {
+    "text": null,
+    "status": "NOT_AVAILABLE",
+    "derived_from": "content/songs/MUS-S-0009.json#source",
+    "note": "这里只保留来源记载（作者 / 年代 / 出处），不代写背景叙述；背景文本需人工撰写。",
+    "source_note": "词：Carl Boberg（瑞典语），1885；英译与改编：Stuart K. Hine，1949；曲：瑞典民谣旋律（O STORE GUD）。瑞典语原词属公版，通行英译与改编部分的法律状态未判定。"
+  },
+  "reflection": {
+    "text": null,
+    "status": "NOT_AVAILABLE",
+    "derived_from": null,
+    "note": "默想文本需人工撰写。既有可依据字段：#formation.memory（0 条）、#formation.emotion（0 条）。程序不把记忆句直接改写成默想。"
+  },
+  "practice": {
+    "text": null,
+    "status": "NOT_AVAILABLE",
+    "derived_from": null,
+    "note": "歌曲记录里没有实践句 —— 尚未提供，不是遗漏（不得把课程作业式要求写成生命实践）。"
+  },
+  "prayer": {
+    "text": null,
+    "status": "NOT_AVAILABLE",
+    "derived_from": null,
+    "note": "歌曲记录里没有祷告句 —— 尚未提供。"
+  },
+  "boundaries": [
+    "内容层属于歌曲本身；不得重新绑定任何周次码 / 课程 ID / 某一次讲道",
+    "有文本必须有 derived_from（可追溯），不得凭空生成神学内容",
+    "本层不写入 content/songs/**（Song Core Record 逐字节不变）"
+  ]
+}

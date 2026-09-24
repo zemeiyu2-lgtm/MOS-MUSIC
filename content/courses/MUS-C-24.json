@@ -1,0 +1,85 @@
+{
+  "course_id": "MUS-C-24",
+  "unit_no": 24,
+  "group": "使命与传递",
+  "title": "门徒再生产",
+  "map_id": "MAP-C24",
+  "theme_id": "TH-24",
+  "lq_ids": [
+    "LQ08"
+  ],
+  "core_passage": "约15:1–8",
+  "bible_reference_ids": [],
+  "core_truth": "",
+  "theology": "",
+  "core_song": null,
+  "support_songs": [],
+  "sing_together": "",
+  "think": [],
+  "live": [],
+  "transmit": "",
+  "seven_steps": {
+    "S1_read": {
+      "label": "读",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S2_understand": {
+      "label": "明",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S3_sing": {
+      "label": "唱",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S4_remember": {
+      "label": "记",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S5_feel": {
+      "label": "感",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S6_act": {
+      "label": "行",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    },
+    "S7_transmit": {
+      "label": "传",
+      "prompt": null,
+      "content": null,
+      "content_status": "shell"
+    }
+  },
+  "contexts": [
+    "CTX-GRP",
+    "CTX-MIS"
+  ],
+  "sermon_week_ref": [
+    "W40",
+    "W47",
+    "W52"
+  ],
+  "status": "shell",
+  "provenance": {
+    "source_system": "manual",
+    "source_id": "MOS-MUSIC-24COURSE-LOCKED",
+    "source_field": "title",
+    "copy_policy": "authored",
+    "note": "24 课主题来自 V1.0 规格书已定案清单，本生成器只做结构骨架。"
+  },
+  "version": "MUS-V-0.1.0",
+  "created_at": null,
+  "updated_at": null
+}

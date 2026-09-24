@@ -1,0 +1,59 @@
+{
+  "MUS-S-0001": {
+    "source": "hymnary.org",
+    "url": "https://hymnary.org/text/amazing_grace_how_sweet_the_sound",
+    "http_status": 200,
+    "bytes": 790546,
+    "sha256_16": "983e83da456c1d75",
+    "page_title": "Amazing grace! (how sweet the sound) | Hymnary.org",
+    "meter": [],
+    "tune": [],
+    "media_urls": [
+      "https://hymnary.org/media/fetch/149185/hymnary/audio/GG2013/649%20amazing%20grace.mp3",
+      "https://hymnary.org/media/fetch/179244/hymnary/media/SCM/CAM_MP3-Amazing_Grace-PipeL1C-128-CAM_1173247390.mp3",
+      "https://hymnary.org/media/fetch/179245/hymnary/media/SCM/MP3-AmazingGrace-SPiano-128-CAM.mp3",
+      "https://hymnary.org/media/fetch/199187/hymnary/media/UMH/0378_AmazingGrace_sample.mp3",
+      "https://hymnary.org/media/fetch/205823/public%3A//hymnary/media/ELW2006/ELW779_Amazing_Grace%2C_How_Sweet_the_Sound.mp3",
+      "https://hymnary.org/media/fetch/233238/public%3A//hymnary/media/UMH/378.mp3",
+      "https://hymnary.org/media/fetch/90910/hymnary/audio/newbritain-peruc.mp3"
+    ],
+    "media_note": "媒体文件位于 hymnary.org 官方页面（原站）；本机直接抓取返回 403（站点有反爬盾），因此只登记为「原站可访问链接」，不下载、不转存。"
+  },
+  "MUS-S-0003": {
+    "source": "hymnary.org",
+    "url": "https://hymnary.org/text/jesus_calls_us_oer_the_tumult",
+    "http_status": 200,
+    "bytes": 645044,
+    "sha256_16": "bca78b5d90b91c8d",
+    "page_title": "Jesus Calls Us, O'er the Tumult | Hymnary.org",
+    "meter": [],
+    "tune": [],
+    "media_urls": [
+      "https://hymnary.org/media/fetch/149230/hymnary/audio/GG2013/720%20jesus%20calls%20us.mp3",
+      "https://hymnary.org/media/fetch/182788/hymnary/media/SCM/MP3-JesusCallsUs-StCatherine-PipeAL-128-CAM.mp3",
+      "https://hymnary.org/media/fetch/184485/hymnary/media/SCM/MP3-JesusCallsUs-StCatherine-SPiano-128-CAM_0.mp3",
+      "https://hymnary.org/media/fetch/199205/hymnary/media/UMH/0398_JesusCallsUs_sample.mp3",
+      "https://hymnary.org/media/fetch/205784/public%3A//hymnary/media/ELW2006/ELW696_Jesus_Calls_Us%3B_o%27er_the_Tumult.mp3",
+      "https://hymnary.org/media/fetch/233258/public%3A//hymnary/media/UMH/398.mp3",
+      "https://hymnary.org/media/fetch/90156/hymnary/audio/RHC/RHC_407.mp3"
+    ],
+    "media_note": "媒体文件位于 hymnary.org 官方页面（原站）；本机直接抓取返回 403（站点有反爬盾），因此只登记为「原站可访问链接」，不下载、不转存。"
+  },
+  "MUS-S-0005": {
+    "source": "hymnary.org",
+    "url": "https://hymnary.org/text/all_to_jesus_i_surrender",
+    "http_status": 200,
+    "bytes": 357859,
+    "sha256_16": "7d0c3dd149bc890b",
+    "page_title": "I Surrender All | Hymnary.org",
+    "meter": [],
+    "tune": [],
+    "media_urls": [
+      "https://hymnary.org/media/fetch/179574/hymnary/media/SCM/CAM_MP3-AllToJesusISurrender-Pipe01C-128-CAM_1177493326.mp3",
+      "https://hymnary.org/media/fetch/179575/hymnary/media/SCM/MP3-AllToJesus-Weedon-SPiano-128-CAM.mp3",
+      "https://hymnary.org/media/fetch/199165/hymnary/media/UMH/0354_ISurrenderAll_sample.mp3",
+      "https://hymnary.org/media/fetch/233227/public%3A//hymnary/media/UMH/354.mp3"
+    ],
+    "media_note": "媒体文件位于 hymnary.org 官方页面（原站）；本机直接抓取返回 403（站点有反爬盾），因此只登记为「原站可访问链接」，不下载、不转存。"
+  }
+}

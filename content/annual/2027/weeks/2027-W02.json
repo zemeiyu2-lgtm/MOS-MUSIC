@@ -1,0 +1,89 @@
+{
+  "annual_id": "MOS-MUSIC-ANNUAL-2027",
+  "year": 2027,
+  "week_id": "2027-W02",
+  "mos_week": "W02",
+  "sermon_week_ref": "mos-sermon-2027｜W02 路4:22–30「恩典没有围墙」（52周正式释经生产版 V2.0）",
+  "bible_passage_id": "路4:22–30",
+  "bible_reference_ids": [
+    "BB-LUK-4"
+  ],
+  "core_truth": {
+    "text": "恩典的主被自己的家乡拒绝——因为人想得到一位「先给我们」的耶稣，却容不下一位施恩给谁就施恩给谁的基督。",
+    "provenance": {
+      "source_system": "mos-sermon-2027",
+      "source_id": "W02",
+      "source_field": "⑥ 经文中心",
+      "copy_policy": "reference_only",
+      "note": "照录 2027 正式释经表经文中心。"
+    }
+  },
+  "life_question_id": "LQ04",
+  "music_unit_id": [
+    "MM16",
+    "MM20"
+  ],
+  "mm_rationale": "经文的冲突是「蒙恩资格由谁决定」：拿撒勒人要一位先给本乡的耶稣，耶稣却以两个外邦人例证说明恩典越过血缘与地缘的墙。这正是教会的本质（MM16：恩典共同体拆毁隔断的墙）与爱邻舍的方向（MM20：接纳圈外人）。同时这条「施恩主权不在我掌控里」的真理正面回应 LQ04（面对不确定和失控，我怎么生活）——把恩典的主权交还给神。",
+  "music_function": [
+    "TR",
+    "EM",
+    "CO"
+  ],
+  "core_song_id": "MUS-S-0002",
+  "auxiliary_song_id": [],
+  "seven_step_practice": {
+    "S1_read": {
+      "label": "读",
+      "prompt": "阅读或聆听本周经文，先不急着应用。",
+      "content": "读路4:22–30：留意同一群人前一刻「称赞」后一刻「想把祂推下山崖」，找出转变的转折句（耶稣举的两个外邦人例证）。",
+      "content_status": "reviewed"
+    },
+    "S2_understand": {
+      "label": "明",
+      "prompt": "这段经文究竟教导什么？",
+      "content": "这段教导的核心是恩典的主权：施恩给谁由主自己决定，不受血缘、地缘、资历限制。「先给我们」是一种所有权式的罪——把神的恩典据为己有。被家乡拒绝的耶稣仍然往前走：恩典的主权与恩典的普及同时成立。",
+      "content_status": "reviewed"
+    },
+    "S3_sing": {
+      "label": "唱",
+      "prompt": "通过歌曲表达已经理解的真理。",
+      "content": "唱《我灵镇静》第一节（歌词见教会诗本或授权来源）：歌中那位「不凭眼见仍掌权的主」，正是本段拒绝被 local 化的恩典之主。唱的时候想一想：我是否也想把恩典圈在自己人里面？",
+      "content_status": "reviewed"
+    },
+    "S4_remember": {
+      "label": "记",
+      "prompt": "本周希望门徒记住什么？",
+      "content": "记住一句话：「施恩的主权在神手里，不在我的掌控里。」（对应经文：路4:25–27）",
+      "content_status": "reviewed"
+    },
+    "S5_feel": {
+      "label": "感",
+      "prompt": "真理应该形成怎样的情感回应？",
+      "content": "让真理塑造的情感是：对恩典主权的敬畏与信靠——既不再焦虑地争「资格」，也不轻看任何「圈外人」。若唱完只觉得平静而未触碰自己对某类人的排斥，回到 S2 重读两个外邦人例证。",
+      "content_status": "reviewed"
+    },
+    "S6_act": {
+      "label": "行",
+      "prompt": "本周要完成的一个具体行动。",
+      "content": "本周主动向一位「圈外人」表达一次具体接纳：邀请一位平时不来往的肢体（不同背景、口音、年龄层）吃饭或喝茶；若你是组长，检查本组分座分组的习惯，本周坐到最边缘的人旁边。",
+      "content_status": "reviewed"
+    },
+    "S7_transmit": {
+      "label": "传",
+      "prompt": "本周要把什么传给别人？",
+      "content": "用一句你自己的话向家人解释「恩典没有围墙」（例如：神的恩典不查户口），并讲一个拿撒勒会堂的故事给他们听。",
+      "content_status": "reviewed"
+    }
+  },
+  "life_practice": "本周向一位「圈外人」作一次具体接纳行动（约餐、问候或换座），不以同类为由拒绝任何人进入恩典群体。",
+  "transmission_task": "向家人或组员用自己的话解释「恩典没有围墙」，并复述一个外邦人例证（寡妇或乃缦）。",
+  "expected_formation": "从「先给我们」的所有权心态转向以神的主权为安息；群体中开始出现对圈外人的具体接纳行为。",
+  "status": "reviewed",
+  "provenance": {
+    "source_system": "mos-sermon-2027",
+    "source_id": "2027-W02",
+    "source_field": "W02 全行",
+    "copy_policy": "reference_only",
+    "note": "周样本为音乐门训层。"
+  }
+}

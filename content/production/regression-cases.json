@@ -1,0 +1,159 @@
+{
+  "cases_version": "MUS-V-0.4.0",
+  "generated_at": "2026-09-21",
+  "owner": "MOS Sermon Music Production Platform V1.0",
+  "ground_truth": "W01–W04 历史裁决：W01–W03 为 Phase 2A.1 人工裁决并冻结；W04 为 Phase 2B 由已冻结技能试产并落盘。本文件是回归期望值，任何实现都不得反过来修改它。",
+  "rerun_rule": "每次技能或平台升级后自动重新执行；改动本文件等同于改动历史裁决，必须走人工批准。",
+  "song_layer_cases": [
+    {
+      "id": "W01",
+      "week": "2027-W01",
+      "song": "MUS-S-0001",
+      "role": "core",
+      "expect": {
+        "song_relation": "direct_biblical_expression",
+        "week_fit_verdict": "confirmed",
+        "decision": "Core Candidate",
+        "tier": "A",
+        "review_status": "under_review",
+        "risk_codes": []
+      }
+    },
+    {
+      "id": "W02",
+      "week": "2027-W02",
+      "song": "MUS-S-0002",
+      "role": "core",
+      "expect": {
+        "song_relation": "theme_response",
+        "week_fit_verdict": "needs_human_review",
+        "decision": "Needs Human Review",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": ["F"]
+      }
+    },
+    {
+      "id": "W03",
+      "week": "2027-W03",
+      "song": "MUS-S-0003",
+      "role": "core",
+      "expect": {
+        "song_relation": "direct_biblical_expression",
+        "week_fit_verdict": "confirmed",
+        "decision": "Core Candidate",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": []
+      }
+    },
+    {
+      "id": "W03-AUX",
+      "week": "2027-W03",
+      "song": "MUS-S-0005",
+      "role": "auxiliary",
+      "expect": {
+        "song_relation": "theme_response",
+        "week_fit_verdict": "needs_human_review",
+        "decision": "Needs Human Review",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": ["A", "B", "F"]
+      }
+    },
+    {
+      "id": "W04",
+      "week": "2027-W04",
+      "song": "MUS-S-0001",
+      "role": "core",
+      "expect": {
+        "song_relation": "direct_biblical_expression",
+        "week_fit_verdict": "confirmed",
+        "decision": "Core Candidate",
+        "tier": "A",
+        "review_status": "under_review",
+        "risk_codes": []
+      }
+    },
+    {
+      "id": "W04-C2",
+      "week": "2027-W04",
+      "song": "MUS-S-0002",
+      "role": "candidate",
+      "expect": {
+        "song_relation": "theme_response",
+        "week_fit_verdict": "needs_human_review",
+        "decision": "Needs Human Review",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": ["F"]
+      }
+    },
+    {
+      "id": "W04-C3",
+      "week": "2027-W04",
+      "song": "MUS-S-0003",
+      "role": "candidate",
+      "expect": {
+        "song_relation": "direct_biblical_expression",
+        "week_fit_verdict": "confirmed",
+        "decision": "Core Candidate",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": []
+      }
+    },
+    {
+      "id": "W04-C4",
+      "week": "2027-W04",
+      "song": "MUS-S-0004",
+      "role": "candidate",
+      "expect": {
+        "song_relation": "not_yet_assessed",
+        "week_fit_verdict": "needs_human_review",
+        "decision": "Needs Human Review",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": []
+      }
+    }
+  ],
+  "unit_layer_cases": [
+    {
+      "id": "U-W01",
+      "week": "W01",
+      "core_song": "MUS-S-0001",
+      "expect": { "gate_state": "PASS" },
+      "reason": "上游完整、关系直接、无 HIGH 风险、S6 四要素齐备、S7 含验证机制、核心歌此前未被使用。"
+    },
+    {
+      "id": "U-W02",
+      "week": "W02",
+      "core_song": "MUS-S-0002",
+      "expect": { "gate_state": "BLOCK" },
+      "reason": "主题级回应未承接本周功能导向，触发 HIGH 风险 F → 机器不可自动放行；人工已裁决为「保留歌曲 + 标记 Under Review」，不构成对历史周次的否定。"
+    },
+    {
+      "id": "U-W03",
+      "week": "W03",
+      "core_song": "MUS-S-0003",
+      "expect": { "gate_state": "PASS" },
+      "reason": "主歌关系直接且无 HIGH 风险；辅助歌风险属另一首歌，不回写主歌。"
+    },
+    {
+      "id": "U-W04",
+      "week": "W04",
+      "core_song": "MUS-S-0001",
+      "expect": { "gate_state": "REVIEW" },
+      "reason": "主歌此前已在 W01 作为主歌使用 → 跨周复用（N2），只升级人工复核，不自动否决。"
+    }
+  ],
+  "parity_requirement": "平台引擎 app/discernment.js 与已冻结技能 tools/discern.js 在全部歌曲层用例上必须逐字段一致（PARITY_FIELDS）；不一致即回归失败。",
+  "invariants": [
+    "Tier 与 Review Status 必须独立输出（不得合并）",
+    "theme_response 不得写成 direct_biblical_expression",
+    "单元层结论不得反写成歌曲层（song_layer_untouched 必须为 true）",
+    "Song ≠ Complete Discipleship Unit（song_is_complete_unit 必须为 false）",
+    "W01–W04 历史裁决文件在回归前后哈希必须一致"
+  ]
+}

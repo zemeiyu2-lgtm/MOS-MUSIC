@@ -1,0 +1,671 @@
+{
+  "pack_version": "MUS-V-1.2.0",
+  "generated_by": "MOS MUSIC teaching pack builder (one-shot transcription of user-provided V1.0 documents)",
+  "song_id": "MUS-S-0002",
+  "independence": {
+    "statement": "本教学包独立于 52 周课程：不绑定任何周次或课程，音乐教学与 MOS 门训课程彼此独立。",
+    "does_not_reference": [
+      "52W_WEEKS",
+      "MUS-C_LESSONS",
+      "SERMON_OUTLINES",
+      "COURSE_PROGRESS"
+    ]
+  },
+  "positioning": {
+    "training_value": "气息、长句、情感控制",
+    "difficulty_1": "4/4长句",
+    "difficulty_2": "情绪不夸张",
+    "best_for": "安静型表达"
+  },
+  "score_reference": {
+    "songbook": "新编赞美诗（四声部简谱）",
+    "song_number": 292,
+    "key": "F",
+    "time_signature": "4/4",
+    "tune_name": "FINLANDIA",
+    "availability": null,
+    "source_url": null,
+    "status": "REFERENCE_ONLY",
+    "note": "只存引用元数据；本仓另有 Open Hymnal X:193 原谱导入简谱（SOURCE_IMPORTED，听校 PENDING）。"
+  },
+  "chinese_lyrics": {
+    "status": "REFERENCE_ONLY",
+    "approved_version": null,
+    "note": "正式中文歌词版本尚未核定（译本权利 CI-0028 未决）；本包仅存乐句段定位标签（开头短标签），不含歌词全文，不臆测。"
+  },
+  "teacher_script": {
+    "method_ref": "docs/standards/MOS-SONG-TEACHING-METHOD-V1.0.md（十步法框架）+ 用户文档《五首样板歌曲教师教学脚本与制作包 V1.0》",
+    "core_principle": "不要教成「悲伤的歌」，而要教成「安静而有力量的歌」——不是把声音唱得很软，而是把声音唱得很稳。",
+    "teacher_guidance": [
+      "情感可以深，但音高不能往下掉。",
+      "渐强不是变大声，而是让乐句更有方向。",
+      "第二节起重点转移到：同一旋律的不同情感、句间呼吸、终止的安静收束。"
+    ],
+    "steps": [
+      {
+        "key": "step-01",
+        "label": "认识歌曲",
+        "teacher_says": "先不要急着唱。第一遍只听：旋律往哪里走？哪一句最容易记住？哪一句最难？",
+        "tasks": [
+          "只听",
+          "感受拍号与速度",
+          "找到重复句",
+          "不要求记忆歌词"
+        ]
+      },
+      {
+        "key": "step-02",
+        "label": "准备身体与声音",
+        "teacher_says": "我们先把声音放松，不追求大声。先找到稳定、自然的声音。",
+        "tasks": [
+          "深吸气，不耸肩",
+          "轻声哼唱起音",
+          "元音延长",
+          "避免用喉咙硬推高音"
+        ]
+      },
+      {
+        "key": "step-03",
+        "label": "教简谱",
+        "teacher_says": "先不要背每一个音。先看这一句是在上行、下行，还是停留。",
+        "tasks": [
+          "先看调号",
+          "找主音",
+          "看乐句轮廓",
+          "看长音、休止、重复音",
+          "再进入逐小节"
+        ]
+      },
+      {
+        "key": "step-04",
+        "label": "教节奏",
+        "teacher_says": "先拍节奏，再唱音高。",
+        "tasks": [
+          "手拍拍号",
+          "口读节奏",
+          "钢琴只给节拍",
+          "加入旋律"
+        ]
+      },
+      {
+        "key": "step-05",
+        "label": "视唱",
+        "teacher_says": "主音 → 起音 → 第一乐句 → 两句连接 → 整节；教师不连续示唱全部。",
+        "tasks": [
+          "反馈句式：这一句第二个音稍低，再唱一次。",
+          "节奏对了，现在保持住音高。",
+          "这一句先不要快，把长音唱稳。"
+        ]
+      },
+      {
+        "key": "step-06",
+        "label": "教歌词",
+        "teacher_says": "歌词教学独立于音符教学。",
+        "tasks": [
+          "说词",
+          "找关键词",
+          "找重音",
+          "处理辅音",
+          "再与旋律结合"
+        ]
+      },
+      {
+        "key": "step-07",
+        "label": "词曲合成",
+        "teacher_says": "少示范，多模仿；短句循环，逐步撤掉示范。",
+        "tasks": [
+          "一句听",
+          "一句跟",
+          "一句独唱",
+          "两句连接",
+          "一节完整"
+        ]
+      },
+      {
+        "key": "step-08",
+        "label": "真人示唱",
+        "teacher_says": "播放优秀真人版本，观察表达，不要求模仿歌手个人音色。",
+        "tasks": [
+          "呼吸在哪里",
+          "哪个词更突出",
+          "哪里收声",
+          "哪里渐强",
+          "哪里保持克制"
+        ]
+      },
+      {
+        "key": "step-09",
+        "label": "自主歌唱",
+        "teacher_says": "伴奏由强到弱，目标是逐渐脱离模仿。",
+        "tasks": [
+          "完整伴奏",
+          "简化钢琴",
+          "仅起音",
+          "无示唱"
+        ]
+      },
+      {
+        "key": "step-10",
+        "label": "独立视唱＋教别人",
+        "teacher_says": "请你不听示唱，只看谱唱一遍；然后把最难的一句教给另一个人。",
+        "tasks": [
+          "会唱不是终点",
+          "会带别人唱才进入可传递状态"
+        ]
+      }
+    ],
+    "first_lesson_flow": [
+      "开头：稳定起音，建立 4/4 内在拍",
+      "长句：先决定在哪里呼吸，再开始唱",
+      "交托与信实：词义沉重时音高不下掉",
+      "向盼望推进：渐强有方向"
+    ]
+  },
+  "phrase_cards": [
+    {
+      "phrase_id": "MUS-S-0002-TC-01",
+      "card_label": "1A",
+      "score_segment_ref": "原谱第1乐句",
+      "lyric_segment_ref": "开头「我灵镇静」",
+      "teaching_goal": [
+        "onset",
+        "breath"
+      ],
+      "goal_note": "起音、气息",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "4/4慢速",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 27.99,
+        "end": 38.82,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-02",
+      "card_label": "1B",
+      "score_segment_ref": "原谱第2乐句",
+      "lyric_segment_ref": "忧痛与忍耐",
+      "teaching_goal": [
+        "phrase"
+      ],
+      "goal_note": "长句、连贯",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "单句循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 38.82,
+        "end": 49.23,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-03",
+      "card_label": "1C",
+      "score_segment_ref": "原谱第3乐句",
+      "lyric_segment_ref": "交托上帝",
+      "teaching_goal": [
+        "pitch",
+        "phrase"
+      ],
+      "goal_note": "音准、句尾",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "句尾循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 49.23,
+        "end": 60.33,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-04",
+      "card_label": "1D",
+      "score_segment_ref": "原谱第4乐句",
+      "lyric_segment_ref": "主的信实",
+      "teaching_goal": [
+        "phrase"
+      ],
+      "goal_note": "乐句方向",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "轻伴奏",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 60.33,
+        "end": 71.53,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-05",
+      "card_label": "1E",
+      "score_segment_ref": "原谱第5乐句",
+      "lyric_segment_ref": "「天友最是善良」",
+      "teaching_goal": [
+        "diction",
+        "expression"
+      ],
+      "goal_note": "咬字、音色",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "低速+连奏",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 71.53,
+        "end": 82.45,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-06",
+      "card_label": "1F",
+      "score_segment_ref": "原谱第6乐句",
+      "lyric_segment_ref": "荆棘到欢乐",
+      "teaching_goal": [
+        "expression"
+      ],
+      "goal_note": "情绪控制",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "渐强→回落",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 82.45,
+        "end": 95.66,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-07",
+      "card_label": "2A",
+      "score_segment_ref": "原谱第7乐句",
+      "lyric_segment_ref": "第二节开头",
+      "teaching_goal": [
+        "onset",
+        "breath"
+      ],
+      "goal_note": "起音、呼吸",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "先主音",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 95.66,
+        "end": 106.46,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-08",
+      "card_label": "2B",
+      "score_segment_ref": "原谱第8乐句",
+      "lyric_segment_ref": "未来与过去",
+      "teaching_goal": [
+        "phrase"
+      ],
+      "goal_note": "长句",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "一句循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 106.46,
+        "end": 117.41,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-09",
+      "card_label": "2C",
+      "score_segment_ref": "原谱第9乐句",
+      "lyric_segment_ref": "希望与信心",
+      "teaching_goal": [
+        "pitch",
+        "dynamics"
+      ],
+      "goal_note": "音准、力度",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "中弱伴奏",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 117.41,
+        "end": 128.92,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-10",
+      "card_label": "2D",
+      "score_segment_ref": "原谱第10乐句",
+      "lyric_segment_ref": "奥妙变光明",
+      "teaching_goal": [
+        "phrase",
+        "dynamics"
+      ],
+      "goal_note": "乐句弧线",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "高潮前吸气",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 128.92,
+        "end": 140.1,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-11",
+      "card_label": "2E",
+      "score_segment_ref": "原谱第11乐句",
+      "lyric_segment_ref": "风浪仍听主命",
+      "teaching_goal": [
+        "expression",
+        "diction"
+      ],
+      "goal_note": "情感、咬字",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "慢速",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 140.1,
+        "end": 150.8,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-12",
+      "card_label": "2F",
+      "score_segment_ref": "原谱第12乐句",
+      "lyric_segment_ref": "救主吩咐声音",
+      "teaching_goal": [
+        "phrase"
+      ],
+      "goal_note": "收束、长音",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "句尾循环",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": null,
+        "recording_id": "changyong-shigeben-recording",
+        "identity_status": "UNNAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "「常用诗歌本」录音，文档未署名演唱者 → performer=null，不虚构。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "changyong-shigeben-recording",
+        "start": 150.8,
+        "end": 163.76,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    },
+    {
+      "phrase_id": "MUS-S-0002-TC-13",
+      "card_label": "3-4",
+      "score_segment_ref": "原谱后续乐句",
+      "lyric_segment_ref": "离别/泪谷/永在主周围等",
+      "teaching_goal": [
+        "expression",
+        "phrase"
+      ],
+      "goal_note": "视唱迁移、表达变化",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "按原谱逐句",
+      "vocal_reference": {
+        "type": "HUMAN",
+        "gender": null,
+        "performer": "索拉",
+        "recording_id": "sola-zhongwen-shishi-i",
+        "identity_status": "NAMED_SOURCE",
+        "status": "CANDIDATE",
+        "note": "索拉《中文圣诗精选I》真人表达候选；与 LRC 录音不是同一录音，时间码待校。"
+      },
+      "source_url": null,
+      "timecode": {
+        "recording_id": "sola-zhongwen-shishi-i",
+        "start": null,
+        "end": null,
+        "time_status": "TIME_PENDING",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": null
+    }
+  ],
+  "demo_withdrawal": {
+    "L1": {
+      "label": "全示唱",
+      "keeps": [
+        "full_demo",
+        "piano",
+        "metronome",
+        "score",
+        "lyrics"
+      ],
+      "removes": [],
+      "note": "学习者可以直接跟着真人示唱唱。"
+    },
+    "L2": {
+      "label": "半示唱",
+      "keeps": [
+        "onset_only",
+        "metronome",
+        "piano",
+        "score",
+        "lyrics"
+      ],
+      "removes": [
+        "continuous_vocal"
+      ],
+      "note": "保留起音、节拍、钢琴；移除连续人声示唱（起音由钢琴主音给出，界面如实说明，不假装有人声）。"
+    },
+    "L3": {
+      "label": "钢琴辅助",
+      "keeps": [
+        "piano",
+        "score",
+        "lyrics",
+        "onset_only"
+      ],
+      "removes": [
+        "vocal"
+      ],
+      "note": "只剩简谱、中文歌词、钢琴伴奏、可选起音。"
+    },
+    "L4": {
+      "label": "完全独立",
+      "keeps": [
+        "score",
+        "lyrics",
+        "random_phrase"
+      ],
+      "removes": [
+        "vocal",
+        "piano",
+        "metronome"
+      ],
+      "note": "只显示歌谱与歌词，可随机指定乐句。"
+    }
+  },
+  "coach_scope": {
+    "allowed_params": [
+      "pitch",
+      "rhythm",
+      "sustain",
+      "diction",
+      "dynamics",
+      "expression"
+    ],
+    "forbidden": [
+      "属灵程度评分",
+      "敬拜真诚度评分",
+      "排名",
+      "总分"
+    ],
+    "note": "AI 只反馈可观察的音乐行为（如「这一句第二个音略低。听一次钢琴起音，再唱一遍。」）；属灵/真诚度不是音乐参数，不能由 AI 判断。emotion_focus 是教学提示，不是属灵判断。"
+  },
+  "practice_path": {
+    "day_0": "听＋第一节",
+    "day_2": "低速完整唱",
+    "day_7": "随机乐句独立唱"
+  },
+  "teach_others_task": "慢速独立视唱训练曲：50%速度 → 75%速度 → 正常速度 → 随机抽句。",
+  "special_notes": [
+    "爱赞美的 LRC 时间轴是「常用诗歌本」录音；索拉是明确的真人演唱者，但两者不是同一录音 → 本包时间码全部 REFERENCE_ONLY，不绑定索拉。"
+  ]
+}

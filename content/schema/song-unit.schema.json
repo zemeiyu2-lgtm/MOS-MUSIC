@@ -1,0 +1,594 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "song-unit.schema.json",
+  "title": "MOS-MUSIC Song Unit（单曲完整歌曲单元 · V3.0）",
+  "description": "单曲完整歌曲单元契约：18 段（歌曲资料 / 统一歌词 / 统一简谱 / 男声示唱 / 女声示唱 / 钢琴伴奏 / 分句时间轴 / 光标跟谱数据 / 学唱教学 / 教谱教学 / 教词教学 / 声乐教学 / 真人教唱 / 内容理解 / 生命实践 / 教唱与传唱 / 版权与来源 / 最终验收）。标准见 docs/standards/MOS-SONG-PRODUCTION-TEMPLATE-V1.0.md。铁律：没有的资源一律 status=NOT_PROVIDED 且载荷留空，绝不为补满结构而虚构内容；等级 L1–L4 由 app/song-unit.js 派生，不写在本记录里。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "unit_id", "song_id", "unit_version", "standard", "status",
+    "song_meta", "lyrics", "score", "demos", "piano", "timeline", "cursor",
+    "teaching", "content_understanding", "life_practice", "transmission",
+    "rights", "acceptance", "created_at", "updated_at", "updated_by"
+  ],
+  "properties": {
+    "unit_id": {
+      "type": "string",
+      "pattern": "^MUS-SU-[0-9]{4}$",
+      "description": "单曲单元 ID：MUS-SU-NNNN，与 song_id 的序号一一对应。"
+    },
+    "song_id": {
+      "type": "string",
+      "pattern": "^MUS-S-[0-9]{4}$",
+      "description": "所属歌曲，必须已存在于详情层（content/songs/）。"
+    },
+    "unit_version": { "type": "string", "pattern": "^MUS-V-[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "standard": {
+      "type": "string",
+      "enum": ["song-production-template-1.0"],
+      "description": "所依据的制作标准版本（模板 V1.0）。"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["INTAKE", "VERIFYING", "LYRICS_READY", "SCORE_READY", "PIANO_READY", "DEMO_READY", "SYNC_READY", "TEACHING_READY", "REVIEW", "COMPLETE", "HOLD"],
+      "description": "生产状态（工作单 §二）。声明达到某状态必须有机械前置条件成立（app/song-unit.js statusConsistent）。"
+    },
+    "status_note": {
+      "type": ["string", "null"],
+      "description": "状态说明（为什么停在这里 / 在等什么）。"
+    },
+
+    "song_meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title_zh", "title_en", "lyricist", "composer", "translator", "language", "key", "time_signature", "tempo_bpm", "duration_seconds", "structure", "current_version", "source", "unresolved"],
+      "description": "01 歌曲资料。必须写明当前采用哪个版本、哪个调，避免同一首歌出现多个未说明版本。",
+      "properties": {
+        "title_zh": { "type": ["string", "null"] },
+        "title_en": { "type": ["string", "null"] },
+        "lyricist": { "type": ["string", "null"], "description": "作词。" },
+        "composer": { "type": ["string", "null"], "description": "作曲。" },
+        "translator": { "type": ["string", "null"], "description": "译词；未核验一律 null，不代填。" },
+        "language": { "type": ["string", "null"] },
+        "key": { "type": ["string", "null"], "description": "目标调（例如 1=C）；乐谱未制作前为 null。" },
+        "time_signature": { "type": ["string", "null"] },
+        "tempo_bpm": { "type": ["integer", "null"] },
+        "duration_seconds": { "type": ["integer", "null"] },
+        "structure": { "type": ["string", "null"], "description": "段落结构（主歌 / 副歌 / 桥段 / 尾声）。" },
+        "current_version": { "type": ["string", "null"], "description": "当前采用的歌词 / 乐谱版本说明。" },
+        "source": { "type": ["string", "null"] },
+        "unresolved": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 2 },
+          "description": "尚未核验的资料项，逐项列出（不得用空字符串掩盖）。"
+        }
+      }
+    },
+
+    "lyrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "language", "version_note", "sections", "note"],
+      "description": "02 统一歌词。必须结构化（lyric_id / section_id / line_id），不得只保存为图片或 PDF。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "language": { "type": ["string", "null"] },
+        "version_note": { "type": ["string", "null"] },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["section_id", "label", "lines"],
+            "properties": {
+              "section_id": { "type": "string", "minLength": 1 },
+              "label": { "type": ["string", "null"] },
+              "lines": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["line_id", "lyric_id", "phrase_id", "text"],
+                  "properties": {
+                    "line_id": { "type": "string", "minLength": 1 },
+                    "lyric_id": { "type": "string", "minLength": 1 },
+                    "phrase_id": { "type": ["string", "null"], "description": "对应分句时间轴的 phrase_id；时间轴未建立时可为 null。" },
+                    "text": { "type": "string", "minLength": 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "key", "time_signature", "tempo_bpm", "pickup", "starting_note", "range", "sections", "special_marks", "note"],
+      "description": "03 统一简谱。简谱是主界面，不是附属 PDF；记谱需含小节、时值、高低音点、升降号、附点、延音、休止与歌词对齐。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "key": { "type": ["string", "null"] },
+        "time_signature": { "type": ["string", "null"] },
+        "tempo_bpm": { "type": ["integer", "null"] },
+        "pickup": { "type": ["boolean"], "description": "是否弱起。" },
+        "starting_note": { "type": ["string", "null"], "description": "起音（视唱的起点）。" },
+        "range": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lowest", "highest"],
+          "properties": {
+            "lowest": { "type": ["string", "null"] },
+            "highest": { "type": ["string", "null"] }
+          }
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["section_id", "label", "measures"],
+            "properties": {
+              "section_id": { "type": "string", "minLength": 1 },
+              "label": { "type": ["string", "null"] },
+              "measures": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["measure_no", "repeat", "beats"],
+                  "properties": {
+                    "measure_no": { "type": "integer", "minimum": 1 },
+                    "repeat": { "type": ["string", "null"] },
+                    "beats": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["note", "octave", "duration", "dot", "tie", "rest", "accidental", "lyric_line_id", "lyric_char_index", "beat_start"],
+                        "properties": {
+                          "note": { "type": ["string", "null"], "description": "数字谱唱名 1–7；休止符为 null 且 rest=true。" },
+                          "octave": { "type": "integer", "minimum": -2, "maximum": 2, "description": "0 为中音区；正数上加点，负数下加点。" },
+                          "duration": { "type": "string", "enum": ["whole", "half", "quarter", "eighth", "sixteenth"] },
+                          "dot": { "type": "boolean" },
+                          "tie": { "type": "boolean" },
+                          "rest": { "type": "boolean" },
+                          "accidental": { "type": ["string", "null"], "enum": [null, "sharp", "flat", "natural"] },
+                          "lyric_line_id": { "type": ["string", "null"] },
+                          "lyric_char_index": { "type": ["integer", "null"] },
+                          "beat_start": { "type": ["number", "null"], "description": "该音符在本小节内的拍位（0 起）；供音符级光标使用，未知为 null。" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "special_marks": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "特殊记号（反复、延长、临时升降等），逐项列出。"
+        },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "demos": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["male", "female"],
+      "description": "04 男声示唱 / 05 女声示唱（真人）。教学示范不是唱片：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。缺一则如实 NOT_PROVIDED，不得用合成声音冒充真人示唱。V3.x 起：AI 示唱作为**独立可选轨**（ai_male / ai_female）存在，必须显式标注引擎与来源，**永不进入真人槽位、不参与等级派生**，前台必须写「AI 示唱（非真人）」。",
+      "properties": {
+        "male": { "$ref": "#/$defs/demoTrack" },
+        "female": { "$ref": "#/$defs/demoTrack" },
+        "ai_male": { "$ref": "#/$defs/aiDemoTrack" },
+        "ai_female": { "$ref": "#/$defs/aiDemoTrack" }
+      }
+    },
+
+    "piano": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "has_intro", "has_interlude", "beats_stable", "loopable", "key_matches", "note"],
+      "description": "06 钢琴伴奏（第一阶段统一只做钢琴）。它是用户自主歌唱的主要支持轨。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "has_intro": { "type": ["boolean", "null"] },
+        "has_interlude": { "type": ["boolean", "null"] },
+        "beats_stable": { "type": ["boolean", "null"] },
+        "loopable": { "type": ["boolean", "null"] },
+        "key_matches": { "type": ["boolean", "null"] },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "phrases", "note"],
+      "description": "07 分句时间轴：每句的 start / end（秒），并尽量给出小节范围。它是点击一句重唱、单句循环、当前句高亮与自动滚动的地基。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "phrases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["phrase_id", "section_id", "line_id", "start", "end", "measure_start", "measure_end", "marks"],
+            "properties": {
+              "phrase_id": { "type": "string", "minLength": 1 },
+              "section_id": { "type": ["string", "null"] },
+              "line_id": { "type": ["string", "null"] },
+              "start": { "type": "number", "minimum": 0 },
+              "end": { "type": "number", "minimum": 0 },
+              "measure_start": { "type": ["integer", "null"], "minimum": 1 },
+              "measure_end": { "type": ["integer", "null"], "minimum": 1 },
+              "marks": {
+                "type": "array",
+                "description": "句内真实时间标记。光标只按这里存在的标记工作：没有 measure 标记就不声索小节级、没有 note 标记就不声索音符级。",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["kind", "start", "end", "no", "index", "beat"],
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["measure", "beat", "note"] },
+                    "start": { "type": "number", "minimum": 0 },
+                    "end": { "type": "number", "minimum": 0 },
+                    "no": { "type": ["integer", "null"], "minimum": 1, "description": "小节号（kind=measure 时必填）。" },
+                    "beat": { "type": ["number", "null"], "description": "拍位（kind=beat 时必填）。" },
+                    "index": { "type": ["integer", "null"], "minimum": 0, "description": "音符序号（kind=note 时必填）。" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "cursor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "levels", "auto_scroll", "click_seek", "note"],
+      "description": "08 光标跟谱数据：音频时间轴 → 小节 → 音符 → 歌词。levels 只列出**真实可用**的跟随层级，没有的层级不得写入。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "levels": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["phrase", "measure", "beat", "note", "lyric"] },
+          "description": "真实可用的跟随层级。"
+        },
+        "auto_scroll": { "type": "boolean" },
+        "click_seek": { "type": "boolean", "description": "是否支持点击某句从小节处重新开始。" },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "teaching": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["learn", "score_class", "lyrics_class", "vocal", "live_teaching"],
+      "description": "09 学唱教学 / 10 教谱教学 / 11 教词教学 / 12 声乐教学 / 13 真人教唱。教学服务于歌唱，不把歌曲变成乐理课。",
+      "properties": {
+        "learn": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "note"],
+          "description": "09 学唱教学：五步（听 → 跟 → 一起唱 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备才能真正可用。",
+          "properties": {
+            "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+            "note": { "type": ["string", "null"] }
+          }
+        },
+        "score_class": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["items", "note"],
+          "description": "10 教谱教学：调 / 拍号 / 起音 / 音域 / 主要节奏 / 结构 / 易出错位置。这是这首谱的具体说明，必须随乐谱制作产生。",
+          "properties": {
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["key", "value", "note"],
+                "properties": {
+                  "key": { "type": "string", "enum": ["key_signature", "time_signature", "starting_note", "range", "main_rhythm", "structure", "error_prone"] },
+                  "value": { "type": ["string", "null"] },
+                  "note": { "type": ["string", "null"] }
+                }
+              }
+            },
+            "note": { "type": ["string", "null"] }
+          }
+        },
+        "lyrics_class": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["items", "note"],
+          "description": "11 教词教学：易读错 / 易唱错 / 词义 / 换气 / 长音 / 重音。",
+          "properties": {
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["key", "text", "note"],
+                "properties": {
+                  "key": { "type": "string", "enum": ["hard_to_read", "hard_to_sing", "word_meaning", "breath_point", "long_note", "stress"] },
+                  "text": { "type": ["string", "null"] },
+                  "note": { "type": ["string", "null"] }
+                }
+              }
+            },
+            "note": { "type": ["string", "null"] }
+          }
+        },
+        "vocal": {
+          "type": "array",
+          "description": "12 声乐教学：只记录这首歌真正需要的技术提示，一项一句话。",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "tip"],
+            "properties": {
+              "key": { "type": "string", "enum": ["breath", "onset", "breath_point", "high_note", "long_note", "intonation", "dynamics", "diction", "emotion"] },
+              "tip": { "type": "string", "minLength": 4 }
+            }
+          }
+        },
+        "live_teaching": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["modules", "note"],
+          "description": "13 真人教唱：优先短、碎、可重复利用的模块化资源，不要求每首歌拍长视频。",
+          "properties": {
+            "modules": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["key", "label", "status", "resource_id"],
+                "properties": {
+                  "key": { "type": "string", "minLength": 2 },
+                  "label": { "type": ["string", "null"] },
+                  "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+                  "resource_id": { "type": ["string", "null"], "pattern": "^MUS-R-[0-9]{4}$" }
+                }
+              }
+            },
+            "note": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "content_understanding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["what_it_sings", "core_truth", "bible_basis", "background", "why_church_sings", "note"],
+      "description": "14 内容理解：歌曲自身的内容层，不绑定某一周 / 某一课 / 某一篇讲章。凡写入文本必须写明 derived_from（可追溯到内容层的哪一个字段），不得凭空生成神学内容。",
+      "properties": {
+        "what_it_sings": { "$ref": "#/$defs/traceableText" },
+        "core_truth": { "$ref": "#/$defs/traceableText" },
+        "bible_basis": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["reference", "derived_from"],
+            "properties": {
+              "reference": { "type": ["string", "null"], "description": "经文出处（只存引用，不托管译本正文）。" },
+              "derived_from": { "type": ["string", "null"], "description": "权威来源字段路径。" }
+            }
+          }
+        },
+        "background": { "$ref": "#/$defs/traceableText" },
+        "why_church_sings": { "$ref": "#/$defs/traceableText" },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "life_practice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "items", "note"],
+      "description": "15 生命实践：只回答「这首歌唱进生活会怎样」，短而具体，不写成课程作业。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "text", "derived_from"],
+            "properties": {
+              "key": { "type": "string", "enum": ["prayer", "action", "relationship", "reminder", "discipline"] },
+              "text": { "type": ["string", "null"] },
+              "derived_from": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "transmission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "front_actions", "text", "derived_from", "note"],
+      "description": "16 教唱与传唱。front_actions 是歌曲页固定提供的三个动作（自我使用 / 教一个人 / 分享），属结构而非内容；text 必须是可追溯的既有内容。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "front_actions": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["sing_along", "teach_one", "share"] }
+        },
+        "text": { "type": ["string", "null"] },
+        "derived_from": { "type": ["string", "null"], "description": "文本的权威来源字段路径。" },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "source", "copyright_status", "license", "lyrics_source", "score_source", "audio_source", "permission", "internal_use", "public_use", "download_use", "derived_from", "notes"],
+      "description": "17 版权与来源。必须区分「歌曲存在」与「平台是否有权使用该资源」；词表沿用详情层法律状态（ADR-0012），来源行动状态不得映射为法律状态。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "source": { "type": ["string", "null"] },
+        "copyright_status": { "type": "string", "enum": ["unknown", "public_domain", "copyrighted", "licensed", "permission_granted"] },
+        "license": { "type": ["string", "null"] },
+        "lyrics_source": { "type": ["string", "null"] },
+        "score_source": { "type": ["string", "null"] },
+        "audio_source": { "type": ["string", "null"] },
+        "permission": { "type": ["string", "null"] },
+        "internal_use": { "type": ["string", "null"], "enum": [null, "unknown", "allowed", "not_allowed"] },
+        "public_use": { "type": ["string", "null"], "enum": [null, "unknown", "allowed", "not_allowed"] },
+        "download_use": { "type": ["string", "null"], "enum": [null, "unknown", "allowed", "not_allowed"] },
+        "derived_from": { "type": ["string", "null"], "description": "法律状态的权威来源字段路径（歌曲详情记录）。" },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data", "lyrics", "score", "demo", "piano", "teaching", "sync", "live_teaching", "content", "rights"],
+      "description": "18 最终验收：A 数据 / B 歌词 / C 简谱 / D 示唱 / E 钢琴 / F 教学 / G 同步 / H 教唱 / I 内容 / J 版权。PENDING 表示尚未裁决，不等于通过。",
+      "properties": {
+        "data": { "$ref": "#/$defs/acceptanceRow" },
+        "lyrics": { "$ref": "#/$defs/acceptanceRow" },
+        "score": { "$ref": "#/$defs/acceptanceRow" },
+        "demo": { "$ref": "#/$defs/acceptanceRow" },
+        "piano": { "$ref": "#/$defs/acceptanceRow" },
+        "teaching": { "$ref": "#/$defs/acceptanceRow" },
+        "sync": { "$ref": "#/$defs/acceptanceRow" },
+        "live_teaching": { "$ref": "#/$defs/acceptanceRow" },
+        "content": { "$ref": "#/$defs/acceptanceRow" },
+        "rights": { "$ref": "#/$defs/acceptanceRow" }
+      }
+    },
+
+    "expression_reference": {
+      "type": "array",
+      "description": "V3.x §十四 表达参考：逐句的力度 / 分句 / 气息 / 强调 / 高潮 / 收束 / 声乐提示。来源必须是真人（教师 / 示唱者 / 音乐编辑）；空数组 = 尚无人工表达参考 —— 不得由 AI 代写表达决定。",
+      "items": { "$ref": "#/$defs/expressionRow" }
+    },
+
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" },
+    "updated_by": { "type": "string", "minLength": 2 }
+  },
+
+  "$defs": {
+    "demoTrack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "slots", "singer", "note"],
+      "description": "真人示唱轨。source_type 说明这条音轨从哪来（本仓录制 / 外部真人 / 未来 AI），外部版本一律原站播放或嵌入，不下载转存。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "singer": { "type": ["string", "null"], "description": "真人示唱者代号；未录制为 null。不得填写虚拟歌手。", "enum": [null] },
+        "source_type": {
+          "type": ["string", "null"],
+          "enum": [null, "MOS_HUMAN_MALE", "MOS_HUMAN_FEMALE", "EXTERNAL_HUMAN_MALE", "EXTERNAL_HUMAN_FEMALE"],
+          "description": "真人来源类型。AI 类型不属于本轨（见 aiDemoTrack）。"
+        },
+        "source_url": { "type": ["string", "null"], "description": "外部真人版本的原站地址（可空）。外部资源一律保留在原站，不转存。 " },
+        "host_policy": { "type": ["string", "null"], "enum": [null, "original_site", "embedded", "hosted_authorized"] },
+        "slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["phrase_id", "start", "end", "resource_id"],
+            "description": "一个 slot = 一段可播放的示唱片段。外部真人版本用 source_url + start/end 定位时间段（同一完整版本可切出整曲 / 分节 / 副歌 / 难句），不重新上传。",
+            "properties": {
+              "phrase_id": { "type": ["string", "null"] },
+              "start": { "type": ["number", "null"] },
+              "end": { "type": ["number", "null"] },
+              "resource_id": { "type": ["string", "null"], "pattern": "^MUS-R-[0-9]{4}$" },
+              "source_url": { "type": ["string", "null"] },
+              "segment_of": { "type": ["string", "null"], "enum": [null, "full", "verse", "chorus", "hard_line", "phrase"] },
+              "note": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "aiDemoTrack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "is_ai", "engine", "vendor", "slots", "singer", "source_tracking", "note"],
+      "description": "AI 示唱轨（V3.x §九）：保留为正式资源类型，但**必须显式标注**、必须记录引擎与供应商、永不进入真人槽位、不参与等级派生。本轮只建立 schema / 播放器 / 元数据 / 来源追踪，不接入任何具体厂商（vendor / engine 均为 null）。",
+      "properties": {
+        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED", "NOT_CONNECTED"] },
+        "is_ai": { "type": "boolean", "description": "必须恒为 true；用于防止 AI 轨被当成真人示唱。", "enum": [true] },
+        "engine": { "type": ["string", "null"], "description": "歌声引擎标识；本轮未接入任何引擎，因此为 null。" },
+        "vendor": { "type": ["string", "null"], "description": "供应商标识；本轮为 null。" },
+        "singer": { "type": ["string", "null"], "description": "AI 不得使用真人名义；恒为 null。", "enum": [null] },
+        "source_tracking": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["generated_at", "prompt_ref", "model_version"],
+          "properties": {
+            "generated_at": { "type": ["string", "null"] },
+            "prompt_ref": { "type": ["string", "null"] },
+            "model_version": { "type": ["string", "null"] },
+            "license_note": { "type": ["string", "null"] }
+          }
+        },
+        "slots": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "expressionRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phrase_id", "dynamics", "phrasing", "breath", "emphasis", "climax", "release", "vocal_tip", "source_kind", "derived_from"],
+      "description": "表达参考（V3.x §十四）：由真人教师 / 优秀真人示唱者 / 音乐编辑给出，AI 以后只做「分析 → 比较 → 提示」，不得自行决定神学或属灵表达。",
+      "properties": {
+        "phrase_id": { "type": ["string", "null"] },
+        "dynamics": { "type": ["string", "null"] },
+        "phrasing": { "type": ["string", "null"] },
+        "breath": { "type": ["string", "null"] },
+        "emphasis": { "type": ["string", "null"] },
+        "climax": { "type": ["string", "null"] },
+        "release": { "type": ["string", "null"] },
+        "vocal_tip": { "type": ["string", "null"] },
+        "source_kind": { "type": "string", "enum": ["human_teacher", "human_singer", "music_editor"] },
+        "derived_from": { "type": ["string", "null"], "description": "该条表达参考的来源依据；无依据不得填写。" }
+      }
+    },
+    "traceableText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "derived_from"],
+      "description": "可追溯文本：要么 text=null（尚未撰写），要么 text 有值且 derived_from 指向权威来源字段；不得凭空生成。",
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "derived_from": { "type": ["string", "null"] }
+      }
+    },
+    "acceptanceRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "reviewer", "date", "note"],
+      "properties": {
+        "result": { "type": "string", "enum": ["PENDING", "PASS", "REVISE", "HOLD"] },
+        "reviewer": { "type": ["string", "null"], "description": "人工审核人；系统不得代填。" },
+        "date": { "type": ["string", "null"] },
+        "note": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

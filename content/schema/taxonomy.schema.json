@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mos-music/taxonomy.schema.json",
+  "title": "Song Taxonomy V1.1（四维分类）",
+  "description": "分类是检索入口，不是歌曲身份。四维＝主题 / 处境 / 场景 / 音乐；每维都是集合（多归属），不产生单选约束。空维度必须如实留空并说明原因。",
+  "type": "object",
+  "required": ["taxonomy_version", "model", "dimensions", "principles", "front_rules", "boundaries"],
+  "additionalProperties": true,
+  "properties": {
+    "taxonomy_version": { "type": "string", "pattern": "^MUS-V-[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "model": { "type": "string", "enum": ["song-taxonomy"] },
+    "schema": { "type": "string" },
+    "assignments_file": { "type": "string" },
+    "purpose": { "type": "string" },
+    "dimensions": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["key", "no", "label", "question", "multi"],
+        "additionalProperties": true,
+        "properties": {
+          "key": { "type": "string", "enum": ["theme", "situation", "scene", "music"] },
+          "no": { "type": "string", "pattern": "^0[1-4]$" },
+          "label": { "type": "string", "minLength": 1 },
+          "question": { "type": "string", "minLength": 1 },
+          "kind": { "type": "string", "enum": ["labels", "facets"] },
+          "multi": { "type": "boolean" },
+          "vocab": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key", "label"],
+              "additionalProperties": true,
+              "properties": {
+                "key": { "type": "string", "minLength": 1 },
+                "label": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "facets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key", "label"],
+              "additionalProperties": true,
+              "properties": {
+                "key": { "type": "string" },
+                "label": { "type": "string" },
+                "type": { "type": "string", "enum": ["scale_1_5", "number", "string", "object", "list"] }
+              }
+            }
+          },
+          "pending_extension_candidates": { "type": "object" },
+          "coverage_note": { "type": "string" },
+          "vocab_source": { "type": "string" }
+        }
+      }
+    },
+    "principles": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+    "front_rules": {
+      "type": "object",
+      "required": ["shows", "hides"],
+      "additionalProperties": true,
+      "properties": {
+        "shows": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+        "hides": { "type": "array", "minItems": 5, "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    },
+    "boundaries": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+    "counts": { "type": "object" },
+    "note": { "type": "string" }
+  }
+}

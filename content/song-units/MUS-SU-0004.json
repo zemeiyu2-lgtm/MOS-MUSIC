@@ -1,0 +1,1907 @@
+{
+  "unit_id": "MUS-SU-0004",
+  "song_id": "MUS-S-0004",
+  "unit_version": "MUS-V-1.1.0",
+  "standard": "song-production-template-1.0",
+  "status": "VERIFYING",
+  "status_note": "PILOT 10：生产工作包已建立，公版英文歌词已结构化入包；简谱草稿待人工听校；中文译本与音频资源待人工提供（缺什么就写什么，不虚构）。",
+  "song_meta": {
+    "title_zh": "普世欢腾",
+    "title_en": "Joy to the World",
+    "lyricist": "Isaac Watts",
+    "composer": "Isaac Watts",
+    "translator": null,
+    "language": "zh-Hans",
+    "key": null,
+    "time_signature": null,
+    "tempo_bpm": null,
+    "duration_seconds": null,
+    "structure": null,
+    "current_version": null,
+    "source": "Psalms of David Imitated（1719）；公版",
+    "unresolved": [
+      "英文标题取自歌曲标题括号内容，未独立核验",
+      "中文译词版本与译者未核验",
+      "当前采用的简谱版本未确定",
+      "调 / 拍号 / 速度 / 时长 / 段落结构未核验"
+    ]
+  },
+  "lyrics": {
+    "status": "PROVIDED",
+    "language": "en",
+    "version_note": "英文公版原文：词 Isaac Watts（1719，Psalms of David Imitated，诗 98 改篇）；曲 ANTIOCH（Lowe Mason 编曲，1839，取材 Handel）。本仓不托管任何中文译本。",
+    "sections": [
+      {
+        "section_id": "v1",
+        "label": "Verse 1",
+        "lines": [
+          {
+            "line_id": "v1-L1",
+            "lyric_id": "MUS-S-0004-L01",
+            "phrase_id": "PHRASE-01",
+            "text": "Joy to the world! The Lord is come;"
+          },
+          {
+            "line_id": "v1-L2",
+            "lyric_id": "MUS-S-0004-L02",
+            "phrase_id": "PHRASE-01",
+            "text": "Let earth receive her King;"
+          },
+          {
+            "line_id": "v1-L3",
+            "lyric_id": "MUS-S-0004-L03",
+            "phrase_id": "PHRASE-02",
+            "text": "Let every heart prepare Him room,"
+          },
+          {
+            "line_id": "v1-L4",
+            "lyric_id": "MUS-S-0004-L04",
+            "phrase_id": "PHRASE-02",
+            "text": "And heaven and nature sing,"
+          },
+          {
+            "line_id": "v1-L5",
+            "lyric_id": "MUS-S-0004-L05",
+            "phrase_id": "PHRASE-03",
+            "text": "And heaven and nature sing,"
+          },
+          {
+            "line_id": "v1-L6",
+            "lyric_id": "MUS-S-0004-L06",
+            "phrase_id": "PHRASE-03",
+            "text": "And heaven, and heaven, and nature sing."
+          }
+        ]
+      },
+      {
+        "section_id": "v2",
+        "label": "Verse 2",
+        "lines": [
+          {
+            "line_id": "v2-L1",
+            "lyric_id": "MUS-S-0004-L07",
+            "phrase_id": null,
+            "text": "Joy to the earth! The Savior reigns;"
+          },
+          {
+            "line_id": "v2-L2",
+            "lyric_id": "MUS-S-0004-L08",
+            "phrase_id": null,
+            "text": "Let men their songs employ;"
+          },
+          {
+            "line_id": "v2-L3",
+            "lyric_id": "MUS-S-0004-L09",
+            "phrase_id": null,
+            "text": "While fields and floods, rocks, hills and plains"
+          },
+          {
+            "line_id": "v2-L4",
+            "lyric_id": "MUS-S-0004-L10",
+            "phrase_id": null,
+            "text": "Repeat the sounding joy,"
+          },
+          {
+            "line_id": "v2-L5",
+            "lyric_id": "MUS-S-0004-L11",
+            "phrase_id": null,
+            "text": "Repeat the sounding joy,"
+          },
+          {
+            "line_id": "v2-L6",
+            "lyric_id": "MUS-S-0004-L12",
+            "phrase_id": null,
+            "text": "Repeat, repeat, the sounding joy."
+          }
+        ]
+      },
+      {
+        "section_id": "v3",
+        "label": "Verse 3",
+        "lines": [
+          {
+            "line_id": "v3-L1",
+            "lyric_id": "MUS-S-0004-L13",
+            "phrase_id": null,
+            "text": "No more let sins and sorrows grow,"
+          },
+          {
+            "line_id": "v3-L2",
+            "lyric_id": "MUS-S-0004-L14",
+            "phrase_id": null,
+            "text": "Nor thorns infest the ground;"
+          },
+          {
+            "line_id": "v3-L3",
+            "lyric_id": "MUS-S-0004-L15",
+            "phrase_id": null,
+            "text": "He comes to make His blessings flow"
+          },
+          {
+            "line_id": "v3-L4",
+            "lyric_id": "MUS-S-0004-L16",
+            "phrase_id": null,
+            "text": "Far as the curse is found,"
+          },
+          {
+            "line_id": "v3-L5",
+            "lyric_id": "MUS-S-0004-L17",
+            "phrase_id": null,
+            "text": "Far as the curse is found,"
+          },
+          {
+            "line_id": "v3-L6",
+            "lyric_id": "MUS-S-0004-L18",
+            "phrase_id": null,
+            "text": "Far as, far as, the curse is found."
+          }
+        ]
+      },
+      {
+        "section_id": "v4",
+        "label": "Verse 4",
+        "lines": [
+          {
+            "line_id": "v4-L1",
+            "lyric_id": "MUS-S-0004-L19",
+            "phrase_id": null,
+            "text": "He rules the world with truth and grace,"
+          },
+          {
+            "line_id": "v4-L2",
+            "lyric_id": "MUS-S-0004-L20",
+            "phrase_id": null,
+            "text": "And makes the nations prove"
+          },
+          {
+            "line_id": "v4-L3",
+            "lyric_id": "MUS-S-0004-L21",
+            "phrase_id": null,
+            "text": "The glories of His righteousness,"
+          },
+          {
+            "line_id": "v4-L4",
+            "lyric_id": "MUS-S-0004-L22",
+            "phrase_id": null,
+            "text": "And wonders of His love,"
+          },
+          {
+            "line_id": "v4-L5",
+            "lyric_id": "MUS-S-0004-L23",
+            "phrase_id": null,
+            "text": "And wonders of His love,"
+          },
+          {
+            "line_id": "v4-L6",
+            "lyric_id": "MUS-S-0004-L24",
+            "phrase_id": null,
+            "text": "And wonders, wonders, of His love."
+          }
+        ]
+      }
+    ],
+    "note": "全文见 content/production/packages/MUS-S-0004/lyrics.json；人工校对：PENDING。 中文译本尚未提供（常见译本各有版权方，本仓不托管）；需要中文时由人工提供已获授权文本（CI-0028）。"
+  },
+  "score": {
+    "status": "PROVIDED",
+    "key": "1=D（do=中央C上方同名音；可按会众音域整体移调）",
+    "time_signature": "2/4",
+    "tempo_bpm": 80,
+    "pickup": true,
+    "starting_note": "1'（起音）",
+    "range": {
+      "lowest": "D4",
+      "highest": "D5"
+    },
+    "sections": [
+      {
+        "section_id": "tune",
+        "label": "曲调（全曲各节共用同一旋律）",
+        "measures": [
+          {
+            "measure_no": 1,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L1",
+                "lyric_char_index": 11,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "world,"
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L1",
+                "lyric_char_index": 18,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "the"
+              }
+            ]
+          },
+          {
+            "measure_no": 2,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L1",
+                "lyric_char_index": 22,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "Lord"
+              },
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L1",
+                "lyric_char_index": 27,
+                "lyric_status": "ok",
+                "beat_start": 1,
+                "syllable": "is"
+              }
+            ]
+          },
+          {
+            "measure_no": 3,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "1",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L1",
+                "lyric_char_index": 30,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "come!"
+              },
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L2",
+                "lyric_char_index": 0,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "Let"
+              }
+            ]
+          },
+          {
+            "measure_no": 4,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "6",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L2",
+                "lyric_char_index": 4,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "earth"
+              },
+              {
+                "note": "6",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L2",
+                "lyric_char_index": 10,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "re"
+              }
+            ]
+          },
+          {
+            "measure_no": 5,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "7",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L2",
+                "lyric_char_index": null,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "ceive"
+              },
+              {
+                "note": "7",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L2",
+                "lyric_char_index": 18,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "her"
+              }
+            ]
+          },
+          {
+            "measure_no": 6,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "1",
+                "octave": 1,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L2",
+                "lyric_char_index": 22,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "King;"
+              },
+              {
+                "note": "1",
+                "octave": 1,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": 0,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "Let"
+              }
+            ]
+          },
+          {
+            "measure_no": 7,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "1",
+                "octave": 1,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0
+              },
+              {
+                "note": "7",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0.5
+              },
+              {
+                "note": "6",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 1
+              },
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 1.5
+              }
+            ]
+          },
+          {
+            "measure_no": 8,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": 10,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "heart"
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 0.75,
+                "melisma": true,
+                "syllable": "heart"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 1.25,
+                "melisma": true,
+                "syllable": "heart"
+              },
+              {
+                "note": "1",
+                "octave": 1,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": 16,
+                "lyric_status": "ok",
+                "beat_start": 1.75,
+                "syllable": "pre"
+              }
+            ]
+          },
+          {
+            "measure_no": 9,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "1",
+                "octave": 1,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "pare"
+              },
+              {
+                "note": "7",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 0.5,
+                "melisma": true,
+                "syllable": "pare"
+              },
+              {
+                "note": "6",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": 24,
+                "lyric_status": "ok",
+                "beat_start": 1,
+                "syllable": "Him"
+              },
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 1.5,
+                "melisma": true,
+                "syllable": "Him"
+              }
+            ]
+          },
+          {
+            "measure_no": 10,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": 28,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "room,"
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 0.75,
+                "melisma": true,
+                "syllable": "room,"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L3",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 1.25,
+                "melisma": true,
+                "syllable": "room,"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L4",
+                "lyric_char_index": 0,
+                "lyric_status": "ok",
+                "beat_start": 1.75,
+                "syllable": "And"
+              }
+            ]
+          },
+          {
+            "measure_no": 11,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L4",
+                "lyric_char_index": 11,
+                "lyric_status": "ok",
+                "beat_start": 0.5,
+                "syllable": "and"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L4",
+                "lyric_char_index": 15,
+                "lyric_status": "ok",
+                "beat_start": 1,
+                "syllable": "na"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L4",
+                "lyric_char_index": null,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "ture"
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L4",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 2,
+                "melisma": true,
+                "syllable": "ture"
+              }
+            ]
+          },
+          {
+            "measure_no": 12,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L4",
+                "lyric_char_index": 22,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "sing,"
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": 0,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "And"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 2,
+                "melisma": true,
+                "syllable": "And"
+              }
+            ]
+          },
+          {
+            "measure_no": 13,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0
+              },
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": 11,
+                "lyric_status": "ok",
+                "beat_start": 0.5,
+                "syllable": "and"
+              },
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": 15,
+                "lyric_status": "ok",
+                "beat_start": 1,
+                "syllable": "na"
+              },
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": null,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "ture"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 2,
+                "melisma": true,
+                "syllable": "ture"
+              }
+            ]
+          },
+          {
+            "measure_no": 14,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L5",
+                "lyric_char_index": 22,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "sing,"
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": 0,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "And"
+              },
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": null,
+                "lyric_status": "melisma",
+                "beat_start": 2,
+                "melisma": true,
+                "syllable": "And"
+              }
+            ]
+          },
+          {
+            "measure_no": 15,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "1",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0
+              },
+              {
+                "note": "1",
+                "octave": 1,
+                "duration": "quarter",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0.5
+              },
+              {
+                "note": "6",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": 12,
+                "lyric_status": "ok",
+                "beat_start": 1.5,
+                "syllable": "and"
+              }
+            ]
+          },
+          {
+            "measure_no": 16,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "5",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": true,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 0.75
+              },
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": null,
+                "lyric_char_index": null,
+                "lyric_status": "ALIGNMENT_VERIFY_REQUIRED",
+                "beat_start": 1.25
+              },
+              {
+                "note": "4",
+                "octave": 0,
+                "duration": "eighth",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": 24,
+                "lyric_status": "ok",
+                "beat_start": 1.75,
+                "syllable": "and"
+              }
+            ]
+          },
+          {
+            "measure_no": 17,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "3",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": 28,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "na"
+              },
+              {
+                "note": "2",
+                "octave": 0,
+                "duration": "quarter",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": null,
+                "lyric_status": "ok",
+                "beat_start": 1,
+                "syllable": "ture"
+              }
+            ]
+          },
+          {
+            "measure_no": 18,
+            "repeat": null,
+            "beats": [
+              {
+                "note": "1",
+                "octave": 0,
+                "duration": "half",
+                "dot": false,
+                "tie": false,
+                "rest": false,
+                "accidental": null,
+                "lyric_line_id": "v1-L6",
+                "lyric_char_index": 35,
+                "lyric_status": "ok",
+                "beat_start": 0,
+                "syllable": "sing."
+              }
+            ]
+          },
+          {
+            "measure_no": 19,
+            "repeat": null,
+            "beats": []
+          }
+        ]
+      }
+    ],
+    "special_marks": [
+      "拍号 2/4；速度 ♩=80",
+      "全曲 19 小节，弱起 3 音",
+      "四声部钢琴声部见 piano_voicing（原谱 S/A/T/B）"
+    ],
+    "note": "原谱导入简谱见 content/production/packages/MUS-S-0004/score.json（SOURCE_IMPORTED；transcription.status=SOURCE_IMPORTED）。 人工听校：PENDING —— 听校通过前验收 score 组保持 PENDING，不得宣称「已校对」。"
+  },
+  "demos": {
+    "male": {
+      "status": "PROVIDED",
+      "slots": [
+        {
+          "phrase_id": null,
+          "start": null,
+          "end": null,
+          "resource_id": "MUS-R-0124",
+          "source_url": "https://www.youtube.com/watch?v=ae2FIUQUCwk",
+          "segment_of": "full",
+          "note": "完整外部真人版本（原站播放）；分段时间点待人工看片回填。"
+        }
+      ],
+      "singer": null,
+      "note": "外部真人男声（Reuse First）：Sherina Joseph（Aaradhana TV 唱诗）（YouTube）。 原站播放 / 嵌入 / 时间段定位，不下载转存；教学适用性验收（demo 组）保持 PENDING，待人工看片确认。",
+      "source_type": "EXTERNAL_HUMAN_MALE",
+      "source_url": "https://www.youtube.com/watch?v=ae2FIUQUCwk",
+      "host_policy": "original_site"
+    },
+    "female": {
+      "status": "PROVIDED",
+      "slots": [
+        {
+          "phrase_id": null,
+          "start": null,
+          "end": null,
+          "resource_id": "MUS-R-0123",
+          "source_url": "https://www.youtube.com/watch?v=cLFVZBURSLc",
+          "segment_of": "full",
+          "note": "完整外部真人版本（原站播放）；分段时间点待人工看片回填。"
+        }
+      ],
+      "singer": null,
+      "note": "外部真人女声（Reuse First）：Renée Fleming（YouTube）。 原站播放 / 嵌入 / 时间段定位，不下载转存；教学适用性验收（demo 组）保持 PENDING，待人工看片确认。",
+      "source_type": "EXTERNAL_HUMAN_FEMALE",
+      "source_url": "https://www.youtube.com/watch?v=cLFVZBURSLc",
+      "host_policy": "original_site"
+    }
+  },
+  "piano": {
+    "status": "PROVIDED",
+    "has_intro": null,
+    "has_interlude": null,
+    "beats_stable": true,
+    "loopable": null,
+    "key_matches": true,
+    "note": "按结构化简谱（原谱四声部）生成的标准钢琴陪唱：assets/audio/MUS-S-0004-piano.mid。 纯钢琴，不加乐队 / 鼓 / 吉他；与 timeline.json 同源（同一简谱 × 同一速度）。资源记录 MUS-R-0125。"
+  },
+  "timeline": {
+    "status": "PROVIDED",
+    "phrases": [
+      {
+        "phrase_id": "PHRASE-01",
+        "section_id": "tune",
+        "line_id": "v1-L1",
+        "start": 0,
+        "end": 10.313,
+        "measure_start": 1,
+        "measure_end": 6,
+        "marks": [
+          {
+            "kind": "note",
+            "start": 0,
+            "end": 0.75,
+            "no": null,
+            "index": 0,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 0.75,
+            "end": 1.313,
+            "no": null,
+            "index": 1,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 1.313,
+            "end": 1.688,
+            "no": null,
+            "index": 2,
+            "beat": 1.75
+          },
+          {
+            "kind": "note",
+            "start": 1.688,
+            "end": 2.813,
+            "no": null,
+            "index": 3,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 2.813,
+            "end": 3.188,
+            "no": null,
+            "index": 4,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 3.188,
+            "end": 3.938,
+            "no": null,
+            "index": 5,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 3.938,
+            "end": 4.688,
+            "no": null,
+            "index": 6,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 4.688,
+            "end": 5.813,
+            "no": null,
+            "index": 7,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 5.813,
+            "end": 6.188,
+            "no": null,
+            "index": 8,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 6.188,
+            "end": 7.313,
+            "no": null,
+            "index": 9,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 7.313,
+            "end": 7.688,
+            "no": null,
+            "index": 10,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 7.688,
+            "end": 8.813,
+            "no": null,
+            "index": 11,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 8.813,
+            "end": 9.188,
+            "no": null,
+            "index": 12,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 9.188,
+            "end": 10.313,
+            "no": null,
+            "index": 13,
+            "beat": 0
+          }
+        ]
+      },
+      {
+        "phrase_id": "PHRASE-02",
+        "section_id": "tune",
+        "line_id": "v1-L3",
+        "start": 10.313,
+        "end": 20.063,
+        "measure_start": 6,
+        "measure_end": 12,
+        "marks": [
+          {
+            "kind": "note",
+            "start": 10.313,
+            "end": 10.688,
+            "no": null,
+            "index": 0,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 10.688,
+            "end": 11.063,
+            "no": null,
+            "index": 1,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 11.063,
+            "end": 11.438,
+            "no": null,
+            "index": 2,
+            "beat": 0.5
+          },
+          {
+            "kind": "note",
+            "start": 11.438,
+            "end": 11.813,
+            "no": null,
+            "index": 3,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 11.813,
+            "end": 12.188,
+            "no": null,
+            "index": 4,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 12.188,
+            "end": 12.75,
+            "no": null,
+            "index": 5,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 12.75,
+            "end": 13.125,
+            "no": null,
+            "index": 6,
+            "beat": 0.75
+          },
+          {
+            "kind": "note",
+            "start": 13.125,
+            "end": 13.5,
+            "no": null,
+            "index": 7,
+            "beat": 1.25
+          },
+          {
+            "kind": "note",
+            "start": 13.5,
+            "end": 13.875,
+            "no": null,
+            "index": 8,
+            "beat": 1.75
+          },
+          {
+            "kind": "note",
+            "start": 13.875,
+            "end": 14.25,
+            "no": null,
+            "index": 9,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 14.25,
+            "end": 14.625,
+            "no": null,
+            "index": 10,
+            "beat": 0.5
+          },
+          {
+            "kind": "note",
+            "start": 14.625,
+            "end": 15,
+            "no": null,
+            "index": 11,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 15,
+            "end": 15.375,
+            "no": null,
+            "index": 12,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 15.375,
+            "end": 15.938,
+            "no": null,
+            "index": 13,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 15.938,
+            "end": 16.313,
+            "no": null,
+            "index": 14,
+            "beat": 0.75
+          },
+          {
+            "kind": "note",
+            "start": 16.313,
+            "end": 16.688,
+            "no": null,
+            "index": 15,
+            "beat": 1.25
+          },
+          {
+            "kind": "note",
+            "start": 16.688,
+            "end": 17.063,
+            "no": null,
+            "index": 16,
+            "beat": 1.75
+          },
+          {
+            "kind": "note",
+            "start": 17.063,
+            "end": 17.438,
+            "no": null,
+            "index": 17,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 17.438,
+            "end": 17.813,
+            "no": null,
+            "index": 18,
+            "beat": 0.5
+          },
+          {
+            "kind": "note",
+            "start": 17.813,
+            "end": 18.188,
+            "no": null,
+            "index": 19,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 18.188,
+            "end": 18.563,
+            "no": null,
+            "index": 20,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 18.563,
+            "end": 18.938,
+            "no": null,
+            "index": 21,
+            "beat": 2
+          },
+          {
+            "kind": "note",
+            "start": 18.938,
+            "end": 20.063,
+            "no": null,
+            "index": 22,
+            "beat": 0
+          }
+        ]
+      },
+      {
+        "phrase_id": "PHRASE-03",
+        "section_id": "tune",
+        "line_id": "v1-L5",
+        "start": 20.063,
+        "end": 30.75,
+        "measure_start": 12,
+        "measure_end": 18,
+        "marks": [
+          {
+            "kind": "note",
+            "start": 20.063,
+            "end": 20.438,
+            "no": null,
+            "index": 0,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 20.438,
+            "end": 20.813,
+            "no": null,
+            "index": 1,
+            "beat": 2
+          },
+          {
+            "kind": "note",
+            "start": 20.813,
+            "end": 21.188,
+            "no": null,
+            "index": 2,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 21.188,
+            "end": 21.563,
+            "no": null,
+            "index": 3,
+            "beat": 0.5
+          },
+          {
+            "kind": "note",
+            "start": 21.563,
+            "end": 21.938,
+            "no": null,
+            "index": 4,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 21.938,
+            "end": 22.313,
+            "no": null,
+            "index": 5,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 22.313,
+            "end": 22.688,
+            "no": null,
+            "index": 6,
+            "beat": 2
+          },
+          {
+            "kind": "note",
+            "start": 22.688,
+            "end": 23.813,
+            "no": null,
+            "index": 7,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 23.813,
+            "end": 24.188,
+            "no": null,
+            "index": 8,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 24.188,
+            "end": 24.563,
+            "no": null,
+            "index": 9,
+            "beat": 2
+          },
+          {
+            "kind": "note",
+            "start": 24.563,
+            "end": 24.938,
+            "no": null,
+            "index": 10,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 24.938,
+            "end": 25.688,
+            "no": null,
+            "index": 11,
+            "beat": 0.5
+          },
+          {
+            "kind": "note",
+            "start": 25.688,
+            "end": 26.063,
+            "no": null,
+            "index": 12,
+            "beat": 1.5
+          },
+          {
+            "kind": "note",
+            "start": 26.063,
+            "end": 26.625,
+            "no": null,
+            "index": 13,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 26.625,
+            "end": 27,
+            "no": null,
+            "index": 14,
+            "beat": 0.75
+          },
+          {
+            "kind": "note",
+            "start": 27,
+            "end": 27.375,
+            "no": null,
+            "index": 15,
+            "beat": 1.25
+          },
+          {
+            "kind": "note",
+            "start": 27.375,
+            "end": 27.75,
+            "no": null,
+            "index": 16,
+            "beat": 1.75
+          },
+          {
+            "kind": "note",
+            "start": 27.75,
+            "end": 28.5,
+            "no": null,
+            "index": 17,
+            "beat": 0
+          },
+          {
+            "kind": "note",
+            "start": 28.5,
+            "end": 29.25,
+            "no": null,
+            "index": 18,
+            "beat": 1
+          },
+          {
+            "kind": "note",
+            "start": 29.25,
+            "end": 30.75,
+            "no": null,
+            "index": 19,
+            "beat": 0
+          }
+        ]
+      }
+    ],
+    "note": "由简谱节奏 × 速度精确计算（非插值）：content/production/packages/MUS-S-0004/timeline.json。 对「生成的钢琴陪唱」精确；对外部真人录音不适用（真人分段由人工回填）。 一句可跨多个歌词行（line_id 取行首词所在行，完整映射见工作包）。"
+  },
+  "cursor": {
+    "status": "PROVIDED",
+    "levels": [
+      "phrase",
+      "measure",
+      "note",
+      "lyric"
+    ],
+    "auto_scroll": false,
+    "click_seek": false,
+    "note": "层级依据：phrase（3 句 start/end）、measure（句内小节范围）、note（57 个音符级时间标记）、lyric（每个音符带 lyric_line_id / 音节）。beat 层未独立产出，不列入。 auto_scroll / click_seek 均为前端待实现项，如实 false。"
+  },
+  "teaching": {
+    "learn": {
+      "status": "PROVIDED",
+      "note": "五步（听 → 跟 → 一起唱 → 自己唱 → 再唱一次）的机械前置已齐备：词（公版原文）+ 谱（原谱导入）+ 钢琴（生成陪唱）+ 示唱（外部真人，原站播放）+ 时间轴（精确计算）。示唱分段时间点与教学适用性需人工确认后使用。"
+    },
+    "score_class": {
+      "items": [
+        {
+          "key": "key_signature",
+          "value": "1=D（do=中央C上方同名音；可按会众音域整体移调）",
+          "note": "可按会众音域整体移调；以简谱首调唱名教学。"
+        },
+        {
+          "key": "time_signature",
+          "value": "2/4",
+          "note": "速度 ♩=80（原谱 Q: 标记）。"
+        },
+        {
+          "key": "starting_note",
+          "value": "1'（起音）",
+          "note": "弱起小节起唱，第一音在拍前，注意不抢拍。"
+        },
+        {
+          "key": "range",
+          "value": "D4 – D5",
+          "note": "全曲音域（按原谱写法）；超出会众能力时整体移调，不改相对音程。"
+        },
+        {
+          "key": "main_rhythm",
+          "value": "eighth×38、quarter.×7、quarter×5",
+          "note": "按音符时值出现次数统计（原谱事实，非教学判断）。"
+        },
+        {
+          "key": "structure",
+          "value": "全曲 19 小节 + 弱起；乐句 = 原谱音乐行（见 timeline.json phrases）",
+          "note": "各节共用同一曲调；学会第一节即学会全曲旋律。"
+        },
+        {
+          "key": "error_prone",
+          "value": "第8小节 heart 一字多音；第8小节 heart 一字多音；第9小节 pare 一字多音",
+          "note": "仅列出谱面客观存在的延音线与一字多音位置；完整清单见 score.json 各音符 lyric_status/melisma/tie 标记。"
+        }
+      ],
+      "note": "本组全部条目由 tools/song-units.js 从原谱导入简谱机械派生（谱面客观事实）；教学重点判断由教者补充，不由工具代写。"
+    },
+    "lyrics_class": {
+      "items": [
+        {
+          "key": "breath_point",
+          "text": "句末 PHRASE-01",
+          "note": "原谱乐句边界即换气点：0.0–10.3s。"
+        },
+        {
+          "key": "breath_point",
+          "text": "句末 PHRASE-02",
+          "note": "原谱乐句边界即换气点：10.3–20.1s。"
+        },
+        {
+          "key": "breath_point",
+          "text": "句末 PHRASE-03",
+          "note": "原谱乐句边界即换气点：20.1–30.8s。"
+        },
+        {
+          "key": "long_note",
+          "text": "eighth（38 处，例：第1小节「the」、第3小节「Let」、第4小节「re」）",
+          "note": "全曲最长时值音符位置（保持时值唱满，不提前收）。"
+        }
+      ],
+      "note": "换气点与长音由谱面/时间轴机械派生；易读错 / 易唱错 / 词义 / 重音需人工与真人表达参考（V3.2 §十三），本轮留空不虚构。"
+    },
+    "vocal": [],
+    "live_teaching": {
+      "modules": [
+        {
+          "key": "intro",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-score",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-rhythm",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "teach-lyrics",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-01",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-02",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "phrase-03",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "vocal-tip-01",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        },
+        {
+          "key": "full-demo",
+          "label": null,
+          "status": "NOT_PROVIDED",
+          "resource_id": null
+        }
+      ],
+      "note": "真人教唱采用模块化短片（intro / teach-score / teach-rhythm / teach-lyrics / phrase-01 / phrase-02 / phrase-03 / vocal-tip-01 / full-demo），不要求每首歌拍长视频；未录制一律 NOT_PROVIDED。"
+    }
+  },
+  "content_understanding": {
+    "what_it_sings": {
+      "text": null,
+      "derived_from": null
+    },
+    "core_truth": {
+      "text": null,
+      "derived_from": null
+    },
+    "bible_basis": [
+      {
+        "reference": "诗98:4–9",
+        "derived_from": "content/songs/MUS-S-0004.json#bible.core_passage"
+      }
+    ],
+    "background": {
+      "text": null,
+      "derived_from": null
+    },
+    "why_church_sings": {
+      "text": null,
+      "derived_from": null
+    },
+    "note": "歌曲自身的内容层：不绑定某一周 / 某一课；凡写入文本必须可追溯到内容层字段（derived_from），不得凭空生成神学内容。"
+  },
+  "life_practice": {
+    "status": "NOT_PROVIDED",
+    "items": [],
+    "note": "尚无可落地的生命回应文本；不得把课程作业式要求写成生命实践。"
+  },
+  "transmission": {
+    "status": "NOT_PROVIDED",
+    "front_actions": [
+      "sing_along",
+      "teach_one",
+      "share"
+    ],
+    "text": null,
+    "derived_from": null,
+    "note": "歌曲页固定提供三个传唱动作（自己唱 / 教一个人 / 分享）；此处只补歌曲自身的传唱说明。"
+  },
+  "rights": {
+    "status": "NOT_PROVIDED",
+    "source": "Psalms of David Imitated（1719）；公版",
+    "copyright_status": "public_domain",
+    "license": "Public Domain",
+    "lyrics_source": null,
+    "score_source": null,
+    "audio_source": null,
+    "permission": null,
+    "internal_use": "unknown",
+    "public_use": "unknown",
+    "download_use": "unknown",
+    "derived_from": "content/songs/MUS-S-0004.json#copyright.copyright_status",
+    "notes": "法律状态沿用详情层词表（ADR-0012）；「歌曲存在」不等于「平台有权使用该资源」，可播放不等于可下载。"
+  },
+  "acceptance": {
+    "data": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "lyrics": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "score": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "demo": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "piano": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "teaching": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "sync": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "live_teaching": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "content": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "rights": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    }
+  },
+  "created_at": "2026-09-22T00:00:00+08:00",
+  "updated_at": "2026-09-23T00:00:00+08:00",
+  "updated_by": "song-unit-builder"
+}

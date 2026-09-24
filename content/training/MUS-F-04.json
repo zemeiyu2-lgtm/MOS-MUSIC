@@ -1,0 +1,17 @@
+{
+  "form_id": "MUS-F-04",
+  "code": "MUSIC-F04",
+  "title": "生命实践",
+  "purpose": "",
+  "used_by_training": [
+    "MUS-T-L3"
+  ],
+  "fields": [],
+  "output_formats": [
+    "screen",
+    "print",
+    "csv"
+  ],
+  "status": "shell",
+  "version": "MUS-V-0.1.0"
+}

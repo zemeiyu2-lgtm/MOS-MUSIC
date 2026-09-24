@@ -1,0 +1,417 @@
+{
+  "index_version": "MUS-V-0.5.0",
+  "generated_at": "2026-09-23T10:24:54.024Z",
+  "generated_by": "派生索引脚本（tools 下的 derive 工具）",
+  "derived": true,
+  "upstream_registry": "content/bible/reference-index.json",
+  "upstream_note": "上游经文登记表（52W / 课程）保持冻结；歌曲锚点不进该文件，改由本派生索引承载。",
+  "counts": {
+    "total": 50,
+    "registered": 10,
+    "pending": 40,
+    "promoted": 5
+  },
+  "anchors": [
+    {
+      "song_id": "MUS-S-0001",
+      "layer": "detail",
+      "promoted": false,
+      "core_passage": "弗2:1–10",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "layer": "detail",
+      "promoted": false,
+      "core_passage": "诗46:10",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0003",
+      "layer": "detail",
+      "promoted": false,
+      "core_passage": "太4:18–22",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "layer": "detail",
+      "promoted": false,
+      "core_passage": "诗98:4–9",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0005",
+      "layer": "detail",
+      "promoted": false,
+      "core_passage": "罗12:1",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0006",
+      "layer": "detail",
+      "promoted": true,
+      "core_passage": "启4:8–11",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "layer": "detail",
+      "promoted": true,
+      "core_passage": "约3:16",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "layer": "detail",
+      "promoted": true,
+      "core_passage": "腓2:9–11",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0009",
+      "layer": "detail",
+      "promoted": true,
+      "core_passage": "诗8:1–9",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0010",
+      "layer": "detail",
+      "promoted": true,
+      "core_passage": "耶哀3:22–23",
+      "status": "registered",
+      "basis": "歌曲详情记录 bible.core_passage"
+    },
+    {
+      "song_id": "MUS-S-0011",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0012",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0013",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0014",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0015",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0016",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0017",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0018",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0019",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0020",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0021",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0022",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0023",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0024",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0025",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0026",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0027",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0028",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0029",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0030",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0031",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0032",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0033",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0034",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0035",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0036",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0037",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0038",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0039",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0040",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0041",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0042",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0043",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0044",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0045",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0046",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0047",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0048",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0049",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    },
+    {
+      "song_id": "MUS-S-0050",
+      "layer": "intake",
+      "promoted": false,
+      "core_passage": null,
+      "status": "pending",
+      "basis": "仅登记层：经文锚点尚未认定，不得凭常识代填；认定口径见 docs/ADR/ADR-0013"
+    }
+  ],
+  "note": "歌曲经文锚点索引。status=pending 表示锚点尚未认定，此时不得写歌曲详情记录，也不得为填满必填字段而代填经文。升层后的歌曲只在此处出现一次（其登记层记录不再重复计入）。"
+}

@@ -1,0 +1,351 @@
+{
+  "package_version": "MUS-V-1.1.0",
+  "song_id": "MUS-S-0001",
+  "slot": "timeline",
+  "status": "SYNC_READY",
+  "tempo_bpm": 100,
+  "beats_per_second": 1.667,
+  "duration_seconds": 28.8,
+  "phrases": [
+    {
+      "phrase_id": "PHRASE-01",
+      "section_id": "tune",
+      "line_ids": [
+        "v1-L1",
+        "v1-L2"
+      ],
+      "start": 0,
+      "end": 7.8,
+      "measure_start": 1,
+      "measure_end": 4,
+      "marks": [
+        {
+          "kind": "note",
+          "start": 0,
+          "end": 0.6,
+          "no": null,
+          "index": 0,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 0.6,
+          "end": 1.8,
+          "no": null,
+          "index": 1,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 1.8,
+          "end": 2.1,
+          "no": null,
+          "index": 2,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 2.1,
+          "end": 2.4,
+          "no": null,
+          "index": 3,
+          "beat": 2.5
+        },
+        {
+          "kind": "note",
+          "start": 2.4,
+          "end": 3.6,
+          "no": null,
+          "index": 4,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 3.6,
+          "end": 4.2,
+          "no": null,
+          "index": 5,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 4.2,
+          "end": 5.4,
+          "no": null,
+          "index": 6,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 5.4,
+          "end": 6,
+          "no": null,
+          "index": 7,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 6,
+          "end": 7.2,
+          "no": null,
+          "index": 8,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 7.2,
+          "end": 7.8,
+          "no": null,
+          "index": 9,
+          "beat": 2
+        }
+      ]
+    },
+    {
+      "phrase_id": "PHRASE-02",
+      "section_id": "tune",
+      "line_ids": [
+        "v1-L2",
+        "v1-L3"
+      ],
+      "start": 7.8,
+      "end": 18.6,
+      "measure_start": 5,
+      "measure_end": 10,
+      "marks": [
+        {
+          "kind": "note",
+          "start": 7.8,
+          "end": 9,
+          "no": null,
+          "index": 0,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 9,
+          "end": 9.3,
+          "no": null,
+          "index": 1,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 9.3,
+          "end": 9.6,
+          "no": null,
+          "index": 2,
+          "beat": 2.5
+        },
+        {
+          "kind": "note",
+          "start": 9.6,
+          "end": 10.8,
+          "no": null,
+          "index": 3,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 10.8,
+          "end": 11.4,
+          "no": null,
+          "index": 4,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 11.4,
+          "end": 13.2,
+          "no": null,
+          "index": 5,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 13.2,
+          "end": 14.4,
+          "no": null,
+          "index": 6,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 14.4,
+          "end": 15,
+          "no": null,
+          "index": 7,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 15,
+          "end": 15.9,
+          "no": null,
+          "index": 8,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 15.9,
+          "end": 16.2,
+          "no": null,
+          "index": 9,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 16.2,
+          "end": 16.5,
+          "no": null,
+          "index": 10,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 16.5,
+          "end": 16.8,
+          "no": null,
+          "index": 11,
+          "beat": 2.5
+        },
+        {
+          "kind": "note",
+          "start": 16.8,
+          "end": 18,
+          "no": null,
+          "index": 12,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 18,
+          "end": 18.6,
+          "no": null,
+          "index": 13,
+          "beat": 2
+        }
+      ]
+    },
+    {
+      "phrase_id": "PHRASE-03",
+      "section_id": "tune",
+      "line_ids": [
+        "v1-L3",
+        "v1-L4"
+      ],
+      "start": 18.6,
+      "end": 28.8,
+      "measure_start": 11,
+      "measure_end": 16,
+      "marks": [
+        {
+          "kind": "note",
+          "start": 18.6,
+          "end": 19.5,
+          "no": null,
+          "index": 0,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 19.5,
+          "end": 19.8,
+          "no": null,
+          "index": 1,
+          "beat": 1.5
+        },
+        {
+          "kind": "note",
+          "start": 19.8,
+          "end": 20.1,
+          "no": null,
+          "index": 2,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 20.1,
+          "end": 20.4,
+          "no": null,
+          "index": 3,
+          "beat": 2.5
+        },
+        {
+          "kind": "note",
+          "start": 20.4,
+          "end": 21.6,
+          "no": null,
+          "index": 4,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 21.6,
+          "end": 22.2,
+          "no": null,
+          "index": 5,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 22.2,
+          "end": 23.4,
+          "no": null,
+          "index": 6,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 23.4,
+          "end": 23.7,
+          "no": null,
+          "index": 7,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 23.7,
+          "end": 24,
+          "no": null,
+          "index": 8,
+          "beat": 2.5
+        },
+        {
+          "kind": "note",
+          "start": 24,
+          "end": 25.2,
+          "no": null,
+          "index": 9,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 25.2,
+          "end": 25.8,
+          "no": null,
+          "index": 10,
+          "beat": 2
+        },
+        {
+          "kind": "note",
+          "start": 25.8,
+          "end": 27.6,
+          "no": null,
+          "index": 11,
+          "beat": 0
+        },
+        {
+          "kind": "note",
+          "start": 27.6,
+          "end": 28.8,
+          "no": null,
+          "index": 12,
+          "beat": 0
+        }
+      ]
+    }
+  ],
+  "rule": "时间由简谱节奏 × 速度**精确计算**（非插值、非猜测）：每个 note 标记都是乐谱自身的时值。该时间轴对「生成的钢琴陪唱」是精确的；对外部真人录音**不适用**，真人版本的分段时间点须由人工看片回填。",
+  "note": "共 3 句；总时长约 28.8s（按 ♩=100）"
+}

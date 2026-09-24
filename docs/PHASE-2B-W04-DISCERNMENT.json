@@ -1,0 +1,358 @@
+{
+  "skill": "mos-music-song-discernment@1.0.0",
+  "skill_status": "Frozen",
+  "week": "2027-W04",
+  "upstream": {
+    "bible_passage": "路5:27–32",
+    "core_truth": "耶稣来，是寻找并呼召罪人悔改；祂主动进入罪人的场所，跟随祂的人因此被带进祂寻找罪人的工作里。",
+    "lq": "LQ01",
+    "mm": [
+      "MM08",
+      "MM20"
+    ],
+    "music_function": [
+      "TR",
+      "CO",
+      "LI"
+    ]
+  },
+  "candidates": [
+    {
+      "week": "2027-W04",
+      "mos_week": "W04",
+      "bible_passage": "路5:27–32",
+      "core_truth": "耶稣来，是寻找并呼召罪人悔改；祂主动进入罪人的场所，跟随祂的人因此被带进祂寻找罪人的工作里。",
+      "lq": "LQ01",
+      "mm_theme": "MM08 跟随基督 + MM20 爱邻舍",
+      "music_function": [
+        "TR",
+        "CO",
+        "LI"
+      ],
+      "candidate_song": "MUS-S-0001 奇异恩典（Amazing Grace）",
+      "song_relation": "direct_biblical_expression",
+      "song_relation_evidence": "歌曲标签与本周核心真理的恩典性行动词共现：寻找——直接表达同一真理。",
+      "primary_function": "EM",
+      "eight_dimensions": {
+        "biblical_truth": "5/5 — 「前我失丧今被寻回、瞎眼今得看见」与弗2章「死在罪中—蒙恩得救」的恩典次序一致，救恩完全是神的作为。",
+        "theology": "4/5 — 反复传唱「恩典」一词，把救恩的起点固定在神的作为而非人的表现。",
+        "emotional_formation": "5/5 — 形成感恩与被寻回的安息，不是亢奋情绪，而是蒙爱的确据。",
+        "community": "3/5 — 适合会众齐唱；但对不熟悉英文圣诗传统的群体需要译本与教学。",
+        "congregational_participation": "4/5 — 旋律简单、句式重复，跨代可唱。",
+        "intergenerational": "4/5 — 是少有的祖孙同唱一首的圣诗，家庭传递成本低。",
+        "life_practice": "3/5 — 本身不指定行为，需要像 W01 单元那样配「交托一件具体重担」的实践指令才能落地。",
+        "mission": "2/5 — 见证视角弱；使命方向需靠单元的传（S7）补足。"
+      },
+      "s6": {
+        "object": "✓",
+        "content": "✓",
+        "time": "✓",
+        "method": "✓",
+        "ok": true,
+        "missing": [],
+        "text": "本周主动走近一位「平时被群体忽略、或你自己不想主动靠近」的具体的人：向一位曾因离婚、成瘾、财务失败、服刑经历被隐性边缘的弟兄姊妹（或不与你同背景、同圈层的人）发出一次具体邀请——约他吃饭或喝茶，或本周坐到他旁边认真聆听三十分钟，并明确说一句「我们欢迎你」。本周内完成，写下对象名字与完成时间；不先问「别人怎么看」，先问「基督会走近谁」；下周在小组或伙伴面前报告完成情况。"
+      },
+      "s7": {
+        "target": "✓",
+        "channel": "✓",
+        "verification": "✓",
+        "ok": true,
+        "text": "本周带一位肢体（或家人）走一遍七步法，就用本周的路5:27–32与《奇异恩典》。不要只讲道理，一起回答一句「这一周我要走近谁？」。下周见面时互相回报：他走近了谁、你走近了谁、结果如何。"
+      },
+      "risks": [],
+      "gospel_structure": "有福音锚点（基督的寻找与拯救、蒙恩得救、恩典先行）",
+      "tier": "A",
+      "review_status": "under_review",
+      "song_is_complete_unit": false,
+      "decision": "Core Candidate",
+      "week_fit_verdict": "Confirmed",
+      "week_fit_verdict_code": "confirmed",
+      "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+      "human_review_required": false,
+      "trace": [
+        "1) 选此歌：因 歌曲标签与本周核心真理的恩典性行动词共现：寻找——直接表达同一真理。",
+        "2) 关系判定：direct_biblical_expression（与核心真理恩典性行动词共现 → 直接表达同一真理）。",
+        "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 TR/CO/LI）。",
+        "4) S6：四要素齐备（Object/Content/Time/Method）。",
+        "5) S7：成立（含可验证机制）。",
+        "6) 神学风险：未发现。",
+        "7) Tier：A（来自歌曲记录 tier，独立字段）。",
+        "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Core Candidate）。"
+      ]
+    },
+    {
+      "week": "2027-W04",
+      "mos_week": "W04",
+      "bible_passage": "路5:27–32",
+      "core_truth": "耶稣来，是寻找并呼召罪人悔改；祂主动进入罪人的场所，跟随祂的人因此被带进祂寻找罪人的工作里。",
+      "lq": "LQ01",
+      "mm_theme": "MM08 跟随基督 + MM20 爱邻舍",
+      "music_function": [
+        "TR",
+        "CO",
+        "LI"
+      ],
+      "candidate_song": "MUS-S-0002 我灵镇静（Be Still, My Soul）",
+      "song_relation": "theme_response",
+      "song_relation_evidence": "歌曲记录明确声明为间接呼应/主题级/非经文直译，且无恩典性行动词共现。",
+      "primary_function": "EM",
+      "eight_dimensions": {
+        "biblical_truth": "4/5 — 「神是掌权的主，风暴终必止息」符合诗46与福音书平息风浪的脉络；但对「恩典主权不受人的边界限制」（路4:22–30）是间接呼应而非直译。",
+        "theology": "4/5 — 把「谁作主」的问题从人手里交还给神，正对 W02 的「先给我们」心态。",
+        "emotional_formation": "5/5 — 形成信靠与忍耐，特别针对失控焦虑；这是 LQ04 的情感方向。",
+        "community": "3/5 — 更适合个人与小组默祷式同唱，大场面会众参与度中等。",
+        "congregational_participation": "3/5 — 旋律悠长，需要一定教唱成本。",
+        "intergenerational": "2/5 — 对儿童偏难；跨代传递弱。",
+        "life_practice": "3/5 — 能支撑「交托一个具体失控之事」的实践，需单元指令配合。",
+        "mission": "2/5 — 使命指向弱。"
+      },
+      "s6": {
+        "object": "✓",
+        "content": "✓",
+        "time": "✓",
+        "method": "✓",
+        "ok": true,
+        "missing": [],
+        "text": "本周主动走近一位「平时被群体忽略、或你自己不想主动靠近」的具体的人：向一位曾因离婚、成瘾、财务失败、服刑经历被隐性边缘的弟兄姊妹（或不与你同背景、同圈层的人）发出一次具体邀请——约他吃饭或喝茶，或本周坐到他旁边认真聆听三十分钟，并明确说一句「我们欢迎你」。本周内完成，写下对象名字与完成时间；不先问「别人怎么看」，先问「基督会走近谁」；下周在小组或伙伴面前报告完成情况。"
+      },
+      "s7": {
+        "target": "✓",
+        "channel": "✓",
+        "verification": "✓",
+        "ok": true,
+        "text": "本周带一位肢体（或家人）走一遍七步法，就用本周的路5:27–32与《奇异恩典》。不要只讲道理，一起回答一句「这一周我要走近谁？」。下周见面时互相回报：他走近了谁、你走近了谁、结果如何。"
+      },
+      "risks": [
+        {
+          "code": "F",
+          "severity": "HIGH",
+          "message": "本周功能含 TR/CO（真理/共同体/使命导向），而歌曲仅为主题级回应 → 可能以安静/情感取代经文主张，须人工复核。"
+        }
+      ],
+      "gospel_structure": "⚠ 无基督论/救恩论锚点",
+      "tier": "B",
+      "review_status": "under_review",
+      "song_is_complete_unit": false,
+      "decision": "Needs Human Review",
+      "week_fit_verdict": "Needs Human Review",
+      "week_fit_verdict_code": "needs_human_review",
+      "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+      "human_review_required": true,
+      "trace": [
+        "1) 选此歌：因 歌曲记录明确声明为间接呼应/主题级/非经文直译，且无恩典性行动词共现。",
+        "2) 关系判定：theme_response（记录中含非直译声明）。",
+        "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 TR/CO/LI）。",
+        "4) S6：四要素齐备（Object/Content/Time/Method）。",
+        "5) S7：成立（含可验证机制）。",
+        "6) 神学风险：F[HIGH]。",
+        "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+        "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Needs Human Review）。"
+      ]
+    },
+    {
+      "week": "2027-W04",
+      "mos_week": "W04",
+      "bible_passage": "路5:27–32",
+      "core_truth": "耶稣来，是寻找并呼召罪人悔改；祂主动进入罪人的场所，跟随祂的人因此被带进祂寻找罪人的工作里。",
+      "lq": "LQ01",
+      "mm_theme": "MM08 跟随基督 + MM20 爱邻舍",
+      "music_function": [
+        "TR",
+        "CO",
+        "LI"
+      ],
+      "candidate_song": "MUS-S-0003 耶稣呼召（Jesus Calls Us）",
+      "song_relation": "direct_biblical_expression",
+      "song_relation_evidence": "歌曲标签与本周核心真理的恩典性行动词共现：呼召——直接表达同一真理。",
+      "primary_function": "LI",
+      "eight_dimensions": {
+        "biblical_truth": "5/5 — 「耶稣呼召，放下产业与亲爱之人，跟从祂」与路5:1–11「撇下所有的跟随」及太4章呼召叙述同构。",
+        "theology": "4/5 — 把呼召的起点固定在基督的呼召行动上（主语是耶稣），可防止「奉献成本式」道德主义。",
+        "emotional_formation": "4/5 — 形成降服与决志；需要警惕只停留在决志情绪而无具体行为。",
+        "community": "4/5 — 会众齐唱与小组决志场景都适用。",
+        "congregational_participation": "4/5 — 句式规整，易教易学。",
+        "intergenerational": "3/5 — 原为儿童圣诗传统而作，儿童可学。",
+        "life_practice": "5/5 — 「放下……跟从」可直接翻译成一项具体顺服行动，是本组样本中最能落地的歌。",
+        "mission": "3/5 — 呼召含差遣意味，但未直接指向万民。"
+      },
+      "s6": {
+        "object": "✓",
+        "content": "✓",
+        "time": "✓",
+        "method": "✓",
+        "ok": true,
+        "missing": [],
+        "text": "本周主动走近一位「平时被群体忽略、或你自己不想主动靠近」的具体的人：向一位曾因离婚、成瘾、财务失败、服刑经历被隐性边缘的弟兄姊妹（或不与你同背景、同圈层的人）发出一次具体邀请——约他吃饭或喝茶，或本周坐到他旁边认真聆听三十分钟，并明确说一句「我们欢迎你」。本周内完成，写下对象名字与完成时间；不先问「别人怎么看」，先问「基督会走近谁」；下周在小组或伙伴面前报告完成情况。"
+      },
+      "s7": {
+        "target": "✓",
+        "channel": "✓",
+        "verification": "✓",
+        "ok": true,
+        "text": "本周带一位肢体（或家人）走一遍七步法，就用本周的路5:27–32与《奇异恩典》。不要只讲道理，一起回答一句「这一周我要走近谁？」。下周见面时互相回报：他走近了谁、你走近了谁、结果如何。"
+      },
+      "risks": [],
+      "gospel_structure": "有福音锚点（呼召主的主权）",
+      "tier": "B",
+      "review_status": "under_review",
+      "song_is_complete_unit": false,
+      "decision": "Core Candidate",
+      "week_fit_verdict": "Confirmed",
+      "week_fit_verdict_code": "confirmed",
+      "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+      "human_review_required": false,
+      "trace": [
+        "1) 选此歌：因 歌曲标签与本周核心真理的恩典性行动词共现：呼召——直接表达同一真理。",
+        "2) 关系判定：direct_biblical_expression（与核心真理恩典性行动词共现 → 直接表达同一真理）。",
+        "3) 主功能：LI（取自歌曲 formation.primary_function；周功能为 TR/CO/LI）。",
+        "4) S6：四要素齐备（Object/Content/Time/Method）。",
+        "5) S7：成立（含可验证机制）。",
+        "6) 神学风险：未发现。",
+        "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+        "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Core Candidate）。"
+      ]
+    },
+    {
+      "week": "2027-W04",
+      "mos_week": "W04",
+      "bible_passage": "路5:27–32",
+      "core_truth": "耶稣来，是寻找并呼召罪人悔改；祂主动进入罪人的场所，跟随祂的人因此被带进祂寻找罪人的工作里。",
+      "lq": "LQ01",
+      "mm_theme": "MM08 跟随基督 + MM20 爱邻舍",
+      "music_function": [
+        "TR",
+        "CO",
+        "LI"
+      ],
+      "candidate_song": "MUS-S-0004 普世欢腾（Joy to the World）",
+      "song_relation": "not_yet_assessed",
+      "song_relation_evidence": "证据不足：既无行动词共现，也无姿态词或叙事标记 → 交人工裁决。",
+      "primary_function": "EM",
+      "eight_dimensions": {
+        "biblical_truth": "4/5 — 「主已来临，让大地欢腾」与路4:21「今天这经应验了」的「已经开始了」性质一致；诗98 是耶稣引用赛61 的背景脉络。",
+        "theology": "3/5 — 喜乐宣告「主临到」，但对「受膏—差遣—释放」的具体内容较概括。",
+        "emotional_formation": "5/5 — 形成喜乐与惊奇，是恩典临到的情感回应。",
+        "community": "5/5 — 极高的会众参与度，家庭、儿童、跨代皆宜。",
+        "congregational_participation": "5/5 — 几乎零教唱成本。",
+        "intergenerational": "5/5 — 儿童最早学会的圣诗之一，家庭传递极强。",
+        "life_practice": "2/5 — 喜乐宣告本身不产生具体行为，实践须靠单元 S6 指令。",
+        "mission": "3/5 — 「主临到万方」隐含普世视野。"
+      },
+      "s6": {
+        "object": "✓",
+        "content": "✓",
+        "time": "✓",
+        "method": "✓",
+        "ok": true,
+        "missing": [],
+        "text": "本周主动走近一位「平时被群体忽略、或你自己不想主动靠近」的具体的人：向一位曾因离婚、成瘾、财务失败、服刑经历被隐性边缘的弟兄姊妹（或不与你同背景、同圈层的人）发出一次具体邀请——约他吃饭或喝茶，或本周坐到他旁边认真聆听三十分钟，并明确说一句「我们欢迎你」。本周内完成，写下对象名字与完成时间；不先问「别人怎么看」，先问「基督会走近谁」；下周在小组或伙伴面前报告完成情况。"
+      },
+      "s7": {
+        "target": "✓",
+        "channel": "✓",
+        "verification": "✓",
+        "ok": true,
+        "text": "本周带一位肢体（或家人）走一遍七步法，就用本周的路5:27–32与《奇异恩典》。不要只讲道理，一起回答一句「这一周我要走近谁？」。下周见面时互相回报：他走近了谁、你走近了谁、结果如何。"
+      },
+      "risks": [],
+      "gospel_structure": "有福音锚点（主临到世界、恩典临到）",
+      "tier": "B",
+      "review_status": "under_review",
+      "song_is_complete_unit": false,
+      "decision": "Needs Human Review",
+      "week_fit_verdict": "Needs Human Review",
+      "week_fit_verdict_code": "needs_human_review",
+      "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+      "human_review_required": true,
+      "trace": [
+        "1) 选此歌：因 证据不足：既无行动词共现，也无姿态词或叙事标记 → 交人工裁决。",
+        "2) 关系判定：not_yet_assessed（无行动词共现）。",
+        "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 TR/CO/LI）。",
+        "4) S6：四要素齐备（Object/Content/Time/Method）。",
+        "5) S7：成立（含可验证机制）。",
+        "6) 神学风险：未发现。",
+        "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+        "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Needs Human Review）。"
+      ]
+    },
+    {
+      "week": "2027-W04",
+      "mos_week": "W04",
+      "bible_passage": "路5:27–32",
+      "core_truth": "耶稣来，是寻找并呼召罪人悔改；祂主动进入罪人的场所，跟随祂的人因此被带进祂寻找罪人的工作里。",
+      "lq": "LQ01",
+      "mm_theme": "MM08 跟随基督 + MM20 爱邻舍",
+      "music_function": [
+        "TR",
+        "CO",
+        "LI"
+      ],
+      "candidate_song": "MUS-S-0005 一切全献上（I Surrender All）",
+      "song_relation": "theme_response",
+      "song_relation_evidence": "歌曲仅提供姿态类情感回应（降服），未承接经文主张。",
+      "primary_function": "EM",
+      "eight_dimensions": {
+        "biblical_truth": "3/5 — 「全然献上」与罗12:1 一致；但「我全献上」的自述容易先于「主的呼召与恩典」，需以 W03 单元的次序（先认识主、后撇下）校正。",
+        "theology": "3/5 — 训练降服的意愿；单独使用有道德主义风险，必须挂在呼召的基督论前提上。",
+        "emotional_formation": "4/5 — 形成降服与交托的情感，回应「我整夜劳力」的自我依靠。",
+        "community": "4/5 — 布道会与小组决志传统中参与度高。",
+        "congregational_participation": "4/5 — 旋律简单，副歌易记。",
+        "intergenerational": "2/5 — 对儿童较抽象。",
+        "life_practice": "4/5 — 副歌本身即承诺句，可要求唱者说出一件具体交托事项。",
+        "mission": "1/5 — 无直接使命指向。"
+      },
+      "s6": {
+        "object": "✓",
+        "content": "✓",
+        "time": "✓",
+        "method": "✓",
+        "ok": true,
+        "missing": [],
+        "text": "本周主动走近一位「平时被群体忽略、或你自己不想主动靠近」的具体的人：向一位曾因离婚、成瘾、财务失败、服刑经历被隐性边缘的弟兄姊妹（或不与你同背景、同圈层的人）发出一次具体邀请——约他吃饭或喝茶，或本周坐到他旁边认真聆听三十分钟，并明确说一句「我们欢迎你」。本周内完成，写下对象名字与完成时间；不先问「别人怎么看」，先问「基督会走近谁」；下周在小组或伙伴面前报告完成情况。"
+      },
+      "s7": {
+        "target": "✓",
+        "channel": "✓",
+        "verification": "✓",
+        "ok": true,
+        "text": "本周带一位肢体（或家人）走一遍七步法，就用本周的路5:27–32与《奇异恩典》。不要只讲道理，一起回答一句「这一周我要走近谁？」。下周见面时互相回报：他走近了谁、你走近了谁、结果如何。"
+      },
+      "risks": [
+        {
+          "code": "A",
+          "severity": "HIGH",
+          "message": "歌曲记录已声明道德主义风险：跟随若被简化为意志奉献/个人道德努力，福音结构即被倒置。"
+        },
+        {
+          "code": "B",
+          "severity": "NOTE",
+          "message": "情感功能为主而圣经真理维度偏低 → 须防「唱得感动即已改变」的推论。"
+        },
+        {
+          "code": "F",
+          "severity": "HIGH",
+          "message": "本周功能含 TR/CO（真理/共同体/使命导向），而歌曲仅为主题级回应 → 可能以安静/情感取代经文主张，须人工复核。"
+        }
+      ],
+      "gospel_structure": "⚠ 无基督论/救恩论锚点",
+      "tier": "B",
+      "review_status": "under_review",
+      "song_is_complete_unit": false,
+      "decision": "Needs Human Review",
+      "week_fit_verdict": "Needs Human Review",
+      "week_fit_verdict_code": "needs_human_review",
+      "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+      "human_review_required": true,
+      "trace": [
+        "1) 选此歌：因 歌曲仅提供姿态类情感回应（降服），未承接经文主张。",
+        "2) 关系判定：theme_response（仅姿态类回应）。",
+        "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 TR/CO/LI）。",
+        "4) S6：四要素齐备（Object/Content/Time/Method）。",
+        "5) S7：成立（含可验证机制）。",
+        "6) 神学风险：A[HIGH]、B[NOTE]、F[HIGH]。",
+        "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+        "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Needs Human Review）。"
+      ]
+    }
+  ]
+}

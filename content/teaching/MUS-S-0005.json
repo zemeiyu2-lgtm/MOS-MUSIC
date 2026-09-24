@@ -1,0 +1,567 @@
+{
+  "pack_version": "MUS-V-1.2.0",
+  "generated_by": "MOS MUSIC teaching pack builder (one-shot transcription of user-provided V1.0 documents)",
+  "song_id": "MUS-S-0005",
+  "independence": {
+    "statement": "本教学包独立于 52 周课程：不绑定任何周次或课程，音乐教学与 MOS 门训课程彼此独立。",
+    "does_not_reference": [
+      "52W_WEEKS",
+      "MUS-C_LESSONS",
+      "SERMON_OUTLINES",
+      "COURSE_PROGRESS"
+    ]
+  },
+  "positioning": {
+    "training_value": "节拍稳定、表达递进",
+    "difficulty_1": "长句",
+    "difficulty_2": "副歌重复",
+    "best_for": "个人敬拜与带唱"
+  },
+  "score_reference": {
+    "songbook": "新编赞美诗（简谱）",
+    "song_number": 343,
+    "key": "D",
+    "time_signature": "4/4",
+    "tune_name": null,
+    "availability": "另有四声部简谱版本",
+    "source_url": null,
+    "status": "REFERENCE_ONLY",
+    "note": "工作包谱面 SCORE_VERIFY_REQUIRED（1896 印刷谱图像证据已归档，曲调版本待人工选定）。"
+  },
+  "chinese_lyrics": {
+    "status": "REFERENCE_ONLY",
+    "approved_version": null,
+    "note": "正式中文歌词版本尚未核定（译本权利 CI-0028 未决）；本包仅存乐句段定位标签（开头短标签），不含歌词全文，不臆测。"
+  },
+  "teacher_script": {
+    "method_ref": "docs/standards/MOS-SONG-TEACHING-METHOD-V1.0.md（十步法框架）+ 用户文档《五首样板歌曲教师教学脚本与制作包 V1.0》",
+    "core_principle": "这首歌很容易被唱成「越来越大声」。正确方向：第一次建立旋律；第二次建立意思；最后一次建立表达。",
+    "teacher_guidance": [
+      "不要每一节都换一种唱法。先保持旋律稳定，再让歌词改变表达。",
+      "副歌：单唱副歌 → 副歌循环两次 → 第二次加入更多力度 → 回到自然声区。",
+      "结尾训练：只唱高潮入口 → 只唱高潮结束 → 连接前后 → 完整最后一节 → 最后一次不看示唱。"
+    ],
+    "steps": [
+      {
+        "key": "step-01",
+        "label": "认识歌曲",
+        "teacher_says": "先不要急着唱。第一遍只听：旋律往哪里走？哪一句最容易记住？哪一句最难？",
+        "tasks": [
+          "只听",
+          "感受拍号与速度",
+          "找到重复句",
+          "不要求记忆歌词"
+        ]
+      },
+      {
+        "key": "step-02",
+        "label": "准备身体与声音",
+        "teacher_says": "我们先把声音放松，不追求大声。先找到稳定、自然的声音。",
+        "tasks": [
+          "深吸气，不耸肩",
+          "轻声哼唱起音",
+          "元音延长",
+          "避免用喉咙硬推高音"
+        ]
+      },
+      {
+        "key": "step-03",
+        "label": "教简谱",
+        "teacher_says": "先不要背每一个音。先看这一句是在上行、下行，还是停留。",
+        "tasks": [
+          "先看调号",
+          "找主音",
+          "看乐句轮廓",
+          "看长音、休止、重复音",
+          "再进入逐小节"
+        ]
+      },
+      {
+        "key": "step-04",
+        "label": "教节奏",
+        "teacher_says": "先拍节奏，再唱音高。",
+        "tasks": [
+          "手拍拍号",
+          "口读节奏",
+          "钢琴只给节拍",
+          "加入旋律"
+        ]
+      },
+      {
+        "key": "step-05",
+        "label": "视唱",
+        "teacher_says": "主音 → 起音 → 第一乐句 → 两句连接 → 整节；教师不连续示唱全部。",
+        "tasks": [
+          "反馈句式：这一句第二个音稍低，再唱一次。",
+          "节奏对了，现在保持住音高。",
+          "这一句先不要快，把长音唱稳。"
+        ]
+      },
+      {
+        "key": "step-06",
+        "label": "教歌词",
+        "teacher_says": "歌词教学独立于音符教学。",
+        "tasks": [
+          "说词",
+          "找关键词",
+          "找重音",
+          "处理辅音",
+          "再与旋律结合"
+        ]
+      },
+      {
+        "key": "step-07",
+        "label": "词曲合成",
+        "teacher_says": "少示范，多模仿；短句循环，逐步撤掉示范。",
+        "tasks": [
+          "一句听",
+          "一句跟",
+          "一句独唱",
+          "两句连接",
+          "一节完整"
+        ]
+      },
+      {
+        "key": "step-08",
+        "label": "真人示唱",
+        "teacher_says": "播放优秀真人版本，观察表达，不要求模仿歌手个人音色。",
+        "tasks": [
+          "呼吸在哪里",
+          "哪个词更突出",
+          "哪里收声",
+          "哪里渐强",
+          "哪里保持克制"
+        ]
+      },
+      {
+        "key": "step-09",
+        "label": "自主歌唱",
+        "teacher_says": "伴奏由强到弱，目标是逐渐脱离模仿。",
+        "tasks": [
+          "完整伴奏",
+          "简化钢琴",
+          "仅起音",
+          "无示唱"
+        ]
+      },
+      {
+        "key": "step-10",
+        "label": "独立视唱＋教别人",
+        "teacher_says": "请你不听示唱，只看谱唱一遍；然后把最难的一句教给另一个人。",
+        "tasks": [
+          "会唱不是终点",
+          "会带别人唱才进入可传递状态"
+        ]
+      }
+    ],
+    "first_lesson_flow": [
+      "1A：自然起音，不要一开口就用最大声音",
+      "1B–1D：保持 4/4，长句不断裂",
+      "1E–1F：副歌稳定记忆、力度递进"
+    ]
+  },
+  "phrase_cards": [
+    {
+      "phrase_id": "MUS-S-0005-TC-01",
+      "card_label": "1A",
+      "score_segment_ref": "原谱第1乐句",
+      "lyric_segment_ref": "「主啊！我今完全献上」",
+      "teaching_goal": [
+        "onset",
+        "meter"
+      ],
+      "goal_note": "起音、4/4",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "中弱",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 11.67,
+        "end": 17.26,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-02",
+      "card_label": "1B",
+      "score_segment_ref": "原谱第2乐句",
+      "lyric_segment_ref": "「一切所有都归你」",
+      "teaching_goal": [
+        "phrase",
+        "diction"
+      ],
+      "goal_note": "连贯、咬字",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "单句循环",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 17.26,
+        "end": 23.19,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-03",
+      "card_label": "1C",
+      "score_segment_ref": "原谱第3乐句",
+      "lyric_segment_ref": "「我要永远爱你靠你」",
+      "teaching_goal": [
+        "pitch",
+        "rhythm"
+      ],
+      "goal_note": "音准、节奏",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "0.75×",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 23.19,
+        "end": 28.75,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-04",
+      "card_label": "1D",
+      "score_segment_ref": "原谱第4乐句",
+      "lyric_segment_ref": "「日日与你不分离」",
+      "teaching_goal": [
+        "phrase",
+        "breath"
+      ],
+      "goal_note": "句尾、呼吸",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "句尾循环",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 28.75,
+        "end": 34.75,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-05",
+      "card_label": "1E",
+      "score_segment_ref": "原谱副歌前半",
+      "lyric_segment_ref": "「一切全献上」重复",
+      "teaching_goal": [
+        "memory",
+        "dynamics"
+      ],
+      "goal_note": "记忆、力度",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "循环两遍",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 34.75,
+        "end": 45.96,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-06",
+      "card_label": "1F",
+      "score_segment_ref": "原谱副歌后半",
+      "lyric_segment_ref": "全归耶稣",
+      "teaching_goal": [
+        "expression"
+      ],
+      "goal_note": "情感展开",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "f→mf",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 45.96,
+        "end": 58.2,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-07",
+      "card_label": "2A",
+      "score_segment_ref": "原谱第2节",
+      "lyric_segment_ref": "俯伏/舍弃",
+      "teaching_goal": [
+        "diction",
+        "expression"
+      ],
+      "goal_note": "咬字、情感",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "低速",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 58.2,
+        "end": 81.58,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-08",
+      "card_label": "2B",
+      "score_segment_ref": "原谱副歌",
+      "lyric_segment_ref": "重复副歌",
+      "teaching_goal": [
+        "phrase",
+        "memory"
+      ],
+      "goal_note": "稳定、记忆",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "循环",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 81.58,
+        "end": 104.47,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-09",
+      "card_label": "3A",
+      "score_segment_ref": "原谱第3节",
+      "lyric_segment_ref": "心灵身体/圣灵",
+      "teaching_goal": [
+        "phrase",
+        "diction"
+      ],
+      "goal_note": "词曲结合",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "中弱",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 104.47,
+        "end": 127.66,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-10",
+      "card_label": "3B",
+      "score_segment_ref": "原谱副歌",
+      "lyric_segment_ref": "重复副歌",
+      "teaching_goal": [
+        "expression",
+        "dynamics"
+      ],
+      "goal_note": "表达递进",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "mf→f",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 127.66,
+        "end": 150.74,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-11",
+      "card_label": "4A",
+      "score_segment_ref": "原谱第4节",
+      "lyric_segment_ref": "祭坛/爱火",
+      "teaching_goal": [
+        "breath"
+      ],
+      "goal_note": "声音支撑",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "高潮前吸气",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 150.74,
+        "end": 174.54,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-12",
+      "card_label": "4B",
+      "score_segment_ref": "原谱最后副歌",
+      "lyric_segment_ref": "全献上/荣耀",
+      "teaching_goal": [
+        "dynamics"
+      ],
+      "goal_note": "高潮、释放",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "最后一遍完整唱",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 174.54,
+        "end": 198.97,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    },
+    {
+      "phrase_id": "MUS-S-0005-TC-13",
+      "card_label": "END",
+      "score_segment_ref": "原谱结束",
+      "lyric_segment_ref": "「阿们」",
+      "teaching_goal": [
+        "phrase"
+      ],
+      "goal_note": "结束、收束",
+      "difficulty": null,
+      "sight_singing": true,
+      "piano_mode": "终止和弦",
+      "vocal_reference": null,
+      "source_url": null,
+      "timecode": {
+        "recording_id": "aizanmei-hymnal-343-lrc",
+        "start": 198.97,
+        "end": 199.77,
+        "time_status": "REFERENCE_ONLY",
+        "note": null
+      },
+      "cursor_ready": false,
+      "note": "真人主示唱版本待最终选定；时间码属 LRC 参考录音，不绑定任何未定版本。"
+    }
+  ],
+  "demo_withdrawal": {
+    "L1": {
+      "label": "全示唱",
+      "keeps": [
+        "full_demo",
+        "piano",
+        "metronome",
+        "score",
+        "lyrics"
+      ],
+      "removes": [],
+      "note": "学习者可以直接跟着真人示唱唱。"
+    },
+    "L2": {
+      "label": "半示唱",
+      "keeps": [
+        "onset_only",
+        "metronome",
+        "piano",
+        "score",
+        "lyrics"
+      ],
+      "removes": [
+        "continuous_vocal"
+      ],
+      "note": "保留起音、节拍、钢琴；移除连续人声示唱（起音由钢琴主音给出，界面如实说明，不假装有人声）。"
+    },
+    "L3": {
+      "label": "钢琴辅助",
+      "keeps": [
+        "piano",
+        "score",
+        "lyrics",
+        "onset_only"
+      ],
+      "removes": [
+        "vocal"
+      ],
+      "note": "只剩简谱、中文歌词、钢琴伴奏、可选起音。"
+    },
+    "L4": {
+      "label": "完全独立",
+      "keeps": [
+        "score",
+        "lyrics",
+        "random_phrase"
+      ],
+      "removes": [
+        "vocal",
+        "piano",
+        "metronome"
+      ],
+      "note": "只显示歌谱与歌词，可随机指定乐句。"
+    }
+  },
+  "coach_scope": {
+    "allowed_params": [
+      "pitch",
+      "rhythm",
+      "sustain",
+      "diction",
+      "dynamics",
+      "expression"
+    ],
+    "forbidden": [
+      "属灵程度评分",
+      "敬拜真诚度评分",
+      "排名",
+      "总分"
+    ],
+    "note": "AI 只反馈可观察的音乐行为（如「这一句第二个音略低。听一次钢琴起音，再唱一遍。」）；属灵/真诚度不是音乐参数，不能由 AI 判断。emotion_focus 是教学提示，不是属灵判断。"
+  },
+  "practice_path": {
+    "day_0": "第一节＋副歌",
+    "day_2": "三节连接",
+    "day_7": "最后一节自主带唱"
+  },
+  "teach_others_task": "最后一节自主带唱。",
+  "special_notes": [
+    "时间码来自爱赞美「新编赞美诗」第 343 首 LRC 录音，不等同于索拉真人版本；正式生产前须选定一个主示唱版本并重新标定（现 REFERENCE_ONLY）。索拉在《中文圣诗精选I》有演唱，但主示唱版本尚需最后确定 → vocal_reference=null，不虚构。"
+  ]
+}

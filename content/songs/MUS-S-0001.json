@@ -1,0 +1,164 @@
+{
+  "song_id": "MUS-S-0001",
+  "title": "奇异恩典（Amazing Grace）",
+  "author": "John Newton",
+  "composer": "John Newton",
+  "source": "Olney Hymns（1779）；公版圣诗",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1779（词）",
+  "copyright": {
+    "copyright_status": "public_domain",
+    "source": "Olney Hymns（1779）；公版圣诗",
+    "license": "Public Domain",
+    "usage_permission": "词曲已进入公有领域；本仓所用中文译本译文未随本仓托管。",
+    "attribution": "John Newton（词曲）",
+    "audio_availability": "none",
+    "lyrics_availability": "none",
+    "permission_evidence": null
+  },
+  "lyrics": {
+    "text": null,
+    "excerpt": null,
+    "note": "公版原文无版权问题；常见中文译本译文各有版权方，本记录不托管任何译文文本，仅存标题与元数据。"
+  },
+  "media": {
+    "audio": null,
+    "score": null,
+    "chord": null
+  },
+  "bible": {
+    "core_passage": "弗2:1–10",
+    "bible_reference_ids": [
+      "BB-EPH-2"
+    ],
+    "bible_themes": [
+      "救恩",
+      "恩典",
+      "重生"
+    ]
+  },
+  "theology": {
+    "theology": [
+      "救恩论-恩典独作",
+      "成圣"
+    ],
+    "christology": [
+      "基督的寻找与拯救"
+    ],
+    "soteriology": [
+      "蒙恩得救",
+      "恩典先行"
+    ],
+    "ecclesiology": [],
+    "missiology": []
+  },
+  "discipleship": {
+    "stage": null,
+    "main_theme": "TH-03",
+    "secondary_themes": [
+      "TH-05"
+    ],
+    "music_unit_ids": [],
+    "music_unit_refs": [
+      "MM03",
+      "MM05"
+    ],
+    "function": null,
+    "age_group": [
+      "成人",
+      "跨代"
+    ],
+    "context": [
+      "CTX-SUN",
+      "CTX-GRP",
+      "CTX-FAM"
+    ],
+    "difficulty": 1
+  },
+  "formation": {
+    "primary_function": "EM",
+    "emotion": [
+      "感恩",
+      "被寻回的安息"
+    ],
+    "memory": [
+      "「恩典先行：我先被寻回，然后才开始跟随」"
+    ],
+    "community": [],
+    "practice": [],
+    "prayer": [],
+    "transmission": [
+      "教一位家人唱第一节"
+    ]
+  },
+  "eight_dimensions": {
+    "biblical_truth": {
+      "score": 5,
+      "note": "「前我失丧今被寻回、瞎眼今得看见」与弗2章「死在罪中—蒙恩得救」的恩典次序一致，救恩完全是神的作为。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "theological_formation": {
+      "score": 4,
+      "note": "反复传唱「恩典」一词，把救恩的起点固定在神的作为而非人的表现。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "emotional_formation": {
+      "score": 5,
+      "note": "形成感恩与被寻回的安息，不是亢奋情绪，而是蒙爱的确据。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "community": {
+      "score": 3,
+      "note": "适合会众齐唱；但对不熟悉英文圣诗传统的群体需要译本与教学。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "congregational_participation": {
+      "score": 4,
+      "note": "旋律简单、句式重复，跨代可唱。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "generational_transmission": {
+      "score": 4,
+      "note": "是少有的祖孙同唱一首的圣诗，家庭传递成本低。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "life_practice": {
+      "score": 3,
+      "note": "本身不指定行为，需要像 W01 单元那样配「交托一件具体重担」的实践指令才能落地。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    "mission_orientation": {
+      "score": 2,
+      "note": "见证视角弱；使命方向需靠单元的传（S7）补足。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  "tier": "A",
+  "review_status": "under_review",
+  "scenes": [
+    "主日",
+    "小组",
+    "家庭",
+    "跨代"
+  ],
+  "search_keywords": [
+    "恩典",
+    "奇异恩典",
+    "Amazing Grace",
+    "被寻回",
+    "感恩"
+  ],
+  "version": "MUS-V-0.2.0",
+  "created_at": "2026-09-21T12:00:00+08:00",
+  "updated_at": "2026-09-21T12:00:00+08:00",
+  "updated_by": "mos-music-phase2a"
+}

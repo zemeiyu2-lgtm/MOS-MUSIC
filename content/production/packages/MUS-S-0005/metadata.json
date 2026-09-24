@@ -1,0 +1,24 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0005",
+  "unit_id": "MUS-SU-0005",
+  "slot": "metadata",
+  "title_zh": "一切全献上",
+  "title_en": "I Surrender All",
+  "author": "Judson W. Van DeVenter",
+  "composer": "Judson W. Van DeVenter",
+  "language": "zh-Hans",
+  "original_or_translation": "translation",
+  "era": "1896（词曲）",
+  "source": "公版福音诗歌",
+  "copyright_status": "public_domain",
+  "structure": null,
+  "current_version": null,
+  "unresolved": [
+    "中文译词版本与译者未核验",
+    "当前采用的简谱版本未确定",
+    "调 / 拍号 / 速度 / 时长 / 段落结构未核验"
+  ],
+  "derived_from": "content/songs/MUS-S-0005.json",
+  "note": "本文件只登记详情层的既有事实；不确定的项进 unresolved，不得用空字符串掩盖。"
+}

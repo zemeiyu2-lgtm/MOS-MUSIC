@@ -1,0 +1,287 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mos-music/resource-discovery.schema.json",
+  "title": "Song Resource Discovery（100 首资源普查表 · V3.x）",
+  "description": "先普查再生产：为 100 首逐首记录「有没有现成的谱 / 词 / 真人男声 / 真人女声 / 钢琴 / 教学」。外部检索未执行时必须 UNSURVEYED 且不得填写来源。",
+  "type": "object",
+  "required": [
+    "discovery_version",
+    "model",
+    "survey_status",
+    "status_vocabulary",
+    "production_priority",
+    "counts",
+    "rows"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "discovery_version": {
+      "type": "string",
+      "pattern": "^MUS-V-[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "model": {
+      "type": "string",
+      "enum": [
+        "song-resource-discovery"
+      ]
+    },
+    "survey_status": {
+      "type": "string",
+      "enum": [
+        "NOT_PERFORMED",
+        "PARTIAL",
+        "COMPLETE"
+      ]
+    },
+    "survey_note": {
+      "type": "string"
+    },
+    "status_vocabulary": {
+      "type": "object",
+      "required": [
+        "FOUND",
+        "NOT_FOUND",
+        "VERIFY",
+        "REUSE",
+        "CREATE",
+        "UNSURVEYED"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "FOUND": {
+          "type": "string",
+          "minLength": 4
+        },
+        "NOT_FOUND": {
+          "type": "string",
+          "minLength": 4
+        },
+        "VERIFY": {
+          "type": "string",
+          "minLength": 4
+        },
+        "REUSE": {
+          "type": "string",
+          "minLength": 4
+        },
+        "CREATE": {
+          "type": "string",
+          "minLength": 4
+        },
+        "UNSURVEYED": {
+          "type": "string",
+          "minLength": 4
+        }
+      }
+    },
+    "production_priority": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_columns": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "string"
+      }
+    },
+    "counts": {
+      "type": "object"
+    },
+    "by_field_status": {
+      "type": "object"
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 100,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "song_id",
+          "layer",
+          "rights",
+          "found",
+          "next_action"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "song_id": {
+            "type": "string",
+            "pattern": "^MUS-S-[0-9]{4}$"
+          },
+          "title_zh": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title_en": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "layer": {
+            "type": "string",
+            "enum": [
+              "detail",
+              "candidate"
+            ]
+          },
+          "rights": {
+            "type": "object",
+            "required": [
+              "copyright_status",
+              "rights_state"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "copyright_status": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  null,
+                  "unknown",
+                  "public_domain",
+                  "copyrighted",
+                  "licensed",
+                  "permission_granted"
+                ]
+              },
+              "intake_action": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rights_state": {
+                "type": "string",
+                "enum": [
+                  "RIGHTS_UNRESOLVED",
+                  "RESOLVED"
+                ],
+                "description": "V3.2 口径：法律状态未判定（RIGHTS_UNRESOLVED）是如实事实，不得推断为「权利阻断」；外部资源是否可得须实际检索（NOT_SURVEYED）。"
+              }
+            }
+          },
+          "found": {
+            "type": "object",
+            "required": [
+              "score",
+              "lyrics",
+              "human_male",
+              "human_female",
+              "piano",
+              "teaching"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "score": {
+                "$ref": "#/definitions/finding"
+              },
+              "lyrics": {
+                "$ref": "#/definitions/finding"
+              },
+              "human_male": {
+                "$ref": "#/definitions/finding"
+              },
+              "human_female": {
+                "$ref": "#/definitions/finding"
+              },
+              "ai_male": {
+                "$ref": "#/definitions/finding"
+              },
+              "ai_female": {
+                "$ref": "#/definitions/finding"
+              },
+              "piano": {
+                "$ref": "#/definitions/finding"
+              },
+              "teaching": {
+                "$ref": "#/definitions/finding"
+              }
+            }
+          },
+          "source_summary": {
+            "type": "object"
+          },
+          "next_action": {
+            "type": "string",
+            "minLength": 4
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "finding": {
+      "type": "object",
+      "required": [
+        "status",
+        "source_name",
+        "source_url",
+        "source_type"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "FOUND",
+            "NOT_FOUND",
+            "VERIFY",
+            "REUSE",
+            "CREATE",
+            "UNSURVEYED"
+          ]
+        },
+        "source_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
