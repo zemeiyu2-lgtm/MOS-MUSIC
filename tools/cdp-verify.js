@@ -156,6 +156,9 @@ async function main() {
 
   /* ============ A. Online 首载 ============ */
   console.log('\nA) Online 首载');
+  if (process.env.MOS_ONLINE_BASE) {
+    await cdp.send('Page.addScriptToEvaluateOnNewDocument', { source: 'window.MOS_ROUTE_DEBUG = true;' });
+  }
   await cdp.send('Page.navigate', { url: APP });
   await waitLoad(cdp);
   await new Promise((r) => setTimeout(r, 1500)); // SW 注册 + 播种

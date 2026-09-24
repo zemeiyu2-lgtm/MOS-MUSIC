@@ -126,6 +126,7 @@ async function onRoute(route) {
   const my = ++renderSeq;
   const isStale = () => my !== renderSeq;
   const gRoot = guardedRoot(root, isStale);
+  if (window.MOS_ROUTE_DEBUG) console.info('[route] render#' + my, route.key, route.param || '');
   renderNav(route.key);
 
   // 已选单元在七步法与 24 课之间跨模块保留
@@ -137,6 +138,7 @@ async function onRoute(route) {
   if (['song', 'learn', 'teach', 'song-detail'].includes(route.key)) params.songId = route.param;
   if (route.key === 'week') params.weekId = route.param;
   await renderModule(route.key, gRoot, params);
+  if (window.MOS_ROUTE_DEBUG) console.info('[route] done#' + my, route.key, isStale() ? '(stale-dropped)' : '(applied)');
   if (isStale()) return; /* 已被更新的路由取代：不再做后续接线 */
   wireInternalLinks(root, route);
   window.scrollTo(0, 0);
