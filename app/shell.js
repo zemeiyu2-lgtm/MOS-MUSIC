@@ -101,9 +101,31 @@ async function toggleMoodPref() {
 
 /* ---------------------------------------------------------------- 路由 */
 
+/* 渲染世代计数：线上慢网络下渲染需数秒，迟到的旧渲染会把新视图覆盖掉
+   （用户实测「点进去页面变成别的歌」的根因）。守卫式 root：视图写入前
+   检查是否已有更新的路由请求，过期渲染一律丢弃。 */
+let renderSeq = 0;
+
+function guardedRoot(root, isStale) {
+  return new Proxy(root, {
+    get(target, prop) {
+      const v = Reflect.get(target, prop);
+      return typeof v === 'function' ? v.bind(target) : v;
+    },
+    set(target, prop, value) {
+      if (prop === 'innerHTML' && isStale()) return true;
+      target[prop] = value;
+      return true;
+    },
+  });
+}
+
 async function onRoute(route) {
   const root = $('#view');
   if (!root) return;
+  const my = ++renderSeq;
+  const isStale = () => my !== renderSeq;
+  const gRoot = guardedRoot(root, isStale);
   renderNav(route.key);
 
   // 已选单元在七步法与 24 课之间跨模块保留
@@ -114,7 +136,8 @@ async function onRoute(route) {
   }
   if (['song', 'learn', 'teach', 'song-detail'].includes(route.key)) params.songId = route.param;
   if (route.key === 'week') params.weekId = route.param;
-  await renderModule(route.key, root, params);
+  await renderModule(route.key, gRoot, params);
+  if (isStale()) return; /* 已被更新的路由取代：不再做后续接线 */
   wireInternalLinks(root, route);
   window.scrollTo(0, 0);
   $('#mainTitle').textContent = (MODULES.find((m) => m.key === route.key) || {}).title || 'MOS-MUSIC';

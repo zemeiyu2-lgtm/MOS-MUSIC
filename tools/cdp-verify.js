@@ -1143,8 +1143,12 @@ async function main() {
     await new Promise((r) => setTimeout(r, 500));
     const afterPause = (document.getElementById('playState') || {}).textContent || '';
     const t3 = (document.getElementById('playTime') || {}).textContent || '';
-    return { t1, t2, t3, advanced: t1 !== t2 && t2 !== '0:00 / 0:00', playingLabel, afterPause };
+    return { t1, t2, t3, advanced: t1 !== t2 && t2 !== '0:00 / 0:00', playingLabel, afterPause,
+      has: { time: Boolean(document.getElementById('playTime')), sec: Boolean(document.getElementById('secSing')),
+        piano: Boolean(document.querySelector('#secSing [data-kind="piano"]')), hash: location.hash,
+        viewHead: (document.getElementById('view') || { innerHTML: '' }).innerHTML.replace(/\s+/g, ' ').slice(0, 200) } };
   })()`);
+  if (audioCheck && audioCheck.has && process.env.MOS_ONLINE_BASE) console.log('  （音频探针环境：', JSON.stringify(audioCheck.has), '）');
   ok(played && played.ok && audioCheck && audioCheck.advanced,
     `真实媒体 S-0001：钢琴伴奏真实可听（进度 ${audioCheck ? `${audioCheck.t1} → ${audioCheck.t2}` : 'n/a'}，指针实际前进）`);
   ok(audioCheck && audioCheck.afterPause && audioCheck.afterPause.includes('已暂停'),
