@@ -21,7 +21,11 @@ const os = require('os');
 const ROOT = path.resolve(__dirname, '..');
 const PORT_HTTP = 8642;
 const PORT_CDP = 9333;
-const BASE = `http://127.0.0.1:${PORT_HTTP}/`;
+/* MOS_ONLINE_BASE：设为线上地址时跳过本地静态服务器，直接对线上 origin 做同一套验收。 */
+const BASE = process.env.MOS_ONLINE_BASE || `http://127.0.0.1:${PORT_HTTP}/`;
+/* 线上 origin 单请求延迟可达数秒：在线验收放宽视图与看门狗超时（本地不变）。 */
+const VIEW_TIMEOUT = process.env.MOS_ONLINE_BASE ? 45000 : 12000;
+const WATCHDOG = process.env.MOS_ONLINE_BASE ? 600000 : 90000;
 
 let passed = 0, failed = 0;
 function ok(cond, label) {
@@ -95,8 +99,9 @@ function withTimeout(p, ms, label) {
 async function main() {
   const watchdog = setTimeout(() => {
     process.exit(2);
-  }, 90000);
-  const srv = await serve();
+  }, WATCHDOG);
+  const srv = process.env.MOS_ONLINE_BASE ? null : await serve();
+  if (srv) console.log('本地静态服务器就绪'); else console.log('线上验收模式：', BASE);
 
   /* 启动 Chrome headless */
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'mosmusic-cdp-'));
@@ -438,7 +443,7 @@ async function main() {
 
   /* 单壳 hash 路由只改 location.hash，不会触发 Page.loadEventFired；
      因此不能对 hash 导航用 waitLoad，必须轮询 DOM 直到目标内容出现。 */
-  const gotoView = async (hash, probe, timeoutMs = 12000) => {
+  const gotoView = async (hash, probe, timeoutMs = VIEW_TIMEOUT) => {
     await evalJS(cdp, null, `(() => { location.hash = ${JSON.stringify(hash)}; return true; })()`);
     const t0 = Date.now();
     let lastKick = 0;
@@ -730,10 +735,27 @@ async function main() {
   ok(book && book.themes && book.scenes && book.tabs,
     'V2.0 诗歌本：主题/场景筛选与 收藏/正在学/最近唱过 页签');
 
+  /* 在线模式：等待 SW 预缓存沉淀（键数连续 3 次稳定），避免动态 import 被预缓存流量挤占导致误报 */
+  if (process.env.MOS_ONLINE_BASE) {
+    const t0 = Date.now();
+    let stable = 0, lastCount = -1;
+    while (stable < 3 && Date.now() - t0 < 240000) {
+      const n = await evalJS(cdp, null, `(async () => {
+        try { return (await (await caches.open('mos-music-v13')).keys()).length; } catch { return -1; }
+      })()`);
+      stable = n === lastCount ? stable + 1 : 0;
+      lastCount = n;
+      await new Promise((r) => setTimeout(r, 4000));
+    }
+    console.log(`  （预缓存沉淀：${lastCount} 项，${Math.round((Date.now() - t0) / 1000)}s）`);
+  }
+
   /* 歌曲页：一页解决（唱/懂/活/教/传） */
   const fp = await gotoView('#/song/MUS-S-0001', `(() => {
     const h = document.getElementById('view').innerHTML;
-    if (!h.includes('现在就唱')) return null;
+    /* 线上渲染为渐进填充：必须等全部关键区块就绪才返回，否则拿到部分快照 */
+    if (!(h.includes('现在就唱') && h.includes('男声示唱') && h.includes('Amazing grace')
+      && h.includes('简谱') && h.includes('中文译本尚未提供'))) return null;
     return {
       sing: h.includes('现在就唱'),
       demoPending: h.includes('男声示唱') && h.includes('女声示唱') && h.includes('钢琴伴奏')
@@ -1080,7 +1102,7 @@ async function main() {
 
   chrome.kill();
   cdp.ws.close();
-  srv.close();
+  if (srv) srv.close();
   await new Promise((r) => setTimeout(r, 600)); // 等 Chrome 释放 profile 句柄
   try { fs.rmSync(profile, { recursive: true, force: true }); }
   catch { /* Windows 下 Crashpad 句柄可能仍占用：不影响验收结论 */ }
