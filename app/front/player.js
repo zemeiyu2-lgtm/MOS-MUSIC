@@ -15,6 +15,7 @@
 ========================================================= */
 
 import { audioFor } from './util.js';
+import { isMidiUrl, createMidiAudio } from '../midi-synth.js';
 
 export const SPEEDS = [0.5, 0.75, 1.0];
 
@@ -48,9 +49,13 @@ export function createPlayer() {
     }
   }
 
-  function ensureAudio() {
-    if (audio) return audio;
-    audio = new Audio();
+  function ensureAudio(kind) {
+    /* 媒体类型感知：.mid/.midi 走 WebAudio 合成适配器，其余走 HTMLAudio。
+       两种媒体切换时重建实例，各自的播放状态互不污染。 */
+    const want = kind && isMidiUrl(sources[kind] && sources[kind].url) ? 'midi' : 'html';
+    if (audio && audio._mediaType === want) return audio;
+    if (audio && !audio.paused) { try { audio.pause(); } catch (_) {} }
+    audio = want === 'midi' ? createMidiAudio() : new Audio();
     audio.preload = 'none';
     audio.addEventListener('ended', () => onChange());
     audio.addEventListener('timeupdate', () => { enforceWindow(); onChange(); if (timeCb) timeCb(state()); });
@@ -70,7 +75,7 @@ export function createPlayer() {
 
   async function play(kind) {
     if (!has(kind)) return false; /* 无资源：不假装播放 */
-    const a = ensureAudio();
+    const a = ensureAudio(kind);
     if (currentKind !== kind) {
       a.pause();
       a.src = sources[kind].url;

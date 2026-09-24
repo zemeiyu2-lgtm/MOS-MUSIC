@@ -526,11 +526,13 @@ function writeMidi(rel, scoreObj, tempoBpm) {
   events.sort((a, b) => (a.t - b.t) || ((a.type === 'off' ? 0 : 1) - (b.type === 'off' ? 0 : 1)));
   const bytes = [];
   const push = (...a) => bytes.push(...a);
+  /* varLen 只属于轨道数据：返回字节数组，由调用方推入 track（此前误推入
+     bytes 顶层，导致 delta 全部错位、整条轨道损坏 —— 2026-09-24 修复）。 */
   const varLen = (n) => {
     const buf = [n & 0x7f];
     n >>= 7;
     while (n > 0) { buf.unshift((n & 0x7f) | 0x80); n >>= 7; }
-    bytes.push(...buf);
+    return buf;
   };
   /* header */
   const head = 'MThd';
@@ -544,11 +546,11 @@ function writeMidi(rel, scoreObj, tempoBpm) {
   tpush(0x00, 0xc0, 0x00); /* program 0 = piano */
   let last = 0;
   for (const e of events) {
-    varLen(e.t - last);
+    tpush(...varLen(e.t - last));
     last = e.t;
     tpush(e.type === 'on' ? 0x90 : 0x80, e.note & 0x7f, e.vel & 0x7f);
   }
-  varLen(0);
+  tpush(...varLen(0));
   tpush(0xff, 0x2f, 0x00);
   for (const c of 'MTrk') push(c.charCodeAt(0));
   push((track.length >> 24) & 0xff, (track.length >> 16) & 0xff, (track.length >> 8) & 0xff, track.length & 0xff);

@@ -16,7 +16,7 @@
      - 本 SW 不做任何 HTML 内容改写（no runtime patch）。
 ========================================================= */
 
-const CACHE = 'mos-music-v13';
+const CACHE = 'mos-music-v14';
 const PRECACHE_MANIFEST = 'mos-music-precache-v1';
 
 /* 应用外壳：较小且必须离线可用 */
@@ -28,6 +28,7 @@ const SHELL = [
   './app/shell.js',
   './app/router.js',
   './app/store.js',
+  './app/midi-synth.js',
   './app/sync.js',
   './app/net.js',
   './app/modules.js',

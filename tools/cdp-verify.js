@@ -108,6 +108,7 @@ async function main() {
   const chrome = spawn('C:/Program Files/Google/Chrome/Application/chrome.exe', [
     '--headless=new', `--remote-debugging-port=${PORT_CDP}`, `--user-data-dir=${profile}`,
     '--no-first-run', '--no-default-browser-check', '--disable-gpu', '--no-proxy-server',
+    '--autoplay-policy=no-user-gesture-required', /* 真实媒体验收：CDP 合成点击无 user activation */
     '--allow-file-access-from-files', 'about:blank',
   ], { stdio: 'ignore' });
   console.log('Chrome 已启动，等待 CDP 端口…');
@@ -741,7 +742,7 @@ async function main() {
     let stable = 0, lastCount = -1;
     while (stable < 3 && Date.now() - t0 < 240000) {
       const n = await evalJS(cdp, null, `(async () => {
-        try { return (await (await caches.open('mos-music-v13')).keys()).length; } catch { return -1; }
+        try { return (await (await caches.open('mos-music-v14')).keys()).length; } catch { return -1; }
       })()`);
       stable = n === lastCount ? stable + 1 : 0;
       lastCount = n;
@@ -1095,6 +1096,59 @@ async function main() {
   ok(desk && desk.overflow <= 1 && desk.twoCol, `V2.0 视口 1366×768：无横向滚动 + 歌曲页主/侧双栏（overflow=${desk ? desk.overflow : 'n/a'}）`);
   /* 恢复默认视口，避免影响后续离线测试 */
   await cdp.send('Emulation.clearDeviceMetricsOverride');
+
+  /* ============ 真实媒体验收（DOM 存在 ≠ 可见可听） ============ */
+  const media = await gotoView('#/song/MUS-S-0001', `(async () => {
+    const w = document.getElementById('scoreWrap');
+    if (!w) return null;
+    const rect = w.getBoundingClientRect();
+    const noteEls = w.querySelectorAll('.measure .note');
+    const lyricSec = document.getElementById('secLyrics');
+    const lyricRect = lyricSec ? lyricSec.getBoundingClientRect() : null;
+    const lyricsText = lyricSec ? lyricSec.textContent.replace(/\\s+/g, '').length : 0;
+    const song = document.querySelector('.songpage');
+    return {
+      measures: w.querySelectorAll('.measure').length,
+      noteEls: noteEls.length,
+      scoreW: rect.width, scoreH: rect.height,
+      scoreVisible: rect.width > 0 && rect.height > 0,
+      lyricLen: lyricsText,
+      lyricVisible: lyricRect ? lyricRect.width > 0 && lyricRect.height > 0 : false,
+      isSong: Boolean(song),
+    };
+  })()`);
+  ok(media && media.isSong && media.measures > 0,
+    `真实媒体 S-0001：谱面真实渲染 ${media ? media.measures : 0} 小节`);
+  ok(media && media.noteEls > 0 && media.scoreVisible,
+    `真实媒体 S-0001：${media ? media.noteEls : 0} 个音符元素，谱面可见（${media ? Math.round(media.scoreW) : 0}×${media ? Math.round(media.scoreH) : 0}px）`);
+  ok(media && media.lyricLen > 0 && media.lyricVisible,
+    `真实媒体 S-0001：歌词实际可见（${media ? media.lyricLen : 0} 字符）`);
+
+  /* 真实播放：点钢琴轨（自动开始播放）→ 采样两次进度 → 再暂停 */
+  const waitMs = process.env.MOS_ONLINE_BASE ? 8000 : 3000;
+  const played = await evalJS(cdp, null, `(async () => {
+    const pianoBtn = document.querySelector('#secSing [data-kind="piano"]');
+    if (!pianoBtn) return { ok: false, why: 'no-piano-btn' };
+    pianoBtn.click(); /* playKind → 播放开始 */
+    await new Promise((r) => setTimeout(r, ${waitMs}));
+    return { ok: true };
+  })()`);
+  const audioCheck = await evalJS(cdp, null, `(async () => {
+    const t1 = (document.getElementById('playTime') || {}).textContent || '';
+    await new Promise((r) => setTimeout(r, 3000));
+    const t2 = (document.getElementById('playTime') || {}).textContent || '';
+    const playingLabel = (document.getElementById('playState') || {}).textContent || '';
+    const toggle = document.getElementById('btnToggle');
+    if (toggle) toggle.click(); /* 暂停 */
+    await new Promise((r) => setTimeout(r, 500));
+    const afterPause = (document.getElementById('playState') || {}).textContent || '';
+    const t3 = (document.getElementById('playTime') || {}).textContent || '';
+    return { t1, t2, t3, advanced: t1 !== t2 && t2 !== '0:00 / 0:00', playingLabel, afterPause };
+  })()`);
+  ok(played && played.ok && audioCheck && audioCheck.advanced,
+    `真实媒体 S-0001：钢琴伴奏真实可听（进度 ${audioCheck ? `${audioCheck.t1} → ${audioCheck.t2}` : 'n/a'}，指针实际前进）`);
+  ok(audioCheck && audioCheck.afterPause && audioCheck.afterPause.includes('已暂停'),
+    `真实媒体 S-0001：pause 正常（${audioCheck ? audioCheck.afterPause : 'n/a'}，停在 ${audioCheck ? audioCheck.t3 : 'n/a'}）`);
 
   /* 汇总 */
   clearTimeout(watchdog);
