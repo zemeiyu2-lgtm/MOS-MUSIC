@@ -443,8 +443,8 @@ export async function renderSongPage(root, songId, query) {
         </details>
 
         <!-- 10 教 · 传 · 链接 -->
-        <section class="card sp-sec">
-          <h2><span class="sp-num">10</span>教 · 传 · 链接</h2>
+        <details class="card sp-sec song-more"><summary>分享与更多</summary>
+          
           <div class="sp-life-entry">
             <a class="life-card" href="#/teach/${esc(ctx.songId)}">🧑‍🏫 教别人唱<small>进入教唱模式</small></a>
             <button class="life-card" id="shareBtn" style="all:unset;cursor:pointer">↗ 分享这首歌<small>打开就能听、能学</small></button>
@@ -458,7 +458,7 @@ export async function renderSongPage(root, songId, query) {
             <a class="btn ghost big" href="#/song-detail/${esc(ctx.songId)}">后台研究档案</a>
           </div>
           <div class="notice" id="shareStatus" hidden></div>
-        </section>
+        </details>
       </div>
     </div>`;
 
