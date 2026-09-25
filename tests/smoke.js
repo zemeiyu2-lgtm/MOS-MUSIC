@@ -378,7 +378,7 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   const u1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/song-units/MUS-SU-0001.json'), 'utf8'));
   ok(u1.unit_id === 'MUS-SU-0001' && u1.song_id === 'MUS-S-0001' && u1.status === 'ACCOMPANIMENT_READY',
     'V3.0 单元包：身份与 status=ACCOMPANIMENT_READY（L2 资源已齐）');
-  ok(u1.demos.male.status === 'PROVIDED' && u1.demos.male.source_type === 'EXTERNAL_HUMAN_MALE'
+  ok(u1.demos.male.status === 'CANDIDATE_EXTERNAL' && u1.demos.male.source_type === 'EXTERNAL_HUMAN_MALE'
     && u1.demos.male.singer === null && u1.demos.male.host_policy === 'original_site'
     && u1.demos.female.status === 'CANDIDATE_EXTERNAL' && u1.demos.female.source_type === 'EXTERNAL_HUMAN_FEMALE'
     && u1.accompaniment.status === 'PROVIDED'
