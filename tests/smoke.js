@@ -306,6 +306,9 @@ console.log('\n8) V1.1-A（真实使用第一轮：Song Detail / Song Resources 
   ========================================================= */
   const cand = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/candidates/index.json'), 'utf8'));
   ok(cand.candidates && cand.candidates.length === 100, 'V2.0 候选库：100 条候选记录');
+  const selected = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/library/selected-100.json'), 'utf8'));
+  ok(selected.status === 'SELECTED' && selected.songs.length === 100 && new Set(selected.songs.map((s) => s.song_id)).size === 100,
+    'V2.2 正式选曲层：100 首，ID 唯一，状态 SELECTED');
   ok(cand.candidates.every((c) => c.discernment_status === 'NOT_YET_ASSESSED'),
     'V2.0 候选库：全部 NOT_YET_ASSESSED（不携带辨识结论）');
   ok(cand.candidates.every((c) => c.copyright_status === 'SOURCE_REQUIRED'),
