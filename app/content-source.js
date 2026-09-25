@@ -23,7 +23,7 @@ const INDEX_KINDS = Object.freeze([
   'production', 'lexicon', 'calibration', 'governance', 'usage', 'library',
   'theme_counts', 'song_scripture', 'song_discernment',
   'song_resources', 'review_records', 'promotions', 'determinations', 'registry',
-  'candidates', 'song_units', 'song_packages',
+  'candidates', 'selected_library', 'song_units', 'song_packages',
   /* V3.x：四维分类 / 歌曲内容层 / 歌唱教练词表 / 100 首资源普查表 */
   'taxonomy', 'taxonomy_assignments', 'song_content', 'coach', 'resource_discovery',
   /* V3.x：五首样板教学包（乐句教学卡 · content/teaching） */
@@ -59,6 +59,8 @@ const INDEX_FILES = Object.freeze({
   registry: 'content/library/registry.json',
   /* V2.0：100 首目标候选库（候选层，§17） */
   candidates: 'content/candidates/index.json',
+  /* V2.2：正式 100 首选曲范围（选择层，不等于资源完成） */
+  selected_library: 'content/library/selected-100.json',
   /* V3.0：单曲完整歌曲单元词表 + 单元清单（18 段 / L1–L4 / 十步教学法） */
   song_units: 'content/song-units/index.json',
   /* PILOT 10：生产工作包清单（10 首 × 9 槽位；载荷在各包文件内，按需 fetch） */
@@ -220,6 +222,9 @@ export async function ensureSeeded({ force = false } = {}) {
   await seedIndex('registry', INDEX_FILES.registry);
   /* V2.0：候选库（100 首目标，离线可搜） */
   await seedIndex('candidates', INDEX_FILES.candidates);
+  await seedIndex('selected_library', INDEX_FILES.selected_library);
+  /* V2.2：正式 100 首选曲范围 */
+  /* 选择层与候选层分离；候选记录仍保留作为原始录入来源。 */
   /* V3.0：单曲完整单元词表（18 段 / 等级 / 十步教学法 / 三模式 / 四级状态） */
   await seedIndex('song_units', INDEX_FILES.song_units);
   /* PILOT 10：生产工作包清单 */
