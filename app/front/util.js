@@ -90,6 +90,7 @@ export function catalogRowFor(rows, songId) {
 /** 层级说明（前台语言）：详情层→已收录研究；登记层→曲库在册；候选→目标候选。 */
 export function layerLabel(row) {
   if (!row) return '目标候选';
+  if (row.layer === 'selected') return '已选曲目';
   if (row.layer === 'detail') return '已收录（含研究档案）';
   if (row.layer === 'registry') return '曲库在册';
   return '目标候选';
