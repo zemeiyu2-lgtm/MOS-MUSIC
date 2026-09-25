@@ -112,6 +112,7 @@ const INDEXES = [
   './content/production/review-records.json',
   /* V2.0：100 首目标候选库（生命诗歌本离线可搜） */
   './content/candidates/index.json',
+  './content/library/selected-100.json',
   /* V3.0：单曲完整单元词表 + 10 个单元包（离线冷启动需要；
      单元记录按需 fetch，但词表与现有 10 首单元随外壳预缓存以保证离线可用） */
   './content/song-units/index.json',
