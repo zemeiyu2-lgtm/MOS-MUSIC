@@ -31,12 +31,14 @@ export const NOT_PROVIDED = '尚未提供';
  *   layer: 'detail' | 'registry' | 'candidate'
  */
 export async function loadCatalog() {
-  const [candidates, songsIdx, registry, assign] = await Promise.all([
+  const [candidates, selectedLibrary, songsIdx, registry, assign] = await Promise.all([
     getIndex('candidates').catch(() => null),
+    getIndex('selected_library').catch(() => null),
     getIndex('songs').catch(() => null),
     getIndex('registry').catch(() => null),
     getIndex('taxonomy_assignments').catch(() => null),
   ]);
+  const selectedIds = new Set(((selectedLibrary && selectedLibrary.songs) || []).map((s) => s.song_id));
   const detailMap = new Map(((songsIdx && songsIdx.songs) || []).map((s) => [s.song_id, s]));
   const regMap = new Map(((registry && registry.records) || []).map((r) => [r.song_id, r]));
   /* 四维分类（topic / situation / scene）：集合，多归属；用于筛选与展示。 */
@@ -62,7 +64,8 @@ export async function loadCatalog() {
       situations: keysOf(t, 'situation'),
       scenes: keysOf(t, 'scene'),
       music: (t && t.dimensions && t.dimensions.music) || null,
-      layer: d ? 'detail' : r ? 'registry' : 'candidate',
+      layer: selectedIds.has(c.song_id) ? 'selected'
+        : d ? 'detail' : r ? 'registry' : 'candidate',
     };
   });
   /* 详情层若有候选之外的歌（理论无），补在末尾 */
@@ -70,7 +73,8 @@ export async function loadCatalog() {
     if (!rows.some((r) => r.song_id === sid)) {
       const t = taxMap.get(sid) || null;
       rows.push({
-        song_id: sid, zh: d.title, en: null, theme: null, scene: null, formation_theme: null, layer: 'detail',
+        song_id: sid, zh: d.title, en: null, theme: null, scene: null, formation_theme: null,
+        layer: selectedIds.has(sid) ? 'selected' : 'detail',
         themes: keysOf(t, 'theme'), situations: keysOf(t, 'situation'), scenes: keysOf(t, 'scene'),
         music: (t && t.dimensions && t.dimensions.music) || null,
       });
