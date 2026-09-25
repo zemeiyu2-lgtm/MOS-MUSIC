@@ -212,6 +212,15 @@ export async function renderSongPage(root, songId, query) {
       <div class="sp-main">
         <a class="btn ghost backline" href="#/songs">← 生命诗歌本</a>
 
+        <div class="song-mini-dock" id="songMiniDock" hidden aria-live="polite">
+          <div class="song-mini-meta">
+            <strong id="songMiniTitle">${esc(zh)}</strong>
+            <small id="songMiniState">未播放</small>
+          </div>
+          <div class="song-mini-progress" aria-hidden="true"><span id="songMiniFill"></span></div>
+          <button type="button" class="song-mini-play" id="songMiniToggle" aria-label="播放或暂停">播放</button>
+        </div>
+
         <!-- 01 Hero -->
         <section class="card sp-hero sp-sec">
           <div class="eyebrow">诗歌本</div>
@@ -478,6 +487,10 @@ export async function renderSongPage(root, songId, query) {
   const loopBtn = root.querySelector('#btnLoop');
   const loopBtn2 = root.querySelector('#singLoop');
   const kindBtns = Array.from(root.querySelectorAll('[data-kind]'));
+  const miniDock = root.querySelector('#songMiniDock');
+  const miniToggle = root.querySelector('#songMiniToggle');
+  const miniState = root.querySelector('#songMiniState');
+  const miniFill = root.querySelector('#songMiniFill');
   let currentKind = trackKinds.length ? trackKinds[0][0] : null;
   let cursorOn = true;
   const scoreWrap = root.querySelector('#scoreWrap');
@@ -500,6 +513,17 @@ export async function renderSongPage(root, songId, query) {
     loopBtn.setAttribute('aria-pressed', st.loop ? 'true' : 'false');
     if (loopBtn2) { loopBtn2.textContent = lp; loopBtn2.setAttribute('aria-pressed', st.loop ? 'true' : 'false'); loopBtn2.classList.toggle('on', st.loop); }
     kindBtns.forEach((b) => b.classList.toggle('on', b.dataset.kind === st.kind));
+    if (miniDock) {
+      miniDock.hidden = !trackKinds.length;
+      if (miniState) miniState.textContent = st.playing
+        ? (dynamicLabel ? dynamicLabel + '播放中' : '播放中')
+        : (st.kind ? '已暂停' : '未播放');
+      if (miniToggle) {
+        miniToggle.textContent = st.playing ? '暂停' : '播放';
+        miniToggle.setAttribute('aria-label', st.playing ? '暂停' : '播放');
+      }
+      if (miniFill) miniFill.style.width = String(Math.round((st.progress || 0) * 100)) + '%';
+    }
   }
 
   /** 光标跟随：把当前播放时刻画到简谱上（只在开启且有真实时间标记时）。 */
@@ -536,6 +560,13 @@ export async function renderSongPage(root, songId, query) {
     await playKind(currentKind);
   });
   kindBtns.forEach((b) => b.addEventListener('click', () => playKind(b.dataset.kind)));
+  if (miniToggle) {
+    miniToggle.addEventListener('click', async () => {
+      if (!currentKind) return;
+      if (player.state().playing) { player.toggle(); return; }
+      await playKind(currentKind);
+    });
+  }
   loopBtn.addEventListener('click', () => player.toggleLoop());
   if (loopBtn2) loopBtn2.addEventListener('click', () => player.toggleLoop());
   root.querySelectorAll('[data-speed]').forEach((b) => {
