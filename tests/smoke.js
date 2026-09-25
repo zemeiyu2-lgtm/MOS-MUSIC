@@ -376,12 +376,13 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
 
   /* 单元包：18 段齐备 + 未提供一律 NOT_PROVIDED/空载荷 */
   const u1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/song-units/MUS-SU-0001.json'), 'utf8'));
-  ok(u1.unit_id === 'MUS-SU-0001' && u1.song_id === 'MUS-S-0001' && u1.status === 'SYNC_READY',
-    'V3.0 单元包：身份与 status=SYNC_READY（L3 资源已齐）');
+  ok(u1.unit_id === 'MUS-SU-0001' && u1.song_id === 'MUS-S-0001' && u1.status === 'ACCOMPANIMENT_READY',
+    'V3.0 单元包：身份与 status=ACCOMPANIMENT_READY（L2 资源已齐）');
   ok(u1.demos.male.status === 'PROVIDED' && u1.demos.male.source_type === 'EXTERNAL_HUMAN_MALE'
     && u1.demos.male.singer === null && u1.demos.male.host_policy === 'original_site'
-    && u1.demos.female.status === 'PROVIDED' && u1.demos.female.source_type === 'EXTERNAL_HUMAN_FEMALE'
-    && u1.accompaniment.status === 'PROVIDED' && u1.timeline.status === 'PROVIDED'
+    && u1.demos.female.status === 'CANDIDATE_EXTERNAL' && u1.demos.female.source_type === 'EXTERNAL_HUMAN_FEMALE'
+    && u1.accompaniment.status === 'PROVIDED'
+    && u1.demos.male.status === 'CANDIDATE_EXTERNAL' && u1.demos.female.status === 'CANDIDATE_EXTERNAL' && u1.timeline.status === 'PROVIDED'
     && (u1.demos.ai_male == null || u1.demos.ai_male.is_ai === true)
     && (u1.demos.ai_female == null || u1.demos.ai_female.is_ai === true),
     'V3.2 单元包：外部真人示唱原站播放（singer=null，不冒充）+ 生成伴奏 + 精确时间轴；AI 只在独立轨');
@@ -479,9 +480,9 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   ok(pkg9mf.blocked === true && pkg9mf.slots.audio.status === 'NOT_AVAILABLE' && pkg9mf.slots.timeline.sync_status === 'SYNC_NOT_READY',
     'PILOT 10 阻断：0009 blocked / 音频 NOT_AVAILABLE / 时间轴 SYNC_NOT_READY');
   const su1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/song-units/MUS-SU-0001.json'), 'utf8'));
-  ok(su1.status === 'SYNC_READY' && su1.lyrics.status === 'PROVIDED' && su1.lyrics.sections.length === 6
+  ok(su1.status === 'ACCOMPANIMENT_READY' && su1.lyrics.status === 'PROVIDED' && su1.lyrics.sections.length === 6
     && su1.score.status === 'PROVIDED' && String(su1.score.note).includes('PENDING'),
-    'V3.2 样板单元：0001 SYNC_READY + 歌词结构化入单元 + 原谱导入谱面计入（SOURCE_IMPORTED，听校 PENDING）');
+    'V3.2 样板单元：0001 ACCOMPANIMENT_READY + 歌词结构化入单元 + 原谱导入谱面计入（SOURCE_IMPORTED，听校 PENDING）');
   const sc1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/production/packages/MUS-S-0001/score.json'), 'utf8'));
   ok(sc1.transcription.status === 'SOURCE_IMPORTED' && Array.isArray(sc1.transcription.verified_measures)
     && sc1.transcription.verified_measures.length === 17 && (sc1.sections[0].measures || []).length === 17
