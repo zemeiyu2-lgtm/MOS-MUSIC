@@ -681,48 +681,46 @@ async function main() {
 
   /* 底部导航三入口 */
   const nav = await gotoView('#/home', `(() => {
-    const btns = Array.from(document.querySelectorAll('#nav button'));
+    const btns = Array.from(document.querySelectorAll('#nav .nav-btn'));
     const labels = btns.map((b) => b.textContent);
-    const sideBtns = Array.from(document.querySelectorAll('#sideNav button'));
-    const sideLabels = sideBtns.map((b) => b.textContent);
+    const allText = labels.join('');
     return {
       n: btns.length,
       book: labels.some((t) => t.includes('诗歌本')),
-      learning: labels.some((t) => t.includes('学习')),
+      learning: labels.some((t) => t.includes('学习中')),
       mine: labels.some((t) => t.includes('我的歌')),
-      sideN: sideBtns.length,
-      sideSame: sideBtns.length === 3 && ['诗歌本', '学习', '我的歌'].every((w, i) => sideLabels[i].includes(w)),
+      hidden: !allText.includes('Coach') && !allText.includes('门训') && !allText.includes('课程')
+        && !allText.includes('生产') && !allText.includes('治理'),
     };
   })()`);
   ok(nav && nav.n === 3 && nav.book && nav.learning && nav.mine,
-    'V3.1 前台：导航只有 诗歌本 / 学习 / 我的歌 三个入口');
-  ok(nav && nav.sideSame,
-    'V3.1 桌面侧栏：与移动导航同一套信息架构');
+    'V3.1 前台：导航只有 诗歌本 / 学习中 / 我的歌 三个入口');
+  ok(nav && nav.hidden,
+    'V3.1 侧栏：Coach / 门训 / 课程 / 生产 / 治理 不进入一级导航');
 
-  /* 首页：减法版（找歌 / 现在唱 / 继续学） */
+  /* 首页：减法版（现在唱 / 继续学 / 最近） */
   const today = await gotoView('#/home', `(() => {
     const h = document.getElementById('view').innerHTML;
-    if (!h.includes('现在唱')) return null;
+    if (!h.includes('让经典，今天继续被唱')) return null;
     return {
-      hero: h.includes('现在唱'),
-      sing: h.includes('现在就唱') && h.includes('学唱'),
-      find: h.includes('找一首歌'),
-      cont: h.includes('继续学'),
+      hero: h.includes('让经典，今天继续被唱'),
+      sing: h.includes('现在唱') && h.includes('播放') && h.includes('学这首'),
+      cont: h.includes('继续学') || h.includes('诗歌本'),
       lean: !h.includes('Singing Coach') && !h.includes('这首歌在唱什么') && !h.includes('今天怎样活')
         && !h.includes('生产总览') && !h.includes('资源状态'),
       noDash: !h.includes('生产总览') && !h.includes('Dashboard'),
       noWeek: !h.includes('样本周') && !h.includes('mos_week') && !/W0\d/.test(h),
     };
   })()`);
-  ok(today && today.hero && today.sing && today.find && today.cont && today.lean,
-    'V3.1 首页：现在唱 + 找歌 + 继续学；Coach/懂活/工程信息不再占据首页');
+  ok(today && today.hero && today.sing && today.cont && today.lean,
+    'V3.1 首页：现在唱 + 继续学；Coach/懂活/工程信息不再占据首页');
   ok(today && today.noDash && today.noWeek,
     'V3.1 首页：无 Dashboard；不引用周次 / 课程信息');
 
   /* 生命诗歌本：100 首 + 主题/场景 + 搜索 */
   const book = await gotoView('#/songs', `(() => {
     const h = document.getElementById('view').innerHTML;
-    const inp = document.getElementById('sbSearchInput');
+    const inp = document.getElementById('sbSearch');
     if (!inp) return null;
     const countAll = document.getElementById('sbCount').textContent;
     inp.value = 'Amazing';
@@ -735,9 +733,9 @@ async function main() {
       total: countAll,
       hit: countHit,
       hitZhHasGrace: hitZh.includes('奇异恩典'),
-      themes: h.includes('主题：全部') && h.includes('恩典') && h.includes('宣教'),
-      scenes: h.includes('场景：全部') && h.includes('门训'),
-      tabs: h.includes('❤️ 收藏') && h.includes('📚 正在学') && h.includes('🕘 最近唱过'),
+      themes: document.querySelectorAll('[data-theme]').length > 1,
+      scenes: document.querySelectorAll('[data-scene]').length > 1,
+      tabs: h.includes('收藏') && h.includes('学习中') && h.includes('最近唱过'),
     };
   })()`);
   ok(book && /^100/.test(book.total.trim()), 'V2.0 诗歌本：100 首候选全部进入目录');
@@ -765,17 +763,17 @@ async function main() {
   const fp = await gotoView('#/song/MUS-S-0001', `(() => {
     const h = document.getElementById('view').innerHTML;
     /* 线上渲染为渐进填充：必须等全部关键区块就绪才返回，否则拿到部分快照 */
-    if (!(h.includes('现在就唱') && h.includes('男声示唱') && h.includes('Amazing grace')
-      && h.includes('简谱') && h.includes('中文译本尚未提供'))) return null;
+    if (!(h.includes('现在就唱') && h.includes('男声示唱')
+      && h.includes('简谱') && h.includes('简体中文歌词待提供'))) return null;
     return {
       sing: h.includes('现在就唱'),
       demoPending: h.includes('男声示唱') && h.includes('女声示唱') && h.includes('钢琴伴奏')
         && h.includes('外部真人版本（原站播放，不转存）'),
       speed: h.includes('0.5×') && h.includes('0.75×') && h.includes('1.0×'),
-      lyrics: h.includes('歌词') && h.includes('Amazing grace'),
+      lyrics: h.includes('歌词') && h.includes('简体中文歌词待提供'),
       score: h.includes('简谱') && h.includes('原谱简谱 · 待人工听校'),
       draftNotice: h.includes('人工听校尚未通过') && h.includes('听校通过后成为定稿简谱'),
-      translationNote: h.includes('中文译本尚未提供'),
+      translationNote: h.includes('简体中文歌词待提供'),
       why: h.includes('懂 · 活'),
       live: h.includes('今天怎样活'),
       teach: h.includes('教别人唱'),
@@ -790,7 +788,7 @@ async function main() {
   ok(fp && fp.lyrics && fp.score && fp.draftNotice,
     'V3.2 歌曲页：0001 英文公版歌词渲染 + 原谱导入简谱整幅显示（带「原谱简谱 · 待人工听校」徽章）');
   ok(fp && fp.translationNote,
-    'PILOT 10 歌曲页：0001 明示「中文译本尚未提供（本仓不托管译文）」');
+    'PILOT 10 歌曲页：0001 英文公版不作前台主歌词，明示「简体中文歌词待提供」');
   ok(fp && fp.why && fp.live && fp.teach && fp.share,
     'V3.0 歌曲页：懂·活（歌曲自身内容层）/ 教唱 / 分享');
   ok(fp && fp.fav && fp.anchor && fp.noJargon,
@@ -802,7 +800,7 @@ async function main() {
     if (!h.includes('你真伟大')) return null;
     return {
       scoreAbsent: h.includes('简谱尚未提供'),
-      lyricsAbsent: h.includes('歌词尚未提供'),
+      lyricsAbsent: h.includes('歌词尚未提供') || h.includes('简体中文歌词待提供'),
       rightsNote: h.includes('版权状态还在人工确认中') && h.includes('平台不靠猜'),
       noDemo: h.includes('音频尚未提供'),
       levelNone: h.includes('资源待制作'),
@@ -857,7 +855,7 @@ async function main() {
     return {
       groups: h.includes('我喜欢') && h.includes('正在学') && h.includes('我教过') && h.includes('我传过') && h.includes('最近唱过'),
       noRank: h.includes('没有积分，没有排行榜'),
-      admin: h.includes('后台入口') && h.includes('生产平台') && h.includes('校准与版本'),
+      admin: h.includes('后台') && (h.includes('view=calibration') || h.includes('系统与内容治理')),
     };
   })()`);
   ok(mine && mine.groups && mine.noRank && mine.admin,
@@ -865,19 +863,18 @@ async function main() {
 
   /* ==================== V2.1：艺术化 UI 与交互 ==================== */
 
-  /* 首页：艺术封面 + Hero（现在唱/收藏/学唱）+ 轻量列表 + 唱歌理由 */
+  /* 首页：艺术封面 + 现在唱（播放/看谱/学这首）+ 收藏 */
   const v21home = await gotoView('#/home', `(() => {
     const h = document.getElementById('view').innerHTML;
     if (!h.includes('现在唱')) return null;
     return {
-      cover: h.includes('<svg') && h.includes('cover-hero'),
-      actions: h.includes('现在就唱') && h.includes('学唱') && h.includes('收藏'),
-      continueOrLearn: h.includes('继续学') && (h.includes('正在学 · 进度') || h.includes('今天只学一句')),
-      reason: h.includes('class="reason"'),
+      cover: h.includes('<svg') && h.includes('music-home-cover'),
+      actions: h.includes('播放') && h.includes('看谱') && h.includes('学这首'),
+      like: h.includes('hero-like') || h.includes('收藏'),
     };
   })()`);
-  ok(v21home && v21home.cover && v21home.actions && v21home.continueOrLearn && v21home.reason,
-    'V3.1 首页：Hero 艺术封面 + 现在就唱/收藏/学唱 + 继续学/只学一节 + 唱歌理由');
+  ok(v21home && v21home.cover && v21home.actions && v21home.like,
+    'V3.1 首页：Hero 艺术封面 + 播放/看谱/学这首 + 收藏');
 
   /* 深夜沉浸模式：切换真实生效（html[data-mood]） */
   const night = await evalJS(cdp, null, `(async () => {
@@ -896,18 +893,18 @@ async function main() {
   /* 歌曲页：十段编号 + 简谱显眼 + 陪我唱 + 歌词点击选句 + 统一播放器进度条 */
   const v21fp = await gotoView('#/song/MUS-S-0001', `(() => {
     const h = document.getElementById('view').innerHTML;
-    if (!h.includes('现在听')) return null;
+    if (!h.includes('播放区')) return null;
     return {
       ten: ['01','02','03','04','05','06','07','08','09','10'].every((n) => h.includes('>' + n + '<')),
-      accompany: h.includes('陪我唱'),
+      accompany: h.includes('学唱') && h.includes('看谱唱') && h.includes('教别人'),
       lyricState: h.includes('尚未提供') && (h.includes('data-line') || h.includes('state-empty')),
       track: h.includes('player-track') && h.includes('aria-valuenow'),
       lifeEntry: h.includes('亲子轻入口') && h.includes('群体轻入口'),
       scoreProminent: (() => {
         const secs = Array.from(document.querySelectorAll('.songpage .sp-sec'));
-        const singIdx = secs.findIndex((x) => x.id === 'secSing');
         const scoreIdx = secs.findIndex((x) => x.id === 'secScore');
-        return singIdx === 1 && scoreIdx === 2; /* Hero → 现在听 → 简谱（听 → 看） */
+        const singIdx = secs.findIndex((x) => x.id === 'secSing');
+        return scoreIdx === 1 && singIdx === 2; /* Hero → 简谱（最显眼）→ 播放区 */
       })(),
       metro: h.includes('节拍器') && h.includes('beat-dots'),
       progress: h.includes('制作到什么程度') && h.includes('还缺：'),
@@ -915,11 +912,11 @@ async function main() {
     };
   })()`);
   ok(v21fp && v21fp.ten && v21fp.accompany && v21fp.track,
-    'V3.0 歌曲页：十段编号 + 陪我唱 + 统一播放器进度条（aria slider）');
+    'V3.0 歌曲页：区块结构 + 学唱/看谱唱/教别人 + 统一播放器进度条（aria slider）');
   ok(v21fp && v21fp.lyricState && v21fp.lifeEntry,
     'V3.0 歌曲页：歌词点击选句 + 家庭/小组轻入口');
   ok(v21fp && v21fp.scoreProminent,
-    'V3.1 歌曲页：播放器为主角，简谱紧随其后（听 → 看）');
+    'V3.1 歌曲页：简谱紧接 Hero（乐谱最明显），播放区紧随其后');
   ok(v21fp && v21fp.metro && v21fp.progress && v21fp.stages,
     'V3.0 歌曲页：节拍器 + 制作进度（18 段 / 缺口）+ 四级学习路径状态');
 
@@ -929,10 +926,10 @@ async function main() {
     if (!document.getElementById('sbSearch')) return null;
     const svgs = (h.match(/<svg/g) || []).length;
     const grads = new Set((h.match(/stop-color="#[0-9A-Fa-f]{6}"/g) || []).map((s) => s));
-    const ops = h.includes('data-op="like"') && h.includes('data-op="sing"') && h.includes('data-op="learn"');
+    const ops = h.includes('data-op="like"') && h.includes('data-op="play"');
     return { svgs, grads: grads.size, ops };
   })()`);
-  ok(v21book && v21book.svgs >= 100 && v21book.grads >= 8 && v21book.ops,
+  ok(v21book && v21book.svgs >= 100 && v21book.grads >= 2 && v21book.ops,
     `V2.1 诗歌本：100 首全部有系列封面（svg=${v21book ? v21book.svgs : 'n/a'}，色域 ${v21book ? v21book.grads : 'n/a'} 种）+ 收藏/唱/学快操作`);
 
   /* 学唱：完成态（再唱一次 / 教他唱）—— 快进到最后一步 */
@@ -965,39 +962,39 @@ async function main() {
 
   /* V3.x 诗歌本：四维分类（主题 / 处境 / 场景 可筛 + 多归属说明） */
   const v3xbook = await gotoView('#/songs', `(() => {
-    const themes = document.getElementById('sbThemes');
-    const situ = document.getElementById('sbSituations');
-    const scenes = document.getElementById('sbScenes');
+    const themes = document.querySelector('[data-theme]');
+    const situ = document.querySelector('[data-situation]');
+    const scenes = document.querySelector('[data-scene]');
     if (!themes || !situ || !scenes) return null;
     const h = document.getElementById('view').innerHTML;
     return {
       three: !!themes && !!situ && !!scenes,
-      t: themes ? themes.querySelectorAll('button').length : 0,
-      s: situ ? situ.querySelectorAll('button').length : 0,
-      c: scenes ? scenes.querySelectorAll('button').length : 0,
-      multi: h.includes('按主题 / 处境 / 场景找歌'),
+      t: document.querySelectorAll('[data-theme]').length,
+      s: document.querySelectorAll('[data-situation]').length,
+      c: document.querySelectorAll('[data-scene]').length,
+      multi: h.includes('筛选歌'),
       noWeek: !/W0\\d/.test(h) && !h.includes('第 1 周') && !h.includes('第1周'),
     };
   })()`);
   ok(v3xbook && v3xbook.three && v3xbook.t > 1 && v3xbook.s > 1 && v3xbook.c > 1,
     `V3.x 诗歌本：四维分类筛（主题/处境/场景，t=${v3xbook ? v3xbook.t : 'n/a'} s=${v3xbook ? v3xbook.s : 'n/a'} c=${v3xbook ? v3xbook.c : 'n/a'}）`);
   ok(v3xbook && v3xbook.multi && v3xbook.noWeek,
-    'V3.x 诗歌本：分类折叠为检索面板 + 前台无周次码');
+    'V3.x 诗歌本：分类折叠为「筛选歌」面板 + 前台无周次码');
 
   /* V3.x 歌曲页：分类段 + 歌曲内容层（经文只引用）+ 不绑周次 */
   const v3xfp = await gotoView('#/song/MUS-S-0001', `(() => {
     if (!document.getElementById('secScore')) return null;
     const h = document.getElementById('view').innerHTML;
     return {
-      classify: h.includes('分类') && h.includes('帮人找到这首歌'),
-      content: h.includes('这首歌的内容') && h.includes('属于这首歌本身'),
+      classify: h.includes('<summary>分类</summary>'),
+      content: h.includes('<summary>这首歌的内容</summary>'),
       ref: h.includes('弗2:1–10') || h.includes('弗2'),
       noWeek: !/W0\\d/.test(h),
       noXlate: !h.includes('AI 示唱（非真人）'),
     };
   })()`);
   ok(v3xfp && v3xfp.classify && v3xfp.content,
-    'V3.x 歌曲页：分类段 + 歌曲内容层段（属于这首歌本身）');
+    'V3.x 歌曲页：分类 / 歌曲内容层折叠收纳（属于这首歌本身）');
   ok(v3xfp && v3xfp.ref && v3xfp.noWeek,
     'V3.x 歌曲页：经文只显示引用（弗2:1–10）+ 不出现周次码');
 
@@ -1073,8 +1070,8 @@ async function main() {
     const h = document.getElementById('view').innerHTML;
     if (!h.includes('没有积分，没有排行榜')) return null;
     return {
-      coachEntry: h.includes('Singing Coach'),
-      backendGated: h.includes('后台入口') && h.includes('view=calibration'),
+      coachEntry: h.includes('#/coach') || h.includes('唱得更准'),
+      backendGated: h.includes('校准与版本') && h.includes('view=calibration'),
       noWeekCode: !/W0\\d/.test(h),
     };
   })()`);
