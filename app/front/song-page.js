@@ -312,7 +312,7 @@ export async function renderSongPage(root, songId, query) {
           </div>
           <p class="plain muted small">点击任何一句，把它设为当前句；逐句音频随资源导入逐步可用。</p>
           ${(unit && unit.lyrics && unit.lyrics.status === 'PROVIDED' && String(unit.lyrics.language || '').toLowerCase().startsWith('en')) ? '<div class="notice">当前托管的是<strong>英文公版原文</strong>；中文译本尚未提供（常见译本各有版权方，本仓不托管）。需要中文时由人工提供已获授权文本。</div>' : ''}` : `
-          <div class="state-empty"><span class="glyph">✍️</span><div>歌词${NOT_PROVIDED}</div><div class="small">平台不托管未经授权的译文；歌词导入后这里会以大字体分节显示。</div></div>`}
+          <div class="state-empty"><span class="glyph">✍️</span><div>简体中文歌词待提供</div><div class="small">英文原文不作为前台主歌词显示；核定的简体中文歌词进入后，这里会直接显示大字歌词。</div></div>`}
         </section>
 
         <!-- 06 唱 -->
