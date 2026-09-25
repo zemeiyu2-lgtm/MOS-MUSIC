@@ -424,8 +424,8 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   ok(teachSrc.includes('教谱要点') && teachSrc.includes('教词要点') && teachSrc.includes('声乐提示'),
     'V3.0 教唱页：教谱 / 教词 / 声乐提示与真人教唱模块');
   const homeSrc = fs.readFileSync(path.join(ROOT, 'app/front/home.js'), 'utf8');
-  ok(homeSrc.includes('dueRecords') && homeSrc.includes('该回来唱了'),
-    'V3.0 首页：该回来唱了（间隔复习到期）');
+  ok(homeSrc.includes('现在唱') && homeSrc.includes('继续学'),
+    'V3.1 首页：现在唱 + 继续学（减法版，无仪表盘）');
   ok(!/mos_week|已人工确认的样本周/.test(homeSrc), 'V3.0 首页：不再引用周次 / 样本周');
   const mineSrc = fs.readFileSync(path.join(ROOT, 'app/front/mine.js'), 'utf8');
   ok(mineSrc.includes('stageCounts') && mineSrc.includes('学习路径状态'),
