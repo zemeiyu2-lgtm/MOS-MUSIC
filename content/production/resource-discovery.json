@@ -29,7 +29,7 @@
     "Human Female",
     "AI Male",
     "AI Female",
-    "Piano",
+    "Accompaniment",
     "Teaching",
     "Rights/Source",
     "Next Action"
@@ -43,7 +43,7 @@
     "score_verify": 5,
     "score_unsurveyed": 66,
     "human_unsurveyed": 100,
-    "piano_unsurveyed": 100,
+    "accompaniment_unsurveyed": 100,
     "teaching_unsurveyed": 100,
     "ai_not_found": 100,
     "external_reuse_confirmed": 0,
@@ -82,7 +82,7 @@
       "CREATE": 0,
       "UNSURVEYED": 100
     },
-    "piano": {
+    "accompaniment": {
       "FOUND": 0,
       "NOT_FOUND": 0,
       "VERIFY": 0,
@@ -176,13 +176,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -260,13 +260,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -344,13 +344,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -428,13 +428,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -512,13 +512,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -596,13 +596,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -680,13 +680,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -764,13 +764,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -848,13 +848,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -932,13 +932,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1016,13 +1016,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1100,13 +1100,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1184,13 +1184,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1268,13 +1268,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1352,13 +1352,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1436,13 +1436,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1520,13 +1520,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1604,13 +1604,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1688,13 +1688,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1772,13 +1772,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1856,13 +1856,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -1940,13 +1940,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2024,13 +2024,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2108,13 +2108,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2192,13 +2192,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2276,13 +2276,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2360,13 +2360,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2444,13 +2444,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2528,13 +2528,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2612,13 +2612,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2696,13 +2696,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2780,13 +2780,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2864,13 +2864,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -2948,13 +2948,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3032,13 +3032,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3116,13 +3116,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3200,13 +3200,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3284,13 +3284,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3368,13 +3368,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3452,13 +3452,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3536,13 +3536,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3620,13 +3620,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3704,13 +3704,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3788,13 +3788,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3872,13 +3872,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -3956,13 +3956,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4040,13 +4040,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4124,13 +4124,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4208,13 +4208,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4292,13 +4292,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4376,13 +4376,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4460,13 +4460,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4544,13 +4544,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4628,13 +4628,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4712,13 +4712,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4796,13 +4796,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4880,13 +4880,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -4964,13 +4964,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5048,13 +5048,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5132,13 +5132,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5216,13 +5216,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5300,13 +5300,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5384,13 +5384,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5468,13 +5468,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5552,13 +5552,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5636,13 +5636,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5720,13 +5720,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5804,13 +5804,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5888,13 +5888,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -5972,13 +5972,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6056,13 +6056,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6140,13 +6140,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6224,13 +6224,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6308,13 +6308,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6392,13 +6392,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6476,13 +6476,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6560,13 +6560,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6644,13 +6644,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6728,13 +6728,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6812,13 +6812,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6896,13 +6896,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -6980,13 +6980,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7064,13 +7064,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7148,13 +7148,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7232,13 +7232,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7316,13 +7316,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7400,13 +7400,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7484,13 +7484,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7568,13 +7568,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7652,13 +7652,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7736,13 +7736,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7820,13 +7820,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7904,13 +7904,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -7988,13 +7988,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -8072,13 +8072,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -8156,13 +8156,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -8240,13 +8240,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -8324,13 +8324,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -8408,13 +8408,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
@@ -8492,13 +8492,13 @@
           "evidence": null,
           "note": "同上：类型就位、成品不存在。"
         },
-        "piano": {
+        "accompaniment": {
           "status": "UNSURVEYED",
           "source_name": null,
           "source_url": null,
           "source_type": null,
           "evidence": null,
-          "note": "钢琴伴奏来源尚未检索；本仓无录音。"
+          "note": "伴奏伴奏来源尚未检索；本仓无录音。"
         },
         "teaching": {
           "status": "UNSURVEYED",
