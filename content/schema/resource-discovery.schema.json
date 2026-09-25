@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "mos-music/resource-discovery.schema.json",
   "title": "Song Resource Discovery（100 首资源普查表 · V3.x）",
-  "description": "先普查再生产：为 100 首逐首记录「有没有现成的谱 / 词 / 真人男声 / 真人女声 / 钢琴 / 教学」。外部检索未执行时必须 UNSURVEYED 且不得填写来源。",
+  "description": "先普查再生产：为 100 首逐首记录「有没有现成的谱 / 词 / 真人男声 / 真人女声 / 伴奏 / 教学」。外部检索未执行时必须 UNSURVEYED 且不得填写来源。",
   "type": "object",
   "required": [
     "discovery_version",
@@ -184,7 +184,7 @@
               "lyrics",
               "human_male",
               "human_female",
-              "piano",
+              "accompaniment",
               "teaching"
             ],
             "additionalProperties": true,
@@ -207,7 +207,7 @@
               "ai_female": {
                 "$ref": "#/definitions/finding"
               },
-              "piano": {
+              "accompaniment": {
                 "$ref": "#/definitions/finding"
               },
               "teaching": {
