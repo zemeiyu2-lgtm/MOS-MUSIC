@@ -53,7 +53,7 @@
     "content/annual/2027/weeks/2027-W02.json": "b4d0b17f5a8079af",
     "content/annual/2027/weeks/2027-W03.json": "a2dd1cea15b21142",
     "content/annual/2027/weeks/2027-W04.json": "2e5f3bda6149cedd",
-    "content/bible/reference-index.json": "515a811b868d6445",
+    "content/bible/reference-index.json": "e728fb4e74e1d506",
     "content/contexts/index.json": "5e99f829e65cbff7",
     "content/courses/MUS-C-01.json": "ff501600c59efb27",
     "content/courses/MUS-C-02.json": "7d1b114a1bcba03b",
@@ -127,5 +127,7 @@
     "skill:mos-music-song-discernment/examples/W02.json": "7566cd13b437852d",
     "skill:mos-music-song-discernment/examples/W03-AUX.json": "6131b2cb67ddb407",
     "skill:mos-music-song-discernment/examples/W03.json": "5c90bf8f4ab6c303"
-  }
+  },
+  "notes": null,
+  "renormalized": "2026-09-25: hashes recomputed with LF-normalized line endings (CRLF/LF cross-platform parity); frozen skill inlined at skill/ for CI availability. Content unchanged."
 }

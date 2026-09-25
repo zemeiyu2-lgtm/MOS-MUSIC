@@ -1,0 +1,79 @@
+{
+  "week": "2027-W03",
+  "mos_week": "W03",
+  "bible_passage": "路5:1–11",
+  "core_truth": "耶稣在人的徒劳与专业之外显出祂的主权，使人看见自己的不配，并把跟随的呼召交给他——跟从始于认识祂是谁，而不是因着得着什么。",
+  "lq": "LQ03",
+  "mm_theme": "MM08 跟随基督",
+  "music_function": [
+    "LI",
+    "TR",
+    "EM"
+  ],
+  "candidate_song": "MUS-S-0005 一切全献上（I Surrender All）",
+  "song_relation": "theme_response",
+  "song_relation_evidence": "歌曲仅提供姿态类情感回应（降服），未承接经文主张。",
+  "primary_function": "EM",
+  "eight_dimensions": {
+    "biblical_truth": "3/5 — 「全然献上」与罗12:1 一致；但「我全献上」的自述容易先于「主的呼召与恩典」，需以 W03 单元的次序（先认识主、后撇下）校正。",
+    "theology": "3/5 — 训练降服的意愿；单独使用有道德主义风险，必须挂在呼召的基督论前提上。",
+    "emotional_formation": "4/5 — 形成降服与交托的情感，回应「我整夜劳力」的自我依靠。",
+    "community": "4/5 — 布道会与小组决志传统中参与度高。",
+    "congregational_participation": "4/5 — 旋律简单，副歌易记。",
+    "intergenerational": "2/5 — 对儿童较抽象。",
+    "life_practice": "4/5 — 副歌本身即承诺句，可要求唱者说出一件具体交托事项。",
+    "mission": "1/5 — 无直接使命指向。"
+  },
+  "s6": {
+    "object": "✓",
+    "content": "✓",
+    "time": "✓",
+    "method": "✓",
+    "ok": true,
+    "missing": [],
+    "text": "本周完成一项「已经知道该做、却一直拖延」的具体顺服，从以下类型中选一项：①向一位家人承认一个具体的错并请求饶恕；②停止一项需要说谎或夸大的业务/做事方式；③明确加入一个小组并参加第一次聚会。写下完成时间。"
+  },
+  "s7": {
+    "target": "✓",
+    "channel": "✓",
+    "verification": "✓",
+    "ok": true,
+    "text": "本周约一位肢体，用 20 分钟带他走一遍七步法（就用本周的经文与歌曲），下次聚会时互相回报各自的「行」与「传」完成了没有。"
+  },
+  "risks": [
+    {
+      "code": "A",
+      "severity": "HIGH",
+      "message": "歌曲记录已声明道德主义风险：跟随若被简化为意志奉献/个人道德努力，福音结构即被倒置。"
+    },
+    {
+      "code": "B",
+      "severity": "NOTE",
+      "message": "情感功能为主而圣经真理维度偏低 → 须防「唱得感动即已改变」的推论。"
+    },
+    {
+      "code": "F",
+      "severity": "HIGH",
+      "message": "本周功能含 TR（真理/共同体/使命导向），而歌曲仅为主题级回应 → 可能以安静/情感取代经文主张，须人工复核。"
+    }
+  ],
+  "gospel_structure": "⚠ 无基督论/救恩论锚点",
+  "tier": "B",
+  "review_status": "under_review",
+  "song_is_complete_unit": false,
+  "decision": "Needs Human Review",
+  "week_fit_verdict": "Needs Human Review",
+  "week_fit_verdict_code": "needs_human_review",
+  "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+  "human_review_required": true,
+  "trace": [
+    "1) 选此歌：因 歌曲仅提供姿态类情感回应（降服），未承接经文主张。",
+    "2) 关系判定：theme_response（仅姿态类回应）。",
+    "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 LI/TR/EM）。",
+    "4) S6：四要素齐备（Object/Content/Time/Method）。",
+    "5) S7：成立（含可验证机制）。",
+    "6) 神学风险：A[HIGH]、B[NOTE]、F[HIGH]。",
+    "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+    "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Needs Human Review）。"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "week": "2027-W02",
+  "mos_week": "W02",
+  "bible_passage": "路4:22–30",
+  "core_truth": "恩典的主被自己的家乡拒绝——因为人想得到一位「先给我们」的耶稣，却容不下一位施恩给谁就施恩给谁的基督。",
+  "lq": "LQ04",
+  "mm_theme": "MM16 合一与教会 + MM20 爱邻舍",
+  "music_function": [
+    "TR",
+    "EM",
+    "CO"
+  ],
+  "candidate_song": "MUS-S-0002 我灵镇静（Be Still, My Soul）",
+  "song_relation": "theme_response",
+  "song_relation_evidence": "歌曲记录明确声明为间接呼应/主题级/非经文直译，且无恩典性行动词共现。",
+  "primary_function": "EM",
+  "eight_dimensions": {
+    "biblical_truth": "4/5 — 「神是掌权的主，风暴终必止息」符合诗46与福音书平息风浪的脉络；但对「恩典主权不受人的边界限制」（路4:22–30）是间接呼应而非直译。",
+    "theology": "4/5 — 把「谁作主」的问题从人手里交还给神，正对 W02 的「先给我们」心态。",
+    "emotional_formation": "5/5 — 形成信靠与忍耐，特别针对失控焦虑；这是 LQ04 的情感方向。",
+    "community": "3/5 — 更适合个人与小组默祷式同唱，大场面会众参与度中等。",
+    "congregational_participation": "3/5 — 旋律悠长，需要一定教唱成本。",
+    "intergenerational": "2/5 — 对儿童偏难；跨代传递弱。",
+    "life_practice": "3/5 — 能支撑「交托一个具体失控之事」的实践，需单元指令配合。",
+    "mission": "2/5 — 使命指向弱。"
+  },
+  "s6": {
+    "object": "✓",
+    "content": "✓",
+    "time": "✓",
+    "method": "✓",
+    "ok": true,
+    "missing": [],
+    "text": "本周主动向一位「圈外人」表达一次具体接纳：邀请一位平时不来往的肢体（不同背景、口音、年龄层）吃饭或喝茶；若你是组长，检查本组分座分组的习惯，本周坐到最边缘的人旁边。"
+  },
+  "s7": {
+    "target": "✓",
+    "channel": "✓",
+    "verification": "（缺：仅记改善提示）",
+    "ok": true,
+    "text": "用一句你自己的话向家人解释「恩典没有围墙」（例如：神的恩典不查户口），并讲一个拿撒勒会堂的故事给他们听。"
+  },
+  "risks": [
+    {
+      "code": "F",
+      "severity": "HIGH",
+      "message": "本周功能含 TR/CO（真理/共同体/使命导向），而歌曲仅为主题级回应 → 可能以安静/情感取代经文主张，须人工复核。"
+    }
+  ],
+  "gospel_structure": "⚠ 无基督论/救恩论锚点",
+  "tier": "B",
+  "review_status": "under_review",
+  "song_is_complete_unit": false,
+  "decision": "Needs Human Review",
+  "week_fit_verdict": "Needs Human Review",
+  "week_fit_verdict_code": "needs_human_review",
+  "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+  "human_review_required": true,
+  "trace": [
+    "1) 选此歌：因 歌曲记录明确声明为间接呼应/主题级/非经文直译，且无恩典性行动词共现。",
+    "2) 关系判定：theme_response（记录中含非直译声明）。",
+    "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 TR/EM/CO）。",
+    "4) S6：四要素齐备（Object/Content/Time/Method）。",
+    "5) S7：成立（提示：缺互报/验证机制）。",
+    "6) 神学风险：F[HIGH]。",
+    "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+    "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Needs Human Review）。"
+  ]
+}

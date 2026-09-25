@@ -22,7 +22,13 @@ const crypto = require('crypto');
 const { pathToFileURL } = require('url');
 
 const ROOT = path.resolve(__dirname, '..');
-const SKILL_ENTRY = 'C:/Users/Administrator/.workbuddy/skills/mos-music-song-discernment/tools/discern.js';
+/* 冻结技能解析：优先仓库内只读副本（CI 可用），回退本机 WorkBuddy 技能目录。 */
+const SKILL_DIR_REPO = path.join(ROOT, 'skill', 'mos-music-song-discernment');
+const SKILL_DIR_LOCAL = 'C:/Users/Administrator/.workbuddy/skills/mos-music-song-discernment';
+const SKILL_DIR = fs.existsSync(SKILL_DIR_REPO) ? SKILL_DIR_REPO : SKILL_DIR_LOCAL;
+const SKILL_ENTRY = path.join(SKILL_DIR, 'tools', 'discern.js');
+/* 哈希换行归一：Windows 检出 CRLF / CI 检出 LF 必须算出同一哈希（内容以 LF 语义为准）。 */
+const hash = (p) => crypto.createHash('sha256').update(fs.readFileSync(p).toString().replace(/\r\n/g, '\n')).digest('hex').slice(0, 16);
 
 let passed = 0;
 let failed = 0;
@@ -34,7 +40,6 @@ function ok(cond, label, detail) {
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 const rj = (rel) => readJSON(path.join(ROOT, rel));
-const hash = (p) => crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex').slice(0, 16);
 
 /* ---------------------------------------------------------------- 主流程 */
 
@@ -83,7 +88,10 @@ async function main() {
       let actual = null;
       let real = p;
       if (p.startsWith('skill:')) {
-        real = path.join('C:/Users/Administrator/.workbuddy/skills', p.slice('skill:'.length));
+        /* 仓库内只读副本优先（CI 可用）；回退本机 WorkBuddy 技能目录。 */
+        const rel = p.slice('skill:'.length);
+        const repoReal = path.join(ROOT, 'skill', rel);
+        real = fs.existsSync(repoReal) ? repoReal : path.join(SKILL_DIR_LOCAL, rel);
         if (!fs.existsSync(real)) { immutableDrift.push(`${p} 缺失`); continue; }
       } else {
         real = path.join(ROOT, p);

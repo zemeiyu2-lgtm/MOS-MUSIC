@@ -1,0 +1,62 @@
+{
+  "week": "2027-W01",
+  "mos_week": "W01",
+  "bible_passage": "路4:14–21",
+  "core_truth": "耶稣是被圣灵膏立、被差遣的那一位；祂以「今天」宣告：神悦纳人的恩典与释放，已经在祂身上开始。",
+  "lq": "LQ02",
+  "mm_theme": "MM05 道成肉身",
+  "music_function": [
+    "TR",
+    "EM"
+  ],
+  "candidate_song": "MUS-S-0001 奇异恩典（Amazing Grace）",
+  "song_relation": "direct_biblical_expression",
+  "song_relation_evidence": "歌曲标签与本周核心真理的恩典性行动词共现：恩典——直接表达同一真理。",
+  "primary_function": "EM",
+  "eight_dimensions": {
+    "biblical_truth": "5/5 — 「前我失丧今被寻回、瞎眼今得看见」与弗2章「死在罪中—蒙恩得救」的恩典次序一致，救恩完全是神的作为。",
+    "theology": "4/5 — 反复传唱「恩典」一词，把救恩的起点固定在神的作为而非人的表现。",
+    "emotional_formation": "5/5 — 形成感恩与被寻回的安息，不是亢奋情绪，而是蒙爱的确据。",
+    "community": "3/5 — 适合会众齐唱；但对不熟悉英文圣诗传统的群体需要译本与教学。",
+    "congregational_participation": "4/5 — 旋律简单、句式重复，跨代可唱。",
+    "intergenerational": "4/5 — 是少有的祖孙同唱一首的圣诗，家庭传递成本低。",
+    "life_practice": "3/5 — 本身不指定行为，需要像 W01 单元那样配「交托一件具体重担」的实践指令才能落地。",
+    "mission": "2/5 — 见证视角弱；使命方向需靠单元的传（S7）补足。"
+  },
+  "s6": {
+    "object": "✓",
+    "content": "✓",
+    "time": "✓",
+    "method": "✓",
+    "ok": true,
+    "missing": [],
+    "text": "选一件你一直「等神替我解决」的具体难处（如某段关系、某项工作压力），本周改写成一句感恩祷告：「感谢你在基督里已经悦纳我；这件事也在你手里。」写下来，并在这周至少完整祷告三次。"
+  },
+  "s7": {
+    "target": "✓",
+    "channel": "✓",
+    "verification": "✓",
+    "ok": true,
+    "text": "把路4:18–19 中主的使命用自己的话讲给一位家人听（两分钟以内），并约他下周和你一起唱《奇异恩典》第一节。"
+  },
+  "risks": [],
+  "gospel_structure": "有福音锚点（基督的寻找与拯救、蒙恩得救、恩典先行）",
+  "tier": "A",
+  "review_status": "under_review",
+  "song_is_complete_unit": false,
+  "decision": "Core Candidate",
+  "week_fit_verdict": "Confirmed",
+  "week_fit_verdict_code": "confirmed",
+  "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+  "human_review_required": false,
+  "trace": [
+    "1) 选此歌：因 歌曲标签与本周核心真理的恩典性行动词共现：恩典——直接表达同一真理。",
+    "2) 关系判定：direct_biblical_expression（与核心真理恩典性行动词共现 → 直接表达同一真理）。",
+    "3) 主功能：EM（取自歌曲 formation.primary_function；周功能为 TR/EM）。",
+    "4) S6：四要素齐备（Object/Content/Time/Method）。",
+    "5) S7：成立（含可验证机制）。",
+    "6) 神学风险：未发现。",
+    "7) Tier：A（来自歌曲记录 tier，独立字段）。",
+    "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Core Candidate）。"
+  ]
+}

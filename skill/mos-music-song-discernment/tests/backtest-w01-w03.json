@@ -1,0 +1,82 @@
+{
+  "spec_version": "1.0.0",
+  "skill": "mos-music-song-discernment",
+  "skill_version": "1.0.0",
+  "ground_truth": {
+    "source": "Phase 2A.1 冻结裁决（人工）",
+    "refs": [
+      "content/annual/2027/units/MUS-U-2027-W01.json#review_gate",
+      "content/annual/2027/units/MUS-U-2027-W02.json#review_gate",
+      "content/annual/2027/units/MUS-U-2027-W03.json#review_gate",
+      "content/songs/MUS-S-0001.json",
+      "content/songs/MUS-S-0002.json",
+      "content/songs/MUS-S-0003.json",
+      "content/songs/MUS-S-0005.json",
+      "docs/PHASE-2A-THEOLOGICAL-REVIEW.md"
+    ],
+    "note": "回测不得修改以上任何上游文件；tests/upstream-hashes.json 记录冻结时的哈希。"
+  },
+  "cases": [
+    {
+      "id": "W01",
+      "mos_week": "W01",
+      "candidate_song": "MUS-S-0001",
+      "role": "core",
+      "expect": {
+        "song_relation": "direct_biblical_expression",
+        "week_fit_verdict": "confirmed",
+        "tier": "A",
+        "review_status": "under_review"
+      },
+      "why": "路4:14–21 恩典先行；《奇异恩典》与同一恩典次序一致 → Direct + 本周适配 Confirmed；歌曲自身生命周期仍 under_review（两层级分离）。"
+    },
+    {
+      "id": "W02",
+      "mos_week": "W02",
+      "candidate_song": "MUS-S-0002",
+      "role": "core",
+      "expect": {
+        "song_relation": "theme_response",
+        "week_fit_verdict": "needs_human_review",
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": ["F"]
+      },
+      "why": "《我灵镇静》只回应对恩典主权的情感姿态；本周功能含 TR/CO，须防「安静」取代「恩典突破边界」→ Theme_Response + Needs Human Review，不得升级为 Core。"
+    },
+    {
+      "id": "W03",
+      "mos_week": "W03",
+      "candidate_song": "MUS-S-0003",
+      "role": "core",
+      "expect": {
+        "song_relation": "direct_biblical_expression",
+        "week_fit_verdict": "confirmed",
+        "tier": "B",
+        "review_status": "under_review"
+      },
+      "why": "《耶稣呼召》主语是基督的呼召，与路5:1–11 呼召结构同构 → Direct + Confirmed。"
+    },
+    {
+      "id": "W03-AUX",
+      "mos_week": "W03",
+      "candidate_song": "MUS-S-0005",
+      "role": "auxiliary",
+      "expect": {
+        "tier": "B",
+        "review_status": "under_review",
+        "risk_codes": ["A"]
+      },
+      "why": "《一切全献上》辅助歌：必须识别道德主义风险（无基督论/救恩论锚点的自我献上语汇）→ Tier B + Under Review，不删除、不得作 Core。"
+    }
+  ],
+  "acceptance": {
+    "A": "上游不变（哈希一致）",
+    "B": "Song_Relation 正确（W01 Direct / W02 Theme_Response / W03 主歌 Direct）",
+    "C": "神学风险识别正确（W03 道德主义 / W02 对齐风险）",
+    "D": "S6 检查有效（三周均四要素齐备）",
+    "E": "S7 检查有效（三周均成立）",
+    "F": "歌曲 ≠ 完整门训单元（显式声明）",
+    "G": "Tier 与 Review Status 独立"
+  }
+}

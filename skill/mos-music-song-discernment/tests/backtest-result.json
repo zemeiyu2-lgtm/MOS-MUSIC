@@ -1,0 +1,182 @@
+{
+  "rows": [
+    {
+      "id": "W01",
+      "week": "W01",
+      "song": "MUS-S-0001",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "expected": "direct_biblical_expression",
+          "actual": "direct_biblical_expression",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "expected": "confirmed",
+          "actual": "confirmed",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "expected": "A",
+          "actual": "A",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "expected": "under_review",
+          "actual": "under_review",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W02",
+      "week": "W02",
+      "song": "MUS-S-0002",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "expected": "theme_response",
+          "actual": "theme_response",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "expected": "needs_human_review",
+          "actual": "needs_human_review",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "expected": "B",
+          "actual": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "expected": "under_review",
+          "actual": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_F",
+          "expected": "detected",
+          "actual": "detected",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W03",
+      "week": "W03",
+      "song": "MUS-S-0003",
+      "role": "core",
+      "checks": [
+        {
+          "field": "song_relation",
+          "expected": "direct_biblical_expression",
+          "actual": "direct_biblical_expression",
+          "pass": true
+        },
+        {
+          "field": "week_fit_verdict",
+          "expected": "confirmed",
+          "actual": "confirmed",
+          "pass": true
+        },
+        {
+          "field": "tier",
+          "expected": "B",
+          "actual": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "expected": "under_review",
+          "actual": "under_review",
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "W03-AUX",
+      "week": "W03",
+      "song": "MUS-S-0005",
+      "role": "auxiliary",
+      "checks": [
+        {
+          "field": "tier",
+          "expected": "B",
+          "actual": "B",
+          "pass": true
+        },
+        {
+          "field": "review_status",
+          "expected": "under_review",
+          "actual": "under_review",
+          "pass": true
+        },
+        {
+          "field": "risk_A",
+          "expected": "detected",
+          "actual": "detected",
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "acceptance": [
+    {
+      "key": "A",
+      "label": "上游不变（哈希一致）",
+      "pass": true,
+      "detail": "unchanged"
+    },
+    {
+      "key": "B",
+      "label": "Song_Relation 正确",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "key": "C",
+      "label": "神学风险识别正确（W03 道德主义 / W02 对齐风险）",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "key": "D",
+      "label": "S6 检查有效（三周均四要素齐备）",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "key": "E",
+      "label": "S7 检查有效（三周均成立）",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "key": "F",
+      "label": "歌曲 ≠ 完整门训单元（显式声明）",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "key": "G",
+      "label": "Tier 与 Review Status 独立",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "hashStatus": "unchanged",
+  "ran_at": "2026-09-21T06:08:52.165Z"
+}

@@ -224,7 +224,7 @@
     },
     "detail": "可用（未使用过）歌曲 45 首 < 剩余生产需求 48 周 → 必须由人工决定：扩库、复用或缩减计划；平台不会强行凑数。"
   },
-  "generated_at": "2026-09-21T09:55:33.297Z",
+  "generated_at": "2026-09-25T00:10:00.556Z",
   "generated_by": "tools/library-report.js",
   "library_index": {
     "status": "RECEIVED",

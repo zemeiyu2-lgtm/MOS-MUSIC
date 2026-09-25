@@ -1,0 +1,63 @@
+{
+  "week": "2027-W03",
+  "mos_week": "W03",
+  "bible_passage": "路5:1–11",
+  "core_truth": "耶稣在人的徒劳与专业之外显出祂的主权，使人看见自己的不配，并把跟随的呼召交给他——跟从始于认识祂是谁，而不是因着得着什么。",
+  "lq": "LQ03",
+  "mm_theme": "MM08 跟随基督",
+  "music_function": [
+    "LI",
+    "TR",
+    "EM"
+  ],
+  "candidate_song": "MUS-S-0003 耶稣呼召（Jesus Calls Us）",
+  "song_relation": "direct_biblical_expression",
+  "song_relation_evidence": "歌曲标签与本周核心真理的恩典性行动词共现：呼召——直接表达同一真理。",
+  "primary_function": "LI",
+  "eight_dimensions": {
+    "biblical_truth": "5/5 — 「耶稣呼召，放下产业与亲爱之人，跟从祂」与路5:1–11「撇下所有的跟随」及太4章呼召叙述同构。",
+    "theology": "4/5 — 把呼召的起点固定在基督的呼召行动上（主语是耶稣），可防止「奉献成本式」道德主义。",
+    "emotional_formation": "4/5 — 形成降服与决志；需要警惕只停留在决志情绪而无具体行为。",
+    "community": "4/5 — 会众齐唱与小组决志场景都适用。",
+    "congregational_participation": "4/5 — 句式规整，易教易学。",
+    "intergenerational": "3/5 — 原为儿童圣诗传统而作，儿童可学。",
+    "life_practice": "5/5 — 「放下……跟从」可直接翻译成一项具体顺服行动，是本组样本中最能落地的歌。",
+    "mission": "3/5 — 呼召含差遣意味，但未直接指向万民。"
+  },
+  "s6": {
+    "object": "✓",
+    "content": "✓",
+    "time": "✓",
+    "method": "✓",
+    "ok": true,
+    "missing": [],
+    "text": "本周完成一项「已经知道该做、却一直拖延」的具体顺服，从以下类型中选一项：①向一位家人承认一个具体的错并请求饶恕；②停止一项需要说谎或夸大的业务/做事方式；③明确加入一个小组并参加第一次聚会。写下完成时间。"
+  },
+  "s7": {
+    "target": "✓",
+    "channel": "✓",
+    "verification": "✓",
+    "ok": true,
+    "text": "本周约一位肢体，用 20 分钟带他走一遍七步法（就用本周的经文与歌曲），下次聚会时互相回报各自的「行」与「传」完成了没有。"
+  },
+  "risks": [],
+  "gospel_structure": "有福音锚点（呼召主的主权）",
+  "tier": "B",
+  "review_status": "under_review",
+  "song_is_complete_unit": false,
+  "decision": "Core Candidate",
+  "week_fit_verdict": "Confirmed",
+  "week_fit_verdict_code": "confirmed",
+  "not_yet_validated": "真实会众使用后的反馈（只能在会众使用中验证）",
+  "human_review_required": false,
+  "trace": [
+    "1) 选此歌：因 歌曲标签与本周核心真理的恩典性行动词共现：呼召——直接表达同一真理。",
+    "2) 关系判定：direct_biblical_expression（与核心真理恩典性行动词共现 → 直接表达同一真理）。",
+    "3) 主功能：LI（取自歌曲 formation.primary_function；周功能为 LI/TR/EM）。",
+    "4) S6：四要素齐备（Object/Content/Time/Method）。",
+    "5) S7：成立（含可验证机制）。",
+    "6) 神学风险：未发现。",
+    "7) Tier：B（来自歌曲记录 tier，独立字段）。",
+    "8) Review Status：under_review（歌曲生命周期，与 Tier 独立；本周适配裁决为 Core Candidate）。"
+  ]
+}

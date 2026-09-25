@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-09-21T06:08:52.067Z",
+  "note": "Phase 2A.1 冻结时的上游快照；回测 A 项要求一致。",
+  "hashes": {
+    "content/annual/2027/annual.json": "20ba15ef5014f58d",
+    "content/annual/2027/units/MUS-U-2027-W01.json": "8a39ff587478f1b8",
+    "content/annual/2027/units/MUS-U-2027-W02.json": "efae79a697196758",
+    "content/annual/2027/units/MUS-U-2027-W03.json": "39110c192bc3b1ac",
+    "content/annual/2027/weeks/2027-W01.json": "34e4082dd7144764",
+    "content/annual/2027/weeks/2027-W02.json": "b4d0b17f5a8079af",
+    "content/annual/2027/weeks/2027-W03.json": "a2dd1cea15b21142",
+    "content/framework/music-units.json": "d91e780ff8d0e24a",
+    "content/songs/MUS-S-0001.json": "98d4c7b4fb855c9c",
+    "content/songs/MUS-S-0002.json": "695e8ddfbe79be77",
+    "content/songs/MUS-S-0003.json": "59cb6408cf73c482",
+    "content/songs/MUS-S-0004.json": "588d0e4bb2311141",
+    "content/songs/MUS-S-0005.json": "e72429c19dd37224",
+    "content/songs/index.json": "b305b1248bf859f1"
+  }
+}
