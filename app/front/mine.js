@@ -89,22 +89,17 @@ export async function renderMine(root) {
         : null;
       return section(key, label, rows, extra);
     }).join('')}
-    <section class="card sp-sec">
-      <h2>歌唱教练（独立模块）</h2>
-      <p class="plain muted small">MOS Singing Coach 练的是音乐表现（音准 / 节奏 / 视唱 / 气息 / 长音 / 咬字 / 音域 / 分句 / 力度 / 表达）。
-      只练音乐，不打分、不排名，练习记录只存本机。</p>
+    <section class="card sp-sec mine-coach">
       <a class="homerow" href="#/coach">
-        <span class="cover cover-md">${coverFor({ song_id: 'mos-voice', lang: 3 })}</span>
         <span class="homerow-main">
           <span class="homerow-title">唱得更准</span><br>
-          <span class="homerow-note">已记录练习 ${coachCount} 次（只存本机）</span>
+          <span class="homerow-note">音准、节奏、视唱与表达练习</span>
         </span>
         <span class="chip">→</span>
       </a>
     </section>
 
-    <section class="card sp-sec">
-      <h2>后台入口</h2>
+    <details class="card sp-sec song-more mine-more"><summary>更多</summary>
       <div class="notice">生产、审核、曲库管理、校准与系统治理都在后台 —— 普通使用者不需要打开。</div>
       <div class="cards">
         <a class="entry" href="#/production?view=dashboard"><span class="entry-main">
@@ -118,7 +113,7 @@ export async function renderMine(root) {
         <a class="entry" href="#/admin"><span class="entry-main">
           <span class="entry-title">系统与内容治理</span><span class="entry-note">后台目录 / 治理结构</span></span><span class="chip">→</span></a>
       </div>
-    </section>`;
+    </details>`;
 
   root.addEventListener('click', (e) => {
     const b = e.target.closest('[data-song]');
