@@ -4,7 +4,7 @@
    首页 / 歌曲库 / 歌曲页 / 学唱 / 视唱 / 教唱 共用同一控制器：
      · play / pause / toggle / seek / speed / loop / 状态；
      · onTime 回调驱动进度条、声波与**简谱光标**；
-     · 槽位驱动：示范 / 陪唱；V3.0 增加 男声 / 女声 / 钢琴 多轨；
+     · 槽位驱动：示范 / 伴奏；V3.0 增加男声 / 女声，多种伴奏可并列选择；
      · 单句循环窗口（setWindow）：只在有时间轴时可用，否则如实不可用；
      · 没有资源时不假装播放 —— 界面显示「尚未提供」。
 
@@ -26,7 +26,7 @@ export function speedLabel(n) {
 
 /**
  * 创建播放器控制器。
- * sources 是一个「轨道名 → {url}」的映射：demo / accomp / male / female / piano …
+ * sources 是一个「轨道名 → {url}」的映射：demo / accomp / accomp_1… / male / female / piano …
  * 任何没有可用 url 的轨道一律不能播放（false），由界面如实说明。
  */
 export function createPlayer() {
@@ -181,6 +181,9 @@ export function mergeSources(slotSources, unitSrc) {
   if (u.male) out.male = u.male;
   if (u.female) out.female = u.female;
   if (u.piano) out.piano = u.piano;
+  for (const o of (u.accompOptions || [])) {
+    if (o && o.key && o.url) out[o.key] = { url: o.url, record: o.record || null };
+  }
   return out;
 }
 
