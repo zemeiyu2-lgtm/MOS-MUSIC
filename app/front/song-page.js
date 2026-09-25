@@ -123,7 +123,8 @@ export async function renderSongPage(root, songId, query) {
   const phrases = (unit && unit.timeline && Array.isArray(unit.timeline.phrases)) ? unit.timeline.phrases : [];
   const lines = unit ? unitLines(unit) : [];
   const slotLyrics = lyricsFromSlots(slots);
-  const showLyrics = lines.length ? lines.map((l) => l.text) : (slotLyrics ? slotLyrics.sections.flat() : []);
+  const rawLyrics = lines.length ? lines.map((l) => l.text) : (slotLyrics ? slotLyrics.sections.flat() : []);
+  const showLyrics = chineseLyricLines(rawLyrics);
   const shareUrl = `${location.origin}${location.pathname}#/song/${encodeURIComponent(ctx.songId)}`;
 
   const player = createPlayer();
