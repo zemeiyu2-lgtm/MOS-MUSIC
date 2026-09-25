@@ -229,7 +229,7 @@ export async function renderLearn(root, songId, query) {
         <p class="plain muted">走完不等于结束 —— 再唱一次，或把它教给一个人。</p>
         <div class="btn-row" style="justify-content:center">
           <button class="btn primary big" id="lAgain">再唱一次</button>
-          <a class="btn secondary big" href="#/teach/${esc(ctx.songId)}">🧑‍🏫 教他唱</a>
+          <a class="btn secondary big" href="#/teach/${esc(ctx.songId)}">教他唱</a>
         </div>
         <div class="btn-row" style="justify-content:center">
           <a class="btn ghost" href="#/song/${esc(ctx.songId)}?focus=score">回到简谱继续看</a>
