@@ -58,8 +58,8 @@
 |---|---|---|---|
 | `NONE` | 尚未达到最低可用 | 资源待制作 | （无）结构已建立，但歌词与简谱尚未提供 —— 现在还不能读谱唱。 |
 | `L1` | 基本歌：歌词 + 简谱 | **可以读谱唱** | `lyrics` + `score`。可以读、可以唱，但还没有伴奏支持。 |
-| `L2` | 可学唱：歌词 + 简谱 + 钢琴 | **可以正式学唱** | `lyrics` + `score` + `accompaniment`。有伴奏陪唱，可以进入正式学习。 |
-| `L3` | 完整学唱：简谱 + 钢琴 + 示唱 + 时间轴 | **可以完整学唱** | `L1/L2` + `demo_any` + `timeline`。有真人示唱与分句时间轴，学唱体验完整。 |
+| `L2` | 可学唱：歌词 + 简谱 + 伴奏 | **可以正式学唱** | `lyrics` + `score` + `accompaniment`。有伴奏陪唱，可以进入正式学习。 |
+| `L3` | 完整学唱：简谱 + 伴奏 + 示唱 + 时间轴 | **可以完整学唱** | `L1/L2` + `demo_any` + `timeline`。有真人示唱与分句时间轴，学唱体验完整。 |
 | `L4` | 完整教学歌 | **完整教学歌** | `L3` + `demo_male` + `demo_female` + `cursor` + `teach_learn` + `teach_score` + `teach_lyrics` + `teach_vocal` + `teach_live`。可学、可视唱、可教、可传的完整歌曲单元。 |
 
 ### 派生规则（机械定义）
@@ -79,7 +79,7 @@
 生产状态机（`production_states`）与段的推进顺序一致：
 
 ```
-INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
+INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → ACCOMPANIMENT_READY
        → DEMO_READY → SYNC_READY → TEACHING_READY → REVIEW → COMPLETE
                                                         ↓
                                                       HOLD（任意阶段可显式挂起）
@@ -107,7 +107,7 @@ INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
 |---|---|
 | `LYRICS_READY` | `lyrics == PROVIDED` |
 | `SCORE_READY` | + `score == PROVIDED` |
-| `ACCOMPANIMENT_READY` | + `piano == PROVIDED` |
+| `ACCOMPANIMENT_READY` | + `accompaniment == PROVIDED` |
 | `DEMO_READY` | + `demo_any` |
 | `SYNC_READY` | + `timeline` |
 | `TEACHING_READY` | + `teach_learn` |
