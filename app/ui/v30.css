@@ -490,3 +490,10 @@ html[data-mood="night"] .music-filters { border-color:var(--night-line); }
 }
 html[data-mood="night"] .song-action { background:var(--night-paper); border-color:var(--night-line); color:var(--night-ink); }
 html[data-mood="night"] .song-action.primary { background:rgba(122,167,140,.12); border-color:#3B6B58; }
+
+
+/* UI验收修正：歌曲页不再把次级内容固定为桌面右栏，保持单一音乐阅读流 */
+@media (min-width: 1024px) {
+  .songpage { grid-template-columns: minmax(0, 1fr); }
+  .sp-side { position: static; }
+}
