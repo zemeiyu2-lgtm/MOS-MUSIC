@@ -31,8 +31,8 @@ import { mountPhraseCards } from './phrase-card.js';
 import * as mySongs from './my-songs.js';
 
 const MODE_META = {
-  learn: { label: '学唱', emoji: '🎤' },
-  sight: { label: '视唱', emoji: '🎼' },
+  learn: { label: '学唱', icon: '♪' },
+  sight: { label: '视唱', icon: '◌' },
 };
 
 function toast(root, text, ok) {
@@ -83,8 +83,8 @@ export async function renderLearn(root, songId, query) {
   const unitSrc = unitSources(unit, resourcesIdx);
   const sources = mergeSources(sourcesFromSlots(ctx.slots), unitSrc);
   const kinds = [
-    ['male', '🎧 男声示唱'], ['female', '🎧 女声示唱'], ['piano', '🎹 钢琴伴奏'],
-    ['demo', '🎧 示范'], ['accomp', '🎹 陪唱'],
+    ['male', '男声示唱'], ['female', '女声示唱'], ['piano', '伴奏'],
+    ['demo', '示范'], ['accomp', '伴奏'],
   ].filter(([k]) => sources[k]);
 
   const scoreOk = unit ? scoreReady(unit.score) : false;
@@ -107,11 +107,11 @@ export async function renderLearn(root, songId, query) {
   root.innerHTML = `
   <a class="btn ghost backline" href="#/song/${esc(ctx.songId)}">← 返回歌曲</a>
   <section class="card" style="padding:var(--sp-4)">
-    <div class="eyebrow">${esc(modeMeta.emoji)} ${esc(modeMeta.label)}模式 ｜ ${esc(zh)}${row.en ? ` · ${esc(row.en)}` : ''}</div>
+    <div class="eyebrow">${esc(modeMeta.icon)} ${esc(modeMeta.label)}模式 ｜ ${esc(zh)}${row.en ? ` · ${esc(row.en)}` : ''}</div>
     <div class="mode-tabs">
-      <a class="pill ${modeKey === 'learn' ? 'on' : ''}" href="#/learn/${esc(ctx.songId)}">🎤 学唱</a>
-      <a class="pill ${modeKey === 'sight' ? 'on' : ''}" href="#/learn/${esc(ctx.songId)}?mode=sight">🎼 视唱</a>
-      <a class="pill" href="#/teach/${esc(ctx.songId)}">🧑‍🏫 教唱</a>
+      <a class="pill ${modeKey === 'learn' ? 'on' : ''}" href="#/learn/${esc(ctx.songId)}">学唱</a>
+      <a class="pill ${modeKey === 'sight' ? 'on' : ''}" href="#/learn/${esc(ctx.songId)}?mode=sight">视唱</a>
+      <a class="pill" href="#/teach/${esc(ctx.songId)}">教唱</a>
     </div>
     <p class="plain muted" style="margin:4px 0 0">${esc(modeDef.note || '')}</p>
   </section>
@@ -224,7 +224,7 @@ export async function renderLearn(root, songId, query) {
         <div class="stage-word">这一遍走完了</div>
         <p class="plain muted">走完不等于结束 —— 再唱一次，或把它教给一个人。</p>
         <div class="btn-row" style="justify-content:center">
-          <button class="btn primary big" id="lAgain">🔁 再唱一次</button>
+          <button class="btn primary big" id="lAgain">再唱一次</button>
           <a class="btn secondary big" href="#/teach/${esc(ctx.songId)}">🧑‍🏫 教他唱</a>
         </div>
         <div class="btn-row" style="justify-content:center">
@@ -258,13 +258,13 @@ export async function renderLearn(root, songId, query) {
   }
   function paint() {
     const st = player.state();
-    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '钢琴伴奏', demo: '示范', accomp: '陪唱' };
+    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '伴奏', demo: '示范', accomp: '伴奏' };
     stateEl.textContent = st.playing ? `${labelOf[st.kind] || '音频'}播放中` : (st.kind ? '已暂停' : '未播放');
     waveEl.classList.toggle('on', st.playing);
     toggleBtn.textContent = st.playing ? '⏸' : '▶';
     toggleBtn.classList.toggle('playing', st.playing);
     timeEl.textContent = `${formatTime(st.time)} / ${formatTime(st.duration)}`;
-    loopBtn.textContent = st.loop ? '🔁 循环开' : '🔁 循环关';
+    loopBtn.textContent = st.loop ? '循环开' : '循环关';
     loopBtn.setAttribute('aria-pressed', st.loop ? 'true' : 'false');
     kindBtns.forEach((b) => b.classList.toggle('on', b.dataset.kind === st.kind));
   }
@@ -351,9 +351,9 @@ export async function renderLearn(root, songId, query) {
   function paintBeats(n) { if (beatDots) beatDots.querySelectorAll('i').forEach((el, i) => el.classList.toggle('on', n >= 0 && i === n % perBar)); }
   if (metroToggle) {
     metroToggle.addEventListener('click', () => {
-      if (metro.state().running) { metro.stop(); metroToggle.textContent = '▶ 开始打拍'; metroToggle.setAttribute('aria-pressed', 'false'); paintBeats(-1); }
+      if (metro.state().running) { metro.stop(); metroToggle.textContent = '开始打拍'; metroToggle.setAttribute('aria-pressed', 'false'); paintBeats(-1); }
       else if (!metro.start()) toast(root, '此环境没有音频输出，节拍器不可用', false);
-      else { metroToggle.textContent = '⏸ 停止打拍'; metroToggle.setAttribute('aria-pressed', 'true'); }
+      else { metroToggle.textContent = '停止打拍'; metroToggle.setAttribute('aria-pressed', 'true'); }
     });
   }
   if (metroBpm) metroBpm.addEventListener('input', () => {
