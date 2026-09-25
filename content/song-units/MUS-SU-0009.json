@@ -63,7 +63,7 @@
       "note": "真人示唱尚未录制；不得用合成声音冒充真人示唱。"
     }
   },
-  "piano": {
+  "accompaniment": {
     "status": "NOT_PROVIDED",
     "has_intro": null,
     "has_interlude": null,
@@ -239,12 +239,6 @@
       "date": null,
       "note": null
     },
-    "piano": {
-      "result": "PENDING",
-      "reviewer": null,
-      "date": null,
-      "note": null
-    },
     "teaching": {
       "result": "PENDING",
       "reviewer": null,
@@ -270,6 +264,12 @@
       "note": null
     },
     "rights": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "accompaniment": {
       "result": "PENDING",
       "reviewer": null,
       "date": null,
