@@ -55,7 +55,14 @@ function toast(root, text, ok) {
 function unitLyrics(unit) {
   const ly = unit && unit.lyrics;
   if (!ly || ly.status !== 'PROVIDED' || !Array.isArray(ly.sections) || !ly.sections.length) return null;
-  return { language: ly.language || null, sections: ly.sections };
+  const sections = ly.sections.map((sec) => ({
+    ...sec,
+    lines: (sec.lines || []).filter((line) => {
+      const text = String(line && line.text || '');
+      return (text.match(/[\u3400-\u9fff]/g) || []).length >= 2;
+    }),
+  })).filter((sec) => sec.lines.length);
+  return sections.length ? { language: 'zh-CN', sections } : null;
 }
 
 /** 单元歌词 → 与播放器无关的纯文本行（供舞台大字使用）。 */
