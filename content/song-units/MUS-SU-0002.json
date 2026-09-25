@@ -3,8 +3,8 @@
   "song_id": "MUS-S-0002",
   "unit_version": "MUS-V-1.1.0",
   "standard": "song-production-template-1.0",
-  "status": "VERIFYING",
-  "status_note": "PILOT 10：生产工作包已建立，公版英文歌词已结构化入包；简谱草稿待人工听校；中文译本与音频资源待人工提供（缺什么就写什么，不虚构）。",
+  "status": "SYNC_READY",
+  "status_note": "歌词、简谱、伴奏、男女示唱、分句时间轴与光标均已提供；待补声乐提示、真人教唱资源，并完成 A–J 最终验收。",
   "song_meta": {
     "title_zh": "我灵镇静",
     "title_en": "Be Still, My Soul",
