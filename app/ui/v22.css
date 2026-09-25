@@ -1102,3 +1102,153 @@ html[data-mood="night"] .songpage #secLyrics .lyric-line.current {
 html[data-mood="night"] .songpage #secSing .resource-slot {
   border-color: #292929 !important;
 }
+
+
+
+/* =========================================================
+   V2.2 第三轮精修｜Continuous Music
+========================================================= */
+
+/* 诗歌本：从“网格卡片”进一步收敛成曲库 */
+.music-song-grid {
+  max-width: 920px !important;
+}
+.music-song-card {
+  min-height: 86px !important;
+}
+.music-song-open .cover {
+  flex-basis: 62px !important;
+  width: 62px !important;
+  height: 62px !important;
+}
+.music-song-copy strong {
+  font-size: 17px !important;
+}
+.music-song-copy small {
+  font-size: 12px !important;
+}
+.music-song-actions .icon-op {
+  opacity: .38;
+  transition: opacity .18s ease, color .18s ease !important;
+}
+.music-song-card:hover .music-song-actions .icon-op,
+.music-song-actions .icon-op:focus-visible {
+  opacity: 1;
+}
+.music-song-actions .icon-op[data-op="play"] {
+  font-size: 15px !important;
+}
+.music-count {
+  font-size: 12px !important;
+}
+
+/* 搜索框像音乐库入口，而不是表单控件 */
+.music-search {
+  min-height: 56px !important;
+}
+.music-search span {
+  font-size: 18px !important;
+}
+
+/* 歌曲页：真正的连续播放轨道 */
+.song-mini-dock {
+  display: none;
+}
+.song-mini-dock[hidden] {
+  display: none !important;
+}
+
+/* 固定底部导航存在时，迷你播放条位于其上方 */
+@media (max-width: 700px) {
+  .song-mini-dock {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(76px + env(safe-area-inset-bottom));
+    z-index: 45;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 2px 12px;
+    align-items: center;
+    padding: 10px 10px 9px 14px;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 14px;
+    background: rgba(255,255,253,.94);
+    box-shadow: 0 10px 35px rgba(0,0,0,.14);
+    backdrop-filter: blur(18px);
+  }
+  .song-mini-meta {
+    min-width: 0;
+    display: grid;
+    gap: 2px;
+  }
+  .song-mini-meta strong {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--v22-ink);
+    font-size: 13px;
+    font-weight: 680;
+  }
+  .song-mini-meta small {
+    color: var(--v22-soft);
+    font-size: 10px;
+  }
+  .song-mini-progress {
+    grid-column: 1 / -1;
+    height: 2px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: #deded9;
+  }
+  .song-mini-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--v22-black);
+    transition: width .12s linear;
+  }
+  .song-mini-play {
+    min-width: 58px;
+    min-height: 38px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 9px;
+    background: var(--v22-black);
+    color: #fff;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 650;
+  }
+}
+
+/* 在真正有足够空间的手机横屏中不要遮住歌曲操作 */
+@media (min-width: 701px) {
+  .song-mini-dock {
+    display: none !important;
+  }
+}
+
+/* night mini rail */
+html[data-mood="night"] .song-mini-dock {
+  background: rgba(17,17,17,.94);
+  border-color: #2b2b2b;
+}
+html[data-mood="night"] .song-mini-meta strong {
+  color: #f4f4f2;
+}
+html[data-mood="night"] .song-mini-meta small {
+  color: #8d8d87;
+}
+html[data-mood="night"] .song-mini-progress {
+  background: #30302d;
+}
+html[data-mood="night"] .song-mini-progress span {
+  background: #f4f4f2;
+}
+html[data-mood="night"] .song-mini-play {
+  background: #f4f4f2;
+  color: #090909;
+}
