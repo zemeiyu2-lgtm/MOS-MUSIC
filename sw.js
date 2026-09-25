@@ -16,7 +16,7 @@
      - 本 SW 不做任何 HTML 内容改写（no runtime patch）。
 ========================================================= */
 
-const CACHE = 'mos-music-v17';
+const CACHE = 'mos-music-v18';
 const PRECACHE_MANIFEST = 'mos-music-precache-v1';
 
 /* 应用外壳：较小且必须离线可用 */
