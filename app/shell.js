@@ -7,7 +7,7 @@
 ========================================================= */
 
 import { createRouter, buildHash, DEFAULT_ROUTE } from './router.js';
-import { MODULES, NAV_KEYS, RENDERERS, renderModule } from './modules.js';
+import { MODULES, renderModule } from './modules.js';
 import { NET, initNet, onNetChange } from './net.js';
 import { initBackgroundSync, sync, REMOTE } from './sync.js';
 import { ensureSeeded, seedStatus } from './content-source.js';
@@ -24,13 +24,16 @@ let swReg = null;
 function renderNav(activeKey) {
   const nav = $('#nav');
   if (!nav) return;
-  nav.innerHTML = NAV_KEYS.map((k) => {
-    const m = MODULES.find((x) => x.key === k);
-    const on = k === activeKey ? ' active' : '';
-    return `<button class="nav-btn${on}" data-go="${k}" aria-current="${k === activeKey ? 'page' : 'false'}">
-      <span aria-hidden="true">${m.nav[1]}</span>${m.nav[0]}
-    </button>`;
-  }).join('');
+  const learningActive = activeKey === 'learn' || activeKey === 'teach';
+  const items = [
+    { key: 'songs', href: '#/songs', label: '诗歌本', icon: '♫', active: activeKey === 'songs' || activeKey === 'song' || activeKey === 'song-detail' },
+    { key: 'learning', href: '#/songs?tab=learning', label: '学习中', icon: '◷', active: learningActive },
+    { key: 'mine', href: '#/mine', label: '我的歌', icon: '♡', active: activeKey === 'mine' },
+  ];
+  nav.innerHTML = items.map((item) => `
+    <a class="nav-btn${item.active ? ' active' : ''}" href="${item.href}" aria-current="${item.active ? 'page' : 'false'}">
+      <span class="nav-icon" aria-hidden="true">${item.icon}</span><span>${item.label}</span>
+    </a>`).join('');
 }
 
 /* ---------------------------------------------------------------- 状态条 */
