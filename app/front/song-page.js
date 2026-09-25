@@ -9,7 +9,7 @@
      · **乐谱最明显**：简谱紧跟 Hero，是全页第二段、整幅呈现，不是附属 PDF；
      · **进度光标跟随**：有时间标记时按小节 / 音符跟随；没有就如实说明，不猜；
      · **淡化周次绑定**：内容理解与生命实践来自歌曲单元自身，不写「第几周 / 第几课」；
-     · **只要钢琴伴奏**：伴奏轨只有钢琴；没有就显示「尚未提供」；
+     · **伴奏以合适为准**：至少一种完整伴奏；有多种真实可用版本就提供选择；没有就显示「尚未提供」；
      · **含内容与步骤**：十步教学法 + 三模式（学唱 / 视唱 / 教唱）+ 四级学习状态。
 
    段落（固定顺序）：
@@ -107,16 +107,17 @@ export async function renderSongPage(root, songId, query) {
   const frontLevel = summary ? levelFrontLabel(vocab, summary.level) : '资源待制作';
   const flagged = unit ? songUnit.unitFlags(unit) : null;
 
-  /* 播放源：单元层（男 / 女 / 钢琴）优先，槽位作为向后兼容。 */
+  /* 播放源：单元层（男 / 女 / 伴奏选项）优先，槽位作为向后兼容。 */
   const slots = ctx.slots;
   const unitSrc = unitSources(unit, resourcesIdx);
   const sources = mergeSources(sourcesFromSlots(slots), unitSrc);
+  const accompanimentKinds = (unitSrc.accompOptions || []).map((o) => [o.key, o.label]);
   const trackKinds = [
     ['male', '🎧 男声示唱'],
     ['female', '🎧 女声示唱'],
-    ['piano', '🎹 钢琴伴奏'],
+    ...accompanimentKinds,
     ['demo', '🎧 示范'],
-    ['accomp', '🎹 陪唱'],
+    ['accomp', '🎵 伴奏'],
   ].filter(([k]) => sources[k]);
 
   const scoreOk = unit ? scoreReady(unit.score) : false;
@@ -279,7 +280,7 @@ export async function renderSongPage(root, songId, query) {
             </div>
             ${trackHtml()}
             <div class="player-row">
-              ${trackKinds.map(([k, label]) => `<button class="pill kind${k === 'piano' || k === 'accomp' ? ' piano' : ''}" data-kind="${k}">${esc(label)}</button>`).join('')}
+              ${trackKinds.map(([k, label]) => `<button class="pill kind${(k === 'piano' || k === 'accomp' || k.startsWith('accomp_')) ? ' piano' : ''}" data-kind="${k}">${esc(label)}</button>`).join('')}
               <button class="pill" id="btnLoop" aria-pressed="false">🔁 循环关</button>
               ${SPEEDS.map((s) => `<button class="pill spd${s === 1.0 ? ' on' : ''}" data-speed="${s}">${speedLabel(s)}</button>`).join('')}
             </div>
@@ -287,10 +288,10 @@ export async function renderSongPage(root, songId, query) {
           <div class="track-note" style="display:grid;gap:8px;margin-top:var(--sp-2)">
             <div class="resource-slot ${unitSrc.male ? 'available' : ''}"><span>♪ 男声示唱</span><span>${presenceText(unitSrc.male ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
             <div class="resource-slot ${unitSrc.female ? 'available' : ''}"><span>♪ 女声示唱</span><span>${presenceText(unitSrc.female ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
-            <div class="resource-slot ${unitSrc.piano ? 'available' : ''}"><span>♪ 钢琴伴奏</span><span>${presenceText(unitSrc.piano ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
+            <div class="resource-slot ${(unitSrc.accompOptions || []).length ? 'available' : ''}"><span>♪ 伴奏</span><span>${(unitSrc.accompOptions || []).length ? `${(unitSrc.accompOptions || []).length} 种可用` : presenceText('NOT_PROVIDED')}</span></div>
           </div>
-          ${!trackKinds.length ? `<div class="notice">音频${NOT_PROVIDED}。第一阶段伴奏统一只做钢琴。资源导入后这里可以直接播放、变速、循环 —— 现在不假装播放。</div>` : ''}
-          <p class="plain muted small" style="margin-bottom:0">伴奏只提供钢琴 —— 这是自主歌唱的主要支持轨，不做多种器乐编曲。</p>
+          ${!trackKinds.length ? `<div class="notice">音频${NOT_PROVIDED}。完整歌曲至少需要一种合适的全曲伴奏；有多个真实可用版本时，这里会提供选择 —— 现在不假装播放。</div>` : ''}
+          <p class="plain muted small" style="margin-bottom:0">伴奏不限定乐器：先保证有一条完整、合适、可唱的版本；有得选择，再选择最适合自己的版本。</p>
         </section>
 
         <!-- 04 学 / 看谱唱 / 教别人：歌曲内部动作 -->
@@ -485,7 +486,7 @@ export async function renderSongPage(root, songId, query) {
 
   function paint() {
     const st = player.state();
-    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '钢琴伴奏', demo: '示范', accomp: '陪唱' };
+    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '钢琴伴奏', demo: '示范', accomp: '伴奏' };
     stateEl.textContent = st.playing
       ? `${labelOf[st.kind] || '音频'}播放中`
       : (st.kind ? '已暂停' : '未播放');
@@ -601,10 +602,12 @@ export async function renderSongPage(root, songId, query) {
         toast(root, `已设为单句循环：${card.card_label}`, true);
       },
       onPiano: async () => {
+        const firstAccompaniment = (unitSrc.accompOptions || [])[0];
+        if (firstAccompaniment && sources[firstAccompaniment.key]) { await playKind(firstAccompaniment.key); return; }
         if (sources.piano) { await playKind('piano'); return; }
         const sec = root.querySelector('#secSing');
         if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        toast(root, '钢琴伴奏尚未提供 —— 可以先看谱读节奏', false);
+        toast(root, '伴奏尚未提供 —— 可以先看谱读节奏', false);
       },
     });
   }
