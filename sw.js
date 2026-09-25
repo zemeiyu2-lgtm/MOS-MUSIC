@@ -16,7 +16,7 @@
      - 本 SW 不做任何 HTML 内容改写（no runtime patch）。
 ========================================================= */
 
-const CACHE = 'mos-music-v14';
+const CACHE = 'mos-music-v15';
 const PRECACHE_MANIFEST = 'mos-music-precache-v1';
 
 /* 应用外壳：较小且必须离线可用 */
@@ -64,6 +64,7 @@ const SHELL = [
   './app/ui/components.css',
   './app/ui/v21.css',
   './app/ui/v30.css',
+  './app/ui/v31-ui.css',
   './assets/icons/icon-192.png',
   './assets/icons/icon-180.png',
 ];
@@ -136,6 +137,7 @@ const INDEXES = [
   './content/teaching/MUS-S-0005.json',
   './app/phrase-cards.js',
   './app/front/phrase-card.js',
+  './app/front/learning.js',
   /* PILOT 10：生产工作包（样板歌的公版歌词与简谱草稿离线可读） */
   './content/production/packages/index.json',
   './content/production/packages/MUS-S-0001/manifest.json',

@@ -1174,7 +1174,7 @@ function checkV20() {
 
   /* SW：前台模块与候选索引必须预缓存（PILOT 10 升 v11，防旧缓存污染） */
   const sw = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-  for (const need of ["'mos-music-v14'", "'./app/front/home.js'", "'./app/front/teach.js'", "'./app/front/covers.js'", "'./app/ui/v21.css'", "'./content/candidates/index.json'",
+  for (const need of ["'mos-music-v15'", "'./app/front/home.js'", "'./app/front/teach.js'", "'./app/front/covers.js'", "'./app/ui/v21.css'", "'./content/candidates/index.json'",
     "'./content/production/packages/index.json'", "'./content/production/packages/MUS-S-0001/lyrics.json'", "'./content/production/packages/MUS-S-0001/score.json'",
     "'./app/front/coach.js'", "'./content/taxonomy/assignments.json'", "'./content/song-content/MUS-S-0001.json'", "'./content/coach/index.json'", "'./content/production/resource-discovery.json'"]) {
     if (!sw.includes(need)) err('sw.js', `SW 预缓存缺失：${need}`);

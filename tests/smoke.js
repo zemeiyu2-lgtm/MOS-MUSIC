@@ -266,7 +266,7 @@ console.log('\n8) V1.1-A（真实使用第一轮：Song Detail / Song Resources 
     'content-source：资源层 / 审查记录层 / 登记层索引已接线');
   ok(cs.includes("MUS-V-1.0.0"), 'content-source：内容版本 MUS-V-1.0.0');
   const sw = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-  ok(sw.includes("CACHE = 'mos-music-v14'")
+  ok(sw.includes("CACHE = 'mos-music-v15'")
     && sw.includes('./app/song-detail.js') && sw.includes('./app/week-music.js')
     && sw.includes('./app/song-resources.js')
     && sw.includes('./content/song-resources/index.json')

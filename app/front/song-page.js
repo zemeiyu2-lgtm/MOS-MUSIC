@@ -197,7 +197,7 @@ export async function renderSongPage(root, songId, query) {
 
         <!-- 01 Hero -->
         <section class="card sp-hero sp-sec">
-          <div class="eyebrow"><span class="sp-num">01</span><span class="chip gold">${esc(layerLabel(row))}</span><span>${esc(ctx.songId)}</span>${query && query.share ? '<span class="chip good">来自朋友的分享</span>' : ''}</div>
+          <div class="eyebrow">${query && query.share ? '<span class="chip good">来自朋友的分享</span>' : ''}</div>
           <div class="hero-id" style="margin-top:var(--sp-3)">
             <span class="cover cover-hero float">${coverFor({ song_id: ctx.songId, lang: heroLang })}</span>
             <div class="hero-id-info">
@@ -217,10 +217,38 @@ export async function renderSongPage(root, songId, query) {
           ${query && query.share ? '<div class="notice" style="margin-top:var(--sp-3)">朋友分享给你这首歌 —— 点「现在就唱」直接开始。</div>' : ''}
         </section>
 
+        <!-- 03 播放区 -->
+        <section class="card sp-sec" id="secSing">
+          <h2>现在听</h2>
+          <div class="player">
+            <div class="player-row">
+              <button class="play-fab" id="btnToggle" aria-label="播放或暂停" ${trackKinds.length ? '' : 'disabled'}>▶</button>
+              <div class="player-main">
+                <span class="player-state" id="playState">未播放</span>
+                <span class="wave" id="playWave" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="player-time" id="playTime">0:00 / 0:00</span>
+              </div>
+            </div>
+            ${trackHtml()}
+            <div class="player-row">
+              ${trackKinds.map(([k, label]) => `<button class="pill kind${k === 'piano' || k === 'accomp' ? ' piano' : ''}" data-kind="${k}">${esc(label)}</button>`).join('')}
+              <button class="pill" id="btnLoop" aria-pressed="false">🔁 循环关</button>
+              ${SPEEDS.map((s) => `<button class="pill spd${s === 1.0 ? ' on' : ''}" data-speed="${s}">${speedLabel(s)}</button>`).join('')}
+            </div>
+          </div>
+          <div class="track-note" style="display:grid;gap:8px;margin-top:var(--sp-2)">
+            <div class="resource-slot ${unitSrc.male ? 'available' : ''}"><span>♪ 男声示唱</span><span>${presenceText(unitSrc.male ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
+            <div class="resource-slot ${unitSrc.female ? 'available' : ''}"><span>♪ 女声示唱</span><span>${presenceText(unitSrc.female ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
+            <div class="resource-slot ${unitSrc.piano ? 'available' : ''}"><span>♪ 钢琴伴奏</span><span>${presenceText(unitSrc.piano ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
+          </div>
+          ${!trackKinds.length ? `<div class="notice">音频${NOT_PROVIDED}。第一阶段伴奏统一只做钢琴。资源导入后这里可以直接播放、变速、循环 —— 现在不假装播放。</div>` : ''}
+          <p class="plain muted small" style="margin-bottom:0">伴奏只提供钢琴 —— 这是自主歌唱的主要支持轨，不做多种器乐编曲。</p>
+        </section>
+
         <!-- 02 简谱（乐谱最明显） -->
         <section class="card sp-sec sp-score-card" id="secScore">
           <div class="sp-score-head">
-            <h2><span class="sp-num">02</span>简谱</h2>
+            <h2>简谱</h2>
             <div class="sp-score-tools">
               <span class="chip">${scoreOk ? (importPending ? '原谱简谱 · 待人工听校' : '统一简谱') : draftScore ? '原谱简谱 · 待人工听校' : NOT_PROVIDED}</span>
               ${scoreOk && tlLevels.length ? `<button class="pill" id="cursorBtn" aria-pressed="true">◎ 光标跟随开</button>` : ''}
@@ -249,65 +277,9 @@ export async function renderSongPage(root, songId, query) {
           ${!scoreOk && !draftScore ? `<div class="notice">简谱是主界面。统一记谱完成后，这里会整幅显示数字谱，并在播放时按小节与歌词跟随移动 —— 现在不画占位谱冒充它。</div>` : ''}
         </section>
 
-        <!-- 03 播放区 -->
-        <section class="card sp-sec" id="secSing">
-          <h2><span class="sp-num">03</span>播放区</h2>
-          <div class="player">
-            <div class="player-row">
-              <button class="play-fab" id="btnToggle" aria-label="播放或暂停" ${trackKinds.length ? '' : 'disabled'}>▶</button>
-              <div class="player-main">
-                <span class="player-state" id="playState">未播放</span>
-                <span class="wave" id="playWave" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="player-time" id="playTime">0:00 / 0:00</span>
-              </div>
-            </div>
-            ${trackHtml()}
-            <div class="player-row">
-              ${trackKinds.map(([k, label]) => `<button class="pill kind${k === 'piano' || k === 'accomp' ? ' piano' : ''}" data-kind="${k}">${esc(label)}</button>`).join('')}
-              <button class="pill" id="btnLoop" aria-pressed="false">🔁 循环关</button>
-              ${SPEEDS.map((s) => `<button class="pill spd${s === 1.0 ? ' on' : ''}" data-speed="${s}">${speedLabel(s)}</button>`).join('')}
-            </div>
-          </div>
-          <div class="track-note" style="display:grid;gap:8px;margin-top:var(--sp-2)">
-            <div class="resource-slot ${unitSrc.male ? 'available' : ''}"><span>♪ 男声示唱</span><span>${presenceText(unitSrc.male ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
-            <div class="resource-slot ${unitSrc.female ? 'available' : ''}"><span>♪ 女声示唱</span><span>${presenceText(unitSrc.female ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
-            <div class="resource-slot ${unitSrc.piano ? 'available' : ''}"><span>♪ 钢琴伴奏</span><span>${presenceText(unitSrc.piano ? 'PROVIDED' : 'NOT_PROVIDED')}</span></div>
-          </div>
-          ${!trackKinds.length ? `<div class="notice">音频${NOT_PROVIDED}。第一阶段伴奏统一只做钢琴。资源导入后这里可以直接播放、变速、循环 —— 现在不假装播放。</div>` : ''}
-          <p class="plain muted small" style="margin-bottom:0">伴奏只提供钢琴 —— 这是自主歌唱的主要支持轨，不做多种器乐编曲。</p>
-        </section>
-
-        <!-- 04 陪我唱（三模式） -->
-        <section class="card sp-sec">
-          <h2><span class="sp-num">04</span>陪我唱</h2>
-          <p class="plain muted">同一首歌，三种用法。它们不是三套流程 —— 选一个进去就行。</p>
-          <div class="mode-grid">
-            <a class="mode-card" href="#/learn/${esc(ctx.songId)}">
-              <span class="mode-emoji">🎤</span><span class="mode-title">学唱</span>
-              <span class="mode-note">第一次学这首歌：听 → 跟 → 陪 → 自己唱 → 再唱一次。</span>
-            </a>
-            <a class="mode-card" href="#/learn/${esc(ctx.songId)}?mode=sight">
-              <span class="mode-emoji">🎼</span><span class="mode-title">视唱</span>
-              <span class="mode-note">看谱 → 内听 → 唱 → 核对 → 修正；先不完整给示范。</span>
-            </a>
-            <a class="mode-card" href="#/teach/${esc(ctx.songId)}">
-              <span class="mode-emoji">🧑‍🏫</span><span class="mode-title">教唱</span>
-              <span class="mode-note">把这首歌交给另一个人：教谱 / 教节奏 / 教词 / 示范 / 陪唱。</span>
-            </a>
-          </div>
-        </section>
-
-        <!-- 乐句教学卡（有卡才显示；复用现有播放器与单句循环） -->
-        ${pCards.length ? `
-        <section class="card sp-sec" id="secPhrases">
-          <div class="section-head"><h2>乐句教学卡</h2><span class="chip">${pCards.length} 句</span></div>
-          <p class="plain muted">一句一句来：听 → 跟唱 → 自己唱。点一句，把它变成当前乐句。</p>
-          <div id="phraseCardBox"></div>
-        </section>` : ''}
-
         <!-- 05 歌词 -->
         <section class="card sp-sec" id="secLyrics">
-          <h2><span class="sp-num">05</span>歌词</h2>
+          <h2>歌词</h2>
           ${showLyrics.length ? `
           <div class="lyrics lyrics-focus" id="lyricsBox">
             ${showLyrics.map((l, i) => `<p class="lyric-line" data-line="${i}" tabindex="0">${esc(l)}</p>`).join('')}
@@ -317,9 +289,37 @@ export async function renderSongPage(root, songId, query) {
           <div class="state-empty"><span class="glyph">✍️</span><div>歌词${NOT_PROVIDED}</div><div class="small">平台不托管未经授权的译文；歌词导入后这里会以大字体分节显示。</div></div>`}
         </section>
 
+        <!-- 04 陪我唱（三模式） -->
+        <section class="card sp-sec">
+          <h2>开始学</h2>
+          <p class="plain muted">同一首歌，三种用法 —— 选一个进去就行。</p>
+          <div class="mode-grid">
+            <a class="mode-card" href="#/learn/${esc(ctx.songId)}">
+              <span class="mode-emoji">🎤</span><span class="mode-title">学唱</span>
+              <span class="mode-note">一句一句，跟着学会整首。</span>
+            </a>
+            <a class="mode-card" href="#/learn/${esc(ctx.songId)}?mode=sight">
+              <span class="mode-emoji">🎼</span><span class="mode-title">看谱唱</span>
+              <span class="mode-note">看着简谱，自己唱出来。</span>
+            </a>
+            <a class="mode-card" href="#/teach/${esc(ctx.songId)}">
+              <span class="mode-emoji">🧑‍🏫</span><span class="mode-title">教别人</span>
+              <span class="mode-note">带身边的人一起唱。</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- 乐句教学卡（有卡才显示；复用现有播放器与单句循环） -->
+        ${pCards.length ? `
+        <section class="card sp-sec" id="secPhrases">
+          <div class="section-head"><h2>一句一句学</h2><span class="chip">${pCards.length} 句</span></div>
+          <p class="plain muted">一句一句来：听 → 跟唱 → 自己唱。点一句，把它变成当前乐句。</p>
+          <div id="phraseCardBox"></div>
+        </section>` : ''}
+
         <!-- 06 唱 -->
         <section class="card sp-sec">
-          <h2><span class="sp-num">06</span>唱</h2>
+          <h2>唱</h2>
           <p class="plain muted">现在就唱这一段 —— 开循环、放慢速度，唱到顺为止。</p>
           <div class="btn-row">
             <button class="pill" id="singLoop" aria-pressed="false">🔁 循环</button>
@@ -344,9 +344,37 @@ export async function renderSongPage(root, songId, query) {
       </div>
 
       <div class="sp-side">
+        <!-- 示唱（真人 / AI）：AI 必须在界面上标注「非真人」 -->
+        <section class="card sp-sec" id="secDemo">
+          <div class="section-head"><h2>示唱</h2><span class="chip">真人优先</span></div>
+          <div class="cards">
+            ${demoRows.map((d) => {
+              const st = d.track && d.track.status;
+              const ok = st === 'PROVIDED' || (Array.isArray(d.track && d.track.slots) && d.track.slots.length > 0);
+              const src = d.track && d.track.source_type;
+              const slot = ((d.track && d.track.slots) || [])[0] || null;
+              const seg = slot && slot.start != null && slot.end != null ? `分句片段 ${slot.start}s–${slot.end}s` : null;
+              return `<div class="entry"><span class="entry-main">
+                <span class="entry-kicker">${esc(d.label)}</span>
+                <span class="entry-title">${ok ? (SRC_LABELS[src] ? esc(SRC_LABELS[src]) : '已提供') : NOT_PROVIDED}</span>
+                <span class="entry-note">${ok
+                  ? (seg || (src && String(src).startsWith('EXTERNAL_') ? '到原站播放（不下载转存）' : '可播放'))
+                  : (d.kind === 'ai'
+                    ? 'AI 示唱类型已就位，但本轮没有接入任何歌声引擎，因此不存在成品 —— 不是遗漏，也不拿合成声音冒充真人。'
+                    : '真人示唱尚未录制。来源可以是外部优秀真人版本（原站播放 / 分段定位），不下载转存。')}</span>
+              </span></div>`;
+            }).join('')}
+          </div>
+          <div class="notice">真人版本优先复用现成的：外部版本以原站播放或时间段定位提供，不重新上传；AI 轨永远单独标注为「非真人」，且不计入完成等级。</div>
+        </section>
+
+
+        <!-- 更多内容（懂 · 活 / 分类 / 歌曲内容）：折叠，不压住播放器与简谱 -->
+        <details class="sp-more">
+          <summary>更多内容 · 这首歌在唱什么</summary>
         <!-- 07 懂 · 活 -->
         <section class="card sp-sec">
-          <h2><span class="sp-num">07</span>懂 · 活</h2>
+          <h2>懂 · 活</h2>
           ${txt(cu.what_it_sings) ? `<p class="plain">${txt(cu.what_it_sings)}</p>`
             : txt(cu.core_truth) ? `<p class="plain">${txt(cu.core_truth)}</p>`
             : row.formation_theme || row.theme ? `<p class="plain">这首歌围绕「${esc(row.formation_theme || row.theme)}」。</p>`
@@ -388,33 +416,13 @@ export async function renderSongPage(root, songId, query) {
           <div class="notice">这些内容属于歌曲本身，不与任何一周、任何一课绑定 —— 课程可以引用它，它不依赖课程。</div>
         </section>
 
-        <!-- 示唱（真人 / AI）：AI 必须在界面上标注「非真人」 -->
-        <section class="card sp-sec" id="secDemo">
-          <div class="section-head"><h2>示唱</h2><span class="chip">真人优先</span></div>
-          <div class="cards">
-            ${demoRows.map((d) => {
-              const st = d.track && d.track.status;
-              const ok = st === 'PROVIDED' || (Array.isArray(d.track && d.track.slots) && d.track.slots.length > 0);
-              const src = d.track && d.track.source_type;
-              const slot = ((d.track && d.track.slots) || [])[0] || null;
-              const seg = slot && slot.start != null && slot.end != null ? `分句片段 ${slot.start}s–${slot.end}s` : null;
-              return `<div class="entry"><span class="entry-main">
-                <span class="entry-kicker">${esc(d.label)}</span>
-                <span class="entry-title">${ok ? (SRC_LABELS[src] ? esc(SRC_LABELS[src]) : '已提供') : NOT_PROVIDED}</span>
-                <span class="entry-note">${ok
-                  ? (seg || (src && String(src).startsWith('EXTERNAL_') ? '到原站播放（不下载转存）' : '可播放'))
-                  : (d.kind === 'ai'
-                    ? 'AI 示唱类型已就位，但本轮没有接入任何歌声引擎，因此不存在成品 —— 不是遗漏，也不拿合成声音冒充真人。'
-                    : '真人示唱尚未录制。来源可以是外部优秀真人版本（原站播放 / 分段定位），不下载转存。')}</span>
-              </span></div>`;
-            }).join('')}
-          </div>
-          <div class="notice">真人版本优先复用现成的：外部版本以原站播放或时间段定位提供，不重新上传；AI 轨永远单独标注为「非真人」，且不计入完成等级。</div>
-        </section>
+        </details>
 
+        <details class="sp-more">
+          <summary>学习进度与分享</summary>
         <!-- 08 制作到什么程度 -->
         <section class="card sp-sec">
-          <div class="section-head"><h2><span class="sp-num">08</span>制作到什么程度</h2>
+          <div class="section-head"><h2>制作到什么程度</h2>
             <span class="chip lv ${LEVEL_CLASS[summary ? summary.level : 'NONE']}">${esc(frontLevel)}</span></div>
           ${summary ? `<p class="plain muted small">${esc(levelNote(vocab, summary.level) || '')}</p>` : ''}
           <div class="sec-status">
@@ -428,7 +436,7 @@ export async function renderSongPage(root, songId, query) {
 
         <!-- 09 我的学习状态 -->
         <section class="card sp-sec">
-          <h2><span class="sp-num">09</span>我的学习状态</h2>
+          <h2>我的学习状态</h2>
           <div class="stages" aria-label="学习路径状态">
             ${STAGE_ORDER.map((k) => `<span class="stage-chip ${myStage === k ? 'on' : ''}">${esc(stageText[k] || k)}</span>`).join('')}
           </div>
@@ -446,7 +454,7 @@ export async function renderSongPage(root, songId, query) {
 
         <!-- 10 教 · 传 · 链接 -->
         <section class="card sp-sec">
-          <h2><span class="sp-num">10</span>教 · 传 · 链接</h2>
+          <h2>教 · 传 · 链接</h2>
           <div class="sp-life-entry">
             <a class="life-card" href="#/teach/${esc(ctx.songId)}">🧑‍🏫 教别人唱<small>进入教唱模式</small></a>
             <button class="life-card" id="shareBtn" style="all:unset;cursor:pointer">↗ 分享这首歌<small>打开就能听、能学</small></button>
@@ -462,6 +470,7 @@ export async function renderSongPage(root, songId, query) {
           <div class="notice" id="shareStatus" hidden></div>
         </section>
       </div>
+        </details>
     </div>`;
 
   /* ---------------- 统一播放器接线（真实） ---------------- */

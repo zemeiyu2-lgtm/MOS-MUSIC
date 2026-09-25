@@ -92,11 +92,11 @@ export async function renderMine(root) {
     <section class="card sp-sec">
       <h2>歌唱教练（独立模块）</h2>
       <p class="plain muted small">MOS Singing Coach 练的是音乐表现（音准 / 节奏 / 视唱 / 气息 / 长音 / 咬字 / 音域 / 分句 / 力度 / 表达）。
-      它不显示也读取不到你的门训完成度、积分或成绩 —— 两个系统互不评分。</p>
+      只练音乐，不打分、不排名，练习记录只存本机。</p>
       <a class="homerow" href="#/coach">
         <span class="cover cover-md">${coverFor({ song_id: 'mos-voice', lang: 3 })}</span>
         <span class="homerow-main">
-          <span class="homerow-title">打开 MOS Singing Coach</span><br>
+          <span class="homerow-title">唱得更准</span><br>
           <span class="homerow-note">已记录练习 ${coachCount} 次（只存本机）</span>
         </span>
         <span class="chip">→</span>

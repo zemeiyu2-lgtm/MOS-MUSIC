@@ -683,39 +683,46 @@ async function main() {
   const nav = await gotoView('#/home', `(() => {
     const btns = Array.from(document.querySelectorAll('#nav button'));
     const labels = btns.map((b) => b.textContent);
+    const sideBtns = Array.from(document.querySelectorAll('#sideNav button'));
+    const sideLabels = sideBtns.map((b) => b.textContent);
     return {
       n: btns.length,
-      home: labels.some((t) => t.includes('首页')),
-      songs: labels.some((t) => t.includes('歌曲')),
-      mine: labels.some((t) => t.includes('我的')),
+      book: labels.some((t) => t.includes('诗歌本')),
+      learning: labels.some((t) => t.includes('学习')),
+      mine: labels.some((t) => t.includes('我的歌')),
+      sideN: sideBtns.length,
+      sideSame: sideBtns.length === 3 && ['诗歌本', '学习', '我的歌'].every((w, i) => sideLabels[i].includes(w)),
     };
   })()`);
-  ok(nav && nav.n === 3 && nav.home && nav.songs && nav.mine,
-    'V2.0 前台：底部导航只有 首页 / 歌曲 / 我的 三个入口');
+  ok(nav && nav.n === 3 && nav.book && nav.learning && nav.mine,
+    'V3.1 前台：导航只有 诗歌本 / 学习 / 我的歌 三个入口');
+  ok(nav && nav.sideSame,
+    'V3.1 桌面侧栏：与移动导航同一套信息架构');
 
-  /* 首页：今天一起唱 */
+  /* 首页：减法版（找歌 / 现在唱 / 继续学） */
   const today = await gotoView('#/home', `(() => {
     const h = document.getElementById('view').innerHTML;
-    if (!h.includes('今天一起唱')) return null;
+    if (!h.includes('现在唱')) return null;
     return {
-      hero: h.includes('今天一起唱'),
-      sing: h.includes('现在就唱') && h.includes('一键学唱'),
-      why: h.includes('这首歌在唱什么') || h.includes('为什么唱'),
-      live: h.includes('今天怎样活'),
+      hero: h.includes('现在唱'),
+      sing: h.includes('现在就唱') && h.includes('学唱'),
+      find: h.includes('找一首歌'),
+      cont: h.includes('继续学'),
+      lean: !h.includes('Singing Coach') && !h.includes('这首歌在唱什么') && !h.includes('今天怎样活')
+        && !h.includes('生产总览') && !h.includes('资源状态'),
       noDash: !h.includes('生产总览') && !h.includes('Dashboard'),
-      noWeek: !h.includes('样本周') && !h.includes('mos_week'),
-      noAlgo: h.includes('不是算法推荐'),
+      noWeek: !h.includes('样本周') && !h.includes('mos_week') && !/W0\d/.test(h),
     };
   })()`);
-  ok(today && today.hero && today.sing && today.why && today.live,
-    'V3.0 首页：今天一起唱 + 一键播放/学唱 + 这首歌在唱什么 + 今天怎样活');
-  ok(today && today.noDash && today.noWeek && today.noAlgo,
-    'V3.0 首页：无 Dashboard；不引用周次 / 样本周；明确非算法推荐');
+  ok(today && today.hero && today.sing && today.find && today.cont && today.lean,
+    'V3.1 首页：现在唱 + 找歌 + 继续学；Coach/懂活/工程信息不再占据首页');
+  ok(today && today.noDash && today.noWeek,
+    'V3.1 首页：无 Dashboard；不引用周次 / 课程信息');
 
   /* 生命诗歌本：100 首 + 主题/场景 + 搜索 */
   const book = await gotoView('#/songs', `(() => {
     const h = document.getElementById('view').innerHTML;
-    const inp = document.getElementById('sbSearch');
+    const inp = document.getElementById('sbSearchInput');
     if (!inp) return null;
     const countAll = document.getElementById('sbCount').textContent;
     inp.value = 'Amazing';
@@ -727,7 +734,7 @@ async function main() {
     return {
       total: countAll,
       hit: countHit,
-      hitZhHasGrace: hitZh.includes('MUS-S-0001'),
+      hitZhHasGrace: hitZh.includes('奇异恩典'),
       themes: h.includes('主题：全部') && h.includes('恩典') && h.includes('宣教'),
       scenes: h.includes('场景：全部') && h.includes('门训'),
       tabs: h.includes('❤️ 收藏') && h.includes('📚 正在学') && h.includes('🕘 最近唱过'),
@@ -745,7 +752,7 @@ async function main() {
     let stable = 0, lastCount = -1;
     while (stable < 3 && Date.now() - t0 < 240000) {
       const n = await evalJS(cdp, null, `(async () => {
-        try { return (await (await caches.open('mos-music-v14')).keys()).length; } catch { return -1; }
+        try { return (await (await caches.open('mos-music-v15')).keys()).length; } catch { return -1; }
       })()`);
       stable = n === lastCount ? stable + 1 : 0;
       lastCount = n;
@@ -858,19 +865,19 @@ async function main() {
 
   /* ==================== V2.1：艺术化 UI 与交互 ==================== */
 
-  /* 首页：艺术封面 + Hero + 快速操作 + 继续唱/只学一节 */
+  /* 首页：艺术封面 + Hero（现在唱/收藏/学唱）+ 轻量列表 + 唱歌理由 */
   const v21home = await gotoView('#/home', `(() => {
     const h = document.getElementById('view').innerHTML;
-    if (!h.includes('今天一起唱')) return null;
+    if (!h.includes('现在唱')) return null;
     return {
       cover: h.includes('<svg') && h.includes('cover-hero'),
-      quick: h.includes('听一遍') && h.includes('看简谱') && h.includes('陪我唱'),
-      continueOrLearn: h.includes('继续唱') && h.includes('今天只学一节'),
+      actions: h.includes('现在就唱') && h.includes('学唱') && h.includes('收藏'),
+      continueOrLearn: h.includes('继续学') && (h.includes('正在学 · 进度') || h.includes('今天只学一句')),
       reason: h.includes('class="reason"'),
     };
   })()`);
-  ok(v21home && v21home.cover && v21home.quick && v21home.continueOrLearn && v21home.reason,
-    'V3.0 首页：Hero 艺术封面 + 快速操作（听一遍/看简谱/陪我唱）+ 继续唱/只学一节 + 唱歌理由');
+  ok(v21home && v21home.cover && v21home.actions && v21home.continueOrLearn && v21home.reason,
+    'V3.1 首页：Hero 艺术封面 + 现在就唱/收藏/学唱 + 继续学/只学一节 + 唱歌理由');
 
   /* 深夜沉浸模式：切换真实生效（html[data-mood]） */
   const night = await evalJS(cdp, null, `(async () => {
@@ -889,7 +896,7 @@ async function main() {
   /* 歌曲页：十段编号 + 简谱显眼 + 陪我唱 + 歌词点击选句 + 统一播放器进度条 */
   const v21fp = await gotoView('#/song/MUS-S-0001', `(() => {
     const h = document.getElementById('view').innerHTML;
-    if (!h.includes('播放区')) return null;
+    if (!h.includes('现在听')) return null;
     return {
       ten: ['01','02','03','04','05','06','07','08','09','10'].every((n) => h.includes('>' + n + '<')),
       accompany: h.includes('陪我唱'),
@@ -898,8 +905,9 @@ async function main() {
       lifeEntry: h.includes('亲子轻入口') && h.includes('群体轻入口'),
       scoreProminent: (() => {
         const secs = Array.from(document.querySelectorAll('.songpage .sp-sec'));
-        const scoreIdx = secs.findIndex((s) => s.id === 'secScore');
-        return scoreIdx === 1; /* 第 02 段紧接 Hero，乐谱最明显 */
+        const singIdx = secs.findIndex((x) => x.id === 'secSing');
+        const scoreIdx = secs.findIndex((x) => x.id === 'secScore');
+        return singIdx === 1 && scoreIdx === 2; /* Hero → 现在听 → 简谱（听 → 看） */
       })(),
       metro: h.includes('节拍器') && h.includes('beat-dots'),
       progress: h.includes('制作到什么程度') && h.includes('还缺：'),
@@ -911,7 +919,7 @@ async function main() {
   ok(v21fp && v21fp.lyricState && v21fp.lifeEntry,
     'V3.0 歌曲页：歌词点击选句 + 家庭/小组轻入口');
   ok(v21fp && v21fp.scoreProminent,
-    'V3.0 歌曲页：简谱为第 02 段、紧接 Hero（乐谱最明显）');
+    'V3.1 歌曲页：播放器为主角，简谱紧随其后（听 → 看）');
   ok(v21fp && v21fp.metro && v21fp.progress && v21fp.stages,
     'V3.0 歌曲页：节拍器 + 制作进度（18 段 / 缺口）+ 四级学习路径状态');
 
@@ -967,14 +975,14 @@ async function main() {
       t: themes ? themes.querySelectorAll('button').length : 0,
       s: situ ? situ.querySelectorAll('button').length : 0,
       c: scenes ? scenes.querySelectorAll('button').length : 0,
-      multi: h.includes('不是它的身份') || h.includes('同时属于多个'),
+      multi: h.includes('按主题 / 处境 / 场景找歌'),
       noWeek: !/W0\\d/.test(h) && !h.includes('第 1 周') && !h.includes('第1周'),
     };
   })()`);
   ok(v3xbook && v3xbook.three && v3xbook.t > 1 && v3xbook.s > 1 && v3xbook.c > 1,
     `V3.x 诗歌本：四维分类筛（主题/处境/场景，t=${v3xbook ? v3xbook.t : 'n/a'} s=${v3xbook ? v3xbook.s : 'n/a'} c=${v3xbook ? v3xbook.c : 'n/a'}）`);
   ok(v3xbook && v3xbook.multi && v3xbook.noWeek,
-    'V3.x 诗歌本：分类是检索入口（多归属）+ 前台无周次码');
+    'V3.x 诗歌本：分类折叠为检索面板 + 前台无周次码');
 
   /* V3.x 歌曲页：分类段 + 歌曲内容层（经文只引用）+ 不绑周次 */
   const v3xfp = await gotoView('#/song/MUS-S-0001', `(() => {

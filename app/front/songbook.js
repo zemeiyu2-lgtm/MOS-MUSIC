@@ -9,7 +9,7 @@
    不是辨识结论；前台不出现工程术语；快操作全部真实（收藏/进入歌曲页/学唱）。
 ========================================================= */
 
-import { esc, loadCatalog, layerLabel } from './util.js';
+import { esc, loadCatalog } from './util.js';
 import { getIndex } from '../content-source.js';
 import { coverHtml, langIndexOf } from './covers.js';
 import * as mySongs from './my-songs.js';
@@ -24,7 +24,7 @@ const BIG_CARDS = 6;   /* 大卡数量：只取目录最前的几首（位置=ID
 
 function cardHtml(r, fav, big, langOf) {
   const en = r.en ? `<div class="song-card-note">${esc(r.en)}</div>` : '';
-  const note = `<div class="song-card-note">${esc(r.song_id)} ｜ ${esc(r.theme || '—')} ｜ ${esc(layerLabel(r))}</div>`;
+  const note = `<div class="song-card-note">${esc(r.theme || '')}</div>`;
   const cover = coverHtml({ ...r, lang: langOf(r.theme) }, big ? 'lg' : 'md', {});
   const ops = `<span class="song-card-ops">
     <button type="button" class="icon-op${fav.liked ? ' on' : ''}" data-op="like" data-song="${esc(r.song_id)}"
@@ -62,7 +62,7 @@ export async function renderSongbook(root) {
       <div class="section-head"><h1 style="margin:0;font-size:var(--fs-2);color:var(--green)">生命诗歌本</h1><span class="chip" id="sbCount">${catalog.length} 首</span></div>
       <div class="book-search">
         <span class="icon" aria-hidden="true">🔍</span>
-        <input type="search" id="sbSearch" placeholder="找一首歌：中文歌名 / English / 编号" aria-label="搜索歌曲" autocomplete="off">
+        <input type="search" id="sbSearchInput" placeholder="找一首歌：中文歌名 / 英文名" aria-label="搜索歌曲" autocomplete="off">
         <button class="clear" id="sbClear" type="button" aria-label="清除搜索">✕</button>
       </div>
       <div class="facets" id="sbTabs">
@@ -71,20 +71,21 @@ export async function renderSongbook(root) {
         <button class="facet" data-tab="learning">📚 正在学</button>
         <button class="facet" data-tab="recent">🕘 最近唱过</button>
       </div>
-      <div class="facets" id="sbThemes">
+      <details class="sb-more">
+        <summary>按主题 / 处境 / 场景找歌</summary>
+<div class="facets" id="sbThemes">
         <button class="facet active" data-theme="">主题：全部</button>
-        ${THEMES.map((t) => `<button class="facet" data-theme="${esc(t)}">${esc(t)}</button>`).join('')}
-      </div>
-      <div class="facets" id="sbSituations">
+          ${THEMES.map((t) => `<button class="facet" data-theme="${esc(t)}">${esc(t)}</button>`).join('')}
+        </div>
+        <div class="facets" id="sbSituations">
         <button class="facet active" data-situation="">处境：全部</button>
-        ${SITUATIONS.map((t) => `<button class="facet" data-situation="${esc(t)}">${esc(t)}</button>`).join('')}
-      </div>
-      <div class="facets" id="sbScenes">
+          ${SITUATIONS.map((t) => `<button class="facet" data-situation="${esc(t)}">${esc(t)}</button>`).join('')}
+        </div>
+        <div class="facets" id="sbScenes">
         <button class="facet active" data-scene="">场景：全部</button>
-        ${SCENES.map((t) => `<button class="facet" data-scene="${esc(t)}">${esc(t)}</button>`).join('')}
-      </div>
-      <div class="notice">分类只是帮人找到这首歌，不是它的身份：一首歌可以同时属于多个主题 / 处境 / 场景。
-      没有来源的维度如实留空（显示为「尚未标注」），不猜、不补。目录不打分、不排序、不做推荐。</div>
+          ${SCENES.map((t) => `<button class="facet" data-scene="${esc(t)}">${esc(t)}</button>`).join('')}
+        </div>
+      </details>
     </section>
     <section class="card" style="padding:var(--sp-3)">
       <div class="book-cards" id="sbList"></div>
@@ -140,7 +141,7 @@ export async function renderSongbook(root) {
   wireFacets('#sbSituations', 'situation');
   wireFacets('#sbScenes', 'scene');
 
-  const input = root.querySelector('#sbSearch');
+  const input = root.querySelector('#sbSearchInput');
   input.addEventListener('input', () => { state.q = input.value; apply(); });
   root.querySelector('#sbClear').addEventListener('click', () => { input.value = ''; state.q = ''; apply(); input.focus(); });
 

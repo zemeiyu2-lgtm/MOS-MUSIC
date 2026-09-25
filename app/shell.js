@@ -22,15 +22,19 @@ let swReg = null;
 /* ---------------------------------------------------------------- 导航 */
 
 function renderNav(activeKey) {
-  const nav = $('#nav');
-  if (!nav) return;
-  nav.innerHTML = NAV_KEYS.map((k) => {
+  const item = (k) => {
     const m = MODULES.find((x) => x.key === k);
     const on = k === activeKey ? ' active' : '';
     return `<button class="nav-btn${on}" data-go="${k}" aria-current="${k === activeKey ? 'page' : 'false'}">
       <span aria-hidden="true">${m.nav[1]}</span>${m.nav[0]}
     </button>`;
-  }).join('');
+  };
+  /* 移动端底部导航 */
+  const nav = $('#nav');
+  if (nav) nav.innerHTML = NAV_KEYS.map(item).join('');
+  /* 桌面端左侧栏（同一套信息架构） */
+  const side = $('#sideNav');
+  if (side) side.innerHTML = NAV_KEYS.map(item).join('');
 }
 
 /* ---------------------------------------------------------------- 状态条 */
@@ -315,6 +319,38 @@ export async function boot() {
 
   // 7) 首次渲染
   await router.handle();
+
+  // 7.5) 侧栏搜索 / 设置（桌面端）
+  const sbSearch = $('#sbSearch');
+  if (sbSearch) sbSearch.addEventListener('click', () => {
+    window.location.hash = '#/songs';
+    setTimeout(() => {
+      const inp = document.getElementById('sbSearchInput') || document.querySelector('#sbSearch');
+      if (inp && inp.focus) inp.focus();
+    }, 400);
+  });
+  const sbSettings = $('#sbSettings');
+  const sbPop = $('#sbPop');
+  if (sbSettings && sbPop) {
+    sbSettings.addEventListener('click', (e) => {
+      e.stopPropagation();
+      sbPop.hidden = !sbPop.hidden;
+      const popInstall = document.getElementById('popInstall');
+      const ib = $('#installBtn');
+      if (popInstall && ib) popInstall.hidden = ib.hidden;
+    });
+    document.addEventListener('click', (e) => {
+      if (!sbPop.hidden && !sbPop.contains(e.target) && e.target !== sbSettings) sbPop.hidden = true;
+    });
+    const mirror = (popId, btn) => {
+      const p = document.getElementById(popId);
+      if (p && btn) p.addEventListener('click', () => { btn.click(); sbPop.hidden = true; });
+    };
+    mirror('popText', $('#textBtn'));
+    mirror('popMood', $('#moodBtn'));
+    mirror('popSync', $('#syncBtn'));
+    mirror('popInstall', $('#installBtn'));
+  }
 
   // 8) 网络恢复时把"离线"提示收起
   window.addEventListener('online', () => setNetBadge());

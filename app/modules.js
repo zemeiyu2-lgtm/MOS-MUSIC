@@ -42,10 +42,11 @@ function shellNotice(text) {
 /* ---------------------------------------------------------------- 模块定义 */
 
 export const MODULES = [
-  /* ---- V2.0 前台三入口（手机底部导航只保留这三个） ---- */
-  { num: 'F1', key: 'home',  title: '今天一起唱', nav: ['首页', '⌂'] },
-  { num: 'F2', key: 'songs', title: '生命诗歌本', nav: ['歌曲', '♫'] },
-  { num: 'F3', key: 'mine',  title: '我的歌',     nav: ['我的', '○'] },
+  /* ---- 前台一级入口（桌面侧栏 / 移动底部导航：诗歌本 · 学习 · 我的歌） ---- */
+  { num: 'F1', key: 'home',  title: '首页',       nav: null },
+  { num: 'F2', key: 'songs', title: '诗歌本',     nav: ['诗歌本', '♫'] },
+  { num: 'F7', key: 'learning', title: '学习',    nav: ['学习', '♬'] },
+  { num: 'F3', key: 'mine',  title: '我的歌',     nav: ['我的歌', '○'] },
   /* ---- V2.0 前台二级（歌曲页 / 学唱 / 教唱，不进底部导航） ---- */
   { num: 'F4', key: 'song',  title: '歌曲',       nav: null },
   { num: 'F5', key: 'learn', title: '学唱模式',   nav: null },
@@ -637,6 +638,7 @@ async function f7(root) {
 export const RENDERERS = {
   /* 前台 */
   home: f1, songs: f2, mine: f3, song: f4, learn: f5, teach: f6,
+  learning: () => import('./front/learning.js'),
   /* V3.x 独立模块：歌唱教练（不读门训数据） */
   coach: f7,
   /* 后台（能力保留，普通用户不直接面对） */
