@@ -416,7 +416,7 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
     'V3.0 歌曲页：简谱整幅置于显眼位置（乐谱最明显）');
   ok(spSrc.includes('歌曲自身内容层') && spSrc.includes('简谱最明显'),
     'V3.0 歌曲页：内容属于歌曲本身，且以简谱为核心阅读对象');
-  ok(spSrc.includes('伴奏以合适为准') && spSrc.includes('有得选择再选择') && spSrc.includes('伴奏'), 'V3.0 歌曲页：伴奏至少一种完整，有多个可选择');
+  ok(spSrc.includes('伴奏以合适为准') && spSrc.includes('有多种真实可用版本就提供选择') && spSrc.includes('伴奏'), 'V3.0 歌曲页：伴奏至少一种完整，有多个可选择');
   const learnSrc = fs.readFileSync(path.join(ROOT, 'app/front/learn.js'), 'utf8');
   ok(learnSrc.includes('teaching_method') && learnSrc.includes('modes'),
     'V3.0 学唱页：步骤与模式取自内容层词表（不硬编码）');
