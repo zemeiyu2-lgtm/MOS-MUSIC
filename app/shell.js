@@ -24,10 +24,10 @@ let swReg = null;
 function renderNav(activeKey) {
   const nav = $('#nav');
   if (!nav) return;
-  const learningActive = activeKey === 'learn' || activeKey === 'teach';
+  const learningActive = ['learning', 'learn', 'teach'].includes(activeKey);
   const items = [
     { key: 'songs', href: '#/songs', label: '诗歌本', icon: '♫', active: activeKey === 'songs' || activeKey === 'song' || activeKey === 'song-detail' },
-    { key: 'learning', href: '#/songs?tab=learning', label: '学习中', icon: '◷', active: learningActive },
+    { key: 'learning', href: '#/learning', label: '学习', icon: '◷', active: learningActive },
     { key: 'mine', href: '#/mine', label: '我的歌', icon: '♡', active: activeKey === 'mine' },
   ];
   nav.innerHTML = items.map((item) => `
