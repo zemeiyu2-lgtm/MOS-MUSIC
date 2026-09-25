@@ -1,6 +1,6 @@
 # MOS 生命诗歌｜单首歌曲完整制作模板 V1.0
 
-> 状态：**Frozen**（V3.0 标准层）
+> 状态：**Frozen**（V3.1 标准层）
 > 适用范围：把一首歌做成「可学、可视唱、可教、可传」的完整歌曲单元
 > 机器 schema：`content/schema/song-unit.schema.json`
 > 机器词表：`content/song-units/index.json` → `sections` / `completion_levels` / `production_states`
@@ -31,7 +31,7 @@
 | 03 | `score` | 统一简谱 | core | ✅ | **只做简谱**、统一格式；调号 / 拍号 / 音符 / 歌词对齐。 |
 | 04 | `demo_male` | 男声示唱 | resource | ✅ | 真人男声示范（**禁止虚拟歌手**）。 |
 | 05 | `demo_female` | 女声示唱 | resource | ✅ | 真人女声示范（**禁止虚拟歌手**）。 |
-| 06 | `piano` | 钢琴伴奏 | resource | ✅ | **钢琴是唯一伴奏乐器**。 |
+| 06 | `accompaniment` | 伴奏 | resource | ✅ | **伴奏不限定乐器**；至少提供一种完整、合适、稳定、可唱的伴奏，有选择时再提供更多版本。 |
 | 07 | `timeline` | 分句时间轴 | resource | ✅ | 分句 → 小节 / 拍 / 音符的真实时间标记。 |
 | 08 | `cursor` | 光标跟谱数据 | resource | ✅ | 由时间轴派生的跟谱层（等级 / 标记范围）。 |
 | 09 | `teach_learn` | 学唱教学 | teaching | ✅ | 学唱模式的逐步教学。 |
@@ -58,14 +58,14 @@
 |---|---|---|---|
 | `NONE` | 尚未达到最低可用 | 资源待制作 | （无）结构已建立，但歌词与简谱尚未提供 —— 现在还不能读谱唱。 |
 | `L1` | 基本歌：歌词 + 简谱 | **可以读谱唱** | `lyrics` + `score`。可以读、可以唱，但还没有伴奏支持。 |
-| `L2` | 可学唱：歌词 + 简谱 + 钢琴 | **可以正式学唱** | `lyrics` + `score` + `piano`。有钢琴陪唱，可以进入正式学习。 |
+| `L2` | 可学唱：歌词 + 简谱 + 钢琴 | **可以正式学唱** | `lyrics` + `score` + `accompaniment`。有伴奏陪唱，可以进入正式学习。 |
 | `L3` | 完整学唱：简谱 + 钢琴 + 示唱 + 时间轴 | **可以完整学唱** | `L1/L2` + `demo_any` + `timeline`。有真人示唱与分句时间轴，学唱体验完整。 |
 | `L4` | 完整教学歌 | **完整教学歌** | `L3` + `demo_male` + `demo_female` + `cursor` + `teach_learn` + `teach_score` + `teach_lyrics` + `teach_vocal` + `teach_live`。可学、可视唱、可教、可传的完整歌曲单元。 |
 
 ### 派生规则（机械定义）
 
 - `demo_any = demo_male OR demo_female`（至少一个真人示唱）。
-- `teach_learn` 成立 **⟺** `lyrics` ∧ `score` ∧ `piano` ∧ `demo_any` ∧ `timeline` 同时成立
+- `teach_learn` 成立 **⟺** `lyrics` ∧ `score` ∧ `accompaniment` ∧ `demo_any` ∧ `timeline` 同时成立
   （没有示范与时间轴，「学唱教学」无从谈起）。
 - `teach_score` / `teach_lyrics` 成立 **⟺** 该段条目列表长度 > 0（空列表不算成立）。
 - `cursor` 成立 **⟺** 存在至少一个真实标记的跟谱层级。
@@ -91,7 +91,7 @@ INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
 | `VERIFYING` | 资料核对中 | 版本 / 来源 / 版权在核对，尚未定案。 |
 | `LYRICS_READY` | 歌词完成 | 歌词结构化、分句、校对完成。 |
 | `SCORE_READY` | 简谱完成 | 简谱按统一标准完成并与歌词对齐。 |
-| `PIANO_READY` | 钢琴伴奏完成 | 伴奏可播放、节拍稳定、与歌曲一致。 |
+| `ACCOMPANIMENT_READY` | 伴奏完成 | 伴奏可播放、节拍稳定、与歌曲一致。 |
 | `DEMO_READY` | 示唱完成 | 至少一个真人示唱可用。 |
 | `SYNC_READY` | 时间轴与光标完成 | 分句时间轴与跟谱数据就绪。 |
 | `TEACHING_READY` | 教学内容完成 | 学唱 / 教谱 / 教词 / 声乐提示就绪。 |
@@ -107,7 +107,7 @@ INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
 |---|---|
 | `LYRICS_READY` | `lyrics == PROVIDED` |
 | `SCORE_READY` | + `score == PROVIDED` |
-| `PIANO_READY` | + `piano == PROVIDED` |
+| `ACCOMPANIMENT_READY` | + `piano == PROVIDED` |
 | `DEMO_READY` | + `demo_any` |
 | `SYNC_READY` | + `timeline` |
 | `TEACHING_READY` | + `teach_learn` |
@@ -141,7 +141,7 @@ INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
 |---|---|---|
 | 第 1 阶段 | 曲库成形（当前 50 首：详情层 10 + 登记层 45 去重合计 50） | 先把**歌**收全，不急着做 18 段。 |
 | 第 2 阶段 | 详情层扩到 10 → 60 | 每首歌先做 **L1（歌词 + 简谱）**，这是最低可用线。 |
-| 第 3 阶段 | 骨干歌做满 L2 / L3 | 常用的歌补钢琴与示唱。 |
+| 第 3 阶段 | 骨干歌做满 L2 / L3 | 常用的歌补伴奏与示唱。 |
 | 第 4 阶段 | 核心歌做满 L4 | 只对**会被反复教**的歌做完整教学包。 |
 
 **策略原则**：
@@ -149,7 +149,7 @@ INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
 1. **先 L1 铺满，再逐级加深** —— 不要一首歌做到 L4 而其他歌都是 NONE。
 2. **不虚构**：没有的资源就是「尚未提供」，等级如实停在当前级。
 3. **不做排名**：100 首之间**不排序、不评分、不推荐**。
-4. **钢琴唯一**：所有伴奏都只做钢琴，保证可复现。
+4. **伴奏通用**：所有伴奏以「合适、完整、好唱、与歌曲音乐性相称」为标准；不限定钢琴。
 
 ---
 
@@ -167,4 +167,4 @@ INTAKE → VERIFYING → LYRICS_READY → SCORE_READY → PIANO_READY
 
 | 版本 | 日期 | 说明 |
 |---|---|---|
-| V1.0 | 2026-09-21 | 首次冻结：18 段模型 / 四级完成度 / 状态机 / 制作顺序 / 100 首策略 / 硬边界。 |
+| V1.1 | 2026-09-25 | 将伴奏从钢琴专属升级为通用伴奏，并保留现有钢琴资源兼容：18 段模型 / 四级完成度 / 状态机 / 制作顺序 / 100 首策略 / 硬边界。 |
