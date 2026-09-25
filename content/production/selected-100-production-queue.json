@@ -5,7 +5,6 @@
   "batches": {
     "BATCH_01_L3_CONSOLIDATION": {
       "songs": [
-        "MUS-S-0001",
         "MUS-S-0002",
         "MUS-S-0004"
       ]
@@ -24,6 +23,11 @@
         "MUS-S-0009",
         "MUS-S-0010"
       ]
+    },
+    "BATCH_01_SAMPLE_COMPLETION": {
+      "songs": [
+        "MUS-S-0001"
+      ]
     }
   },
   "songs": [
@@ -32,11 +36,11 @@
       "song_id": "MUS-S-0001",
       "title_zh": "奇异恩典",
       "title_en": "Amazing Grace",
-      "queue_phase": "BATCH_01_L3_CONSOLIDATION",
-      "current_level": "L3",
-      "unit_status": "SYNC_READY",
+      "queue_phase": "BATCH_01_SAMPLE_COMPLETION",
+      "current_level": "L2",
+      "unit_status": "ACCOMPANIMENT_READY",
       "source_stage": "existing",
-      "production_note": "已有歌词、简谱、伴奏、男女示唱、时间轴；先完成验证、声乐提示、教唱资源与最终验收。"
+      "production_note": "第一首样板：歌词、简谱、伴奏已具备；外部真人示唱仅作候选，不能推进到 L3。当前重点是校谱、中文试唱译文审核、真实示唱接入与最终验收。"
     },
     {
       "selection_no": 2,
