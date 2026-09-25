@@ -411,8 +411,8 @@ export async function renderSongPage(root, songId, query) {
         </details>
 
         <!-- 08 制作到什么程度 -->
-        <section class="card sp-sec">
-          <div class="section-head"><h2><span class="sp-num">08</span>制作到什么程度</h2>
+        <details class="card sp-sec song-more"><summary>歌曲准备度</summary>
+          <div class="section-head">
             <span class="chip lv ${LEVEL_CLASS[summary ? summary.level : 'NONE']}">${esc(frontLevel)}</span></div>
           ${summary ? `<p class="plain muted small">${esc(levelNote(vocab, summary.level) || '')}</p>` : ''}
           <div class="sec-status">
@@ -422,7 +422,7 @@ export async function renderSongPage(root, songId, query) {
           ${missingRows.length ? `<p class="plain muted small">还缺：${esc(missingRows.map((k) => requirementLabel(vocab, k)).join('、'))}。</p>`
             : `<p class="plain muted small">结构层面已齐备。</p>`}
           <p class="plain muted small">等级由实际资源推导，不是写上去的；缺什么就显示缺什么，绝不补满结构冒充完成。</p>
-        </section>
+        </details>
 
         <!-- 09 我的学习状态 -->
         <section class="card sp-sec">
