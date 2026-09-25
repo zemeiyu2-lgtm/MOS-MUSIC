@@ -67,6 +67,14 @@ function unitLines(unit) {
   return out;
 }
 
+function chineseLyricLines(rows) {
+  return (Array.isArray(rows) ? rows : []).filter((row) => {
+    const text = typeof row === 'string' ? row : row && row.text;
+    if (!text) return false;
+    return (String(text).match(/[\u3400-\u9fff]/g) || []).length >= 2;
+  });
+}
+
 export async function renderSongPage(root, songId, query) {
   const ctx = await loadSongContext(songId);
   if (!ctx.row && !ctx.reg && !ctx.detail) {
