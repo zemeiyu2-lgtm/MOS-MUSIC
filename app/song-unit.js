@@ -101,7 +101,7 @@ export function unitFlags(unit) {
     teach_live: arr((teaching.live_teaching || {}).modules).some((m) => m && m.status === PROVIDED),
   };
   f.demo_any = f.demo_male || f.demo_female;
-  /* 学唱教学（模板 §九）：五步要真能跑，必须同时有词、谱、钢琴、至少一个示唱、时间轴 */
+  /* 学唱教学（模板 §九）：五步要真能跑，必须同时有词、谱、伴奏、至少一个示唱、时间轴 */
   f.teach_learn = f.lyrics && f.score && f.accompaniment && f.demo_any && f.timeline;
   return f;
 }
