@@ -180,6 +180,12 @@ export function mergeSources(slotSources, unitSrc) {
   const u = unitSrc || {};
   if (u.male) out.male = u.male;
   if (u.female) out.female = u.female;
+  if (u.accompaniment) {
+    out.accompaniment = u.accompaniment;
+    if (!out.accomp) out.accomp = u.accompaniment;
+    /* 兼容旧播放器轨道名：piano 只作为别名，不代表伴奏必须是钢琴。 */
+    if (!out.piano) out.piano = u.accompaniment;
+  }
   if (u.piano) out.piano = u.piano;
   for (const o of (u.accompOptions || [])) {
     if (o && o.key && o.url) out[o.key] = { url: o.url, record: o.record || null };
