@@ -2,12 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "song-unit.schema.json",
   "title": "MOS-MUSIC Song Unit（单曲完整歌曲单元 · V3.0）",
-  "description": "单曲完整歌曲单元契约：18 段（歌曲资料 / 统一歌词 / 统一简谱 / 男声示唱 / 女声示唱 / 钢琴伴奏 / 分句时间轴 / 光标跟谱数据 / 学唱教学 / 教谱教学 / 教词教学 / 声乐教学 / 真人教唱 / 内容理解 / 生命实践 / 教唱与传唱 / 版权与来源 / 最终验收）。标准见 docs/standards/MOS-SONG-PRODUCTION-TEMPLATE-V1.0.md。铁律：没有的资源一律 status=NOT_PROVIDED 且载荷留空，绝不为补满结构而虚构内容；等级 L1–L4 由 app/song-unit.js 派生，不写在本记录里。",
+  "description": "单曲完整歌曲单元契约：18 段（歌曲资料 / 统一歌词 / 统一简谱 / 男声示唱 / 女声示唱 / 伴奏伴奏 / 分句时间轴 / 光标跟谱数据 / 学唱教学 / 教谱教学 / 教词教学 / 声乐教学 / 真人教唱 / 内容理解 / 生命实践 / 教唱与传唱 / 版权与来源 / 最终验收）。标准见 docs/standards/MOS-SONG-PRODUCTION-TEMPLATE-V1.0.md。铁律：没有的资源一律 status=NOT_PROVIDED 且载荷留空，绝不为补满结构而虚构内容；等级 L1–L4 由 app/song-unit.js 派生，不写在本记录里。",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "unit_id", "song_id", "unit_version", "standard", "status",
-    "song_meta", "lyrics", "score", "demos", "piano", "timeline", "cursor",
+    "song_meta", "lyrics", "score", "demos", "accompaniment", "timeline", "cursor",
     "teaching", "content_understanding", "life_practice", "transmission",
     "rights", "acceptance", "created_at", "updated_at", "updated_by"
   ],
@@ -30,7 +30,7 @@
     },
     "status": {
       "type": "string",
-      "enum": ["INTAKE", "VERIFYING", "LYRICS_READY", "SCORE_READY", "PIANO_READY", "DEMO_READY", "SYNC_READY", "TEACHING_READY", "REVIEW", "COMPLETE", "HOLD"],
+      "enum": ["INTAKE", "VERIFYING", "LYRICS_READY", "SCORE_READY", "ACCOMPANIMENT_READY", "DEMO_READY", "SYNC_READY", "TEACHING_READY", "REVIEW", "COMPLETE", "HOLD"],
       "description": "生产状态（工作单 §二）。声明达到某状态必须有机械前置条件成立（app/song-unit.js statusConsistent）。"
     },
     "status_note": {
@@ -191,11 +191,11 @@
       }
     },
 
-    "piano": {
+    "accompaniment": {
       "type": "object",
       "additionalProperties": false,
       "required": ["status", "has_intro", "has_interlude", "beats_stable", "loopable", "key_matches", "note"],
-      "description": "06 钢琴伴奏（第一阶段统一只做钢琴）。它是用户自主歌唱的主要支持轨。",
+      "description": "06 伴奏伴奏（第一阶段统一只做伴奏）。它是用户自主歌唱的主要支持轨。",
       "properties": {
         "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
         "has_intro": { "type": ["boolean", "null"] },
@@ -280,7 +280,7 @@
           "type": "object",
           "additionalProperties": false,
           "required": ["status", "note"],
-          "description": "09 学唱教学：五步（听 → 跟 → 一起唱 → 自己唱 → 再唱一次）需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备才能真正可用。",
+          "description": "09 学唱教学：五步（听 → 跟 → 一起唱 → 自己唱 → 再唱一次）需词 / 谱 / 伴奏 / 至少一个示唱 / 时间轴齐备才能真正可用。",
           "properties": {
             "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
             "note": { "type": ["string", "null"] }
@@ -461,14 +461,14 @@
     "acceptance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["data", "lyrics", "score", "demo", "piano", "teaching", "sync", "live_teaching", "content", "rights"],
-      "description": "18 最终验收：A 数据 / B 歌词 / C 简谱 / D 示唱 / E 钢琴 / F 教学 / G 同步 / H 教唱 / I 内容 / J 版权。PENDING 表示尚未裁决，不等于通过。",
+      "required": ["data", "lyrics", "score", "demo", "accompaniment", "teaching", "sync", "live_teaching", "content", "rights"],
+      "description": "18 最终验收：A 数据 / B 歌词 / C 简谱 / D 示唱 / E 伴奏 / F 教学 / G 同步 / H 教唱 / I 内容 / J 版权。PENDING 表示尚未裁决，不等于通过。",
       "properties": {
         "data": { "$ref": "#/$defs/acceptanceRow" },
         "lyrics": { "$ref": "#/$defs/acceptanceRow" },
         "score": { "$ref": "#/$defs/acceptanceRow" },
         "demo": { "$ref": "#/$defs/acceptanceRow" },
-        "piano": { "$ref": "#/$defs/acceptanceRow" },
+        "accompaniment": { "$ref": "#/$defs/acceptanceRow" },
         "teaching": { "$ref": "#/$defs/acceptanceRow" },
         "sync": { "$ref": "#/$defs/acceptanceRow" },
         "live_teaching": { "$ref": "#/$defs/acceptanceRow" },
