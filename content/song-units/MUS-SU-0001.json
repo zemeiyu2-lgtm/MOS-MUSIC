@@ -3,8 +3,8 @@
   "song_id": "MUS-S-0001",
   "unit_version": "MUS-V-1.2.0",
   "standard": "song-production-template-1.0",
-  "status": "SYNC_READY",
-  "status_note": "歌词、简谱、伴奏、男女示唱、分句时间轴与光标均已提供；待补声乐提示、真人教唱资源，并完成 A–J 最终验收。",
+  "status": "ACCOMPANIMENT_READY",
+  "status_note": "歌词、简谱与伴奏已具备；外部真人示唱目前只是候选来源，尚未完成应用内播放/教学适用性确认，因此不计入完成等级。待完成人工校谱、中文试唱译文审核、真人示唱接入与 A–J 最终验收。",
   "song_meta": {
     "title_zh": "奇异恩典",
     "title_en": "Amazing Grace",
@@ -856,7 +856,7 @@
   },
   "demos": {
     "male": {
-      "status": "PROVIDED",
+      "status": "CANDIDATE_EXTERNAL",
       "slots": [
         {
           "phrase_id": null,
@@ -878,13 +878,13 @@
         }
       ],
       "singer": null,
-      "note": "外部真人男声（Reuse First）：Wintley Phipps（YouTube）；Guy Penrod（GodTube）。 原站播放 / 嵌入 / 时间段定位，不下载转存；教学适用性验收（demo 组）保持 PENDING，待人工看片确认。",
+      "note": "男声外部真人版本已找到，但当前仅保留为候选来源；尚未完成应用内可播放接入、分段时间码及教学适用性验收，因此不计入 L3/L4。",
       "source_type": "EXTERNAL_HUMAN_MALE",
       "source_url": "https://www.youtube.com/watch?v=HfGytXRpfho",
       "host_policy": "original_site"
     },
     "female": {
-      "status": "PROVIDED",
+      "status": "CANDIDATE_EXTERNAL",
       "slots": [
         {
           "phrase_id": null,
@@ -906,7 +906,7 @@
         }
       ],
       "singer": null,
-      "note": "外部真人女声（Reuse First）：Hayley Westenra（YouTube）；Judy Collins（YouTube）。 原站播放 / 嵌入 / 时间段定位，不下载转存；教学适用性验收（demo 组）保持 PENDING，待人工看片确认。",
+      "note": "女声外部真人版本已找到，但当前仅保留为候选来源；尚未完成应用内可播放接入、分段时间码及教学适用性验收，因此不计入 L3/L4。",
       "source_type": "EXTERNAL_HUMAN_FEMALE",
       "source_url": "https://www.youtube.com/watch?v=5mnTKN8LuiY",
       "host_policy": "original_site"
@@ -1270,8 +1270,8 @@
   },
   "teaching": {
     "learn": {
-      "status": "PROVIDED",
-      "note": "五步（听 → 跟 → 一起唱 → 自己唱 → 再唱一次）的机械前置已齐备：词（公版原文）+ 谱（原谱导入）+ 钢琴（生成陪唱）+ 示唱（外部真人，原站播放）+ 时间轴（精确计算）。示唱分段时间点与教学适用性需人工确认后使用。"
+      "status": "NOT_PROVIDED",
+      "note": "学唱流程已经设计完成；要把“听→跟→一起唱→自己唱→再唱一次”作为完整可运行教学，需要可在应用内实际播放并经确认的真人示唱轨。目前只有外部候选来源，因此暂不计入完成等级。"
     },
     "score_class": {
       "items": [
