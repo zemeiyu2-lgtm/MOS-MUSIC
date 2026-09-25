@@ -1,0 +1,148 @@
+{
+  "package_version": "MUS-V-1.0.0",
+  "song_id": "MUS-S-0001",
+  "status": "DRAFT_INTERNAL",
+  "purpose": "中文试唱工作稿：用于验证 MOS-MUSIC 中文歌词与旋律贴合方式，不作为现成中文译本，不作为正式发布文本。",
+  "authorship_note": "本稿为 MOS 新拟工作译文；正式使用前需人工校词、逐音节配谱并完成教会/编辑审核。",
+  "not_for_public_release": true,
+  "sections": [
+    {
+      "section_id": "v1",
+      "label": "第一节",
+      "lines": [
+        {
+          "text": "恩典奇妙，何等甘甜，",
+          "note": "保留“grace / sweet”核心意象。"
+        },
+        {
+          "text": "竟将我失丧之人救回；",
+          "note": "对应被救与回转。"
+        },
+        {
+          "text": "昔日迷失，如今寻回，",
+          "note": "对应 lost / found。"
+        },
+        {
+          "text": "昔日盲目，今得看见。",
+          "note": "对应 blind / see。"
+        }
+      ]
+    },
+    {
+      "section_id": "v2",
+      "label": "第二节",
+      "lines": [
+        {
+          "text": "恩典教我心存敬畏，",
+          "note": "对应 taught my heart to fear。"
+        },
+        {
+          "text": "恩典又使惧怕安息；",
+          "note": "对应 fears relieved。"
+        },
+        {
+          "text": "何等宝贵，这恩典显明，",
+          "note": "对应 precious / appear。"
+        },
+        {
+          "text": "就是我初信那一时。",
+          "note": "对应 hour I first believed。"
+        }
+      ]
+    },
+    {
+      "section_id": "v3",
+      "label": "第三节",
+      "lines": [
+        {
+          "text": "经过多少危难劳苦，",
+          "note": "对应 dangers / toils / snares。"
+        },
+        {
+          "text": "我已一路走到如今；",
+          "note": "对应 already come。"
+        },
+        {
+          "text": "恩典带我平安走过，",
+          "note": "对应 brought me safe thus far。"
+        },
+        {
+          "text": "恩典仍要领我归家。",
+          "note": "对应 lead me home。"
+        }
+      ]
+    },
+    {
+      "section_id": "v4",
+      "label": "第四节",
+      "lines": [
+        {
+          "text": "主曾应许美善恩福，",
+          "note": "对应 promised good。"
+        },
+        {
+          "text": "祂的话使盼望坚定；",
+          "note": "对应 word / hope secures。"
+        },
+        {
+          "text": "祂是我的盾牌产业，",
+          "note": "对应 shield / portion。"
+        },
+        {
+          "text": "直到我一生走尽。",
+          "note": "对应 as long as life endures。"
+        }
+      ]
+    },
+    {
+      "section_id": "v5",
+      "label": "第五节",
+      "lines": [
+        {
+          "text": "当我身心渐渐衰残，",
+          "note": "对应 flesh and heart shall fail。"
+        },
+        {
+          "text": "尘世生命终将止息；",
+          "note": "对应 mortal life shall cease。"
+        },
+        {
+          "text": "我必在帘幕之后得着，",
+          "note": "对应 within the veil。"
+        },
+        {
+          "text": "喜乐平安永远生命。",
+          "note": "对应 life of joy and peace。"
+        }
+      ]
+    },
+    {
+      "section_id": "v6",
+      "label": "第六节",
+      "lines": [
+        {
+          "text": "纵历万年仍在那里，",
+          "note": "对应 ten thousand years。"
+        },
+        {
+          "text": "荣耀明亮如同太阳；",
+          "note": "对应 bright shining as the sun。"
+        },
+        {
+          "text": "赞美之日永无减少，",
+          "note": "对应 no less days。"
+        },
+        {
+          "text": "如初歌唱赞美我王。",
+          "note": "对应 sing God's praise / first begun。"
+        }
+      ]
+    }
+  ],
+  "review_points": [
+    "逐句与现有简谱重新配字，确认每一音节落字是否自然。",
+    "优先检查弱起、长音、一字多音与句尾收束。",
+    "确认中文语义与英文公版原文一致，不追求逐词直译。",
+    "审核通过前，正式歌曲层仍继续显示英文公版歌词。"
+  ]
+}
