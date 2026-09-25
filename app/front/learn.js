@@ -82,9 +82,13 @@ export async function renderLearn(root, songId, query) {
   const plainLyrics = lines.length ? lines.map((l) => l.text) : (slotLyrics ? slotLyrics.sections.flat() : []);
   const unitSrc = unitSources(unit, resourcesIdx);
   const sources = mergeSources(sourcesFromSlots(ctx.slots), unitSrc);
+  const accompanimentKinds = (unitSrc.accompOptions || []).map((o) => [o.key, o.label]);
   const kinds = [
-    ['male', '男声示唱'], ['female', '女声示唱'], ['piano', '伴奏'],
-    ['demo', '示范'], ['accomp', '伴奏'],
+    ['male', '男声示唱'],
+    ['female', '女声示唱'],
+    ...accompanimentKinds,
+    ['demo', '示范'],
+    ['accomp', '伴奏'],
   ].filter(([k]) => sources[k]);
 
   const scoreOk = unit ? scoreReady(unit.score) : false;
@@ -258,7 +262,8 @@ export async function renderLearn(root, songId, query) {
   }
   function paint() {
     const st = player.state();
-    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '伴奏', demo: '示范', accomp: '伴奏' };
+    const labelOf = { male: '男声示唱', female: '女声示唱', demo: '示范', accomp: '伴奏' };
+    for (const [key, label] of accompanimentKinds) labelOf[key] = label;
     stateEl.textContent = st.playing ? `${labelOf[st.kind] || '音频'}播放中` : (st.kind ? '已暂停' : '未播放');
     waveEl.classList.toggle('on', st.playing);
     toggleBtn.textContent = st.playing ? '⏸' : '▶';
@@ -336,8 +341,10 @@ export async function renderLearn(root, songId, query) {
         toast(root, `已设为单句循环：${card.card_label}`, true);
       },
       onPiano: async () => {
+        const firstAccomp = accompanimentKinds.length ? accompanimentKinds[0][0] : null;
+        if (firstAccomp && sources[firstAccomp]) { await playKind(firstAccomp); return; }
         if (sources.piano) { await playKind('piano'); return; }
-        toast(root, '钢琴伴奏尚未提供 —— 可以先看谱读节奏', false);
+        toast(root, '伴奏尚未提供 —— 可以先看谱读节奏', false);
       },
     });
   }
