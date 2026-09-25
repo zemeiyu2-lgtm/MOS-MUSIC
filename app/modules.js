@@ -638,7 +638,10 @@ async function f7(root) {
 export const RENDERERS = {
   /* 前台 */
   home: f1, songs: f2, mine: f3, song: f4, learn: f5, teach: f6,
-  learning: () => import('./front/learning.js'),
+  learning: async (root, params) => {
+    const { renderLearning } = await import('./front/learning.js');
+    return renderLearning(root, params);
+  },
   /* V3.x 独立模块：歌唱教练（不读门训数据） */
   coach: f7,
   /* 后台（能力保留，普通用户不直接面对） */
