@@ -1,18 +1,26 @@
 {
-  "name": "MOS-MUSIC｜音乐门徒训练平台",
+  "name": "MOS-MUSIC｜中文生命诗歌与音乐",
   "short_name": "MOS-MUSIC",
-  "description": "以圣经真理为核心、以音乐为形成媒介、以门徒生命实践为目标的音乐门徒训练平台。支持离线使用。",
+  "description": "经典与现代并存的中文生命诗歌与音乐学习平台，支持听歌、看谱、学唱与离线使用。",
   "lang": "zh-CN",
   "dir": "ltr",
-  "start_url": "./index.html#/today",
+  "start_url": "./index.html#/",
   "scope": "./",
   "id": "/mos-music/",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui", "browser"],
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
   "orientation": "portrait-primary",
   "background_color": "#F7F3EB",
   "theme_color": "#234F42",
-  "categories": ["education", "lifestyle", "books"],
+  "categories": [
+    "music",
+    "education",
+    "lifestyle"
+  ],
   "prefer_related_applications": false,
   "icons": [
     {
@@ -42,22 +50,22 @@
   ],
   "shortcuts": [
     {
-      "name": "今日门训",
-      "short_name": "今天",
-      "url": "./index.html#/today",
-      "description": "打开今天的音乐门训"
+      "name": "诗歌本",
+      "short_name": "诗歌本",
+      "url": "./index.html#/songs",
+      "description": "浏览与搜索中文生命诗歌"
     },
     {
-      "name": "音乐库",
-      "short_name": "音乐库",
-      "url": "./index.html#/library",
-      "description": "搜索与筛选歌曲"
+      "name": "学习中",
+      "short_name": "学习",
+      "url": "./index.html#/songs?tab=learning",
+      "description": "继续正在学习的歌曲"
     },
     {
-      "name": "24 课音乐册",
-      "short_name": "24课",
-      "url": "./index.html#/courses",
-      "description": "浏览 24 课主题骨架"
+      "name": "我的歌",
+      "short_name": "我的歌",
+      "url": "./index.html#/mine",
+      "description": "收藏、最近唱过与正在学的歌"
     }
   ]
 }
