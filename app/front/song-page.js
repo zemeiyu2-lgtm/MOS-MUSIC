@@ -425,8 +425,8 @@ export async function renderSongPage(root, songId, query) {
         </details>
 
         <!-- 09 我的学习状态 -->
-        <section class="card sp-sec">
-          <h2><span class="sp-num">09</span>我的学习状态</h2>
+        <details class="card sp-sec song-more" open><summary>我的学习</summary>
+          
           <div class="stages" aria-label="学习路径状态">
             ${STAGE_ORDER.map((k) => `<span class="stage-chip ${myStage === k ? 'on' : ''}">${esc(stageText[k] || k)}</span>`).join('')}
           </div>
@@ -440,7 +440,7 @@ export async function renderSongPage(root, songId, query) {
               : due.state === 'maintained' ? '已经按节奏唱过三轮 —— 之后随机再遇到就好。'
               : '还没有开始学这首歌。'}
           </div>
-        </section>
+        </details>
 
         <!-- 10 教 · 传 · 链接 -->
         <section class="card sp-sec">
