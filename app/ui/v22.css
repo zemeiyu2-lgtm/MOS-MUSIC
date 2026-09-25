@@ -800,3 +800,305 @@ html[data-mood="night"] .song-action.primary {
   #view > * { animation: none !important; }
   .btn, .music-song-card, .cover-play, .play-fab { transition: none !important; animation: none !important; }
 }
+
+
+/* =========================================================
+   V2.2 第二轮精修｜Playback-first
+   目标：歌曲页像音乐产品，不像内容网站。
+========================================================= */
+
+/* 首页：去掉“营销 Hero 卡”，留下音乐空间 */
+.music-home-hero {
+  min-height: 560px !important;
+  padding: 42px 4px 54px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+.music-home-cover .cover {
+  width: min(410px, 36vw) !important;
+  border-radius: 20px !important;
+}
+.music-home-copy h1 {
+  font-weight: 780 !important;
+}
+.music-home-actions .btn.primary {
+  min-width: 116px !important;
+}
+
+/* 歌曲页 Hero：封面 + 元数据 + 主播放动作 */
+.songpage .sp-hero {
+  padding: 8px 0 42px !important;
+}
+.songpage .sp-hero .hero-id {
+  display: grid !important;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr) !important;
+  gap: 46px !important;
+  align-items: end !important;
+  text-align: left !important;
+}
+.songpage .sp-hero .cover-hero {
+  margin: 0 !important;
+  width: min(420px, 100%) !important;
+}
+.songpage .sp-hero .hero-id-info {
+  padding-bottom: 6px !important;
+}
+.songpage .sp-hero .hero-title {
+  margin: 0 0 10px !important;
+  font-size: clamp(44px, 5.8vw, 78px) !important;
+  font-weight: 780 !important;
+  letter-spacing: -.06em !important;
+  color: var(--v22-ink) !important;
+  line-height: .98 !important;
+}
+.songpage .sp-hero .hero-en {
+  font-size: 14px !important;
+  letter-spacing: .02em !important;
+}
+.songpage .sp-hero .sp-badges {
+  margin-top: 16px !important;
+  opacity: .72;
+}
+.songpage .sp-hero .hero-actions {
+  justify-content: flex-start !important;
+  margin-top: 24px !important;
+  gap: 8px !important;
+}
+.songpage .sp-hero .hero-actions .btn.primary {
+  min-width: 138px !important;
+}
+
+/* 使播放区成为页面的真正视觉重心 */
+.songpage #secSing {
+  padding: 26px 0 38px !important;
+}
+.songpage #secSing h2 {
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: .14em !important;
+  color: var(--v22-soft) !important;
+  margin-bottom: 10px !important;
+}
+.songpage #secSing .player {
+  padding-top: 18px !important;
+}
+.songpage #secSing .play-fab {
+  width: 62px !important;
+  height: 62px !important;
+  font-size: 19px !important;
+}
+.songpage #secSing .player-main {
+  min-height: 62px !important;
+}
+.songpage #secSing .player-state {
+  color: var(--v22-ink) !important;
+  font-size: 16px !important;
+  font-weight: 650 !important;
+}
+.songpage #secSing .player-time {
+  color: var(--v22-soft) !important;
+}
+.songpage #secSing .track-note {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 0 !important;
+  border-top: 1px solid var(--v22-line) !important;
+  margin-top: 18px !important;
+}
+.songpage #secSing .resource-slot {
+  border: 0 !important;
+  border-right: 1px solid var(--v22-line) !important;
+  border-radius: 0 !important;
+  padding: 12px 12px 12px 0 !important;
+  background: transparent !important;
+}
+.songpage #secSing .resource-slot:last-child {
+  border-right: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 12px !important;
+}
+.songpage #secSing .resource-slot:nth-child(2) {
+  padding-left: 12px !important;
+}
+.songpage #secSing .resource-slot.available {
+  color: var(--v22-ink) !important;
+}
+.songpage #secSing > p:last-child {
+  max-width: 60em !important;
+  margin-top: 12px !important;
+}
+
+/* 歌曲内部动作：从“三张卡”改为极简命令栏 */
+.songpage .song-actions-panel {
+  padding: 14px 0 34px !important;
+}
+.songpage .song-action-row {
+  border-top: 1px solid var(--v22-line) !important;
+  border-bottom: 1px solid var(--v22-line) !important;
+  padding: 8px 0 !important;
+}
+.songpage .song-action {
+  min-height: 52px !important;
+  padding: 10px 12px !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+}
+.songpage .song-action span {
+  font-size: 15px !important;
+  color: var(--v22-soft) !important;
+}
+.songpage .song-action strong {
+  font-size: 14px !important;
+}
+.songpage .song-action small {
+  font-size: 11px !important;
+}
+
+/* 简谱：减少“附件”感，增加乐谱空间 */
+.songpage #secScore {
+  padding-top: 34px !important;
+}
+.songpage #secScore .sp-score-head {
+  margin-bottom: 14px !important;
+}
+.songpage #secScore .score-wrap {
+  min-height: 190px !important;
+  padding: 34px 22px !important;
+  border: 0 !important;
+  border-top: 1px solid var(--v22-line) !important;
+  border-bottom: 1px solid var(--v22-line) !important;
+  border-radius: 0 !important;
+  background: #fafaf7 !important;
+}
+.songpage #secScore .cursor-bar,
+.songpage #secScore .phrase-loop {
+  border: 0 !important;
+  background: transparent !important;
+}
+.songpage #secScore .cursor-bar {
+  padding: 10px 0 0 !important;
+}
+.songpage #secScore .phrase-loop {
+  padding: 8px 0 0 !important;
+}
+
+/* 歌词：让它更接近“正在播放的歌词”，不是文章段落 */
+.songpage #secLyrics {
+  max-width: 860px !important;
+  padding-top: 46px !important;
+}
+.songpage #secLyrics h2 {
+  margin-bottom: 28px !important;
+}
+.songpage #secLyrics .lyric-line {
+  color: #a2a29b !important;
+  font-size: clamp(28px, 4vw, 46px) !important;
+  font-weight: 560 !important;
+  line-height: 1.42 !important;
+  margin-bottom: 32px !important;
+  transition: color .25s ease, opacity .25s ease !important;
+}
+.songpage #secLyrics .lyric-line.current {
+  color: var(--v22-ink) !important;
+  opacity: 1 !important;
+}
+.songpage #secLyrics .lyric-line:not(.current) {
+  opacity: .72 !important;
+}
+
+/* 次级内容继续下沉，不和歌曲主体竞争 */
+.songpage .sp-side {
+  margin-top: 12px !important;
+}
+.songpage .sp-side > .sp-sec:first-child {
+  border-top: 1px solid var(--v22-line) !important;
+}
+.songpage .song-more {
+  max-width: 920px !important;
+}
+
+/* 手机：封面 / 标题 / 主播放全部按单手顺序排列 */
+@media (max-width: 760px) {
+  .music-home-hero {
+    min-height: auto !important;
+    padding: 18px 0 38px !important;
+  }
+  .music-home-copy {
+    padding-top: 6px !important;
+  }
+  .music-home-copy h1 {
+    font-size: clamp(40px, 13vw, 56px) !important;
+  }
+  .songpage .sp-hero .hero-id {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    align-items: start !important;
+  }
+  .songpage .sp-hero .cover-hero {
+    width: min(330px, 82vw) !important;
+  }
+  .songpage .sp-hero .hero-id-info {
+    padding: 0 !important;
+  }
+  .songpage .sp-hero .hero-title {
+    font-size: clamp(42px, 13vw, 58px) !important;
+  }
+  .songpage .sp-hero .hero-actions {
+    display: grid !important;
+    grid-template-columns: minmax(0,1.6fr) minmax(0,1fr) !important;
+  }
+  .songpage .sp-hero .hero-actions .btn.primary {
+    width: 100% !important;
+  }
+  .songpage .sp-hero .hero-actions .btn:last-child {
+    grid-column: span 1 !important;
+  }
+  .songpage #secSing .track-note {
+    grid-template-columns: 1fr !important;
+  }
+  .songpage #secSing .resource-slot,
+  .songpage #secSing .resource-slot:nth-child(2),
+  .songpage #secSing .resource-slot:last-child {
+    padding: 10px 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--v22-line) !important;
+  }
+  .songpage #secSing .resource-slot:last-child {
+    border-bottom: 0 !important;
+  }
+  .songpage .song-action-row {
+    grid-template-columns: 1fr !important;
+  }
+  .songpage .song-action {
+    min-height: 48px !important;
+  }
+  .songpage #secScore .score-wrap {
+    padding: 28px 12px !important;
+  }
+  .songpage #secLyrics {
+    padding-top: 38px !important;
+  }
+  .songpage #secLyrics .lyric-line {
+    font-size: 30px !important;
+    margin-bottom: 28px !important;
+  }
+}
+
+/* 真夜模式：主视觉继续黑，播放内容保持最高对比 */
+html[data-mood="night"] .music-home-hero {
+  background: transparent !important;
+}
+html[data-mood="night"] .songpage #secScore .score-wrap {
+  background: #0e0e0e !important;
+  border-color: #292929 !important;
+}
+html[data-mood="night"] .songpage #secLyrics .lyric-line {
+  color: #6f6f69 !important;
+}
+html[data-mood="night"] .songpage #secLyrics .lyric-line.current {
+  color: #f4f4f2 !important;
+}
+html[data-mood="night"] .songpage #secSing .resource-slot {
+  border-color: #292929 !important;
+}
