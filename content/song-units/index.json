@@ -250,7 +250,7 @@
       "requires": [
         "lyrics",
         "score",
-        "piano",
+        "accompaniment",
         "demo_male",
         "demo_female",
         "timeline",
@@ -266,7 +266,7 @@
   "requirement_labels": {
     "lyrics": "歌词",
     "score": "简谱",
-    "piano": "伴奏",
+    "accompaniment": "伴奏",
     "demo_male": "男声示唱",
     "demo_female": "女声示唱",
     "demo_any": "真人示唱",
@@ -387,7 +387,7 @@
       {
         "key": "learn",
         "label": "学唱",
-        "note": "适合第一次学一首歌：听 → 跟 → 陪 → 自己唱。可以使用男声 / 女声 / 钢琴 / 慢速 / 分句 / 循环。",
+        "note": "适合第一次学一首歌：听 → 跟 → 陪 → 自己唱。可以使用男声 / 女声 / 伴奏 / 慢速 / 分句 / 循环。",
         "gives_full_demo_first": true,
         "sequence": [
           {
@@ -403,12 +403,12 @@
           {
             "key": "accompany",
             "label": "陪",
-            "hint": "开钢琴陪唱，和伴奏一起唱。"
+            "hint": "开伴奏陪唱，和伴奏一起唱。"
           },
           {
             "key": "self",
             "label": "自己唱",
-            "hint": "关掉人声，只听钢琴，自己唱一遍。"
+            "hint": "关掉人声，只听伴奏，自己唱一遍。"
           },
           {
             "key": "again",
@@ -420,7 +420,7 @@
       {
         "key": "sight",
         "label": "视唱",
-        "note": "适合训练音乐能力：看谱 → 内听 → 唱 → 核对 → 修正。默认不先给完整示唱，只给起音、节拍与钢琴参考，最后才播放示唱核对。",
+        "note": "适合训练音乐能力：看谱 → 内听 → 唱 → 核对 → 修正。默认不先给完整示唱，只给起音、节拍与伴奏参考，最后才播放示唱核对。",
         "gives_full_demo_first": false,
         "sequence": [
           {
