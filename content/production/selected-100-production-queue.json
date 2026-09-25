@@ -34,7 +34,7 @@
       "title_en": "Amazing Grace",
       "queue_phase": "BATCH_01_L3_CONSOLIDATION",
       "current_level": "L3",
-      "unit_status": "VERIFYING",
+      "unit_status": "SYNC_READY",
       "source_stage": "existing",
       "production_note": "已有歌词、简谱、伴奏、男女示唱、时间轴；先完成验证、声乐提示、教唱资源与最终验收。"
     },
@@ -45,7 +45,7 @@
       "title_en": "Be Still, My Soul",
       "queue_phase": "BATCH_01_L3_CONSOLIDATION",
       "current_level": "L3",
-      "unit_status": "VERIFYING",
+      "unit_status": "SYNC_READY",
       "source_stage": "existing",
       "production_note": "已有歌词、简谱、伴奏、男女示唱、时间轴；先完成验证、声乐提示、教唱资源与最终验收。"
     },
@@ -67,7 +67,7 @@
       "title_en": "Joy to the World",
       "queue_phase": "BATCH_01_L3_CONSOLIDATION",
       "current_level": "L3",
-      "unit_status": "VERIFYING",
+      "unit_status": "SYNC_READY",
       "source_stage": "existing",
       "production_note": "已有歌词、简谱、伴奏、男女示唱、时间轴；先完成验证、声乐提示、教唱资源与最终验收。"
     },
