@@ -282,7 +282,7 @@ export function resolveResourceUrl(resourcesIndex, resourceId) {
  * 只有 status=PROVIDED 且资源层真实存在 file_url 才返回结果 —— 缺一律 null。
  */
 export function unitSources(unit, resourcesIndex) {
-  const out = { male: null, female: null, piano: null };
+  const out = { male: null, female: null, piano: null, accompOptions: [] };
   if (!unit) return out;
   const fromSlots = (track) => {
     if (!track || track.status !== 'PROVIDED') return null;
@@ -294,11 +294,18 @@ export function unitSources(unit, resourcesIndex) {
   };
   out.male = fromSlots(unit.demos && unit.demos.male);
   out.female = fromSlots(unit.demos && unit.demos.female);
-  if (unit.piano && unit.piano.status === 'PROVIDED') {
-    const rec = ((resourcesIndex && resourcesIndex.resources) || [])
-      .find((r) => r && r.song_id === unit.song_id && r.resource_type === 'ACCOMPANIMENT' && r.file_url);
-    if (rec) out.piano = { url: rec.file_url, record: rec };
-  }
+  const acc = ((resourcesIndex && resourcesIndex.resources) || [])
+    .filter((r) => r && r.song_id === unit.song_id && r.resource_type === 'ACCOMPANIMENT' && r.file_url)
+    .map((rec, i) => {
+      const label = rec.label || rec.instrument
+        ? `${rec.label || rec.instrument}`
+        : (String(rec.notes || rec.source || '').match(/钢琴|吉他|乐队|管弦|风琴|木琴|原声/) || [])[0] || `伴奏 ${i + 1}`;
+      return { key: `accomp_${i + 1}`, label: `🎵 ${label.endsWith('伴奏') ? label : label + '伴奏'}`, url: rec.file_url, record: rec };
+    });
+  out.accompOptions = acc;
+  const pianoRec = acc.find((x) => /钢琴/.test(x.label));
+  if (pianoRec) out.piano = pianoRec;
+  else if (unit.piano && unit.piano.status === 'PROVIDED' && acc[0]) out.piano = acc[0];
   return out;
 }
 
