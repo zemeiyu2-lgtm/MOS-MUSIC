@@ -18,24 +18,24 @@
       "reason": "常见中文译本各有版权方，本仓不托管；等待 USER_PROVIDED 或授权（CI-0028）。"
     },
     "score": {
-      "status": "DRAFT",
-      "reason": null
+      "status": "PROVIDED",
+      "basis": "结构化简谱已导入本仓，来源为 Open Hymnal 公版原谱；人工听校 PENDING。"
     },
     "audio_piano": {
-      "status": "NOT_AVAILABLE",
-      "reason": "真人钢琴伴奏未录制。"
+      "status": "PROVIDED",
+      "basis": "MUS 生成 MIDI：MUS-R-0111，基于公版原谱结构生成。"
     },
     "audio_demo_male": {
-      "status": "NOT_AVAILABLE",
-      "reason": "真人男声示唱未录制；禁 AI 歌声冒充。"
+      "status": "CANDIDATE_EXTERNAL",
+      "basis": "外部真人来源已登记，但未作为应用内可播放资源核验。"
     },
     "audio_demo_female": {
-      "status": "NOT_AVAILABLE",
-      "reason": "真人女声示唱未录制；禁 AI 歌声冒充。"
+      "status": "CANDIDATE_EXTERNAL",
+      "basis": "外部真人来源已登记，但未作为应用内可播放资源核验。"
     },
     "timeline": {
-      "status": "NOT_AVAILABLE",
-      "reason": "无音频即无可靠时间标记。"
+      "status": "PROVIDED",
+      "basis": "由结构化简谱与统一速度生成；与当前伴奏同源。"
     }
   },
   "ai_policy": {
