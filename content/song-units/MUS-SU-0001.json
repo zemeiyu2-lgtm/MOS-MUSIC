@@ -912,7 +912,7 @@
       "host_policy": "original_site"
     }
   },
-  "piano": {
+  "accompaniment": {
     "status": "PROVIDED",
     "has_intro": null,
     "has_interlude": null,
@@ -1480,12 +1480,6 @@
       "date": null,
       "note": null
     },
-    "piano": {
-      "result": "PENDING",
-      "reviewer": null,
-      "date": null,
-      "note": null
-    },
     "teaching": {
       "result": "PENDING",
       "reviewer": null,
@@ -1511,6 +1505,12 @@
       "note": null
     },
     "rights": {
+      "result": "PENDING",
+      "reviewer": null,
+      "date": null,
+      "note": null
+    },
+    "accompaniment": {
       "result": "PENDING",
       "reviewer": null,
       "date": null,
