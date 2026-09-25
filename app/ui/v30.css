@@ -363,3 +363,88 @@ html[data-mood="night"] .pcard.on { background: rgba(122,167,140,.16); }
 html[data-mood="night"] .sidebar { background: rgba(24,29,26,.96); border-color: var(--night-line); }
 html[data-mood="night"] .top { background: rgba(24,29,26,.86); border-color: var(--night-line); }
 html[data-mood="night"] .top-title strong { color: var(--night-ink); }
+
+
+/* ------------------------------------------------ 现代首页 / 歌本 V1.0 */
+.music-home { max-width: 1080px; margin: 0 auto; padding: 8px 0 40px; }
+.music-home-hero {
+  display:grid; grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr); gap:40px; align-items:center;
+  min-height:420px; padding:48px; border-radius:28px;
+  background:linear-gradient(135deg,#F8F4EC 0%,#FFFDF9 58%,#EEF4F0 100%);
+  border:1px solid var(--line);
+}
+.music-home-copy h1 { max-width: 9em; margin:10px 0 12px; font-size:clamp(36px,5vw,64px); line-height:1.08; letter-spacing:-.035em; color:var(--green); }
+.music-home-copy p { max-width:32em; margin:0 0 24px; font-size:18px; line-height:1.75; color:var(--muted); }
+.music-home-cover { display:grid; place-items:center; min-height:270px; }
+.music-home-cover .cover { width:min(300px,72vw); aspect-ratio:1; }
+.music-home-section { padding:34px 0; border-bottom:1px solid var(--line); }
+.music-section-head { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px; }
+.music-section-head h2 { margin:3px 0 0; font-size:clamp(23px,3vw,32px); color:var(--ink); }
+.music-home-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.hero-like { width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:transparent; color:var(--muted); font-size:22px; }
+.hero-like.on { color:#B54B52; border-color:#D49A9F; background:#FBF0F1; }
+.music-home-list { display:grid; gap:4px; }
+.music-list-row { display:flex; align-items:center; gap:14px; padding:10px 8px; border-radius:14px; text-decoration:none; color:inherit; }
+.music-list-row:hover { background:rgba(35,79,66,.05); }
+.cover-sm { width:48px; min-width:48px; height:48px; }
+.music-list-main { display:flex; flex-direction:column; min-width:0; }
+.music-list-main strong { font-size:16px; color:var(--ink); }
+.music-list-main small { margin-top:2px; color:var(--muted); }
+.music-list-arrow { margin-left:auto; color:var(--muted); }
+.music-home-minimal { padding:30px 0; text-align:center; }
+.music-home-minimal a { color:var(--green); font-weight:700; text-decoration:none; }
+
+.music-page-head { display:flex; align-items:end; justify-content:space-between; gap:16px; margin:8px 0 22px; }
+.music-page-head h1 { margin:6px 0 0; font-size:clamp(32px,4vw,48px); color:var(--green); letter-spacing:-.03em; }
+.music-count { color:var(--muted); font-variant-numeric:tabular-nums; }
+.music-search {
+  display:flex; align-items:center; gap:10px; max-width:760px; margin-bottom:14px;
+  padding:4px 14px; border:1px solid var(--line); border-radius:16px; background:var(--paper);
+  box-shadow:0 10px 30px rgba(32,43,38,.05);
+}
+.music-search span { color:var(--muted); font-size:22px; }
+.music-search input { width:100%; min-height:50px; border:0; outline:none; background:transparent; font:inherit; font-size:18px; }
+.music-search .clear { border:0; background:transparent; color:var(--muted); font-size:22px; cursor:pointer; }
+.music-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.music-tab, .music-filter {
+  border:1px solid var(--line); background:transparent; color:var(--muted); border-radius:999px;
+  padding:8px 14px; font:inherit; cursor:pointer;
+}
+.music-tab.active, .music-filter.active { background:var(--green); border-color:var(--green); color:#fff; }
+.music-filters { margin-bottom:22px; border-bottom:1px solid var(--line); }
+.music-filters summary { cursor:pointer; padding:10px 0; color:var(--muted); font-weight:650; }
+.music-filter-group { padding:10px 0 14px; }
+.music-filter-group > span { display:block; margin-bottom:7px; color:var(--muted); font-size:13px; }
+.music-filter-row { display:flex; flex-wrap:wrap; gap:6px; }
+.music-filter { padding:6px 10px; border-radius:10px; font-size:13px; }
+.music-song-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; padding-bottom:40px; }
+.music-song-card {
+  display:flex; align-items:center; gap:14px; min-width:0; padding:12px; border:1px solid var(--line);
+  border-radius:18px; background:var(--paper); transition:transform .18s ease, box-shadow .18s ease;
+}
+.music-song-card:hover { transform:translateY(-2px); box-shadow:0 14px 34px rgba(32,43,38,.08); }
+.music-song-open { display:flex; align-items:center; gap:14px; min-width:0; flex:1; padding:0; border:0; background:transparent; text-align:left; cursor:pointer; font:inherit; }
+.music-song-open .cover { flex:0 0 78px; width:78px; }
+.music-song-copy { min-width:0; display:flex; flex-direction:column; gap:4px; }
+.music-song-copy strong { color:var(--ink); font-size:17px; }
+.music-song-copy small { color:var(--muted); }
+.music-song-actions { display:flex; gap:3px; }
+.music-song-actions .icon-op { width:36px; height:36px; }
+.music-empty { grid-column:1/-1; padding:50px 20px; text-align:center; color:var(--muted); }
+.music-empty a { color:var(--green); font-weight:700; }
+
+@media (max-width: 760px) {
+  .music-home-hero { grid-template-columns:1fr; min-height:auto; padding:28px; gap:18px; }
+  .music-home-cover { min-height:0; order:-1; }
+  .music-home-copy h1 { font-size:42px; }
+  .music-page-head { align-items:start; }
+  .music-song-grid { grid-template-columns:1fr; }
+}
+html[data-mood="night"] .music-home-hero { background:linear-gradient(135deg,#26322C 0%,#202622 100%); border-color:var(--night-line); }
+html[data-mood="night"] .music-section-head h2,
+html[data-mood="night"] .music-song-copy strong,
+html[data-mood="night"] .music-list-main strong,
+html[data-mood="night"] .music-page-head h1 { color:var(--night-ink); }
+html[data-mood="night"] .music-song-card,
+html[data-mood="night"] .music-search { background:var(--night-paper); border-color:var(--night-line); }
+html[data-mood="night"] .music-filters { border-color:var(--night-line); }
