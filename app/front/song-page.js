@@ -297,8 +297,8 @@ export async function renderSongPage(root, songId, query) {
         <!-- 04 学 / 看谱唱 / 教别人：歌曲内部动作 -->
         <section class="card sp-sec song-actions-panel">
           <div class="song-action-row">
-            <a class="song-action primary" href="#/learn/${esc(ctx.songId)}"><span>🎤</span><strong>学唱</strong><small>一句一句学</small></a>
-            <a class="song-action" href="#/learn/${esc(ctx.songId)}?mode=sight"><span>🎼</span><strong>看谱唱</strong><small>先看谱，再唱</small></a>
+            <a class="song-action primary" href="#/learn/${esc(ctx.songId)}"><span>♪</span><strong>学唱</strong><small>一句一句学</small></a>
+            <a class="song-action" href="#/learn/${esc(ctx.songId)}?mode=sight"><span>◌</span><strong>看谱唱</strong><small>先看谱，再唱</small></a>
             <a class="song-action" href="#/teach/${esc(ctx.songId)}"><span>↗</span><strong>教别人</strong><small>带人唱这首歌</small></a>
           </div>
         </section>
