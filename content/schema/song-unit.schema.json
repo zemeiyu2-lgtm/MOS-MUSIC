@@ -495,7 +495,7 @@
       "required": ["status", "slots", "singer", "note"],
       "description": "真人示唱轨。source_type 说明这条音轨从哪来（本仓录制 / 外部真人 / 未来 AI），外部版本一律原站播放或嵌入，不下载转存。",
       "properties": {
-        "status": { "type": "string", "enum": ["PROVIDED", "NOT_PROVIDED"] },
+        "status": { "type": "string", "enum": ["PROVIDED", "CANDIDATE_EXTERNAL", "NOT_PROVIDED"] },
         "singer": { "type": ["string", "null"], "description": "真人示唱者代号；未录制为 null。不得填写虚拟歌手。", "enum": [null] },
         "source_type": {
           "type": ["string", "null"],
