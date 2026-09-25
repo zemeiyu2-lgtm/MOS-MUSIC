@@ -13,6 +13,7 @@
   "relation_note": "单曲单元不写入 Song Core Record（content/songs/** 逐字节不变）；它按歌挂 song_id，只承载「这首歌被制作到什么程度」。",
   "section_status_vocabulary": {
     "PROVIDED": "该段内容已真实存在，可用于教学",
+    "CANDIDATE_EXTERNAL": "已找到外部候选来源，但尚未完成应用内播放/嵌入与教学适用性确认，不计入完成等级",
     "NOT_PROVIDED": "该段内容尚不存在 —— 必须在界面上如实显示为尚未提供，不得为补满结构而虚构"
   },
   "sections": [
