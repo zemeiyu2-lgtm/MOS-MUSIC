@@ -176,7 +176,7 @@ export async function renderLearn(root, songId, query) {
           ${trackHtml()}
           <div class="player-row">
             ${kinds.map(([k, label]) => `<button class="pill kind" data-kind="${k}">${esc(label)}</button>`).join('')}
-            <button class="pill" id="lLoop" aria-pressed="false">🔁 循环关</button>
+            <button class="pill" id="lLoop" aria-pressed="false">循环关</button>
             ${SPEEDS.map((s) => `<button class="pill spd${s === 0.75 ? ' on' : ''}" data-speed="${s}">${speedLabel(s)}</button>`).join('')}
           </div>
         </div>
@@ -191,7 +191,7 @@ export async function renderLearn(root, songId, query) {
           <span class="metro-note">拍手 · 点拍 · 口读节奏 · 轻声数拍。</span>
         </div>
         <div class="metro-row">
-          <button class="pill" id="metroToggle" aria-pressed="false">▶ 开始打拍</button>
+          <button class="pill" id="metroToggle" aria-pressed="false">开始打拍</button>
           <input class="metro-range" id="metroBpm" type="range" min="${BPM_MIN}" max="${BPM_MAX}" value="${DEFAULT_BPM}" aria-label="速度" ${metro.state().available ? '' : 'disabled'}>
           <span class="metro-val" id="metroVal">♩＝${DEFAULT_BPM}</span>
           ${TEMPO_PRESETS.map((p) => `<button class="pill" data-bpm="${p.bpm}">${esc(p.label)}</button>`).join('')}
@@ -210,7 +210,7 @@ export async function renderLearn(root, songId, query) {
       </section>` : `
       <section class="card sp-sec">
         <h2>歌词</h2>
-        <div class="state-empty"><span class="glyph">✍️</span><div>歌词${NOT_PROVIDED}</div><div class="small">分句高亮将在歌词资源导入后可用。</div></div>
+        <div class="state-empty"><span class="glyph">✎</span><div>歌词${NOT_PROVIDED}</div><div class="small">分句高亮将在歌词资源导入后可用。</div></div>
       </section>`}
 
       <section class="card sp-sec">
@@ -266,7 +266,7 @@ export async function renderLearn(root, songId, query) {
     for (const [key, label] of accompanimentKinds) labelOf[key] = label;
     stateEl.textContent = st.playing ? `${labelOf[st.kind] || '音频'}播放中` : (st.kind ? '已暂停' : '未播放');
     waveEl.classList.toggle('on', st.playing);
-    toggleBtn.textContent = st.playing ? '⏸' : '▶';
+    toggleBtn.textContent = st.playing ? '暂停' : '播放';
     toggleBtn.classList.toggle('playing', st.playing);
     timeEl.textContent = `${formatTime(st.time)} / ${formatTime(st.duration)}`;
     loopBtn.textContent = st.loop ? '循环开' : '循环关';
