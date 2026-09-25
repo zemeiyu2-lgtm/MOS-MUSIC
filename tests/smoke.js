@@ -238,7 +238,7 @@ console.log('\n8) V1.1-A（真实使用第一轮：Song Detail / Song Resources 
   ok(res.counts.total === res.resources.length && res.counts.total > 0
     && res.resources.every((r) => r.is_ai !== true || ['AI_MALE', 'AI_FEMALE'].includes(r.source_type))
     && res.resources.every((r) => r.file_url == null || r.host_policy === 'hosted_authorized'),
-    `资源层：当前 ${res.counts.total} 条资源记录（外部真人原站播放 / 生成钢琴本仓托管 / AI 独立轨，不虚构）`);
+    `资源层：当前 ${res.counts.total} 条资源记录（外部真人原站播放 / 生成伴奏本仓托管 / AI 独立轨，不虚构）`);
   ok(res.relation_to_song_core === 'independent_layer' && res.status_vocabulary.NOT_IMPORTED,
     '资源层独立于 Song Core Record；NOT_IMPORTED 为如实显示的状态词');
   ok(fs.existsSync(path.join(ROOT, 'content/schema/song-resource.schema.json')),
@@ -559,13 +559,13 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   ok(disc.rows.every((r) => r.found && r.found.human_male && r.found.human_female
     && r.found.ai_male && r.found.ai_female && r.found.piano && r.found.teaching
     && r.next_action),
-    'V3.x 普查：每首含 真人男/真人女/AI男/AI女/钢琴/教学 六类 + 下一步');
+    'V3.x 普查：每首含 真人男/真人女/AI男/AI女/伴奏/教学 六类 + 下一步');
   ok(disc.rows.every((r) => r.found.human_male.status === 'UNSURVEYED' && r.found.human_male.source_url === null),
     'V3.x 普查：外部检索未执行 ⇒ UNSURVEYED、来源留空（不虚构）');
   ok(disc.rows.every((r) => r.found.ai_male.status === 'NOT_FOUND' && r.found.ai_male.source_url === null),
     'V3.x 普查：AI 类型就位但无成品（NOT_FOUND，不冒充）');
   ok(disc.counts.needs_mos_creation === 5 && disc.counts.human_unsurveyed === 100,
-    'V3.x 普查：真正需要 MOS 自制 5 首；真人/钢琴/教学全部待检索');
+    'V3.x 普查：真正需要 MOS 自制 5 首；真人/伴奏/教学全部待检索');
   const guardSrc = fs.readFileSync(path.join(ROOT, 'tools/guard.js'), 'utf8');
   ok(guardSrc.includes('前台') && guardSrc.includes('AI') && guardSrc.includes('Coach'),
     'V3.x 守护：guard.js 就绪（前台术语 / AI 冒充 / Coach 越界 / 分类多归属）');
