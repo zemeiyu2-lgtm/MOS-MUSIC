@@ -36,6 +36,10 @@
     "timeline": {
       "status": "PROVIDED",
       "basis": "由结构化简谱与统一速度生成；与当前伴奏同源。"
+    },
+    "lyrics_zh_working_draft": {
+      "status": "INTERNAL_DRAFT",
+      "basis": "MOS 新拟工作译文，仅用于内部试唱与校词；未经审核，不作为正式发布歌词。"
     }
   },
   "ai_policy": {
