@@ -85,7 +85,7 @@ function chineseLyricLines(rows) {
 export async function renderSongPage(root, songId, query) {
   const ctx = await loadSongContext(songId);
   if (!ctx.row && !ctx.reg && !ctx.detail) {
-    root.innerHTML = `<div class="state-error"><span class="glyph">🎵</span><div>没有找到歌曲 ${esc(songId)}。</div>
+    root.innerHTML = `<div class="state-error"><span class="glyph">♪</span><div>没有找到歌曲 ${esc(songId)}。</div>
       <a class="btn secondary" href="#/songs">← 返回诗歌本</a></div>`;
     return;
   }
@@ -113,11 +113,11 @@ export async function renderSongPage(root, songId, query) {
   const sources = mergeSources(sourcesFromSlots(slots), unitSrc);
   const accompanimentKinds = (unitSrc.accompOptions || []).map((o) => [o.key, o.label]);
   const trackKinds = [
-    ['male', '🎧 男声示唱'],
-    ['female', '🎧 女声示唱'],
+    ['male', '男声示唱'],
+    ['female', '女声示唱'],
     ...accompanimentKinds,
-    ['demo', '🎧 示范'],
-    ['accomp', '🎵 伴奏'],
+    ['demo', '示范'],
+    ['accomp', '伴奏'],
   ].filter(([k]) => sources[k]);
 
   const scoreOk = unit ? scoreReady(unit.score) : false;
@@ -454,15 +454,15 @@ export async function renderSongPage(root, songId, query) {
         <details class="card sp-sec song-more"><summary>分享与更多</summary>
           
           <div class="sp-life-entry">
-            <a class="life-card" href="#/teach/${esc(ctx.songId)}">🧑‍🏫 教别人唱<small>进入教唱模式</small></a>
-            <button class="life-card" id="shareBtn" style="all:unset;cursor:pointer">↗ 分享这首歌<small>打开就能听、能学</small></button>
-            <a class="life-card" href="#/teach/${esc(ctx.songId)}?who=child">👶 我跟孩子唱<small>亲子轻入口</small></a>
-            <a class="life-card" href="#/teach/${esc(ctx.songId)}?who=group">👥 我和团契一起唱<small>群体轻入口</small></a>
+            <a class="life-card" href="#/teach/${esc(ctx.songId)}">教别人唱<small>进入教唱模式</small></a>
+            <button class="life-card" id="shareBtn" style="all:unset;cursor:pointer">分享这首歌<small>打开就能听、能学</small></button>
+            <a class="life-card" href="#/teach/${esc(ctx.songId)}?who=child">我跟孩子唱<small>亲子轻入口</small></a>
+            <a class="life-card" href="#/teach/${esc(ctx.songId)}?who=group">我和团契一起唱<small>群体轻入口</small></a>
           </div>
           ${(unit && unit.transmission && unit.transmission.text) ? `<p class="plain muted small">传唱：${esc(unit.transmission.text)}</p>` : ''}
           <div class="btn-row">
             <button class="btn primary big" id="copyBtn">复制链接</button>
-            <a class="btn ghost big" href="#/learn/${esc(ctx.songId)}">📚 学唱模式</a>
+            <a class="btn ghost big" href="#/learn/${esc(ctx.songId)}">学唱模式</a>
             <a class="btn ghost big" href="#/song-detail/${esc(ctx.songId)}">后台研究档案</a>
           </div>
           <div class="notice" id="shareStatus" hidden></div>
@@ -486,7 +486,7 @@ export async function renderSongPage(root, songId, query) {
 
   function paint() {
     const st = player.state();
-    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '钢琴伴奏', demo: '示范', accomp: '伴奏' };
+    const labelOf = { male: '男声示唱', female: '女声示唱', piano: '伴奏', demo: '示范', accomp: '伴奏' };
     const dynamicLabel = (trackKinds.find(([k]) => k === st.kind) || [null, null])[1];
     stateEl.textContent = st.playing
       ? `${labelOf[st.kind] || dynamicLabel || '音频'}播放中`
@@ -495,7 +495,7 @@ export async function renderSongPage(root, songId, query) {
     toggleBtn.textContent = st.playing ? '⏸' : '▶';
     toggleBtn.classList.toggle('playing', st.playing);
     timeEl.textContent = `${formatTime(st.time)} / ${formatTime(st.duration)}`;
-    const lp = st.loop ? '🔁 循环开' : '🔁 循环关';
+    const lp = st.loop ? '循环开' : '循环关';
     loopBtn.textContent = lp;
     loopBtn.setAttribute('aria-pressed', st.loop ? 'true' : 'false');
     if (loopBtn2) { loopBtn2.textContent = lp; loopBtn2.setAttribute('aria-pressed', st.loop ? 'true' : 'false'); loopBtn2.classList.toggle('on', st.loop); }
