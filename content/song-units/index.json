@@ -1,5 +1,5 @@
 {
-  "units_version": "MUS-V-1.1.0",
+  "units_version": "MUS-V-1.2.0",
   "generated_at": "2026-09-23",
   "generated_by": "人工编写词表 + tools/song-units.js 汇总单元清单",
   "model": "song-unit",
@@ -52,7 +52,7 @@
       "front": true
     },
     {
-      "key": "piano",
+      "key": "accompaniment",
       "no": "06",
       "label": "伴奏",
       "group": "resource",
@@ -165,7 +165,7 @@
       "note": "简谱按统一标准完成并与歌词对齐。"
     },
     {
-      "key": "PIANO_READY",
+      "key": "ACCOMPANIMENT_READY",
       "label": "伴奏完成",
       "note": "伴奏可播放、节拍稳定、与歌曲一致。"
     },
@@ -221,12 +221,12 @@
     {
       "key": "L2",
       "label": "可学唱：歌词 + 简谱 + 合适伴奏",
-      "front_label": "可以钢琴陪唱",
+      "front_label": "可以伴奏陪唱",
       "note": "至少有一种完整、合适、稳定可用的伴奏，可以进入正式学习；有多种时前台提供选择。",
       "requires": [
         "lyrics",
         "score",
-        "piano"
+        "accompaniment"
       ]
     },
     {
@@ -237,7 +237,7 @@
       "requires": [
         "lyrics",
         "score",
-        "piano",
+        "accompaniment",
         "demo_any",
         "timeline"
       ]
@@ -366,7 +366,7 @@
         "key": "sing_alone",
         "no": "09",
         "label": "自主歌唱",
-        "goal": "关掉示唱，只剩钢琴，自己唱。",
+        "goal": "关掉示唱，只剩伴奏，自己唱。",
         "modes": [
           "learn"
         ]
@@ -634,9 +634,9 @@
       "label": "示唱（男声 / 女声至少其一）"
     },
     {
-      "key": "piano",
+      "key": "accompaniment",
       "letter": "E",
-      "label": "钢琴（可播放 / 节拍稳定 / 与歌一致）"
+      "label": "伴奏（可播放 / 节拍稳定 / 与歌一致）"
     },
     {
       "key": "teaching",
