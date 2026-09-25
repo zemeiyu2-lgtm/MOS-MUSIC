@@ -281,13 +281,13 @@ export function resolveResourceUrl(resourcesIndex, resourceId) {
 }
 
 /**
- * 单元音频轨 → 播放器源 { male, female, piano }。
+ * 单元音频轨 → 播放器源 { male, female, accompaniment }；保留 piano 兼容别名。
  *   男 / 女声示唱按 demos.*.slots[].resource_id 解析；
- *   钢琴按资源层本歌 ACCOMPANIMENT 解析（第一阶段统一只做钢琴）。
+ *   伴奏按资源层本歌 ACCOMPANIMENT 解析，可为钢琴、吉他、乐队、风琴等。
  * 只有 status=PROVIDED 且资源层真实存在 file_url 才返回结果 —— 缺一律 null。
  */
 export function unitSources(unit, resourcesIndex) {
-  const out = { male: null, female: null, piano: null, accompOptions: [] };
+  const out = { male: null, female: null, accompaniment: null, piano: null, accompOptions: [] };
   if (!unit) return out;
   const fromSlots = (track) => {
     if (!track || track.status !== 'PROVIDED') return null;
@@ -308,9 +308,11 @@ export function unitSources(unit, resourcesIndex) {
       return { key: `accomp_${i + 1}`, label: `🎵 ${label.endsWith('伴奏') ? label : label + '伴奏'}`, url: rec.file_url, record: rec };
     });
   out.accompOptions = acc;
+  const accompanimentRec = acc[0] || null;
+  out.accompaniment = accompanimentRec;
+  /* piano 仅作旧版播放器兼容别名：优先钢琴，否则回退第一种伴奏。 */
   const pianoRec = acc.find((x) => /钢琴/.test(x.label));
-  if (pianoRec) out.piano = pianoRec;
-  else if (unit.piano && unit.piano.status === 'PROVIDED' && acc[0]) out.piano = acc[0];
+  out.piano = pianoRec || accompanimentRec;
   return out;
 }
 
