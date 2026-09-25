@@ -21,7 +21,7 @@
 
 /** 生产状态机（工作单 §二）。 */
 export const UNIT_STATUS = Object.freeze([
-  'INTAKE', 'VERIFYING', 'LYRICS_READY', 'SCORE_READY', 'PIANO_READY',
+  'INTAKE', 'VERIFYING', 'LYRICS_READY', 'SCORE_READY', 'ACCOMPANIMENT_READY', 'PIANO_READY',
   'DEMO_READY', 'SYNC_READY', 'TEACHING_READY', 'REVIEW', 'COMPLETE', 'HOLD',
 ]);
 
@@ -34,7 +34,7 @@ export const NOT_PROVIDED = 'NOT_PROVIDED';
 
 /** 18 段的分段键（顺序即标准模板顺序，不得调整）。 */
 export const SECTION_KEYS = Object.freeze([
-  'song_meta', 'lyrics', 'score', 'demo_male', 'demo_female', 'piano',
+  'song_meta', 'lyrics', 'score', 'demo_male', 'demo_female', 'accompaniment',
   'timeline', 'cursor', 'teach_learn', 'teach_score', 'teach_lyrics',
   'teach_vocal', 'teach_live', 'content_understanding', 'life_practice',
   'transmission', 'rights', 'acceptance',
@@ -42,7 +42,7 @@ export const SECTION_KEYS = Object.freeze([
 
 /** 验收组（模板 §二十二 / 工作单 §二十：A 数据 … J 版权）。 */
 export const ACCEPTANCE_KEYS = Object.freeze([
-  'data', 'lyrics', 'score', 'demo', 'piano',
+  'data', 'lyrics', 'score', 'demo', 'accompaniment',
   'teaching', 'sync', 'live_teaching', 'content', 'rights',
 ]);
 
@@ -52,15 +52,15 @@ export const ACCEPT_VOCAB = Object.freeze(['PENDING', 'PASS', 'REVISE', 'HOLD'])
 /** 完成等级的最低要求（模板 §二十三 L1–L4）。 */
 export const LEVEL_REQUIREMENTS = Object.freeze({
   L1: ['lyrics', 'score'],
-  L2: ['lyrics', 'score', 'piano'],
-  L3: ['lyrics', 'score', 'piano', 'demo_any', 'timeline'],
-  L4: ['lyrics', 'score', 'piano', 'demo_male', 'demo_female', 'timeline', 'cursor',
+  L2: ['lyrics', 'score', 'accompaniment'],
+  L3: ['lyrics', 'score', 'accompaniment', 'demo_any', 'timeline'],
+  L4: ['lyrics', 'score', 'accompaniment', 'demo_male', 'demo_female', 'timeline', 'cursor',
     'teach_learn', 'teach_score', 'teach_lyrics', 'teach_vocal', 'teach_live'],
 });
 
 /** 就绪键（前台与工作单的「缺什么」清单按此顺序）。 */
 export const REQUIREMENT_KEYS = Object.freeze([
-  'lyrics', 'score', 'piano', 'demo_male', 'demo_female', 'demo_any',
+  'lyrics', 'score', 'accompaniment', 'demo_male', 'demo_female', 'demo_any',
   'timeline', 'cursor', 'teach_learn', 'teach_score', 'teach_lyrics',
   'teach_vocal', 'teach_live',
 ]);
@@ -79,7 +79,7 @@ export function unitFlags(unit) {
   const u = unit || {};
   const lyrics = u.lyrics || {};
   const score = u.score || {};
-  const piano = u.piano || {};
+  const accompaniment = u.accompaniment || u.piano || {};
   const demos = u.demos || {};
   const male = demos.male || {};
   const female = demos.female || {};
@@ -90,7 +90,7 @@ export function unitFlags(unit) {
   const f = {
     lyrics: declared(lyrics) && arr(lyrics.sections).length > 0,
     score: declared(score) && arr(score.sections).length > 0,
-    piano: declared(piano),
+    accompaniment: declared(accompaniment),
     demo_male: declared(male),
     demo_female: declared(female),
     timeline: declared(timeline) && arr(timeline.phrases).length > 0,
@@ -102,7 +102,7 @@ export function unitFlags(unit) {
   };
   f.demo_any = f.demo_male || f.demo_female;
   /* 学唱教学（模板 §九）：五步要真能跑，必须同时有词、谱、钢琴、至少一个示唱、时间轴 */
-  f.teach_learn = f.lyrics && f.score && f.piano && f.demo_any && f.timeline;
+  f.teach_learn = f.lyrics && f.score && f.accompaniment && f.demo_any && f.timeline;
   return f;
 }
 
@@ -143,7 +143,7 @@ export function missingAll(unit) {
 const PRODUCTION_ORDER = Object.freeze([
   ['lyrics', 'LYRICS_READY'],
   ['score', 'SCORE_READY'],
-  ['piano', 'PIANO_READY'],
+  ['accompaniment', 'ACCOMPANIMENT_READY'],
   ['demo_any', 'DEMO_READY'],
   ['timeline', 'SYNC_READY'],
   ['cursor', 'SYNC_READY'],
@@ -196,10 +196,11 @@ export function acceptanceSummary(unit) {
 const STATUS_PRECONDITION = Object.freeze({
   LYRICS_READY: ['lyrics'],
   SCORE_READY: ['lyrics', 'score'],
-  PIANO_READY: ['lyrics', 'score', 'piano'],
-  DEMO_READY: ['lyrics', 'score', 'piano', 'demo_any'],
-  SYNC_READY: ['lyrics', 'score', 'piano', 'demo_any', 'timeline'],
-  TEACHING_READY: ['lyrics', 'score', 'piano', 'demo_any', 'timeline', 'teach_learn'],
+  ACCOMPANIMENT_READY: ['lyrics', 'score', 'accompaniment'],
+  PIANO_READY: ['lyrics', 'score', 'accompaniment'],
+  DEMO_READY: ['lyrics', 'score', 'accompaniment', 'demo_any'],
+  SYNC_READY: ['lyrics', 'score', 'accompaniment', 'demo_any', 'timeline'],
+  TEACHING_READY: ['lyrics', 'score', 'accompaniment', 'demo_any', 'timeline', 'teach_learn'],
   COMPLETE: LEVEL_REQUIREMENTS.L4,
 });
 
