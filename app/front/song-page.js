@@ -358,8 +358,8 @@ export async function renderSongPage(root, songId, query) {
         </section>
 
         <!-- 分类（主题 / 处境 / 场景 / 音乐）：帮人找到歌，不是歌曲身份 -->
-        <section class="card sp-sec" id="secTaxonomy">
-          <div class="section-head"><h2>分类</h2><span class="chip">帮人找到这首歌</span></div>
+        <details class="card sp-sec song-more"><summary>分类</summary>
+          
           <div class="cards">
             ${taxDims.map((d) => `
               <div class="entry"><span class="entry-main">
@@ -370,11 +370,11 @@ export async function renderSongPage(root, songId, query) {
           </div>
           <div class="notice">分类只是帮你在需要的时候找到它，不是这首歌的身份；同一首歌可以同时属于多个分类。
           空着的维度是「尚未标注」—— 平台不猜、不补。</div>
-        </section>
+        </details>
 
         <!-- 歌曲内容层（meaning / scripture / background / reflection / practice / prayer） -->
-        <section class="card sp-sec" id="secContent">
-          <div class="section-head"><h2>这首歌的内容</h2><span class="chip">属于这首歌本身</span></div>
+        <details class="card sp-sec song-more"><summary>这首歌的内容</summary>
+          
           <div class="cards">
             ${scRows.map((r) => `
               <div class="entry"><span class="entry-main">
@@ -384,11 +384,11 @@ export async function renderSongPage(root, songId, query) {
               </span></div>`).join('')}
           </div>
           <div class="notice">这些内容属于歌曲本身，不与任何一周、任何一课绑定 —— 课程可以引用它，它不依赖课程。</div>
-        </section>
+        </details>
 
         <!-- 示唱（真人 / AI）：AI 必须在界面上标注「非真人」 -->
-        <section class="card sp-sec" id="secDemo">
-          <div class="section-head"><h2>示唱</h2><span class="chip">真人优先</span></div>
+        <details class="card sp-sec song-more"><summary>示唱</summary>
+          
           <div class="cards">
             ${demoRows.map((d) => {
               const st = d.track && d.track.status;
@@ -408,7 +408,7 @@ export async function renderSongPage(root, songId, query) {
             }).join('')}
           </div>
           <div class="notice">真人版本优先复用现成的：外部版本以原站播放或时间段定位提供，不重新上传；AI 轨永远单独标注为「非真人」，且不计入完成等级。</div>
-        </section>
+        </details>
 
         <!-- 08 制作到什么程度 -->
         <section class="card sp-sec">
