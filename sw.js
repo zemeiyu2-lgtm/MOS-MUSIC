@@ -16,7 +16,7 @@
      - 本 SW 不做任何 HTML 内容改写（no runtime patch）。
 ========================================================= */
 
-const CACHE = 'mos-music-v15';
+const CACHE = 'mos-music-v16';
 const PRECACHE_MANIFEST = 'mos-music-precache-v1';
 
 /* 应用外壳：较小且必须离线可用 */
@@ -64,6 +64,7 @@ const SHELL = [
   './app/ui/components.css',
   './app/ui/v21.css',
   './app/ui/v30.css',
+  './app/ui/v22.css',
   './assets/icons/icon-192.png',
   './assets/icons/icon-180.png',
 ];
