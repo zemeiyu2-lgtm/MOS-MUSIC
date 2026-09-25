@@ -206,7 +206,7 @@ export async function renderSongPage(root, songId, query) {
 
         <!-- 01 Hero -->
         <section class="card sp-hero sp-sec">
-          <div class="eyebrow"><span class="sp-num">01</span><span class="chip gold">${esc(layerLabel(row))}</span><span>${esc(ctx.songId)}</span>${query && query.share ? '<span class="chip good">来自朋友的分享</span>' : ''}</div>
+          <div class="eyebrow">诗歌本</div>
           <div class="hero-id" style="margin-top:var(--sp-3)">
             <span class="cover cover-hero float">${coverFor({ song_id: ctx.songId, lang: heroLang })}</span>
             <div class="hero-id-info">
