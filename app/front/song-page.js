@@ -350,7 +350,7 @@ export async function renderSongPage(root, songId, query) {
             : row.formation_theme || row.theme ? `<p class="plain">这首歌围绕「${esc(row.formation_theme || row.theme)}」。</p>`
             : `<p class="plain">这首歌的介绍文字尚未撰写。</p>`}
           ${bibleRows.length ? `<div class="bible-row">${bibleRows.map((b) => `<span class="chip gold">${esc(b.reference)}</span>`).join('')}</div>` : ''}
-          <p class="plain muted small">这里只说明这首歌唱的是什么 —— <strong>不指定你必须在什么时候唱，也不绑定某一周 / 某一课</strong>。</p>
+          <p class="plain muted small">这里只说明这首歌唱的是什么。</p>
           ${lifeItems.length ? `<h3 class="sp-h3">今天怎样活</h3>
             <ul class="plain life-list">${lifeItems.map((i) => `<li>${esc(i.text)}</li>`).join('')}</ul>`
             : `<h3 class="sp-h3">今天怎样活</h3>
@@ -383,7 +383,7 @@ export async function renderSongPage(root, songId, query) {
                 ${r.value ? '' : `<span class="entry-note">${esc(r.note || '')}</span>`}
               </span></div>`).join('')}
           </div>
-          <div class="notice">这些内容属于歌曲本身，不与任何一周、任何一课绑定 —— 课程可以引用它，它不依赖课程。</div>
+          <div class="notice">这些内容属于歌曲本身。</div>
         </details>
 
         <!-- 示唱（真人 / AI）：AI 必须在界面上标注「非真人」 -->
