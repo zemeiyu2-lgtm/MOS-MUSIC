@@ -53,6 +53,10 @@
     "worksheet": {
       "status": "PROVIDED",
       "file": "MOS-SU-0001_WORKSHEET.md"
+    },
+    "lyrics_zh_working_draft": {
+      "status": "DRAFT_INTERNAL",
+      "file": "lyrics-zh-working-draft.json"
     }
   },
   "level_note": "等级由 app/song-unit.js 从单元记录派生（DRAFT 简谱不计入）；不得在 manifest 里宣布等级。"
