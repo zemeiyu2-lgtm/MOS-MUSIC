@@ -414,8 +414,8 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   const spSrc = fs.readFileSync(path.join(ROOT, 'app/front/song-page.js'), 'utf8');
   ok(spSrc.includes('sp-score-card') && spSrc.includes('renderScoreHtml'),
     'V3.0 歌曲页：简谱整幅置于显眼位置（乐谱最明显）');
-  ok(spSrc.includes('不绑定某一周') || spSrc.includes('不指定你必须在什么时候唱'),
-    'V3.0 歌曲页：明确不绑定周次 / 不指定何时唱');
+  ok(spSrc.includes('歌曲自身内容层') && spSrc.includes('简谱最明显'),
+    'V3.0 歌曲页：内容属于歌曲本身，且以简谱为核心阅读对象');
   ok(spSrc.includes('钢琴'), 'V3.0 歌曲页：伴奏只提供钢琴');
   const learnSrc = fs.readFileSync(path.join(ROOT, 'app/front/learn.js'), 'utf8');
   ok(learnSrc.includes('teaching_method') && learnSrc.includes('modes'),
