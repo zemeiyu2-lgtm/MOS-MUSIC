@@ -487,8 +487,9 @@ export async function renderSongPage(root, songId, query) {
   function paint() {
     const st = player.state();
     const labelOf = { male: '男声示唱', female: '女声示唱', piano: '钢琴伴奏', demo: '示范', accomp: '伴奏' };
+    const dynamicLabel = (trackKinds.find(([k]) => k === st.kind) || [null, null])[1];
     stateEl.textContent = st.playing
-      ? `${labelOf[st.kind] || '音频'}播放中`
+      ? `${labelOf[st.kind] || dynamicLabel || '音频'}播放中`
       : (st.kind ? '已暂停' : '未播放');
     waveEl.classList.toggle('on', st.playing);
     toggleBtn.textContent = st.playing ? '⏸' : '▶';
