@@ -286,27 +286,16 @@ export async function renderSongPage(root, songId, query) {
           <p class="plain muted small" style="margin-bottom:0">伴奏只提供钢琴 —— 这是自主歌唱的主要支持轨，不做多种器乐编曲。</p>
         </section>
 
-        <!-- 04 陪我唱（三模式） -->
-        <section class="card sp-sec">
-          <h2><span class="sp-num">04</span>陪我唱</h2>
-          <p class="plain muted">同一首歌，三种用法。它们不是三套流程 —— 选一个进去就行。</p>
-          <div class="mode-grid">
-            <a class="mode-card" href="#/learn/${esc(ctx.songId)}">
-              <span class="mode-emoji">🎤</span><span class="mode-title">学唱</span>
-              <span class="mode-note">第一次学这首歌：听 → 跟 → 陪 → 自己唱 → 再唱一次。</span>
-            </a>
-            <a class="mode-card" href="#/learn/${esc(ctx.songId)}?mode=sight">
-              <span class="mode-emoji">🎼</span><span class="mode-title">视唱</span>
-              <span class="mode-note">看谱 → 内听 → 唱 → 核对 → 修正；先不完整给示范。</span>
-            </a>
-            <a class="mode-card" href="#/teach/${esc(ctx.songId)}">
-              <span class="mode-emoji">🧑‍🏫</span><span class="mode-title">教唱</span>
-              <span class="mode-note">把这首歌交给另一个人：教谱 / 教节奏 / 教词 / 示范 / 陪唱。</span>
-            </a>
+        <!-- 04 学 / 看谱唱 / 教别人：歌曲内部动作 -->
+        <section class="card sp-sec song-actions-panel">
+          <div class="song-action-row">
+            <a class="song-action primary" href="#/learn/${esc(ctx.songId)}"><span>🎤</span><strong>学唱</strong><small>一句一句学</small></a>
+            <a class="song-action" href="#/learn/${esc(ctx.songId)}?mode=sight"><span>🎼</span><strong>看谱唱</strong><small>先看谱，再唱</small></a>
+            <a class="song-action" href="#/teach/${esc(ctx.songId)}"><span>↗</span><strong>教别人</strong><small>带人唱这首歌</small></a>
           </div>
         </section>
 
-        <!-- 乐句教学卡（有卡才显示；复用现有播放器与单句循环） -->
+                <!-- 乐句教学卡（有卡才显示；复用现有播放器与单句循环） -->
         ${pCards.length ? `
         <section class="card sp-sec" id="secPhrases">
           <div class="section-head"><h2>乐句教学卡</h2><span class="chip">${pCards.length} 句</span></div>
