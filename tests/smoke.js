@@ -381,10 +381,10 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   ok(u1.demos.male.status === 'PROVIDED' && u1.demos.male.source_type === 'EXTERNAL_HUMAN_MALE'
     && u1.demos.male.singer === null && u1.demos.male.host_policy === 'original_site'
     && u1.demos.female.status === 'PROVIDED' && u1.demos.female.source_type === 'EXTERNAL_HUMAN_FEMALE'
-    && u1.piano.status === 'PROVIDED' && u1.timeline.status === 'PROVIDED'
+    && u1.accompaniment.status === 'PROVIDED' && u1.timeline.status === 'PROVIDED'
     && (u1.demos.ai_male == null || u1.demos.ai_male.is_ai === true)
     && (u1.demos.ai_female == null || u1.demos.ai_female.is_ai === true),
-    'V3.2 单元包：外部真人示唱原站播放（singer=null，不冒充）+ 生成钢琴 + 精确时间轴；AI 只在独立轨');
+    'V3.2 单元包：外部真人示唱原站播放（singer=null，不冒充）+ 生成伴奏 + 精确时间轴；AI 只在独立轨');
   ok((u1.content_understanding.note || '').includes('不绑定某一周'),
     'V3.0 单元包：内容理解不绑定周次（淡化 52 周关联）');
   ok((u1.rights.copyright_status === 'public_domain') && u1.rights.derived_from,
