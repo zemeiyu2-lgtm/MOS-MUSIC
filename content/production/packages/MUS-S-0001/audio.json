@@ -5,7 +5,7 @@
   "status": "PARTIAL",
   "standard": "至少一种完整、合适、稳定可用的伴奏；当前已有 MOS 生成钢琴 MIDI，同时登记外部真人示唱来源。",
   "demo_male": {
-    "status": "PROVIDED_EXTERNAL",
+    "status": "CANDIDATE_EXTERNAL",
     "resource_id": "MUS-R-0106",
     "source_url": "https://www.youtube.com/watch?v=HfGytXRpfho",
     "host_policy": "original_site",
@@ -14,7 +14,7 @@
     "note": "外部真人版本，原站播放；分段时间码待人工回填。"
   },
   "demo_female": {
-    "status": "PROVIDED_EXTERNAL",
+    "status": "CANDIDATE_EXTERNAL",
     "resource_id": "MUS-R-0108",
     "source_url": "https://www.youtube.com/watch?v=5mnTKN8LuiY",
     "host_policy": "original_site",
@@ -25,7 +25,7 @@
   "files": [
     "assets/audio/MUS-S-0001-piano.mid"
   ],
-  "note": "真人示唱采用外部原站资源；不下载转存、不冒充 MOS 真人录音。AI 示唱仅作预留，不计入真人示唱与完成等级。",
+  "note": "外部真人来源保留为候选：来源已登记，但尚未完成应用内实际播放接入、分段时间码与教学适用性验收，因此不计入 L3/L4。AI 示唱不计入完成等级。",
   "accompaniment": {
     "status": "PROVIDED",
     "resource_id": "MUS-R-0111",
