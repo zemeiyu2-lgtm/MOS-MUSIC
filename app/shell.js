@@ -26,8 +26,8 @@ function renderNav(activeKey) {
   if (!nav) return;
   const learningActive = ['learning', 'learn', 'teach'].includes(activeKey);
   const items = [
-    { key: 'songs', href: '#/songs', label: '诗歌本', icon: '♫', active: activeKey === 'songs' || activeKey === 'song' || activeKey === 'song-detail' },
-    { key: 'learning', href: '#/learning', label: '学习', icon: '◷', active: learningActive },
+    { key: 'songs', href: '#/songs', label: '诗歌本', icon: '♪', active: activeKey === 'songs' || activeKey === 'song' || activeKey === 'song-detail' },
+    { key: 'learning', href: '#/learning', label: '学习', icon: '↗', active: learningActive },
     { key: 'mine', href: '#/mine', label: '我的歌', icon: '♡', active: activeKey === 'mine' },
   ];
   nav.innerHTML = items.map((item) => `
