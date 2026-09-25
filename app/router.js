@@ -7,7 +7,7 @@
    数据由模块自己按需 fetch，不在路由层预取。
 ========================================================= */
 
-export const DEFAULT_ROUTE = 'today';
+export const DEFAULT_ROUTE = 'home';
 
 /** 解析 "#/key/param?query" → { key, param, query } */
 export function parseHash(hash) {
