@@ -2,47 +2,54 @@
   "package_version": "MUS-V-1.0.0",
   "song_id": "MUS-S-0001",
   "slot": "teaching",
-  "status": "NOT_AVAILABLE",
+  "status": "PARTIAL",
   "modules": [
     {
       "key": "intro",
       "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "resource_id": null,
+      "note": "真人教唱片尚未提供。"
     },
     {
       "key": "teach-score",
-      "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "status": "PROVIDED_TEXT",
+      "resource_id": null,
+      "note": "见单元 teaching.score_class。"
     },
     {
       "key": "teach-rhythm",
-      "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "status": "PROVIDED_TEXT",
+      "resource_id": null,
+      "note": "节拍/弱起/主要时值已包含于教谱与声乐提示。"
     },
     {
       "key": "teach-lyrics",
-      "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "status": "PROVIDED_TEXT",
+      "resource_id": null,
+      "note": "见单元 teaching.lyrics_class 与中文试唱工作稿。"
     },
     {
       "key": "phrase-teaching",
       "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "resource_id": null,
+      "note": "真人分句示范尚未提供。"
     },
     {
       "key": "vocal-tip",
-      "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "status": "PROVIDED_TEXT",
+      "resource_id": null,
+      "note": "6 项歌曲专属声乐提示已完成。"
     },
     {
       "key": "full-demo",
       "status": "NOT_AVAILABLE",
-      "resource_id": null
+      "resource_id": null,
+      "note": "完整真人示范尚未提供。"
     }
   ],
   "learn": {
     "status": "NOT_AVAILABLE",
-    "note": "学唱五步要真能跑，需词 / 谱 / 钢琴 / 至少一个示唱 / 时间轴齐备。"
+    "note": "学习流程结构已完成，但完整“听→跟→一起唱”需要应用内可播放真人示唱；目前真人来源仅为外部候选。L2 可先使用伴奏、简谱与歌词进行自主练习。"
   },
-  "note": "没有真人资源时保持 NOT_AVAILABLE，不要虚构（任务书 §九）。"
+  "note": "文字教学内容已经进入单元；真人视频/音频资源仍保持 NOT_AVAILABLE。"
 }
