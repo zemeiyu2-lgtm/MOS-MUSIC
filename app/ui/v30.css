@@ -448,3 +448,45 @@ html[data-mood="night"] .music-page-head h1 { color:var(--night-ink); }
 html[data-mood="night"] .music-song-card,
 html[data-mood="night"] .music-search { background:var(--night-paper); border-color:var(--night-line); }
 html[data-mood="night"] .music-filters { border-color:var(--night-line); }
+
+
+/* ------------------------------------------------ 歌曲页：歌为中心 V1.0 */
+.songpage .sp-main { display:flex; flex-direction:column; }
+.songpage .sp-main > .backline { order:0; align-self:flex-start; }
+.songpage .sp-main > .sp-hero { order:1; }
+.songpage .sp-main > #secSing { order:2; }
+.songpage .sp-main > #secScore { order:3; }
+.songpage .sp-main > .song-actions-panel { order:4; }
+.songpage .sp-main > #secPhrases { order:5; }
+.songpage .sp-main > #secLyrics { order:6; }
+.songpage .sp-main > .song-more { order:7; }
+.songpage .sp-num { display:none; }
+.songpage .sp-hero .sp-badges { display:none; }
+.songpage .sp-hero .hero-en { display:none; }
+.song-actions-panel { padding:10px; background:transparent; border:0; box-shadow:none; }
+.song-action-row { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.song-action {
+  display:flex; flex-direction:column; align-items:flex-start; gap:4px; min-height:76px;
+  padding:16px; border:1px solid var(--line); border-radius:16px; background:var(--paper);
+  color:var(--ink); text-decoration:none;
+}
+.song-action:hover { border-color:var(--green-2); transform:translateY(-1px); }
+.song-action span { font-size:20px; }
+.song-action strong { font-size:16px; color:var(--green); }
+.song-action small { color:var(--muted); font-size:12px; }
+.song-action.primary { background:#F0F6F2; border-color:#C9DED2; }
+.song-more { margin-top:10px; }
+.song-more summary {
+  cursor:pointer; list-style:none; padding:6px 0; color:var(--green); font-weight:750; font-size:17px;
+}
+.song-more summary::-webkit-details-marker { display:none; }
+.song-more summary::after { content:'＋'; float:right; color:var(--muted); font-weight:400; }
+.song-more[open] summary::after { content:'−'; }
+.song-more > *:not(summary) { margin-top:14px; }
+@media (max-width:700px) {
+  .song-action-row { grid-template-columns:1fr; }
+  .song-action { min-height:62px; flex-direction:row; align-items:center; }
+  .song-action small { margin-left:auto; }
+}
+html[data-mood="night"] .song-action { background:var(--night-paper); border-color:var(--night-line); color:var(--night-ink); }
+html[data-mood="night"] .song-action.primary { background:rgba(122,167,140,.12); border-color:#3B6B58; }
