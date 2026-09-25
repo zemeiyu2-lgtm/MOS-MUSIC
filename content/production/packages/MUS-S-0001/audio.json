@@ -1,38 +1,38 @@
 {
-  "package_version": "MUS-V-1.0.0",
+  "package_version": "MUS-V-1.1.0",
   "song_id": "MUS-S-0001",
   "slot": "audio",
-  "status": "NOT_AVAILABLE",
-  "standard": "第一阶段伴奏统一只做钢琴（piano）；不做乐队 / 鼓 / 吉他 / 多轨复杂编曲。",
-  "piano": {
-    "status": "NOT_AVAILABLE",
-    "file_url": null,
-    "reason": "真人钢琴伴奏未录制。"
-  },
+  "status": "PARTIAL",
+  "standard": "至少一种完整、合适、稳定可用的伴奏；当前已有 MOS 生成钢琴 MIDI，同时登记外部真人示唱来源。",
   "demo_male": {
-    "status": "NOT_AVAILABLE",
-    "file_url": null,
-    "singer_type": null,
-    "gender": "male",
-    "language": null,
-    "key": null,
-    "version": null,
-    "source": null,
-    "rights": null,
-    "reason": "真人男声示唱未录制；禁 AI 歌声冒充真人示唱。"
+    "status": "PROVIDED_EXTERNAL",
+    "resource_id": "MUS-R-0106",
+    "source_url": "https://www.youtube.com/watch?v=HfGytXRpfho",
+    "host_policy": "original_site",
+    "singer_type": "EXTERNAL_HUMAN_MALE",
+    "rights": "unknown",
+    "note": "外部真人版本，原站播放；分段时间码待人工回填。"
   },
   "demo_female": {
-    "status": "NOT_AVAILABLE",
-    "file_url": null,
-    "singer_type": null,
-    "gender": "female",
-    "language": null,
-    "key": null,
-    "version": null,
-    "source": null,
-    "rights": null,
-    "reason": "真人女声示唱未录制；禁 AI 歌声冒充真人示唱。"
+    "status": "PROVIDED_EXTERNAL",
+    "resource_id": "MUS-R-0108",
+    "source_url": "https://www.youtube.com/watch?v=5mnTKN8LuiY",
+    "host_policy": "original_site",
+    "singer_type": "EXTERNAL_HUMAN_FEMALE",
+    "rights": "unknown",
+    "note": "外部真人版本，原站播放；分段时间码待人工回填。"
   },
-  "files": [],
-  "note": "出现真实录音时：登记 singer_type / gender / language / key / version / source / rights，并把 status 置 PROVIDED（任务书 §七）。"
+  "files": [
+    "assets/audio/MUS-S-0001-piano.mid"
+  ],
+  "note": "真人示唱采用外部原站资源；不下载转存、不冒充 MOS 真人录音。AI 示唱仅作预留，不计入真人示唱与完成等级。",
+  "accompaniment": {
+    "status": "PROVIDED",
+    "resource_id": "MUS-R-0111",
+    "type": "GENERATED_MIDI",
+    "label": "标准钢琴伴奏",
+    "file_url": "assets/audio/MUS-S-0001-piano.mid",
+    "host_policy": "hosted_authorized",
+    "note": "由结构化简谱生成；播放器使用 WebAudio MIDI 合成。"
+  }
 }
