@@ -25,10 +25,10 @@ export const NOT_PROVIDED = '尚未提供';
 /* ------------------------------------------------------- 曲库合并视图 */
 
 /**
- * 前台歌曲目录 = 100 首候选（候选层）∪ 曲库 V0.5（详情层 10 + 登记层 45）。
- * 以候选层为骨架逐条补充层级信息；不做任何排序（保持候选 ID 序）。
+ * 前台歌曲目录 = 正式选曲层 100 首 + 曲库 V0.5（详情层 / 登记层），原始候选层作为溯源来源。
+ * 以候选层身份记录为骨架补充产品层级；不做任何排序（保持原有 ID 序）。
  * 返回 [{ song_id, zh, en, theme, scene, layer, review_note }]
- *   layer: 'detail' | 'registry' | 'candidate'
+ *   layer: 'selected' | 'detail' | 'registry' | 'candidate'
  */
 export async function loadCatalog() {
   const [candidates, selectedLibrary, songsIdx, registry, assign] = await Promise.all([
