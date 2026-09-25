@@ -228,7 +228,7 @@ export async function renderSongPage(root, songId, query) {
           </div>
           <div class="hero-actions">
             <button class="btn primary big play-fab-btn" id="heroPlay" aria-label="现在就唱${esc(zh)}">▶ 现在就唱</button>
-            <button class="btn ghost big" id="likeBtn" aria-pressed="${my.liked ? 'true' : 'false'}">${my.liked ? '❤️ 已收藏' : '♡ 收藏'}</button>
+            <button class="btn ghost big" id="likeBtn" aria-pressed="${my.liked ? 'true' : 'false'}">${my.liked ? '已收藏' : '收藏'}</button>
             <button class="btn ghost big" id="shareTop" aria-label="分享这首歌">↗ 分享</button>
           </div>
           ${query && query.share ? '<div class="notice" style="margin-top:var(--sp-3)">朋友分享给你这首歌 —— 点「现在就唱」直接开始。</div>' : ''}
@@ -281,7 +281,7 @@ export async function renderSongPage(root, songId, query) {
             ${trackHtml()}
             <div class="player-row">
               ${trackKinds.map(([k, label]) => `<button class="pill kind${(k === 'piano' || k === 'accomp' || k.startsWith('accomp_')) ? ' piano' : ''}" data-kind="${k}">${esc(label)}</button>`).join('')}
-              <button class="pill" id="btnLoop" aria-pressed="false">🔁 循环关</button>
+              <button class="pill" id="btnLoop" aria-pressed="false">循环关</button>
               ${SPEEDS.map((s) => `<button class="pill spd${s === 1.0 ? ' on' : ''}" data-speed="${s}">${speedLabel(s)}</button>`).join('')}
             </div>
           </div>
@@ -320,7 +320,7 @@ export async function renderSongPage(root, songId, query) {
           </div>
           <p class="plain muted small">点击任何一句，把它设为当前句；逐句音频随资源导入逐步可用。</p>
           ${(unit && unit.lyrics && unit.lyrics.status === 'PROVIDED' && String(unit.lyrics.language || '').toLowerCase().startsWith('en')) ? '<div class="notice">当前托管的是<strong>英文公版原文</strong>；中文译本尚未提供（常见译本各有版权方，本仓不托管）。需要中文时由人工提供已获授权文本。</div>' : ''}` : `
-          <div class="state-empty"><span class="glyph">✍️</span><div>简体中文歌词待提供</div><div class="small">英文原文不作为前台主歌词显示；核定的简体中文歌词进入后，这里会直接显示大字歌词。</div></div>`}
+          <div class="state-empty"><span class="glyph">✎</span><div>简体中文歌词待提供</div><div class="small">英文原文不作为前台主歌词显示；核定的简体中文歌词进入后，这里会直接显示大字歌词。</div></div>`}
         </section>
 
         <!-- 06 唱 -->
@@ -328,7 +328,7 @@ export async function renderSongPage(root, songId, query) {
           <h2><span class="sp-num">06</span>唱</h2>
           <p class="plain muted">现在就唱这一段 —— 开循环、放慢速度，唱到顺为止。</p>
           <div class="btn-row">
-            <button class="pill" id="singLoop" aria-pressed="false">🔁 循环</button>
+            <button class="pill" id="singLoop" aria-pressed="false">循环</button>
             ${SPEEDS.map((s) => `<button class="pill spd2${s === 1.0 ? ' on' : ''}" data-speed2="${s}">${speedLabel(s)}</button>`).join('')}
           </div>
 
@@ -338,7 +338,7 @@ export async function renderSongPage(root, songId, query) {
               <span class="metro-note">身体先认识节拍：拍手 · 点拍 · 口读节奏 · 轻声数拍。</span>
             </div>
             <div class="metro-row">
-              <button class="pill" id="metroToggle" aria-pressed="false">▶ 开始打拍</button>
+              <button class="pill" id="metroToggle" aria-pressed="false">开始打拍</button>
               <input class="metro-range" id="metroBpm" type="range" min="${BPM_MIN}" max="${BPM_MAX}" value="${DEFAULT_BPM}" aria-label="速度（每分钟拍数）" ${metro.state().available ? '' : 'disabled'}>
               <span class="metro-val" id="metroVal">♩＝${DEFAULT_BPM}</span>
               ${TEMPO_PRESETS.map((p) => `<button class="pill" data-bpm="${p.bpm}">${esc(p.label)}</button>`).join('')}
@@ -626,7 +626,7 @@ export async function renderSongPage(root, songId, query) {
   if (metroToggle) {
     metroToggle.addEventListener('click', () => {
       const st = metro.state();
-      if (st.running) { metro.stop(); metroToggle.textContent = '▶ 开始打拍'; metroToggle.setAttribute('aria-pressed', 'false'); paintBeats(-1); }
+      if (st.running) { metro.stop(); metroToggle.textContent = '开始打拍'; metroToggle.setAttribute('aria-pressed', 'false'); paintBeats(-1); }
       else {
         const ok = metro.start();
         if (!ok) { toast(root, '此环境没有音频输出，节拍器不可用', false); return; }
@@ -678,7 +678,7 @@ export async function renderSongPage(root, songId, query) {
   const likeBtn = root.querySelector('#likeBtn');
   likeBtn.addEventListener('click', async () => {
     const r = await mySongs.toggleLike(ctx.songId);
-    likeBtn.textContent = r.liked ? '❤️ 已收藏' : '♡ 收藏';
+    likeBtn.textContent = r.liked ? '已收藏' : '收藏';
     likeBtn.setAttribute('aria-pressed', r.liked ? 'true' : 'false');
     likeBtn.classList.remove('heart-pop');
     if (r.liked) { void likeBtn.offsetWidth; likeBtn.classList.add('heart-pop'); }
