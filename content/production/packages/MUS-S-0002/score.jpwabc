@@ -1,0 +1,27 @@
+// ************** MOS-MUSIC score.json → JPW-ABC 1.0 **************
+// source = content/production/packages/MUS-S-0002/score.json
+// status = SOURCE_IMPORTED / 原 score.json 保持不变
+// lyric_scope = score.json 已存在的歌词音节；未自动补写其它诗歌节
+
+.Title
+Title = 我灵镇静（Be Still, My Soul）
+KeyAndMeters = {1=F,4/4}
+WordsByAndMusicBy = 词：Katharina von Schlegel\n曲：Katharina von Schlegel
+Expression = {♩=100}
+
+.Voice
+#4.- 4 | 2 4 1. 2_ | 2 4.- | 4 4 2 4 | #4.- 4 | 2 4 1. 2_ | 4--- | 4 5 5 5 | 6.- 4 | 4 5 5. 2_ | 2 #4.- | #4 #4 4 2 | 4.- 1 | 1 2 2. 4_ | 4--- | 4 5 5 5 | 6.- 4 | 4 5 5. 2_ | 2 #4.- | #4 #4 4 2 | 4.- 1 | 1 2 2. 1_ | 1--- | 1 |  |
+
+.Words
+W1@1,1:
+soul: the Lord is on thy side. / /
+W1@4,2:
+Bear pa tient ly the cross of grief or pain. /
+W1@8,2:
+Leave to thy God to or der and pro vide; / /
+W1@12,2:
+In ev ery change, He faith ful will re main. /
+W1@16,2:
+Be still, my soul: thy best, thy / / Friend / /
+W1@20,2:
+Through thorn y ways leads to a joy ful end. /

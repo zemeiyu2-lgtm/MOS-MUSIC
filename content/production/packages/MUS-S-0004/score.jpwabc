@@ -1,0 +1,27 @@
+// ************** MOS-MUSIC score.json → JPW-ABC 1.0 **************
+// source = content/production/packages/MUS-S-0004/score.json
+// status = SOURCE_IMPORTED / 原 score.json 保持不变
+// lyric_scope = score.json 已存在的歌词音节；未自动补写其它诗歌节
+
+.Title
+Title = 普世欢腾（Joy to the World）
+KeyAndMeters = {1=D,2/4}
+WordsByAndMusicBy = 词：Isaac Watts\n曲：Isaac Watts
+Expression = {♩=80}
+
+.Voice
+5. 4_ | 3 2 | 1. 5_ | 6. 6_ | 7. 7_ | 1'. 1'_ | 1'_ 7_ 6_ 5_ | 5._ 4_ 3_ 1'_ | 1'_ 7_ 6_ 5_ | 5._ 4_ 3_ 3_ | 3_ 3_ 3_ 3_ 4_ | 5. 4_ 3_ | 2_ 2_ 2_ 2_ 3_ | 4. 3_ 2_ | 1_ 1' 6_ | 5._ 4_ 3_ 4_ | 3 2 | 1- |  |
+
+.Words
+W1@1,1:
+world, the Lord is come!
+W1@3,2:
+Let earth re ceive her King;
+W1@6,2:
+Let / / / / heart / / pre pare / Him / room, / /
+W1@10,4:
+And / and na ture / sing,
+W1@12,2:
+And / / and na ture / sing,
+W1@14,2:
+And / / / and / / / and na ture sing.
