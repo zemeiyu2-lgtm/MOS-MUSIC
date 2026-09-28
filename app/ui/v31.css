@@ -33,12 +33,7 @@
 .mine-group[data-group="shared"],
 .mine-more{display:none !important;}
 .mine-hero p{max-width:32em;}
-.stage-dist,.mine-hero + .sp-sec:has(.stage-dist){display:none !important;}
+ .mine-hero + .sp-sec{display:none !important;}
 
 /* ---------- 桌面：把导航工具降到次要层级 ---------- */
 .sidebar-tools .sidebar-status{opacity:.72;}
-@media (min-width:901px){
-  .sidebar{width:208px;}
-  .app{margin-left:208px;}
-  .sidebar-nav{gap:2px;}
-}
