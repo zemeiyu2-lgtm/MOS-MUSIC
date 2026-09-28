@@ -2269,5 +2269,14 @@
   },
   "created_at": "2026-09-22T00:00:00+08:00",
   "updated_at": "2026-09-23T00:00:00+08:00",
-  "updated_by": "song-unit-builder"
+  "updated_by": "song-unit-builder",
+  "piano": {
+    "status": "PROVIDED",
+    "has_intro": null,
+    "has_interlude": null,
+    "beats_stable": true,
+    "loopable": null,
+    "key_matches": true,
+    "note": "按结构化简谱（原谱四声部）生成的标准钢琴陪唱：assets/audio/MUS-S-0002-piano.mid。 纯钢琴，不加乐队 / 鼓 / 吉他；与 timeline.json 同源（同一简谱 × 同一速度）。资源记录 MUS-R-0120。"
+  }
 }

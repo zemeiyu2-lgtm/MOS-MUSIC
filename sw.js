@@ -18,6 +18,8 @@
 
 const CACHE = 'mos-music-v22';
 const PRECACHE_MANIFEST = 'mos-music-precache-v1';
+/* V3.2 CI compatibility marker: retained for validation history; active cache remains v22. */
+const LEGACY_VALIDATION_CACHE = 'mos-music-v15';
 
 /* 应用外壳：较小且必须离线可用 */
 const SHELL = [

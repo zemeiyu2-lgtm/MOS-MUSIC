@@ -1,0 +1,23 @@
+// ************** MOS-MUSIC score.json → JPW-ABC 1.0 **************
+// source = content/production/packages/MUS-S-0001/score.json
+// status = SOURCE_IMPORTED / 原 score.json 保持不变
+// lyric_scope = score.json 已存在的歌词音节；未自动补写其它诗歌节
+
+.Title
+Title = 奇异恩典（Amazing Grace）
+KeyAndMeters = {1=G,3/4}
+WordsByAndMusicBy = 词：John Newton\n曲：John Newton
+Expression = {♩=100}
+
+.Voice
+1- 3_ 1_ | 3- 2 | 1- 6, | 5,- 5, | 1- 3_ 1_ | 3- 2 | 5.- | 5- 3 | 5. 3_ 5_ 3_ | 1- 5, | 6,. 1_ 1_ 6,_ | 5,- 5, | 1- 3_ 1_ | 3- 2 | 1.- | 1- |
+
+.Words
+W1@1,1:
+{maz} {ing} / {grace!} {How} {sweet} {the} {sound}
+W1@4,2:
+{That} {saved} a / {wretch} {like} {me!} /
+W1@8,2:
+I {once} / {was} / {lost,} {but} {now} / {am} / {found;}
+W1@12,2:
+{Was} {blind,} {but} / {now} I {see.} /
