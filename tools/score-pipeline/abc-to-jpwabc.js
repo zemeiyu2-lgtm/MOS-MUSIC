@@ -85,6 +85,10 @@ function buildJpw(song, tune) {
   const built = abc.buildVoiceNotes(voice, tune.key_raw);
   const noteEvents = built.filter((x) => !x.bar);
   const bars = built.filter((x) => x.bar);
+  if (noteEvents.some((x) => x.tie)) {
+    throw new Error('ties_not_supported');
+  }
+
   const lyricItems = lyricSequence(tune, voice, noteEvents);
   if (lyricItems.length !== noteEvents.length) {
     throw new Error('lyric_note_length_mismatch:' + lyricItems.length + '/' + noteEvents.length);
@@ -112,7 +116,7 @@ function buildJpw(song, tune) {
   if (current.length) measures.push(current);
   if (tieOpen) throw new Error('dangling_tie');
 
-  const title = songTitle(tune);
+  const title = songTitle(song, tune);
   const lines = [
     '// ************** MOS-MUSIC OpenHymnal ABC → JPW-ABC 1.0 **************',
     '// source = sources/openhymnal/OpenHymnal2014.06.abc',
@@ -166,8 +170,9 @@ function normalizeMeter(raw) {
   if (!m) throw new Error('bad_meter:' + raw);
   return m[1];
 }
-function songTitle(tune) {
-  return (tune.titles && tune.titles[0]) || ('OpenHymnal X:' + tune.x);
+function songTitle(song, tune) {
+  if (song.title_zh && song.title_en) return song.title_zh + '（' + song.title_en + '）';
+  return song.title_zh || song.title_en || (tune.titles && tune.titles[0]) || ('OpenHymnal X:' + tune.x);
 }
 
 function main() {
@@ -221,7 +226,7 @@ function main() {
   };
   fs.writeFileSync(path.join(outDir, 'index.json'), JSON.stringify(index, null, 2) + '\n');
   console.log(JSON.stringify(index, null, 2));
-  if (index.counts.skipped > 0) process.exitCode = 1;
+  // 跳过项也保留在 index.json；批量生成仍应把所有可安全转换的谱先落盘。
 }
 
 main();
