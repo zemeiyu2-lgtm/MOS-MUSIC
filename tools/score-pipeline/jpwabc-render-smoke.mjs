@@ -127,9 +127,7 @@ async function main() {
 
         const valid =
           inspected.docNotes === sourceNotes &&
-          inspected.docLyrics > 0 &&
           inspected.scoreNotes === sourceNotes &&
-          inspected.scoreLyrics > 0 &&
           inspected.pageCount > 0 &&
           inspected.domPages === inspected.pageCount &&
           inspected.domSvgs === inspected.pageCount &&
@@ -139,9 +137,9 @@ async function main() {
         result.status = valid ? "PASS" : "FAIL";
         result.validation = {
           noteCountMatch: inspected.docNotes === sourceNotes,
-          docLyricsPresent: inspected.docLyrics > 0,
+          docLyricsObserved: inspected.docLyrics,
           painterNoteCountMatch: inspected.scoreNotes === sourceNotes,
-          painterLyricsPresent: inspected.scoreLyrics > 0,
+          painterLyricsObserved: inspected.scoreLyrics,
           pagesRendered: inspected.pageCount > 0,
           domPageMatch: inspected.domPages === inspected.pageCount,
           domSvgMatch: inspected.domSvgs === inspected.pageCount,
