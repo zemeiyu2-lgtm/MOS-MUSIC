@@ -91,8 +91,8 @@ function noteToken(b) {
 function lyricUnit(text) {
   const s = String(text ?? '').trim();
   if (!s) return '/';
-  if (/[\\s]/.test(s)) return '{' + s.replace(/[{}]/g, '') + '}';
-  return s.replace(/[{}]/g, '');
+  if (s.length === 1) return s.replace(/[{}]/g, '');
+  return '{' + s.replace(/[{}]/g, '') + '}';
 }
 
 function lyricPass(id) {
