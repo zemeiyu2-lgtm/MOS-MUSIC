@@ -94,7 +94,7 @@ jobs:
           set -euo pipefail
           body="<!-- MOS-MUSIC JPWABC DIAGNOSTIC -->"$'\n\n'
           if [ -f jpeditor/mos-render-evidence/summary.json ]; then
-            body="$body$(cat jpeditor/mos-render-evidence/summary.json)"
+            body="$body$(node -e 'const fs=require("fs");const s=JSON.parse(fs.readFileSync("jpeditor/mos-render-evidence/summary.json","utf8"));for(const r of s.results){console.log(r.songId+"="+r.status+" "+r.docMeasures+"m/"+r.docNotes+"n/"+r.docLyrics+"l/"+r.pageCount+"p")}console.log("all_pass="+s.all_pass)')"
           else
             body="$body No runtime summary was produced."
           fi
