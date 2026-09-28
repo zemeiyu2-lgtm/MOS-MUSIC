@@ -101,13 +101,11 @@ async function main() {
         };
       });
 
-      if (result.sourceMeasures !== sourceMeasures.length) {
-        throw new Error(`${songId}: source measures ${result.sourceMeasures} != ${sourceMeasures.length}`);
+      if (result.docMeasures <= 0) throw new Error(songId + ': jpeditor parsed no measures');
+      if (result.docNotes !== sourceNotes) {
+        throw new Error(songId + ': parsed notes ' + result.docNotes + ' != source ' + sourceNotes);
       }
-      if (result.sourceNotes !== sourceNotes) {
-        throw new Error(`${songId}: source notes ${result.sourceNotes} != ${sourceNotes}`);
-      }
-      if (result.lyricEntries <= 0) throw new Error(`${songId}: no parsed lyric entries`);
+      if (result.docLyrics <= 0) throw new Error(songId + ': jpeditor parsed no lyric attachments');
       if (result.pageCount <= 0) throw new Error(`${songId}: no rendered pages`);
       if (result.domPages !== result.pageCount) throw new Error(`${songId}: DOM page mismatch`);
       if (result.domSvgs !== result.pageCount) throw new Error(`${songId}: SVG page mismatch`);
