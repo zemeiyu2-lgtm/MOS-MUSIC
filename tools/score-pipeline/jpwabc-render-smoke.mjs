@@ -25,7 +25,9 @@ async function main() {
 
     for (const songId of SONGS) {
       const score = readScore(songId);
-      const sourceMeasures = score.sections?.[0]?.measures ?? [];
+      const sourceMeasures = (score.sections?.[0]?.measures ?? []).filter(
+        (m) => (m.beats?.length ?? 0) > 0,
+      );
       const sourceNotes = sourceMeasures.reduce((n, m) => n + (m.beats?.length ?? 0), 0);
 
       const jpw = fs.readFileSync(
