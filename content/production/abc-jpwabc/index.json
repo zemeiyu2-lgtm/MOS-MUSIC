@@ -1,0 +1,376 @@
+{
+  "schema_version": "MUS-MUSIC-ABC-JPWABC-1.0",
+  "generated_by": "tools/score-pipeline/abc-to-jpwabc.js",
+  "source": {
+    "file": "sources/openhymnal/OpenHymnal2014.06.abc",
+    "matching": "content/production/tune-matching.json",
+    "match_scope": "exact"
+  },
+  "counts": {
+    "requested_exact": 30,
+    "generated": 0,
+    "skipped": 30
+  },
+  "results": [
+    {
+      "song_id": "MUS-S-0001",
+      "title_zh": "奇异恩典",
+      "title_en": "Amazing Grace",
+      "tune_x": "192",
+      "match_method": "exact",
+      "tune_titles": [
+        "Amazing Grace"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0002",
+      "title_zh": "我灵镇静",
+      "title_en": "Be Still, My Soul",
+      "tune_x": "193",
+      "match_method": "exact",
+      "tune_titles": [
+        "Be Still My Soul"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0004",
+      "title_zh": "普世欢腾",
+      "title_en": "Joy to the World",
+      "tune_x": "61",
+      "match_method": "exact",
+      "tune_titles": [
+        "Joy to the World"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0007",
+      "title_zh": "荣耀归于真神",
+      "title_en": "To God Be the Glory",
+      "tune_x": "264",
+      "match_method": "exact",
+      "tune_titles": [
+        "To God Be The Glory"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0008",
+      "title_zh": "拥戴我主为王",
+      "title_en": "Crown Him with Many Crowns",
+      "tune_x": "164",
+      "match_method": "exact",
+      "tune_titles": [
+        "Crown Him With Many Crowns"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0011",
+      "title_zh": "坚固保障",
+      "title_en": "A Mighty Fortress Is Our God",
+      "tune_x": "127",
+      "match_method": "exact",
+      "tune_titles": [
+        "A Mighty Fortress Is Our God"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0013",
+      "title_zh": "古旧十架",
+      "title_en": "The Old Rugged Cross",
+      "tune_x": "202",
+      "match_method": "exact",
+      "tune_titles": [
+        "The Old Rugged Cross"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0014",
+      "title_zh": "耶稣十字架下",
+      "title_en": "Beneath the Cross of Jesus",
+      "tune_x": "194",
+      "match_method": "exact",
+      "tune_titles": [
+        "Beneath The Cross Of Jesus"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0015",
+      "title_zh": "奇妙十架",
+      "title_en": "When I Survey the Wondrous Cross",
+      "tune_x": "1",
+      "match_method": "exact",
+      "tune_titles": [
+        "When I Survey the Wondrous Cross"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0022",
+      "title_zh": "最美丽耶稣",
+      "title_en": "Fairest Lord Jesus",
+      "tune_x": "163",
+      "match_method": "exact",
+      "tune_titles": [
+        "Beautiful Savior"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0025",
+      "title_zh": "耶稣领我",
+      "title_en": "He Leadeth Me",
+      "tune_x": "226",
+      "match_method": "exact",
+      "tune_titles": [
+        "He Leadeth Me"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0032",
+      "title_zh": "爱主更深",
+      "title_en": "More Love to Thee",
+      "tune_x": "228",
+      "match_method": "exact",
+      "tune_titles": [
+        "More Love to Thee"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0034",
+      "title_zh": "教会独一的根基",
+      "title_en": "The Church's One Foundation",
+      "tune_x": "220",
+      "match_method": "exact",
+      "tune_titles": [
+        "The Church's One Foundation"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0035",
+      "title_zh": "圣徒相通",
+      "title_en": "Blest Be the Tie That Binds",
+      "tune_x": "214",
+      "match_method": "exact",
+      "tune_titles": [
+        "Blest Be The Tie That Binds"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0036",
+      "title_zh": "耶稣恩友",
+      "title_en": "What a Friend We Have in Jesus",
+      "tune_x": "249",
+      "match_method": "exact",
+      "tune_titles": [
+        "What A Friend We Have In Jesus"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0038",
+      "title_zh": "我心灵得安宁",
+      "title_en": "It Is Well with My Soul",
+      "tune_x": "198",
+      "match_method": "exact",
+      "tune_titles": [
+        "It Is Well With My Soul"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0039",
+      "title_zh": "有福的确据",
+      "title_en": "Blessed Assurance",
+      "tune_x": "195",
+      "match_method": "exact",
+      "tune_titles": [
+        "Blessed Assurance"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0048",
+      "title_zh": "一生奉献",
+      "title_en": "Take My Life, and Let It Be",
+      "tune_x": "234",
+      "match_method": "exact",
+      "tune_titles": [
+        "Take My Life And Let It Be"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0049",
+      "title_zh": "我每时刻需要你",
+      "title_en": "I Need Thee Every Hour",
+      "tune_x": "167",
+      "match_method": "exact",
+      "tune_titles": [
+        "I Need Thee Every Hour"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0050",
+      "title_zh": "主，与我同住",
+      "title_en": "Abide with Me",
+      "tune_x": "191",
+      "match_method": "exact",
+      "tune_titles": [
+        "Abide With Me"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0051",
+      "title_zh": "以信为本",
+      "title_en": "Be Thou My Vision",
+      "tune_x": "223",
+      "match_method": "exact",
+      "tune_titles": [
+        "Be Thou My Vision"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0052",
+      "title_zh": "来，我神我王",
+      "title_en": "Come, Thou Fount of Every Blessing",
+      "tune_x": "224",
+      "match_method": "exact",
+      "tune_titles": [
+        "Come Thou Fount Of Every Blessing"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0053",
+      "title_zh": "磐石之上",
+      "title_en": "The Solid Rock",
+      "tune_x": "282",
+      "match_method": "exact",
+      "tune_titles": [
+        "My Hope Is Built"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0054",
+      "title_zh": "万古磐石",
+      "title_en": "Rock of Ages",
+      "tune_x": "188",
+      "match_method": "exact",
+      "tune_titles": [
+        "Rock of Ages"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0059",
+      "title_zh": "主，我愿跟随你",
+      "title_en": "Where He Leads Me",
+      "tune_x": "243",
+      "match_method": "exact",
+      "tune_titles": [
+        "Where He Leads Me"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0060",
+      "title_zh": "我主，我神，我王",
+      "title_en": "All Hail the Power of Jesus' Name",
+      "tune_x": "161",
+      "match_method": "exact",
+      "tune_titles": [
+        "All Hail The Power Of Jesus' Name"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0067",
+      "title_zh": "亲近，更亲近",
+      "title_en": "Nearer, My God, to Thee",
+      "tune_x": "200",
+      "match_method": "exact",
+      "tune_titles": [
+        "Nearer, My God, To Thee"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0068",
+      "title_zh": "我知所信的是谁",
+      "title_en": "I Know Whom I Have Believed",
+      "tune_x": "278",
+      "match_method": "exact",
+      "tune_titles": [
+        "I Know Whom I Have Believed"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0084",
+      "title_zh": "耶和华是我牧者",
+      "title_en": "The Lord's My Shepherd",
+      "tune_x": "285",
+      "match_method": "exact",
+      "tune_titles": [
+        "The Lord's My Shepherd"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    },
+    {
+      "song_id": "MUS-S-0092",
+      "title_zh": "坚固的根基",
+      "title_en": "How Firm a Foundation",
+      "tune_x": "275",
+      "match_method": "exact",
+      "tune_titles": [
+        "How Firm A Foundation"
+      ],
+      "status": "SKIP",
+      "reason": "unsupported_accidental:flat"
+    }
+  ]
+}
