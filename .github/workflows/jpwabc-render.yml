@@ -1,0 +1,74 @@
+name: MOS-MUSIC JPWABC Render Smoke
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MOS-MUSIC
+        uses: actions/checkout@v4
+
+      - name: Checkout pinned jpeditor
+        uses: actions/checkout@v4
+        with:
+          repository: lodebar2026/jpeditor
+          ref: 4147f58f3a09e7d8656bb14e028d0daa4e51620a
+          path: jpeditor
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: jpeditor/package-lock.json
+
+      - name: Install jpeditor
+        working-directory: jpeditor
+        run: npm ci
+
+      - name: Install Chromium
+        working-directory: jpeditor
+        run: npx playwright install --with-deps chromium
+
+      - name: Copy MOS JPWABC fixtures
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p jpeditor/public/mos-test
+          for id in MUS-S-0001 MUS-S-0002 MUS-S-0004; do
+            cp "content/production/packages/$id/score.jpwabc" "jpeditor/public/mos-test/$id.jpwabc"
+          done
+
+      - name: Install render smoke spec
+        shell: bash
+        run: cp tools/score-pipeline/jpwabc-render-smoke.spec.mjs jpeditor/jpwabc-render-smoke.spec.mjs
+
+      - name: Start jpeditor dev server
+        working-directory: jpeditor
+        shell: bash
+        run: |
+          npm run dev -- --host 127.0.0.1 > /tmp/jpeditor-vite.log 2>&1 &
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:5173/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/jpeditor-vite.log
+          exit 1
+
+      - name: Run actual JPWABC parser + SVG render
+        working-directory: jpeditor
+        run: npx playwright test jpwabc-render-smoke.spec.mjs --reporter=line
+
+      - name: Upload rendered page evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mos-music-jpwabc-render-evidence
+          path: |
+            jpeditor/test-results/**
+            jpeditor/playwright-report/**
+          if-no-files-found: ignore
