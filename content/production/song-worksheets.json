@@ -128,12 +128,13 @@
       "INTAKE": 5
     },
     "by_level": {
-      "L3": 3,
-      "NONE": 7
+      "L3": 2,
+      "NONE": 7,
+      "L2": 1
     },
     "mechanical_ready": 0,
     "steps_total": 16,
-    "steps_done": 36
+    "steps_done": 34
   },
   "worksheets": [
     {
@@ -142,13 +143,13 @@
       "unit_file": "content/song-units/MUS-SU-0001.json",
       "title_zh": "奇异恩典",
       "status": "VERIFYING",
-      "level": "L3",
-      "next_level": "L4",
+      "level": "L2",
+      "next_level": "L3",
       "next_action": {
-        "key": "teach_vocal",
-        "target_status": "TEACHING_READY"
+        "key": "demo_any",
+        "target_status": "DEMO_READY"
       },
-      "next_step": "13",
+      "next_step": "08",
       "steps": [
         {
           "no": "00",
@@ -219,7 +220,7 @@
           "key": "demo_male",
           "label": "男声示唱",
           "goal": "真人示唱：音准稳定、节奏清楚、咬字清楚、少混响、不过度修音。",
-          "state": "DONE",
+          "state": "TODO",
           "gate": "DEMO_READY"
         },
         {
@@ -227,7 +228,7 @@
           "key": "demo_female",
           "label": "女声示唱",
           "goal": "同男声标准；缺一则如实未提供，不得用合成声音冒充。",
-          "state": "DONE",
+          "state": "TODO",
           "gate": null
         },
         {
@@ -280,6 +281,8 @@
         }
       ],
       "gaps": [
+        "demo_any",
+        "teach_learn",
         "teach_vocal",
         "teach_live"
       ],
@@ -356,12 +359,12 @@
         {
           "key": "demo_male",
           "label": "男声示唱",
-          "ready": true
+          "ready": false
         },
         {
           "key": "demo_female",
           "label": "女声示唱",
-          "ready": true
+          "ready": false
         },
         {
           "key": "timeline",
