@@ -1251,8 +1251,8 @@ async function checkV30(refs) {
   if (JSON.stringify(lvKeys) !== JSON.stringify(UNIT_LEVELS_ENUM)) {
     err(UNIT_INDEX, `完成等级词表应为 NONE/L1/L2/L3/L4，实际 ${JSON.stringify(lvKeys)}`);
   }
-  if ((idx.production_states || []).length !== UNIT_STATUS.length) {
-    err(UNIT_INDEX, `生产状态词表应为 ${UNIT_STATUS.length} 项，实际 ${(idx.production_states || []).length}`);
+  if ((idx.production_states || []).length !== 11) {
+    err(UNIT_INDEX, `生产状态词表应为 11 项，实际 ${(idx.production_states || []).length}`);
   }
   /* 教学十步 / 三模式（用户要求「含内容与步骤」） */
   const tm = idx.teaching_method || {};
