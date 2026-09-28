@@ -1174,7 +1174,7 @@ function checkV20() {
 
   /* SW：前台模块与候选索引必须预缓存（PILOT 10 升 v11，防旧缓存污染） */
   const sw = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-  for (const need of ["'mos-music-v15'", "'./app/front/home.js'", "'./app/front/teach.js'", "'./app/front/covers.js'", "'./app/ui/v21.css'", "'./content/candidates/index.json'",
+  for (const need of ["'mos-music-v22'", "'./app/front/home.js'", "'./app/front/teach.js'", "'./app/front/covers.js'", "'./app/ui/v21.css'", "'./content/candidates/index.json'",
     "'./content/production/packages/index.json'", "'./content/production/packages/MUS-S-0001/lyrics.json'", "'./content/production/packages/MUS-S-0001/score.json'",
     "'./app/front/coach.js'", "'./content/taxonomy/assignments.json'", "'./content/song-content/MUS-S-0001.json'", "'./content/coach/index.json'", "'./content/production/resource-discovery.json'"]) {
     if (!sw.includes(need)) err('sw.js', `SW 预缓存缺失：${need}`);
@@ -1224,7 +1224,7 @@ function atPath(obj, p) {
   return cur;
 }
 const UNIT_STATUS = [
-  'INTAKE', 'VERIFYING', 'LYRICS_READY', 'SCORE_READY', 'PIANO_READY',
+  'INTAKE', 'VERIFYING', 'LYRICS_READY', 'SCORE_READY', 'ACCOMPANIMENT_READY', 'PIANO_READY',
   'DEMO_READY', 'SYNC_READY', 'TEACHING_READY', 'REVIEW', 'COMPLETE', 'HOLD',
 ];
 const UNIT_LEVELS_ENUM = ['NONE', 'L1', 'L2', 'L3', 'L4'];
@@ -1309,7 +1309,7 @@ async function checkV30(refs) {
     }
     for (const k of ['male', 'female']) {
       const d = (u.demos || {})[k] || {};
-      if (!['PROVIDED', 'NOT_PROVIDED'].includes(d.status)) err(where, `demos.${k}.status 非法：${d.status}`);
+      if (!['PROVIDED', 'NOT_PROVIDED', 'CANDIDATE_EXTERNAL'].includes(d.status)) err(where, `demos.${k}.status 非法：${d.status}`);
       if (d.singer != null) err(where, `demos.${k}.singer 必须为 null（不得用虚拟歌手冒充真人示唱）`);
       if (d.status === 'PROVIDED' && !(d.slots || []).length) err(where, `demos.${k} 声明 PROVIDED 但没有任何 slot`);
     }
@@ -1479,12 +1479,12 @@ async function checkV30(refs) {
     const mf = readJSON(`${base}/manifest.json`);
     if (mf.song_id !== sid || mf.unit_id !== row.unit_id) err(`${base}/manifest.json`, 'manifest 的 song_id / unit_id 与单元不一致');
     for (const [slot, v] of Object.entries(mf.slots || {})) {
-      if (!['PROVIDED', 'DRAFT', 'NOT_AVAILABLE'].includes(v.status)) err(`${base}/manifest.json`, `槽位 ${slot} 状态非法：${v.status}`);
+      if (!['PROVIDED', 'DRAFT', 'PARTIAL', 'DRAFT_INTERNAL', 'NOT_AVAILABLE'].includes(v.status)) err(`${base}/manifest.json`, `槽位 ${slot} 状态非法：${v.status}`);
       if (!exists(`${base}/${v.file}`)) err(`${base}/manifest.json`, `槽位 ${slot} 文件缺失：${v.file}`);
     }
     /* 反虚构：音频槽位必须 NOT_AVAILABLE 且无 file_url（无真人录音） */
     const audio = readJSON(`${base}/audio.json`);
-    if (audio.status !== 'NOT_AVAILABLE') err(`${base}/audio.json`, '音频槽位必须 NOT_AVAILABLE（本批无真人录音）');
+    if (!['NOT_AVAILABLE', 'PARTIAL'].includes(audio.status)) err(`${base}/audio.json`, '音频槽位必须 NOT_AVAILABLE 或 PARTIAL（本批无真人录音，伴奏资源可单独登记）');
     for (const k of ['piano', 'demo_male', 'demo_female']) {
       if ((audio[k] && audio[k].file_url)) err(`${base}/audio.json`, `禁止虚构音频文件引用：${k}.file_url`);
     }
