@@ -3,7 +3,7 @@
   "song_id": "MUS-S-0001",
   "unit_version": "MUS-V-1.1.0",
   "standard": "song-production-template-1.0",
-  "status": "PIANO_READY",
+  "status": "ACCOMPANIMENT_READY",
   "status_note": "歌词、简谱与伴奏已具备；外部真人示唱目前只是候选来源，尚未完成应用内播放/教学适用性确认，因此不计入完成等级。待完成人工校谱、中文试唱译文审核、真人示唱接入与 A–J 最终验收。",
   "song_meta": {
     "title_zh": "奇异恩典",
@@ -856,7 +856,7 @@
   },
   "demos": {
     "male": {
-      "status": "NOT_PROVIDED",
+      "status": "CANDIDATE_EXTERNAL",
       "slots": [
         {
           "phrase_id": null,
@@ -884,7 +884,7 @@
       "host_policy": "original_site"
     },
     "female": {
-      "status": "NOT_PROVIDED",
+      "status": "CANDIDATE_EXTERNAL",
       "slots": [
         {
           "phrase_id": null,
