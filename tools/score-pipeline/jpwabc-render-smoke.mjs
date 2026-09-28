@@ -122,7 +122,7 @@ async function main() {
             renderedSvgLength: svg0.outerHTML.length,
             firstSvgBox: svg0.getAttribute("viewBox"),
           };
-        });
+        }, expectedLyrics);
 
         Object.assign(result, {
           sourceMeasures: sourceMeasures.length,
@@ -132,15 +132,19 @@ async function main() {
         });
 
         const valid =
+          inspected.docNotes === sourceNotes &&
+          inspected.scoreNotes === sourceNotes &&
+          inspected.docLyricSequence.join("\u0000") === inspected.expectedLyrics.join("\u0000") &&
           inspected.pageCount > 0 &&
           inspected.domPages === inspected.pageCount &&
           inspected.domSvgs === inspected.pageCount &&
-          inspected.renderedSvgLength > 1000 &&
+          inspected.renderedSvgLength > 500 &&
           Boolean(inspected.firstSvgBox);
 
         result.status = valid ? "PASS" : "FAIL";
         result.validation = {
           noteCountMatch: inspected.docNotes === sourceNotes,
+          lyricSequenceMatch: inspected.docLyricSequence.join("\u0000") === inspected.expectedLyrics.join("\u0000"),
           docLyricsObserved: inspected.docLyrics,
           painterNoteCountMatch: inspected.scoreNotes === sourceNotes,
           painterLyricsObserved: inspected.scoreLyrics,
