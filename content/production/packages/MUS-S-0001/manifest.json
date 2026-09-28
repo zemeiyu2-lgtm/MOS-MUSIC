@@ -30,7 +30,7 @@
       "proofread": "PENDING"
     },
     "audio": {
-      "status": "PARTIAL",
+      "status": "NOT_AVAILABLE",
       "file": "audio.json"
     },
     "timeline": {
@@ -39,7 +39,7 @@
       "sync_status": "SYNC_READY"
     },
     "teaching": {
-      "status": "PARTIAL",
+      "status": "NOT_AVAILABLE",
       "file": "teaching.json"
     },
     "content": {
@@ -55,7 +55,7 @@
       "file": "MOS-SU-0001_WORKSHEET.md"
     },
     "lyrics_zh_working_draft": {
-      "status": "DRAFT_INTERNAL",
+      "status": "DRAFT",
       "file": "lyrics-zh-working-draft.json"
     }
   },
