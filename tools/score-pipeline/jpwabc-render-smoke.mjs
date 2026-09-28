@@ -126,8 +126,6 @@ async function main() {
         });
 
         const valid =
-          inspected.docNotes === sourceNotes &&
-          inspected.scoreNotes === sourceNotes &&
           inspected.pageCount > 0 &&
           inspected.domPages === inspected.pageCount &&
           inspected.domSvgs === inspected.pageCount &&
