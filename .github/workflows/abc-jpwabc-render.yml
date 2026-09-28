@@ -1,0 +1,94 @@
+name: MOS-MUSIC ABC JPWABC Render Smoke
+
+on:
+  push:
+    branches: [feat/v31-front-simplify]
+    paths:
+      - content/production/abc-jpwabc/**
+      - tools/score-pipeline/abc-to-jpwabc.js
+      - tools/score-pipeline/abc-jpwabc-render-smoke.mjs
+      - .github/workflows/abc-jpwabc-render.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MOS-MUSIC
+        uses: actions/checkout@v4
+
+      - name: Checkout pinned jpeditor
+        uses: actions/checkout@v4
+        with:
+          repository: lodebar2026/jpeditor
+          ref: 4147f58f3a09e7d8656bb14e028d0daa4e51620a
+          path: jpeditor
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: jpeditor/package-lock.json
+
+      - name: Install jpeditor
+        working-directory: jpeditor
+        run: npm ci
+
+      - name: Install Chromium
+        working-directory: jpeditor
+        run: npx playwright install --with-deps chromium
+
+      - name: Install smoke script
+        run: cp tools/score-pipeline/abc-jpwabc-render-smoke.mjs jpeditor/abc-jpwabc-render-smoke.mjs
+
+      - name: Start jpeditor
+        working-directory: jpeditor
+        shell: bash
+        run: |
+          npm run dev -- --host 127.0.0.1 > /tmp/jpeditor-vite.log 2>&1 &
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:1420/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/jpeditor-vite.log
+          exit 1
+
+      - name: Run 30-song runtime parser + SVG smoke
+        working-directory: jpeditor
+        run: node abc-jpwabc-render-smoke.mjs
+
+      - name: Publish batch diagnostic PR comment
+        if: always() && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          body="<!-- MOS-MUSIC ABC JPWABC DIAGNOSTIC -->"$'\n\n'
+          if [ -f jpeditor/mos-abc-render-evidence/summary.json ]; then
+            body="$body$(node -e 'const s=require("./jpeditor/mos-abc-render-evidence/summary.json");console.log("requested="+s.requested+" passed="+s.passed+" failed="+s.failed+" all_pass="+s.all_pass)')"
+          else
+            body="$body No runtime summary was produced."
+          fi
+          existing_id=$(gh api "repos/$REPO/issues/$PR_NUMBER/comments?per_page=100" --paginate --jq '.[] | select(.body | startswith("'"<!-- MOS-MUSIC ABC JPWABC DIAGNOSTIC -->"'")) | .id' | tail -n 1 || true)
+          if [ -n "$existing_id" ]; then
+            gh api -X PATCH "repos/$REPO/issues/comments/$existing_id" -f body="$body" >/dev/null
+          else
+            gh api -X POST "repos/$REPO/issues/$PR_NUMBER/comments" -f body="$body" >/dev/null
+          fi
+
+      - name: Upload batch render evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mos-music-abc-jpwabc-render-evidence
+          path: jpeditor/mos-abc-render-evidence/**
+          if-no-files-found: ignore
