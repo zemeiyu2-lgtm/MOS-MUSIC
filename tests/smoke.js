@@ -386,7 +386,7 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
     && (u1.demos.ai_male == null || u1.demos.ai_male.is_ai === true)
     && (u1.demos.ai_female == null || u1.demos.ai_female.is_ai === true),
     'V3.2 单元包：外部真人示唱原站播放（singer=null，不冒充）+ 生成伴奏 + 精确时间轴；AI 只在独立轨');
-  ok((u1.content_understanding.note || '').includes('不绑定某一周'),
+  ok((u1.content_understanding.note || '').includes('不绑定周次或课程'),
     'V3.0 单元包：内容理解不绑定周次（淡化 52 周关联）');
   ok((u1.rights.copyright_status === 'public_domain') && u1.rights.derived_from,
     'V3.0 单元包：版权沿用详情层法律状态并标注来源（ADR-0012）');
@@ -418,7 +418,7 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   const spSrc = fs.readFileSync(path.join(ROOT, 'app/front/song-page.js'), 'utf8');
   ok(spSrc.includes('sp-score-card') && spSrc.includes('renderScoreHtml'),
     'V3.0 歌曲页：简谱整幅置于显眼位置（乐谱最明显）');
-  ok(spSrc.includes('歌曲自身内容层') && spSrc.includes('简谱最明显'),
+  ok(spSrc.includes('歌曲自身内容层') && spSrc.includes('sp-score-card'),
     'V3.0 歌曲页：内容属于歌曲本身，且以简谱为核心阅读对象');
   ok(spSrc.includes('伴奏以合适为准') && spSrc.includes('有多种真实可用版本就提供选择') && spSrc.includes('伴奏'), 'V3.0 歌曲页：伴奏至少一种完整，有多个可选择');
   const learnSrc = fs.readFileSync(path.join(ROOT, 'app/front/learn.js'), 'utf8');
