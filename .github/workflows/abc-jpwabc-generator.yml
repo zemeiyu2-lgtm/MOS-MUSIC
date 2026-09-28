@@ -1,0 +1,40 @@
+name: MOS-MUSIC ABC JPWABC Generator
+
+on:
+  push:
+    branches: [feat/v31-front-simplify]
+    paths-ignore:
+      - content/production/abc-jpwabc/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MOS-MUSIC
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate exact-match OpenHymnal JPWABC
+        run: node tools/score-pipeline/abc-to-jpwabc.js --out content/production/abc-jpwabc
+
+      - name: Commit generated JPWABC
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/production/abc-jpwabc
+          if git diff --cached --quiet; then
+            echo "No generated JPWABC changes."
+            exit 0
+          fi
+          git commit -m "build(score-pipeline): generate exact-match OpenHymnal JPWABC"
+          git push
