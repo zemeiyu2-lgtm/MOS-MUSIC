@@ -37,7 +37,7 @@ function lyricUnit(text) {
   return '{' + s.replace(/[{}]/g, '') + '}';
 }
 
-function noteToken(x, pendingTieClose) {
+function noteToken(x, source, tieStart, tieEnd) {
   if (!DUR[x.duration]) {
     throw new Error('unsupported_duration:' + x.duration);
   }
@@ -45,22 +45,31 @@ function noteToken(x, pendingTieClose) {
   if (x.exact_fraction !== null && x.exact_fraction !== undefined) {
     throw new Error('approximate_duration:' + x.exact_fraction);
   }
+
   let s = x.rest ? '0' : String(x.note || '');
-  if (!x.rest && x.accidental) {
-    const accidentalMap = { sharp: '#', flat: 'b', natural: 'n', '#': '#', 'b': 'b', 'n': 'n' };
-    const acc = accidentalMap[x.accidental];
-    if (!acc) throw new Error('unsupported_accidental:' + x.accidental);
-    s = acc + s;
+  if (!x.rest) {
+    /* ABC 明确写出的还原号不能被小节内临时记号吞掉。 */
+    if (source && source.accidental_raw === '=') {
+      s = 'n' + s;
+    } else if (x.accidental) {
+      const accidentalMap = { sharp: '#', flat: 'b', natural: 'n', '#': '#', 'b': 'b', 'n': 'n' };
+      const acc = accidentalMap[x.accidental];
+      if (!acc) throw new Error('unsupported_accidental:' + x.accidental);
+      s = acc + s;
+    }
   }
+
   if (!x.rest) {
     const oct = Number(x.octave || 0);
     if (oct > 0) s += "'".repeat(oct);
     if (oct < 0) s += ','.repeat(-oct);
   }
+
+  if (tieStart) s = '(' + s;
   if (x.dot) s += '.';
   for (let i = 0; i < d[0]; i += 1) s += '_';
   for (let i = 1; i < d[1]; i += 1) s += '-';
-  if (pendingTieClose) s += ')';
+  if (tieEnd) s += ')';
   return s;
 }
 
@@ -98,26 +107,51 @@ function buildJpw(song, tune) {
     throw new Error('lyric_note_length_mismatch:' + lyricItems.length + '/' + noteEvents.length);
   }
 
+  const sourceEvents = voice.events.filter(function(x) { return !x.bar; });
+  let sourceCursor = 0;
   let tieOpen = false;
-  const voiceTokens = [];
+  let previousBuilt = null;
   const measures = [];
+  const measureTokens = [];
   let current = [];
+  let currentTokens = [];
 
   for (const e of built) {
     if (e.bar) {
       if (current.length) {
         measures.push(current);
+        measureTokens.push(currentTokens);
         current = [];
+        currentTokens = [];
       }
-      voiceTokens.push('|');
       continue;
     }
-    const token = noteToken(e, tieOpen);
-    tieOpen = Boolean(e.tie);
-    voiceTokens.push(token);
+
+    const source = sourceEvents[sourceCursor++];
+    if (!source) throw new Error('source_event_missing_at_note_' + sourceCursor);
+
+    const tieStart = Boolean(e.tie) && !tieOpen;
+    const tieEnd = tieOpen && !e.tie;
+
+    if (tieOpen && previousBuilt) {
+      if (
+        previousBuilt.rest !== e.rest ||
+        previousBuilt.midi !== e.midi
+      ) {
+        throw new Error('tie_pitch_mismatch_at_note_' + sourceCursor);
+      }
+    }
+
     current.push(e);
+    currentTokens.push(noteToken(e, source, tieStart, tieEnd));
+    tieOpen = Boolean(e.tie);
+    previousBuilt = e;
   }
-  if (current.length) measures.push(current);
+
+  if (current.length) {
+    measures.push(current);
+    measureTokens.push(currentTokens);
+  }
   if (tieOpen) throw new Error('dangling_tie');
 
   const title = songTitle(song, tune);
@@ -136,13 +170,9 @@ function buildJpw(song, tune) {
   lines.push('', '.Voice');
 
   // 只写已有真实音符；不保留 ABC 解析产生的空尾小节。
-  const measureLines = [];
-  let mi = 0;
-  for (const m of measures) {
-    const text = m.map((e) => noteToken(e, false)).join(' ');
-    measureLines.push(text + ' |');
-    mi += 1;
-  }
+  const measureLines = measureTokens.map(function(tokens) {
+    return tokens.join(' ') + ' |';
+  });
   lines.push(measureLines.join(' '));
 
   lines.push('', '.Words');
