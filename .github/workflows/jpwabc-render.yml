@@ -45,7 +45,7 @@ jobs:
 
       - name: Install render smoke spec
         shell: bash
-        run: cp tools/score-pipeline/jpwabc-render-smoke.spec.mjs jpeditor/jpwabc-render-smoke.spec.mjs
+        run: cp tools/score-pipeline/jpwabc-render-smoke.mjs jpeditor/jpwabc-render-smoke.mjs
 
       - name: Start jpeditor dev server
         working-directory: jpeditor
@@ -61,7 +61,7 @@ jobs:
 
       - name: Run actual JPWABC parser + SVG render
         working-directory: jpeditor
-        run: npx playwright test jpwabc-render-smoke.spec.mjs --reporter=line
+        run: node jpwabc-render-smoke.mjs
 
       - name: Upload rendered page evidence
         if: always()
