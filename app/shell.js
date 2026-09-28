@@ -28,7 +28,7 @@ function renderNav(activeKey) {
   const items = [
     { key: 'songs', href: '#/songs', label: '诗歌本', icon: '♪', active: activeKey === 'songs' || activeKey === 'song' || activeKey === 'song-detail' },
     { key: 'learning', href: '#/learning', label: '学习', icon: '↗', active: learningActive },
-    { key: 'mine', href: '#/mine', label: '我的歌', icon: '♡', active: activeKey === 'mine' },
+    { key: 'mine', href: '#/mine', label: '我的', icon: '♡', active: activeKey === 'mine' },
   ];
   nav.innerHTML = items.map((item) => `
     <a class="nav-btn${item.active ? ' active' : ''}" href="${item.href}" aria-current="${item.active ? 'page' : 'false'}">
