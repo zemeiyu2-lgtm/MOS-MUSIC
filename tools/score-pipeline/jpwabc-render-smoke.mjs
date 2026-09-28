@@ -16,7 +16,10 @@ function readScore(songId) {
 
 async function main() {
   const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+  const page = await browser.newPage({
+    viewport: { width: 1440, height: 1000 },
+    deviceScaleFactor: 1,
+  });
   const results = [];
 
   try {
@@ -24,111 +27,161 @@ async function main() {
     await page.waitForFunction(() => Boolean(window.__app), null, { timeout: 30_000 });
 
     for (const songId of SONGS) {
-      const score = readScore(songId);
-      const sourceMeasures = (score.sections?.[0]?.measures ?? []).filter(
-        (m) => (m.beats?.length ?? 0) > 0,
-      );
-      const sourceNotes = sourceMeasures.reduce((n, m) => n + (m.beats?.length ?? 0), 0);
-
-      const jpw = fs.readFileSync(
-        path.join(ROOT, "content", "production", "packages", songId, "score.jpwabc"),
-        "utf8",
-      );
-      const titleLine = jpw.split(/\r?\n/).find((x) => x.startsWith("Title = ")) ?? "";
-      const expectedTitle = titleLine.slice("Title = ".length);
-
-      await page.evaluate(({ text, id }) => {
-        window.__app.loadText(text, `${id}.jpwabc`);
-      }, { text: jpw, id: songId });
-
-      await page.waitForFunction((title) => window.__app?.painterTitle === title, expectedTitle, {
-        timeout: 30_000,
-      });
-      await page.waitForFunction(() =>
-        Boolean(window.__app?.painter?.pageCount > 0 && document.querySelector(".score-page-wrap svg")),
-        null,
-        { timeout: 30_000 },
-      );
-
-      const result = await page.evaluate(() => {
-        const app = window.__app;
-        const doc = app.jpwDoc;
-        if (!doc) throw new Error("jpeditor jpwDoc is null after load");
-        const dpart = doc.songs?.[0]?.parts?.[0];
-        const dmeasures = dpart?.measures ?? [];
-        const docNotes = dmeasures.reduce(
-          (n, m) => n + m.elements.filter((e) => e.kind === "chord").length,
-          0,
+      const result = { songId, status: "FAIL" };
+      try {
+        const score = readScore(songId);
+        const sourceMeasures = (score.sections?.[0]?.measures ?? [])
+          .filter((m) => (m.beats?.length ?? 0) > 0);
+        const sourceNotes = sourceMeasures.reduce(
+          (n, m) => n + (m.beats?.length ?? 0), 0,
         );
-        const docLyrics = dmeasures.reduce(
-          (n, m) => n + m.elements.reduce(
-            (k, e) => k + (e.kind === "chord" ? (e.lyrics?.length ?? 0) : 0), 0,
+
+        const jpw = fs.readFileSync(
+          path.join(ROOT, "content", "production", "packages", songId, "score.jpwabc"),
+          "utf8",
+        );
+        const titleLine = jpw.split(/\r?\n/).find((x) => x.startsWith("Title = ")) ?? "";
+        const expectedTitle = titleLine.slice("Title = ".length);
+
+        await page.evaluate(({ text, id }) => {
+          window.__app.loadText(text, id + ".jpwabc");
+        }, { text: jpw, id: songId });
+
+        await page.waitForFunction(
+          (title) => window.__app?.painterTitle === title,
+          expectedTitle,
+          { timeout: 30_000 },
+        );
+        await page.waitForFunction(
+          () => Boolean(
+            window.__app?.painter?.pageCount > 0 &&
+            document.querySelector(".score-page-wrap svg")
           ),
-          0,
+          null,
+          { timeout: 30_000 },
         );
 
-        const score = app.painter.score;
-        const part = score.parts?.[0];
-        const measures = part?.measures ?? [];
-        const sourceMeasures = measures.length;
-        const sourceNotes = measures.reduce(
-          (n, m) => n + m.entries.filter((e) => e.kind === "chord").length,
-          0,
-        );
-        const lyricEntries = measures.reduce(
-          (n, m) => n + m.entries.reduce(
-            (k, e) => k + (e.kind === "chord" ? (e.lyrics?.length ?? 0) : 0), 0,
-          ),
-          0,
-        );
-        const pageCount = app.painter.pageCount;
-        const domPages = document.querySelectorAll(".score-page-wrap").length;
-        const domSvgs = document.querySelectorAll(".score-page-wrap svg").length;
-        const svg0 = app.painter.renderPage(0);
-        return {
-          title: score.title ?? null,
-          docMeasures: dmeasures.length,
-          docNotes,
-          docLyrics,
-          sourceMeasures,
+        const inspected = await page.evaluate(() => {
+          const app = window.__app;
+          const doc = app.jpwDoc;
+          if (!doc) throw new Error("jpwDoc=null");
+
+          const dpart = doc.songs?.[0]?.parts?.[0];
+          const dmeasures = dpart?.measures ?? [];
+          const docNotes = dmeasures.reduce(
+            (n, m) => n + m.elements.filter((e) => e.kind === "chord").length, 0,
+          );
+          const docLyrics = dmeasures.reduce(
+            (n, m) => n + m.elements.reduce(
+              (k, e) => k + (
+                e.kind === "chord"
+                  ? e.lyrics?.length ?? 0
+                  : 0
+              ), 0,
+            ), 0,
+          );
+
+          const score = app.painter.score;
+          const part = score.parts?.[0];
+          const measures = part?.measures ?? [];
+          const scoreNotes = measures.reduce(
+            (n, m) => n + m.entries.filter((e) => e.kind === "chord").length, 0,
+          );
+          const scoreLyrics = measures.reduce(
+            (n, m) => n + m.entries.reduce(
+              (k, e) => k + (
+                e.kind === "chord"
+                  ? e.notes.reduce((q, nt) => q + (nt.lyrics?.length ?? 0), 0)
+                  : 0
+              ), 0,
+            ), 0,
+          );
+
+          const pageCount = app.painter.pageCount;
+          const domPages = document.querySelectorAll(".score-page-wrap").length;
+          const domSvgs = document.querySelectorAll(".score-page-wrap svg").length;
+          const svg0 = app.painter.renderPage(0);
+
+          return {
+            title: score.title ?? null,
+            docMeasures: dmeasures.length,
+            docNotes,
+            docLyrics,
+            scoreMeasures: measures.length,
+            scoreNotes,
+            scoreLyrics,
+            pageCount,
+            domPages,
+            domSvgs,
+            renderedSvgLength: svg0.outerHTML.length,
+            firstSvgBox: svg0.getAttribute("viewBox"),
+          };
+        });
+
+        Object.assign(result, {
+          sourceMeasures: sourceMeasures.length,
           sourceNotes,
-          lyricEntries,
-          pageCount,
-          domPages,
-          domSvgs,
-          renderedSvgLength: svg0.outerHTML.length,
-          firstSvgBox: svg0.getAttribute("viewBox"),
+          expectedTitle,
+          ...inspected,
+        });
+
+        const valid =
+          inspected.docNotes === sourceNotes &&
+          inspected.docLyrics > 0 &&
+          inspected.scoreNotes === sourceNotes &&
+          inspected.scoreLyrics > 0 &&
+          inspected.pageCount > 0 &&
+          inspected.domPages === inspected.pageCount &&
+          inspected.domSvgs === inspected.pageCount &&
+          inspected.renderedSvgLength > 1000 &&
+          Boolean(inspected.firstSvgBox);
+
+        result.status = valid ? "PASS" : "FAIL";
+        result.validation = {
+          noteCountMatch: inspected.docNotes === sourceNotes,
+          docLyricsPresent: inspected.docLyrics > 0,
+          painterNoteCountMatch: inspected.scoreNotes === sourceNotes,
+          painterLyricsPresent: inspected.scoreLyrics > 0,
+          pagesRendered: inspected.pageCount > 0,
+          domPageMatch: inspected.domPages === inspected.pageCount,
+          domSvgMatch: inspected.domSvgs === inspected.pageCount,
+          svgLooksValid: inspected.renderedSvgLength > 1000 && Boolean(inspected.firstSvgBox),
         };
-      });
 
-      if (result.docMeasures <= 0) throw new Error(songId + ': jpeditor parsed no measures');
-      if (result.docNotes !== sourceNotes) {
-        throw new Error(songId + ': parsed notes ' + result.docNotes + ' != source ' + sourceNotes);
+        if (inspected.pageCount > 0) {
+          await page.screenshot({
+            path: path.join(OUT, songId + "-page1.png"),
+            fullPage: false,
+          });
+        }
+      } catch (err) {
+        result.error = String(err?.message ?? err);
       }
-      if (result.docLyrics <= 0) throw new Error(songId + ': jpeditor parsed no lyric attachments');
-      if (result.pageCount <= 0) throw new Error(`${songId}: no rendered pages`);
-      if (result.domPages !== result.pageCount) throw new Error(`${songId}: DOM page mismatch`);
-      if (result.domSvgs !== result.pageCount) throw new Error(`${songId}: SVG page mismatch`);
-      if (result.renderedSvgLength <= 1000) throw new Error(`${songId}: rendered SVG too small`);
-      if (!result.firstSvgBox) throw new Error(`${songId}: rendered SVG has no viewBox`);
 
-      await page.screenshot({
-        path: path.join(OUT, `${songId}-page1.png`),
-        fullPage: false,
-      });
       fs.writeFileSync(
-        path.join(OUT, `${songId}-summary.json`),
+        path.join(OUT, songId + "-summary.json"),
         JSON.stringify(result, null, 2) + "\n",
       );
-      results.push({ songId, ...result });
-      console.log(JSON.stringify({ songId, ...result }));
+      results.push(result);
+      console.log(JSON.stringify(result));
     }
   } finally {
     await browser.close();
   }
 
-  fs.writeFileSync(path.join(OUT, "summary.json"), JSON.stringify(results, null, 2) + "\n");
-  console.log("JPWABC actual parser + SVG render smoke: PASS");
+  const summary = {
+    schema_version: "MUS-MUSIC-JPWABC-RENDER-1.0",
+    jpeditor_commit: "4147f58f3a09e7d8656bb14e028d0daa4e51620a",
+    results,
+    all_pass: results.length === SONGS.length && results.every((x) => x.status === "PASS"),
+  };
+  fs.writeFileSync(
+    path.join(OUT, "summary.json"),
+    JSON.stringify(summary, null, 2) + "\n",
+  );
+  console.log(JSON.stringify(summary));
+
+  if (!summary.all_pass) process.exitCode = 1;
 }
 
 main().catch((err) => {

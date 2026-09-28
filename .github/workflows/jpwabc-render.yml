@@ -5,6 +5,10 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  statuses: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -43,7 +47,7 @@ jobs:
             cp "content/production/packages/$id/score.jpwabc" "jpeditor/public/mos-test/$id.jpwabc"
           done
 
-      - name: Install render smoke spec
+      - name: Install render smoke script
         shell: bash
         run: cp tools/score-pipeline/jpwabc-render-smoke.mjs jpeditor/jpwabc-render-smoke.mjs
 
@@ -63,12 +67,24 @@ jobs:
         working-directory: jpeditor
         run: node jpwabc-render-smoke.mjs
 
+      - name: Publish diagnostic commit status
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          summary="no-summary"
+          if [ -f jpeditor/mos-render-evidence/summary.json ]; then
+            summary=$(node -e 'const fs=require("fs");const s=JSON.parse(fs.readFileSync("jpeditor/mos-render-evidence/summary.json","utf8"));console.log(s.results.map(r=>r.songId+"="+r.status+(r.docNotes!==undefined?":"+r.docNotes+"n/"+r.docLyrics+"l/"+r.pageCount+"p":"")).join(";"))')
+          fi
+          gh api "repos/${{ github.repository }}/statuses/${{ github.sha }}"             -f state="${{ job.status == 'success' && 'success' || 'failure' }}"             -f context="MOS-MUSIC JPWABC diagnostic"             -f description="${summary:0:140}"             -f target_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
       - name: Upload rendered page evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: mos-music-jpwabc-render-evidence
           path: |
-            jpeditor/test-results/**
-            jpeditor/playwright-report/**
+            jpeditor/mos-render-evidence/**
           if-no-files-found: ignore
