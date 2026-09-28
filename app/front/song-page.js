@@ -236,9 +236,9 @@ export async function renderSongPage(root, songId, query) {
             </div>
           </div>
           <div class="hero-actions">
-            <button class="btn primary big play-fab-btn" id="heroPlay" aria-label="现在就唱${esc(zh)}">▶ 现在就唱</button>
+            <button class="btn primary big play-fab-btn" id="heroPlay" aria-label="唱这首歌${esc(zh)}">▶ 唱这首</button>
             <button class="btn ghost big" id="likeBtn" aria-pressed="${my.liked ? 'true' : 'false'}">${my.liked ? '已收藏' : '收藏'}</button>
-            <button class="btn ghost big" id="shareTop" aria-label="分享这首歌">↗ 分享</button>
+            <button class="btn ghost big" id="shareTop" aria-label="分享这首歌" hidden>↗ 分享</button>
           </div>
           ${query && query.share ? '<div class="notice" style="margin-top:var(--sp-3)">朋友分享给你这首歌 —— 点「现在就唱」直接开始。</div>' : ''}
         </section>
@@ -307,8 +307,8 @@ export async function renderSongPage(root, songId, query) {
         <section class="card sp-sec song-actions-panel">
           <div class="song-action-row">
             <a class="song-action primary" href="#/learn/${esc(ctx.songId)}"><span>♪</span><strong>学唱</strong><small>一句一句学</small></a>
-            <a class="song-action" href="#/learn/${esc(ctx.songId)}?mode=sight"><span>◌</span><strong>看谱唱</strong><small>先看谱，再唱</small></a>
-            <a class="song-action" href="#/teach/${esc(ctx.songId)}"><span>↗</span><strong>教别人</strong><small>带人唱这首歌</small></a>
+            <a class="song-action" href="#/learn/${esc(ctx.songId)}?mode=sight"><span>◌</span><strong>视唱</strong><small>看谱再唱</small></a>
+            <a class="song-action" href="#/teach/${esc(ctx.songId)}"><span>↗</span><strong>教唱</strong><small>把这首歌教给别人</small></a>
           </div>
         </section>
 
