@@ -48,29 +48,31 @@ async function main() {
         { timeout: 30_000 },
       );
 
-      const result = await page.evaluate(async () => {
+      const result = await page.evaluate(() => {
         const app = window.__app;
-        const j = await window.__j123;
-        const text = app.getText();
-        const file = j.JpwFile.fromString(text);
-        if (!file) throw new Error("JpwFile.fromString returned null");
-        const source = j.readJpwSource(file);
+        const score = app.painter.score;
+        const part = score.parts?.[0];
+        const measures = part?.measures ?? [];
+        const sourceMeasures = measures.length;
+        const sourceNotes = measures.reduce(
+          (n, m) => n + m.entries.filter((e) => e.kind === "chord").length,
+          0,
+        );
+        const lyricEntries = measures.reduce(
+          (n, m) => n + m.entries.reduce(
+            (k, e) => k + (e.kind === "chord" ? (e.lyrics?.length ?? 0) : 0), 0,
+          ),
+          0,
+        );
         const pageCount = app.painter.pageCount;
         const domPages = document.querySelectorAll(".score-page-wrap").length;
         const domSvgs = document.querySelectorAll(".score-page-wrap svg").length;
         const svg0 = app.painter.renderPage(0);
         return {
-          title: file.getTitle()?.title ?? null,
-          meter: file.getTitle()?.meter ?? null,
-          key: file.getTitle()?.key ?? null,
-          tempo: file.getTitle()?.tempo ?? 0,
-          sourceMeasures: source.measures.length,
-          sourceNotes: source.measures.reduce(
-            (n, m) => n + m.entries.filter((e) => e.kind === "note").length,
-            0,
-          ),
-          lyricSegments: file.getLyric()?.segments.length ?? 0,
-          lyricPasses: source.passes,
+          title: score.title ?? null,
+          sourceMeasures,
+          sourceNotes,
+          lyricEntries,
           pageCount,
           domPages,
           domSvgs,
@@ -85,7 +87,7 @@ async function main() {
       if (result.sourceNotes !== sourceNotes) {
         throw new Error(`${songId}: source notes ${result.sourceNotes} != ${sourceNotes}`);
       }
-      if (result.lyricSegments <= 0) throw new Error(`${songId}: no lyric segments`);
+      if (result.lyricEntries <= 0) throw new Error(`${songId}: no parsed lyric entries`);
       if (result.pageCount <= 0) throw new Error(`${songId}: no rendered pages`);
       if (result.domPages !== result.pageCount) throw new Error(`${songId}: DOM page mismatch`);
       if (result.domSvgs !== result.pageCount) throw new Error(`${songId}: SVG page mismatch`);
