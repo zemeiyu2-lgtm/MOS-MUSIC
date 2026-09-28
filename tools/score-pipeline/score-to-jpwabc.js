@@ -142,7 +142,10 @@ function lyricSegments(measures) {
 
 function validateScore(score, songId) {
   if (!score || score.status === 'NOT_AVAILABLE') throw new Error(songId + ' score.status=NOT_AVAILABLE');
-  const measures = score.sections?.[0]?.measures || score.measures || [];
+  const allMeasures = score.sections?.[0]?.measures || score.measures || [];
+  // SOURCE score.json 中部分试算稿保留一个空尾小节；空尾不是可演奏内容，
+  // 不把它写进 .jpwabc，避免解析后产生一个无意义的空小节。
+  const measures = allMeasures.filter((m) => (m.beats || []).length > 0);
   if (!measures.length) throw new Error(songId + ' 没有可写出的 measures');
 
   for (const m of measures) {
@@ -224,7 +227,8 @@ function main() {
       fs.mkdirSync(path.dirname(dest), { recursive: true });
       fs.writeFileSync(dest, text, 'utf8');
 
-      const measures = score.sections?.[0]?.measures || score.measures || [];
+      const measures = (score.sections?.[0]?.measures || score.measures || [])
+        .filter((m) => (m.beats || []).length > 0);
       const notes = measures.reduce((n, m) => n + (m.beats || []).length, 0);
       results.push({ song_id: songId, status: 'OK', measures: measures.length, notes, lyric_segments: lyricSegments(measures).length, output: path.relative(ROOT, dest) });
     } catch (e) {
