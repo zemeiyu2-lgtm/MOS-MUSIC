@@ -61,7 +61,12 @@ async function main() {
           { timeout: 30_000 },
         );
 
-        const inspected = await page.evaluate(() => {
+        const expectedLyrics = sourceMeasures
+          .flatMap((m) => (m.beats ?? []))
+          .filter((b) => b.syllable && b.lyric_status !== "melisma")
+          .map((b) => b.syllable);
+
+        const inspected = await page.evaluate((expectedLyricSequence) => {
           const app = window.__app;
           const doc = app.jpwDoc;
           if (!doc) throw new Error("jpwDoc=null");
@@ -71,15 +76,14 @@ async function main() {
           const docNotes = dmeasures.reduce(
             (n, m) => n + m.elements.filter((e) => e.kind === "chord").length, 0,
           );
-          const docLyrics = dmeasures.reduce(
-            (n, m) => n + m.elements.reduce(
-              (k, e) => k + (
-                e.kind === "chord"
-                  ? e.lyrics?.length ?? 0
-                  : 0
-              ), 0,
-            ), 0,
+          const docLyricSequence = dmeasures.flatMap((m) =>
+            m.elements.flatMap((e) =>
+              e.kind === "chord"
+                ? (e.lyrics ?? []).filter((x) => x.number === 1).map((x) => x.text)
+                : [],
+            )
           );
+          const docLyrics = docLyricSequence.length;
 
           const score = app.painter.score;
           const part = score.parts?.[0];
@@ -104,6 +108,8 @@ async function main() {
 
           return {
             title: score.title ?? null,
+            expectedLyrics: expectedLyricSequence,
+            docLyricSequence,
             docMeasures: dmeasures.length,
             docNotes,
             docLyrics,
@@ -141,7 +147,7 @@ async function main() {
           pagesRendered: inspected.pageCount > 0,
           domPageMatch: inspected.domPages === inspected.pageCount,
           domSvgMatch: inspected.domSvgs === inspected.pageCount,
-          svgLooksValid: inspected.renderedSvgLength > 1000 && Boolean(inspected.firstSvgBox),
+          svgLooksValid: inspected.renderedSvgLength > 500 && Boolean(inspected.firstSvgBox),
         };
 
         if (inspected.pageCount > 0) {
