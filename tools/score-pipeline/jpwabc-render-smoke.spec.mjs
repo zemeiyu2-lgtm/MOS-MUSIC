@@ -15,7 +15,7 @@ for (const songId of SONGS) {
     const sourceMeasures = score.sections?.[0]?.measures ?? [];
     const sourceNotes = sourceMeasures.reduce((n, m) => n + (m.beats?.length ?? 0), 0);
 
-    await page.goto("http://127.0.0.1:5173/", { waitUntil: "domcontentloaded" });
+    await page.goto("http://127.0.0.1:1420/", { waitUntil: "domcontentloaded" });
     await page.waitForFunction(() => Boolean(window.__app), null, { timeout: 30_000 });
 
     const result = await page.evaluate(async (id) => {
