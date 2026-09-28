@@ -96,7 +96,7 @@ jobs:
           if [ -f jpeditor/mos-render-evidence/summary.json ]; then
             body="$body$(cat jpeditor/mos-render-evidence/summary.json)"
           else
-            body="$body"No runtime summary was produced.""
+            body="$body No runtime summary was produced."
           fi
           existing_id=$(gh api "repos/$REPO/issues/$PR_NUMBER/comments?per_page=100" --paginate --jq '.[] | select(.body | startswith("'"<!-- MOS-MUSIC JPWABC DIAGNOSTIC -->"'")) | .id' | tail -n 1 || true)
           if [ -n "$existing_id" ]; then
