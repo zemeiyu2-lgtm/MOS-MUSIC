@@ -2,7 +2,7 @@
   "package_version": "MUS-V-1.1.0",
   "song_id": "MUS-S-0001",
   "slot": "audio",
-  "status": "NOT_AVAILABLE",
+  "status": "PARTIAL",
   "standard": "至少一种完整、合适、稳定可用的伴奏；当前已有 MOS 生成钢琴 MIDI，同时登记外部真人示唱来源。",
   "demo_male": {
     "status": "CANDIDATE_EXTERNAL",
