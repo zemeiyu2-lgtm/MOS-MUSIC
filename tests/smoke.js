@@ -394,8 +394,8 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   /* 派生等级表 */
   const lv = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/production/song-unit-levels.json'), 'utf8'));
   ok(lv.derived === true && lv.counts.library_total === 50
-    && lv.counts.by_level.NONE === 47 && lv.counts.by_level.L3 === 3,
-    'V3.2 派生表：50 首中 47 首 NONE + 3 首 L3（0001/0002/0004 原谱导入样板；L4 真人项待人工）');
+    && lv.counts.by_level.NONE === 47 && lv.counts.by_level.L2 === 1 && lv.counts.by_level.L3 === 2,
+    'V3.2 派生表：50 首中 47 首 NONE + 0001 为 L2、0002/0004 为 L3（外部候选示唱不计入真人示唱等级）');
   ok(fs.existsSync(path.join(ROOT, 'content/schema/song-unit.schema.json')),
     'V3.0 schema：song-unit.schema.json 存在');
 
@@ -492,8 +492,8 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   ok((pkg5.sections || []).some((s) => s.section_id === 'refrain'),
     'PILOT 10 结构覆盖：0005 重复副歌（refrain 独立成节）');
   const lv2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/production/song-unit-levels.json'), 'utf8'));
-  ok(lv2.counts.by_level.NONE === 47 && lv2.units[0].level === 'L3',
-    'V3.2 等级：47 NONE + 3 L3（派生结果；L4 的真人项不得由工具代写）');
+  ok(lv2.counts.by_level.NONE === 47 && lv2.counts.by_level.L2 === 1 && lv2.counts.by_level.L3 === 2 && lv2.units[0].level === 'L2',
+    'V3.2 等级：47 NONE + 0001 为 L2 + 0002/0004 为 L3（外部候选不计入真人项）');
   ok(sw3.includes('./content/production/packages/MUS-S-0001/score.json'),
     'SW v13：生产工作包预缓存');
 
@@ -558,7 +558,7 @@ console.log('\n10) V3.0：单曲完整歌曲单元 / 简谱 / 光标 / 教学法
   ok((disc.output_columns || []).length === 11,
     'V3.x 普查：十一列出表（Song…Next Action，含 Rights/Source）');
   ok(disc.rows.every((r) => r.found && r.found.human_male && r.found.human_female
-    && r.found.ai_male && r.found.ai_female && r.found.piano && r.found.teaching
+    && r.found.ai_male && r.found.ai_female && r.found.accompaniment && r.found.teaching
     && r.next_action),
     'V3.x 普查：每首含 真人男/真人女/AI男/AI女/伴奏/教学 六类 + 下一步');
   ok(disc.rows.every((r) => r.found.human_male.status === 'UNSURVEYED' && r.found.human_male.source_url === null),
