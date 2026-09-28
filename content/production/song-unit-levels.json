@@ -18,8 +18,8 @@
     "by_level": {
       "NONE": 47,
       "L1": 0,
-      "L2": 1,
-      "L3": 2,
+      "L2": 0,
+      "L3": 3,
       "L4": 0
     },
     "by_status": {
@@ -50,21 +50,19 @@
       "layer": "detail",
       "promoted": false,
       "status": "VERIFYING",
-      "level": "L2",
-      "next_level": "L3",
+      "level": "L3",
+      "next_level": "L4",
       "missing_next": [
-        "demo_any"
+        "teach_vocal",
+        "teach_live"
       ],
       "missing_all": [
-        "demo_male",
-        "demo_female",
-        "demo_any",
-        "teach_learn",
+        "teach_vocal",
         "teach_live"
       ],
       "next_action": {
-        "key": "demo_any",
-        "target_status": "DEMO_READY"
+        "key": "teach_vocal",
+        "target_status": "TEACHING_READY"
       },
       "acceptance": {
         "pass": 0,
