@@ -37,3 +37,11 @@
 
 /* ---------- 桌面：把导航工具降到次要层级 ---------- */
 .sidebar-tools .sidebar-status{opacity:.72;}
+
+/* ---------- 顶栏降噪 ---------- */
+.top-title .eyebrow{display:none;}
+.top-title strong{font-size:16px;}
+@media (max-width:900px){.top-title strong{font-size:15px;}}
+
+/* 首页继续保持单一主动作 */
+.music-home .music-home-actions .btn{min-width:132px;}
