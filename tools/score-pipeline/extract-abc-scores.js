@@ -65,30 +65,13 @@ function measureSummary(notes) {
   };
 }
 
-function alignmentSummary(tune, voice, notes) {
-  const tokenLines = ABC_TOOL.verse1TokenLines(voice);
-  const lineResults = [];
-  for (let i = 0; i < tokenLines.length; i += 1) {
-    const tokens = tokenLines[i];
-    if (!tokens) continue;
-    const lineNotes = [];
-    const all = flattenNotes(notes);
-    const rows = ABC_TOOL.alignVerse(tokens, lineNotes.length ? lineNotes : all);
-    const counts = {
-      ok: rows.filter((r) => r.status === ABC_TOOL.ALIGN.OK).length,
-      melisma: rows.filter((r) => r.status === ABC_TOOL.ALIGN.MELISMA).length,
-      no_lyric: rows.filter((r) => r.status === ABC_TOOL.ALIGN.NONE).length,
-      unresolved: rows.filter((r) => r.status === ABC_TOOL.ALIGN.UNRESOLVED).length,
-    };
-    lineResults.push({ music_line_index: i, token_count: tokens.length, ...counts });
-  }
+function alignmentSummary() {
   return {
-    source: 'OpenHymnal w: 第一节机械对齐',
-    lines: lineResults,
-    note: '此结果仅用于机器交叉验证；不可替代人工谱词校对。',
+    source: 'OpenHymnal w: 歌词行未在本中间层重新绑定',
+    status: 'DEFERRED_TO_SCORE_OR_JPWABC_ALIGNMENT',
+    note: 'ABC parser 的旋律事件先作为机器权威旋律源；歌词—音符精确落点由后续 .jpwabc writer 按 jpeditor 官方 assignLyrics 口径重新计算，不在提取阶段猜测。',
   };
 }
-
 function serializeTune(row, tune) {
   const key = ABC_TOOL.parseKey(tune.key_raw);
   const voiceId = chooseVoice(tune);
