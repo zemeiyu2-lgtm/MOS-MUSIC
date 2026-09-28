@@ -52,6 +52,21 @@ async function main() {
 
       const result = await page.evaluate(() => {
         const app = window.__app;
+        const doc = app.jpwDoc;
+        if (!doc) throw new Error("jpeditor jpwDoc is null after load");
+        const dpart = doc.songs?.[0]?.parts?.[0];
+        const dmeasures = dpart?.measures ?? [];
+        const docNotes = dmeasures.reduce(
+          (n, m) => n + m.elements.filter((e) => e.kind === "chord").length,
+          0,
+        );
+        const docLyrics = dmeasures.reduce(
+          (n, m) => n + m.elements.reduce(
+            (k, e) => k + (e.kind === "chord" ? (e.lyrics?.length ?? 0) : 0), 0,
+          ),
+          0,
+        );
+
         const score = app.painter.score;
         const part = score.parts?.[0];
         const measures = part?.measures ?? [];
@@ -72,6 +87,9 @@ async function main() {
         const svg0 = app.painter.renderPage(0);
         return {
           title: score.title ?? null,
+          docMeasures: dmeasures.length,
+          docNotes,
+          docLyrics,
           sourceMeasures,
           sourceNotes,
           lyricEntries,
