@@ -47,10 +47,10 @@ function noteToken(x, pendingTieClose) {
   }
   let s = x.rest ? '0' : String(x.note || '');
   if (!x.rest && x.accidental) {
-    if (!['#', 'b', 'n'].includes(x.accidental)) {
-      throw new Error('unsupported_accidental:' + x.accidental);
-    }
-    s = x.accidental + s;
+    const accidentalMap = { sharp: '#', flat: 'b', natural: 'n', '#': '#', 'b': 'b', 'n': 'n' };
+    const acc = accidentalMap[x.accidental];
+    if (!acc) throw new Error('unsupported_accidental:' + x.accidental);
+    s = acc + s;
   }
   if (!x.rest) {
     const oct = Number(x.octave || 0);
@@ -82,7 +82,11 @@ function buildJpw(song, tune) {
   const voice = tune.voices[voiceId];
   if (!voice) throw new Error('no_primary_voice');
 
-  const built = abc.buildVoiceNotes(voice, tune.key_raw);
+  const parsedKey = abc.parseKey(tune.key_raw);
+  if (parsedKey.mode !== 'major') {
+    throw new Error('unsupported_mode:' + parsedKey.mode);
+  }
+  const built = abc.buildVoiceNotes(voice, parsedKey);
   const noteEvents = built.filter((x) => !x.bar);
   const bars = built.filter((x) => x.bar);
   if (noteEvents.some((x) => x.tie)) {
