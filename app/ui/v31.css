@@ -1,0 +1,44 @@
+/* MOS-MUSIC V3.1｜Front-end reduction
+   Keep all underlying capabilities; reduce what is visible in the primary flow.
+*/
+
+/* ---------- 首页：一个主动作 ---------- */
+.music-home .music-home-actions .btn:nth-child(n+2){display:none;}
+.music-home .music-home-actions{gap:0;}
+.music-home-simple .music-home-hero{min-height:360px;}
+.music-now-link{display:inline-flex;align-items:center;min-height:42px;color:var(--green);font-weight:750;text-decoration:none;}
+.music-now-link:hover{text-decoration:underline;}
+
+/* ---------- 诗歌本：隐藏高级分类，只保留搜索 + 四个入口 ---------- */
+.music-filters{display:none !important;}
+.music-song-actions .icon-op[data-op="play"]{display:none;}
+.music-song-copy small{font-size:12px;}
+
+/* ---------- 歌曲页：主线只保留「歌 → 谱 → 播放 → 学/教 → 歌词」 ---------- */
+.songpage #secPhrases{display:none;}
+.songpage .sp-side > .song-more{display:none;}
+.songpage #secSing .track-note,
+.songpage #secSing > .plain.muted.small{display:none;}
+.songpage #secSing .metro{display:none;}
+.song-action-row{grid-template-columns:repeat(2,minmax(0,1fr));}
+@media (max-width:700px){
+  .song-action-row{grid-template-columns:1fr;}
+}
+.song-action.primary{background:#F0F6F2;border-color:#C9DED2;}
+
+/* ---------- 我的：只看核心三类记录 ---------- */
+.mine-stats{display:none;}
+.mine-coach{margin-top:10px;}
+.mine-group[data-group="taught"],
+.mine-group[data-group="shared"],
+.mine-more{display:none !important;}
+.mine-hero p{max-width:32em;}
+.stage-dist,.mine-hero + .sp-sec:has(.stage-dist){display:none !important;}
+
+/* ---------- 桌面：把导航工具降到次要层级 ---------- */
+.sidebar-tools .sidebar-status{opacity:.72;}
+@media (min-width:901px){
+  .sidebar{width:208px;}
+  .app{margin-left:208px;}
+  .sidebar-nav{gap:2px;}
+}
