@@ -40,7 +40,7 @@ export async function renderMine(root) {
   const due = dueRecords(allMy, null, cycle);
 
   const section = (key, label, rows, extra) => `
-    <section class="card sp-sec">
+    <section class="card sp-sec mine-group" data-group="${key}">
       <div class="section-head"><h2>${label}</h2><span class="chip">${rows.length}</span></div>
       ${rows.length ? rows.map((r) => {
         const info = infoOf(r.song_id);
