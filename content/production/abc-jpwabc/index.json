@@ -8,8 +8,8 @@
   },
   "counts": {
     "requested_exact": 30,
-    "generated": 0,
-    "skipped": 30
+    "generated": 30,
+    "skipped": 0
   },
   "results": [
     {
@@ -21,8 +21,15 @@
       "tune_titles": [
         "Amazing Grace"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0001.jpwabc",
+      "note_count": 37,
+      "measure_count": 17,
+      "lyric_item_count": 28,
+      "lyric_slot_count": 37,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0002",
@@ -33,8 +40,15 @@
       "tune_titles": [
         "Be Still My Soul"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0002.jpwabc",
+      "note_count": 69,
+      "measure_count": 25,
+      "lyric_item_count": 60,
+      "lyric_slot_count": 69,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0004",
@@ -45,8 +59,15 @@
       "tune_titles": [
         "Joy to the World"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0004.jpwabc",
+      "note_count": 57,
+      "measure_count": 19,
+      "lyric_item_count": 42,
+      "lyric_slot_count": 57,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0007",
@@ -57,8 +78,15 @@
       "tune_titles": [
         "To God Be The Glory"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0007.jpwabc",
+      "note_count": 90,
+      "measure_count": 33,
+      "lyric_item_count": 90,
+      "lyric_slot_count": 90,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0008",
@@ -69,8 +97,15 @@
       "tune_titles": [
         "Crown Him With Many Crowns"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0008.jpwabc",
+      "note_count": 53,
+      "measure_count": 16,
+      "lyric_item_count": 52,
+      "lyric_slot_count": 53,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0011",
@@ -81,8 +116,15 @@
       "tune_titles": [
         "A Mighty Fortress Is Our God"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0011.jpwabc",
+      "note_count": 71,
+      "measure_count": 17,
+      "lyric_item_count": 61,
+      "lyric_slot_count": 71,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0013",
@@ -93,8 +135,15 @@
       "tune_titles": [
         "The Old Rugged Cross"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0013.jpwabc",
+      "note_count": 84,
+      "measure_count": 17,
+      "lyric_item_count": 77,
+      "lyric_slot_count": 84,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0014",
@@ -105,8 +154,15 @@
       "tune_titles": [
         "Beneath The Cross Of Jesus"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0014.jpwabc",
+      "note_count": 57,
+      "measure_count": 17,
+      "lyric_item_count": 57,
+      "lyric_slot_count": 57,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0015",
@@ -117,8 +173,15 @@
       "tune_titles": [
         "When I Survey the Wondrous Cross"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0015.jpwabc",
+      "note_count": 98,
+      "measure_count": 25,
+      "lyric_item_count": 88,
+      "lyric_slot_count": 98,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0022",
@@ -129,8 +192,15 @@
       "tune_titles": [
         "Beautiful Savior"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0022.jpwabc",
+      "note_count": 41,
+      "measure_count": 16,
+      "lyric_item_count": 35,
+      "lyric_slot_count": 41,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0025",
@@ -141,8 +211,15 @@
       "tune_titles": [
         "He Leadeth Me"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0025.jpwabc",
+      "note_count": 74,
+      "measure_count": 17,
+      "lyric_item_count": 64,
+      "lyric_slot_count": 74,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0032",
@@ -153,8 +230,15 @@
       "tune_titles": [
         "More Love to Thee"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0032.jpwabc",
+      "note_count": 44,
+      "measure_count": 16,
+      "lyric_item_count": 40,
+      "lyric_slot_count": 44,
+      "tie_count": 0,
+      "rest_count": 4,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0034",
@@ -165,8 +249,15 @@
       "tune_titles": [
         "The Church's One Foundation"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0034.jpwabc",
+      "note_count": 52,
+      "measure_count": 17,
+      "lyric_item_count": 52,
+      "lyric_slot_count": 52,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0035",
@@ -177,8 +268,15 @@
       "tune_titles": [
         "Blest Be The Tie That Binds"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0035.jpwabc",
+      "note_count": 26,
+      "measure_count": 9,
+      "lyric_item_count": 26,
+      "lyric_slot_count": 26,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0036",
@@ -189,8 +287,15 @@
       "tune_titles": [
         "What A Friend We Have In Jesus"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0036.jpwabc",
+      "note_count": 64,
+      "measure_count": 16,
+      "lyric_item_count": 60,
+      "lyric_slot_count": 64,
+      "tie_count": 0,
+      "rest_count": 4,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0038",
@@ -201,8 +306,15 @@
       "tune_titles": [
         "It Is Well With My Soul"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0038.jpwabc",
+      "note_count": 57,
+      "measure_count": 22,
+      "lyric_item_count": 54,
+      "lyric_slot_count": 57,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0039",
@@ -213,8 +325,15 @@
       "tune_titles": [
         "Blessed Assurance"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0039.jpwabc",
+      "note_count": 73,
+      "measure_count": 17,
+      "lyric_item_count": 73,
+      "lyric_slot_count": 73,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0048",
@@ -225,8 +344,15 @@
       "tune_titles": [
         "Take My Life And Let It Be"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0048.jpwabc",
+      "note_count": 32,
+      "measure_count": 16,
+      "lyric_item_count": 28,
+      "lyric_slot_count": 32,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0049",
@@ -237,8 +363,15 @@
       "tune_titles": [
         "I Need Thee Every Hour"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0049.jpwabc",
+      "note_count": 49,
+      "measure_count": 18,
+      "lyric_item_count": 44,
+      "lyric_slot_count": 49,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0050",
@@ -249,8 +382,15 @@
       "tune_titles": [
         "Abide With Me"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0050.jpwabc",
+      "note_count": 40,
+      "measure_count": 16,
+      "lyric_item_count": 40,
+      "lyric_slot_count": 40,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0051",
@@ -261,8 +401,15 @@
       "tune_titles": [
         "Be Thou My Vision"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0051.jpwabc",
+      "note_count": 47,
+      "measure_count": 16,
+      "lyric_item_count": 39,
+      "lyric_slot_count": 47,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0052",
@@ -273,8 +420,15 @@
       "tune_titles": [
         "Come Thou Fount Of Every Blessing"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0052.jpwabc",
+      "note_count": 63,
+      "measure_count": 17,
+      "lyric_item_count": 60,
+      "lyric_slot_count": 63,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0053",
@@ -285,8 +439,15 @@
       "tune_titles": [
         "My Hope Is Built"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0053.jpwabc",
+      "note_count": 48,
+      "measure_count": 13,
+      "lyric_item_count": 48,
+      "lyric_slot_count": 48,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0054",
@@ -297,8 +458,15 @@
       "tune_titles": [
         "Rock of Ages"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0054.jpwabc",
+      "note_count": 42,
+      "measure_count": 13,
+      "lyric_item_count": 42,
+      "lyric_slot_count": 42,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0059",
@@ -309,8 +477,15 @@
       "tune_titles": [
         "Where He Leads Me"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0059.jpwabc",
+      "note_count": 72,
+      "measure_count": 17,
+      "lyric_item_count": 66,
+      "lyric_slot_count": 72,
+      "tie_count": 0,
+      "rest_count": 6,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0060",
@@ -321,8 +496,15 @@
       "tune_titles": [
         "All Hail The Power Of Jesus' Name"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0060.jpwabc",
+      "note_count": 49,
+      "measure_count": 15,
+      "lyric_item_count": 42,
+      "lyric_slot_count": 49,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0067",
@@ -333,8 +515,15 @@
       "tune_titles": [
         "Nearer, My God, To Thee"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0067.jpwabc",
+      "note_count": 50,
+      "measure_count": 16,
+      "lyric_item_count": 42,
+      "lyric_slot_count": 50,
+      "tie_count": 0,
+      "rest_count": 3,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0068",
@@ -345,8 +534,15 @@
       "tune_titles": [
         "I Know Whom I Have Believed"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0068.jpwabc",
+      "note_count": 70,
+      "measure_count": 17,
+      "lyric_item_count": 62,
+      "lyric_slot_count": 70,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0084",
@@ -357,8 +553,15 @@
       "tune_titles": [
         "The Lord's My Shepherd"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0084.jpwabc",
+      "note_count": 56,
+      "measure_count": 17,
+      "lyric_item_count": 56,
+      "lyric_slot_count": 56,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     },
     {
       "song_id": "MUS-S-0092",
@@ -369,8 +572,15 @@
       "tune_titles": [
         "How Firm A Foundation"
       ],
-      "status": "SKIP",
-      "reason": "unsupported_accidental:flat"
+      "status": "OK",
+      "output": "content/production/abc-jpwabc/MUS-S-0092.jpwabc",
+      "note_count": 45,
+      "measure_count": 17,
+      "lyric_item_count": 44,
+      "lyric_slot_count": 45,
+      "tie_count": 0,
+      "rest_count": 0,
+      "approximate_count": 0
     }
   ]
 }
