@@ -11,25 +11,16 @@
     {
       "song_id": "MUS-S-0001",
       "path": "content/production/packages/MUS-S-0001/score.jpwabc",
-      "measures": 17,
-      "notes": 36,
-      "lyric_segments": 4,
       "status": "SOURCE_IMPORTED"
     },
     {
       "song_id": "MUS-S-0002",
       "path": "content/production/packages/MUS-S-0002/score.jpwabc",
-      "measures": 25,
-      "notes": 66,
-      "lyric_segments": 6,
       "status": "SOURCE_IMPORTED"
     },
     {
       "song_id": "MUS-S-0004",
       "path": "content/production/packages/MUS-S-0004/score.jpwabc",
-      "measures": 19,
-      "notes": 54,
-      "lyric_segments": 6,
       "status": "SOURCE_IMPORTED"
     }
   ]
